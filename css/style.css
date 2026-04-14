@@ -237,14 +237,12 @@ a:hover {
   padding: 0 var(--spacing-md);
 }
 
-.btn {
+.btn,
+.btn-outline {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: var(--spacing-sm) var(--spacing-lg);
-  background: var(--accent);
-  color: var(--bg-color);
-  border: none;
   border-radius: var(--border-radius);
   font-weight: 600;
   font-size: 1rem;
@@ -252,6 +250,12 @@ a:hover {
   transition: var(--transition);
   text-decoration: none;
   min-height: 44px;
+}
+
+.btn {
+  background: var(--accent);
+  color: var(--bg-color);
+  border: none;
 }
 
 .btn:hover {
