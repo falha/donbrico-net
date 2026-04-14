@@ -1,0 +1,5 @@
+# Redirect /privacy-policy to /privacy-policy/ (trailing slash)
+/privacy-policy  /privacy-policy/  301
+/autofill-ai     /autofill-ai/     301
+/null-carrier    /null-carrier/    301
+/support         /support/         301
