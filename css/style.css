@@ -246,10 +246,13 @@ a:hover {
   border-radius: var(--border-radius);
   font-weight: 600;
   font-size: 1rem;
+  line-height: 1.2;
+  white-space: nowrap;
   cursor: pointer;
   transition: var(--transition);
   text-decoration: none;
   min-height: 44px;
+  box-sizing: border-box;
 }
 
 .btn {
