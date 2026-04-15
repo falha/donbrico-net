@@ -94,39 +94,72 @@
                     <h4>Editable before submit</h4>
                     <p>Review and tweak every AI-generated answer before the form goes out.</p>
                 </div>
-            </div>
+</div>
         </div>
     </section>
 
     <section style="padding: var(--spacing-xl) 0;">
         <div class="container">
             <h2 class="section-title">Simple pricing.</h2>
-            <div style="display: flex; gap: var(--spacing-lg); justify-content: center; flex-wrap: wrap;">
-                <div class="card" style="flex: 1; min-width: 300px; border: 2px solid var(--accent);">
-                    <h3>Free Forever</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-lg);">
+                <div class="card" style="border: 2px solid var(--accent);">
+                    <h3>Free — forever</h3>
                     <p style="font-size: 2rem; font-weight: 700; color: var(--accent);">$0</p>
                     <ul>
-                        <li>✅ Gemini Nano AI (built-in, private)</li>
-                        <li>✅ Bring Your Own Key</li>
+                        <li>✅ Gemini Nano + Bring Your Own Key AI (unlimited calls)</li>
+                        <li>✅ Basic field filling (name, email, phone, etc.) — always free</li>
+                        <li>✅ Long-text fields — profile raw data pasted as-is</li>
+                        <li>✅ AI short answers — FREE when AI output ≤ 75 words</li>
                         <li>✅ 1 saved profile</li>
-                        <li>✅ Fill any form</li>
-                        <li>✅ Edit before submit</li>
                     </ul>
                     <a href="#" class="btn" style="opacity: 0.5; cursor: not-allowed;" title="Coming Soon">Add to Chrome</a>
                 </div>
-                <div class="card" style="flex: 1; min-width: 300px;">
-                    <h3>Lifetime License</h3>
-                    <p style="font-size: 2rem; font-weight: 700; color: var(--accent);">$14.99 one-time</p>
-                    <p class="text-muted">(no subscription, ever)</p>
+                <div class="card">
+                    <h3>Monthly</h3>
+                    <p style="font-size: 2rem; font-weight: 700; color: var(--accent);">$5.99/month</p>
                     <ul>
-                        <li>Everything in Free, plus:</li>
-                        <li>✅ 3 saved profiles</li>
-                        <li>✅ Cover letter generator</li>
-                        <li>✅ Answer history</li>
-                        <li>✅ Export answers</li>
-                        <li>✅ Priority support</li>
+                        <li>Everything in Free, PLUS:</li>
+                        <li>✅ Unlimited AI word output</li>
+                        <li>✅ Cover Letter Generator</li>
+                        <li>✅ Smart Rewriting</li>
+                        <li>✅ 10 saved profiles</li>
                     </ul>
-                    <a href="#" class="btn" style="opacity: 0.5; cursor: not-allowed;" title="Coming Soon">Get Lifetime Access</a>
+                    <a href="#" class="btn">Get Monthly</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0;">
+        <div class="container">
+            <h2 class="section-title">Setup Guides</h2>
+            <p style="color: var(--muted); margin-bottom: var(--spacing-lg); max-width: 600px;">
+                Choose how you want to power the AI. Both options are free to start.
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-lg);">
+                <div class="card" style="border-left: 3px solid var(--secondary);">
+                    <h4 style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+                        <span style="font-size: 1.2rem;">🧠</span>
+                        Gemini Nano
+                    </h4>
+                    <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 16px;">
+                        Runs entirely in your browser. No API key needed. 100% private. Requires Chrome 127+ with 22GB free storage.
+                    </p>
+                    <a href="../docs-gemini-nano.html" style="color: var(--accent); text-decoration: none; font-weight: 500; font-size: 0.9rem;">
+                        View setup guide →
+                    </a>
+                </div>
+                <div class="card" style="border-left: 3px solid var(--accent);">
+                    <h4 style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+                        <span style="font-size: 1.2rem;">🔑</span>
+                        Bring Your Own API Key
+                    </h4>
+                    <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 16px;">
+                        Use your own key from OpenAI, Anthropic, Groq, or OpenRouter. Works on any device. Pay only for what you use.
+                    </p>
+                    <a href="../docs-api-keys.html" style="color: var(--accent); text-decoration: none; font-weight: 500; font-size: 0.9rem;">
+                        View setup guide →
+                    </a>
                 </div>
             </div>
         </div>

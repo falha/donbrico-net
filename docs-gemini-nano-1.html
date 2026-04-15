@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gemini Nano Setup — Donbrico Autofill AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:        #0b0d14;
+      --surface:   #111420;
+      --surface2:  #181c2e;
+      --border:    #1f2440;
+      --indigo:    #6366f1;
+      --indigo-dim:#3d3f8f;
+      --indigo-glow: rgba(99,102,241,.18);
+      --green:     #22d3a5;
+      --amber:     #f59e0b;
+      --red:       #f43f5e;
+      --text:      #e2e4f0;
+      --muted:     #7b82a8;
+      --faint:     #3a3f5c;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* ── Background mesh ── */
+    body::before {
+      content: '';
+      position: fixed; inset: 0; z-index: 0;
+      background:
+        radial-gradient(ellipse 80% 50% at 10% 0%, rgba(99,102,241,.12) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 40% at 90% 100%, rgba(34,211,165,.07) 0%, transparent 55%);
+      pointer-events: none;
+    }
+
+    /* ── Layout ── */
+    .page-wrap {
+      position: relative; z-index: 1;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px 100px;
+    }
+
+    /* ── Top nav ── */
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 28px 0 20px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 64px;
+    }
+    .nav-brand {
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none; color: var(--text);
+      font-size: .85rem; font-weight: 500; letter-spacing: .02em;
+    }
+    .nav-brand .bolt {
+      width: 28px; height: 28px; border-radius: 7px;
+      background: linear-gradient(135deg, var(--indigo), #818cf8);
+      display: grid; place-items: center;
+      font-size: .9rem;
+    }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a {
+      font-size: .82rem; color: var(--muted); text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--text); }
+    .nav-links a.active { color: var(--indigo); }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: .75rem; color: var(--muted); margin-bottom: 32px;
+    }
+    .breadcrumb a { color: var(--muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--indigo); }
+    .breadcrumb span { color: var(--faint); }
+
+    /* ── Page header ── */
+    .doc-header { margin-bottom: 56px; }
+    .doc-badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: var(--indigo-glow); border: 1px solid var(--indigo-dim);
+      color: #a5b4fc; border-radius: 20px;
+      font-size: .72rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase;
+      padding: 4px 12px; margin-bottom: 18px;
+    }
+    .doc-badge::before { content: '●'; font-size: .5rem; color: var(--green); }
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 300; letter-spacing: -.02em;
+      line-height: 1.2; margin-bottom: 16px;
+    }
+    h1 em { font-style: normal; color: var(--indigo); font-weight: 500; }
+    .doc-intro {
+      font-size: 1.05rem; color: var(--muted); max-width: 600px; font-weight: 300;
+    }
+
+    /* ── Table of contents ── */
+    .toc {
+      background: var(--surface); border: 1px solid var(--border);
+      border-left: 3px solid var(--indigo);
+      border-radius: 10px; padding: 24px 28px; margin-bottom: 60px;
+    }
+    .toc h3 {
+      font-size: .7rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 14px;
+    }
+    .toc ol { padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+    .toc a {
+      font-size: .88rem; color: var(--muted); text-decoration: none; transition: color .2s;
+    }
+    .toc a:hover { color: var(--indigo); }
+
+    /* ── Sections ── */
+    section { margin-bottom: 64px; scroll-margin-top: 80px; }
+    h2 {
+      font-size: 1.25rem; font-weight: 500; letter-spacing: -.01em;
+      margin-bottom: 20px; display: flex; align-items: center; gap: 12px;
+    }
+    h2 .num {
+      width: 26px; height: 26px; border-radius: 7px;
+      background: var(--indigo-glow); border: 1px solid var(--indigo-dim);
+      color: var(--indigo); font-size: .7rem; font-weight: 600;
+      display: grid; place-items: center; flex-shrink: 0;
+    }
+    h3 {
+      font-size: .95rem; font-weight: 500; color: var(--text);
+      margin: 28px 0 10px;
+    }
+    p { font-size: .92rem; color: var(--muted); margin-bottom: 12px; }
+
+    /* ── Requirement cards ── */
+    .req-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+      margin: 24px 0;
+    }
+    @media (max-width: 600px) { .req-grid { grid-template-columns: 1fr; } }
+    .req-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 10px; padding: 20px;
+      transition: border-color .2s;
+    }
+    .req-card:hover { border-color: var(--indigo-dim); }
+    .req-card .label {
+      font-size: .68rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 8px;
+    }
+    .req-card .value {
+      font-size: .95rem; font-weight: 500; color: var(--text); margin-bottom: 4px;
+    }
+    .req-card .note { font-size: .8rem; color: var(--muted); }
+    .req-card.warn .value { color: var(--amber); }
+    .req-card.ok   .value { color: var(--green); }
+
+    /* ── Step list ── */
+    .steps { display: flex; flex-direction: column; gap: 0; margin: 24px 0; }
+    .step {
+      display: flex; gap: 20px;
+      padding: 0 0 32px;
+      position: relative;
+    }
+    .step:not(:last-child)::after {
+      content: '';
+      position: absolute; left: 15px; top: 32px; bottom: 0;
+      width: 1px; background: var(--border);
+    }
+    .step-num {
+      width: 32px; height: 32px; border-radius: 50%; flex-shrink: 0;
+      background: var(--surface2); border: 1px solid var(--indigo-dim);
+      color: var(--indigo); font-size: .8rem; font-weight: 600;
+      display: grid; place-items: center; position: relative; z-index: 1;
+    }
+    .step-body h4 { font-size: .93rem; font-weight: 500; margin-bottom: 6px; }
+    .step-body p  { font-size: .86rem; color: var(--muted); margin-bottom: 0; }
+
+    /* ── Code / path blocks ── */
+    .code-block {
+      background: #0d0f1a; border: 1px solid var(--border);
+      border-radius: 8px; padding: 14px 18px; margin: 12px 0;
+      font-family: 'DM Mono', monospace; font-size: .82rem;
+      color: #a5b4fc; overflow-x: auto;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .copy-btn {
+      background: none; border: 1px solid var(--faint); color: var(--muted);
+      border-radius: 5px; padding: 3px 10px; font-size: .72rem; font-family: 'DM Sans', sans-serif;
+      cursor: pointer; flex-shrink: 0; transition: all .2s;
+    }
+    .copy-btn:hover { border-color: var(--indigo); color: var(--indigo); }
+
+    /* ── Flag item ── */
+    .flag-item {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 10px; padding: 18px 20px; margin: 12px 0;
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .flag-item .flag-path {
+      font-family: 'DM Mono', monospace; font-size: .8rem;
+      color: #a5b4fc; background: #0d0f1a;
+      border-radius: 5px; padding: 6px 10px; width: fit-content;
+    }
+    .flag-item .flag-desc { font-size: .86rem; color: var(--muted); }
+    .flag-item .flag-val  { font-size: .82rem; color: var(--green); }
+
+    /* ── Alert / callout ── */
+    .callout {
+      border-radius: 10px; padding: 16px 20px; margin: 20px 0;
+      display: flex; gap: 12px; align-items: flex-start;
+      font-size: .87rem;
+    }
+    .callout-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
+    .callout.info  { background: rgba(99,102,241,.1);  border: 1px solid var(--indigo-dim); color: #a5b4fc; }
+    .callout.warn  { background: rgba(245,158,11,.08); border: 1px solid rgba(245,158,11,.3); color: #fcd34d; }
+    .callout.tip   { background: rgba(34,211,165,.08); border: 1px solid rgba(34,211,165,.25); color: #6ee7cf; }
+
+    /* ── Checklist ── */
+    .checklist { list-style: none; display: flex; flex-direction: column; gap: 10px; margin: 16px 0; }
+    .checklist li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: .88rem; color: var(--muted);
+    }
+    .checklist li::before {
+      content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; margin-top: 2px;
+    }
+
+    /* ── Divider ── */
+    hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border); margin-top: 80px;
+      padding: 32px 0; text-align: center;
+      font-size: .78rem; color: var(--faint);
+    }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--indigo); }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <!-- Nav -->
+  <nav>
+    <a class="nav-brand" href="/">
+      <div class="bolt">⚡</div>
+      Donbrico Autofill AI
+    </a>
+    <div class="nav-links">
+      <a href="/docs-gemini-nano.html" class="active">Gemini Nano</a>
+      <a href="/docs-api-keys.html">API Keys</a>
+      <a href="/">Back to site</a>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="/">Home</a>
+    <span>›</span>
+    <a href="#">Documentation</a>
+    <span>›</span>
+    Gemini Nano Setup
+  </div>
+
+  <!-- Header -->
+  <header class="doc-header">
+    <div class="doc-badge">Free · No API Key · 100% Private</div>
+    <h1>Using <em>Gemini Nano</em><br />in Chrome</h1>
+    <p class="doc-intro">
+      Gemini Nano is built directly into Chrome on supported hardware. When it works, your AI completions run
+      entirely on your device — free, instant, and never leaving your machine.
+    </p>
+  </header>
+
+  <!-- TOC -->
+  <div class="toc">
+    <h3>On this page</h3>
+    <ol>
+      <li><a href="#requirements">System requirements</a></li>
+      <li><a href="#enable">Enable Gemini Nano in Chrome flags</a></li>
+      <li><a href="#verify">Verify it's working</a></li>
+      <li><a href="#troubleshoot">Troubleshooting</a></li>
+      <li><a href="#fallback">What happens if it doesn't work?</a></li>
+    </ol>
+  </div>
+
+  <!-- ① Requirements -->
+  <section id="requirements">
+    <h2><span class="num">1</span> System requirements</h2>
+    <p>Gemini Nano runs locally, so your hardware matters. Chrome checks these requirements
+    automatically before enabling the model.</p>
+
+    <div class="req-grid">
+      <div class="req-card ok">
+        <div class="label">Browser</div>
+        <div class="value">Chrome 127 or later</div>
+        <div class="note">Desktop only. Not available on mobile Chrome or other browsers.</div>
+      </div>
+      <div class="req-card ok">
+        <div class="label">Operating System</div>
+        <div class="value">Windows 10/11 · macOS 13+ · Linux</div>
+        <div class="note">ChromeOS also supported on newer Chromebooks.</div>
+      </div>
+      <div class="req-card warn">
+        <div class="label">Available Storage</div>
+        <div class="value">At least 22 GB free</div>
+        <div class="note">Chrome downloads the Nano model (~20 GB) on first use.</div>
+      </div>
+      <div class="req-card warn">
+        <div class="label">GPU / NPU</div>
+        <div class="value">4 GB+ VRAM recommended</div>
+        <div class="note">Integrated graphics usually work, but a dedicated GPU speeds inference significantly.</div>
+      </div>
+    </div>
+
+    <div class="callout info">
+      <span class="callout-icon">ℹ️</span>
+      <div>If your machine doesn't meet these requirements, Donbrico Autofill AI will automatically
+      fall back to your configured API key — no action needed on your part.</div>
+    </div>
+  </section>
+
+  <!-- ② Enable -->
+  <section id="enable">
+    <h2><span class="num">2</span> Enable Gemini Nano in Chrome</h2>
+    <p>
+      Gemini Nano and the Prompt API are experimental features. You need to enable two
+      Chrome flags and then download the model before it will respond to requests.
+    </p>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h4>Open Chrome flags</h4>
+          <p>Type the following into your Chrome address bar and press Enter:</p>
+          <div class="code-block">
+            <span>chrome://flags</span>
+            <button class="copy-btn" onclick="navigator.clipboard.writeText('chrome://flags')">Copy</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h4>Enable the Prompt API flag</h4>
+          <p>Search for <strong>Prompt API for Gemini Nano</strong> in the flags search box, then set it to <strong>Enabled</strong>.</p>
+          <div class="flag-item">
+            <div class="flag-path">chrome://flags/#prompt-api-for-gemini-nano</div>
+            <div class="flag-desc">Enables the <code>window.ai</code> JavaScript API so extensions can interact with Gemini Nano.</div>
+            <div class="flag-val">→ Set to: Enabled</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h4>Enable Optimization Guide (model download)</h4>
+          <p>Search for <strong>Enables optimization guide on device</strong> and set it to <strong>Enabled BypassPerfRequirement</strong>. The bypass option allows download even on lower-spec hardware.</p>
+          <div class="flag-item">
+            <div class="flag-path">chrome://flags/#optimization-guide-on-device-model</div>
+            <div class="flag-desc">Allows Chrome to download the Gemini Nano model to your device.</div>
+            <div class="flag-val">→ Set to: Enabled BypassPerfRequirement</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h4>Relaunch Chrome</h4>
+          <p>Click the blue <strong>Relaunch</strong> button that appears at the bottom of the flags page, or close and reopen Chrome completely.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h4>Trigger the model download</h4>
+          <p>After relaunching, navigate to the components page to force Chrome to download the Nano model:</p>
+          <div class="code-block">
+            <span>chrome://components</span>
+            <button class="copy-btn" onclick="navigator.clipboard.writeText('chrome://components')">Copy</button>
+          </div>
+          <p style="margin-top:10px;">
+            Find <strong>Optimization Guide On Device Model</strong> in the list and click
+            <strong>Check for update</strong>. The download may take several minutes depending on
+            your connection. The model is approximately 20 GB.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="callout warn">
+      <span class="callout-icon">⚠️</span>
+      <div>
+        The model download happens silently in the background. Chrome must be open and
+        connected to the internet. Once downloaded, it stays on your device permanently.
+      </div>
+    </div>
+  </section>
+
+  <!-- ③ Verify -->
+  <section id="verify">
+    <h2><span class="num">3</span> Verify it's working</h2>
+    <p>Once the model is downloaded, you can confirm everything is set up correctly without leaving Chrome.</p>
+
+    <h3>Quick test via DevTools</h3>
+    <p>Open any webpage, press <strong>F12</strong> (or right-click → Inspect → Console), and paste this snippet:</p>
+    <div class="code-block" style="flex-direction:column; align-items:flex-start; gap:6px;">
+      <div>const status = await window.ai.languageModel.capabilities();</div>
+      <div>console.log(status.available); // should print "readily"</div>
+    </div>
+
+    <p>The console output means:</p>
+    <ul class="checklist">
+      <li><strong style="color:var(--green)">"readily"</strong> — Gemini Nano is downloaded and ready. You're all set.</li>
+      <li><strong style="color:var(--amber)">"after-download"</strong> — Chrome knows about the model but it's still downloading. Wait and try again in a few minutes.</li>
+      <li><strong style="color:var(--red)">"no"</strong> — The model isn't available on this device. Check the troubleshooting section below.</li>
+    </ul>
+
+    <div class="callout tip">
+      <span class="callout-icon">✅</span>
+      <div>
+        Once you see <strong>"readily"</strong>, open the Donbrico Autofill AI extension popup.
+        The AI status indicator in settings should show <strong>Gemini Nano · Active</strong>.
+      </div>
+    </div>
+  </section>
+
+  <!-- ④ Troubleshoot -->
+  <section id="troubleshoot">
+    <h2><span class="num">4</span> Troubleshooting</h2>
+
+    <h3>The console returns "no" or throws an error</h3>
+    <p>Go back through the steps above and confirm both flags are enabled (not just one). Then relaunch Chrome again and wait 5–10 minutes before retesting. Chrome sometimes delays initialising the API even after the flags are set.</p>
+
+    <h3>chrome://components shows no version for the model</h3>
+    <p>Make sure you're signed into Chrome with a Google account. In some regions, the model
+    is gated behind a Google account sign-in. Also ensure Chrome is not running through a
+    VPN or proxy that blocks Google's download servers.</p>
+
+    <h3>The model download is stuck</h3>
+    <p>Visit <code style="font-family:'DM Mono',monospace;color:#a5b4fc">chrome://components</code>, find the Optimization Guide model, and click
+    <strong>Check for update</strong> again. If it remains stuck, try restarting Chrome and
+    checking for updates once more.</p>
+
+    <h3>My machine meets requirements but it still shows "no"</h3>
+    <ul class="checklist">
+      <li>Confirm you're on Chrome version 127 or later (check <code style="font-family:'DM Mono',monospace;color:#a5b4fc">chrome://version</code>).</li>
+      <li>Some enterprise-managed Chrome installs block experimental flags. Check with your IT team.</li>
+      <li>Ensure Chrome has at least 22 GB of free disk space to store the model.</li>
+      <li>Try disabling and re-enabling both flags, then relaunching.</li>
+    </ul>
+  </section>
+
+  <!-- ⑤ Fallback -->
+  <section id="fallback">
+    <h2><span class="num">5</span> What happens if it doesn't work?</h2>
+    <p>
+      Donbrico Autofill AI gracefully falls back to your Bring Your Own Key API key (OpenAI, Anthropic,
+      Groq, or OpenRouter) whenever Gemini Nano isn't available. You'll never be left
+      without AI completions.
+    </p>
+    <p>
+      If neither Gemini Nano nor an API key is configured, the extension will show a friendly
+      prompt guiding you to set one up. You can always add an API key in the extension's
+      settings panel.
+    </p>
+    <div class="callout info">
+      <span class="callout-icon">🔑</span>
+      <div>
+        Need an API key? See the <a href="/docs-api-keys.html" style="color:var(--indigo);text-decoration:none;font-weight:500;">API Keys guide</a> to get one from OpenAI, Anthropic, Groq, or OpenRouter in under 5 minutes.
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div style="max-width:860px;margin:0 auto;padding:0 24px;">
+    Donbrico Autofill AI &nbsp;·&nbsp; <a href="/docs-gemini-nano.html">Gemini Nano</a> &nbsp;·&nbsp; <a href="/docs-api-keys.html">API Keys</a> &nbsp;·&nbsp; <a href="/">Home</a>
+  </div>
+</footer>
+
+<script>
+  // Smooth copy feedback
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const orig = btn.textContent;
+      btn.textContent = 'Copied!';
+      btn.style.color = 'var(--green)';
+      btn.style.borderColor = 'var(--green)';
+      setTimeout(() => {
+        btn.textContent = orig;
+        btn.style.color = '';
+        btn.style.borderColor = '';
+      }, 1800);
+    });
+  });
+</script>
+</body>
+</html>

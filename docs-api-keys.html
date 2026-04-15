@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Key Setup — Donbrico Autofill AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:        #0b0d14;
+      --surface:   #111420;
+      --surface2:  #181c2e;
+      --border:    #1f2440;
+      --indigo:    #6366f1;
+      --indigo-dim:#3d3f8f;
+      --indigo-glow: rgba(99,102,241,.18);
+      --green:     #22d3a5;
+      --amber:     #f59e0b;
+      --red:       #f43f5e;
+      --text:      #e2e4f0;
+      --muted:     #7b82a8;
+      --faint:     #3a3f5c;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: '';
+      position: fixed; inset: 0; z-index: 0;
+      background:
+        radial-gradient(ellipse 70% 45% at 5% 0%,  rgba(99,102,241,.11) 0%, transparent 60%),
+        radial-gradient(ellipse 55% 35% at 95% 90%, rgba(245,158,11,.06) 0%, transparent 55%);
+      pointer-events: none;
+    }
+
+    .page-wrap {
+      position: relative; z-index: 1;
+      max-width: 860px; margin: 0 auto;
+      padding: 0 24px 100px;
+    }
+
+    /* ── Nav ── */
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 28px 0 20px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 64px;
+    }
+    .nav-brand {
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none; color: var(--text);
+      font-size: .85rem; font-weight: 500; letter-spacing: .02em;
+    }
+    .nav-brand .bolt {
+      width: 28px; height: 28px; border-radius: 7px;
+      background: linear-gradient(135deg, var(--indigo), #818cf8);
+      display: grid; place-items: center; font-size: .9rem;
+    }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a {
+      font-size: .82rem; color: var(--muted); text-decoration: none; transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--text); }
+    .nav-links a.active { color: var(--indigo); }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: .75rem; color: var(--muted); margin-bottom: 32px;
+    }
+    .breadcrumb a { color: var(--muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--indigo); }
+    .breadcrumb span { color: var(--faint); }
+
+    /* ── Header ── */
+    .doc-header { margin-bottom: 56px; }
+    .doc-badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: var(--indigo-glow); border: 1px solid var(--indigo-dim);
+      color: #a5b4fc; border-radius: 20px;
+      font-size: .72rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase;
+      padding: 4px 12px; margin-bottom: 18px;
+    }
+    .doc-badge::before { content: '🔑'; font-size: .8rem; }
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 300; letter-spacing: -.02em;
+      line-height: 1.2; margin-bottom: 16px;
+    }
+    h1 em { font-style: normal; color: var(--indigo); font-weight: 500; }
+    .doc-intro { font-size: 1.05rem; color: var(--muted); max-width: 600px; font-weight: 300; }
+
+    /* ── Provider selector ── */
+    .provider-tabs {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+      margin-bottom: 48px;
+    }
+    @media (max-width: 600px) { .provider-tabs { grid-template-columns: 1fr 1fr; } }
+    .tab-btn {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 10px; padding: 14px 10px;
+      cursor: pointer; transition: all .2s; text-align: center;
+      text-decoration: none; display: block;
+    }
+    .tab-btn:hover { border-color: var(--indigo-dim); }
+    .tab-btn.active { border-color: var(--indigo); background: var(--indigo-glow); }
+    .tab-btn .provider-icon { font-size: 1.4rem; display: block; margin-bottom: 6px; }
+    .tab-btn .provider-name { font-size: .8rem; font-weight: 500; color: var(--text); }
+    .tab-btn .provider-tag  { font-size: .7rem; color: var(--muted); margin-top: 2px; }
+
+    /* ── Provider sections ── */
+    .provider-section {
+      margin-bottom: 72px; scroll-margin-top: 80px;
+    }
+
+    /* ── Provider header ── */
+    .provider-header {
+      display: flex; align-items: flex-start; justify-content: space-between;
+      gap: 20px; flex-wrap: wrap;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px 12px 0 0; padding: 24px 28px;
+      border-bottom: none;
+    }
+    .provider-info {}
+    .provider-label {
+      font-size: .7rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 8px;
+    }
+    h2 {
+      font-size: 1.3rem; font-weight: 500; margin-bottom: 6px; letter-spacing: -.01em;
+    }
+    .provider-meta { font-size: .84rem; color: var(--muted); }
+    .provider-pills { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+    .pill {
+      font-size: .72rem; font-weight: 500; letter-spacing: .04em;
+      border-radius: 20px; padding: 3px 10px;
+    }
+    .pill.green { background: rgba(34,211,165,.12); color: var(--green); border: 1px solid rgba(34,211,165,.25); }
+    .pill.amber { background: rgba(245,158,11,.10); color: #fcd34d;  border: 1px solid rgba(245,158,11,.25); }
+    .pill.blue  { background: rgba(99,102,241,.12); color: #a5b4fc;  border: 1px solid var(--indigo-dim); }
+    .cta-btn {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: var(--indigo); color: #fff;
+      border-radius: 8px; padding: 9px 18px;
+      text-decoration: none; font-size: .83rem; font-weight: 500;
+      white-space: nowrap; transition: opacity .2s; align-self: flex-start;
+      border: none; cursor: pointer;
+    }
+    .cta-btn:hover { opacity: .85; }
+    .cta-btn.outline {
+      background: none; border: 1px solid var(--indigo-dim); color: #a5b4fc;
+    }
+
+    /* ── Step container ── */
+    .step-wrap {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 0 0 12px 12px; padding: 28px;
+    }
+    .step-wrap > p { font-size: .88rem; color: var(--muted); margin-bottom: 20px; }
+
+    /* ── Steps ── */
+    .steps { display: flex; flex-direction: column; gap: 0; }
+    .step {
+      display: flex; gap: 18px;
+      padding: 0 0 28px;
+      position: relative;
+    }
+    .step:last-child { padding-bottom: 0; }
+    .step:not(:last-child)::after {
+      content: '';
+      position: absolute; left: 14px; top: 30px; bottom: 0;
+      width: 1px; background: var(--border);
+    }
+    .step-num {
+      width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0;
+      background: var(--surface2); border: 1px solid var(--indigo-dim);
+      color: var(--indigo); font-size: .75rem; font-weight: 600;
+      display: grid; place-items: center; position: relative; z-index: 1;
+    }
+    .step-body h4 { font-size: .9rem; font-weight: 500; margin-bottom: 5px; color: var(--text); }
+    .step-body p  { font-size: .85rem; color: var(--muted); margin-bottom: 6px; }
+
+    /* ── Code / tip ── */
+    .code-inline {
+      font-family: 'DM Mono', monospace; font-size: .82rem;
+      color: #a5b4fc; background: rgba(99,102,241,.1);
+      border-radius: 4px; padding: 1px 6px;
+    }
+
+    .callout {
+      border-radius: 8px; padding: 13px 16px; margin: 10px 0 0;
+      display: flex; gap: 10px; align-items: flex-start;
+      font-size: .83rem;
+    }
+    .callout-icon { font-size: 1rem; flex-shrink: 0; }
+    .callout.info  { background: rgba(99,102,241,.08); border: 1px solid var(--indigo-dim); color: #a5b4fc; }
+    .callout.warn  { background: rgba(245,158,11,.07); border: 1px solid rgba(245,158,11,.28); color: #fcd34d; }
+    .callout.tip   { background: rgba(34,211,165,.07); border: 1px solid rgba(34,211,165,.22); color: #6ee7cf; }
+
+    /* ── Model note table ── */
+    .model-table { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: .83rem; }
+    .model-table th {
+      text-align: left; padding: 8px 12px;
+      font-size: .7rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--muted); border-bottom: 1px solid var(--border);
+    }
+    .model-table td { padding: 9px 12px; color: var(--muted); border-bottom: 1px solid var(--border); }
+    .model-table td:first-child { color: var(--text); font-weight: 500; }
+    .model-table tr:last-child td { border-bottom: none; }
+    .badge-rec {
+      font-size: .68rem; background: rgba(34,211,165,.12); color: var(--green);
+      border: 1px solid rgba(34,211,165,.25); border-radius: 10px; padding: 1px 7px; margin-left: 6px;
+    }
+
+    /* ── Divider ── */
+    .section-divider { margin: 16px 0 56px; border: none; border-top: 1px solid var(--border); }
+
+    /* ── Compare table ── */
+    .compare-section { margin-bottom: 64px; }
+    .compare-section h2 {
+      font-size: 1.1rem; font-weight: 500; margin-bottom: 20px;
+      color: var(--text);
+    }
+    .compare-table { width: 100%; border-collapse: collapse; font-size: .84rem; }
+    .compare-table th {
+      text-align: left; padding: 10px 14px;
+      font-size: .7rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--muted); border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    .compare-table td {
+      padding: 11px 14px; color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    .compare-table td:first-child { font-weight: 500; color: var(--text); }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tr:hover td { background: var(--surface2); }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border); margin-top: 80px;
+      padding: 32px 0; text-align: center;
+      font-size: .78rem; color: var(--faint);
+    }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--indigo); }
+
+    p { margin-bottom: 12px; }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <!-- Nav -->
+  <nav>
+    <a class="nav-brand" href="/">
+      <div class="bolt">⚡</div>
+      Donbrico Autofill AI
+    </a>
+    <div class="nav-links">
+      <a href="/docs-gemini-nano.html">Gemini Nano</a>
+      <a href="/docs-api-keys.html" class="active">API Keys</a>
+      <a href="/autofill-ai/">Back to extension</a>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="/">Home</a>
+    <span>›</span>
+    <a href="#">Documentation</a>
+    <span>›</span>
+    API Keys Guide
+  </div>
+
+  <!-- Header -->
+  <header class="doc-header">
+    <div class="doc-badge">Bring Your Own Key</div>
+    <h1>Get an <em>API Key</em><br />from any provider</h1>
+    <p class="doc-intro">
+      Donbrico Autofill AI works with four AI providers. Pick the one that suits you —
+      each takes under 5 minutes to set up and charges only for what you actually use.
+      Groq and OpenRouter even have completely free tiers with no credit card required.
+    </p>
+    <div class="callout" style="margin-top: 16px; background: rgba(99,102,241,.1); border: 1px solid var(--indigo-dim);">
+      <span class="callout-icon" style="color: #a5b4fc;">⚡</span>
+      <div style="font-size: .87rem; color: #a5b4fc;">
+        <strong>Speed note:</strong> Cloud-based AI providers like Groq and OpenAI are typically much faster than Gemini Nano (on-device). 
+        If speed matters to you, a Bring Your Own Key setup will give you snappier responses.
+      </div>
+    </div>
+  </header>
+
+  <!-- Provider quick-jump -->
+  <div class="provider-tabs">
+    <a class="tab-btn active" href="#groq">
+      <span class="provider-icon">⚡</span>
+      <div class="provider-name">Groq</div>
+      <div class="provider-tag">Fast · Free tier</div>
+    </a>
+    <a class="tab-btn" href="#openrouter">
+      <span class="provider-icon">🔀</span>
+      <div class="provider-name">OpenRouter</div>
+      <div class="provider-tag">100+ models</div>
+    </a>
+    <a class="tab-btn" href="#anthropic">
+      <span class="provider-icon">🟣</span>
+      <div class="provider-name">Anthropic</div>
+      <div class="provider-tag">Claude</div>
+    </a>
+    <a class="tab-btn" href="#openai">
+      <span class="provider-icon">🟢</span>
+      <div class="provider-name">OpenAI</div>
+      <div class="provider-tag">GPT-4o</div>
+    </a>
+  </div>
+
+  <!-- ══════════════════════════════
+       PROVIDER 1 — Groq
+  ══════════════════════════════ -->
+  <div class="provider-section" id="groq">
+    <div class="provider-header">
+      <div class="provider-info">
+        <div class="provider-label">Provider 01</div>
+        <h2>⚡ Groq</h2>
+        <div class="provider-meta">console.groq.com</div>
+        <div class="provider-pills" style="margin-top:10px;">
+          <span class="pill green">Free tier available</span>
+          <span class="pill blue">Llama 3 · Mixtral · Gemma</span>
+        </div>
+      </div>
+      <a class="cta-btn" href="https://console.groq.com" target="_blank" rel="noopener">
+        Create account ↗
+      </a>
+    </div>
+    <div class="step-wrap">
+      <p>Groq runs open-source models on custom silicon (LPUs) — the result is remarkably fast inference. The free tier is generous enough for everyday autofill use at no cost.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h4>Sign up for a free Groq account</h4>
+            <p>Go to <strong>console.groq.com</strong> and click <strong>Sign up</strong>. Groq supports Google, GitHub, and email signup. No credit card is required for the free tier.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h4>Create an API key</h4>
+            <p>In the left sidebar, click <strong>API Keys</strong>. Click <strong>Create API Key</strong>, enter a name like "Donbrico", and click <strong>Submit</strong>.</p>
+            <div class="callout warn">
+              <span class="callout-icon">⚠️</span>
+              Copy the key immediately. Groq does not show it again after creation. It begins with <span class="code-inline">gsk_…</span>
+            </div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h4>Paste into the extension</h4>
+            <p>Open the extension popup → <strong>Settings → AI Provider → Groq</strong>. Paste your key and save.</p>
+          </div>
+        </div>
+      </div>
+      <div class="callout info" style="margin-top:20px;">
+        <span class="callout-icon">ℹ️</span>
+        <div>
+          Groq free tier includes rate limits (e.g. 30 requests/minute for Llama 3). For typical autofill
+          usage this is more than enough. If you hit limits, upgrading to a paid plan removes them.
+        </div>
+      </div>
+      <table class="model-table" style="margin-top:16px;">
+        <thead><tr><th>Model</th><th>Speed</th><th>Free tier?</th></tr></thead>
+        <tbody>
+          <tr><td>Llama 3.1 8B <span class="badge-rec">Recommended</span></td><td>Extremely fast</td><td>Yes</td></tr>
+          <tr><td>Llama 3.1 70B</td><td>Fast</td><td>Yes (lower limit)</td></tr>
+          <tr><td>Mixtral 8x7B</td><td>Fast</td><td>Yes</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr class="section-divider" />
+
+  <!-- ══════════════════════════════
+       PROVIDER 2 — OpenRouter
+  ══════════════════════════════ -->
+  <div class="provider-section" id="openrouter">
+    <div class="provider-header">
+      <div class="provider-info">
+        <div class="provider-label">Provider 02</div>
+        <h2>🔀 OpenRouter</h2>
+        <div class="provider-meta">openrouter.ai</div>
+        <div class="provider-pills" style="margin-top:10px;">
+          <span class="pill green">Free models available</span>
+          <span class="pill blue">100+ models from any provider</span>
+        </div>
+      </div>
+      <a class="cta-btn" href="https://openrouter.ai" target="_blank" rel="noopener">
+        Create account ↗
+      </a>
+    </div>
+    <div class="step-wrap">
+      <p>OpenRouter is a unified gateway to over 100 AI models — including GPT-4o, Claude, Llama, Mistral, and many more — through a single API key. Several models are permanently free with no credit card required.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h4>Create an OpenRouter account</h4>
+            <p>Visit <strong>openrouter.ai</strong> and click <strong>Sign In</strong>. OpenRouter supports Google and GitHub sign-in, or you can use an email address.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h4>Optional: add credits for paid models</h4>
+            <p>Go to <strong>Credits</strong> in your account and top up if you want to use paid models like GPT-4o or Claude. For free models only, no payment is needed.</p>
+            <div class="callout tip">
+              <span class="callout-icon">💡</span>
+              Filter by <strong>Free</strong> on the Models page to see the full list of zero-cost models available right now.
+            </div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h4>Create an API key</h4>
+            <p>Go to <strong>Keys</strong> in the top navigation. Click <strong>Create Key</strong>, name it "Donbrico", and copy the key — it begins with <span class="code-inline">sk-or-…</span></p>
+            <div class="callout warn">
+              <span class="callout-icon">⚠️</span>
+              Copy the key now — it will be hidden after you close this dialog.
+            </div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h4>Paste into the extension</h4>
+            <p>Open the extension popup → <strong>Settings → AI Provider → OpenRouter</strong>. Paste your key, choose your preferred model, and save.</p>
+          </div>
+        </div>
+      </div>
+      <table class="model-table" style="margin-top:24px;">
+        <thead><tr><th>Model</th><th>Notes</th><th>Cost</th></tr></thead>
+        <tbody>
+          <tr><td>Llama 3.1 8B Instruct (free) <span class="badge-rec">Recommended</span></td><td>Fast, reliable free option</td><td>Free</td></tr>
+          <tr><td>Mistral 7B Instruct (free)</td><td>Good for structured outputs</td><td>Free</td></tr>
+          <tr><td>GPT-4o mini (via OpenRouter)</td><td>Premium quality</td><td>Pay-as-you-go</td></tr>
+          <tr><td>Claude 3.5 Haiku (via OpenRouter)</td><td>Premium quality</td><td>Pay-as-you-go</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr class="section-divider" />
+
+  <!-- ══════════════════════════════
+       PROVIDER 3 — Anthropic
+  ══════════════════════════════ -->
+  <div class="provider-section" id="anthropic">
+    <div class="provider-header">
+      <div class="provider-info">
+        <div class="provider-label">Provider 03</div>
+        <h2>🟣 Anthropic</h2>
+        <div class="provider-meta">console.anthropic.com</div>
+        <div class="provider-pills" style="margin-top:10px;">
+          <span class="pill amber">Pay-as-you-go</span>
+          <span class="pill blue">Claude 3.5 Haiku · Claude 3.5 Sonnet</span>
+        </div>
+      </div>
+      <a class="cta-btn" href="https://console.anthropic.com" target="_blank" rel="noopener">
+        Create account ↗
+      </a>
+    </div>
+    <div class="step-wrap">
+      <p>Anthropic's Claude models are known for following instructions precisely — ideal for generating well-structured cover letters and professional answers.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h4>Create an Anthropic account</h4>
+            <p>Visit <strong>console.anthropic.com</strong> and click <strong>Sign up</strong>. You can use Google or an email address.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h4>Add billing information</h4>
+            <p>From the Console dashboard, go to <strong>Settings → Billing</strong>. Click <strong>Add credit card</strong> and complete the form. Anthropic is pay-as-you-go with no monthly fee.</p>
+            <div class="callout tip">
+              <span class="callout-icon">💡</span>
+              You can set a monthly spend limit under Billing → Usage limits to avoid any surprise charges.
+            </div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h4>Generate an API key</h4>
+            <p>In the left sidebar, click <strong>API Keys</strong>. Click <strong>Create Key</strong>, name it "Donbrico", and copy the key — it starts with <span class="code-inline">sk-ant-…</span></p>
+            <div class="callout warn">
+              <span class="callout-icon">⚠️</span>
+              The key is shown only once at creation time. Copy it before closing the dialog.
+            </div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h4>Paste into the extension</h4>
+            <p>Open the extension popup → <strong>Settings → AI Provider → Anthropic</strong>. Paste your key and save.</p>
+          </div>
+        </div>
+      </div>
+      <table class="model-table" style="margin-top:24px;">
+        <thead><tr><th>Model</th><th>Speed</th><th>Cost (approx. per autofill)</th></tr></thead>
+        <tbody>
+          <tr><td>Claude 3.5 Haiku <span class="badge-rec">Recommended</span></td><td>Very fast</td><td>~$0.001</td></tr>
+          <tr><td>Claude 3.5 Sonnet</td><td>Moderate</td><td>~$0.006</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr class="section-divider" />
+
+  <!-- ══════════════════════════════
+       PROVIDER 4 — OpenAI
+  ══════════════════════════════ -->
+  <div class="provider-section" id="openai">
+    <div class="provider-header">
+      <div class="provider-info">
+        <div class="provider-label">Provider 04</div>
+        <h2>🟢 OpenAI</h2>
+        <div class="provider-meta">platform.openai.com</div>
+        <div class="provider-pills" style="margin-top:10px;">
+          <span class="pill amber">Pay-as-you-go</span>
+          <span class="pill blue">GPT-4o · GPT-4o mini</span>
+        </div>
+      </div>
+      <a class="cta-btn" href="https://platform.openai.com/signup" target="_blank" rel="noopener">
+        Create account ↗
+      </a>
+    </div>
+    <div class="step-wrap">
+      <p>OpenAI is the most widely used provider. GPT-4o mini is fast, accurate, and costs fractions of a cent per autofill.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h4>Create a free account</h4>
+            <p>Go to <strong>platform.openai.com</strong> and sign up. You can use Google, Microsoft, or email.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h4>Add a payment method</h4>
+            <p>Navigate to <strong>Settings → Billing → Add payment method</strong>. OpenAI requires a credit card before generating API keys. You will only be charged for actual usage — new accounts receive $5 in free credits.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h4>Create an API key</h4>
+            <p>Go to <strong>API Keys</strong> in the left sidebar (or visit <span class="code-inline">platform.openai.com/api-keys</span>). Click <strong>Create new secret key</strong>, give it a name like "Donbrico", and click <strong>Create secret key</strong>.</p>
+            <div class="callout warn">
+              <span class="callout-icon">⚠️</span>
+              Copy your key immediately — OpenAI only shows it once. Store it somewhere safe.
+            </div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h4>Paste the key into the extension</h4>
+            <p>Open the Donbrico Autofill AI popup → <strong>Settings → AI Provider → OpenAI</strong>. Paste your key (it starts with <span class="code-inline">sk-…</span>) and click Save.</p>
+          </div>
+        </div>
+      </div>
+      <table class="model-table" style="margin-top:24px;">
+        <thead><tr><th>Model</th><th>Speed</th><th>Cost (approx. per autofill)</th></tr></thead>
+        <tbody>
+          <tr><td>GPT-4o mini <span class="badge-rec">Recommended</span></td><td>Fast</td><td>~$0.001</td></tr>
+          <tr><td>GPT-4o</td><td>Moderate</td><td>~$0.005</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <hr class="section-divider" style="margin-top:0;" />
+
+  <!-- ══ Comparison table ══ -->
+  <div class="compare-section">
+    <h2>Quick comparison</h2>
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Provider</th>
+          <th>Free tier?</th>
+          <th>Card required?</th>
+          <th>Best for</th>
+          <th>Key prefix</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Groq</td>
+          <td>Yes ✓</td>
+          <td>No</td>
+          <td>Fastest responses, no cost</td>
+          <td><span class="code-inline">gsk_…</span></td>
+        </tr>
+        <tr>
+          <td>OpenRouter</td>
+          <td>Yes ✓</td>
+          <td>No (free models)</td>
+          <td>Flexibility, free models</td>
+          <td><span class="code-inline">sk-or-…</span></td>
+        </tr>
+        <tr>
+          <td>Anthropic</td>
+          <td>No</td>
+          <td>Yes</td>
+          <td>Precise instruction-following</td>
+          <td><span class="code-inline">sk-ant-…</span></td>
+        </tr>
+        <tr>
+          <td>OpenAI</td>
+          <td>$5 credit on signup</td>
+          <td>Yes</td>
+          <td>Best overall quality</td>
+          <td><span class="code-inline">sk-…</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Gemini nano CTA -->
+  <div style="background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--green);border-radius:10px;padding:24px 28px;">
+    <div style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;">Pro tip</div>
+    <p style="font-size:.92rem;color:var(--text);margin-bottom:8px;">
+      No API key needed at all — if your computer supports it, <strong>Gemini Nano</strong> runs directly in Chrome for free with complete privacy.
+    </p>
+    <a href="/docs-gemini-nano.html" style="font-size:.85rem;color:var(--indigo);text-decoration:none;font-weight:500;">Check Gemini Nano compatibility →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div style="max-width:860px;margin:0 auto;padding:0 24px;">
+    Donbrico Autofill AI &nbsp;·&nbsp; <a href="/docs-gemini-nano.html">Gemini Nano</a> &nbsp;·&nbsp; <a href="/docs-api-keys.html">API Keys</a> &nbsp;·&nbsp; <a href="/autofill-ai/">Extension</a> &nbsp;·&nbsp; <a href="/">Home</a>
+  </div>
+</footer>
+
+<script>
+  // Highlight the active provider tab on scroll
+  const sections = document.querySelectorAll('.provider-section');
+  const tabs = document.querySelectorAll('.tab-btn');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        tabs.forEach(t => {
+          t.classList.toggle('active', t.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+
+  sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
