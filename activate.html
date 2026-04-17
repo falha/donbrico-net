@@ -15,6 +15,10 @@
       --muted: #a0a0b0;
       --border: #1a1a1f;
       --success: #10b981;
+      --spacing-sm: 8px;
+      --spacing-md: 16px;
+      --spacing-lg: 24px;
+      --transition: background 0.15s ease, transform 0.15s ease;
     }
 
     * {
@@ -142,15 +146,11 @@
     }
 
     .instructions li {
-      margin-bottom: var(--spacing-xs);
+      margin-bottom: var(--spacing-xs, 4px);
     }
 
     .hidden {
       display: none !important;
-    }
-
-    .spacer {
-      height: var(--spacing-lg);
     }
   </style>
 </head>
@@ -159,21 +159,21 @@
     <div id="loading">
       <h1>Activating License</h1>
       <div class="spinner"></div>
-      <p>Please wait while we activate your Pro license...</p>
+      <p>Connecting to the Donbrico extension…</p>
     </div>
 
     <div id="success" class="hidden">
       <h1 class="success">Pro activated!</h1>
-      <p>You can close this tab.</p>
+      <p>You can close this tab and return to Donbrico.</p>
     </div>
 
     <div id="manual" class="hidden">
-      <h1>Activate Your License</h1>
-      <p>Copy the key below and paste it into the Donbrico extension's activation dialog.</p>
+      <h1>Activate Donbrico Pro</h1>
+      <p id="manualIntro">Copy the key below and paste it in the extension: open Donbrico → Options → Premium → paste → Activate.</p>
 
       <div class="key-box">
         <span id="licenseKey" class="key-text"></span>
-        <button id="copyBtn" class="btn" title="Copy to clipboard">
+        <button id="copyBtn" class="btn" type="button" title="Copy to clipboard">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
             <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
@@ -182,13 +182,13 @@
         </button>
       </div>
 
-      <div id="extensionInstructions" class="instructions hidden">
-        <h3>How to activate:</h3>
+      <div id="extensionInstructions" class="instructions">
+        <h3>Steps</h3>
         <ol>
-          <li>Click the Donbrico extension icon in your browser toolbar</li>
-          <li>Go to Settings or the activation tab</li>
-          <li>Paste your license key</li>
-          <li>Click "Activate"</li>
+          <li>Click the Donbrico extension icon in your toolbar</li>
+          <li>Open <strong>Options</strong> (or right-click the icon → Options)</li>
+          <li>Go to the <strong>Premium</strong> tab</li>
+          <li>Paste your license key and click <strong>Activate</strong></li>
         </ol>
       </div>
     </div>
@@ -196,70 +196,72 @@
 
   <script>
     (function() {
-      const params = new URLSearchParams(window.location.search);
-      const key = params.get('key') || '';
-      const extid = params.get('extid') || '';
+      var PRODUCTION_EXT_ID = 'ldglmpphcjdamkmfpknojafocpihhbal';
+      var params = new URLSearchParams(window.location.search);
+      var raw = params.get('license_key') || params.get('key') || '';
+      var key = raw ? String(raw).split(',')[0].trim() : '';
+      var extid = (params.get('extid') || PRODUCTION_EXT_ID).trim();
 
-      const loadingEl = document.getElementById('loading');
-      const successEl = document.getElementById('success');
-      const manualEl = document.getElementById('manual');
-      const licenseKeyEl = document.getElementById('licenseKey');
-      const copyBtn = document.getElementById('copyBtn');
-      const extensionInstructions = document.getElementById('extensionInstructions');
+      var loadingEl = document.getElementById('loading');
+      var successEl = document.getElementById('success');
+      var manualEl = document.getElementById('manual');
+      var licenseKeyEl = document.getElementById('licenseKey');
+      var copyBtn = document.getElementById('copyBtn');
+      var manualIntro = document.getElementById('manualIntro');
 
-      function showManual() {
+      function showManual(message) {
         loadingEl.classList.add('hidden');
         manualEl.classList.remove('hidden');
-        licenseKeyEl.textContent = key;
-        if (extid) {
-          extensionInstructions.classList.remove('hidden');
-        } else {
-          extensionInstructions.classList.add('hidden');
+        licenseKeyEl.textContent = key || '(no key in URL — check your purchase email)';
+        if (message && manualIntro) {
+          manualIntro.textContent = message;
         }
       }
 
       function showSuccess() {
         loadingEl.classList.add('hidden');
         successEl.classList.remove('hidden');
-        setTimeout(() => {
+        setTimeout(function() {
           window.location.href = 'https://donbrico.net/';
         }, 4000);
       }
 
-      function copyToClipboard() {
-        navigator.clipboard.writeText(key).then(() => {
-          const originalText = copyBtn.innerHTML;
+      copyBtn.addEventListener('click', function() {
+        var toCopy = key || licenseKeyEl.textContent || '';
+        navigator.clipboard.writeText(toCopy).then(function() {
+          var original = copyBtn.innerHTML;
           copyBtn.innerHTML = '✓ Copied';
-          setTimeout(() => {
-            copyBtn.innerHTML = originalText;
-          }, 2000);
-        }).catch(err => {
+          setTimeout(function() { copyBtn.innerHTML = original; }, 2000);
+        }).catch(function(err) {
           console.error('Copy failed:', err);
         });
-      }
-
-      copyBtn.addEventListener('click', copyToClipboard);
+      });
 
       if (!key) {
+        showManual('Payment completed, but no license key was found in this link. Use the key from your receipt email, or open the extension Premium tab.');
+        return;
+      }
+
+      if (typeof chrome === 'undefined' || !chrome.runtime || !chrome.runtime.sendMessage) {
         showManual();
         return;
       }
 
-      if (extid) {
-        try {
-          chrome.runtime.sendMessage(extid, { type: 'LICENSE_ACTIVATED', key }, (response) => {
-            if (chrome.runtime.lastError) {
-              console.warn('Extension not reachable:', chrome.runtime.lastError.message);
-              showManual();
-            } else {
-              showSuccess();
-            }
-          });
-        } catch (e) {
-          console.warn('chrome.runtime not available:', e);
-          showManual();
-        }
-      } else {
+      try {
+        chrome.runtime.sendMessage(extid, { type: 'LICENSE_ACTIVATED', key: key }, function(response) {
+          if (chrome.runtime.lastError) {
+            console.warn('Extension not reachable:', chrome.runtime.lastError.message);
+            showManual('The extension could not be reached from this page (install Donbrico, or use a supported Chromium browser). Activate manually below.');
+            return;
+          }
+          if (response && response.success) {
+            showSuccess();
+          } else {
+            showManual((response && response.error) ? String(response.error) : 'Activation failed. Try pasting the key in the extension Premium tab.');
+          }
+        });
+      } catch (e) {
+        console.warn('sendMessage failed:', e);
         showManual();
       }
     })();
