@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activate License — Donbrico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #0a0a0f;
+      --text-color: #e8e8f0;
+      --accent: #6366f1;
+      --muted: #a0a0b0;
+      --border: #1a1a1f;
+      --success: #10b981;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--spacing-md);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.75rem;
+      margin-bottom: var(--spacing-md);
+      color: var(--text-color);
+    }
+
+    p {
+      color: var(--muted);
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .spinner {
+      width: 48px;
+      height: 48px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: var(--spacing-lg) auto;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .key-box {
+      background: var(--border);
+      border: 1px solid #2a2a2f;
+      border-radius: 8px;
+      padding: var(--spacing-md);
+      margin: var(--spacing-lg) 0;
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .key-text {
+      font-family: 'Courier New', monospace;
+      font-size: 0.9rem;
+      color: var(--text-color);
+      word-break: break-all;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: var(--spacing-sm) var(--spacing-md);
+      background: var(--accent);
+      color: var(--bg-color);
+      border: none;
+      border-radius: 8px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: var(--transition);
+      min-height: 44px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #5a5fcf;
+      transform: translateY(-1px);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    .success {
+      color: var(--success);
+      font-weight: 600;
+    }
+
+    .instructions {
+      background: rgba(99, 102, 241, 0.1);
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      padding: var(--spacing-md);
+      margin-top: var(--spacing-md);
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    .instructions h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      margin-bottom: var(--spacing-sm);
+      color: var(--accent);
+    }
+
+    .instructions ol {
+      margin-left: var(--spacing-md);
+      color: var(--muted);
+    }
+
+    .instructions li {
+      margin-bottom: var(--spacing-xs);
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .spacer {
+      height: var(--spacing-lg);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="loading">
+      <h1>Activating License</h1>
+      <div class="spinner"></div>
+      <p>Please wait while we activate your Pro license...</p>
+    </div>
+
+    <div id="success" class="hidden">
+      <h1 class="success">Pro activated!</h1>
+      <p>You can close this tab.</p>
+    </div>
+
+    <div id="manual" class="hidden">
+      <h1>Activate Your License</h1>
+      <p>Copy the key below and paste it into the Donbrico extension's activation dialog.</p>
+
+      <div class="key-box">
+        <span id="licenseKey" class="key-text"></span>
+        <button id="copyBtn" class="btn" title="Copy to clipboard">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          Copy
+        </button>
+      </div>
+
+      <div id="extensionInstructions" class="instructions hidden">
+        <h3>How to activate:</h3>
+        <ol>
+          <li>Click the Donbrico extension icon in your browser toolbar</li>
+          <li>Go to Settings or the activation tab</li>
+          <li>Paste your license key</li>
+          <li>Click "Activate"</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const key = params.get('key') || '';
+      const extid = params.get('extid') || '';
+
+      const loadingEl = document.getElementById('loading');
+      const successEl = document.getElementById('success');
+      const manualEl = document.getElementById('manual');
+      const licenseKeyEl = document.getElementById('licenseKey');
+      const copyBtn = document.getElementById('copyBtn');
+      const extensionInstructions = document.getElementById('extensionInstructions');
+
+      function showManual() {
+        loadingEl.classList.add('hidden');
+        manualEl.classList.remove('hidden');
+        licenseKeyEl.textContent = key;
+        if (extid) {
+          extensionInstructions.classList.remove('hidden');
+        } else {
+          extensionInstructions.classList.add('hidden');
+        }
+      }
+
+      function showSuccess() {
+        loadingEl.classList.add('hidden');
+        successEl.classList.remove('hidden');
+        setTimeout(() => {
+          window.location.href = 'https://donbrico.net/';
+        }, 4000);
+      }
+
+      function copyToClipboard() {
+        navigator.clipboard.writeText(key).then(() => {
+          const originalText = copyBtn.innerHTML;
+          copyBtn.innerHTML = '✓ Copied';
+          setTimeout(() => {
+            copyBtn.innerHTML = originalText;
+          }, 2000);
+        }).catch(err => {
+          console.error('Copy failed:', err);
+        });
+      }
+
+      copyBtn.addEventListener('click', copyToClipboard);
+
+      if (!key) {
+        showManual();
+        return;
+      }
+
+      if (extid) {
+        try {
+          chrome.runtime.sendMessage(extid, { type: 'LICENSE_ACTIVATED', key }, (response) => {
+            if (chrome.runtime.lastError) {
+              console.warn('Extension not reachable:', chrome.runtime.lastError.message);
+              showManual();
+            } else {
+              showSuccess();
+            }
+          });
+        } catch (e) {
+          console.warn('chrome.runtime not available:', e);
+          showManual();
+        }
+      } else {
+        showManual();
+      }
+    })();
+  </script>
+</body>
+</html>
