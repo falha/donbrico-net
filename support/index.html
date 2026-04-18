@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support — Donbrico</title>
-    <meta name="description" content="Get support for Donbrico Autofill AI and Null Carrier. Contact us at support@donbrico.net.">
-    <meta property="og:title" content="Support — Donbrico">
-    <meta property="og:description" content="Get support for Donbrico Autofill AI and Null Carrier. Contact us at support@donbrico.net.">
+    <title data-i18n="support.page.title">Support — Donbrico</title>
+    <meta name="description" data-i18n="support.page.description" content="Get support for Donbrico Autofill AI and Null Carrier. Contact us at support@donbrico.net.">
+    <meta property="og:title" data-i18n="support.page.ogTitle" content="Support — Donbrico">
+    <meta property="og:description" data-i18n="support.page.ogDescription" content="Get support for Donbrico Autofill AI and Null Carrier. Contact us at support@donbrico.net.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://donbrico.net/support/">
     <link rel="stylesheet" href="../css/style.css">
@@ -14,92 +14,94 @@
     <meta name="theme-color" content="#0a0a0f">
 </head>
 <body>
-    <nav class="nav">
-        <div class="container">
-            <a href="../" class="logo">Donbrico Studio</a>
-            <input type="checkbox" id="nav-toggle">
-            <label for="nav-toggle" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <ul class="nav-links">
-                <li><a href="../">Home</a></li>
-                <li><a href="../autofill-ai/">Autofill AI</a></li>
-                <li><a href="../null-carrier/">Null Carrier</a></li>
-                <li><a href="../privacy-policy/">Privacy Policy</a></li>
-                <li><a href="./">Support</a></li>
-            </ul>
-        </div>
-    </nav>
+     <nav class="nav">
+         <div class="container">
+             <a href="../" class="logo" data-i18n="app.name">Donbrico Studio</a>
+             <input type="checkbox" id="nav-toggle">
+             <label for="nav-toggle" class="hamburger">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+             </label>
+             <ul class="nav-links">
+                 <li><a href="../" data-i18n="nav.home">Home</a></li>
+                 <li><a href="../autofill-ai/" data-i18n="nav.autofillAi">Autofill AI</a></li>
+                 <li><a href="../null-carrier/" data-i18n="nav.nullCarrier">Null Carrier</a></li>
+                 <li><a href="../privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a></li>
+                 <li><a href="./" class="active" data-i18n="nav.support">Support</a></li>
+             </ul>
+         </div>
+     </nav>
 
-    <section style="padding: var(--spacing-xl) 0;">
-        <div class="container">
-            <h1 class="section-title">Support</h1>
-            <p class="section-subtitle">We're a solo operation. We read every message.</p>
-        </div>
-    </section>
+      <section class="hero">
+          <div class="container">
+              <p class="eyebrow" data-i18n="support.hero.eyebrow">SUPPORT</p>
+              <h1 data-i18n="support.sectionTitle">Support</h1>
+              <p class="subtitle" data-i18n="support.subtitle">We're a solo operation. We read every message.</p>
+          </div>
+      </section>
 
-    <section style="padding: var(--spacing-xl) 0;">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Fastest way to reach us:</p>
-            <a href="mailto:support@donbrico.net" class="btn btn-outline" style="font-size: 1.25rem; padding: var(--spacing-lg) var(--spacing-xl);">support@donbrico.net</a>
-            <p>We typically respond within 1–2 business days.</p>
-        </div>
-    </section>
+     <section style="padding: var(--spacing-xl) 0;">
+         <div class="container">
+             <h2 data-i18n="support.contact.sectionTitle">Contact</h2>
+             <p data-i18n="support.contact.fastestWay">Fastest way to reach us:</p>
+             <a href="mailto:support@donbrico.net" class="btn btn-outline" style="font-size: 1.25rem; padding: var(--spacing-lg) var(--spacing-xl);" data-i18n="support.contact.email">support@donbrico.net</a>
+             <p data-i18n="support.contact.responseTime">We typically respond within 1–2 business days.</p>
+         </div>
+     </section>
 
-    <section style="padding: var(--spacing-xl) 0;">
-        <div class="container">
-            <h2>Donbrico Autofill AI Support</h2>
-            <h3>Common Issues</h3>
-            <details style="margin-bottom: var(--spacing-md);">
-                <summary style="cursor: pointer; font-weight: 600;">The extension button isn't appearing on a form</summary>
-                <p>Some websites use JavaScript to render forms dynamically. Try scrolling down to trigger the page to fully load, then look for the ⚡ button. If it still doesn't appear, email us with the URL of the site.</p>
-            </details>
-            <details style="margin-bottom: var(--spacing-md);">
-                <summary style="cursor: pointer; font-weight: 600;">Gemini Nano says "Not supported on this device"</summary>
-                <p>Gemini Nano requires Chrome 127+ and sufficient device RAM (typically 8GB+). You can still use the extension by adding your own API key in Settings (Bring Your Own Key). OpenAI, Anthropic, Groq, and OpenRouter are all supported.</p>
-            </details>
-            <details style="margin-bottom: var(--spacing-md);">
-                <summary style="cursor: pointer; font-weight: 600;">My profile isn't saving</summary>
-                <p>Go to the extension's Options page (right-click extension icon → Options). Make sure you've clicked Save after entering your profile. If it still doesn't save, try the Troubleshoot button on the Options page.</p>
-            </details>
-            <details style="margin-bottom: var(--spacing-md);">
-                <summary style="cursor: pointer; font-weight: 600;">The AI-generated answer doesn't sound like me</summary>
-                <p>The AI uses your profile to generate answers. Fill in the Bio and Experience fields with detail — the more context you give it, the better the output. You can always edit any answer before submitting.</p>
-            </details>
-            <details style="margin-bottom: var(--spacing-md);">
-                <summary style="cursor: pointer; font-weight: 600;">How do I uninstall and remove my data?</summary>
-                <p>In Chrome, go to chrome://extensions, find Donbrico Autofill AI, click Remove. All your profile data will be deleted automatically.</p>
-            </details>
-            <details style="margin-bottom: var(--spacing-md);">
-                <summary style="cursor: pointer; font-weight: 600;">How do I report a bug or request a feature?</summary>
-                <p>Email support@donbrico.net with "Bug:" or "Feature Request:" at the start of your subject line.</p>
-            </details>
-        </div>
-    </section>
+     <section style="padding: var(--spacing-xl) 0;">
+         <div class="container">
+             <h2 data-i18n="support.autofill.sectionTitle">Donbrico Autofill AI Support</h2>
+             <h3 data-i18n="support.autofill.subtitle">Common Issues</h3>
+             <details style="margin-bottom: var(--spacing-md);">
+                 <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.autofill.q1.question">The extension button isn't appearing on a form</summary>
+                 <p data-i18n="support.autofill.q1.answer">Some websites use JavaScript to render forms dynamically. Try scrolling down to trigger the page to fully load, then look for the ⚡ button. If it still doesn't appear, email us with the URL of the site.</p>
+             </details>
+             <details style="margin-bottom: var(--spacing-md);">
+                 <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.autofill.q2.question">Gemini Nano says "Not supported on this device"</summary>
+                 <p data-i18n="support.autofill.q2.answer">Gemini Nano requires Chrome 127+ and sufficient device RAM (typically 8GB+). You can still use the extension by adding your own API key in Settings (Bring Your Own Key). OpenAI, Anthropic, Groq, and OpenRouter are all supported.</p>
+             </details>
+             <details style="margin-bottom: var(--spacing-md);">
+                 <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.autofill.q3.question">My profile isn't saving</summary>
+                 <p data-i18n="support.autofill.q3.answer">Go to the extension's Options page (right-click extension icon → Options). Make sure you've clicked Save after entering your profile. If it still doesn't save, try the Troubleshoot button on the Options page.</p>
+             </details>
+             <details style="margin-bottom: var(--spacing-md);">
+                 <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.autofill.q4.question">The AI-generated answer doesn't sound like me</summary>
+                 <p data-i18n="support.autofill.q4.answer">The AI uses your profile to generate answers. Fill in the Bio and Experience fields with detail — the more context you give it, the better the output. You can always edit any answer before submitting.</p>
+             </details>
+             <details style="margin-bottom: var(--spacing-md);">
+                 <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.autofill.q5.question">How do I uninstall and remove my data?</summary>
+                 <p data-i18n="support.autofill.q5.answer">In Chrome, go to chrome://extensions, find Donbrico Autofill AI, click Remove. All your profile data will be deleted automatically.</p>
+             </details>
+             <details style="margin-bottom: var(--spacing-md);">
+                 <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.autofill.q6.question">How do I report a bug or request a feature?</summary>
+                 <p data-i18n="support.autofill.q6.answer">Email support@donbrico.net with "Bug:" or "Feature Request:" at the start of your subject line.</p>
+             </details>
+         </div>
+     </section>
 
-    <section style="padding: var(--spacing-xl) 0;">
-        <div class="container">
-            <h2>Null Carrier Support</h2>
-            <p>For issues with Null Carrier on Steam, you can reach us through Steam's support system or directly at support@donbrico.net.</p>
-            <p>Please include your Steam username and a description of the issue.</p>
-        </div>
-    </section>
+     <section style="padding: var(--spacing-xl) 0;">
+         <div class="container">
+             <h2 data-i18n="support.nullCarrier.sectionTitle">Null Carrier Support</h2>
+             <p data-i18n="support.nullCarrier.paragraph">For issues with Null Carrier on Steam, you can reach us through Steam's support system or directly at support@donbrico.net.</p>
+             <p data-i18n="support.nullCarrier.steamNote">Please include your Steam username and a description of the issue.</p>
+         </div>
+     </section>
 
-    <section style="padding: var(--spacing-xl) 0;">
-        <div class="container">
-            <h2>Response time policy</h2>
-            <p>Donbrico is a solo development operation. Support is provided on a best-effort basis. We aim to respond within 1–2 business days. Critical extension bugs are prioritized.</p>
-        </div>
-    </section>
+     <section style="padding: var(--spacing-xl) 0;">
+         <div class="container">
+             <h2 data-i18n="support.responseTime.sectionTitle">Response time policy</h2>
+             <p data-i18n="support.responseTime.paragraph">Donbrico is a solo development operation. Support is provided on a best-effort basis. We aim to respond within 1–2 business days. Critical extension bugs are prioritized.</p>
+         </div>
+     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>© 2026 Donbrico Studio. All rights reserved.</p>
-            <p><a href="../privacy-policy/">Privacy Policy</a> | <a href="./">Support</a></p>
-        </div>
-    </footer>
-</body>
-</html>
+     <footer class="footer">
+         <div class="container">
+             <p data-i18n="app.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+             <p><a href="../privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a> | <a href="./" data-i18n="nav.support">Support</a></p>
+         </div>
+     </footer>
+     <script src="../js/i18n.js" defer></script>
+ </body>
+ </html>

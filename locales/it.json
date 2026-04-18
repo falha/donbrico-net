@@ -1,0 +1,371 @@
+{
+  "app": {
+    "name": "Donbrico Studio",
+    "copyright": "© 2026 Donbrico Studio. Tutti i diritti riservati.",
+    "builtBy": "Realizzato da uno sviluppatore solitario."
+  },
+  "nav": {
+    "home": "Home",
+    "autofillAi": "Autofill AI",
+    "nullCarrier": "Null Carrier",
+    "privacyPolicy": "Informativa sulla privacy",
+    "support": "Supporto"
+  },
+  "home": {
+    "page": {
+      "title": "Donbrico — Progetti di un indie solitario",
+      "description": "donbrico.net — casa di Donbrico Autofill AI e Null Carrier. Strumenti e giochi costruiti da uno sviluppatore solitario.",
+      "ogTitle": "Donbrico — Progetti di un indie solitario",
+      "ogDescription": "donbrico.net — casa di Donbrico Autofill AI e Null Carrier. Strumenti e giochi costruiti da uno sviluppatore solitario."
+    },
+    "hero": {
+      "eyebrow": "SVILUPPATORE INDIPENDENTE",
+      "title": "Strumenti che funzionano.<br>Giochi che pensano.",
+      "subtitle": "Costruisco estensioni browser e giochi puzzle. Nessun VC. Nessuna squadra. Solo codice."
+    },
+    "projects": {
+      "sectionTitle": "PROGETTI",
+      "autofillAi": {
+        "badgeChrome": "ESTENSIONE CHROME",
+        "badgeFree": "GRATIS",
+        "title": "Donbrico Autofill AI",
+        "description": "Riempitore di formulari con IA per qualsiasi sito web. Riempie dal tuo profilo istantaneamente. Usa Gemini Nano — i tuoi dati non lasciano mai il tuo browser.",
+        "techStack": "[Estensione Chrome] [IA] [Privacy-first] [Gratis]",
+        "button": "Scopri di più →"
+      },
+      "nullCarrier": {
+        "badgeGame": "GIOCO STEAM",
+        "badgeComingSoon": "PROSSIMAMENTE",
+        "title": "Null Carrier",
+        "description": "Un gioco puzzle di ricostruzione dei segnali. Operi una rete d'ascolto dello spazio profondo. Sintonizza le frequenze, decodifica le trasmissioni, metti in discussione ciò che ti ordina il Comando.",
+        "techStack": "[Puzzle] [Atmosferico] [Steam] [Indie]",
+        "button": "Scopri di più →"
+      }
+    },
+    "buttons": {
+      "seeAutofillAi": "Vedi Autofill AI →",
+      "seeNullCarrier": "Vedi Null Carrier →"
+    },
+    "footer": {
+      "links": "Informativa sulla privacy | Supporto"
+    }
+  },
+  "autofillAi": {
+    "page": {
+      "title": "Donbrico Autofill AI — Riempitore di Formulari con IA per Chrome",
+      "description": "Compila qualsiasi modulo web istantaneamente con l'IA. Funziona su candidature di lavoro, moduli di contatto e altro. Usa Gemini Nano — i tuoi dati non lasciano mai il tuo browser. Estensione Chrome gratuita.",
+      "ogTitle": "Donbrico Autofill AI — Riempitore di Formulari con IA per Chrome",
+      "ogDescription": "Compila qualsiasi modulo web istantaneamente con l'IA. Funziona su candidature di lavoro, moduli di contatto e altro. Usa Gemini Nano — i tuoi dati non lasciano mai il tuo browser. Estensione Chrome gratuita."
+    },
+    "hero": {
+      "eyebrow": "ESTENSIONE CHROME",
+      "title": "Compila qualsiasi modulo.<br>Con un clic.",
+      "subtitle": "Donbrico Autofill AI rileva i moduli su qualsiasi sito web, compila le tue informazioni istantaneamente e genera risposte basate su IA per i campi di testo aperti — completamente all'interno del tuo browser.",
+      "disclaimer": "🔒 I tuoi dati non lasciano mai il tuo browser · Alimentato da Gemini Nano · Nessun account richiesto",
+      "buttonPrimary": "Aggiungi a Chrome — Gratis",
+      "buttonSecondary": "Vedi come funziona ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "Come Funziona",
+      "step1": {
+        "title": "1. Salva il tuo profilo",
+        "description": "Inserisci il tuo nome, email, LinkedIn, bio, competenze. Memorizzato localmente. Sincronizzato attraverso il tuo Chrome."
+      },
+      "step2": {
+        "title": "2. Visita qualsiasi modulo",
+        "description": "L'estensione rileva automaticamente i moduli su qualsiasi pagina. Un pulsante ⚡ appare nella parte superiore del modulo."
+      },
+      "step3": {
+        "title": "3. Un clic, fatto",
+        "description": "Fai clic sul pulsante. I campi standard vengono riempiti istantaneamente. L'IA genera risposte per le domande aperte."
+      }
+    },
+    "features": {
+      "sectionTitle": "Costruito diversamente.",
+      "worksEverywhere": {
+        "title": "Funziona ovunque",
+        "description": "Qualsiasi sito web con un modulo. Candidature di lavoro, moduli di contatto, iscrizioni."
+      },
+      "private": {
+        "title": "100% privato",
+        "description": "Gemini Nano funziona all'interno di Chrome. Il tuo profilo non raggiunge mai alcun server."
+      },
+      "aiHardParts": {
+        "title": "IA per le parti difficili",
+        "description": "Campi di testo aperti come le lettere di presentazione? L'IA le scrive dal tuo profilo."
+      },
+      "bringYourOwnKey": {
+        "title": "Porta la tua chiave",
+        "description": "Usa OpenAI, Anthropic, Groq o OpenRouter se preferisci."
+      },
+      "noAccount": {
+        "title": "Nessun account necessario",
+        "description": "Nessuna iscrizione. Nessuna email. Installa e usa semplicemente."
+      },
+      "editable": {
+        "title": "Modificabile prima dell'invio",
+        "description": "Rivedi e modifica ogni risposta generata dall'IA prima di inviare il modulo."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Prezzi semplici.",
+      "autofillAi": {
+        "free": {
+          "title": "Gratis — per sempre",
+          "price": "$0",
+          "features": {
+            "f1": "✅ Gemini Nano + Bring Your Own Key IA (chiamate illimitate)",
+            "f2": "✅ Riempimento base dei campi (nome, email, telefono, ecc.) — sempre gratis",
+            "f3": "✅ Campi di testo lunghi — dati grezzi del profilo incollati così come sono",
+            "f4": "✅ Risposte brevi IA — GRATIS quando output ≤ 75 parole",
+            "f5": "✅ 1 profilo salvato"
+          },
+          "button": "Aggiungi a Chrome"
+        },
+        "monthly": {
+          "title": "Mensile",
+          "price": "$5.99/mese",
+          "features": {
+            "header": "Tutto del Gratis, INOLTRE:",
+            "f1": "✅ Output di parole IA illimitato",
+            "f2": "✅ Generatore di Lettere di Presentazione",
+            "f3": "✅ Riscrittura Intelligente",
+            "f4": "✅ 10 profili salvati"
+          },
+          "button": "Ottieni Mensile"
+        },
+        "yearly": {
+          "title": "Annuale",
+          "price": "$47/anno",
+          "subtitle": "~$3.92/mese",
+          "features": {
+            "header": "Tutto del Mensile",
+            "f1": "✅ Stesse funzioni, prezzo migliore"
+          },
+          "button": "Ottieni Annuale"
+        },
+        "lifetime": {
+          "title": "Early Adopter a Vita",
+          "price": "$59.99 pagamento unico",
+          "features": {
+            "header": "Tutto del Mensile — per sempre",
+            "f1": "✅ Badge Early Adopter",
+            "f2": "✅ Tutte le future funzioni Pro gratis",
+            "f3": "❌ LIMITATO: primi 100 acquirenti"
+          },
+          "button": "Ottieni a Vita"
+        }
+      }
+    },
+    "setupGuides": {
+      "sectionTitle": "Guide di Configurazione",
+      "subtitle": "Scegli come vuoi alimentare l'IA. Entrambe le opzioni sono gratuite per iniziare.",
+      "geminiNano": {
+        "title": "Gemini Nano",
+        "description": "Funziona completamente nel tuo browser. Non è necessaria una chiave API. 100% privato. Richiede Chrome 127+ con 22 GB di spazio di archiviazione libero.",
+        "button": "Vedi guida alla configurazione →"
+      },
+      "bringYourOwnKey": {
+        "title": "Porta la Tua Propria Chiave API",
+        "description": "Usa la tua chiave da OpenAI, Anthropic, Groq o OpenRouter. Funziona su qualsiasi dispositivo. Paga solo per quello che usi.",
+        "button": "Vedi guida alla configurazione →"
+      }
+    },
+    "faq": {
+      "sectionTitle": "FAQ",
+      "q1": {
+        "question": "Funziona su siti di lavoro come LinkedIn, Indeed, Greenhouse?",
+        "answer": "Sì. Rileva i moduli su qualsiasi sito web, inclusi i principali portali di lavoro e sistemi ATS."
+      },
+      "q2": {
+        "question": "I dati del mio profilo sono privati?",
+        "answer": "Completamente. Il tuo profilo è memorizzato nell'archiviazione locale di Chrome sul tuo dispositivo. Tuttavia, quando si utilizza l'IA per generare risposte, il contesto del modulo e i dati pertinenti del profilo vengono inviati al modello IA. Se usi la tua chiave API (OpenAI, Anthropic, Groq, ecc.), tali dati vengono inviati a loro. Se usi Gemini Nano, tutto rimane locale nel tuo browser."
+      },
+      "q3": {
+        "question": "Cos'è Gemini Nano?",
+        "answer": "Gemini Nano è il modello di IA di Google integrato direttamente in Chrome (versione 127+). Funziona sul tuo dispositivo, il che significa risposte IA senza che nessun dato lasci il tuo browser."
+      },
+      "q4": {
+        "question": "Ho bisogno di una chiave API?",
+        "answer": "No. La versione gratuita usa Gemini Nano che non richiede chiavi. Se il tuo dispositivo non lo supporta, puoi opzionalmente aggiungere la tua chiave da OpenAI, Anthropic, Groq o OpenRouter."
+      },
+      "q5": {
+        "question": "Quando sarà disponibile?",
+        "answer": "Attualmente in sviluppo finale. Aggiungilo gratuitamente quando verrà lanciato sul Chrome Web Store."
+      }
+    },
+    "footer": {
+      "links": "Informativa sulla privacy | Supporto"
+    }
+  },
+  "nullCarrier": {
+    "page": {
+      "title": "Null Carrier — Gioco di Puzzle di Segnali Spaziali | Steam",
+      "description": "Operi una rete d'ascolto dello spazio profondo. Sintonizzi le frequenze, ricostruisci i segnali, metti in discussione i tuoi ordini. Un gioco puzzle atmosferico minimalista in arrivo su Steam.",
+      "ogTitle": "Null Carrier — Gioco di Puzzle di Segnali Spaziali | Steam",
+      "ogDescription": "Operi una rete d'ascolto dello spazio profondo. Sintonizzi le frequenze, ricostruisci i segnali, metti in discussione i tuoi ordini. Un gioco puzzle atmosferico minimalista in arrivo su Steam."
+    },
+    "hero": {
+      "title": "Segnale ricevuto.<br>Sorgente sconosciuta.",
+      "subtitle": "Tu operi la rete d'ascolto dello spazio profondo. Sintonizza le frequenze. Ricostruisci le trasmissioni. Classifica per il Comando. Non fare domande.",
+      "terminal": {
+        "channel": "CANALE: 7734-ALPHA",
+        "timestamp": "TIMESTAMP: 0312.88.44",
+        "bandFreq": "FREQ BANDA: 847.3 MHz",
+        "status": "STATUS: ████ RICOSTRUENDO..."
+      },
+      "disclaimer": "PC · Prossimamente · Sviluppato in solitaria",
+      "button": "Aggiungi alla lista dei desideri Steam →"
+    },
+    "section1": {
+      "title": "Uno schermo. Dubbio infinito.",
+      "paragraph1": "Ogni turno inizia allo stesso modo. Arriva un segnale. Sintonizzi la tua frequenza portante e la soglia di rumore finché l'onda non si chiarisce. Ricostruisci la trasmissione — un pattern di pixel che potrebbe significare qualcosa. Lo classifichi e lo invii al Comando.",
+      "paragraph2": "Il Comando riconosce. Arriva un altro segnale.",
+      "paragraph3": "Al turno 12, qualcosa è leggermente fuori posto. Al turno 23, noti che le coordinate non tornano. Al turno 40, hai smesso di fidarti completamente delle letture."
+    },
+    "mechanics": {
+      "sectionTitle": "Meccaniche",
+      "card1": {
+        "title": "Sintonizzare per Ricevere",
+        "description": "Regola i cursori di frequenza portante e soglia di rumore. Trova la zona di blocco dove la chiarezza raggiunge il picco. Il segnale è lì — devi solo trovarlo."
+      },
+      "card2": {
+        "title": "Ricostruire il Pattern",
+        "description": "Una matrice di pixel emerge dal rumore mentre la tua sintonizzazione migliora. Ogni cella si blocca quando la chiarezza è abbastanza alta."
+      },
+      "card3": {
+        "title": "Classificare per il Comando",
+        "description": "Invia la tua ricostruzione. Il Comando risponde. Cripticamente. Non saprai se avevi ragione. È il punto."
+      },
+      "card4": {
+        "title": "Leggere Tra i Turni",
+        "description": "Nessun tutorial. Nessun obiettivo. Solo metadati, coordinate, timestamp e pattern. La storia è solo lì se la cerchi."
+      }
+    },
+    "philosophy": {
+      "sectionTitle": "Costruito per sembrare uno strumento reale.",
+      "subtitle": "Niente 3D. Niente cutscene. Niente dialoghi. L'intero gioco si svolge su un singolo schermo che sembra e si sente come hardware di analisi del segnale reale. Ogni elemento visivo si guadagna il suo posto.",
+      "tagline": "Minimalismo radicale · UI industriale · Narrativa guidata dai sistemi"
+    },
+    "steam": {
+      "sectionTitle": "In arrivo su Steam",
+      "description": "Aggiungi Null Carrier alla tua lista dei desideri su Steam per essere notificato al lancio.",
+      "button": "Aggiungi alla lista dei desideri Steam →"
+    },
+    "footer": {
+      "links": "Informativa sulla privacy | Supporto"
+    }
+  },
+  "support": {
+    "page": {
+      "title": "Supporto — Donbrico",
+      "description": "Ottieni supporto per Donbrico Autofill AI e Null Carrier. Contattaci a support@donbrico.net.",
+      "ogTitle": "Supporto — Donbrico",
+      "ogDescription": "Ottieni supporto per Donbrico Autofill AI e Null Carrier. Contattaci a support@donbrico.net."
+    },
+    "sectionTitle": "Supporto",
+    "subtitle": "Siamo un'operazione in solitaria. Leggiamo ogni messaggio.",
+    "contact": {
+      "sectionTitle": "Contatto",
+      "fastestWay": "Modo più veloce per raggiungerci:",
+      "email": "support@donbrico.net",
+      "responseTime": "Rispondiamo tipicamente entro 1–2 giorni lavorativi."
+    },
+    "autofill": {
+      "sectionTitle": "Supporto Donbrico Autofill AI",
+      "subtitle": "Problemi Comuni",
+      "q1": {
+        "question": "Il pulsante dell'estensione non appare su un modulo",
+        "answer": "Alcuni siti web utilizzano JavaScript per rendere i moduli dinamicamente. Prova a scorrere verso il basso per far caricare completamente la pagina, poi cerca il pulsante ⚡. Se non appare ancora, inviaci l'URL del sito via email."
+      },
+      "q2": {
+        "question": "Gemini Nano dice \"Non supportato su questo dispositivo\"",
+        "answer": "Gemini Nano richiede Chrome 127+ e RAM sufficiente sul dispositivo (di solito 8GB+). Puoi comunque usare l'estensione aggiungendo la tua chiave API personale in Impostazioni (Bring Your Own Key). OpenAI, Anthropic, Groq e OpenRouter sono tutti supportati."
+      },
+      "q3": {
+        "question": "Il mio profilo non si salva",
+        "answer": "Vai alla pagina Opzioni dell'estensione (clic destro sull'icona dell'estensione → Opzioni). Assicurati di aver cliccato Salva dopo aver inserito il tuo profilo. Se non si salva ancora, prova il pulsante Risoluzione Problemi nella pagina Opzioni."
+      },
+      "q4": {
+        "question": "La risposta generata dall'IA non mi assomiglia",
+        "answer": "L'IA usa il tuo profilo per generare risposte. Compila i campi Bio ed Esperienza con dettagli — più contesto dai, meglio è. Puoi sempre modificare qualsiasi risposta prima dell'invio."
+      },
+      "q5": {
+        "question": "Come disinstallo e rimuovo i miei dati?",
+        "answer": "In Chrome, vai a chrome://extensions, trova Donbrico Autofill AI, clicca Rimuovi. Tutti i dati del tuo profilo verranno automaticamente cancellati."
+      },
+      "q6": {
+        "question": "Come segnalo un bug o richiedo una funzione?",
+        "answer": "Invia una email a support@donbrico.net con \"Bug:\" o \"Feature Request:\" all'inizio dell'oggetto."
+      }
+    },
+    "nullCarrier": {
+      "sectionTitle": "Supporto Null Carrier",
+      "paragraph": "Per problemi con Null Carrier su Steam, puoi contattarci tramite il sistema di supporto Steam o direttamente a support@donbrico.net.",
+      "steamNote": "Si prega di includere il tuo nome utente Steam e una descrizione del problema."
+    },
+    "responseTime": {
+      "sectionTitle": "Politica dei tempi di risposta",
+      "paragraph": "Donbrico è un'operazione di sviluppo in solitaria. Il supporto è fornito al meglio delle nostre possibilità. Miriamo a rispondere entro 1–2 giorni lavorativi. Bug critici dell'estensione sono prioritari."
+    },
+    "footer": {
+      "links": "Informativa sulla privacy | Supporto"
+    }
+  },
+  "privacyPolicy": {
+    "page": {
+      "title": "Informativa sulla Privacy — Donbrico",
+      "description": "Informativa sulla privacy per donbrico.net, estensione Chrome Donbrico Autofill AI e Null Carrier.",
+      "ogTitle": "Informativa sulla Privacy — Donbrico",
+      "ogDescription": "Informativa sulla privacy per donbrico.net, estensione Chrome Donbrico Autofill AI e Null Carrier."
+    },
+    "sectionTitle": "Informativa sulla Privacy",
+    "lastUpdated": "Ultimo aggiornamento: Gennaio 2026",
+    "overview": {
+      "sectionTitle": "Panoramica",
+      "paragraph": "Donbrico si impegna a proteggere la tua privacy. L'estensione Chrome Donbrico Autofill AI memorizza tutti i dati localmente sul tuo dispositivo. Questo sito web non utilizza analytics, cookie o script di tracciamento."
+    },
+    "extension": {
+      "sectionTitle": "Donbrico Autofill AI — Estensione Chrome",
+      "whatWeCollect": {
+        "sectionTitle": "Quali dati raccogliamo",
+        "paragraph": "Nessuno. Tutti i dati del profilo sono memorizzati localmente nell'archiviazione di Chrome sul dispositivo dell'utente. Nessun dato viene trasmesso a server di proprietà o operati da Donbrico."
+      },
+      "howStored": {
+        "sectionTitle": "Come vengono memorizzati i dati del profilo",
+        "paragraph": "Chrome's storage.local API, mai chrome.storage.sync per dati sensibili. I dati rimangono sul dispositivo e non vengono mai caricati."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Provider IA di terze parti (Bring Your Own Key)",
+        "paragraph": "Se l'utente configura un provider Bring Your Own Key come OpenAI, Anthropic, Groq o OpenRouter, il contesto del modulo e i dati pertinenti del profilo vengono inviati a quel provider di terze parti. Donbrico non è responsabile delle pratiche sulla privacy di questi provider. Gemini Nano (l'IA predefinita) funziona completamente sul dispositivo."
+      },
+      "permissions": {
+        "sectionTitle": "Permessi utilizzati",
+        "paragraph": "storage (profilo locale), activeTab (rileva moduli sulla scheda corrente), scripting (inietta pulsante di riempimento automatico), host_permissions (funziona su qualsiasi sito web visitato dall'utente)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Cancellazione dei dati",
+        "paragraph": "Disinstallare l'estensione rimuove tutti i dati memorizzati."
+      }
+    },
+    "game": {
+      "sectionTitle": "Null Carrier — Gioco Steam",
+      "paragraph": "Il gioco stesso non raccoglie dati personali. La propria politica sulla privacy di Steam governa qualsiasi dato raccolto attraverso la piattaforma Steam."
+    },
+    "website": {
+      "sectionTitle": "Questo Sito Web (donbrico.net)",
+      "paragraph": "Nessuna analisi, nessun cookie, nessuno script di tracciamento. Il sito web è un sito HTML statico ospitato su Cloudflare Pages. Nessun modulo, nessun account utente, nessuna raccolta dati di alcun tipo."
+    },
+    "contact": {
+      "sectionTitle": "Contatto",
+      "paragraph": "Per domande sulla privacy, contatta: support@donbrico.net"
+    },
+    "changes": {
+      "sectionTitle": "Modifiche a Questa Informativa",
+      "paragraph": "Questa informativa può essere aggiornata. Controlla questa pagina per l'ultima versione."
+    },
+    "footer": {
+      "links": "Informativa sulla privacy | Supporto"
+    }
+  }
+}

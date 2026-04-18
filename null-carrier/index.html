@@ -3,139 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Null Carrier — Deep-Space Signal Puzzle Game | Steam</title>
-    <meta name="description" content="Operate a deep-space listening array. Tune frequencies, reconstruct signals, question your orders. A minimalist atmospheric puzzle game coming to Steam.">
-    <meta property="og:title" content="Null Carrier — Deep-Space Signal Puzzle Game | Steam">
-    <meta property="og:description" content="Operate a deep-space listening array. Tune frequencies, reconstruct signals, question your orders. A minimalist atmospheric puzzle game coming to Steam.">
+    <title data-i18n="nullCarrier.page.title">Null Carrier — Deep-Space Signal Puzzle Game | Steam</title>
+    <meta name="description" data-i18n="nullCarrier.page.description" content="Operate a deep-space listening array. Tune frequencies, reconstruct signals, question your orders. A minimalist atmospheric puzzle game coming to Steam.">
+    <meta property="og:title" data-i18n="nullCarrier.page.ogTitle" content="Null Carrier — Deep-Space Signal Puzzle Game | Steam">
+    <meta property="og:description" data-i18n="nullCarrier.page.ogDescription" content="Operate a deep-space listening array. Tune frequencies, reconstruct signals, question your orders. A minimalist atmospheric puzzle game coming to Steam.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://donbrico.net/null-carrier/">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
     <meta name="theme-color" content="#0a0a0f">
-    <style>
-        .hero {
-            background: #050508 !important;
-        }
-        .terminal {
-            background: rgba(0, 255, 136, 0.03);
-            border: 1px solid rgba(0, 255, 136, 0.2);
-            padding: var(--spacing-md);
-            border-radius: var(--border-radius);
-            font-family: 'Courier New', monospace;
-            color: #00ff88;
-            margin: var(--spacing-lg) auto;
-            max-width: 400px;
-            text-align: left;
-        }
-        .waveform {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(90deg, transparent, #00ff88, transparent);
-            animation: wave 3s infinite linear;
-        }
-        @keyframes wave {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
-        }
-    </style>
 </head>
 <body>
-    <nav class="nav">
-        <div class="container">
-            <a href="../" class="logo">Donbrico Studio</a>
-            <input type="checkbox" id="nav-toggle">
-            <label for="nav-toggle" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <ul class="nav-links">
-                <li><a href="../">Home</a></li>
-                <li><a href="../autofill-ai/">Autofill AI</a></li>
-                <li><a href="./" class="active">Null Carrier</a></li>
-                <li><a href="../privacy-policy/">Privacy Policy</a></li>
-                <li><a href="../support/">Support</a></li>
-            </ul>
-        </div>
-    </nav>
+     <nav class="nav">
+         <div class="container">
+             <a href="../" class="logo" data-i18n="app.name">Donbrico Studio</a>
+             <input type="checkbox" id="nav-toggle">
+             <label for="nav-toggle" class="hamburger">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+             </label>
+             <ul class="nav-links">
+                 <li><a href="../" data-i18n="nav.home">Home</a></li>
+                 <li><a href="../autofill-ai/" data-i18n="nav.autofillAi">Autofill AI</a></li>
+                 <li><a href="./" class="active" data-i18n="nav.nullCarrier">Null Carrier</a></li>
+                 <li><a href="../privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a></li>
+                 <li><a href="../support/" data-i18n="nav.support">Support</a></li>
+             </ul>
+         </div>
+     </nav>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Signal received.<br>Source unknown.</h1>
+     <section class="hero">
+         <div class="container">
+             <h1 data-i18n="nullCarrier.hero.title">Signal received.<br>Source unknown.</h1>
             <div class="terminal">
-                <pre>
-CHANNEL: 7734-ALPHA
-TIMESTAMP: 0312.88.44
-BAND FREQ: 847.3 MHz
-STATUS: ████ RECONSTRUCTING...
-                </pre>
+                <pre><span data-i18n="nullCarrier.hero.terminal.channel"></span>
+<span data-i18n="nullCarrier.hero.terminal.timestamp"></span>
+<span data-i18n="nullCarrier.hero.terminal.bandFreq"></span>
+<span data-i18n="nullCarrier.hero.terminal.status"></span></pre>
             </div>
-            <p class="subtitle">You work the deep-space listening array. Tune the frequencies. Reconstruct the transmissions. Classify for Command. Don't ask questions.</p>
-            <div class="buttons">
-                <a href="#" class="btn" style="background: #1b9e57; opacity: 0.5; cursor: not-allowed;" title="Coming Soon">Wishlist on Steam →</a>
-            </div>
-            <p class="text-muted">PC · Coming Soon · Developed solo</p>
-        </div>
-        <div class="waveform"></div>
-    </section>
+             <p class="subtitle" data-i18n="nullCarrier.hero.subtitle">You work the deep-space listening array. Tune the frequencies. Reconstruct the transmissions. Classify for Command. Don't ask questions.</p>
+             <div class="buttons">
+                 <a href="#" class="btn" style="background: #1b9e57; opacity: 0.5; cursor: not-allowed;" title="Coming Soon" data-i18n="nullCarrier.hero.button">Wishlist on Steam →</a>
+             </div>
+             <p class="text-muted" data-i18n="nullCarrier.hero.disclaimer">PC · Coming Soon · Developed solo</p>
+         </div>
+         <div class="waveform"></div>
+     </section>
 
-    <section style="padding: var(--spacing-xl) 0;">
-        <div class="container">
-            <h2 class="section-title">One screen. Infinite doubt.</h2>
-            <p>Every shift begins the same way. A signal arrives. You tune your carrier frequency and noise gate until the waveform clears. You reconstruct the transmission — a pixel pattern that might mean something. You classify it and send it to Command.</p>
-            <p>Command acknowledges. Another signal arrives.</p>
-            <p>At shift 12, something is slightly off. At shift 23, you notice the coordinates don't add up. By shift 40, you've stopped trusting the readouts entirely.</p>
-        </div>
-    </section>
+     <section style="padding: var(--spacing-xl) 0;">
+         <div class="container">
+             <h2 class="section-title" data-i18n="nullCarrier.section1.title">One screen. Infinite doubt.</h2>
+             <p data-i18n="nullCarrier.section1.paragraph1">Every shift begins the same way. A signal arrives. You tune your carrier frequency and noise gate until the waveform clears. You reconstruct the transmission — a pixel pattern that might mean something. You classify it and send it to Command.</p>
+             <p data-i18n="nullCarrier.section1.paragraph2">Command acknowledges. Another signal arrives.</p>
+             <p data-i18n="nullCarrier.section1.paragraph3">At shift 12, something is slightly off. At shift 23, you notice the coordinates don't add up. By shift 40, you've stopped trusting the readouts entirely.</p>
+         </div>
+     </section>
 
-    <section style="padding: var(--spacing-xl) 0;">
-        <div class="container">
-            <h2 class="section-title">Mechanics</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-lg);">
-                <div class="card">
-                    <h3>Tune to Receive</h3>
-                    <p>Adjust carrier frequency and noise gate sliders. Find the lock zone where clarity peaks. The signal is there — you just have to find it.</p>
-                </div>
-                <div class="card">
-                    <h3>Reconstruct the Pattern</h3>
-                    <p>A pixel matrix emerges from noise as your tuning improves. Each cell locks in when clarity is high enough.</p>
-                </div>
-                <div class="card">
-                    <h3>Classify for Command</h3>
-                    <p>Submit your reconstruction. Command responds. Cryptically. You won't know if you were right. That's the point.</p>
-                </div>
-                <div class="card">
-                    <h3>Read Between the Shifts</h3>
-                    <p>No tutorial. No objectives. Just metadata, coordinates, timestamps, and patterns. The story is only there if you look for it.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+     <section style="padding: var(--spacing-xl) 0;">
+         <div class="container">
+             <h2 class="section-title" data-i18n="nullCarrier.mechanics.sectionTitle">Mechanics</h2>
+             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-lg);">
+                 <div class="card">
+                     <h3 data-i18n="nullCarrier.mechanics.card1.title">Tune to Receive</h3>
+                     <p data-i18n="nullCarrier.mechanics.card1.description">Adjust carrier frequency and noise gate sliders. Find the lock zone where clarity peaks. The signal is there — you just have to find it.</p>
+                 </div>
+                 <div class="card">
+                     <h3 data-i18n="nullCarrier.mechanics.card2.title">Reconstruct the Pattern</h3>
+                     <p data-i18n="nullCarrier.mechanics.card2.description">A pixel matrix emerges from noise as your tuning improves. Each cell locks in when clarity is high enough.</p>
+                 </div>
+                 <div class="card">
+                     <h3 data-i18n="nullCarrier.mechanics.card3.title">Classify for Command</h3>
+                     <p data-i18n="nullCarrier.mechanics.card3.description">Submit your reconstruction. Command responds. Cryptically. You won't know if you were right. That's the point.</p>
+                 </div>
+                 <div class="card">
+                     <h3 data-i18n="nullCarrier.mechanics.card4.title">Read Between the Shifts</h3>
+                     <p data-i18n="nullCarrier.mechanics.card4.description">No tutorial. No objectives. Just metadata, coordinates, timestamps, and patterns. The story is only there if you look for it.</p>
+                 </div>
+             </div>
+         </div>
+     </section>
 
-    <section style="padding: var(--spacing-xl) 0;">
-        <div class="container">
-            <h2 class="section-title">Built to feel like a real instrument.</h2>
-            <p class="section-subtitle">No 3D. No cutscenes. No dialogue. The entire game is played on one screen that looks and feels like actual signal analysis hardware. Every visual element earns its place.</p>
-            <p style="text-align: center; font-size: 1.25rem; color: var(--muted);">Radical minimalism · Industrial UI · Systems-driven narrative</p>
-        </div>
-    </section>
+     <section style="padding: var(--spacing-xl) 0;">
+         <div class="container">
+             <h2 class="section-title" data-i18n="nullCarrier.philosophy.sectionTitle">Built to feel like a real instrument.</h2>
+             <p class="section-subtitle" data-i18n="nullCarrier.philosophy.subtitle">No 3D. No cutscenes. No dialogue. The entire game is played on one screen that looks and feels like actual signal analysis hardware. Every visual element earns its place.</p>
+             <p style="text-align: center; font-size: 1.25rem; color: var(--muted);" data-i18n="nullCarrier.philosophy.tagline">Radical minimalism · Industrial UI · Systems-driven narrative</p>
+         </div>
+     </section>
 
-    <section style="padding: var(--spacing-xl) 0;">
-        <div class="container" style="text-align: center;">
-            <h2 class="section-title">Coming to Steam</h2>
-            <p>Wishlist Null Carrier on Steam to be notified at launch.</p>
-            <a href="#" class="btn" style="background: #1b9e57; margin-top: var(--spacing-lg); opacity: 0.5; cursor: not-allowed;" title="Coming Soon">Wishlist on Steam →</a>
-        </div>
-    </section>
+     <section style="padding: var(--spacing-xl) 0;">
+         <div class="container" style="text-align: center;">
+             <h2 class="section-title" data-i18n="nullCarrier.steam.sectionTitle">Coming to Steam</h2>
+             <p data-i18n="nullCarrier.steam.description">Wishlist Null Carrier on Steam to be notified at launch.</p>
+             <a href="#" class="btn" style="background: #1b9e57; margin-top: var(--spacing-lg); opacity: 0.5; cursor: not-allowed;" title="Coming Soon" data-i18n="nullCarrier.steam.button">Wishlist on Steam →</a>
+         </div>
+     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>© 2026 Donbrico Studio. All rights reserved.</p>
-            <p><a href="../privacy-policy/">Privacy Policy</a> | <a href="../support/">Support</a></p>
-        </div>
-    </footer>
-</body>
-</html>
+     <footer class="footer">
+         <div class="container">
+             <p data-i18n="app.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+             <p><a href="../privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a> | <a href="../support/" data-i18n="nav.support">Support</a></p>
+         </div>
+     </footer>
+     <script src="../js/i18n.js" defer></script>
+ </body>
+ </html>

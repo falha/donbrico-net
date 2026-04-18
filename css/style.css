@@ -126,6 +126,44 @@ a:hover {
   color: var(--bg-color);
 }
 
+.nav .nav-lang select {
+  background: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--border);
+  padding: 8px 32px 8px 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23a0a0b0' viewBox='0 0 16 16'%3E%3Cpath d='m4.7 6.3 3.3 3.3 3.3-3.3.7.7-4,4-4-4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  min-width: 130px;
+  line-height: 1.4;
+}
+
+/* Ensure dropdown options are readable */
+.nav .nav-lang select option {
+  background: var(--bg-color);
+  color: var(--text-color);
+  padding: 8px;
+}
+
+.nav .nav-lang select:hover {
+  border-color: var(--accent);
+}
+
+.nav .nav-lang select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
 .nav .hamburger {
   display: none;
   flex-direction: column;
@@ -393,7 +431,44 @@ a:hover {
     min-width: 0;
   }
 
-  .footer .container {
-    text-align: center;
-  }
-}
+   .footer .container {
+     text-align: center;
+   }
+ }
+
+ /* i18n: accommodate longer text in some languages */
+ .btn {
+   white-space: normal;
+   word-break: break-word;
+ }
+
+ /* Nav links: truncate on desktop if too long */
+ @media (min-width: 769px) {
+   .nav .nav-links a {
+     max-width: 140px;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+   }
+ }
+
+ /* Terminal lines display as block */
+ .terminal pre span {
+   display: block;
+ }
+
+ /* Ensure card text wraps properly */
+ .card p, .card h3, .card h4 {
+   word-wrap: break-word;
+ }
+
+ /* Footer links allow wrapping */
+ .footer p {
+   word-wrap: break-word;
+   overflow-wrap: break-word;
+ }
+
+ /* Headings handling */
+ h1, h2, h3, h4, h5, h6 {
+   word-wrap: break-word;
+ }

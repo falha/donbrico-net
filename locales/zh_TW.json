@@ -1,0 +1,371 @@
+{
+  "app": {
+    "name": "Donbrico Studio",
+    "copyright": "© 2026 Donbrico Studio. 保留所有權利。",
+    "builtBy": "由獨立開發者打造。"
+  },
+  "nav": {
+    "home": "首頁",
+    "autofillAi": "Autofill AI",
+    "nullCarrier": "Null Carrier",
+    "privacyPolicy": "隱私政策",
+    "support": "支援"
+  },
+  "home": {
+    "page": {
+      "title": "Donbrico — 獨立開發者的專案",
+      "description": "donbrico.net — Donbrico Autofill AI 與 Null Carrier 的家。由獨立開發者打造的工具與遊戲。",
+      "ogTitle": "Donbrico — 獨立開發者的專案",
+      "ogDescription": "donbrico.net — Donbrico Autofill AI 與 Null Carrier 的家。由獨立開發者打造的工具與遊戲。"
+    },
+    "hero": {
+      "eyebrow": "獨立開發者",
+      "title": "能用的工具。<br>會思考的遊戲。",
+      "subtitle": "我打造瀏覽器擴充功能與益智遊戲。沒VC。沒團隊。只有程式碼。"
+    },
+    "projects": {
+      "sectionTitle": "專案",
+      "autofillAi": {
+        "badgeChrome": "CHROME 擴充功能",
+        "badgeFree": "免費",
+        "title": "Donbrico Autofill AI",
+        "description": "適用於任何網站的 AI 表單填寫工具。從你的個人檔案即時填寫。使用 Gemini Nano — 你的資料永遠不會離開瀏覽器。",
+        "techStack": "[Chrome 擴充功能] [AI] [隱私優先] [免費]",
+        "button": "進一步瞭解 →"
+      },
+      "nullCarrier": {
+        "badgeGame": "STEAM 遊戲",
+        "badgeComingSoon": "即將推出",
+        "title": "Null Carrier",
+        "description": "一款信號重建益智遊戲。你操作深空監聽陣列。調諧頻率、解碼傳輸、質疑指揮部的指令。",
+        "techStack": "[益智] [氛圍] [Steam] [獨立]",
+        "button": "進一步瞭解 →"
+      }
+    },
+    "buttons": {
+      "seeAutofillAi": "查看 Autofill AI →",
+      "seeNullCarrier": "查看 Null Carrier →"
+    },
+    "footer": {
+      "links": "隱私政策 | 支援"
+    }
+  },
+  "autofillAi": {
+    "page": {
+      "title": "Donbrico Autofill AI — 給 Chrome 的 AI 表單填寫工具",
+      "description": "使用 AI 即時填寫任何網頁表單。適用於求職申請、聯絡表單等。使用 Gemini Nano — 你的資料永遠不會離開瀏覽器。免費 Chrome 擴充功能。",
+      "ogTitle": "Donbrico Autofill AI — 給 Chrome 的 AI 表單填寫工具",
+      "ogDescription": "使用 AI 即時填寫任何網頁表單。適用於求職申請、聯絡表單等。使用 Gemini Nano — 你的資料永遠不會離開瀏覽器。免費 Chrome 擴充功能。"
+    },
+    "hero": {
+      "eyebrow": "CHROME 擴充功能",
+      "title": "填寫任何表單。<br>一键完成。",
+      "subtitle": "Donbrico Autofill AI 在任何網站上檢測表單，即時填寫你的資訊，並為開放式文字欄位產生 AI 驅動的回應 — 完全在你的瀏覽器內進行。",
+      "disclaimer": "🔒 你的資料永遠不會離開瀏覽器 · 由 Gemini Nano 驅動 · 無需帳戶",
+      "buttonPrimary": "新增到 Chrome — 免費",
+      "buttonSecondary": "看它如何運作 ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "運作方式",
+      "step1": {
+        "title": "1. 儲存你的個人檔案",
+        "description": "輸入你的姓名、電子郵件、LinkedIn、簡介、技能。本地儲存。透過 Chrome 同步。"
+      },
+      "step2": {
+        "title": "2. 造訪任意表單",
+        "description": "擴充功能會在任何頁面上自動檢測表單。一個 ⚡ 按鈕會出現在表單頂部。"
+      },
+      "step3": {
+        "title": "3. 一點擊，完成",
+        "description": "點擊按鈕。標準欄位即時填寫。AI 為開放式問題產生回應。"
+      }
+    },
+    "features": {
+      "sectionTitle": "與眾不同。",
+      "worksEverywhere": {
+        "title": "隨處可用",
+        "description": "任何有表單的網站。求職申請、聯絡表單、註冊表單。"
+      },
+      "private": {
+        "title": "100% 私密",
+        "description": "Gemini Nano 在 Chrome 內部執行。你的個人檔案永遠不會到達任何伺服器。"
+      },
+      "aiHardParts": {
+        "title": "困難部分的 AI",
+        "description": "像求職信這樣的開放式文字欄位？AI 會從你的個人檔案撰寫它們。"
+      },
+      "bringYourOwnKey": {
+        "title": "自備金鑰",
+        "description": "如果你喜歡，可以使用 OpenAI、Anthropic、Groq 或 OpenRouter。"
+      },
+      "noAccount": {
+        "title": "無需帳戶",
+        "description": "無需註冊。無需電子郵件。安裝即可使用。"
+      },
+      "editable": {
+        "title": "提交前可編輯",
+        "description": "在提交表單前，查看並調整每條 AI 產生的回應。"
+      }
+    },
+    "pricing": {
+      "sectionTitle": "簡單定價。",
+      "autofillAi": {
+        "free": {
+          "title": "免費 — 永久",
+          "price": "$0",
+          "features": {
+            "f1": "✅ Gemini Nano + Bring Your Own Key AI（無限次呼叫）",
+            "f2": "✅ 基本欄位填寫（姓名、電子郵件、電話等等） — 始終免費",
+            "f3": "✅ 長文字欄位 — 原始個人檔案資料依原樣貼上",
+            "f4": "✅ AI 短回應 — 當輸出 ≤ 75 詞時免費",
+            "f5": "✅ 儲存 1 個個人檔案"
+          },
+          "button": "新增到 Chrome"
+        },
+        "monthly": {
+          "title": "月付",
+          "price": "$5.99/月",
+          "features": {
+            "header": "免費版的所有功能，加上：",
+            "f1": "✅ 無限 AI 單字輸出",
+            "f2": "✅ 求職信產生器",
+            "f3": "✅ 智慧重寫",
+            "f4": "✅ 儲存 10 個個人檔案"
+          },
+          "button": "取得月付"
+        },
+        "yearly": {
+          "title": "年付",
+          "price": "$47/年",
+          "subtitle": "~$3.92/月",
+          "features": {
+            "header": "月付版的所有功能",
+            "f1": "✅ 相同功能，更優價格"
+          },
+          "button": "取得年付"
+        },
+        "lifetime": {
+          "title": "終身早期採用者",
+          "price": "$59.99 一次性付費",
+          "features": {
+            "header": "月付版的所有功能 — 永久",
+            "f1": "✅ 早期採用者徽章",
+            "f2": "✅ 所有將來的 Pro 功能免費",
+            "f3": "❌ 限量：前 100 名購買者"
+          },
+          "button": "取得終身版"
+        }
+      }
+    },
+    "setupGuides": {
+      "sectionTitle": "設定指南",
+      "subtitle": "選擇如何為 AI 供電。兩個選項都是免費開始的。",
+      "geminiNano": {
+        "title": "Gemini Nano",
+        "description": "完全在你的瀏覽器中執行。不需要 API 金鑰。100% 私密。需要 Chrome 127+ 與 22GB 可用儲存空間。",
+        "button": "檢視設定指南 →"
+      },
+      "bringYourOwnKey": {
+        "title": "自備 API 金鑰",
+        "description": "使用你自己的來自 OpenAI、Anthropic、Groq 或 OpenRouter 的金鑰。在任何裝置上工作。只為使用的部分付費。",
+        "button": "檢視設定指南 →"
+      }
+    },
+    "faq": {
+      "sectionTitle": "常見問題",
+      "q1": {
+        "question": "它在 LinkedIn、Indeed、Greenhouse 這樣的求職網站上運作嗎？",
+        "answer": "是的。它檢測任何網站上的表單，包括主要招聘網站與申請人追蹤系統。"
+      },
+      "q2": {
+        "question": "我的個人資料資料是私密的嗎？",
+        "answer": "完全私密。你的個人資料儲存在你裝置上的 Chrome 本地儲存中。然而，當使用 AI 生成回應時，表單內容與相關的個人資料資料會發送給 AI model。如果你使用自己的 API 金鑰（OpenAI、Anthropic、Groq 等），這些資料會發送給他們。如果你使用 Gemini Nano，一切都保留在你的瀏覽器本地。"
+      },
+      "q3": {
+        "question": "什麼是 Gemini Nano？",
+        "answer": "Gemini Nano 是 Google 的 AI 模型，直接內建於 Chrome（127+ 版本）。它在你的裝置上執行，這意味著 AI 回應時沒有任何資料離開你的瀏覽器。"
+      },
+      "q4": {
+        "question": "我需要 API 金鑰嗎？",
+        "answer": "不需要。免費版本使用 Gemini Nano，不需要金鑰。如果你的裝置不支援，你可以選擇新增你自己的來自 OpenAI、Anthropic、Groq 或 OpenRouter 的金鑰。"
+      },
+      "q5": {
+        "question": "什麼時候可用？",
+        "answer": "目前處於最終開發階段。當它在 Chrome 網上應用店發布時，免費新增它。"
+      }
+    },
+    "footer": {
+      "links": "隱私政策 | 支援"
+    }
+  },
+  "nullCarrier": {
+    "page": {
+      "title": "Null Carrier — 深空信號益智遊戲 | Steam",
+      "description": "操作深空監聽陣列。調諧頻率、重建信號、質疑命令。一款即將登陸 Steam 的極簡氛圍益智遊戲。",
+      "ogTitle": "Null Carrier — 深空信號益智遊戲 | Steam",
+      "ogDescription": "操作深空監聽陣列。調谐頻率、重建信號、質疑命令。一款即將登陸 Steam 的極簡氛圍益智遊戲。"
+    },
+    "hero": {
+      "title": "信號接收。<br>來源未知。",
+      "subtitle": "你操作深空監聽陣列。調谐頻率。重建傳輸。為指揮部分類。不要提問。",
+      "terminal": {
+        "channel": "頻道: 7734-ALPHA",
+        "timestamp": "時間戳: 0312.88.44",
+        "bandFreq": "頻段: 847.3 MHz",
+        "status": "狀態: ████ 重建中..."
+      },
+      "disclaimer": "PC · 即將推出 · 獨立開發",
+      "button": "在 Steam 上加入願望清單 →"
+    },
+    "section1": {
+      "title": "一個畫面。無限懷疑。",
+      "paragraph1": "每個班次都以相同方式開始。一個信號到達。你調整你的載波頻率與雜訊門直到波形清晰。你重建傳輸 — 一個可能意味著什么的像素模式。你將其分類並發送給指揮部。",
+      "paragraph2": "指揮部確認。另一個信號到達。",
+      "paragraph3": "在第 12 班時，有些微異常。在第 23 班時，你注意到座標對不準。到第 40 班時，你已經完全不信賴讀數了。"
+    },
+    "mechanics": {
+      "sectionTitle": "機制",
+      "card1": {
+        "title": "調諧以接收",
+        "description": "調整載波頻率與雜訊門滑桿。找到清晰度達到峰值的位置鎖定區。信號在那裡 — 你只需要找到它。"
+      },
+      "card2": {
+        "title": "重建圖樣",
+        "description": "當你的調諧改善時，像素矩陣從雜訊中浮現。每個單元在清晰度足够高時鎖定。"
+      },
+      "card3": {
+        "title": "為指揮部分類",
+        "description": "提交你的重建。指揮部回應。神祕地。你不会知道你是否正確。這就是重點。"
+      },
+      "card4": {
+        "title": "在班次間閱讀",
+        "description": "沒有教程。沒有目標。只有元資料、座標、時間戳與圖樣。故事只在那裡如果你尋找它。"
+      }
+    },
+    "philosophy": {
+      "sectionTitle": "打造得就像真實儀器一樣。",
+      "subtitle": "沒有 3D。沒有過場動畫。沒有對話。整個遊戲在一個螢幕上進行，看起來與感覺起來都像真實的信號分析硬體。每個視覺元素都贏得它的位置。",
+      "tagline": "激進極簡主義 · 工業 UI · 系統驅動的敘事"
+    },
+    "steam": {
+      "sectionTitle": "即將登陸 Steam",
+      "description": "將 Null Carrier 新增到你的 Steam 願望清單，以便在發售時收到通知。",
+      "button": "在 Steam 上加入願望清單 →"
+    },
+    "footer": {
+      "links": "隱私政策 | 支援"
+    }
+  },
+  "support": {
+    "page": {
+      "title": "支援 — Donbrico",
+      "description": "取得 Donbrico Autofill AI 與 Null Carrier 的支援。聯繫我們 at support@donbrico.net。",
+      "ogTitle": "支援 — Donbrico",
+      "ogDescription": "取得 Donbrico Autofill AI 與 Null Carrier 的支援。聯繫我們 at support@donbrico.net。"
+    },
+    "sectionTitle": "支援",
+    "subtitle": "我們是獨立營運。我們閱讀每條訊息。",
+    "contact": {
+      "sectionTitle": "聯繫",
+      "fastestWay": "最快的聯繫方式:",
+      "email": "support@donbrico.net",
+      "responseTime": "我們通常在 1–2 個工作天內回覆。"
+    },
+    "autofill": {
+      "sectionTitle": "Donbrico Autofill AI 支援",
+      "subtitle": "常見問題",
+      "q1": {
+        "question": "擴充功能按鈕沒有出現在表單上",
+        "answer": "一些網站使用 JavaScript 動態渲染表單。嘗試向下滾動以觸發頁面完全載入，然後尋找 ⚡ 按鈕。如果仍然不出現，透過 email 寄送網站 URL 給我們。"
+      },
+      "q2": {
+        "question": "Gemini Nano 說\"在此裝置上不支援\"",
+        "answer": "Gemini Nano 需要 Chrome 127+ 與足够的裝置 RAM（通常 8GB+）。你仍然可以透過在設定中加入自己的 API 金鑰來使用擴充功能（自帶金鑰）。OpenAI、Anthropic、Groq 與 OpenRouter 都受支援。"
+      },
+      "q3": {
+        "question": "我的個人檔案沒有儲存",
+        "answer": "前往擴充功能的選項頁面（右鍵點擊擴充功能圖示 → 選項）。確保在輸入個人檔案後點擊了儲存。如果仍然不儲存，請嘗試選項頁面上的疑難排解按鈕。"
+      },
+      "q4": {
+        "question": "AI 產生的回應聽起來不像我",
+        "answer": "AI 使用你的個人檔案來產生回應。以詳細內容填寫 Bio 與 Experience 欄位 — 你提供的上下文越多，輸出越好。你總是在提交前編輯任何回應。"
+      },
+      "q5": {
+        "question": "如何解除安裝並刪除我的資料？",
+        "answer": "在 Chrome 中，前往 chrome://extensions，找到 Donbrico Autofill AI，點擊移除。所有個人資料會自動刪除。"
+      },
+      "q6": {
+        "question": "如何報告 bug 或請求功能？",
+        "answer": "發送郵件至 support@donbrico.net，在主題開頭加上\"Bug:\"或\"Feature Request:\"。"
+      }
+    },
+    "nullCarrier": {
+      "sectionTitle": "Null Carrier 支援",
+      "paragraph": "對於 Steam 上的 Null Carrier 問題，你可以透過 Steam 支援系統或直接联络 support@donbrico.net。",
+      "steamNote": "請包括你的 Steam 使用者名稱與問題描述。"
+    },
+    "responseTime": {
+      "sectionTitle": "回應時間政策",
+      "paragraph": "Donbrico 是獨立開發營運。支援以最大努力提供。我們目標在 1–2 個工作天內回應。關鍵的擴充功能 bug 會優先處理。"
+    },
+    "footer": {
+      "links": "隱私政策 | 支援"
+    }
+  },
+  "privacyPolicy": {
+    "page": {
+      "title": "隱私政策 — Donbrico",
+      "description": "donbrico.net、Chrome 擴充功能 Donbrico Autofill AI 與 Null Carrier 的隱私政策。",
+      "ogTitle": "隱私政策 — Donbrico",
+      "ogDescription": "donbrico.net、Chrome 擴充功能 Donbrico Autofill AI 與 Null Carrier 的隱私政策。"
+    },
+    "sectionTitle": "隱私政策",
+    "lastUpdated": "最後更新: 2026 年 1 月",
+    "overview": {
+      "sectionTitle": "概覽",
+      "paragraph": "Donbrico 致力於保護你的隱私。Chrome 擴充功能 Donbrico Autofill AI 將所有資料本地儲存在你的裝置上。此網站不使用分析工具、Cookie 或追蹤腳本。"
+    },
+    "extension": {
+      "sectionTitle": "Donbrico Autofill AI — Chrome 擴充功能",
+      "whatWeCollect": {
+        "sectionTitle": "我們收集什麼資料",
+        "paragraph": "沒有。所有個人檔案資料都儲存在使用者裝置上的 Chrome 儲存中本地。没有資料被傳輸到 Donbrico 擁有或營運的任何伺服器。"
+      },
+      "howStored": {
+        "sectionTitle": "個人檔案資料如何儲存",
+        "paragraph": "使用 Chrome 的 storage.local API，敏感資料絕不使用 chrome.storage.sync。資料保留在裝置上，絕不上傳。"
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "第三方 AI 提供者（自帶金鑰）",
+        "paragraph": "如果使用者設定像 OpenAI、Anthropic、Groq 或 OpenRouter 這樣的自帶金鑰提供者，表單內容與相關的個人檔案資料會發送給該第三方提供者。Donbrico 不對這些提供者的隱私實踐負責。Gemini Nano（預設 AI）完全在裝置上執行。"
+      },
+      "permissions": {
+        "sectionTitle": "使用的權限",
+        "paragraph": "storage（本地個人檔案）、activeTab（檢測目前分頁上的表單）、scripting（注入自動填寫按鈕）、host_permissions（在使用者造訪的任何網站上運作）。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "資料刪除",
+        "paragraph": "解除安裝擴充功能會移除所有儲存的資料。"
+      }
+    },
+    "game": {
+      "sectionTitle": "Null Carrier — Steam 遊戲",
+      "paragraph": "遊戲本身不收集個人資料。Steam 平台收集的任何資料受 Steam 自己的隱私政策管制。"
+    },
+    "website": {
+      "sectionTitle": "這個網站（donbrico.net）",
+      "paragraph": "無分析、無 Cookie、無追蹤腳本。此網站是託管在 Cloudflare Pages 上的靜態 HTML 網站。無表單、無使用者帳戶、無任何形式的資料收集。"
+    },
+    "contact": {
+      "sectionTitle": "聯繫",
+      "paragraph": "關於隱私問題，請聯繫：support@donbrico.net"
+    },
+    "changes": {
+      "sectionTitle": "本政策的變更",
+      "paragraph": "本政策可能更新。查看此頁面取得最新版本。"
+    },
+    "footer": {
+      "links": "隱私政策 | 支援"
+    }
+  }
+}

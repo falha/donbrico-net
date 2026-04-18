@@ -1,0 +1,371 @@
+{
+  "app": {
+    "name": "Donbrico Studio",
+    "copyright": "© 2026 Donbrico Studio. All rights reserved.",
+    "builtBy": " Solo developerによって構築されました。"
+  },
+  "nav": {
+    "home": "ホーム",
+    "autofillAi": "Autofill AI",
+    "nullCarrier": "Null Carrier",
+    "privacyPolicy": "プライバシーポリシー",
+    "support": "サポート"
+  },
+  "home": {
+    "page": {
+      "title": "Donbrico — 一人インディーデベロッパーのプロジェクト",
+      "description": "donbrico.net — Donbrico Autofill AI と Null Carrier の本拠地。一人の開発者が構築したツールとゲーム。",
+      "ogTitle": "Donbrico — 一人インディーデベロッパーのプロジェクト",
+      "ogDescription": "donbrico.net — Donbrico Autofill AI と Null Carrier の本拠地。一人の開発者が構築したツールとゲーム。"
+    },
+    "hero": {
+      "eyebrow": "インディーデベロッパー",
+      "title": "機能するツール。<br>考えるゲーム。",
+      "subtitle": "ブラウザ拡張機能とパズルゲームを構築しています。VC資金なし。チームなし。ただコードだけ。"
+    },
+    "projects": {
+      "sectionTitle": "プロジェクト",
+      "autofillAi": {
+        "badgeChrome": "クローム拡張機能",
+        "badgeFree": "無料",
+        "title": "Donbrico Autofill AI",
+        "description": "任意のウェブサイト用のAIフォーム自動入力ツール。プロフィールから瞬時に自動入力。Gemini Nanoを採用 — データがブラウザ外に出ることはありません。",
+        "techStack": "[Chrome 拡張機能] [AI] [プライバシー優先] [無料]",
+        "button": "詳細を見る →"
+      },
+      "nullCarrier": {
+        "badgeGame": "Steamゲーム",
+        "badgeComingSoon": "近日公開",
+        "title": "Null Carrier",
+        "description": "信号再構築パズルゲーム。深宇宙 listening array を運用します。周波数を調整し、信号を復号し、指揮官の命令に疑問を持ちます。",
+        "techStack": "[パズル] [アトモスフィア] [Steam] [インディー]",
+        "button": "詳細を見る →"
+      }
+    },
+    "buttons": {
+      "seeAutofillAi": "Autofill AI を見る →",
+      "seeNullCarrier": "Null Carrier を見る →"
+    },
+    "footer": {
+      "links": "プライバシーポリシー | サポート"
+    }
+  },
+  "autofillAi": {
+    "page": {
+      "title": "Donbrico Autofill AI — Chrome用AIパワードフォーム自動入力ツール",
+      "description": "AIであらゆるウェブフォームを瞬時に自動入力。求人応募、お問い合わせフォームなどに最適。Gemini Nanoを採用 — データがブラウザ外に出ることはありません。無料Chrome拡張機能。",
+      "ogTitle": "Donbrico Autofill AI — Chrome用AIパワードフォーム自動入力ツール",
+      "ogDescription": "AIであらゆるウェブフォームを瞬時に自動入力。求人応募、お問い合わせフォームなどに最適。Gemini Nanoを採用 — データがブラウザ外に出ることはありません。無料Chrome拡張機能。"
+    },
+    "hero": {
+      "eyebrow": "Chrome拡張機能",
+      "title": "フォームを埋める。<br>ワンクリックで。",
+      "subtitle": "Donbrico Autofill AIは任意のウェブサイトのフォームを検出し、あなたの情報を瞬時に自動入力し、オープンエンドフィールド用のAI生成回答を生成します — すべてブラウザ内で。",
+      "disclaimer": "🔒 あなたのデータはブラウザから出ません · Gemini Nano搭載 · アカウント不要",
+      "buttonPrimary": "Chromeに追加 — 無料",
+      "buttonSecondary": "動作を見る ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "仕組み",
+      "step1": {
+        "title": "1. プロフィールを保存",
+        "description": "氏名、メール、LinkedIn、経歴、スキルを入力。ローカルに保存され、Chrome間で同期されます。"
+      },
+      "step2": {
+        "title": "2. 任意のフォームにアクセス",
+        "description": "拡張機能は任意のページでフォームを自動検出します。フォームの上部に⚡ボタンが表示されます。"
+      },
+      "step3": {
+        "title": "3. ワンクリックで完了",
+        "description": "ボタンをクリック。標準フィールドは即座に自動入力されます。AIがオープンエンドな質問の回答を生成します。"
+      }
+    },
+    "features": {
+      "sectionTitle": "一味違う構築。",
+      "worksEverywhere": {
+        "title": "どこでも動作",
+        "description": "フォームのある任意のウェブサイト。求人応募、お問い合わせフォーム、サインアップ。"
+      },
+      "private": {
+        "title": "100%プライベート",
+        "description": "Gemini NanoはChrome内で実行。あなたのプロフィールはサーバーに到達しません。"
+      },
+      "aiHardParts": {
+        "title": "難しい部分のためのAI",
+        "description": "カバーレターのようなオープンエンドフィールド？AIがあなたのプロフィールから作成します。"
+      },
+      "bringYourOwnKey": {
+        "title": "独自のキーを持参",
+        "description": "お好みでOpenAI、Anthropic、Groq、OpenRouterを使用できます。"
+      },
+      "noAccount": {
+        "title": "アカウント不要",
+        "description": "サインアップ不要。メール不要。インストールして使うだけ。"
+      },
+      "editable": {
+        "title": "送信前に編集可能",
+        "description": "フォームを送信する前に、AI生成の各回答を確認、調整できます。"
+      }
+    },
+    "pricing": {
+      "sectionTitle": "シンプルな価格設定。",
+      "autofillAi": {
+        "free": {
+          "title": "無料 — 永遠に",
+          "price": "$0",
+          "features": {
+            "f1": "✅ Gemini Nano + Bring Your Own Key AI (無制限呼び出し)",
+            "f2": "✅ 基本フィールド自動入力 (名前、メール、電話など) — 常に無料",
+            "f3": "✅ 長文フィールド — プロフィールの生データがそのまま貼り付け",
+            "f4": "✅ AI短回答 — 75ワード以下のAI出力は無料",
+            "f5": "✅ 保存されたプロフィール1個"
+          },
+          "button": "Chromeに追加"
+        },
+        "monthly": {
+          "title": "月額",
+          "price": "$5.99/月",
+          "features": {
+            "header": "無料版のすべてに加えて:",
+            "f1": "✅ AI単語出力無制限",
+            "f2": "✅ カバーレタージェネレーター",
+            "f3": "✅ スマート rewriting",
+            "f4": "✅ 保存されたプロフィール10個"
+          },
+          "button": "月額プラン"
+        },
+        "yearly": {
+          "title": "年額",
+          "price": "$47/年",
+          "subtitle": "~$3.92/月",
+          "features": {
+            "header": "月額プランのすべて",
+            "f1": "✅ 同じ機能、より良い価格"
+          },
+          "button": "年額プラン"
+        },
+        "lifetime": {
+          "title": "生涯早期導入",
+          "price": "$59.99 一回払い",
+          "features": {
+            "header": "月額プランのすべて — 永遠に",
+            "f1": "✅ Early Adopterバッジ",
+            "f2": "✅ 将来のすべてのPro機能を無料で",
+            "f3": "❌ 限定: 最初の100購入者"
+          },
+          "button": "生涯プラン"
+        }
+      }
+    },
+    "setupGuides": {
+      "sectionTitle": "セットアップガイド",
+      "subtitle": "AIをどう動力を選ぶか。両方とも無料で開始できます。",
+      "geminiNano": {
+        "title": "Gemini Nano",
+        "description": "ブラウザ内で完全に実行。APIキー不要。100%プライベート。Chrome 127+と22GBの空きストレージが必要。",
+        "button": "セットアップガイドを見る →"
+      },
+      "bringYourOwnKey": {
+        "title": "独自のAPIキーを持参",
+        "description": "OpenAI、Anthropic、Groq、OpenRouterから自分のキーを使用。任意のデバイスで動作。使用した分だけ支払います。",
+        "button": "セットアップガイドを見る →"
+      }
+    },
+    "faq": {
+      "sectionTitle": "よくある質問",
+      "q1": {
+        "question": "LinkedIn、Indeed、Greenhouseのような求人サイトで動作しますか？",
+        "answer": "はい。主要な求人サイトやATSシステムを含む任意のウェブサイトのフォームを検出します。"
+      },
+      "q2": {
+        "question": "プロフィールデータはプライベートですか？",
+        "answer": "完全に。あなたのプロフィールはChromeのローカルストレージにデバイス上で保存されます。ただし、AIを使用して回答を生成する場合、フォームのコンテキストと関連するプロフィールデータはAIモデルに送信されます。独自のAPIキー（OpenAI、Anthropic、Groqなど）を使用する場合、そのデータはそれらに送信されます。Gemini Nanoを使用すると、すべてブラウザ内に留まります。"
+      },
+      "q3": {
+        "question": "Gemini Nanoとは何ですか？",
+        "answer": "Gemini NanoはGoogleのAIモデルで、Chrome（バージョン127+）に直接組み込まれています。あなたのデバイス上で実行されるため、ブラウザ外にデータを出すことなくAIの回答が得られます。"
+      },
+      "q4": {
+        "question": "APIキーは必要ですか？",
+        "answer": "いいえ。無料版はキー不要のGemini Nanoを使用します。デバイスがサポートしていない場合、OpenAI、Anthropic、Groq、OpenRouterから独自のキーを追加できます。"
+      },
+      "q5": {
+        "question": "いつ利用可能になりますか？",
+        "answer": "現在最終開発中です。Chrome Web Storeでリリースされたら無料で追加できます。"
+      }
+    },
+    "footer": {
+      "links": "プライバシーポリシー | サポート"
+    }
+  },
+  "nullCarrier": {
+    "page": {
+      "title": "Null Carrier — 深宇宙信号パズルゲーム | Steam",
+      "description": "深宇宙 listening array を運用。周波数を調整し、信号を再構築し、命令に疑問を持つ。ミニマリストな大気パズルゲームがSteamに登場。",
+      "ogTitle": "Null Carrier — 深宇宙信号パズルゲーム | Steam",
+      "ogDescription": "深宇宙 listening array を運用。周波数を調整し、信号を再構築し、命令に疑問を持つ。ミニマリストな大気パズルゲームがSteamに登場。"
+    },
+    "hero": {
+      "title": "信号を受信。<br>ソース不明。",
+      "subtitle": "あなたは深宇宙 listening array を運用する。周波数を調整する。伝送を再構築する。Commandに分類する。質問はしないで。",
+      "terminal": {
+        "channel": "CHANNEL: 7734-ALPHA",
+        "timestamp": "TIMESTAMP: 0312.88.44",
+        "bandFreq": "BAND FREQ: 847.3 MHz",
+        "status": "STATUS: ████ RECONSTRUCTING..."
+      },
+      "disclaimer": "PC · 近日公開 · ソロ開発",
+      "button": "Steamで欲しいリストに追加 →"
+    },
+    "section1": {
+      "title": "1つの画面。無限の疑い。",
+      "paragraph1": "各シフトは同じように始まる。信号が到着する。キャリア周波数とノイズゲートを調整して波形をクリアにします。伝送を再構築する — 何かを意味するかもしれないピクセルパターン。それを分類し、Commandに送信する。",
+      "paragraph2": "Commandが受信確認。別の信号が到着。",
+      "paragraph3": "シフト12で何かが少しおかしい。シフト23で座標が合わないことに気づく。シフト40までに、読み取り全体を信用しなくなっている。"
+    },
+    "mechanics": {
+      "sectionTitle": "メカニクス",
+      "card1": {
+        "title": "受信のため調整",
+        "description": "キャリア周波数とノイズゲートスライダーを調整。明確さのピークがあるロックゾーンを見つける。信号はそこにある — 見つけるだけだ。"
+      },
+      "card2": {
+        "title": "パターンを再構築",
+        "description": "チューニングが改善するにつれて、ノイズからピクセルマトリックスが現れる。各セルは明確さが十分高いときにロックされる。"
+      },
+      "card3": {
+        "title": "Commandに分類",
+        "description": "再構築を送信。Commandが応答。謎めいて。正しかったかどうかはわからない。それがポイントだ。"
+      },
+      "card4": {
+        "title": "シフトの間を読む",
+        "description": "チュートリアルなし。目標なし。メタデータ、座標、タイムスタンプ、パターンだけ。ストーリーは探せばあるだけだ。"
+      }
+    },
+    "philosophy": {
+      "sectionTitle": "本物の楽器のように感じるように構築。",
+      "subtitle": "3Dなし。カットシーンなし。対話なし。ゲーム全体は実際の信号分析ハードウェアのように見え、感じる1つの画面でプレイされる。すべての視覚要素がその場所を獲得する。",
+      "tagline": "過激なミニマリズム · インダストリアルUI · システム駆動のナラティブ"
+    },
+    "steam": {
+      "sectionTitle": "Steamに登場",
+      "description": "発売時に通知を受け取るために、SteamでNull Carrierを欲しいリストに追加してください。",
+      "button": "Steamで欲しいリストに追加 →"
+    },
+    "footer": {
+      "links": "プライバシーポリシー | サポート"
+    }
+  },
+  "support": {
+    "page": {
+      "title": "サポート — Donbrico",
+      "description": "Donbrico Autofill AIとNull Carrierのサポートを取得。support@donbrico.netまでご連絡ください。",
+      "ogTitle": "サポート — Donbrico",
+      "ogDescription": "Donbrico Autofill AIとNull Carrierのサポートを取得。support@donbrico.netまでご連絡ください。"
+    },
+    "sectionTitle": "サポート",
+    "subtitle": "私たちは一人で運営しています。すべてのメッセージを読んでいます。",
+    "contact": {
+      "sectionTitle": "連絡先",
+      "fastestWay": "最速の連絡方法:",
+      "email": "support@donbrico.net",
+      "responseTime": "通常1〜2営業日以内に返信します。"
+    },
+    "autofill": {
+      "sectionTitle": "Donbrico Autofill AIサポート",
+      "subtitle": "一般的な問題",
+      "q1": {
+        "question": "フォーム上に拡張機能ボタンが表示されない",
+        "answer": "一部のウェブサイトはJavaScriptを使用してフォームを動的にレンダリングします。ページをスクロールダウンして完全に読み込ませてから、⚡ボタンを探してください。それでも表示されない場合は、サイトのURLをメールでお送りください。"
+      },
+      "q2": {
+        "question": "Gemini Nanoが「このデバイスではサポートされていません」と表示される",
+        "answer": "Gemini NanoにはChrome 127+と十分なデバイスRAM（通常は8GB以上）が必要です。設定で独自のAPIキーを追加することで、拡張機能を引き続き使用できます（Bring Your Own Key）。OpenAI、Anthropic、Groq、OpenRouterがすべてサポートされています。"
+      },
+      "q3": {
+        "question": "プロフィールが保存されない",
+        "answer": "拡張機能のオプションページ（拡張機能アイコンを右クリック → オプション）に移動してください。プロフィールを入力した後に保存をクリックしたことを確認してください。それでも保存されない場合は、オプションページのトラブルシューティングボタンを試してください。"
+      },
+      "q4": {
+        "question": "AI生成の回答が私らしく聞こえない",
+        "answer": "AIはあなたのプロフィールを使用して回答を生成します。経歴と経験フィールドに詳細を入力してください — コンテキストが多いほど出力が改善されます。送信前ならいつでも回答を編集できます。"
+      },
+      "q5": {
+        "question": "アンインストールしてデータを削除する方法は？",
+        "answer": "Chromeで chrome://extensions に移動し、Donbrico Autofill AI を見つけて削除をクリックします。保存されたすべてのプロフィールデータが自動的に削除されます。"
+      },
+      "q6": {
+        "question": "バグを報告したり機能をリクエストしたりする方法は？",
+        "answer": "support@donbrico.net にメールで、件名の先頭に「Bug:」または「Feature Request:」を付けてお送りください。"
+      }
+    },
+    "nullCarrier": {
+      "sectionTitle": "Null Carrierサポート",
+      "paragraph": "Steam上のNull Carrierの問題については、Steamのサポートシステムを通じるか、直接 support@donbrico.net までご連絡ください。",
+      "steamNote": "Steamユーザー名と問題の説明を含めてください。"
+    },
+    "responseTime": {
+      "sectionTitle": "応答時間ポリシー",
+      "paragraph": "Donbricoは個人開発者です。サポートは最善の努力で提供されます。1〜2営業日以内の応答を目指します。重大な拡張機能のバグは優先されます。"
+    },
+    "footer": {
+      "links": "プライバシーポリシー | サポート"
+    }
+  },
+  "privacyPolicy": {
+    "page": {
+      "title": "プライバシーポリシー — Donbrico",
+      "description": "donbrico.net、Donbrico Autofill AI Chrome拡張機能、Null Carrierのプライバシーポリシー。",
+      "ogTitle": "プライバシーポリシー — Donbrico",
+      "ogDescription": "donbrico.net、Donbrico Autofill AI Chrome拡張機能、Null Carrierのプライバシーポリシー。"
+    },
+    "sectionTitle": "プライバシーポリシー",
+    "lastUpdated": "最終更新: 2026年1月",
+    "overview": {
+      "sectionTitle": "概要",
+      "paragraph": "Donbricoはあなたのプライバシー保護を約束します。Donbrico Autofill AI Chrome拡張機能はすべてのデータをローカルにデバイス上に保存します。このウェブサイトは分析、Cookie、追跡スクリプトを使用しません。"
+    },
+    "extension": {
+      "sectionTitle": "Donbrico Autofill AI — Chrome拡張機能",
+      "whatWeCollect": {
+        "sectionTitle": "収集するデータ",
+        "paragraph": "なし。すべてのプロフィールデータはユーザーのデバイス上のChromeストレージにローカルに保存されます。Donbricoが所有または運営するサーバーにデータが送信されることはありません。"
+      },
+      "howStored": {
+        "sectionTitle": "プロフィールデータの保存方法",
+        "paragraph": "Chromeのstorage.local API、機密データにはchrome.storage.syncを使用しない。データはデバイスに残り、アップロードされない。"
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "サードパーティAIプロバイダー (Bring Your Own Key)",
+        "paragraph": "ユーザーがOpenAI、Anthropic、Groq、OpenRouterなどのBring Your Own Keyプロバイダーを設定した場合、フォームコンテキストと関連するプロフィールデータはそのサードパーティプロバイダーに送信されます。Donbricoはこれらのプロバイダーのプライバシー慣行について責任を負いません。Gemini Nano（デフォルトAI）は完全にオンデバイスで実行されます。"
+      },
+      "permissions": {
+        "sectionTitle": "使用するパーミッション",
+        "paragraph": "storage (ローカルプロフィール)、activeTab (現在のタブのフォーム検出)、scripting (自動入力ボタンの注入)、host_permissions (ユーザーが訪れる任意のウェブサイトで動作)。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "データ削除",
+        "paragraph": "拡張機能をアンインストールすると、保存されたすべてのデータが削除されます。"
+      }
+    },
+    "game": {
+      "sectionTitle": "Null Carrier — Steamゲーム",
+      "paragraph": "ゲーム自体は個人データを収集しません。Steamプラットフォームを通じて収集されるデータは、Steam独自のプライバシーポリシーが適用されます。"
+    },
+    "website": {
+      "sectionTitle": "このウェブサイト (donbrico.net)",
+      "paragraph": "分析、Cookie、追跡スクリプトなし。ウェブサイトはCloudflare Pagesでホストされる静的HTMLサイト。フォームなし、ユーザーアカウントなし、あらゆる種類のデータ収集なし。"
+    },
+    "contact": {
+      "sectionTitle": "連絡先",
+      "paragraph": "プライバシーの質問については: support@donbrico.net"
+    },
+    "changes": {
+      "sectionTitle": "このポリシーの変更",
+      "paragraph": "このポリシーは更新される場合があります。最新版はこのページをご覧ください。"
+    },
+    "footer": {
+      "links": "プライバシーポリシー | サポート"
+    }
+  }
+}
