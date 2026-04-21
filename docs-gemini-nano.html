@@ -53,30 +53,57 @@
       padding: 0 24px 100px;
     }
 
-    nav {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 28px 0 20px;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 64px;
+    /* ── Nav ── */
+    .nav {
+      position: sticky; top: 0; background: var(--bg);
+      border-bottom: 1px solid var(--border); z-index: 1000;
+      padding: 16px 0;
+      margin-bottom: 48px;
     }
-    .nav-brand {
-      display: flex; align-items: center; gap: 10px;
-      text-decoration: none; color: var(--text);
-      font-size: .85rem; font-weight: 500; letter-spacing: .02em;
+    .nav .container {
+      max-width: 1100px; margin: 0 auto; padding: 0 24px;
+      display: flex; justify-content: space-between; align-items: center;
     }
-    .nav-brand .bolt {
-      width: 28px; height: 28px; border-radius: 7px;
-      background: linear-gradient(135deg, var(--indigo), #818cf8);
-      display: grid; place-items: center;
-      font-size: .9rem;
+    .nav .logo {
+      font-size: 1.5rem; font-weight: 700; color: var(--text);
+      text-decoration: none; font-family: inherit;
     }
-    .nav-links { display: flex; gap: 28px; }
-    .nav-links a {
-      font-size: .82rem; color: var(--muted); text-decoration: none;
-      transition: color .2s;
+    .nav .nav-links {
+      display: flex; list-style: none; gap: 32px; align-items: center;
     }
-    .nav-links a:hover, .nav-links a.active { color: var(--text); }
-    .nav-links a.active { color: var(--indigo); }
+    .nav .nav-links a {
+      color: var(--text); font-weight: 500; padding: 8px 16px;
+      border-radius: 8px; transition: all 0.3s ease; text-decoration: none; font-size: 0.95rem;
+    }
+    .nav .nav-links a:hover, .nav .nav-links a.active {
+      background: var(--indigo); color: #fff;
+    }
+    .nav .nav-lang {
+      list-style: none; margin: 0; padding: 0;
+    }
+    .nav .nav-lang select {
+      background: transparent; color: var(--text); border: 1px solid var(--border); border-radius: 6px;
+      padding: 6px 30px 6px 10px; font-family: inherit; font-size: 0.9rem;
+      cursor: pointer; outline: none; appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23e8e8f0' viewBox='0 0 16 16'%3E%3Cpath d='m4.7 6.3 3.3 3.3 3.3-3.3.7.7-4,4-4-4z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 10px center;
+    }
+    .nav .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 4px; }
+    .nav .hamburger span { width: 25px; height: 3px; background: var(--text); transition: all 0.3s ease; }
+    .nav input[type="checkbox"] { display: none; }
+    
+    @media (max-width: 768px) {
+      .nav .nav-links {
+        display: none; flex-direction: column; position: absolute;
+        top: 100%; left: 0; right: 0; background: var(--bg);
+        border-bottom: 1px solid var(--border); padding: 24px; gap: 16px;
+      }
+      .nav .hamburger { display: flex; }
+      .nav input[type="checkbox"]:checked ~ .nav-links { display: flex; }
+      .nav input[type="checkbox"]:checked ~ .hamburger span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+      .nav input[type="checkbox"]:checked ~ .hamburger span:nth-child(2) { opacity: 0; }
+      .nav input[type="checkbox"]:checked ~ .hamburger span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
+    }
 
     .breadcrumb {
       display: flex; align-items: center; gap: 8px;
@@ -237,19 +264,26 @@
   </style>
 </head>
 <body>
-<div class="page-wrap">
-
-  <nav>
-    <a class="nav-brand" href="/">
-      <div class="bolt">⚡</div>
-      Donbrico Autofill AI
-    </a>
-    <div class="nav-links">
-      <a href="/docs-gemini-nano.html" class="active">Gemini Nano</a>
-      <a href="/docs-api-keys.html">API Keys</a>
-      <a href="/autofill-ai/">Back to extension</a>
+<nav class="nav">
+    <div class="container">
+        <a href="./" class="logo" data-i18n="app.name">Donbrico Studio</a>
+        <input type="checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="./" data-i18n="nav.home">Home</a></li>
+            <li><a href="./autofill-ai/" class="active" data-i18n="nav.autofillAi">Autofill AI</a></li>
+            <li><a href="./null-carrier/" data-i18n="nav.nullCarrier">Null Carrier</a></li>
+            <li><a href="./privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a></li>
+            <li><a href="./support/" data-i18n="nav.support">Support</a></li>
+        </ul>
     </div>
-  </nav>
+</nav>
+
+<div class="page-wrap">
 
   <div class="breadcrumb">
     <a href="/">Home</a>
@@ -499,5 +533,6 @@
     });
   });
 </script>
+<script src="./js/i18n.js" defer></script>
 </body>
 </html>
