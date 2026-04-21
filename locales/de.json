@@ -136,8 +136,9 @@
         },
         "yearly": {
           "title": "Jährlich",
-          "price": "$47/Jahr",
-          "subtitle": "~$3.92/Monat",
+          "price": "$47.99/Jahr",
+          "subtitle": "~$4.00/Monat",
+          "savings": "33% gegenüber dem Monatspreis sparen",
           "features": {
             "header": "Alles im Monatlich-Plan",
             "f1": "✅ Gleiche Funktionen, besserer Preis"

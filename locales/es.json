@@ -136,8 +136,9 @@
         },
         "yearly": {
           "title": "Anual",
-          "price": "$47/año",
-          "subtitle": "~$3.92/mes",
+          "price": "$47.99/año",
+          "subtitle": "~$4.00/mes",
+          "savings": "Ahorra 33% en comparación con el plan mensual",
           "features": {
             "header": "Todo lo de Mensual",
             "f1": "✅ Mismas características, mejor precio"

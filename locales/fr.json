@@ -136,8 +136,9 @@
         },
         "yearly": {
           "title": "Annuel",
-          "price": "$47/an",
-          "subtitle": "~$3.92/mois",
+          "price": "$47.99/an",
+          "subtitle": "~$4.00/mois",
+          "savings": "Économisez 33% par rapport au mensuel",
           "features": {
             "header": "Tout dans Mensuel",
             "f1": "✅ Mêmes fonctionnalités, meilleur prix"

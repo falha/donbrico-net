@@ -136,8 +136,9 @@
         },
         "yearly": {
           "title": "Annuale",
-          "price": "$47/anno",
-          "subtitle": "~$3.92/mese",
+          "price": "$47.99/anno",
+          "subtitle": "~$4.00/mese",
+          "savings": "Risparmia il 33% rispetto al mensile",
           "features": {
             "header": "Tutto del Mensile",
             "f1": "✅ Stesse funzioni, prezzo migliore"

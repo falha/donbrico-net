@@ -136,12 +136,15 @@
         },
         "yearly": {
           "title": "年付",
-          "price": "$47/年",
-          "subtitle": "~$3.92/月",
+          "price": "$47.99/年",
+          "subtitle": "~$4.00/月",
+          "savings": "比月付节省 33%",
           "features": {
             "header": "月付版的所有功能",
             "f1": "✅ 相同功能，更优价格"
           },
+          "button": "获取年付"
+        },
           "button": "获取年付"
         },
         "lifetime": {

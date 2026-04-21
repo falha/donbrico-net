@@ -136,8 +136,9 @@
         },
         "yearly": {
           "title": "Yearly",
-          "price": "$47/year",
-          "subtitle": "~$3.92/month",
+          "price": "$47.99/year",
+          "subtitle": "~$4.00/month",
+          "savings": "Save 33% vs monthly",
           "features": {
             "header": "Everything in Monthly",
             "f1": "✅ Same features, better price"
