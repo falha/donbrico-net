@@ -110,50 +110,52 @@
     "pricing": {
       "sectionTitle": "Simple pricing.",
       "autofillAi": {
-        "free": {
-          "title": "Free — forever",
-          "price": "$0",
-          "features": {
-            "f1": "✅ Gemini Nano + Bring Your Own Key AI (unlimited calls)",
-            "f2": "✅ Basic field filling (name, email, phone, etc.) — always free",
-            "f3": "✅ Long-text fields — profile raw data pasted as-is",
-            "f4": "✅ AI short answers — FREE when AI output ≤ 75 words",
-            "f5": "✅ 1 saved profile"
+          "free": {
+           "title": "Free (forever)",
+           "price": "$0",
+            "features": {
+              "f1": "1 profile",
+              "f2": "Unlimited form filling",
+              "f3": "Local AI via Gemini Nano",
+              "f4": "Bring your own cloud AI key",
+              "f5": "Adaptive learning (up to 20 corrections)"
+            },
+           "button": "Add to Chrome"
+         },
+          "monthly": {
+            "title": "Pro — Monthly",
+            "price": "$5.99/month",
+            "button": "Get Monthly",
+              "features": {
+                "f1": "Up to 10 profiles",
+                "f2": "Full adaptive learning (up to 2,000 corrections)",
+                "f3": "Cover Letter Generator",
+                "f4": "Smart Rewrite toolbar",
+                "f5": "Answer history and search",
+                "f6": "Export and import backups",
+                "f7": "Priority support"
+              }
           },
-          "button": "Add to Chrome"
-        },
-        "monthly": {
-          "title": "Monthly",
-          "price": "$5.99/month",
-          "features": {
-            "header": "Everything in Free, PLUS:",
-            "f1": "✅ Unlimited AI word output",
-            "f2": "✅ Cover Letter Generator",
-            "f3": "✅ Smart Rewriting",
-            "f4": "✅ 10 saved profiles"
-          },
-          "button": "Get Monthly"
-        },
-        "yearly": {
-          "title": "Yearly",
-          "price": "$47.99/year",
-          "subtitle": "~$4.00/month",
-          "savings": "Save 33% vs monthly",
-          "features": {
-            "header": "Everything in Monthly",
-            "f1": "✅ Same features, better price"
-          },
-          "button": "Get Yearly"
-        },
+         "yearly": {
+           "title": "Pro — Yearly",
+           "price": "$47.99/year",
+           "subtitle": "~$4.00/month",
+           "savings": "Save 33% vs monthly",
+            "features": {
+                "f1": "All Monthly Pro features",
+                "f2": "Better value"
+            },
+           "button": "Get Yearly"
+         },
         "lifetime": {
-          "title": "Lifetime Early Adopter",
+          "title": "Lifetime",
           "price": "$59.99 one-time",
           "features": {
-            "header": "Everything in Monthly — forever",
-            "f1": "✅ Early Adopter badge",
-            "f2": "✅ All future Pro features free",
-            "f3": "❌ LIMITED: first 100 buyers"
+            "f1": "All Pro features, forever",
+            "f2": "All future updates included"
           },
+          "earlyAdopter": "(early adopter offer, limited to first 100 users)",
+          "disclaimer": "",
           "button": "Get Lifetime"
         }
       }
@@ -193,13 +195,21 @@
       "q5": {
         "question": "When will it be available?",
         "answer": "Currently in final development. Add it for free when it launches on the Chrome Web Store."
+      },
+      "q6": {
+        "question": "What is the Lifetime License?",
+        "answer": "A \"Lifetime License\" grants access to Donbrico Autofill AI and all future Pro-tier updates for the duration of the product's active maintenance period.<br><br>This license is tied to the lifespan of the product itself — not the purchaser's lifetime or any fixed term. Donbrico reserves the right to modify, limit, or discontinue the product at any time, including in response to changes to the Chrome Web Store policies, Chrome extension APIs, or the availability of underlying AI technologies (including but not limited to Google Gemini Nano or externally configured AI providers).<br><br>In such events, no refund or compensation shall be due. Early adopter pricing reflects the product's current stage of development, and purchasers acknowledge the inherent risks of software products dependent on evolving third-party platforms."
       }
     },
-    "footer": {
-      "links": "Privacy Policy | Support"
-    }
-  },
-  "nullCarrier": {
+     "footer": {
+       "links": "Privacy Policy | Support"
+     },
+     "licensing": {
+       "sectionTitle": "Licensing & Lifetime Access",
+       "paragraph": "The 'Lifetime' plan refers to the lifetime of the Donbrico Autofill AI product. Access is subject to continued compatibility with Chrome and the availability of underlying AI technologies. For full details, see the disclaimer on the product page."
+     }
+   },
+   "nullCarrier": {
     "page": {
       "title": "Null Carrier — Deep-Space Signal Puzzle Game | Steam",
       "description": "Operate a deep-space listening array. Tune frequencies, reconstruct signals, question your orders. A minimalist atmospheric puzzle game coming to Steam.",
@@ -368,6 +378,10 @@
       "sectionTitle": "Contact",
       "paragraph": "For privacy questions, contact: support@donbrico.net"
     },
+    "licensing": {
+      "sectionTitle": "Licensing & Lifetime Access",
+      "paragraph": "The 'Lifetime' plan refers to the lifetime of the Donbrico Autofill AI product. Access is subject to continued compatibility with Chrome and the availability of underlying AI technologies. For full details, see the disclaimer on the product page."
+    },
     "changes": {
       "sectionTitle": "Changes to This Policy",
       "paragraph": "This policy may be updated. Check this page for the latest version."
@@ -385,7 +399,7 @@
     "steamGame": "STEAM GAME",
     "comingSoon": "COMING SOON"
   },
-  "cta": {
+   "cta": {
     "addToChrome": "Add to Chrome",
     "addToChromeFree": "Add to Chrome — Free",
     "wishlistOnSteam": "Wishlist on Steam →",

@@ -123,38 +123,40 @@
           "button": "Chrome에 추가"
         },
         "monthly": {
-          "title": "월간",
+          "title": "Pro — 월간",
           "price": "$5.99/월",
           "features": {
-            "header": "무료의 모든 것, 추가:",
-            "f1": "✅ 무제한 AI 단어 출력",
-            "f2": "✅ 자소서 생성기",
-            "f3": "✅ 스마트 재작성",
-            "f4": "✅ 저장된 프로필 10개"
+            "f1": "✅ 최대 10개 프로필",
+            "f2": "✅ 완전한 적응형 학습 (최대 2,000개 수정)",
+            "f3": "✅ 자기소개서 생성기",
+            "f4": "✅ 스마트 재작성 툴바",
+            "f5": "✅ 답변 기록 및 검색",
+            "f6": "✅ 백업 내보내기 및 가져오기",
+            "f7": "✅ 우선 지원"
           },
           "button": "월간 구매"
         },
         "yearly": {
-          "title": "연간",
+          "title": "Pro — 연간",
           "price": "$47.99/년",
           "subtitle": "~$4.00/월",
           "savings": "월간 대비 33% 할인",
           "features": {
-            "header": "월간의 모든 것",
-            "f1": "✅ 동일한 기능, 더 나은 가격"
+            "f1": "모든 월간 Pro 기능",
+            "f2": "더 나은 가치"
           },
           "button": "연간 구매"
         },
         "lifetime": {
-          "title": "평생 얼리어답터",
+          "title": "Lifetime",
           "price": "$59.99 일회성",
+          "earlyAdopter": "(얼리 어답터 혜택, 선착순 100명 한정)",
           "features": {
-            "header": "월간의 모든 것 — 영구히",
-            "f1": "✅ 얼리어답터 배지",
-            "f2": "✅ 모든 향후 Pro 기능 무료",
-            "f3": "❌ 제한: 처음 100명 구매자"
+            "f1": "✅ 모든 Pro 기능, 영구히",
+            "f2": "✅ 모든 향후 업데이트 포함"
           },
-          "button": "평생 구매"
+          "disclaimer": "",
+          "button": "Lifetime 구매"
         }
       }
     },
@@ -191,12 +193,20 @@
         "answer": "아니요。무료 버전은 키가 필요 없는 Gemini Nano를 사용합니다。장치가 지원하지 않으면 OpenAI, Anthropic, Groq 또는 OpenRouter의 자체 키를 추가할 수 있습니다。"
       },
       "q5": {
-        "question": "언제 사용할 수 있나요?",
-        "answer": "현재 최종 개발 중입니다。Chrome Web Store에서 런칭되면 무료로 추가하세요。"
+        "question": "언제 이용 가능해지나요?",
+        "answer": "현재 최종 개발 단계에 있습니다. Chrome 웹 스토어에 출시되면 무료로 추가하세요."
+      },
+      "q6": {
+        "question": "평생 라이선스란 무엇인가요?",
+        "answer": "\"평생 라이선스\"는 제품의 활발한 유지 관리 기간 동안 Donbrico Autofill AI 및 모든 향후 Pro 등급 업데이트에 대한 액세스 권한을 부여합니다.<br><br>이 라이선스는 제품 자체의 수명과 연결되어 있으며, 구매자의 평생이나 고정된 기간을 의미하지 않습니다. Donbrico는 Chrome 웹 스토어 정책 변경, Chrome 확장 프로그램 API 변경 또는 기본 AI 기술(Google Gemini Nano 또는 외부에서 구성된 AI 제공업체를 포함하되 이에 국한되지 않음)의 가용성 변화에 대응하여 언제든지 제품을 수정, 제한 또는 중단할 수 있는 권리를 보유합니다.<br><br>이러한 경우 환불이나 보상은 제공되지 않습니다. 얼리 어답터 가격은 제품의 현재 개발 단계를 반영하며, 구매자는 진화하는 타사 플랫폼에 의존하는 소프트웨어 제품의 내재적 위험을 인정합니다."
       }
     },
     "footer": {
       "links": "개인정보 처리방침 | 지원"
+    },
+    "licensing": {
+      "sectionTitle": "라이선싱 및 평생 액세스",
+      "paragraph": "'평생' 플랜은 Donbrico Autofill AI 제품의 수명을 의미합니다. 접근성은 Chrome과의 지속적인 호환성과 기반 AI 기술의 가용성에 따라 달라집니다. 자세한 내용은 제품 페이지의 면책 조항을 참조하세요."
     }
   },
   "nullCarrier": {
@@ -264,8 +274,11 @@
       "ogTitle": "지원 — Donbrico",
       "ogDescription": "Donbrico Autofill AI 및 Null Carrier에 대한 지원을 받으세요。support@donbrico.net으로 문의하세요。"
     },
+    "hero": {
+      "eyebrow": "지원"
+    },
     "sectionTitle": "지원",
-    "subtitle": "我们是 솔로 운영입니다。모든 메시지를 읽습니다。",
+    "subtitle": "솔로 개발자가 직접 운영합니다. 모든 메시지를 확인합니다.",
     "contact": {
       "sectionTitle": "연락처",
       "fastestWay": "가장 빠른 연락 방법:",
@@ -320,6 +333,10 @@
       "ogTitle": "개인정보 처리방침 — Donbrico",
       "ogDescription": "donbrico.net, Chrome 확장 프로그램 Donbrico Autofill AI 및 Null Carrier의 개인정보 처리방침입니다。"
     },
+    "hero": {
+      "eyebrow": "개인정보 처리방침",
+      "subtitle": "모든 Donbrico 제품에서 데이터를 처리하는 방식."
+    },
     "sectionTitle": "개인정보 처리방침",
     "lastUpdated": "마지막 업데이트: 2026년 1월",
     "overview": {
@@ -357,6 +374,10 @@
       "sectionTitle": "이 웹사이트(donbrico.net)",
       "paragraph": "분석, 쿠키, 추적 스크립트 없음。이 웹사이트는 Cloudflare Pages에 호스팅되는 정적 HTML 사이트입니다。폼 없음, 사용자 계정 없음, 어떠한 종류의 데이터 수집도 없음。"
     },
+    "licensing": {
+      "sectionTitle": "라이선싱 및 평생 액세스",
+      "paragraph": "'평생' 플랜은 Donbrico Autofill AI 제품의 수명을 의미합니다. 접근성은 Chrome과의 지속적인 호환성과 기반 AI 기술의 가용성에 따라 달라집니다. 자세한 내용은 제품 페이지의 면책 조항을 참조하세요."
+    },
     "contact": {
       "sectionTitle": "문의",
       "paragraph": "개인정보 관련 문의: support@donbrico.net"
@@ -368,5 +389,33 @@
     "footer": {
       "links": "개인정보 처리방침 | 지원"
     }
+  },
+  "emails": {
+    "support": "support@donbrico.net"
+  },
+  "badges": {
+    "chromeExtension": "CHROME 확장 프로그램",
+    "free": "무료",
+    "steamGame": "STEAM 게임",
+    "comingSoon": "출시 예정"
+  },
+  "cta": {
+    "addToChrome": "Chrome에 추가",
+    "addToChromeFree": "Chrome에 추가 — 무료",
+    "wishlistOnSteam": "Steam 위시리스트에 추가 →",
+    "learnMore": "자세히 보기 →",
+    "seeHowItWorks": "작동 방식 보기 ↓",
+    "getMonthly": "월간 구매",
+    "getYearly": "연간 구매",
+    "getLifetime": "Lifetime 구매",
+    "viewSetupGuide": "설정 가이드 보기 →"
+  },
+  "time": {
+    "responseTime": "1–2 영업일",
+    "lastUpdated": "2026년 1월"
+  },
+  "tech": {
+    "chromeVersion": "Chrome 127+",
+    "ramRequirement": "22GB 무료 저장공간"
   }
 }

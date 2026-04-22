@@ -113,31 +113,12 @@ const i18next = {
       } else {
         this.translations['en'] = {};
       }
-    }
-  },
-  
-  translations: {},
-  
-  currentLang: 'en',
-  
-  /**
-   * Get the base path to reach site root from current page
-   * Handles both root-level pages and subdirectory pages
-   */
-  getBasePath() {
-    const path = window.location.pathname;
-    // Split path into segments, filter empty
-    const segments = path.split('/').filter(seg => seg && !seg.endsWith('.html'));
-    // If we have any segments, we're in a subdirectory, need to go up
-    if (segments.length > 0) {
-      return '../'.repeat(segments.length);
-    }
-    return './';
-  },
-  
-  /**
-   * Detect user's preferred language from browser
-   */
+     }
+   },
+   
+   /**
+    * Detect user's preferred language from browser
+    */
   detectLanguage() {
     // Check localStorage first
     const saved = localStorage.getItem('donbrico-lang');

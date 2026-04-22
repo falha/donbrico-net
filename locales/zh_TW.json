@@ -111,7 +111,7 @@
       "sectionTitle": "簡單定價。",
       "autofillAi": {
         "free": {
-          "title": "免費 — 永久",
+          "title": "免費 (永久)",
           "price": "$0",
           "features": {
             "f1": "✅ Gemini Nano + Bring Your Own Key AI（無限次呼叫）",
@@ -123,38 +123,40 @@
           "button": "新增到 Chrome"
         },
         "monthly": {
-          "title": "月付",
+          "title": "Pro — 按月",
           "price": "$5.99/月",
           "features": {
-            "header": "免費版的所有功能，加上：",
-            "f1": "✅ 無限 AI 單字輸出",
-            "f2": "✅ 求職信產生器",
-            "f3": "✅ 智慧重寫",
-            "f4": "✅ 儲存 10 個個人檔案"
+            "f1": "✅ 最多 10 個個人資料",
+            "f2": "✅ 完整自適應學習（最多 2,000 次修正）",
+            "f3": "✅ 自傳生成器",
+            "f4": "✅ 智慧重寫工具列",
+            "f5": "✅ 回答歷史與搜尋",
+            "f6": "✅ 匯出與匯入備份",
+            "f7": "✅ 優先支援"
           },
-          "button": "取得月付"
+          "button": "購買按月版"
         },
         "yearly": {
-          "title": "年付",
+          "title": "Pro — 按年",
           "price": "$47.99/年",
           "subtitle": "~$4.00/月",
           "savings": "比月付節省 33%",
           "features": {
-            "header": "月付版的所有功能",
-            "f1": "✅ 相同功能，更優價格"
+            "f1": "所有按月 Pro 功能",
+            "f2": "性價比更高"
           },
-          "button": "取得年付"
+          "button": "購買按年版"
         },
         "lifetime": {
-          "title": "終身早期採用者",
+          "title": "Lifetime",
           "price": "$59.99 一次性付費",
+          "earlyAdopter": "（早期採用者優惠，限前 100 名用戶）",
           "features": {
-            "header": "月付版的所有功能 — 永久",
-            "f1": "✅ 早期採用者徽章",
-            "f2": "✅ 所有將來的 Pro 功能免費",
-            "f3": "❌ 限量：前 100 名購買者"
+            "f1": "✅ 永久享受所有 Pro 功能",
+            "f2": "✅ 包含所有未來更新"
           },
-          "button": "取得終身版"
+          "disclaimer": "",
+          "button": "購買 Lifetime 版"
         }
       }
     },
@@ -191,12 +193,20 @@
         "answer": "不需要。免費版本使用 Gemini Nano，不需要金鑰。如果你的裝置不支援，你可以選擇新增你自己的來自 OpenAI、Anthropic、Groq 或 OpenRouter 的金鑰。"
       },
       "q5": {
-        "question": "什麼時候可用？",
-        "answer": "目前處於最終開發階段。當它在 Chrome 網上應用店發布時，免費新增它。"
+        "question": "什麼時候可以使用？",
+        "answer": "目前處於最終開發階段。在 Chrome 線上應用程式商店發佈時即可免費添加。"
+      },
+      "q6": {
+        "question": "什麼是終身許可？",
+        "answer": "「終身許可」授予在產品的主動維護期間訪問 Donbrico Autofill AI 及其所有未來 Pro 級更新的權限。<br><br>此許可與產品本身的生命週期相關聯，而非購買者的壽命或任何固定期限。Donbrico 保留隨時修改、限制或終止產品的權利，包括為了響應 Chrome 線上應用程式商店政策的變化、Chrome 瀏覽器擴充功能 API 的更改或底層 AI 技術（包括但不限於 Google Gemini Nano 或外部配置的 AI 提供商）的可用性而做出的調整。<br><br>在這種情況下，不予退款或補償。早期採用者價格反映了產品目前的開發階段，購買者承認依賴於不斷演進的第三方平台的軟體產品所固有的風險。"
       }
     },
     "footer": {
       "links": "隱私政策 | 支援"
+    },
+    "licensing": {
+      "sectionTitle": "授權與終身存取",
+      "paragraph": "「終身」授權指的是 Donbrico Autofill AI 產品的生命週期。它包括產品維護期間的所有未來 Pro 更新。存取權限取決於與 Chrome 的持續相容性以及底層 AI 技術的可用性。"
     }
   },
   "nullCarrier": {
@@ -311,6 +321,9 @@
     },
     "footer": {
       "links": "隱私政策 | 支援"
+    },
+    "hero": {
+      "eyebrow": "支援"
     }
   },
   "privacyPolicy": {
@@ -357,6 +370,10 @@
       "sectionTitle": "這個網站（donbrico.net）",
       "paragraph": "無分析、無 Cookie、無追蹤腳本。此網站是託管在 Cloudflare Pages 上的靜態 HTML 網站。無表單、無使用者帳戶、無任何形式的資料收集。"
     },
+    "licensing": {
+      "sectionTitle": "授權與終身存取",
+      "paragraph": "「終身」授權指的是 Donbrico Autofill AI 產品的生命週期。它包括產品維護期間的所有未來 Pro 更新。存取權限取決於與 Chrome 的持續相容性以及底層 AI 技術的可用性。"
+    },
     "contact": {
       "sectionTitle": "聯繫",
       "paragraph": "關於隱私問題，請聯繫：support@donbrico.net"
@@ -367,6 +384,38 @@
     },
     "footer": {
       "links": "隱私政策 | 支援"
+    },
+    "hero": {
+      "eyebrow": "隱私權政策",
+      "subtitle": "我們如何在所有 Donbrico 產品中處理您的資料。"
     }
+  },
+  "emails": {
+    "support": "support@donbrico.net"
+  },
+  "badges": {
+    "chromeExtension": "CHROME 擴充功能",
+    "free": "免費",
+    "steamGame": "STEAM 遊戲",
+    "comingSoon": "即將推出"
+  },
+  "cta": {
+    "addToChrome": "新增至 Chrome",
+    "addToChromeFree": "新增至 Chrome — 免費",
+    "wishlistOnSteam": "在 Steam 上加入願望清單 →",
+    "learnMore": "了解更多 →",
+    "seeHowItWorks": "查看運作方式 ↓",
+    "getMonthly": "購買按月版",
+    "getYearly": "購買按年版",
+    "getLifetime": "購買 Lifetime 版",
+    "viewSetupGuide": "查看設定指南 →"
+  },
+  "time": {
+    "responseTime": "1–2 個工作日",
+    "lastUpdated": "2026 年 1 月"
+  },
+  "tech": {
+    "chromeVersion": "Chrome 127+",
+    "ramRequirement": "22GB 可用儲存空間"
   }
 }

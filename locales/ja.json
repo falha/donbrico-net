@@ -111,7 +111,7 @@
       "sectionTitle": "シンプルな価格設定。",
       "autofillAi": {
         "free": {
-          "title": "無料 — 永遠に",
+          "title": "無料 (永久)",
           "price": "$0",
           "features": {
             "f1": "✅ Gemini Nano + Bring Your Own Key AI (無制限呼び出し)",
@@ -123,38 +123,40 @@
           "button": "Chromeに追加"
         },
         "monthly": {
-          "title": "月額",
+          "title": "Pro — 月間",
           "price": "$5.99/月",
           "features": {
-            "header": "無料版のすべてに加えて:",
-            "f1": "✅ AI単語出力無制限",
-            "f2": "✅ カバーレタージェネレーター",
-            "f3": "✅ スマート rewriting",
-            "f4": "✅ 保存されたプロフィール10個"
+            "f1": "✅ 最大10個のプロフィール",
+            "f2": "✅ 完全なアダプティブラーニング（最大2,000件の修正）",
+            "f3": "✅ カバーレター・ジェネレーター",
+            "f4": "✅ スマート・リライト・ツールバー",
+            "f5": "✅ 回答履歴と検索",
+            "f6": "✅ バックアップのエクスポートとインポート",
+            "f7": "✅ 優先サポート"
           },
-          "button": "月額プラン"
+          "button": "月間プランを購入"
         },
         "yearly": {
-          "title": "年額",
+          "title": "Pro — 年間",
           "price": "$47.99/年",
           "subtitle": "~$4.00/月",
           "savings": "月額プラン比べて33%お得",
           "features": {
-            "header": "月額プランのすべて",
-            "f1": "✅ 同じ機能、より良い価格"
+            "f1": "すべての月額Pro機能",
+            "f2": "よりお得"
           },
-          "button": "年額プラン"
+          "button": "年間プランを購入"
         },
         "lifetime": {
-          "title": "生涯早期導入",
+          "title": "Lifetime",
           "price": "$59.99 一回払い",
+          "earlyAdopter": "（早期採用者特典、先着100名限定）",
           "features": {
-            "header": "月額プランのすべて — 永遠に",
-            "f1": "✅ Early Adopterバッジ",
-            "f2": "✅ 将来のすべてのPro機能を無料で",
-            "f3": "❌ 限定: 最初の100購入者"
+            "f1": "✅ すべてのPro機能（無期限）",
+            "f2": "✅ 将来のすべてのアップデートを含む"
           },
-          "button": "生涯プラン"
+          "disclaimer": "",
+          "button": "Lifetimeを購入"
         }
       }
     },
@@ -192,11 +194,19 @@
       },
       "q5": {
         "question": "いつ利用可能になりますか？",
-        "answer": "現在最終開発中です。Chrome Web Storeでリリースされたら無料で追加できます。"
+        "answer": "現在、最終開発段階です。Chrome ウェブストアでリリースされたら、無料で追加してください。"
+      },
+      "q6": {
+        "question": "ライフタイムライセンスとは何ですか？",
+        "answer": "「ライフタイムライセンス」は、製品の有効なメンテナンス期間中、Donbrico Autofill AI および将来のすべての Pro ティアアップデートへのアクセスを許可するものです。<br><br>このライセンスは製品自体の寿命に紐付けられており、購入者の生涯や固定期間を指すものではありません。Donbrico は、Chrome ウェブストアのポリシー変更、Chrome 拡張機能 API の変更、または基盤となる AI テクノロジー（Google Gemini Nano または外部で設定された AI プロバイダーを含みますが、これらに限定されません）の可用性に応じて、いつでも製品を変更、制限、または中止する権利を留保します。<br><br>そのような場合、返金や補償は行われません。早期導入価格は製品の現在の開発段階を反映したものであり、購入者は進化するサードパーティプラットフォームに依存するソフトウェア製品固有のリスクを認識するものとします。"
       }
     },
     "footer": {
       "links": "プライバシーポリシー | サポート"
+    },
+    "licensing": {
+      "sectionTitle": "ライセンスと終身アクセス",
+      "paragraph": "「終身」プランは Donbrico Autofill AI 製品の寿命を指します。アクセスは Chrome との継続的な互換性と基礎となる AI 技術の可用性に依存します。詳細については、製品ページの免責事項をご覧ください。"
     }
   },
   "nullCarrier": {
@@ -311,6 +321,9 @@
     },
     "footer": {
       "links": "プライバシーポリシー | サポート"
+    },
+    "hero": {
+      "eyebrow": "サポート"
     }
   },
   "privacyPolicy": {
@@ -357,6 +370,10 @@
       "sectionTitle": "このウェブサイト (donbrico.net)",
       "paragraph": "分析、Cookie、追跡スクリプトなし。ウェブサイトはCloudflare Pagesでホストされる静的HTMLサイト。フォームなし、ユーザーアカウントなし、あらゆる種類のデータ収集なし。"
     },
+    "licensing": {
+      "sectionTitle": "ライセンスと終身アクセス",
+      "paragraph": "「終身」プランは Donbrico Autofill AI 製品の寿命を指します。アクセスは Chrome との継続的な互換性と基礎となる AI 技術の可用性に依存します。詳細については、製品ページの免責事項をご覧ください。"
+    },
     "contact": {
       "sectionTitle": "連絡先",
       "paragraph": "プライバシーの質問については: support@donbrico.net"
@@ -367,6 +384,38 @@
     },
     "footer": {
       "links": "プライバシーポリシー | サポート"
+    },
+    "hero": {
+      "eyebrow": "プライバシーポリシー",
+      "subtitle": "Donbricoのすべての製品におけるデータの取り扱いについて。"
     }
+  },
+  "emails": {
+    "support": "support@donbrico.net"
+  },
+  "badges": {
+    "chromeExtension": "CHROME拡張機能",
+    "free": "無料",
+    "steamGame": "STEAMゲーム",
+    "comingSoon": "近日公開"
+  },
+  "cta": {
+    "addToChrome": "Chromeに追加",
+    "addToChromeFree": "Chromeに追加 — 無料",
+    "wishlistOnSteam": "Steamでウィッシュリストに追加 →",
+    "learnMore": "詳細を見る →",
+    "seeHowItWorks": "使い方を見る ↓",
+    "getMonthly": "月間プランを購入",
+    "getYearly": "年間プランを購入",
+    "getLifetime": "Lifetimeを購入",
+    "viewSetupGuide": "セットアップガイドを見る →"
+  },
+  "time": {
+    "responseTime": "1–2営業日",
+    "lastUpdated": "2026年1月"
+  },
+  "tech": {
+    "chromeVersion": "Chrome 127+",
+    "ramRequirement": "22GBの空き容量"
   }
 }

@@ -111,50 +111,52 @@
       "sectionTitle": "Precios simples.",
       "autofillAi": {
         "free": {
-          "title": "Gratis — para siempre",
+          "title": "Gratis (para siempre)",
           "price": "$0",
           "features": {
-            "f1": "✅ Gemini Nano + Bring Your Own Key IA (llamadas ilimitadas)",
-            "f2": "✅ Rellenado básico de campos (nombre, email, teléfono, etc.) — siempre gratis",
-            "f3": "✅ Campos de texto largo — datos de perfil pegados tal cual",
-            "f4": "✅ Respuestas cortas con IA — GRATIS cuando la salida ≤ 75 palabras",
-            "f5": "✅ 1 perfil guardado"
+            "f1": "1 perfil",
+            "f2": "Relleno de formularios ilimitado",
+            "f3": "IA local vía Gemini Nano",
+            "f4": "Trae tu propia clave de IA en la nube",
+            "f5": "Aprendizaje adaptativo (hasta 20 correcciones)"
           },
           "button": "Añadir a Chrome"
         },
         "monthly": {
-          "title": "Mensual",
+          "title": "Pro — Mensual",
           "price": "$5.99/mes",
           "features": {
-            "header": "Todo lo de Gratis, PLUS:",
-            "f1": "✅ Salida ilimitada de palabras con IA",
-            "f2": "✅ Generador de Cartas de Presentación",
-            "f3": "✅ Reescritura Inteligente",
-            "f4": "✅ 10 perfiles guardados"
+            "f1": "✅ Hasta 10 perfiles",
+            "f2": "✅ Aprendizaje adaptativo completo (hasta 2,000 correcciones)",
+            "f3": "✅ Generador de cartas de presentación",
+            "f4": "✅ Barra de herramientas Smart Rewrite",
+            "f5": "✅ Historial de respuestas y búsqueda",
+            "f6": "✅ Exportar e importar copias de seguridad",
+            "f7": "✅ Soporte prioritario"
           },
           "button": "Obtener Mensual"
         },
         "yearly": {
-          "title": "Anual",
+          "title": "Pro — Anual",
           "price": "$47.99/año",
           "subtitle": "~$4.00/mes",
           "savings": "Ahorra 33% en comparación con el plan mensual",
           "features": {
-            "header": "Todo lo de Mensual",
-            "f1": "✅ Mismas características, mejor precio"
+            "f1": "Todas las funciones Pro mensuales",
+            "f2": "Mejor valor"
           },
           "button": "Obtener Anual"
         },
         "lifetime": {
-          "title": "Early Adopter de por Vida",
+          "title": "Lifetime",
           "price": "$59.99 único pago",
+          "earlyAdopter": "(oferta para adoptantes tempranos, limitada a los primeros 100 usuarios)",
           "features": {
-            "header": "Todo lo de Mensual — para siempre",
-            "f1": "✅ Insignia de Early Adopter",
-            "f2": "✅ Todas las futuras características Pro gratis",
-            "f3": "❌ LIMITADO: primeros 100 compradores"
+            "f1": "✅ Todas las funciones Pro, para siempre",
+            "f2": "✅ Todas las actualizaciones futuras incluidas"
           },
-          "button": "Obtener de por Vida"
+          "disclaimer": "",
+          "button": "Obtener Lifetime"
         }
       }
     },
@@ -193,10 +195,18 @@
       "q5": {
         "question": "¿Cuándo estará disponible?",
         "answer": "Actualmente en desarrollo final. Añádelo gratis cuando se lance en la Chrome Web Store."
+      },
+      "q6": {
+        "question": "¿Qué es la Licencia de por Vida?",
+        "answer": "Una \"Licencia de por Vida\" otorga acceso a Donbrico Autofill AI y a todas las futuras actualizaciones de nivel Pro durante el período de mantenimiento activo del producto.<br><br>Esta licencia está vinculada a la vida útil del producto en sí, no a la vida del comprador ni a ningún plazo fijo. Donbrico se reserva el derecho de modificar, limitar o descontinuar el producto en cualquier momento, incluso en respuesta a cambios en las políticas de Chrome Web Store, las API de las extensiones de Chrome o la disponibilidad de tecnologías de IA subyacentes (incluyendo, entre otras, Google Gemini Nano o proveedores de IA configurados externamente).<br><br>En tales eventos, no se deberá ningún reembolso ni compensación. El precio para adoptantes tempranos refleja la etapa actual de desarrollo del producto, y los compradores reconocen los riesgos inherentes de los productos de software que dependen de plataformas de terceros en evolución."
       }
     },
     "footer": {
       "links": "Política de privacidad | Soporte"
+    },
+    "licensing": {
+      "sectionTitle": "Licencia y Acceso de por Vida",
+      "paragraph": "El plan 'De por vida' se refiere a la vida útil del producto Donbrico Autofill AI. El acceso está sujeto a la compatibilidad continua con Chrome y a la disponibilidad de las tecnologías de IA subyacentes."
     }
   },
   "nullCarrier": {
@@ -311,6 +321,9 @@
     },
     "footer": {
       "links": "Política de privacidad | Soporte"
+    },
+    "hero": {
+      "eyebrow": "SOPORTE"
     }
   },
   "privacyPolicy": {
@@ -357,6 +370,10 @@
       "sectionTitle": "Este Sitio Web (donbrico.net)",
       "paragraph": "Sin analíticas, sin cookies, sin scripts de seguimiento. El sitio web es un sitio HTML estático alojado en Cloudflare Pages. Sin formularios, sin cuentas de usuario, sin recopilación de datos de ningún tipo."
     },
+    "licensing": {
+      "sectionTitle": "Licencia y Acceso de por Vida",
+      "paragraph": "El plan 'De por vida' se refiere a la vida útil del producto Donbrico Autofill AI. El acceso está sujeto a la compatibilidad continua con Chrome y a la disponibilidad de las tecnologías de IA subyacentes."
+    },
     "contact": {
       "sectionTitle": "Contacto",
       "paragraph": "Para preguntas de privacidad, contacta: support@donbrico.net"
@@ -367,6 +384,38 @@
     },
     "footer": {
       "links": "Política de privacidad | Soporte"
+    },
+    "hero": {
+      "eyebrow": "POLÍTICA DE PRIVACIDAD",
+      "subtitle": "Cómo manejamos sus datos en todos los productos de Donbrico."
     }
+  },
+  "emails": {
+    "support": "support@donbrico.net"
+  },
+  "badges": {
+    "chromeExtension": "EXTENSIÓN DE CHROME",
+    "free": "GRATIS",
+    "steamGame": "JUEGO DE STEAM",
+    "comingSoon": "PRÓXIMAMENTE"
+  },
+  "cta": {
+    "addToChrome": "Añadir a Chrome",
+    "addToChromeFree": "Añadir a Chrome — Gratis",
+    "wishlistOnSteam": "Lista de deseos en Steam →",
+    "learnMore": "Más información →",
+    "seeHowItWorks": "Ver cómo funciona ↓",
+    "getMonthly": "Obtener Mensual",
+    "getYearly": "Obtener Anual",
+    "getLifetime": "Obtener Lifetime",
+    "viewSetupGuide": "Ver guía de configuración →"
+  },
+  "time": {
+    "responseTime": "1–2 días hábiles",
+    "lastUpdated": "Enero de 2026"
+  },
+  "tech": {
+    "chromeVersion": "Chrome 127+",
+    "ramRequirement": "22 GB de espacio libre"
   }
 }
