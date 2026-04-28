@@ -196,11 +196,15 @@
 
   <script>
     (function() {
-      var PRODUCTION_EXT_ID = 'ldglmpphcjdamkmfpknojafocpihhbal';
+      var DEFAULT_PRODUCT_KEY = 'autofill-ai';
+      var EXTENSIONS_BY_PRODUCT = {
+        'autofill-ai': 'ldglmpphcjdamkmfpknojafocpihhbal',
+        // TODO: replace with the real AI Reply extension id once published.
+        'ai-reply': ''
+      };
       var params = new URLSearchParams(window.location.search);
-      var raw = params.get('license_key') || params.get('key') || '';
-      var key = raw ? String(raw).split(',')[0].trim() : '';
-      var extid = (params.get('extid') || PRODUCTION_EXT_ID).trim();
+      var key = parseLicenseKey(params);
+      var targetExtId = resolveTargetExtensionId(params);
 
       var loadingEl = document.getElementById('loading');
       var successEl = document.getElementById('success');
@@ -208,6 +212,40 @@
       var licenseKeyEl = document.getElementById('licenseKey');
       var copyBtn = document.getElementById('copyBtn');
       var manualIntro = document.getElementById('manualIntro');
+
+      function isAllowedExtensionId(id) {
+        if (!id || typeof id !== 'string') {
+          return false;
+        }
+        var normalizedId = id.trim();
+        if (!/^[a-z]{32}$/.test(normalizedId)) {
+          return false;
+        }
+        return Object.keys(EXTENSIONS_BY_PRODUCT).some(function(product) {
+          return EXTENSIONS_BY_PRODUCT[product] === normalizedId;
+        });
+      }
+
+      function parseLicenseKey(searchParams) {
+        var raw = searchParams.get('license_key') || searchParams.get('key') || '';
+        return raw ? String(raw).split(',')[0].trim() : '';
+      }
+
+      function resolveTargetExtensionId(searchParams) {
+        var defaultExtId = EXTENSIONS_BY_PRODUCT[DEFAULT_PRODUCT_KEY];
+        var explicitExtId = (searchParams.get('extid') || '').trim();
+        if (isAllowedExtensionId(explicitExtId)) {
+          return explicitExtId;
+        }
+
+        var product = (searchParams.get('product') || '').trim().toLowerCase();
+        var mappedExtId = EXTENSIONS_BY_PRODUCT[product] || '';
+        if (isAllowedExtensionId(mappedExtId)) {
+          return mappedExtId;
+        }
+
+        return defaultExtId;
+      }
 
       function showManual(message) {
         loadingEl.classList.add('hidden');
@@ -248,7 +286,7 @@
       }
 
       try {
-        chrome.runtime.sendMessage(extid, { type: 'LICENSE_ACTIVATED', key: key }, function(response) {
+        chrome.runtime.sendMessage(targetExtId, { type: 'LICENSE_ACTIVATED', key: key }, function(response) {
           if (chrome.runtime.lastError) {
             console.warn('Extension not reachable:', chrome.runtime.lastError.message);
             showManual('The extension could not be reached from this page (install Donbrico, or use a supported Chromium browser). Activate manually below.');
