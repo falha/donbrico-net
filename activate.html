@@ -199,7 +199,7 @@
       var DEFAULT_PRODUCT_KEY = 'autofill-ai';
       var EXTENSIONS_BY_PRODUCT = {
         'autofill-ai': 'ldglmpphcjdamkmfpknojafocpihhbal',
-        'ai-reply': 'glmcmiocabfihkmniolankdbcnhcclka'
+        'ai-reply': 'iokjfnedkqeonjpfcnptjfgacdrhcbal'
       };
       var params = new URLSearchParams(window.location.search);
       var key = parseLicenseKey(params);
@@ -232,7 +232,13 @@
 
       function resolveTargetExtensionId(searchParams) {
         var defaultExtId = EXTENSIONS_BY_PRODUCT[DEFAULT_PRODUCT_KEY];
+        var mode = (searchParams.get('mode') || '').trim().toLowerCase();
+        var isTestMode = mode === 'test';
         var explicitExtId = (searchParams.get('extid') || '').trim();
+        // Allow unpacked/dev extension ids in test mode.
+        if (isTestMode && /^[a-z]{32}$/.test(explicitExtId)) {
+          return explicitExtId;
+        }
         if (isAllowedExtensionId(explicitExtId)) {
           return explicitExtId;
         }
@@ -315,9 +321,9 @@
         });
       });
 
-      function continueActivation() {
+      function continueActivation(missingKeyMessage) {
         if (!key) {
-          showManual('Payment completed, but no license key was found in this link. Use the key from your receipt email, or open the extension Premium tab.');
+          showManual(missingKeyMessage || 'Payment completed, but no license key was found in this link. Use the key from your receipt email, or open the extension Premium tab.');
           return;
         }
 
@@ -353,11 +359,15 @@
       resolveLicenseKeyFromBackend(params).then(function(result) {
         if (result && result.key) {
           key = result.key;
-        } else if (result && result.error) {
-          console.warn('Resolve-license failed:', result.error);
-          manualIntro.textContent = 'Activation lookup failed (' + result.error + '). You can still paste your key manually below.';
+          continueActivation();
+          return;
         }
-        continueActivation();
+        var errorMessage = '';
+        if (result && result.error) {
+          console.warn('Resolve-license failed:', result.error);
+          errorMessage = 'Activation lookup failed (' + result.error + '). You can still paste your key manually below.';
+        }
+        continueActivation(errorMessage);
       }).catch(function() {
         continueActivation();
       });

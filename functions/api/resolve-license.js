@@ -24,8 +24,10 @@ export async function resolveLicenseRequest(request, env) {
   const modeApiBaseUrl = isTestMode
     ? env.DODO_PAYMENTS_API_BASE_URL_TEST
     : env.DODO_PAYMENTS_API_BASE_URL_LIVE;
-  const apiBaseUrl = String(modeApiBaseUrl || env.DODO_PAYMENTS_API_BASE_URL || defaultApiBaseUrl || '')
-    .replace(/\/+$/, '');
+  // In test mode, avoid accidentally forcing live host via generic base URL.
+  const apiBaseUrl = String(
+    modeApiBaseUrl || (isTestMode ? defaultApiBaseUrl : (env.DODO_PAYMENTS_API_BASE_URL || defaultApiBaseUrl)) || ''
+  ).replace(/\/+$/, '');
   const headers = {
     Authorization: 'Bearer ' + apiKey,
     Accept: 'application/json'
