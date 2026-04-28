@@ -199,8 +199,7 @@
       var DEFAULT_PRODUCT_KEY = 'autofill-ai';
       var EXTENSIONS_BY_PRODUCT = {
         'autofill-ai': 'ldglmpphcjdamkmfpknojafocpihhbal',
-        // TODO: replace with the real AI Reply extension id once published.
-        'ai-reply': ''
+        'ai-reply': 'glmcmiocabfihkmniolankdbcnhcclka'
       };
       var params = new URLSearchParams(window.location.search);
       var key = parseLicenseKey(params);
@@ -247,6 +246,45 @@
         return defaultExtId;
       }
 
+      function resolveLicenseKeyFromBackend(searchParams) {
+        var subscriptionId = (searchParams.get('subscription_id') || '').trim();
+        if (!subscriptionId) {
+          return Promise.resolve('');
+        }
+
+        var requestParams = new URLSearchParams();
+        requestParams.set('subscription_id', subscriptionId);
+
+        var product = (searchParams.get('product') || '').trim();
+        if (product) {
+          requestParams.set('product', product);
+        }
+
+        var email = (searchParams.get('email') || '').trim();
+        if (email) {
+          requestParams.set('email', email);
+        }
+
+        return fetch('/api/resolve-license?' + requestParams.toString(), {
+          method: 'GET',
+          credentials: 'same-origin'
+        }).then(function(response) {
+          if (!response.ok) {
+            return '';
+          }
+          return response.json().then(function(data) {
+            if (data && data.ok === true && data.license_key) {
+              return String(data.license_key).trim();
+            }
+            return '';
+          }).catch(function() {
+            return '';
+          });
+        }).catch(function() {
+          return '';
+        });
+      }
+
       function showManual(message) {
         loadingEl.classList.add('hidden');
         manualEl.classList.remove('hidden');
@@ -275,33 +313,49 @@
         });
       });
 
-      if (!key) {
-        showManual('Payment completed, but no license key was found in this link. Use the key from your receipt email, or open the extension Premium tab.');
+      function continueActivation() {
+        if (!key) {
+          showManual('Payment completed, but no license key was found in this link. Use the key from your receipt email, or open the extension Premium tab.');
+          return;
+        }
+
+        if (typeof chrome === 'undefined' || !chrome.runtime || !chrome.runtime.sendMessage) {
+          showManual();
+          return;
+        }
+
+        try {
+          chrome.runtime.sendMessage(targetExtId, { type: 'LICENSE_ACTIVATED', key: key }, function(response) {
+            if (chrome.runtime.lastError) {
+              console.warn('Extension not reachable:', chrome.runtime.lastError.message);
+              showManual('The extension could not be reached from this page (install Donbrico, or use a supported Chromium browser). Activate manually below.');
+              return;
+            }
+            if (response && response.success) {
+              showSuccess();
+            } else {
+              showManual((response && response.error) ? String(response.error) : 'Activation failed. Try pasting the key in the extension Premium tab.');
+            }
+          });
+        } catch (e) {
+          console.warn('sendMessage failed:', e);
+          showManual();
+        }
+      }
+
+      if (key) {
+        continueActivation();
         return;
       }
 
-      if (typeof chrome === 'undefined' || !chrome.runtime || !chrome.runtime.sendMessage) {
-        showManual();
-        return;
-      }
-
-      try {
-        chrome.runtime.sendMessage(targetExtId, { type: 'LICENSE_ACTIVATED', key: key }, function(response) {
-          if (chrome.runtime.lastError) {
-            console.warn('Extension not reachable:', chrome.runtime.lastError.message);
-            showManual('The extension could not be reached from this page (install Donbrico, or use a supported Chromium browser). Activate manually below.');
-            return;
-          }
-          if (response && response.success) {
-            showSuccess();
-          } else {
-            showManual((response && response.error) ? String(response.error) : 'Activation failed. Try pasting the key in the extension Premium tab.');
-          }
-        });
-      } catch (e) {
-        console.warn('sendMessage failed:', e);
-        showManual();
-      }
+      resolveLicenseKeyFromBackend(params).then(function(resolvedKey) {
+        if (resolvedKey) {
+          key = resolvedKey;
+        }
+        continueActivation();
+      }).catch(function() {
+        continueActivation();
+      });
     })();
   </script>
 </body>
