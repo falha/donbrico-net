@@ -9,14 +9,15 @@
     "autofillAi": "Autofill AI",
     "nullCarrier": "Null Carrier",
     "privacyPolicy": "Datenschutzerklärung",
-    "support": "Support"
+    "support": "Support",
+    "aiReplyAssistant": "AI Reply Assistant"
   },
   "home": {
     "page": {
       "title": "Donbrico — Projekte eines Solo-Indie-Entwicklers",
-      "description": "donbrico.net — Heimat von Donbrico Autofill AI und Null Carrier. Tools und Spiele gebaut von einem Solo-Entwickler.",
+      "description": "donbrico.net – Heimat von Donbrico Autofill AI, AI Reply Assistant und Null Carrier. ",
       "ogTitle": "Donbrico — Projekte eines Solo-Indie-Entwicklers",
-      "ogDescription": "donbrico.net — Heimat von Donbrico Autofill AI und Null Carrier. Tools und Spiele gebaut von einem Solo-Entwickler."
+      "ogDescription": "donbrico.net – Heimat von Donbrico Autofill AI, AI Reply Assistant und Null Carrier. "
     },
     "hero": {
       "eyebrow": "UNABHÄNGIGER ENTWICKLER",
@@ -40,6 +41,14 @@
         "description": "Ein Signal-Rekonstruktions-Puzzle-Spiel. Du betreibst ein Deep-Space Listening Array. Stimme Frequenzen ab, dekodiere Übertragungen, hinterfrage, was der Befehl dir sagt.",
         "techStack": "[Puzzle] [Atmosphärisch] [Steam] [Indie]",
         "button": "Mehr erfahren →"
+      },
+      "aiReplyAssistant": {
+        "badgeChrome": "CHROM-VERLÄNGERUNG",
+        "badgeFree": "KOSTENLOS / PRO",
+        "title": "Donbrico AI Reply Assistant",
+        "description": "Speichern Sie Antwortvorlagen und generieren Sie überall KI-gestützte Antworten. ",
+        "techStack": "[Chrome-Erweiterung] [KI] [Gespeicherte Antworten] [Kostenloses Kontingent]",
+        "button": "Erfahren Sie mehr →"
       }
     },
     "buttons": {
@@ -270,9 +279,9 @@
   "support": {
     "page": {
       "title": "Support — Donbrico",
-      "description": "Hole Support für Donbrico Autofill AI und Null Carrier. Kontaktiere uns unter support@donbrico.net.",
+      "description": "Erhalten Sie Unterstützung für Donbrico Autofill AI, AI Reply Assistant und Null Carrier. ",
       "ogTitle": "Support — Donbrico",
-      "ogDescription": "Hole Support für Donbrico Autofill AI und Null Carrier. Kontaktiere uns unter support@donbrico.net."
+      "ogDescription": "Erhalten Sie Unterstützung für Donbrico Autofill AI, AI Reply Assistant und Null Carrier. "
     },
     "sectionTitle": "Support",
     "subtitle": "Wir sind ein Solo-Betrieb. Wir lesen jede Nachricht.",
@@ -324,20 +333,48 @@
     },
     "hero": {
       "eyebrow": "SUPPORT"
+    },
+    "aiReplyAssistant": {
+      "sectionTitle": "Donbrico AI Reply Assistant-Unterstützung",
+      "subtitle": "Häufige Probleme",
+      "q1": {
+        "question": "Die Erweiterungssymbolleiste wird auf einer Seite nicht angezeigt",
+        "answer": "Stellen Sie sicher, dass Sie sich auf einer Seite mit einem Textfeld (Eingabe oder Textbereich) befinden. "
+      },
+      "q2": {
+        "question": "Meine gespeicherten Antworten werden nicht angezeigt",
+        "answer": "Überprüfen Sie, ob Sie Antworten auf der Registerkarte „Bibliothek“ des Erweiterungs-Popups gespeichert haben. "
+      },
+      "q3": {
+        "question": "Gemini Nano meldet „Auf diesem Gerät nicht unterstützt“",
+        "answer": "Gemini Nano erfordert Chrome 127+ mit ausreichend RAM (normalerweise 8 GB+). "
+      },
+      "q4": {
+        "question": "KI-generierte Antworten klingen allgemein oder themenfremd",
+        "answer": "Die KI verwendet den Kontext des Textfelds sowie Ihren ausgewählten Ton. "
+      },
+      "q5": {
+        "question": "Wie deinstalliere und entferne ich meine Daten?",
+        "answer": "Gehen Sie in Chrome zu chrome://extensions, suchen Sie nach Donbrico AI Reply Assistant und klicken Sie auf Entfernen. "
+      },
+      "q6": {
+        "question": "Wie melde ich einen Fehler oder fordere eine Funktion an?",
+        "answer": "Senden Sie eine E-Mail an support@donbrico.net mit „Bug:“ oder „Feature Request:“ am Anfang Ihrer Betreffzeile."
+      }
     }
   },
   "privacyPolicy": {
     "page": {
       "title": "Datenschutzerklärung — Donbrico",
-      "description": "Datenschutzerklärung für donbrico.net, Chrome-Erweiterung Donbrico Autofill AI und Null Carrier.",
+      "description": "Datenschutzrichtlinie für donbrico.net, Donbrico Autofill AI, AI Reply Assistant Chrome-Erweiterungen und Null Carrier.",
       "ogTitle": "Datenschutzerklärung — Donbrico",
-      "ogDescription": "Datenschutzerklärung für donbrico.net, Chrome-Erweiterung Donbrico Autofill AI und Null Carrier."
+      "ogDescription": "Datenschutzrichtlinie für donbrico.net, Donbrico Autofill AI, AI Reply Assistant Chrome-Erweiterungen und Null Carrier."
     },
     "sectionTitle": "Datenschutzerklärung",
-    "lastUpdated": "Letzte Aktualisierung: Januar 2026",
+    "lastUpdated": "Letzte Aktualisierung: Februar 2026",
     "overview": {
       "sectionTitle": "Überblick",
-      "paragraph": "Donbrico verpflichtet sich, deine Privatsphäre zu schützen. Die Chrome-Erweiterung Donbrico Autofill AI speichert alle Daten lokal auf deinem Gerät. Diese Website nutzt keine Analysen, Cookies oder Tracking-Skripte."
+      "paragraph": "Donbrico verpflichtet sich, Ihre Privatsphäre zu schützen. "
     },
     "extension": {
       "sectionTitle": "Donbrico Autofill AI — Chrome Erweiterung",
@@ -388,6 +425,37 @@
     "hero": {
       "eyebrow": "DATENSCHUTZERKLÄRUNG",
       "subtitle": "Wie wir mit Ihren Daten in allen Donbrico-Produkten umgehen."
+    },
+    "nav": {
+      "overview": "Überblick",
+      "autofillAi": "Autofill-KI-Erweiterung",
+      "aiReplyAssistant": "KI-Antwortassistent",
+      "nullCarrier": "Null-Carrier-Spiel",
+      "website": "Diese Website",
+      "contact": "Kontakt"
+    },
+    "aiReplyAssistant": {
+      "sectionTitle": "Donbrico AI Reply Assistant – Chrome-Erweiterung",
+      "whatWeCollect": {
+        "sectionTitle": "Welche Daten wir sammeln",
+        "paragraph": "Keiner. "
+      },
+      "howStored": {
+        "sectionTitle": "Wie Ihre Daten gespeichert werden",
+        "paragraph": "Gespeicherte Antworten und Vorlagen werden im lokalen Speicher von Chrome gespeichert. "
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "KI-Drittanbieter (Bring Your Own Key)",
+        "paragraph": "Wenn Sie die Funktion zur Generierung von KI-Antworten verwenden, werden der Textkontext (das Feld, auf das Sie antworten), Ihr ausgewählter Ton und alle Eingabeaufforderungs- oder Vorlagenvariablen an Ihren konfigurierten KI-Anbieter (OpenAI, Anthropic, Groq oder OpenRouter) gesendet. "
+      },
+      "permissions": {
+        "sectionTitle": "Verwendete Berechtigungen",
+        "paragraph": "storage (für gespeicherte Antworten und Einstellungen), activeTab (um Textfelder zu erkennen), Scripting (um die Antwortsymbolleiste einzufügen), host_permissions (um auf jeder von Ihnen besuchten Website zu arbeiten)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Datenlöschung",
+        "paragraph": "Durch die Deinstallation der Erweiterung werden alle lokal gespeicherten Antworten, Vorlagen und Einstellungen gelöscht. "
+      }
     }
   },
   "emails": {
@@ -417,5 +485,172 @@
   "tech": {
     "chromeVersion": "Chrome 127+",
     "ramRequirement": "22 GB freier Speicherplatz"
+  },
+  "aiReplyAssistant": {
+    "page": {
+      "title": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
+      "description": "Erstellen Sie eine persönliche Antwortbibliothek und generieren Sie sofort KI-gestützte Antworten. ",
+      "ogTitle": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
+      "ogDescription": "Erstellen Sie eine persönliche Antwortbibliothek und generieren Sie sofort KI-gestützte Antworten. "
+    },
+    "hero": {
+      "eyebrow": "CHROM-VERLÄNGERUNG",
+      "title": "Ihre persönliche Antwortbibliothek,<br>voll mit KI.",
+      "subtitle": "Speichern Sie unbegrenzte Antwortvorlagen, generieren Sie intelligente Antworten mit KI und fügen Sie sie überall ein – Gmail, LinkedIn, Twitter, Support-Tools oder jede Website mit einem Textfeld.",
+      "disclaimer": "🔒 Ihre Daten verlassen nie Ihren Browser · Gemini Nano auf dem Gerät oder Ihr eigener API-Schlüssel · Kein Konto erforderlich",
+      "buttonPrimary": "Zu Chrome hinzufügen – kostenlos",
+      "buttonSecondary": "Sehen Sie, wie es funktioniert ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "Wie es funktioniert",
+      "step1": {
+        "title": "1. Speichern Sie Ihre Antworten",
+        "description": "Erstellen Sie eine persönliche Bibliothek mit Antwortvorlagen. "
+      },
+      "step2": {
+        "title": "2. Generieren Sie mit KI",
+        "description": "Öffnen Sie die AI Reply-Symbolleiste neben einem beliebigen Textfeld. "
+      },
+      "step3": {
+        "title": "3. Einfügen und senden",
+        "description": "Überprüfen Sie es, optimieren Sie es bei Bedarf und fügen Sie die Antwort dann direkt in die Seite ein. "
+      }
+    },
+    "features": {
+      "sectionTitle": "Funktionen, die sich bezahlt machen.",
+      "savedReplies": {
+        "title": "Gespeicherte Antwortbibliothek",
+        "description": "Speichern Sie bis zu 30 Antworten kostenlos oder unbegrenzt mit Pro. "
+      },
+      "aiGeneration": {
+        "title": "KI-gestützte Generation",
+        "description": "Generieren Sie kontextbezogene Antworten anhand einer kurzen Eingabeaufforderung. "
+      },
+      "toneSelection": {
+        "title": "Tonauswahl",
+        "description": "Wählen Sie den richtigen Ton: Freundlich, professionell, prägnant (kostenlos) sowie überzeugend, einfühlsam, durchsetzungsfähig, nachfassend und mehr (Pro)."
+      },
+      "geminiNano": {
+        "title": "100 % private KI",
+        "description": "Verwenden Sie Gemini Nano für KI auf dem Gerät – keine Daten verlassen Ihr Gerät. "
+      },
+      "variables": {
+        "title": "Intelligente Variablen (Pro)",
+        "description": "Verwenden Sie {{placeholders}} wie {{name}}, {{company}}, {{date}}, um Vorlagen dynamisch und personalisiert zu gestalten."
+      },
+      "siteAdaptive": {
+        "title": "Funktioniert überall",
+        "description": "Integrierte Adapter für Gmail, LinkedIn, Outlook, Yahoo Mail und generische Formularerkennung. "
+      },
+      "exportImport": {
+        "title": "Exportieren und Sichern (Pro)",
+        "description": "Exportieren Sie Ihre Antwortbibliothek als JSON und importieren Sie sie auf einem anderen Gerät. "
+      },
+      "rewriteToolbar": {
+        "title": "Symbolleiste neu schreiben",
+        "description": "Wählen Sie einen beliebigen Text auf einer Seite aus und schreiben Sie ihn mit KI in dem von Ihnen gewählten Ton um – perfekt, um E-Mails und Nachrichten aufzupolieren."
+      },
+      "multiProvider": {
+        "title": "Mehrere KI-Anbieter (Pro)",
+        "description": "Konfigurieren Sie mehrere API-Schlüssel mit Prioritätsreihenfolge. "
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Einfache Preisgestaltung. ",
+      "free": {
+        "title": "Frei",
+        "price": "0 $",
+        "features": {
+          "f1": "30 gespeicherte Antworten",
+          "f2": "10 KI-Generationen/Tag",
+          "f3": "3 Grundtöne",
+          "f4": "Gemini Nano (lokal, privat)",
+          "f5": "Einzelner BYOK-Anbieter",
+          "f6": "Grundlegende Site-Adapter"
+        },
+        "button": "Zu Chrome hinzufügen"
+      },
+      "proMonthly": {
+        "title": "Pro – Monatlich",
+        "price": "4,99 $/Monat",
+        "features": {
+          "f1": "Unbegrenzt gespeicherte Antworten",
+          "f2": "Unbegrenzte KI-Generationen",
+          "f3": "Alle 10 Töne (Empathie, Verkauf, Führungskraft…)",
+          "f4": "Intelligente Variablen ({{name}}, {{company}}…)",
+          "f5": "Mehrere KI-Anbieter",
+          "f6": "Backups exportieren/importieren",
+          "f7": "Alle Site-Adapter",
+          "f8": "Vorrangiger Support"
+        },
+        "button": "Holen Sie sich Pro Monthly"
+      },
+      "proYearly": {
+        "title": "Pro – Jährlich",
+        "price": "39,99 $/Jahr",
+        "subtitle": "~3,33 $/Monat",
+        "savings": "Sparen Sie 33 % im Vergleich zu monatlich",
+        "features": {
+          "f1": "Alle Monthly Pro-Funktionen",
+          "f2": "Besserer langfristiger Wert"
+        },
+        "button": "Holen Sie sich Pro Yearly"
+      },
+      "lifetime": {
+        "title": "Lebenszeit – Early Adopter",
+        "price": "49,99 $ einmalig",
+        "earlyAdopter": "(begrenzt auf die ersten 100 Käufer)",
+        "features": {
+          "f1": "Alle Pro-Funktionen, für immer",
+          "f2": "Alle zukünftigen Updates enthalten"
+        },
+        "button": "Holen Sie sich Lebenszeit",
+        "disclaimer": ""
+      }
+    },
+    "setupGuides": {
+      "sectionTitle": "AI-Setup – Wählen Sie Ihre Stromquelle",
+      "subtitle": "Der Start beider Optionen ist kostenlos. ",
+      "geminiNano": {
+        "title": "Gemini Nano (integriert in Chrome)",
+        "description": "Kein API-Schlüssel erforderlich. ",
+        "button": "Setup-Anleitung anzeigen →"
+      },
+      "bringYourOwnKey": {
+        "title": "Bringen Sie Ihren eigenen API-Schlüssel mit",
+        "description": "Verbinden Sie Ihren eigenen Schlüssel von OpenAI, Anthropic (Claude), Groq oder OpenRouter. ",
+        "button": "Setup-Anleitung anzeigen →"
+      }
+    },
+    "faq": {
+      "sectionTitle": "Häufig gestellte Fragen",
+      "q1": {
+        "question": "Funktioniert es auf allen Websites?",
+        "answer": "Ja. "
+      },
+      "q2": {
+        "question": "Sind meine Daten privat?",
+        "answer": "Absolut. "
+      },
+      "q3": {
+        "question": "Was ist der Unterschied zwischen Free und Pro?",
+        "answer": "Kostenlos beinhaltet 30 gespeicherte Antworten, 10 KI-Generierungen pro Tag, 3 Grundtöne und BYOK für einen einzelnen Anbieter. "
+      },
+      "q4": {
+        "question": "Kann ich später upgraden?",
+        "answer": "Ja. "
+      },
+      "q5": {
+        "question": "Wie importiere/exportiere ich meine Antworten?",
+        "answer": "Gehen Sie im Erweiterungs-Popup zu Einstellungen. "
+      },
+      "q6": {
+        "question": "Was sind intelligente Variablen?",
+        "answer": "Intelligente Variablen wie {{name}}, {{company}} und {{date}} werden automatisch durch kontextspezifische Werte ersetzt, wenn Sie eine Antwort einfügen, wodurch Ihre Vorlagen dynamisch und personalisiert werden (Pro-Funktion)."
+      }
+    },
+    "footer": {
+      "links": "Datenschutzrichtlinie | "
+    }
   }
 }

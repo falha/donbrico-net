@@ -9,14 +9,15 @@
     "autofillAi": "Autofill AI",
     "nullCarrier": "Null Carrier",
     "privacyPolicy": "プライバシーポリシー",
-    "support": "サポート"
+    "support": "サポート",
+    "aiReplyAssistant": "AI Reply Assistant"
   },
   "home": {
     "page": {
       "title": "Donbrico — 一人インディーデベロッパーのプロジェクト",
-      "description": "donbrico.net — Donbrico Autofill AI と Null Carrier の本拠地。一人の開発者が構築したツールとゲーム。",
+      "description": "donbrico.net — Donbrico Autofill AI、AI Reply Assistant、および Null Carrier のホーム。",
       "ogTitle": "Donbrico — 一人インディーデベロッパーのプロジェクト",
-      "ogDescription": "donbrico.net — Donbrico Autofill AI と Null Carrier の本拠地。一人の開発者が構築したツールとゲーム。"
+      "ogDescription": "donbrico.net — Donbrico Autofill AI、AI Reply Assistant、および Null Carrier のホーム。"
     },
     "hero": {
       "eyebrow": "インディーデベロッパー",
@@ -40,6 +41,14 @@
         "description": "信号再構築パズルゲーム。深宇宙 listening array を運用します。周波数を調整し、信号を復号し、指揮官の命令に疑問を持ちます。",
         "techStack": "[パズル] [アトモスフィア] [Steam] [インディー]",
         "button": "詳細を見る →"
+      },
+      "aiReplyAssistant": {
+        "badgeChrome": "クローム拡張機能",
+        "badgeFree": "無料/プロ",
+        "title": "Donbrico AI Reply Assistant",
+        "description": "返信テンプレートを保存し、AI を活用した応答をどこでも生成できます。 ",
+        "techStack": "[Chrome 拡張機能] [AI] [保存された返信] [無料枠]",
+        "button": "さらに詳しく→"
       }
     },
     "buttons": {
@@ -270,9 +279,9 @@
   "support": {
     "page": {
       "title": "サポート — Donbrico",
-      "description": "Donbrico Autofill AIとNull Carrierのサポートを取得。support@donbrico.netまでご連絡ください。",
+      "description": "Donbrico Autofill AI、AI Reply Assistant、および Null Carrier のサポートを取得します。 ",
       "ogTitle": "サポート — Donbrico",
-      "ogDescription": "Donbrico Autofill AIとNull Carrierのサポートを取得。support@donbrico.netまでご連絡ください。"
+      "ogDescription": "Donbrico Autofill AI、AI Reply Assistant、および Null Carrier のサポートを取得します。 "
     },
     "sectionTitle": "サポート",
     "subtitle": "私たちは一人で運営しています。すべてのメッセージを読んでいます。",
@@ -324,20 +333,48 @@
     },
     "hero": {
       "eyebrow": "サポート"
+    },
+    "aiReplyAssistant": {
+      "sectionTitle": "ドンブリコ AI 応答アシスタントのサポート",
+      "subtitle": "よくある問題",
+      "q1": {
+        "question": "拡張機能ツールバーがページに表示されない",
+        "answer": "テキスト フィールド (入力またはテキストエリア) のあるページにいることを確認してください。"
+      },
+      "q2": {
+        "question": "保存した返信が表示されません",
+        "answer": "拡張機能ポップアップの [ライブラリ] タブで返信が保存されていることを確認してください。"
+      },
+      "q3": {
+        "question": "Gemini Nano に「このデバイスではサポートされていません」と表示される",
+        "answer": "Gemini Nano には、十分な RAM (通常 8GB 以上) を備えた Chrome 127 以降が必要です。 "
+      },
+      "q4": {
+        "question": "AI が生成した返信は一般的または的外れに聞こえる",
+        "answer": "AI は、テキスト フィールドのコンテキストと選択したトーンを使用します。"
+      },
+      "q5": {
+        "question": "データをアンインストールして削除するにはどうすればよいですか?",
+        "answer": "Chrome で、chrome://extensions に移動し、Donbrico AI Reply Assistant を見つけて、[削除] をクリックします。"
+      },
+      "q6": {
+        "question": "バグを報告したり、機能をリクエストするにはどうすればよいですか?",
+        "answer": "件名の先頭に「Bug:」または「Feature Request:」を付けて、support@donbrico.net に電子メールを送信してください。"
+      }
     }
   },
   "privacyPolicy": {
     "page": {
       "title": "プライバシーポリシー — Donbrico",
-      "description": "donbrico.net、Donbrico Autofill AI Chrome拡張機能、Null Carrierのプライバシーポリシー。",
+      "description": "donbrico.net、Donbrico Autofill AI、AI Reply Assistant Chrome 拡張機能、および Null Carrier のプライバシー ポリシー。",
       "ogTitle": "プライバシーポリシー — Donbrico",
-      "ogDescription": "donbrico.net、Donbrico Autofill AI Chrome拡張機能、Null Carrierのプライバシーポリシー。"
+      "ogDescription": "donbrico.net、Donbrico Autofill AI、AI Reply Assistant Chrome 拡張機能、および Null Carrier のプライバシー ポリシー。"
     },
     "sectionTitle": "プライバシーポリシー",
-    "lastUpdated": "最終更新: 2026年1月",
+    "lastUpdated": "最終更新日: 2026 年 2 月",
     "overview": {
       "sectionTitle": "概要",
-      "paragraph": "Donbricoはあなたのプライバシー保護を約束します。Donbrico Autofill AI Chrome拡張機能はすべてのデータをローカルにデバイス上に保存します。このウェブサイトは分析、Cookie、追跡スクリプトを使用しません。"
+      "paragraph": "ドンブリコはお客様のプライバシーの保護に努めます。"
     },
     "extension": {
       "sectionTitle": "Donbrico Autofill AI — Chrome拡張機能",
@@ -388,6 +425,37 @@
     "hero": {
       "eyebrow": "プライバシーポリシー",
       "subtitle": "Donbricoのすべての製品におけるデータの取り扱いについて。"
+    },
+    "nav": {
+      "overview": "概要",
+      "autofillAi": "自動入力 AI 拡張機能",
+      "aiReplyAssistant": "AI応答アシスタント",
+      "nullCarrier": "ヌルキャリアゲーム",
+      "website": "このウェブサイト",
+      "contact": "接触"
+    },
+    "aiReplyAssistant": {
+      "sectionTitle": "Donbrico AI 返信アシスタント — Chrome 拡張機能",
+      "whatWeCollect": {
+        "sectionTitle": "私たちが収集するデータ",
+        "paragraph": "なし。"
+      },
+      "howStored": {
+        "sectionTitle": "データの保存方法",
+        "paragraph": "保存された返信とテンプレートは Chrome のローカル ストレージに保存されます。 "
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "サードパーティ AI プロバイダー (Bring Your Own Key)",
+        "paragraph": "AI 返信生成機能を使用すると、テキスト コンテキスト (返信先のフィールド)、選択したトーン、およびプロンプト変数またはテンプレート変数が、構成された AI プロバイダー (OpenAI、Anthropic、Groq、または OpenRouter) に送信されます。 "
+      },
+      "permissions": {
+        "sectionTitle": "使用される権限",
+        "paragraph": "storage (返信と設定を保存するため)、activeTab (テキスト フィールドを検出するため)、スクリプト (返信ツールバーを挿入するため)、host_permissions (アクセスした Web サイトで作業するため)。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "データの削除",
+        "paragraph": "拡張機能をアンインストールすると、ローカルに保存されている返信、テンプレート、設定がすべて削除されます。 "
+      }
     }
   },
   "emails": {
@@ -417,5 +485,172 @@
   "tech": {
     "chromeVersion": "Chrome 127+",
     "ramRequirement": "22GBの空き容量"
+  },
+  "aiReplyAssistant": {
+    "page": {
+      "title": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
+      "description": "個人用の返信ライブラリを構築し、AI を活用した返信を即座に生成します。 ",
+      "ogTitle": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
+      "ogDescription": "個人用の返信ライブラリを構築し、AI を活用した返信を即座に生成します。 "
+    },
+    "hero": {
+      "eyebrow": "クローム拡張機能",
+      "title": "あなた専用の返信ライブラリ、<br>AI が強化されています。",
+      "subtitle": "無制限の返信テンプレートを保存し、AI でスマートな返信を生成し、Gmail、LinkedIn、Twitter、サポート ツール、またはテキスト フィールドのある Web サイトなど、どこにでも挿入できます。",
+      "disclaimer": "🔒 データはブラウザから離れることはありません · デバイス上の Gemini Nano または独自の API キー · アカウントは必要ありません",
+      "buttonPrimary": "Chrome に追加 - 無料",
+      "buttonSecondary": "仕組みを見てみる ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "仕組み",
+      "step1": {
+        "title": "1. 返信を保存する",
+        "description": "返信テンプレートの個人ライブラリを作成します。"
+      },
+      "step2": {
+        "title": "2.AIで生成",
+        "description": "テキスト フィールドの横にある AI Reply ツールバーを開きます。"
+      },
+      "step3": {
+        "title": "3.挿入して送信",
+        "description": "確認して必要に応じて調整し、返信をページに直接挿入します。"
+      }
+    },
+    "features": {
+      "sectionTitle": "お金を払ってでも使える機能。",
+      "savedReplies": {
+        "title": "保存された返信ライブラリ",
+        "description": "無料では最大 30 件の返信を保存できますが、Pro では無制限に保存できます。"
+      },
+      "aiGeneration": {
+        "title": "AIを活用した発電",
+        "description": "短いプロンプトからコンテキストを認識した応答を生成します。"
+      },
+      "toneSelection": {
+        "title": "音色選択",
+        "description": "適切な口調を選択します: フレンドリー、プロフェッショナル、簡潔 (無料) に加え、説得力、共感、積極的、フォローアップなど (プロ)。"
+      },
+      "geminiNano": {
+        "title": "100%プライベートAI",
+        "description": "オンデバイス AI には Gemini Nano を使用してください。マシンからデータが流出することはありません。"
+      },
+      "variables": {
+        "title": "スマート変数 (Pro)",
+        "description": "{{name}}、{{company}}、{{date}} などの {{placeholders}} を使用して、テンプレートを動的でパーソナライズしたものにします。"
+      },
+      "siteAdaptive": {
+        "title": "どこでも使えます",
+        "description": "Gmail、LinkedIn、Outlook、Yahoo Mail、および汎用フォーム検出用の組み込みアダプター。"
+      },
+      "exportImport": {
+        "title": "エクスポートとバックアップ (Pro)",
+        "description": "返信ライブラリを JSON としてエクスポートし、別のデバイスにインポートします。"
+      },
+      "rewriteToolbar": {
+        "title": "書き換えツールバー",
+        "description": "ページ上の任意のテキストを選択し、選択したトーンで AI で書き換えます。メールやメッセージを洗練するのに最適です。"
+      },
+      "multiProvider": {
+        "title": "複数の AI プロバイダー (Pro)",
+        "description": "優先順位を付けて複数の API キーを構成します。 "
+      }
+    },
+    "pricing": {
+      "sectionTitle": "シンプルな料金設定。",
+      "free": {
+        "title": "無料",
+        "price": "$0",
+        "features": {
+          "f1": "保存された返信 30 件",
+          "f2": "AI 10 世代/日",
+          "f3": "3つの基本音",
+          "f4": "Gemini Nano (ローカル、プライベート)",
+          "f5": "単一の BYOK プロバイダー",
+          "f6": "基本的なサイトアダプター"
+        },
+        "button": "Chromeに追加"
+      },
+      "proMonthly": {
+        "title": "プロ — 毎月",
+        "price": "$4.99/月",
+        "features": {
+          "f1": "無制限に保存された返信",
+          "f2": "無制限の AI 世代",
+          "f3": "全 10 種類のトーン (共感、セールス、エグゼクティブなど)",
+          "f4": "スマート変数 ({{name}}、{{company}}…)",
+          "f5": "複数の AI プロバイダー",
+          "f6": "バックアップのエクスポート/インポート",
+          "f7": "すべてのサイトアダプター",
+          "f8": "優先サポート"
+        },
+        "button": "毎月プロを入手"
+      },
+      "proYearly": {
+        "title": "プロ — 毎年",
+        "price": "$39.99/年",
+        "subtitle": "~$3.33/月",
+        "savings": "毎月と比較して 33% 節約",
+        "features": {
+          "f1": "Monthly Pro のすべての機能",
+          "f2": "長期的な価値の向上"
+        },
+        "button": "毎年プロになれる"
+      },
+      "lifetime": {
+        "title": "生涯 — 早期導入者",
+        "price": "1 回限り $49.99",
+        "earlyAdopter": "(先着100名様限定)",
+        "features": {
+          "f1": "すべての Pro 機能を永久に",
+          "f2": "今後のすべてのアップデートが含まれます"
+        },
+        "button": "ライフタイムを取得",
+        "disclaimer": ""
+      }
+    },
+    "setupGuides": {
+      "sectionTitle": "AI セットアップ — 電源の選択",
+      "subtitle": "どちらのオプションも無料で開始できます。 ",
+      "geminiNano": {
+        "title": "Gemini Nano (Chrome 内蔵)",
+        "description": "API キーは必要ありません。 ",
+        "button": "セットアップガイドを見る→"
+      },
+      "bringYourOwnKey": {
+        "title": "自分の API キーを持ち込む",
+        "description": "OpenAI、Anthropic (Claude)、Groq、または OpenRouter から独自のキーを接続します。",
+        "button": "セットアップガイドを見る→"
+      }
+    },
+    "faq": {
+      "sectionTitle": "よくある質問",
+      "q1": {
+        "question": "すべての Web サイトで機能しますか?",
+        "answer": "はい。"
+      },
+      "q2": {
+        "question": "私のデータはプライベートですか?",
+        "answer": "絶対に。"
+      },
+      "q3": {
+        "question": "無料とプロの違いは何ですか?",
+        "answer": "無料には、保存された返信 30 件、1 日あたり 10 回の AI 生成、3 つの基本トーン、単一プロバイダーの BYOK が含まれます。 "
+      },
+      "q4": {
+        "question": "後でアップグレードできますか?",
+        "answer": "はい。"
+      },
+      "q5": {
+        "question": "返信をインポート/エクスポートするにはどうすればよいですか?",
+        "answer": "拡張機能のポップアップで「設定」に移動します。"
+      },
+      "q6": {
+        "question": "スマート変数とは何ですか?",
+        "answer": "{{name}}、{{company}}、{{date}} などのスマート変数は、返信を挿入するとコンテキスト固有の値に自動的に置き換えられ、テンプレートが動的でパーソナライズされたものになります (Pro 機能)。"
+      }
+    },
+    "footer": {
+      "links": "プライバシーポリシー |"
+    }
   }
 }

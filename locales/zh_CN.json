@@ -9,14 +9,15 @@
     "autofillAi": "Autofill AI",
     "nullCarrier": "Null Carrier",
     "privacyPolicy": "隐私政策",
-    "support": "支持"
+    "support": "支持",
+    "aiReplyAssistant": "AI Reply Assistant"
   },
   "home": {
     "page": {
       "title": "Donbrico — 独立开发者的项目",
-      "description": "donbrico.net — Donbrico Autofill AI 和 Null Carrier 的所在地。由独立开发者打造的工具和游戏。",
+      "description": "donbrico.net — Donbrico Autofill AI、AI Reply Assistant 和 Null Carrier 的主页。",
       "ogTitle": "Donbrico — 独立开发者的项目",
-      "ogDescription": "donbrico.net — Donbrico Autofill AI 和 Null Carrier 的所在地。由独立开发者打造的工具和游戏。"
+      "ogDescription": "donbrico.net — Donbrico Autofill AI、AI Reply Assistant 和 Null Carrier 的主页。"
     },
     "hero": {
       "eyebrow": "独立开发者",
@@ -39,6 +40,14 @@
         "title": "Null Carrier",
         "description": "一款信号重建益智游戏。你操作一个深空监听阵列。调谐频率、解码传输、质疑指挥部的指令。",
         "techStack": "[益智] [氛围] [Steam] [独立]",
+        "button": "了解更多 →"
+      },
+      "aiReplyAssistant": {
+        "badgeChrome": "镀铬扩展",
+        "badgeFree": "免费/专业版",
+        "title": "Donbrico AI Reply Assistant",
+        "description": "保存回复模板并在任何地方生成人工智能驱动的回复。 ",
+        "techStack": "[Chrome 扩展程序] [AI] [已保存的回复] [免费套餐]",
         "button": "了解更多 →"
       }
     },
@@ -270,9 +279,9 @@
   "support": {
     "page": {
       "title": "支持 — Donbrico",
-      "description": "获取 Donbrico Autofill AI 和 Null Carrier 的支持。联系我们 at support@donbrico.net。",
+      "description": "获得对 Donbrico Autofill AI、AI Reply Assistant 和 Null Carrier 的支持。",
       "ogTitle": "支持 — Donbrico",
-      "ogDescription": "获取 Donbrico Autofill AI 和 Null Carrier 的支持。联系我们 at support@donbrico.net。"
+      "ogDescription": "获得对 Donbrico Autofill AI、AI Reply Assistant 和 Null Carrier 的支持。"
     },
     "sectionTitle": "支持",
     "subtitle": "我们是独立运营。我们阅读每一条消息。",
@@ -324,20 +333,48 @@
     },
     "hero": {
       "eyebrow": "支持"
+    },
+    "aiReplyAssistant": {
+      "sectionTitle": "Donbrico AI回复助手支持",
+      "subtitle": "常见问题",
+      "q1": {
+        "question": "扩展工具栏未出现在页面上",
+        "answer": "确保您所在的页面带有文本字段（输入或文本区域）。"
+      },
+      "q2": {
+        "question": "我保存的回复没有显示",
+        "answer": "检查您是否已在扩展程序弹出窗口的“库”选项卡中保存回复。"
+      },
+      "q3": {
+        "question": "Gemini Nano 提示“此设备不支持”",
+        "answer": "Gemini Nano 需要 Chrome 127+ 和足够的 RAM（通常为 8GB+）。"
+      },
+      "q4": {
+        "question": "人工智能生成的回复听起来很笼统或偏离主题",
+        "answer": "AI 使用文本字段的上下文以及您选择的语气。"
+      },
+      "q5": {
+        "question": "如何卸载并删除我的数据？",
+        "answer": "在 Chrome 中，转到 chrome://extensions，找到 Donbrico AI Reply Assistant，单击删除。"
+      },
+      "q6": {
+        "question": "如何报告错误或请求功能？",
+        "answer": "发送电子邮件至 support@donbrico.net，并在主题行开头添加“错误：”或“功能请求：”。"
+      }
     }
   },
   "privacyPolicy": {
     "page": {
       "title": "隐私政策 — Donbrico",
-      "description": "donbrico.net、Chrome 扩展 Donbrico Autofill AI 和 Null Carrier 的隐私政策。",
+      "description": "donbrico.net、Donbrico Autofill AI、AI Reply Assistant Chrome 扩展程序和 Null Carrier 的隐私政策。",
       "ogTitle": "隐私政策 — Donbrico",
-      "ogDescription": "donbrico.net、Chrome 扩展 Donbrico Autofill AI 和 Null Carrier 的隐私政策。"
+      "ogDescription": "donbrico.net、Donbrico Autofill AI、AI Reply Assistant Chrome 扩展程序和 Null Carrier 的隐私政策。"
     },
     "sectionTitle": "隐私政策",
-    "lastUpdated": "最后更新: 2026 年 1 月",
+    "lastUpdated": "最后更新时间：2026 年 2 月",
     "overview": {
       "sectionTitle": "概览",
-      "paragraph": "Donbrico 致力于保护你的隐私。Chrome 扩展 Donbrico Autofill AI 将所有数据本地存储在你的设备上。本网站不使用分析工具、Cookie 或跟踪脚本。"
+      "paragraph": "Donbrico 致力于保护您的隐私。"
     },
     "extension": {
       "sectionTitle": "Donbrico Autofill AI — Chrome 扩展",
@@ -388,6 +425,37 @@
     "hero": {
       "eyebrow": "隐私政策",
       "subtitle": "我们如何在所有 Donbrico 产品中处理您的数据。"
+    },
+    "nav": {
+      "overview": "概述",
+      "autofillAi": "自动填充人工智能扩展",
+      "aiReplyAssistant": "人工智能回复助手",
+      "nullCarrier": "空载体游戏",
+      "website": "本网站",
+      "contact": "接触"
+    },
+    "aiReplyAssistant": {
+      "sectionTitle": "Donbrico AI 回复助手 — Chrome 扩展",
+      "whatWeCollect": {
+        "sectionTitle": "我们收集哪些数据",
+        "paragraph": "没有任何。"
+      },
+      "howStored": {
+        "sectionTitle": "您的数据如何存储",
+        "paragraph": "保存的回复和模板存储在 Chrome 的本地存储中。"
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "第三方人工智能提供商（自带密钥）",
+        "paragraph": "当您使用 AI 回复生成功能时，文本上下文（您要回复的字段）、您选择的语气以及任何提示或模板变量都会发送到您配置的 AI 提供程序（OpenAI、Anthropic、Groq 或 OpenRouter）。"
+      },
+      "permissions": {
+        "sectionTitle": "使用的权限",
+        "paragraph": "存储（用于保存的回复和设置）、activeTab（用于检测文本字段）、脚本（用于注入回复工具栏）、host_permissions（用于您访问的任何网站）。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "数据删除",
+        "paragraph": "卸载扩展会删除所有本地存储的回复、模板和设置。 "
+      }
     }
   },
   "emails": {
@@ -417,5 +485,172 @@
   "tech": {
     "chromeVersion": "Chrome 127+",
     "ramRequirement": "22GB 可用存储空间"
+  },
+  "aiReplyAssistant": {
+    "page": {
+      "title": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
+      "description": "建立个人回复库并立即生成人工智能驱动的回复。",
+      "ogTitle": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
+      "ogDescription": "建立个人回复库并立即生成人工智能驱动的回复。"
+    },
+    "hero": {
+      "eyebrow": "镀铬扩展",
+      "title": "您的个人回复库，<br> 具有人工智能功能。",
+      "subtitle": "保存无限的回复模板，利用 AI 生成智能回复，并将其插入到任何地方 - Gmail、LinkedIn、Twitter、支持工具或任何带有文本字段的网站。",
+      "disclaimer": "🔒 您的数据永远不会离开您的浏览器 · 设备上的 Gemini Nano 或您自己的 API 密钥 · 无需帐户",
+      "buttonPrimary": "添加到 Chrome — 免费",
+      "buttonSecondary": "看看效果如何↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "它是如何运作的",
+      "step1": {
+        "title": "1.保存您的回复",
+        "description": "创建个人回复模板库。"
+      },
+      "step2": {
+        "title": "2. 用人工智能生成",
+        "description": "打开任意文本字段旁边的 AI 回复工具栏。"
+      },
+      "step3": {
+        "title": "3.插入并发送",
+        "description": "检查并根据需要进行调整，然后将回复直接插入页面中。"
+      }
+    },
+    "features": {
+      "sectionTitle": "物有所值的功能。",
+      "savedReplies": {
+        "title": "已保存的回复库",
+        "description": "免费保存最多 30 条回复，Pro 版则无限制。"
+      },
+      "aiGeneration": {
+        "title": "人工智能驱动的一代",
+        "description": "根据简短的提示生成上下文感知的回复。"
+      },
+      "toneSelection": {
+        "title": "音调选择",
+        "description": "选择正确的语气：友好、专业、简洁（免费）以及有说服力、同理心、自信、跟进等等（专业版）。"
+      },
+      "geminiNano": {
+        "title": "100% 私人人工智能",
+        "description": "使用 Gemini Nano 实现设备上的人工智能——零数据离开您的机器。"
+      },
+      "variables": {
+        "title": "智能变量（专业版）",
+        "description": "使用 {{placeholders}}（如 {{name}}、{{company}}、{{date}}）使模板动态且个性化。"
+      },
+      "siteAdaptive": {
+        "title": "随处可用",
+        "description": "用于 Gmail、LinkedIn、Outlook、Yahoo Mail 和通用表单检测的内置适配器。"
+      },
+      "exportImport": {
+        "title": "导出和备份（专业版）",
+        "description": "将回复库导出为 JSON 并将其导入到另一台设备上。"
+      },
+      "rewriteToolbar": {
+        "title": "重写工具栏",
+        "description": "选择页面上的任何文本，然后使用 AI 以您选择的语气重写它 — 非常适合润色电子邮件和消息。"
+      },
+      "multiProvider": {
+        "title": "多个 AI 提供商（专业版）",
+        "description": "配置多个具有优先级顺序的 API 密钥。"
+      }
+    },
+    "pricing": {
+      "sectionTitle": "简单的定价。",
+      "free": {
+        "title": "自由的",
+        "price": "$0",
+        "features": {
+          "f1": "30 条已保存回复",
+          "f2": "10 代 AI/天",
+          "f3": "3种基本音调",
+          "f4": "Gemini Nano（本地、私人）",
+          "f5": "单一 BYOK 提供商",
+          "f6": "基本站点适配器"
+        },
+        "button": "添加到 Chrome"
+      },
+      "proMonthly": {
+        "title": "专业版 — 每月",
+        "price": "4.99 美元/月",
+        "features": {
+          "f1": "无限保存回复",
+          "f2": "无限的AI世代",
+          "f3": "所有 10 种语气（同理心、销售、执行……）",
+          "f4": "智能变量（{{name}}、{{company}}...）",
+          "f5": "多家人工智能提供商",
+          "f6": "导出/导入备份",
+          "f7": "所有站点适配器",
+          "f8": "优先支持"
+        },
+        "button": "每月获得专业版"
+      },
+      "proYearly": {
+        "title": "专业版 — 每年",
+        "price": "$39.99/年",
+        "subtitle": "~$3.33/月",
+        "savings": "与每月相比节省 33%",
+        "features": {
+          "f1": "所有每月专业版功能",
+          "f2": "更好的长期价值"
+        },
+        "button": "每年获得专业版"
+      },
+      "lifetime": {
+        "title": "终生——早期采用者",
+        "price": "一次性 49.99 美元",
+        "earlyAdopter": "（仅限前100名买家）",
+        "features": {
+          "f1": "永久保留所有 Pro 功能",
+          "f2": "包括所有未来的更新"
+        },
+        "button": "获得终身",
+        "disclaimer": ""
+      }
+    },
+    "setupGuides": {
+      "sectionTitle": "AI 设置 — 选择您的电源",
+      "subtitle": "这两个选项都可以免费启动。 ",
+      "geminiNano": {
+        "title": "Gemini Nano（内置于 Chrome 中）",
+        "description": "无需 API 密钥。 ",
+        "button": "查看设置指南 →"
+      },
+      "bringYourOwnKey": {
+        "title": "自带 API 密钥",
+        "description": "从 OpenAI、Anthropic (Claude)、Groq 或 OpenRouter 连接您自己的密钥。",
+        "button": "查看设置指南 →"
+      }
+    },
+    "faq": {
+      "sectionTitle": "常见问题解答",
+      "q1": {
+        "question": "它适用于所有网站吗？",
+        "answer": "是的。"
+      },
+      "q2": {
+        "question": "我的数据是私人的吗？",
+        "answer": "绝对地。"
+      },
+      "q3": {
+        "question": "免费版和专业版有什么区别？",
+        "answer": "免费包括 30 个保存的回复、每天 10 个 AI 生成、3 种基本音调和单一提供商 BYOK。 "
+      },
+      "q4": {
+        "question": "以后可以升级吗？",
+        "answer": "是的。"
+      },
+      "q5": {
+        "question": "如何导入/导出我的回复？",
+        "answer": "转到扩展弹出窗口中的“设置”。 "
+      },
+      "q6": {
+        "question": "什么是智能变量？",
+        "answer": "当您插入回复时，{{name}}、{{company}} 和 {{date}} 等智能变量会自动替换为上下文特定的值，从而使您的模板动态且个性化（专业版功能）。"
+      }
+    },
+    "footer": {
+      "links": "隐私政策 |"
+    }
   }
 }

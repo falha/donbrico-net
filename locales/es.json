@@ -9,14 +9,15 @@
     "autofillAi": "Autofill AI",
     "nullCarrier": "Null Carrier",
     "privacyPolicy": "Política de privacidad",
-    "support": "Soporte"
+    "support": "Soporte",
+    "aiReplyAssistant": "AI Reply Assistant"
   },
   "home": {
     "page": {
       "title": "Donbrico — Proyectos de un indie solitario",
-      "description": "donbrico.net — hogar de Donbrico Autofill AI y Null Carrier. Herramientas y juegos construidos por un desarrollador solitario.",
+      "description": "donbrico.net: hogar de Donbrico Autofill AI, AI Reply Assistant y Null Carrier. ",
       "ogTitle": "Donbrico — Proyectos de un indie solitario",
-      "ogDescription": "donbrico.net — hogar de Donbrico Autofill AI y Null Carrier. Herramientas y juegos construidos por un desarrollador solitario."
+      "ogDescription": "donbrico.net: hogar de Donbrico Autofill AI, AI Reply Assistant y Null Carrier. "
     },
     "hero": {
       "eyebrow": "DESARROLLADOR INDEPENDIENTE",
@@ -40,6 +41,14 @@
         "description": "Un juego de puzles de reconstrucción de señales. Operas una antena de escucha profunda. Sintoniza frecuencias, decodifica transmisiones, cuestiona lo que te ordena el Mando.",
         "techStack": "[Puzle] [Atmosférico] [Steam] [Indie]",
         "button": "Saber más →"
+      },
+      "aiReplyAssistant": {
+        "badgeChrome": "EXTENSIÓN CROMADA",
+        "badgeFree": "GRATIS / PRO",
+        "title": "Donbrico AI Reply Assistant",
+        "description": "Guarde plantillas de respuesta y genere respuestas impulsadas por IA en cualquier lugar. ",
+        "techStack": "[Extensión de Chrome] [AI] [Respuestas guardadas] [Nivel gratuito]",
+        "button": "Más información →"
       }
     },
     "buttons": {
@@ -270,9 +279,9 @@
   "support": {
     "page": {
       "title": "Soporte — Donbrico",
-      "description": "Obtén soporte para Donbrico Autofill AI y Null Carrier. Contáctanos en support@donbrico.net.",
+      "description": "Obtenga soporte para Donbrico Autofill AI, AI Reply Assistant y Null Carrier. ",
       "ogTitle": "Soporte — Donbrico",
-      "ogDescription": "Obtén soporte para Donbrico Autofill AI y Null Carrier. Contáctanos en support@donbrico.net."
+      "ogDescription": "Obtenga soporte para Donbrico Autofill AI, AI Reply Assistant y Null Carrier. "
     },
     "sectionTitle": "Soporte",
     "subtitle": "Somos una operación en solitario. Leemos cada mensaje.",
@@ -324,20 +333,48 @@
     },
     "hero": {
       "eyebrow": "SOPORTE"
+    },
+    "aiReplyAssistant": {
+      "sectionTitle": "Soporte del asistente de respuesta de IA de Donbrico",
+      "subtitle": "Problemas comunes",
+      "q1": {
+        "question": "La barra de herramientas de extensión no aparece en una página",
+        "answer": "Asegúrate de estar en una página con un campo de texto (entrada o área de texto). "
+      },
+      "q2": {
+        "question": "Mis respuestas guardadas no aparecen",
+        "answer": "Verifique que haya guardado las respuestas en la pestaña Biblioteca de la ventana emergente de extensión. "
+      },
+      "q3": {
+        "question": "Gemini Nano dice \"No es compatible con este dispositivo\"",
+        "answer": "Gemini Nano requiere Chrome 127+ con suficiente RAM (normalmente 8 GB+). "
+      },
+      "q4": {
+        "question": "Las respuestas generadas por IA suenan genéricas o fuera de tema",
+        "answer": "La IA utiliza el contexto del campo de texto más el tono seleccionado. "
+      },
+      "q5": {
+        "question": "¿Cómo desinstalo y elimino mis datos?",
+        "answer": "En Chrome, vaya a chrome://extensiones, busque Donbrico AI Reply Assistant y haga clic en Eliminar. "
+      },
+      "q6": {
+        "question": "¿Cómo informo un error o solicito una función?",
+        "answer": "Envíe un correo electrónico a support@donbrico.net con 'Error:' o 'Solicitud de función:' al comienzo de la línea de asunto."
+      }
     }
   },
   "privacyPolicy": {
     "page": {
       "title": "Política de Privacidad — Donbrico",
-      "description": "Política de Privacidad para donbrico.net, la extensión de Chrome Donbrico Autofill AI y Null Carrier.",
+      "description": "Política de privacidad para donbrico.net, Donbrico Autofill AI, extensiones de Chrome AI Reply Assistant y Null Carrier.",
       "ogTitle": "Política de Privacidad — Donbrico",
-      "ogDescription": "Política de Privacidad para donbrico.net, la extensión de Chrome Donbrico Autofill AI y Null Carrier."
+      "ogDescription": "Política de privacidad para donbrico.net, Donbrico Autofill AI, extensiones de Chrome AI Reply Assistant y Null Carrier."
     },
     "sectionTitle": "Política de Privacidad",
-    "lastUpdated": "Última actualización: Enero 2026",
+    "lastUpdated": "Última actualización: febrero de 2026",
     "overview": {
       "sectionTitle": "Vistazo general",
-      "paragraph": "Donbrico se compromete a proteger tu privacidad. La extensión de Chrome Donbrico Autofill AI almacena todos los datos localmente en tu dispositivo. Este sitio web no utiliza analíticas, cookies ni scripts de seguimiento."
+      "paragraph": "Donbrico se compromete a proteger su privacidad. "
     },
     "extension": {
       "sectionTitle": "Donbrico Autofill AI — Extensión Chrome",
@@ -388,6 +425,37 @@
     "hero": {
       "eyebrow": "POLÍTICA DE PRIVACIDAD",
       "subtitle": "Cómo manejamos sus datos en todos los productos de Donbrico."
+    },
+    "nav": {
+      "overview": "Descripción general",
+      "autofillAi": "Extensión de IA de autocompletar",
+      "aiReplyAssistant": "Asistente de respuesta AI",
+      "nullCarrier": "Juego de portador nulo",
+      "website": "Este sitio web",
+      "contact": "Contacto"
+    },
+    "aiReplyAssistant": {
+      "sectionTitle": "Asistente de respuesta Donbrico AI - Extensión de Chrome",
+      "whatWeCollect": {
+        "sectionTitle": "Qué datos recopilamos",
+        "paragraph": "Ninguno. "
+      },
+      "howStored": {
+        "sectionTitle": "Cómo se almacenan tus datos",
+        "paragraph": "Las respuestas y plantillas guardadas se almacenan en el almacenamiento local de Chrome. "
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Proveedores de IA de terceros (traiga su propia clave)",
+        "paragraph": "Cuando utiliza la función de generación de respuestas de IA, el contexto del texto (el campo al que está respondiendo), el tono seleccionado y cualquier mensaje o variable de plantilla se envían a su proveedor de IA configurado (OpenAI, Anthropic, Groq u OpenRouter). "
+      },
+      "permissions": {
+        "sectionTitle": "Permisos utilizados",
+        "paragraph": "almacenamiento (para respuestas y configuraciones guardadas), activeTab (para detectar campos de texto), secuencias de comandos (para inyectar la barra de herramientas de respuesta), host_permissions (para funcionar en cualquier sitio web que visite)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Eliminación de datos",
+        "paragraph": "La desinstalación de la extensión elimina todas las respuestas, plantillas y configuraciones almacenadas localmente. "
+      }
     }
   },
   "emails": {
@@ -417,5 +485,172 @@
   "tech": {
     "chromeVersion": "Chrome 127+",
     "ramRequirement": "22 GB de espacio libre"
+  },
+  "aiReplyAssistant": {
+    "page": {
+      "title": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
+      "description": "Cree una biblioteca de respuestas personal y genere respuestas impulsadas por IA al instante. ",
+      "ogTitle": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
+      "ogDescription": "Cree una biblioteca de respuestas personal y genere respuestas impulsadas por IA al instante. "
+    },
+    "hero": {
+      "eyebrow": "EXTENSIÓN CROMADA",
+      "title": "Tu biblioteca de respuestas personal, <br> supercargada con IA.",
+      "subtitle": "Guarde plantillas de respuesta ilimitadas, genere respuestas inteligentes con IA e insértelas en cualquier lugar: Gmail, LinkedIn, Twitter, herramientas de soporte o cualquier sitio web con un campo de texto.",
+      "disclaimer": "🔒 Tus datos nunca salen de tu navegador · Gemini Nano en el dispositivo o tu propia clave API · No se requiere cuenta",
+      "buttonPrimary": "Agregar a Chrome - Gratis",
+      "buttonSecondary": "Mira cómo funciona ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "Cómo funciona",
+      "step1": {
+        "title": "1. Guarda tus respuestas",
+        "description": "Cree una biblioteca personal de plantillas de respuesta. "
+      },
+      "step2": {
+        "title": "2. Generar con IA",
+        "description": "Abra la barra de herramientas AI Reply junto a cualquier campo de texto. "
+      },
+      "step3": {
+        "title": "3. Insertar y enviar",
+        "description": "Revise, modifique si es necesario y luego inserte la respuesta directamente en la página. "
+      }
+    },
+    "features": {
+      "sectionTitle": "Funciones que se amortizan solas.",
+      "savedReplies": {
+        "title": "Biblioteca de respuestas guardadas",
+        "description": "Guarda hasta 30 respuestas gratis o ilimitadas con Pro. "
+      },
+      "aiGeneration": {
+        "title": "Generación impulsada por IA",
+        "description": "Genere respuestas contextuales a partir de un breve mensaje. "
+      },
+      "toneSelection": {
+        "title": "Selección de tono",
+        "description": "Elija el tono correcto: amigable, profesional, conciso (gratis) además de persuasivo, empático, asertivo, de seguimiento y más (Pro)."
+      },
+      "geminiNano": {
+        "title": "IA 100% privada",
+        "description": "Utilice Gemini Nano para la IA en el dispositivo: no salen datos de su máquina. "
+      },
+      "variables": {
+        "title": "Variables inteligentes (Pro)",
+        "description": "Utilice {{placeholders}} como {{name}}, {{company}}, {{date}} para crear plantillas dinámicas y personalizadas."
+      },
+      "siteAdaptive": {
+        "title": "Funciona en todas partes",
+        "description": "Adaptadores integrados para Gmail, LinkedIn, Outlook, Yahoo Mail y detección de formularios genéricos. "
+      },
+      "exportImport": {
+        "title": "Exportación y copia de seguridad (Pro)",
+        "description": "Exporte su biblioteca de respuestas como JSON e impórtela en otro dispositivo. "
+      },
+      "rewriteToolbar": {
+        "title": "Reescribir barra de herramientas",
+        "description": "Seleccione cualquier texto en una página y reescríbalo con IA en el tono elegido: perfecto para pulir correos electrónicos y mensajes."
+      },
+      "multiProvider": {
+        "title": "Múltiples proveedores de IA (Pro)",
+        "description": "Configure múltiples claves API con orden de prioridad. "
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Precios sencillos. ",
+      "free": {
+        "title": "Gratis",
+        "price": "$0",
+        "features": {
+          "f1": "30 respuestas guardadas",
+          "f2": "10 generaciones de IA/día",
+          "f3": "3 tonos básicos",
+          "f4": "Gemini Nano (local, privado)",
+          "f5": "Proveedor único de BYOK",
+          "f6": "Adaptadores de sitio básicos"
+        },
+        "button": "Agregar a Chrome"
+      },
+      "proMonthly": {
+        "title": "Profesional: mensual",
+        "price": "$4.99/mes",
+        "features": {
+          "f1": "Respuestas guardadas ilimitadas",
+          "f2": "Generaciones de IA ilimitadas",
+          "f3": "Los 10 tonos (empatía, ventas, ejecutivo…)",
+          "f4": "Variables inteligentes ({{name}}, {{company}}…)",
+          "f5": "Múltiples proveedores de IA",
+          "f6": "Exportar/importar copias de seguridad",
+          "f7": "Todos los adaptadores de sitio",
+          "f8": "Apoyo prioritario"
+        },
+        "button": "Obtén Pro mensualmente"
+      },
+      "proYearly": {
+        "title": "Profesional: anual",
+        "price": "$39.99/año",
+        "subtitle": "~$3.33/mes",
+        "savings": "Ahorre 33% vs mensual",
+        "features": {
+          "f1": "Todas las funciones mensuales Pro",
+          "f2": "Mejor valor a largo plazo"
+        },
+        "button": "Obtén Pro anualmente"
+      },
+      "lifetime": {
+        "title": "De por vida: primeros usuarios",
+        "price": "$49.99 por única vez",
+        "earlyAdopter": "(limitado a los primeros 100 compradores)",
+        "features": {
+          "f1": "Todas las funciones Pro, para siempre",
+          "f2": "Todas las actualizaciones futuras incluidas."
+        },
+        "button": "Obtener de por vida",
+        "disclaimer": ""
+      }
+    },
+    "setupGuides": {
+      "sectionTitle": "Configuración de IA: elija su fuente de energía",
+      "subtitle": "Ambas opciones son gratuitas para comenzar. ",
+      "geminiNano": {
+        "title": "Gemini Nano (integrado en Chrome)",
+        "description": "No se necesita clave API. ",
+        "button": "Ver guía de configuración →"
+      },
+      "bringYourOwnKey": {
+        "title": "Traiga su propia clave API",
+        "description": "Conecte su propia clave de OpenAI, Anthropic (Claude), Groq u OpenRouter. ",
+        "button": "Ver guía de configuración →"
+      }
+    },
+    "faq": {
+      "sectionTitle": "Preguntas frecuentes",
+      "q1": {
+        "question": "¿Funciona en todos los sitios web?",
+        "answer": "Sí. "
+      },
+      "q2": {
+        "question": "¿Mis datos son privados?",
+        "answer": "Absolutamente. "
+      },
+      "q3": {
+        "question": "¿Cuál es la diferencia entre Gratis y Pro?",
+        "answer": "Gratis incluye 30 respuestas guardadas, 10 generaciones de IA por día, 3 tonos básicos y BYOK de un solo proveedor. "
+      },
+      "q4": {
+        "question": "¿Puedo actualizar más tarde?",
+        "answer": "Sí. "
+      },
+      "q5": {
+        "question": "¿Cómo importo/exporto mis respuestas?",
+        "answer": "Vaya a Configuración en la ventana emergente de extensión. "
+      },
+      "q6": {
+        "question": "¿Qué son las variables inteligentes?",
+        "answer": "Las variables inteligentes como {{name}}, {{company}} y {{date}} se reemplazan automáticamente con valores específicos del contexto cuando insertas una respuesta, lo que hace que tus plantillas sean dinámicas y personalizadas (función Pro)."
+      }
+    },
+    "footer": {
+      "links": "Política de privacidad | "
+    }
   }
 }
