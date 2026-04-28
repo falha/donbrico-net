@@ -249,7 +249,7 @@
       function resolveLicenseKeyFromBackend(searchParams) {
         var subscriptionId = (searchParams.get('subscription_id') || '').trim();
         if (!subscriptionId) {
-          return Promise.resolve('');
+          return Promise.resolve({ key: '', error: '' });
         }
 
         var requestParams = new URLSearchParams();
@@ -265,23 +265,25 @@
           requestParams.set('email', email);
         }
 
+        var mode = (searchParams.get('mode') || '').trim();
+        if (mode) {
+          requestParams.set('mode', mode);
+        }
+
         return fetch('/api/resolve-license?' + requestParams.toString(), {
           method: 'GET',
           credentials: 'same-origin'
         }).then(function(response) {
-          if (!response.ok) {
-            return '';
-          }
           return response.json().then(function(data) {
             if (data && data.ok === true && data.license_key) {
-              return String(data.license_key).trim();
+              return { key: String(data.license_key).trim(), error: '' };
             }
-            return '';
+            return { key: '', error: data && data.error ? String(data.error) : '' };
           }).catch(function() {
-            return '';
+            return { key: '', error: 'invalid_resolver_response' };
           });
         }).catch(function() {
-          return '';
+          return { key: '', error: 'resolver_unreachable' };
         });
       }
 
@@ -348,9 +350,12 @@
         return;
       }
 
-      resolveLicenseKeyFromBackend(params).then(function(resolvedKey) {
-        if (resolvedKey) {
-          key = resolvedKey;
+      resolveLicenseKeyFromBackend(params).then(function(result) {
+        if (result && result.key) {
+          key = result.key;
+        } else if (result && result.error) {
+          console.warn('Resolve-license failed:', result.error);
+          manualIntro.textContent = 'Activation lookup failed (' + result.error + '). You can still paste your key manually below.';
         }
         continueActivation();
       }).catch(function() {

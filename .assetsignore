@@ -1,0 +1,10 @@
+.git/
+.wrangler/
+node_modules/
+.github/
+.kilo/
+scratch/
+functions/
+src/
+*.py
+*.md
