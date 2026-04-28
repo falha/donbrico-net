@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="support.page.title">Support — Donbrico</title>
-    <meta name="description" data-i18n="support.page.description" content="Get support for Donbrico Autofill AI and Null Carrier. Contact us at support@donbrico.net.">
+    <meta name="description" data-i18n="support.page.description" content="Get support for Donbrico Autofill AI, AI Reply Assistant, and Null Carrier. Contact us at support@donbrico.net.">
     <meta property="og:title" data-i18n="support.page.ogTitle" content="Support — Donbrico">
-    <meta property="og:description" data-i18n="support.page.ogDescription" content="Get support for Donbrico Autofill AI and Null Carrier. Contact us at support@donbrico.net.">
+    <meta property="og:description" data-i18n="support.page.ogDescription" content="Get support for Donbrico Autofill AI, AI Reply Assistant, and Null Carrier. Contact us at support@donbrico.net.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://donbrico.net/support/">
     <link rel="stylesheet" href="../css/style.css">
@@ -23,13 +23,14 @@
                  <span></span>
                  <span></span>
              </label>
-             <ul class="nav-links">
-                 <li><a href="../" data-i18n="nav.home">Home</a></li>
-                 <li><a href="../autofill-ai/" data-i18n="nav.autofillAi">Autofill AI</a></li>
-                 <li><a href="../null-carrier/" data-i18n="nav.nullCarrier">Null Carrier</a></li>
-                 <li><a href="../privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a></li>
-                 <li><a href="./" class="active" data-i18n="nav.support">Support</a></li>
-             </ul>
+              <ul class="nav-links">
+                  <li><a href="../" data-i18n="nav.home">Home</a></li>
+                  <li><a href="../autofill-ai/" data-i18n="nav.autofillAi">Autofill AI</a></li>
+                  <li><a href="../ai-reply-assistant/" data-i18n="nav.aiReplyAssistant">AI Reply Assistant</a></li>
+                  <li><a href="../null-carrier/" data-i18n="nav.nullCarrier">Null Carrier</a></li>
+                  <li><a href="../privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a></li>
+                  <li><a href="./" class="active" data-i18n="nav.support">Support</a></li>
+              </ul>
          </div>
      </nav>
 
@@ -50,38 +51,69 @@
          </div>
      </section>
 
-     <section style="padding: var(--spacing-xl) 0;">
-         <div class="container">
-             <h2 data-i18n="support.autofill.sectionTitle">Donbrico Autofill AI Support</h2>
-             <h3 data-i18n="support.autofill.subtitle">Common Issues</h3>
-             <details style="margin-bottom: var(--spacing-md);">
-                 <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.autofill.q1.question">The extension button isn't appearing on a form</summary>
-                 <p data-i18n="support.autofill.q1.answer">Some websites use JavaScript to render forms dynamically. Try scrolling down to trigger the page to fully load, then look for the ⚡ button. If it still doesn't appear, email us with the URL of the site.</p>
-             </details>
-             <details style="margin-bottom: var(--spacing-md);">
-                 <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.autofill.q2.question">Gemini Nano says "Not supported on this device"</summary>
-                 <p data-i18n="support.autofill.q2.answer">Gemini Nano requires Chrome 127+ and sufficient device RAM (typically 8GB+). You can still use the extension by adding your own API key in Settings (Bring Your Own Key). OpenAI, Anthropic, Groq, and OpenRouter are all supported.</p>
-             </details>
-             <details style="margin-bottom: var(--spacing-md);">
-                 <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.autofill.q3.question">My profile isn't saving</summary>
-                 <p data-i18n="support.autofill.q3.answer">Go to the extension's Options page (right-click extension icon → Options). Make sure you've clicked Save after entering your profile. If it still doesn't save, try the Troubleshoot button on the Options page.</p>
-             </details>
-             <details style="margin-bottom: var(--spacing-md);">
-                 <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.autofill.q4.question">The AI-generated answer doesn't sound like me</summary>
-                 <p data-i18n="support.autofill.q4.answer">The AI uses your profile to generate answers. Fill in the Bio and Experience fields with detail — the more context you give it, the better the output. You can always edit any answer before submitting.</p>
-             </details>
-             <details style="margin-bottom: var(--spacing-md);">
-                 <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.autofill.q5.question">How do I uninstall and remove my data?</summary>
-                 <p data-i18n="support.autofill.q5.answer">In Chrome, go to chrome://extensions, find Donbrico Autofill AI, click Remove. All your profile data will be deleted automatically.</p>
-             </details>
-             <details style="margin-bottom: var(--spacing-md);">
-                 <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.autofill.q6.question">How do I report a bug or request a feature?</summary>
-                 <p data-i18n="support.autofill.q6.answer">Email support@donbrico.net with "Bug:" or "Feature Request:" at the start of your subject line.</p>
-             </details>
-         </div>
-     </section>
+      <section style="padding: var(--spacing-xl) 0;">
+          <div class="container">
+              <h2 data-i18n="support.autofill.sectionTitle">Donbrico Autofill AI Support</h2>
+              <h3 data-i18n="support.autofill.subtitle">Common Issues</h3>
+              <details style="margin-bottom: var(--spacing-md);">
+                  <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.autofill.q1.question">The extension button isn't appearing on a form</summary>
+                  <p data-i18n="support.autofill.q1.answer">Some websites use JavaScript to render forms dynamically. Try scrolling down to trigger the page to fully load, then look for the ⚡ button. If it still doesn't appear, email us with the URL of the site.</p>
+              </details>
+              <details style="margin-bottom: var(--spacing-md);">
+                  <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.autofill.q2.question">Gemini Nano says "Not supported on this device"</summary>
+                  <p data-i18n="support.autofill.q2.answer">Gemini Nano requires Chrome 127+ and sufficient device RAM (typically 8GB+). You can still use the extension by adding your own API key in Settings (Bring Your Own Key). OpenAI, Anthropic, Groq, and OpenRouter are all supported.</p>
+              </details>
+              <details style="margin-bottom: var(--spacing-md);">
+                  <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.autofill.q3.question">My profile isn't saving</summary>
+                  <p data-i18n="support.autofill.q3.answer">Go to the extension's Options page (right-click extension icon → Options). Make sure you've clicked Save after entering your profile. If it still doesn't save, try the Troubleshoot button on the Options page.</p>
+              </details>
+              <details style="margin-bottom: var(--spacing-md);">
+                  <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.autofill.q4.question">The AI-generated answer doesn't sound like me</summary>
+                  <p data-i18n="support.autofill.q4.answer">The AI uses your profile to generate answers. Fill in the Bio and Experience fields with detail — the more context you give it, the better the output. You can always edit any answer before submitting.</p>
+              </details>
+              <details style="margin-bottom: var(--spacing-md);">
+                  <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.autofill.q5.question">How do I uninstall and remove my data?</summary>
+                  <p data-i18n="support.autofill.q5.answer">In Chrome, go to chrome://extensions, find Donbrico Autofill AI, click Remove. All your profile data will be deleted automatically.</p>
+              </details>
+              <details style="margin-bottom: var(--spacing-md);">
+                  <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.autofill.q6.question">How do I report a bug or request a feature?</summary>
+                  <p data-i18n="support.autofill.q6.answer">Email support@donbrico.net with "Bug:" or "Feature Request:" at the start of your subject line.</p>
+              </details>
+          </div>
+      </section>
 
-     <section style="padding: var(--spacing-xl) 0;">
+      <section style="padding: var(--spacing-xl) 0;">
+          <div class="container">
+              <h2 data-i18n="support.aiReplyAssistant.sectionTitle">Donbrico AI Reply Assistant Support</h2>
+              <h3 data-i18n="support.aiReplyAssistant.subtitle">Common Issues</h3>
+              <details style="margin-bottom: var(--spacing-md);">
+                  <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.aiReplyAssistant.q1.question">The extension toolbar isn't appearing on a page</summary>
+                  <p data-i18n="support.aiReplyAssistant.q1.answer">Make sure you're on a page with a text field (input or textarea). Click inside the field first — the AI Reply toolbar should appear near the field. If it doesn't, refresh the page and try again.</p>
+              </details>
+              <details style="margin-bottom: var(--spacing-md);">
+                  <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.aiReplyAssistant.q2.question">My saved replies aren't showing up</summary>
+                  <p data-i18n="support.aiReplyAssistant.q2.answer">Check that you've saved replies in the Library tab of the extension popup. If you recently re-installed, replies stored locally are gone unless you exported a backup (Pro feature).</p>
+              </details>
+              <details style="margin-bottom: var(--spacing-md);">
+                  <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.aiReplyAssistant.q3.question">Gemini Nano says "Not supported on this device"</summary>
+                  <p data-i18n="support.aiReplyAssistant.q3.answer">Gemini Nano requires Chrome 127+ with sufficient RAM (typically 8GB+). You can still use the extension by adding your own API key in Settings (Bring Your Own Key). Supported providers: OpenAI, Anthropic, Groq, OpenRouter.</p>
+              </details>
+              <details style="margin-bottom: var(--spacing-md);">
+                  <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.aiReplyAssistant.q4.question">AI-generated replies sound generic or off-topic</summary>
+                  <p data-i18n="support.aiReplyAssistant.q4.answer">The AI uses the text field's context plus your selected tone. For best results, use specific prompts and set a detailed tone. If using a BYOK provider, try switching to a different model.</p>
+              </details>
+              <details style="margin-bottom: var(--spacing-md);">
+                  <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.aiReplyAssistant.q5.question">How do I uninstall and remove my data?</summary>
+                  <p data-i18n="support.aiReplyAssistant.q5.answer">In Chrome, go to chrome://extensions, find Donbrico AI Reply Assistant, click Remove. This deletes all locally stored replies and settings.</p>
+              </details>
+              <details style="margin-bottom: var(--spacing-md);">
+                  <summary style="cursor: pointer; font-weight: 600;" data-i18n="support.aiReplyAssistant.q6.question">How do I report a bug or request a feature?</summary>
+                  <p data-i18n="support.aiReplyAssistant.q6.answer">Email support@donbrico.net with "Bug:" or "Feature Request:" at the start of your subject line.</p>
+              </details>
+          </div>
+      </section>
+
+      <section style="padding: var(--spacing-xl) 0;">
          <div class="container">
              <h2 data-i18n="support.nullCarrier.sectionTitle">Null Carrier Support</h2>
              <p data-i18n="support.nullCarrier.paragraph">For issues with Null Carrier on Steam, you can reach us through Steam's support system or directly at support@donbrico.net.</p>

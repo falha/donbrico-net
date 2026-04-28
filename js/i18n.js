@@ -20,6 +20,7 @@ const i18next = {
   },
   
   translations: {},
+  translationsVersion: '2026-04-28-1',
   
   currentLang: 'en',
   
@@ -100,7 +101,9 @@ const i18next = {
   async loadTranslations(lang) {
     try {
       const basePath = this.getBasePath();
-      const response = await fetch(`${basePath}locales/${lang}.json`);
+      const response = await fetch(`${basePath}locales/${lang}.json?v=${this.translationsVersion}`, {
+        cache: 'no-store'
+      });
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -178,7 +181,9 @@ const i18next = {
   async loadTranslations(lang) {
     try {
       const basePath = this.getBasePath();
-      const response = await fetch(`${basePath}locales/${lang}.json`);
+      const response = await fetch(`${basePath}locales/${lang}.json?v=${this.translationsVersion}`, {
+        cache: 'no-store'
+      });
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -197,28 +202,28 @@ const i18next = {
   /**
    * Get translation for a key (e.g., "home.hero.title")
    */
-  t(key, lang = null) {
-    const language = lang || this.currentLang;
-    const keys = key.split('.');
-    let value = this.translations[language];
-    
-    for (const k of keys) {
-      if (value && typeof value === 'object') {
-        value = value[k];
-      } else {
-        value = null;
-        break;
-      }
-    }
-    
-    // Fallback to English if translation missing
-    if (value === null && language !== 'en') {
-      return this.t(key, 'en');
-    }
-    
-    // Return key itself if still missing (helps spot missing translations)
-    return value !== null ? value : `[${key}]`;
-  },
+   t(key, lang = null) {
+     const language = lang || this.currentLang;
+     const keys = key.split('.');
+     let value = this.translations[language];
+     
+     for (const k of keys) {
+       if (value && typeof value === 'object') {
+         value = value[k];
+       } else {
+         value = null;
+         break;
+       }
+     }
+     
+     // Fallback to English if translation missing (null or undefined)
+     if (value == null && language !== 'en') {
+       return this.t(key, 'en');
+     }
+     
+     // Return key itself if still missing (helps spot missing translations)
+     return value != null ? value : `[${key}]`;
+   },
   
   /**
    * Initialize i18n system
@@ -265,7 +270,8 @@ const i18next = {
     // Translate page title separately
     const pageTitle = document.querySelector('title[data-i18n]');
     if (pageTitle) {
-      pageTitle.textContent = this.t('page.title');
+      const key = pageTitle.getAttribute('data-i18n');
+      pageTitle.textContent = this.t(key);
     }
     
     // Translate meta descriptions
