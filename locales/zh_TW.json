@@ -488,9 +488,9 @@
   },
   "aiReplyAssistant": {
     "page": {
-      "title": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
+      "title": "Donbrico AI Reply Assistant — 智慧回復和人工智慧回應",
       "description": "建立個人回應庫並立即產生人工智慧驅動的回應。適用於 Gmail、LinkedIn、Twitter 和任何網站。由 Gemini Nano 或您自己的 API 金鑰提供支援。",
-      "ogTitle": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
+      "ogTitle": "Donbrico AI Reply Assistant — 智慧回復和人工智慧回應",
       "ogDescription": "建立個人回應庫並立即產生人工智慧驅動的回應。適用於 Gmail、LinkedIn、Twitter 和任何網站。由 Gemini Nano 或您自己的 API 金鑰提供支援。"
     },
     "hero": {
