@@ -211,6 +211,8 @@
       var licenseKeyEl = document.getElementById('licenseKey');
       var copyBtn = document.getElementById('copyBtn');
       var manualIntro = document.getElementById('manualIntro');
+      var RETRY_INTERVAL_MS = 2000;
+      var RETRY_TIMEOUT_MS = 60000;
 
       function isAllowedExtensionId(id) {
         if (!id || typeof id !== 'string') {
@@ -284,13 +286,49 @@
             if (data && data.ok === true && data.license_key) {
               return { key: String(data.license_key).trim(), error: '' };
             }
-            return { key: '', error: data && data.error ? String(data.error) : '' };
+            return {
+              key: '',
+              error: data && data.error ? String(data.error) : '',
+              retryable: Boolean(data && data.retryable === true),
+            };
           }).catch(function() {
             return { key: '', error: 'invalid_resolver_response' };
           });
         }).catch(function() {
           return { key: '', error: 'resolver_unreachable' };
         });
+      }
+
+      function wait(ms) {
+        return new Promise(function(resolve) {
+          setTimeout(resolve, ms);
+        });
+      }
+
+      async function resolveLicenseWithRetries(searchParams) {
+        var subscriptionId = (searchParams.get('subscription_id') || '').trim();
+        if (!subscriptionId) {
+          return { key: '', error: '' };
+        }
+
+        var startedAt = Date.now();
+        var lastError = '';
+
+        while ((Date.now() - startedAt) < RETRY_TIMEOUT_MS) {
+          var result = await resolveLicenseKeyFromBackend(searchParams);
+          if (result && result.key) {
+            return result;
+          }
+
+          lastError = (result && result.error) ? String(result.error) : '';
+          if (!result || result.retryable !== true) {
+            return { key: '', error: lastError };
+          }
+
+          await wait(RETRY_INTERVAL_MS);
+        }
+
+        return { key: '', error: lastError || 'license_pending' };
       }
 
       function showManual(message) {
@@ -356,7 +394,7 @@
         return;
       }
 
-      resolveLicenseKeyFromBackend(params).then(function(result) {
+      resolveLicenseWithRetries(params).then(function(result) {
         if (result && result.key) {
           key = result.key;
           continueActivation();

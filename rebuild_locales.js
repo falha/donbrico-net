@@ -60,21 +60,21 @@ data.aiReplyAssistant = {
     },
     proMonthly: {
       title: "Pro — Monthly",
-      price: "$4.99/month",
+      price: "$6.99/month",
       features: { f1: "Unlimited saved replies", f2: "Unlimited AI generations", f3: "All 10 tones (empathy, sales, executive…)", f4: "Smart variables ({{name}}, {{company}}…)", f5: "Multiple AI providers", f6: "Export / import backups", f7: "All site adapters", f8: "Priority support" },
       button: "Get Pro Monthly"
     },
     proYearly: {
       title: "Pro — Yearly",
-      price: "$39.99/year",
-      subtitle: "~$3.33/month",
-      savings: "Save 33% vs monthly",
+      price: "$49.99/year",
+      subtitle: "~$4.17/month",
+      savings: "Save 40% vs monthly",
       features: { f1: "All Monthly Pro features", f2: "Better long-term value" },
       button: "Get Pro Yearly"
     },
     lifetime: {
       title: "Lifetime — Early Adopter",
-      price: "$49.99 one-time",
+      price: "$59.99 one-time",
       earlyAdopter: "(limited to first 100 buyers)",
       features: { f1: "All Pro features, forever", f2: "All future updates included" },
       button: "Get Lifetime",

@@ -572,7 +572,7 @@
       },
       "proMonthly": {
         "title": "Profesional: mensual",
-        "price": "$4.99/mes",
+        "price": "$6.99/mes",
         "features": {
           "f1": "Respuestas guardadas ilimitadas",
           "f2": "Generaciones de IA ilimitadas",
@@ -587,9 +587,9 @@
       },
       "proYearly": {
         "title": "Profesional: anual",
-        "price": "$39.99/año",
-        "subtitle": "~$3.33/mes",
-        "savings": "Ahorre 33% vs mensual",
+        "price": "$49.99/año",
+        "subtitle": "~$4.17/mes",
+        "savings": "Ahorre 40% vs mensual",
         "features": {
           "f1": "Todas las funciones mensuales Pro",
           "f2": "Mejor valor a largo plazo"
@@ -598,7 +598,7 @@
       },
       "lifetime": {
         "title": "De por vida: primeros usuarios",
-        "price": "$49.99 por única vez",
+        "price": "$59.99 por única vez",
         "earlyAdopter": "(limitado a los primeros 100 compradores)",
         "features": {
           "f1": "Todas las funciones Pro, para siempre",

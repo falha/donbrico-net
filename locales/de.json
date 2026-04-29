@@ -572,7 +572,7 @@
       },
       "proMonthly": {
         "title": "Pro – Monatlich",
-        "price": "4,99 $/Monat",
+        "price": "6,99 $/Monat",
         "features": {
           "f1": "Unbegrenzt gespeicherte Antworten",
           "f2": "Unbegrenzte KI-Generationen",
@@ -587,9 +587,9 @@
       },
       "proYearly": {
         "title": "Pro – Jährlich",
-        "price": "39,99 $/Jahr",
-        "subtitle": "~3,33 $/Monat",
-        "savings": "Sparen Sie 33 % im Vergleich zu monatlich",
+        "price": "49,99 $/Jahr",
+        "subtitle": "~4,17 $/Monat",
+        "savings": "Sparen Sie 40 % im Vergleich zu monatlich",
         "features": {
           "f1": "Alle Monthly Pro-Funktionen",
           "f2": "Besserer langfristiger Wert"
@@ -598,7 +598,7 @@
       },
       "lifetime": {
         "title": "Lebenszeit – Early Adopter",
-        "price": "49,99 $ einmalig",
+        "price": "59,99 $ einmalig",
         "earlyAdopter": "(begrenzt auf die ersten 100 Käufer)",
         "features": {
           "f1": "Alle Pro-Funktionen, für immer",

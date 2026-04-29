@@ -3,11 +3,15 @@ export async function resolveLicenseRequest(request, env) {
   const subscriptionId = (url.searchParams.get('subscription_id') || '').trim();
   const email = (url.searchParams.get('email') || '').trim().toLowerCase();
   const product = (url.searchParams.get('product') || '').trim().toLowerCase();
-  const mode = (url.searchParams.get('mode') || '').trim().toLowerCase();
+  const rawMode = (url.searchParams.get('mode') || '').trim().toLowerCase();
+  if (rawMode && rawMode !== 'test' && rawMode !== 'live') {
+    return Response.json({ ok: false, error: 'invalid_mode', retryable: false }, { status: 400 });
+  }
+  const mode = rawMode || 'live';
   const isTestMode = mode === 'test';
 
   if (!subscriptionId) {
-    return Response.json({ ok: false, error: 'subscription_id is required' }, { status: 400 });
+    return Response.json({ ok: false, error: 'subscription_id_required', retryable: false }, { status: 400 });
   }
 
   const legacyApiKey = env.DODO_PAYMENTS_API_KEY;
@@ -15,7 +19,7 @@ export async function resolveLicenseRequest(request, env) {
     ? (env.DODO_PAYMENTS_API_KEY_TEST || legacyApiKey)
     : (env.DODO_PAYMENTS_API_KEY_LIVE || legacyApiKey);
   if (!apiKey) {
-    return Response.json({ ok: false, error: 'server_missing_api_key' }, { status: 500 });
+    return Response.json({ ok: false, error: 'server_missing_api_key', retryable: false, mode: isTestMode ? 'test' : 'live' }, { status: 500 });
   }
 
   const defaultApiBaseUrl = isTestMode
@@ -39,7 +43,7 @@ export async function resolveLicenseRequest(request, env) {
       headers
     });
     if (!subscriptionResp.ok) {
-      return Response.json({ ok: false, error: 'subscription_not_found' }, { status: 404 });
+      return Response.json({ ok: false, error: 'subscription_not_found', retryable: false, mode: isTestMode ? 'test' : 'live' }, { status: 404 });
     }
 
     const subscriptionData = await subscriptionResp.json();
@@ -48,26 +52,36 @@ export async function resolveLicenseRequest(request, env) {
     const customerEmail = String(customer.email || '').trim().toLowerCase();
 
     if (email && customerEmail && email !== customerEmail) {
-      return Response.json({ ok: false, error: 'email_mismatch' }, { status: 403 });
+      return Response.json({ ok: false, error: 'email_mismatch', retryable: false, mode: isTestMode ? 'test' : 'live' }, { status: 403 });
     }
 
     if (!customerId) {
-      return Response.json({ ok: false, error: 'customer_not_found' }, { status: 404 });
+      return Response.json({ ok: false, error: 'customer_not_found', retryable: false, mode: isTestMode ? 'test' : 'live' }, { status: 404 });
     }
 
-    const listUrl = new URL(apiBaseUrl + '/license_keys');
-    listUrl.searchParams.set('customer_id', customerId);
-    listUrl.searchParams.set('status', 'active');
-    listUrl.searchParams.set('page_size', '100');
-    listUrl.searchParams.set('page_number', '0');
+    const items = [];
+    const pageSize = 100;
+    const maxPages = 5;
+    for (let pageNumber = 0; pageNumber < maxPages; pageNumber += 1) {
+      const listUrl = new URL(apiBaseUrl + '/license_keys');
+      listUrl.searchParams.set('customer_id', customerId);
+      // Do not filter by status: freshly issued keys are often not "active" yet.
+      listUrl.searchParams.set('page_size', String(pageSize));
+      listUrl.searchParams.set('page_number', String(pageNumber));
 
-    const licensesResp = await fetch(listUrl.toString(), { method: 'GET', headers });
-    if (!licensesResp.ok) {
-      return Response.json({ ok: false, error: 'license_lookup_failed' }, { status: 502 });
+      const licensesResp = await fetch(listUrl.toString(), { method: 'GET', headers });
+      if (!licensesResp.ok) {
+        return Response.json({ ok: false, error: 'license_lookup_failed', retryable: true, mode: isTestMode ? 'test' : 'live' }, { status: 502 });
+      }
+
+      const licensesData = await licensesResp.json();
+      const pageItems = Array.isArray(licensesData.items) ? licensesData.items : [];
+      items.push(...pageItems);
+
+      if (pageItems.length < pageSize) {
+        break;
+      }
     }
-
-    const licensesData = await licensesResp.json();
-    const items = Array.isArray(licensesData.items) ? licensesData.items : [];
     const matched = items.find((item) => {
       if (!item) {
         return false;
@@ -117,16 +131,35 @@ export async function resolveLicenseRequest(request, env) {
     ).trim();
 
     if (!licenseKey) {
+      const subscriptionStatus = String(subscriptionData.status || '').trim().toLowerCase();
+      const retryableSubscriptionStates = new Set(['active', 'trialing', 'incomplete', 'past_due']);
+      const shouldRetry = retryableSubscriptionStates.has(subscriptionStatus) || subscriptionStatus === '';
       return Response.json(
-        { ok: false, error: 'license_not_found', mode: isTestMode ? 'test' : 'live' },
-        { status: 404 }
+        {
+          ok: false,
+          error: shouldRetry ? 'license_pending' : 'license_not_found',
+          retryable: shouldRetry,
+          mode: isTestMode ? 'test' : 'live',
+          subscription_status: subscriptionStatus || 'unknown',
+        },
+        { status: shouldRetry ? 200 : 404 }
       );
     }
 
-    return Response.json({ ok: true, license_key: licenseKey });
+    return Response.json({
+      ok: true,
+      license_key: licenseKey,
+      retryable: false,
+      mode: isTestMode ? 'test' : 'live',
+    });
   } catch (err) {
     return Response.json(
-      { ok: false, error: 'internal_error', mode: isTestMode ? 'test' : 'live' },
+      {
+        ok: false,
+        error: 'internal_error',
+        retryable: true,
+        mode: isTestMode ? 'test' : 'live',
+      },
       { status: 500 }
     );
   }

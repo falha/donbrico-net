@@ -572,7 +572,7 @@
       },
       "proMonthly": {
         "title": "Pró – Mensal",
-        "price": "US$ 4,99/mês",
+        "price": "US$ 6,99/mês",
         "features": {
           "f1": "Respostas salvas ilimitadas",
           "f2": "Gerações ilimitadas de IA",
@@ -587,9 +587,9 @@
       },
       "proYearly": {
         "title": "Pró – Anual",
-        "price": "US$ 39,99/ano",
-        "subtitle": "~$3,33/mês",
-        "savings": "Economize 33% em relação ao mês",
+        "price": "US$ 49,99/ano",
+        "subtitle": "~$4,17/mês",
+        "savings": "Economize 40% em relação ao mês",
         "features": {
           "f1": "Todos os recursos mensais do Pro",
           "f2": "Melhor valor a longo prazo"
@@ -598,7 +598,7 @@
       },
       "lifetime": {
         "title": "Vitalício – Adepto pioneiro",
-        "price": "$ 49,99 único",
+        "price": "$ 59,99 único",
         "earlyAdopter": "(limitado aos primeiros 100 compradores)",
         "features": {
           "f1": "Todos os recursos Pro, para sempre",
