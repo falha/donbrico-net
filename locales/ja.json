@@ -2,7 +2,21 @@
   "app": {
     "name": "Donbrico Studio",
     "copyright": "© 2026 Donbrico Studio. All rights reserved.",
-    "builtBy": " Solo developerによって構築されました。"
+    "builtBy": " Solo developerによって構築されました。",
+    "languages": {
+      "en": "英語",
+      "es": "スペイン語",
+      "ja": "日本語",
+      "pt_BR": "ポルトガル語 (ブラジル)",
+      "fr": "フランセ",
+      "de": "ドイツ語",
+      "it": "イタリアーノ",
+      "zh_CN": "中文 (简体)",
+      "zh_TW": "中文 (繁體)",
+      "hi": "हिन्दी",
+      "ru": "Русский",
+      "ko": "한국어"
+    }
   },
   "nav": {
     "home": "ホーム",
@@ -10,14 +24,15 @@
     "nullCarrier": "Null Carrier",
     "privacyPolicy": "プライバシーポリシー",
     "support": "サポート",
-    "aiReplyAssistant": "AI Reply Assistant"
+    "aiReplyAssistant": "AI Reply Assistant",
+    "workDesk": "ワークデスク"
   },
   "home": {
     "page": {
       "title": "Donbrico — 一人インディーデベロッパーのプロジェクト",
-      "description": "donbrico.net — Donbrico Autofill AI、AI Reply Assistant、および Null Carrier のホーム。",
+      "description": "donbrico.net — Donbrico Autofill AI、AI Reply Assistant、Donbrico WorkDesk、および Null Carrier のホームです。",
       "ogTitle": "Donbrico — 一人インディーデベロッパーのプロジェクト",
-      "ogDescription": "donbrico.net — Donbrico Autofill AI、AI Reply Assistant、および Null Carrier のホーム。"
+      "ogDescription": "donbrico.net — Donbrico Autofill AI、AI Reply Assistant、Donbrico WorkDesk、および Null Carrier のホームです。"
     },
     "hero": {
       "eyebrow": "インディーデベロッパー",
@@ -48,6 +63,14 @@
         "title": "Donbrico AI Reply Assistant",
         "description": "返信テンプレートを保存し、AI を活用した応答をどこでも生成できます。 ",
         "techStack": "[Chrome 拡張機能] [AI] [保存された返信] [無料枠]",
+        "button": "さらに詳しく→"
+      },
+      "workDesk": {
+        "badgeChrome": "クローム拡張機能",
+        "badgeFree": "無料/プロ",
+        "title": "ドンブリコワークデスク",
+        "description": "ワンクリックでブラウザのワークスペースを保存および復元します。 ",
+        "techStack": "[Chrome 拡張機能] [AI] [ワークスペース] [プライバシー優先]",
         "button": "さらに詳しく→"
       }
     },
@@ -361,6 +384,22 @@
         "question": "バグを報告したり、機能をリクエストするにはどうすればよいですか?",
         "answer": "件名の先頭に「Bug:」または「Feature Request:」を付けて、support@donbrico.net に電子メールを送信してください。"
       }
+    },
+    "workDesk": {
+      "sectionTitle": "ドンブリコワークデスクサポート",
+      "subtitle": "よくある問題",
+      "q1": {
+        "question": "ワークスペースを保存するにはどうすればよいですか?",
+        "answer": "拡張機能アイコンをクリックしてポップアップを開き、「現在のウィンドウを保存」または「すべてのウィンドウを保存」をクリックします。 "
+      },
+      "q2": {
+        "question": "ワークスペースを別のコンピュータに復元できますか?",
+        "answer": "はい、「JSON としてエクスポート」機能 (Pro) を使用してデータをバックアップし、他のデバイスにインポートする場合は可能です。"
+      },
+      "q3": {
+        "question": "ワークスペースを削除するとどうなりますか?",
+        "answer": "削除されたワークスペースは永久に失われます。"
+      }
     }
   },
   "privacyPolicy": {
@@ -432,7 +471,8 @@
       "aiReplyAssistant": "AI応答アシスタント",
       "nullCarrier": "ヌルキャリアゲーム",
       "website": "このウェブサイト",
-      "contact": "接触"
+      "contact": "接触",
+      "workDesk": "ワークデスク"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico AI 返信アシスタント — Chrome 拡張機能",
@@ -455,6 +495,29 @@
       "dataDeletion": {
         "sectionTitle": "データの削除",
         "paragraph": "拡張機能をアンインストールすると、ローカルに保存されている返信、テンプレート、設定がすべて削除されます。 "
+      }
+    },
+    "workDesk": {
+      "sectionTitle": "Donbrico WorkDesk — Chrome 拡張機能",
+      "whatWeCollect": {
+        "sectionTitle": "私たちが収集するデータ",
+        "paragraph": "なし。"
+      },
+      "howStored": {
+        "sectionTitle": "データの保存方法",
+        "paragraph": "すべてのワークスペース データは Chrome のローカル ストレージに保存されます。"
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "サードパーティ AI プロバイダー (Bring Your Own Key)",
+        "paragraph": "AI 機能 (名前付け、クリーンアップ、検索) を使用すると、タブのタイトルと URL が構成された AI プロバイダー (OpenAI、Anthropic など) に送信される場合があります。 "
+      },
+      "permissions": {
+        "sectionTitle": "使用される権限",
+        "paragraph": "ストレージ (ワークスペース用)、タブ (セッションの保存/復元用)、ウィンドウ (複数のウィンドウの管理用)、通知 (保存リマインダー用)。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "データの削除",
+        "paragraph": "拡張機能をアンインストールすると、ローカルに保存されているすべてのワークスペースと設定が削除されます。 "
       }
     }
   },
@@ -488,9 +551,9 @@
   },
   "aiReplyAssistant": {
     "page": {
-      "title": "Donbrico AI Reply Assistant — スマート リプライと AI を活用した応答",
+      "title": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
       "description": "個人用の返信ライブラリを構築し、AI を活用した返信を即座に生成します。 ",
-      "ogTitle": "Donbrico AI Reply Assistant — スマート リプライと AI を活用した応答",
+      "ogTitle": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
       "ogDescription": "個人用の返信ライブラリを構築し、AI を活用した返信を即座に生成します。 "
     },
     "hero": {
@@ -531,7 +594,7 @@
         "description": "適切な口調を選択します: フレンドリー、プロフェッショナル、簡潔 (無料) に加え、説得力、共感、積極的、フォローアップなど (プロ)。"
       },
       "geminiNano": {
-        "title": "100%プライベートAI",
+        "title": "100% プライベート AI",
         "description": "オンデバイス AI には Gemini Nano を使用してください。マシンからデータが流出することはありません。"
       },
       "variables": {
@@ -651,6 +714,187 @@
     },
     "footer": {
       "links": "プライバシーポリシー |"
+    }
+  },
+  "workDesk": {
+    "page": {
+      "title": "Donbrico WorkDesk — スマートブラウザワークスペースとセッションマネージャー",
+      "description": "ワンクリックでブラウザのワークスペースを保存および復元します。 ",
+      "ogTitle": "Donbrico WorkDesk — スマートブラウザワークスペースとセッションマネージャー",
+      "ogDescription": "ワンクリックでブラウザのワークスペースを保存および復元します。 "
+    },
+    "hero": {
+      "eyebrow": "クローム拡張機能",
+      "title": "ブラウザーのワークスペース、<br>AI によって整理されます。",
+      "subtitle": "ワンクリックで現在のタブをワークスペースとして保存します。",
+      "disclaimer": "🔒 データはブラウザから離れることはありません · デバイス上の Gemini Nano または独自の API キー · アカウントは必要ありません",
+      "buttonPrimary": "Chrome に追加 - 無料",
+      "buttonSecondary": "仕組みを見てみる ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "仕組み",
+      "step1": {
+        "title": "1. ワンクリックで保存",
+        "description": "「ワークデスク」アイコンをクリックして、現在のウィンドウ (またはすべてのウィンドウ) で開いているすべてのタブを名前付きワークスペースとして保存します。"
+      },
+      "step2": {
+        "title": "2. AI を活用した組織",
+        "description": "AI はタブに基づいてワークスペースの名前を自動的に提案します。 "
+      },
+      "step3": {
+        "title": "3. 即座に復元する",
+        "description": "ワークスペース ダッシュボードを開き、セッションを復元します。 "
+      }
+    },
+    "features": {
+      "sectionTitle": "生産性を重視して構築されています。",
+      "unlimitedWorkspaces": {
+        "title": "無制限のワークスペース",
+        "description": "必要な数のワークスペースを保存します。"
+      },
+      "aiNaming": {
+        "title": "AIを活用したネーミング",
+        "description": "名前を考えるのに時間を無駄にしないでください。 "
+      },
+      "smartCleanup": {
+        "title": "スマート AI クリーンアップ",
+        "description": "類似したタブを自動的にグループ化し、重複を削除し、ワークスペースを最大限に明確にするために整理します。"
+      },
+      "geminiNano": {
+        "title": "100% プライベート AI",
+        "description": "オンデバイス AI には Gemini Nano を使用してください。マシンからデータが流出することはありません。"
+      },
+      "multiWindow": {
+        "title": "マルチウィンドウのサポート",
+        "description": "開いているすべてのウィンドウを一度に保存するか、現在のウィンドウだけを保存します。"
+      },
+      "exportImport": {
+        "title": "インポートとエクスポート",
+        "description": "ワークスペースを高度な形式 (JSON、CSV、HTML ブックマーク) でエクスポートおよびインポートします。"
+      },
+      "semanticSearch": {
+        "title": "セマンティック AI 検索",
+        "description": "自然言語を使用してワークスペースを検索します。"
+      },
+      "privacyFirst": {
+        "title": "プライバシー第一",
+        "description": "すべてのワークスペース データはブラウザーにローカルに保存されます。"
+      }
+    },
+    "pricing": {
+      "sectionTitle": "シンプルな料金設定。",
+      "free": {
+        "title": "無料",
+        "price": "$0",
+        "features": {
+          "f1": "最大 5 つのワークスペースを保存",
+          "f2": "AIによるネーミング提案",
+          "f3": "メモリカードの概要",
+          "f4": "ワークスペースのアーカイブ",
+          "f5": "Gemini Nano (ローカル、プライベート)",
+          "f6": "基本的な復元モード"
+        },
+        "button": "Chromeに追加"
+      },
+      "proMonthly": {
+        "title": "プロ — 毎月",
+        "price": "$4.99/月",
+        "features": {
+          "f1": "無制限のワークスペース",
+          "f2": "すべてのウィンドウを一度に保存する",
+          "f3": "エクスポートとインポート: JSON、CSV、HTML",
+          "f4": "AI ワークスペースのクリーンアップを適用する",
+          "f5": "セマンティック AI 検索",
+          "f6": "優先サポート"
+        },
+        "button": "毎月プロを入手"
+      },
+      "proYearly": {
+        "title": "プロ — 毎年",
+        "price": "$29.99/年",
+        "subtitle": "~$2.50/月",
+        "savings": "毎月と比較して 50% 節約",
+        "features": {
+          "f1": "Monthly Pro のすべての機能",
+          "f2": "専門家にとって最高の価値"
+        },
+        "button": "毎年プロになれる"
+      },
+      "lifetime": {
+        "title": "生涯 — 早期導入者",
+        "price": "1 回限り $49.99",
+        "earlyAdopter": "🚀 早期導入者 (期間限定)",
+        "features": {
+          "f1": "すべての Pro 機能を永久に",
+          "f2": "今後のすべてのアップデートが含まれます"
+        },
+        "button": "ライフタイムを取得",
+        "disclaimer": ""
+      }
+    },
+    "faq": {
+      "sectionTitle": "よくある質問",
+      "q1": {
+        "question": "タブグループでも機能しますか?",
+        "answer": "はい。 "
+      },
+      "q2": {
+        "question": "私のデータはプライベートですか?",
+        "answer": "絶対に。"
+      },
+      "q3": {
+        "question": "無料とプロの違いは何ですか?",
+        "answer": "無料には、最大 5 つのワークスペース、AI 命名、アーカイブが含まれます。 "
+      },
+      "q4": {
+        "question": "ワークスペースをエクスポートできますか?",
+        "answer": "はい。 "
+      }
+    },
+    "activate": {
+      "page": {
+        "title": "ライセンスのアクティベート — ドンブリコ"
+      },
+      "loading": {
+        "title": "ライセンスのアクティベーション",
+        "subtitle": "ドンブリコ内線に接続中…"
+      },
+      "success": {
+        "title": "プロが有効になりました！",
+        "subtitle": "このタブを閉じて、ドンブリコに戻ることができます。"
+      },
+      "manual": {
+        "title": "ドンブリコプロをアクティベートする",
+        "subtitle": "以下のキーをコピーして拡張機能に貼り付けます。「Donbrico」→「オプション」→「プレミアム」→「貼り付け」→「アクティブ化」を開きます。",
+        "copy": "コピー",
+        "copied": "✓ コピーされました",
+        "steps": {
+          "title": "ステップ",
+          "s1": "ツールバーの Donbrico 拡張機能アイコンをクリックします。",
+          "s2": "<strong>オプション</strong>を開きます (またはアイコンを右クリック → [オプション])",
+          "s3": "[<strong>プレミアム</strong>] タブに移動します",
+          "s4": "ライセンス キーを貼り付け、[<strong>アクティブ化</strong>] をクリックします。"
+        },
+        "noKey": "(URL にキーがありません - 購入メールを確認してください)",
+        "notReachable": "このページから拡張機能にアクセスできませんでした (Donbrico をインストールするか、サポートされている Chromium ブラウザを使用してください)。",
+        "lookupFailed": "アクティベーションの検索に失敗しました ({{error}})。",
+        "genericFailed": "アクティベーションに失敗しました。",
+        "pending": "支払いは完了しましたが、このリンクにライセンス キーが見つかりませんでした。"
+      }
+    },
+    "setupGuides": {
+      "sectionTitle": "AI セットアップ — 電源の選択",
+      "subtitle": "どちらのオプションも無料で開始できます。 ",
+      "geminiNano": {
+        "title": "Gemini Nano (Chrome 内蔵)",
+        "description": "API キーは必要ありません。 ",
+        "button": "セットアップガイドを見る→"
+      },
+      "bringYourOwnKey": {
+        "title": "自分の API キーを持ち込む",
+        "description": "OpenAI、Anthropic (Claude)、Groq、または OpenRouter から独自のキーを接続します。",
+        "button": "セットアップガイドを見る→"
+      }
     }
   }
 }

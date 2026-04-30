@@ -116,86 +116,6 @@ const i18next = {
       } else {
         this.translations['en'] = {};
       }
-     }
-   },
-   
-   /**
-    * Detect user's preferred language from browser
-    */
-  detectLanguage() {
-    // Check localStorage first
-    const saved = localStorage.getItem('donbrico-lang');
-    if (saved && this.availableLanguages[saved]) {
-      return saved;
-    }
-    
-    // Check URL parameter
-    const urlParams = new URLSearchParams(window.location.search);
-    const urlLang = urlParams.get('lang');
-    if (urlLang && this.availableLanguages[urlLang]) {
-      return urlLang;
-    }
-    
-    // Check browser language
-    const browserLang = navigator.language || navigator.userLanguage;
-    
-    // Map browser languages to our supported languages
-    const langMap = {
-      'es': ['es-ES', 'es-MX', 'es-AR', 'es-CO', 'es-CL', 'es-PE', 'es-VE'],
-      'ja': ['ja-JP'],
-      'pt_BR': ['pt-BR'],
-      'fr': ['fr-FR', 'fr-CA', 'fr-BE', 'fr-CH'],
-      'de': ['de-DE', 'de-AT', 'de-CH'],
-      'it': ['it-IT', 'it-CH'],
-      'zh_CN': ['zh-CN', 'zh-SG'],
-      'zh_TW': ['zh-TW', 'zh-HK', 'zh-MO'],
-      'hi': ['hi-IN'],
-      'ru': ['ru-RU'],
-      'ko': ['ko-KR']
-    };
-    
-    // Exact match first
-    if (this.availableLanguages[browserLang]) {
-      return browserLang;
-    }
-    
-    // Check mapped languages
-    for (const [lang, variants] of Object.entries(langMap)) {
-      if (variants.includes(browserLang)) {
-        return lang;
-      }
-    }
-    
-    // Partial match (e.g., 'es' from 'es-MX')
-    const primaryLang = browserLang.split('-')[0];
-    if (this.availableLanguages[primaryLang]) {
-      return primaryLang;
-    }
-    
-    return 'en'; // default fallback
-  },
-  
-  /**
-   * Load translation file for given language
-   */
-  async loadTranslations(lang) {
-    try {
-      const basePath = this.getBasePath();
-      const response = await fetch(`${basePath}locales/${lang}.json?v=${this.translationsVersion}`, {
-        cache: 'no-store'
-      });
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      this.translations[lang] = await response.json();
-    } catch (error) {
-      console.warn(`Failed to load translations for ${lang}:`, error);
-      // Fallback to English
-      if (lang !== 'en') {
-        await this.loadTranslations('en');
-      } else {
-        this.translations['en'] = {};
-      }
     }
   },
   
@@ -260,36 +180,14 @@ const i18next = {
       
       if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
         el.placeholder = translation;
-      } else if (el.tagName === 'META' || el.tagName === 'TITLE') {
+      } else if (el.tagName === 'META') {
+        el.setAttribute('content', translation);
+      } else if (el.tagName === 'TITLE') {
         el.textContent = translation;
       } else {
         el.innerHTML = translation;
       }
     });
-    
-    // Translate page title separately
-    const pageTitle = document.querySelector('title[data-i18n]');
-    if (pageTitle) {
-      const key = pageTitle.getAttribute('data-i18n');
-      pageTitle.textContent = this.t(key);
-    }
-    
-    // Translate meta descriptions
-    const metaDesc = document.querySelector('meta[name="description"][data-i18n]');
-    if (metaDesc) {
-      metaDesc.setAttribute('content', this.t('page.description'));
-    }
-    
-    // Translate Open Graph tags
-    const ogTitle = document.querySelector('meta[property="og:title"][data-i18n]');
-    if (ogTitle) {
-      ogTitle.setAttribute('content', this.t('page.ogTitle'));
-    }
-    
-    const ogDesc = document.querySelector('meta[property="og:description"][data-i18n]');
-    if (ogDesc) {
-      ogDesc.setAttribute('content', this.t('page.ogDescription'));
-    }
     
     // Update HTML lang attribute
     document.documentElement.lang = this.currentLang;
@@ -299,7 +197,7 @@ const i18next = {
     if (yearEl) {
       const currentYear = new Date().getFullYear();
       const template = this.t('app.copyright');
-      yearEl.textContent = template.replace('2026', currentYear);
+      yearEl.innerHTML = template.replace('2026', currentYear);
     }
   },
   

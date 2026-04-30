@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>API Key Setup — Donbrico Autofill AI</title>
+  <title data-i18n="docs.apiKeys.page.title"></title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -302,6 +302,8 @@
         <ul class="nav-links">
             <li><a href="./" data-i18n="nav.home">Home</a></li>
             <li><a href="./autofill-ai/" class="active" data-i18n="nav.autofillAi">Autofill AI</a></li>
+            <li><a href="./ai-reply-assistant/" data-i18n="nav.aiReplyAssistant">AI Reply Assistant</a></li>
+            <li><a href="./workdesk/" data-i18n="nav.workDesk">WorkDesk</a></li>
             <li><a href="./null-carrier/" data-i18n="nav.nullCarrier">Null Carrier</a></li>
             <li><a href="./privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a></li>
             <li><a href="./support/" data-i18n="nav.support">Support</a></li>
@@ -313,27 +315,23 @@
 
   <!-- Breadcrumb -->
   <div class="breadcrumb">
-    <a href="/">Home</a>
+    <a href="/" data-i18n="docs.apiKeys.breadcrumb.home"></a>
     <span>›</span>
-    <a href="#">Documentation</a>
+    <a href="#" data-i18n="docs.apiKeys.breadcrumb.docs"></a>
     <span>›</span>
-    API Keys Guide
+    <span data-i18n="docs.apiKeys.breadcrumb.title"></span>
   </div>
 
   <!-- Header -->
   <header class="doc-header">
-    <div class="doc-badge">Bring Your Own Key</div>
-    <h1>Get an <em>API Key</em><br />from any provider</h1>
-    <p class="doc-intro">
-      Donbrico Autofill AI works with four AI providers. Pick the one that suits you —
-      each takes under 5 minutes to set up and charges only for what you actually use.
-      Groq and OpenRouter even have completely free tiers with no credit card required.
-    </p>
+    <div class="doc-badge" data-i18n="docs.apiKeys.header.badge"></div>
+    <h1 data-i18n="docs.apiKeys.header.title"></h1>
+    <p class="doc-intro" data-i18n="docs.apiKeys.header.intro"></p>
     <div class="callout" style="margin-top: 16px; background: rgba(99,102,241,.1); border: 1px solid var(--indigo-dim);">
       <span class="callout-icon" style="color: #a5b4fc;">⚡</span>
       <div style="font-size: .87rem; color: #a5b4fc;">
-        <strong>Speed note:</strong> Cloud-based AI providers like Groq and OpenAI are typically much faster than Gemini Nano (on-device). 
-        If speed matters to you, a Bring Your Own Key setup will give you snappier responses.
+        <strong data-i18n="docs.apiKeys.header.speedNote.title"></strong> 
+        <span data-i18n="docs.apiKeys.header.speedNote.text"></span>
       </div>
     </div>
   </header>

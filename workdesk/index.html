@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="workDesk.page.title">Donbrico WorkDesk — Smart Browser Workspaces & Session Manager</title>
+    <meta name="description" data-i18n="workDesk.page.description" content="Save and restore your browser workspaces in one click. Smart session manager with AI naming and tab groups. Powered by Gemini Nano or your own API key.">
+    <meta property="og:title" data-i18n="workDesk.page.ogTitle" content="Donbrico WorkDesk — Smart Browser Workspaces & Session Manager">
+    <meta property="og:description" data-i18n="workDesk.page.ogDescription" content="Save and restore your browser workspaces in one click. Smart session manager with AI naming and tab groups. Powered by Gemini Nano or your own API key.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://donbrico.net/workdesk/">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <meta name="theme-color" content="#0a0a0f">
+</head>
+<body>
+     <nav class="nav">
+         <div class="container">
+             <a href="../" class="logo" data-i18n="app.name">Donbrico Studio</a>
+             <input type="checkbox" id="nav-toggle">
+             <label for="nav-toggle" class="hamburger">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+             </label>
+             <ul class="nav-links">
+                 <li><a href="../" data-i18n="nav.home">Home</a></li>
+                 <li><a href="../autofill-ai/" data-i18n="nav.autofillAi">Autofill AI</a></li>
+                 <li><a href="../ai-reply-assistant/" data-i18n="nav.aiReplyAssistant">AI Reply Assistant</a></li>
+                 <li><a href="./" class="active" data-i18n="nav.workDesk">WorkDesk</a></li>
+                 <li><a href="../null-carrier/" data-i18n="nav.nullCarrier">Null Carrier</a></li>
+                 <li><a href="../privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a></li>
+                 <li><a href="../support/" data-i18n="nav.support">Support</a></li>
+             </ul>
+         </div>
+     </nav>
+
+     <section class="hero">
+         <div class="container">
+             <p class="eyebrow" data-i18n="workDesk.hero.eyebrow">CHROME EXTENSION</p>
+             <h1 data-i18n="workDesk.hero.title">Your browser workspaces,<br>organized by AI.</h1>
+             <p class="subtitle" data-i18n="workDesk.hero.subtitle">Save your current tabs as a workspace in one click. Restore them instantly later. AI-powered naming and smart cleanup keep your research organized.</p>
+             <div class="buttons">
+                 <a href="#" class="btn" style="opacity: 0.5; cursor: not-allowed;" title="Coming Soon" data-i18n="workDesk.hero.buttonPrimary">Add to Chrome — Free</a>
+                 <a href="#how-it-works" class="btn-outline" data-i18n="workDesk.hero.buttonSecondary">See how it works ↓</a>
+             </div>
+             <p class="text-muted" style="margin-top: var(--spacing-md);" data-i18n="workDesk.hero.disclaimer">🔒 Your data never leaves your browser · On-device Gemini Nano or your own API key · No account required</p>
+         </div>
+     </section>
+
+     <section id="how-it-works" style="padding: var(--spacing-xl) 0;">
+         <div class="container">
+             <h2 class="section-title" data-i18n="workDesk.howItWorks.sectionTitle">How It Works</h2>
+             <div style="display: flex; gap: var(--spacing-lg); justify-content: center; flex-wrap: wrap;">
+                 <div class="card" style="flex: 1; min-width: 250px;">
+                     <h3 data-i18n="workDesk.howItWorks.step1.title">1. Save with one click</h3>
+                     <p data-i18n="workDesk.howItWorks.step1.description">Click the WorkDesk icon to save all open tabs in your current window (or all windows) as a named workspace.</p>
+                 </div>
+                 <div class="card" style="flex: 1; min-width: 250px;">
+                     <h3 data-i18n="workDesk.howItWorks.step2.title">2. AI-powered organization</h3>
+                     <p data-i18n="workDesk.howItWorks.step2.description">AI automatically suggests a name for your workspace based on your tabs. Use AI cleanup to group tabs and remove duplicates.</p>
+                 </div>
+                 <div class="card" style="flex: 1; min-width: 250px;">
+                     <h3 data-i18n="workDesk.howItWorks.step3.title">3. Restore instantly</h3>
+                     <p data-i18n="workDesk.howItWorks.step3.description">Open your workspace dashboard and restore any session. Choose between 'Safe' (batch) or 'Fast' (instant) restore modes.</p>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+     <section style="padding: var(--spacing-xl) 0;">
+         <div class="container">
+             <h2 class="section-title" data-i18n="workDesk.features.sectionTitle">Built for productivity.</h2>
+             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-lg);">
+                 <div class="card">
+                     <h4 data-i18n="workDesk.features.unlimitedWorkspaces.title">Unlimited workspaces</h4>
+                     <p data-i18n="workDesk.features.unlimitedWorkspaces.description">Save as many workspaces as you need. Organize them with tags and colors for quick access.</p>
+                 </div>
+                 <div class="card">
+                     <h4 data-i18n="workDesk.features.aiNaming.title">AI-powered naming</h4>
+                     <p data-i18n="workDesk.features.aiNaming.description">Don't waste time thinking of names. AI analyzes your tabs and suggests the perfect title instantly.</p>
+                 </div>
+                 <div class="card">
+                     <h4 data-i18n="workDesk.features.smartCleanup.title">Smart AI cleanup</h4>
+                     <p data-i18n="workDesk.features.smartCleanup.description">Automatically group similar tabs, remove duplicates, and organize your workspace for maximum clarity.</p>
+                 </div>
+                 <div class="card">
+                     <h4 data-i18n="workDesk.features.geminiNano.title">100% private AI</h4>
+                     <p data-i18n="workDesk.features.geminiNano.description">Use Gemini Nano for on-device AI — zero data leaves your machine. Or bring your own key (BYOK).</p>
+                 </div>
+                 <div class="card">
+                     <h4 data-i18n="workDesk.features.multiWindow.title">Multi-window support</h4>
+                     <p data-i18n="workDesk.features.multiWindow.description">Save all open windows at once or just the current one. Restore them exactly as they were.</p>
+                 </div>
+                 <div class="card">
+                     <h4 data-i18n="workDesk.features.exportImport.title">Export & backup</h4>
+                     <p data-i18n="workDesk.features.exportImport.description">Export your workspaces as JSON, CSV, or HTML. Keep your research safe and portable.</p>
+                 </div>
+                 <div class="card">
+                     <h4 data-i18n="workDesk.features.semanticSearch.title">Semantic AI search</h4>
+                     <p data-i18n="workDesk.features.semanticSearch.description">Search your workspaces using natural language. Find that one tab you saved weeks ago instantly.</p>
+                 </div>
+                 <div class="card">
+                     <h4 data-i18n="workDesk.features.privacyFirst.title">Privacy first</h4>
+                     <p data-i18n="workDesk.features.privacyFirst.description">All your workspace data is stored locally in your browser. No servers, no tracking, no accounts.</p>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+     <section style="padding: var(--spacing-xl) 0;">
+         <div class="container">
+             <h2 class="section-title" data-i18n="workDesk.pricing.sectionTitle">Simple pricing. No hidden costs.</h2>
+             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-lg);">
+                 <div class="card" style="border: 2px solid var(--accent);">
+                     <h3 data-i18n="workDesk.pricing.free.title">Free</h3>
+                     <p style="font-size: 2rem; font-weight: 700; color: var(--accent);" data-i18n="workDesk.pricing.free.price">$0</p>
+                     <ul>
+                          <li data-i18n="workDesk.pricing.free.features.f1">Save up to 5 workspaces</li>
+                          <li data-i18n="workDesk.pricing.free.features.f2">AI naming suggestions</li>
+                          <li data-i18n="workDesk.pricing.free.features.f3">Memory Card summaries</li>
+                          <li data-i18n="workDesk.pricing.free.features.f4">Workspace archiving</li>
+                          <li data-i18n="workDesk.pricing.free.features.f5">Gemini Nano (local, private)</li>
+                          <li data-i18n="workDesk.pricing.free.features.f6">Basic restore modes</li>
+                     </ul>
+                     <a href="#" class="btn" style="opacity: 0.5; cursor: not-allowed;" title="Coming Soon" data-i18n="workDesk.pricing.free.button">Add to Chrome</a>
+                 </div>
+                 <div class="card" style="border: 2px solid var(--accent);">
+                     <h3 data-i18n="workDesk.pricing.proMonthly.title">Pro — Monthly</h3>
+                    <p style="font-size: 2rem; font-weight: 700; color: var(--accent);" data-i18n="workDesk.pricing.proMonthly.price">$4.99/month</p>
+                     <ul>
+                          <li data-i18n="workDesk.pricing.proMonthly.features.f1">Unlimited workspaces</li>
+                          <li data-i18n="workDesk.pricing.proMonthly.features.f2">Save all windows at once</li>
+                          <li data-i18n="workDesk.pricing.proMonthly.features.f3">Export to JSON, CSV, HTML</li>
+                          <li data-i18n="workDesk.pricing.proMonthly.features.f4">Apply AI workspace cleanup</li>
+                          <li data-i18n="workDesk.pricing.proMonthly.features.f5">Semantic AI search</li>
+                          <li data-i18n="workDesk.pricing.proMonthly.features.f6">Priority support</li>
+                     </ul>
+                    <a href="https://checkout.dodopayments.com/buy/pdt_0NdlXo75XKzUW5u4NgCmU?quantity=1&redirect_url=https%3A%2F%2Fdonbrico.net%2Factivate.html%3Fproduct%3Dworkdesk" class="btn" data-i18n="workDesk.pricing.proMonthly.button">Get Pro Monthly</a>
+                 </div>
+                 <div class="card" style="border: 2px solid var(--accent);">
+                     <h3 data-i18n="workDesk.pricing.proYearly.title">Pro — Yearly</h3>
+                    <p style="font-size: 2rem; font-weight: 700; color: var(--accent);" data-i18n="workDesk.pricing.proYearly.price">$29.99/year</p>
+                    <p class="text-muted" data-i18n="workDesk.pricing.proYearly.subtitle">~$2.50/month</p>
+                    <p style="color: #22c55e; font-weight: 600; font-size: 0.9rem;" data-i18n="workDesk.pricing.proYearly.savings">Save 50% vs monthly</p>
+                     <ul>
+                         <li data-i18n="workDesk.pricing.proYearly.features.f1">All Monthly Pro features</li>
+                         <li data-i18n="workDesk.pricing.proYearly.features.f2">Best value for professionals</li>
+                     </ul>
+                    <a href="https://checkout.dodopayments.com/buy/pdt_0NdlXn1t8ylWkFmybjjGP?quantity=1&redirect_url=https%3A%2F%2Fdonbrico.net%2Factivate.html%3Fproduct%3Dworkdesk" class="btn" data-i18n="workDesk.pricing.proYearly.button">Get Pro Yearly</a>
+                 </div>
+                 <div class="card" style="border: 2px solid #ffd700;">
+                     <h3 data-i18n="workDesk.pricing.lifetime.title">Lifetime — Early Adopter</h3>
+                    <p style="font-size: 2rem; font-weight: 700; color: #ffd700;" data-i18n="workDesk.pricing.lifetime.price">$49.99 one-time</p>
+                     <p style="font-size: 0.9rem; color: #ffd700; font-weight: 600; margin-bottom: 12px;" data-i18n="workDesk.pricing.lifetime.earlyAdopter">🚀 Early Adopter (limited time)</p>
+                     <ul>
+                         <li data-i18n="workDesk.pricing.lifetime.features.f1">All Pro features, forever</li>
+                         <li data-i18n="workDesk.pricing.lifetime.features.f2">All future updates included</li>
+                     </ul>
+                    <a href="https://checkout.dodopayments.com/buy/pdt_0NdlXnYSUfwfJLnO5MKgR?quantity=1&redirect_url=https%3A%2F%2Fdonbrico.net%2Factivate.html%3Fproduct%3Dworkdesk" class="btn" data-i18n="workDesk.pricing.lifetime.button">Get Lifetime</a>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+     <section style="padding: var(--spacing-xl) 0;">
+         <div class="container">
+             <h2 class="section-title" data-i18n="workDesk.setupGuides.sectionTitle">AI Setup — Choose Your Power Source</h2>
+             <p style="color: var(--muted); margin-bottom: var(--spacing-lg); max-width: 600px;" data-i18n="workDesk.setupGuides.subtitle">
+                 Both options are free to start. Gemini Nano runs locally; BYOK gives you flexibility and higher limits.
+             </p>
+             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-lg);">
+                 <div class="card" style="border-left: 3px solid var(--secondary);">
+                     <h4 style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+                         <span style="font-size: 1.2rem;">🧠</span>
+                         <span data-i18n="workDesk.setupGuides.geminiNano.title">Gemini Nano (Built Into Chrome)</span>
+                     </h4>
+                     <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 16px;" data-i18n="workDesk.setupGuides.geminiNano.description">
+                         No API key needed. AI runs entirely on your device via Chrome's built-in Gemini Nano model. 100% private, zero data leaves your browser. Requires Chrome 127+ with sufficient RAM.
+                     </p>
+                     <a href="../docs-gemini-nano.html" style="color: var(--accent); text-decoration: none; font-weight: 500; font-size: 0.9rem;" data-i18n="workDesk.setupGuides.geminiNano.button">
+                         View setup guide →
+                     </a>
+                 </div>
+                 <div class="card" style="border-left: 3px solid var(--accent);">
+                     <h4 style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+                         <span style="font-size: 1.2rem;">🔑</span>
+                         <span data-i18n="workDesk.setupGuides.bringYourOwnKey.title">Bring Your Own API Key</span>
+                     </h4>
+                     <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 16px;" data-i18n="workDesk.setupGuides.bringYourOwnKey.description">
+                         Connect your own key from OpenAI, Anthropic (Claude), Groq, or OpenRouter. Pay only for what you use. Unlimited AI generations (Pro).
+                     </p>
+                     <a href="../docs-api-keys.html" style="color: var(--accent); text-decoration: none; font-weight: 500; font-size: 0.9rem;" data-i18n="workDesk.setupGuides.bringYourOwnKey.button">
+                         View setup guide →
+                     </a>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+     <section style="padding: var(--spacing-xl) 0;">
+         <div class="container">
+             <h2 class="section-title" data-i18n="workDesk.faq.sectionTitle">Frequently Asked Questions</h2>
+             <details style="margin-bottom: var(--spacing-md);">
+                 <summary style="cursor: pointer; font-weight: 600;" data-i18n="workDesk.faq.q1.question">Does it work with tab groups?</summary>
+                 <p data-i18n="workDesk.faq.q1.answer">Yes. WorkDesk fully supports Chrome tab groups. When you restore a workspace, your groups are recreated exactly as they were.</p>
+             </details>
+             <details style="margin-bottom: var(--spacing-md);">
+                 <summary style="cursor: pointer; font-weight: 600;" data-i18n="workDesk.faq.q2.question">Is my data private?</summary>
+                 <p data-i18n="workDesk.faq.q2.answer">Absolutely. Your workspace names, tab URLs, and window arrangements are stored locally in Chrome's storage. When using Gemini Nano, everything stays on your device.</p>
+             </details>
+             <details style="margin-bottom: var(--spacing-md);">
+                 <summary style="cursor: pointer; font-weight: 600;" data-i18n="workDesk.faq.q3.question">What's the difference between Free and Pro?</summary>
+                  <p data-i18n="workDesk.faq.q3.answer">Free includes up to 5 workspaces, AI naming, and archiving. Pro removes all limits: unlimited workspaces, AI cleanup, semantic search, and multi-window support.</p>
+             </details>
+             <details style="margin-bottom: var(--spacing-md);">
+                 <summary style="cursor: pointer; font-weight: 600;" data-i18n="workDesk.faq.q4.question">Can I export my workspaces?</summary>
+                 <p data-i18n="workDesk.faq.q4.answer">Yes. Pro users can export their entire library as JSON (for backups), CSV (for spreadsheets), or HTML Bookmarks.</p>
+             </details>
+         </div>
+     </section>
+
+     <footer class="footer">
+         <div class="container">
+             <p data-i18n="app.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+             <p><a href="../privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a> | <a href="../support/" data-i18n="nav.support">Support</a></p>
+         </div>
+     </footer>
+     <script src="../js/i18n.js" defer></script>
+</body>
+</html>

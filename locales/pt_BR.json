@@ -2,7 +2,21 @@
   "app": {
     "name": "Donbrico Studio",
     "copyright": "© 2026 Donbrico Studio. Todos os direitos reservados.",
-    "builtBy": "Construído por um desenvolvedor solo."
+    "builtBy": "Construído por um desenvolvedor solo.",
+    "languages": {
+      "en": "Inglês",
+      "es": "Espanhol",
+      "ja": "日本語",
+      "pt_BR": "Português (Brasil)",
+      "fr": "Francês",
+      "de": "Alemão",
+      "it": "Italiano",
+      "zh_CN": "中文 (简体)",
+      "zh_TW": "中文 (繁體)",
+      "hi": "Adeus",
+      "ru": "Russo",
+      "ko": "한국어"
+    }
   },
   "nav": {
     "home": "Início",
@@ -10,14 +24,15 @@
     "nullCarrier": "Null Carrier",
     "privacyPolicy": "Política de Privacidade",
     "support": "Suporte",
-    "aiReplyAssistant": "AI Reply Assistant"
+    "aiReplyAssistant": "AI Reply Assistant",
+    "workDesk": "Mesa de trabalho"
   },
   "home": {
     "page": {
       "title": "Donbrico — Projetos de um indie solo",
-      "description": "donbrico.net – casa do Donbrico Autofill AI, AI Reply Assistant e Null Carrier. ",
+      "description": "donbrico.net – casa do Donbrico Autofill AI, AI Reply Assistant, Donbrico WorkDesk e Null Carrier. ",
       "ogTitle": "Donbrico — Projetos de um indie solo",
-      "ogDescription": "donbrico.net – casa do Donbrico Autofill AI, AI Reply Assistant e Null Carrier. "
+      "ogDescription": "donbrico.net – casa do Donbrico Autofill AI, AI Reply Assistant, Donbrico WorkDesk e Null Carrier. "
     },
     "hero": {
       "eyebrow": "DESENVOLVEDOR INDEPENDENTE",
@@ -48,6 +63,14 @@
         "title": "Donbrico AI Reply Assistant",
         "description": "Salve modelos de resposta e gere respostas baseadas em IA em qualquer lugar. ",
         "techStack": "[Extensão do Chrome] [AI] [Respostas salvas] [Nível gratuito]",
+        "button": "Saiba mais →"
+      },
+      "workDesk": {
+        "badgeChrome": "EXTENSÃO CROMADA",
+        "badgeFree": "GRATUITO / PRO",
+        "title": "Donbrico WorkDesk",
+        "description": "Salve e restaure os espaços de trabalho do seu navegador com um clique. ",
+        "techStack": "[Extensão do Chrome] [AI] [Espaços de trabalho] [Privacidade em primeiro lugar]",
         "button": "Saiba mais →"
       }
     },
@@ -338,7 +361,7 @@
       "sectionTitle": "Suporte do assistente de resposta Donbrico AI",
       "subtitle": "Problemas comuns",
       "q1": {
-        "question": "A barra de ferramentas da extensão não aparece em uma página",
+        "question": "A barra de ferramentas de extensão não aparece em uma página",
         "answer": "Certifique-se de estar em uma página com um campo de texto (entrada ou área de texto). "
       },
       "q2": {
@@ -371,10 +394,10 @@
       "ogDescription": "Política de privacidade para donbrico.net, Donbrico Autofill AI, extensões AI Reply Assistant do Chrome e Null Carrier."
     },
     "sectionTitle": "Política de Privacidade",
-    "lastUpdated": "Última atualização: fevereiro de 2026",
+    "lastUpdated": "Last updated: February 2026",
     "overview": {
       "sectionTitle": "Visão geral",
-      "paragraph": "Donbrico está empenhado em proteger a sua privacidade. "
+      "paragraph": "Donbrico is committed to protecting your privacy. All Donbrico Chrome extensions store data locally on your device. This website does not use analytics, cookies, or any tracking scripts."
     },
     "extension": {
       "sectionTitle": "Donbrico Autofill AI — Extensão Chrome",
@@ -430,12 +453,13 @@
       "overview": "Visão geral",
       "autofillAi": "Extensão AI de preenchimento automático",
       "aiReplyAssistant": "Assistente de resposta de IA",
+      "workDesk": "Mesa de trabalho",
       "nullCarrier": "Jogo de operadora nula",
       "website": "Este site",
       "contact": "Contato"
     },
     "aiReplyAssistant": {
-      "sectionTitle": "Assistente de resposta Donbrico AI – extensão do Chrome",
+      "sectionTitle": "Donbrico AI Reply Assistant — Chrome Extension",
       "whatWeCollect": {
         "sectionTitle": "Quais dados coletamos",
         "paragraph": "Nenhum. "
@@ -455,6 +479,29 @@
       "dataDeletion": {
         "sectionTitle": "Exclusão de dados",
         "paragraph": "A desinstalação da extensão exclui todas as respostas, modelos e configurações armazenados localmente. "
+      }
+    },
+    "workDesk": {
+      "sectionTitle": "Donbrico WorkDesk — Extensão do Chrome",
+      "whatWeCollect": {
+        "sectionTitle": "Quais dados coletamos",
+        "paragraph": "Nenhum. "
+      },
+      "howStored": {
+        "sectionTitle": "Como seus dados são armazenados",
+        "paragraph": "Todos os dados do espaço de trabalho são armazenados no armazenamento local do Chrome. "
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Provedores terceirizados de IA (traga sua própria chave)",
+        "paragraph": "Ao usar recursos de IA (nomeação, limpeza, pesquisa), títulos de guias e URLs podem ser enviados ao seu provedor de IA configurado (OpenAI, Anthropic, etc.). "
+      },
+      "permissions": {
+        "sectionTitle": "Permissões usadas",
+        "paragraph": "armazenamento (para espaços de trabalho), guias (para salvar/restaurar sessões), janelas (para gerenciar várias janelas), notificações (para salvar lembretes)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Exclusão de dados",
+        "paragraph": "A desinstalação da extensão exclui todos os espaços de trabalho e configurações armazenados localmente. "
       }
     }
   },
@@ -488,14 +535,14 @@
   },
   "aiReplyAssistant": {
     "page": {
-      "title": "Donbrico AI Reply Assistant — Respostas inteligentes e respostas baseadas em IA",
+      "title": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
       "description": "Crie uma biblioteca de respostas pessoal e gere respostas baseadas em IA instantaneamente. ",
-      "ogTitle": "Donbrico AI Reply Assistant — Respostas inteligentes e respostas baseadas em IA",
+      "ogTitle": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
       "ogDescription": "Crie uma biblioteca de respostas pessoal e gere respostas baseadas em IA instantaneamente. "
     },
     "hero": {
       "eyebrow": "EXTENSÃO CROMADA",
-      "title": "Sua biblioteca de respostas pessoal,<br>sobrecarregada com IA.",
+      "title": "Sua biblioteca de respostas pessoal,<br>supercarregada com IA.",
       "subtitle": "Salve modelos de resposta ilimitados, gere respostas inteligentes com IA e insira-as em qualquer lugar: Gmail, LinkedIn, Twitter, ferramentas de suporte ou qualquer site com campo de texto.",
       "disclaimer": "🔒 Seus dados nunca saem do seu navegador · Gemini Nano no dispositivo ou sua própria chave de API · Não é necessária uma conta",
       "buttonPrimary": "Adicionar ao Chrome – grátis",
@@ -651,6 +698,200 @@
     },
     "footer": {
       "links": "Política de Privacidade | "
+    }
+  },
+  "workDesk": {
+    "page": {
+      "title": "Donbrico WorkDesk — Espaços de trabalho de navegador inteligente e gerenciador de sessão",
+      "description": "Salve e restaure os espaços de trabalho do seu navegador com um clique. ",
+      "ogTitle": "Donbrico WorkDesk — Espaços de trabalho de navegador inteligente e gerenciador de sessão",
+      "ogDescription": "Salve e restaure os espaços de trabalho do seu navegador com um clique. "
+    },
+    "hero": {
+      "eyebrow": "EXTENSÃO CROMADA",
+      "title": "Os espaços de trabalho do seu navegador,<br>organizados por IA.",
+      "subtitle": "Salve suas guias atuais como um espaço de trabalho com um clique. ",
+      "disclaimer": "🔒 Seus dados nunca saem do seu navegador · Gemini Nano no dispositivo ou sua própria chave de API · Não é necessária uma conta",
+      "buttonPrimary": "Adicionar ao Chrome – grátis",
+      "buttonSecondary": "Veja como funciona ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "Como funciona",
+      "step1": {
+        "title": "1. Salve com um clique",
+        "description": "Clique no ícone WorkDesk para salvar todas as guias abertas na janela atual (ou todas as janelas) como um espaço de trabalho nomeado."
+      },
+      "step2": {
+        "title": "2. Organização movida a IA",
+        "description": "A IA sugere automaticamente um nome para o seu espaço de trabalho com base nas suas guias. "
+      },
+      "step3": {
+        "title": "3. Restaure instantaneamente",
+        "description": "Abra o painel do seu espaço de trabalho e restaure qualquer sessão. "
+      }
+    },
+    "features": {
+      "sectionTitle": "Construído para produtividade.",
+      "unlimitedWorkspaces": {
+        "title": "Espaços de trabalho ilimitados",
+        "description": "Salve quantos espaços de trabalho você precisar. "
+      },
+      "aiNaming": {
+        "title": "Nomenclatura baseada em IA",
+        "description": "Não perca tempo pensando em nomes. "
+      },
+      "smartCleanup": {
+        "title": "Limpeza inteligente de IA",
+        "description": "Agrupe automaticamente guias semelhantes, remova duplicatas e organize seu espaço de trabalho para obter o máximo de clareza."
+      },
+      "geminiNano": {
+        "title": "IA 100% privada",
+        "description": "Use o Gemini Nano para IA no dispositivo: nenhum dado sai da sua máquina. "
+      },
+      "multiWindow": {
+        "title": "Suporte para múltiplas janelas",
+        "description": "Salve todas as janelas abertas de uma vez ou apenas a atual. "
+      },
+      "exportImport": {
+        "title": "Importar e Exportar",
+        "description": "Exporte e importe seus espaços de trabalho em formatos avançados: JSON, CSV e marcadores HTML. "
+      },
+      "semanticSearch": {
+        "title": "Pesquisa semântica de IA",
+        "description": "Pesquise seus espaços de trabalho usando linguagem natural. "
+      },
+      "privacyFirst": {
+        "title": "Privacidade em primeiro lugar",
+        "description": "Todos os dados do seu espaço de trabalho são armazenados localmente no seu navegador. "
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Preços simples. ",
+      "free": {
+        "title": "Livre",
+        "price": "US$ 0",
+        "features": {
+          "f1": "Economize até 5 espaços de trabalho",
+          "f2": "Sugestões de nomenclatura de IA",
+          "f3": "Resumos do cartão de memória",
+          "f4": "Arquivamento do espaço de trabalho",
+          "f5": "Gemini Nano (local, privado)",
+          "f6": "Modos básicos de restauração"
+        },
+        "button": "Adicionar ao Chrome"
+      },
+      "proMonthly": {
+        "title": "Pró – Mensal",
+        "price": "US$ 4,99/mês",
+        "features": {
+          "f1": "Espaços de trabalho ilimitados",
+          "f2": "Salve todas as janelas de uma vez",
+          "f3": "Exportar e importar: JSON, CSV, HTML",
+          "f4": "Aplicar limpeza do espaço de trabalho de IA",
+          "f5": "Pesquisa semântica de IA",
+          "f6": "Suporte prioritário"
+        },
+        "button": "Obtenha o Pro mensalmente"
+      },
+      "proYearly": {
+        "title": "Pró – Anual",
+        "price": "US$ 29,99/ano",
+        "subtitle": "~$2,50/mês",
+        "savings": "Economize 50% em relação ao mês",
+        "features": {
+          "f1": "Todos os recursos mensais do Pro",
+          "f2": "Melhor valor para profissionais"
+        },
+        "button": "Torne-se profissional anualmente"
+      },
+      "lifetime": {
+        "title": "Vitalício – Adepto pioneiro",
+        "price": "$ 49,99 único",
+        "earlyAdopter": "🚀 Adepto pioneiro (tempo limitado)",
+        "features": {
+          "f1": "Todos os recursos Pro, para sempre",
+          "f2": "Todas as atualizações futuras incluídas"
+        },
+        "button": "Obtenha vitalício",
+        "disclaimer": ""
+      }
+    },
+    "faq": {
+      "sectionTitle": "Perguntas frequentes",
+      "q1": {
+        "question": "Funciona com grupos de guias?",
+        "answer": "Sim. "
+      },
+      "q2": {
+        "question": "Meus dados são privados?",
+        "answer": "Absolutamente. "
+      },
+      "q3": {
+        "question": "Qual é a diferença entre Gratuito e Pro?",
+        "answer": "Gratuito inclui até 5 espaços de trabalho, nomenclatura de IA e arquivamento. "
+      },
+      "q4": {
+        "question": "Posso exportar meus espaços de trabalho?",
+        "answer": "Sim. "
+      }
+    },
+    "activate": {
+      "page": {
+        "title": "Ativar Licença - Donbrico"
+      },
+      "loading": {
+        "title": "Ativando Licença",
+        "subtitle": "Conectando-se à extensão Donbrico…"
+      },
+      "success": {
+        "title": "Pró ativado!",
+        "subtitle": "Você pode fechar esta aba e retornar ao Donbrico."
+      },
+      "manual": {
+        "title": "Ativar Donbrico Pro",
+        "subtitle": "Copie a chave abaixo e cole na extensão: abra Donbrico → Opções → Premium → colar → Ativar.",
+        "copy": "Cópia",
+        "copied": "✓ Copiado",
+        "steps": {
+          "title": "Passos",
+          "s1": "Clique no ícone da extensão Donbrico na sua barra de ferramentas",
+          "s2": "Abra <strong>Opções</strong> (ou clique com o botão direito no ícone → Opções)",
+          "s3": "Vá para a guia <strong>Premium</strong>",
+          "s4": "Cole sua chave de licença e clique em <strong>Ativar</strong>"
+        },
+        "noKey": "(sem chave no URL – verifique seu e-mail de compra)",
+        "notReachable": "Não foi possível acessar a extensão nesta página (instale o Donbrico ou use um navegador Chromium compatível). ",
+        "lookupFailed": "Falha na pesquisa de ativação ({{error}}). ",
+        "genericFailed": "Falha na ativação. ",
+        "pending": "Pagamento concluído, mas nenhuma chave de licença foi encontrada neste link. "
+      }
+    }
+  }
+}
+        "subtitle": "Conectando-se à extensão Donbrico…"
+      },
+      "success": {
+        "title": "Pró ativado!",
+        "subtitle": "Você pode fechar esta aba e retornar ao Donbrico."
+      },
+      "manual": {
+        "title": "Ativar Donbrico Pro",
+        "subtitle": "Copie a chave abaixo e cole na extensão: abra Donbrico → Opções → Premium → colar → Ativar.",
+        "copy": "Cópia",
+        "copied": "✓ Copiado",
+        "steps": {
+          "title": "Passos",
+          "s1": "Clique no ícone da extensão Donbrico na sua barra de ferramentas",
+          "s2": "Abra <strong>Opções</strong> (ou clique com o botão direito no ícone → Opções)",
+          "s3": "Vá para a guia <strong>Premium</strong>",
+          "s4": "Cole sua chave de licença e clique em <strong>Ativar</strong>"
+        },
+        "noKey": "(sem chave no URL – verifique seu e-mail de compra)",
+        "notReachable": "Não foi possível acessar a extensão nesta página (instale o Donbrico ou use um navegador Chromium compatível). ",
+        "lookupFailed": "Falha na pesquisa de ativação ({{error}}). ",
+        "genericFailed": "Falha na ativação. ",
+        "pending": "Pagamento concluído, mas nenhuma chave de licença foi encontrada neste link. "
+      }
     }
   }
 }

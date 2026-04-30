@@ -2,7 +2,21 @@
   "app": {
     "name": "Donbrico Studio",
     "copyright": "© 2026 Donbrico Studio. Tous droits réservés.",
-    "builtBy": "Construit par un développeur solo."
+    "builtBy": "Construit par un développeur solo.",
+    "languages": {
+      "en": "Anglais",
+      "es": "espagnol",
+      "ja": "日本語",
+      "pt_BR": "Portugais (Brésil)",
+      "fr": "Français",
+      "de": "Allemand",
+      "it": "Italien",
+      "zh_CN": "中文 (简体)",
+      "zh_TW": "中 文 (繁 體)",
+      "hi": "हिन्दी",
+      "ru": "russe",
+      "ko": "한국어"
+    }
   },
   "nav": {
     "home": "Accueil",
@@ -10,14 +24,15 @@
     "nullCarrier": "Null Carrier",
     "privacyPolicy": "Politique de confidentialité",
     "support": "Support",
-    "aiReplyAssistant": "AI Reply Assistant"
+    "aiReplyAssistant": "AI Reply Assistant",
+    "workDesk": "Bureau de travail"
   },
   "home": {
     "page": {
       "title": "Donbrico — Projets d'un développeur indie solo",
-      "description": "donbrico.net – hébergeant Donbrico Autofill AI, AI Reply Assistant et Null Carrier. ",
+      "description": "donbrico.net – héberge Donbrico Autofill AI, AI Reply Assistant, Donbrico WorkDesk et Null Carrier. ",
       "ogTitle": "Donbrico — Projets d'un développeur indie solo",
-      "ogDescription": "donbrico.net – hébergeant Donbrico Autofill AI, AI Reply Assistant et Null Carrier. "
+      "ogDescription": "donbrico.net – héberge Donbrico Autofill AI, AI Reply Assistant, Donbrico WorkDesk et Null Carrier. "
     },
     "hero": {
       "eyebrow": "DÉVELOPPEUR INDÉPENDANT",
@@ -48,6 +63,14 @@
         "title": "Donbrico AI Reply Assistant",
         "description": "Enregistrez des modèles de réponse et générez des réponses basées sur l'IA n'importe où. ",
         "techStack": "[Extension Chrome] [AI] [Réponses enregistrées] [Niveau gratuit]",
+        "button": "En savoir plus →"
+      },
+      "workDesk": {
+        "badgeChrome": "EXTENSION CHROMÉE",
+        "badgeFree": "GRATUIT / PRO",
+        "title": "Bureau de travail Donbrico",
+        "description": "Enregistrez et restaurez les espaces de travail de votre navigateur en un clic. ",
+        "techStack": "[Extension Chrome] [AI] [Espaces de travail] [Privacy d'abord]",
         "button": "En savoir plus →"
       }
     },
@@ -358,7 +381,7 @@
         "answer": "Dans Chrome, accédez à chrome://extensions, recherchez Donbrico AI Reply Assistant, cliquez sur Supprimer. "
       },
       "q6": {
-        "question": "Comment signaler un bug ou demander une fonctionnalité ?",
+        "question": "Comment signaler un bug ou demander une fonctionnalité ?",
         "answer": "Envoyez un e-mail à support@donbrico.net avec « Bug : » ou « Demande de fonctionnalité : » au début de votre ligne d'objet."
       }
     }
@@ -432,7 +455,8 @@
       "aiReplyAssistant": "Assistant de réponse IA",
       "nullCarrier": "Jeu de transporteur nul",
       "website": "Ce site Web",
-      "contact": "Contact"
+      "contact": "Contact",
+      "workDesk": "Bureau de travail"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Assistant de réponse Donbrico AI – Extension Chrome",
@@ -455,6 +479,29 @@
       "dataDeletion": {
         "sectionTitle": "Suppression des données",
         "paragraph": "La désinstallation de l'extension supprime toutes les réponses, modèles et paramètres stockés localement. "
+      }
+    },
+    "workDesk": {
+      "sectionTitle": "Donbrico WorkDesk — Extension Chrome",
+      "whatWeCollect": {
+        "sectionTitle": "Quelles données nous collectons",
+        "paragraph": "Aucun. "
+      },
+      "howStored": {
+        "sectionTitle": "Comment vos données sont stockées",
+        "paragraph": "Toutes les données de l'espace de travail sont stockées dans le stockage local de Chrome. "
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Fournisseurs d'IA tiers (apportez votre propre clé)",
+        "paragraph": "Lorsque vous utilisez les fonctionnalités d'IA (dénomination, nettoyage, recherche), les titres d'onglets et les URL peuvent être envoyés à votre fournisseur d'IA configuré (OpenAI, Anthropic, etc.). "
+      },
+      "permissions": {
+        "sectionTitle": "Autorisations utilisées",
+        "paragraph": "stockage (pour les espaces de travail), onglets (pour enregistrer/restaurer des sessions), fenêtres (pour gérer plusieurs fenêtres), notifications (pour enregistrer des rappels)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Suppression des données",
+        "paragraph": "La désinstallation de l'extension supprime tous les espaces de travail et paramètres stockés localement. "
       }
     }
   },
@@ -488,9 +535,9 @@
   },
   "aiReplyAssistant": {
     "page": {
-      "title": "Donbrico AI Reply Assistant — Réponses intelligentes et réponses basées sur l'IA",
+      "title": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
       "description": "Créez une bibliothèque de réponses personnelle et générez instantanément des réponses basées sur l'IA. ",
-      "ogTitle": "Donbrico AI Reply Assistant — Réponses intelligentes et réponses basées sur l'IA",
+      "ogTitle": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
       "ogDescription": "Créez une bibliothèque de réponses personnelle et générez instantanément des réponses basées sur l'IA. "
     },
     "hero": {
@@ -528,7 +575,7 @@
       },
       "toneSelection": {
         "title": "Sélection de tonalité",
-        "description": "Choisissez le bon ton : convivial, professionnel, concis (gratuit) plus persuasif, empathique, assertif, suivi et plus encore (Pro)."
+        "description": "Choose the right tone: Friendly, Professional, Concise (free) plus Persuasive, Empathetic, Assertive, Follow-up and more (Pro)."
       },
       "geminiNano": {
         "title": "IA 100% privée",
@@ -587,7 +634,7 @@
       },
       "proYearly": {
         "title": "Pro — Annuel",
-        "price": "49,99 $/an",
+        "price": "49,99 $/an",
         "subtitle": "~4,17$/mois",
         "savings": "Économisez 40 % par rapport au mois",
         "features": {
@@ -651,6 +698,173 @@
     },
     "footer": {
       "links": "Politique de confidentialité | "
+    }
+  },
+  "workDesk": {
+    "page": {
+      "title": "Donbrico WorkDesk — Espaces de travail et gestionnaire de sessions avec navigateur intelligent",
+      "description": "Enregistrez et restaurez les espaces de travail de votre navigateur en un clic. ",
+      "ogTitle": "Donbrico WorkDesk — Espaces de travail et gestionnaire de sessions avec navigateur intelligent",
+      "ogDescription": "Enregistrez et restaurez les espaces de travail de votre navigateur en un clic. "
+    },
+    "hero": {
+      "eyebrow": "EXTENSION CHROMÉE",
+      "title": "Les espaces de travail de votre navigateur,<br>organisés par l'IA.",
+      "subtitle": "Enregistrez vos onglets actuels en tant qu'espace de travail en un clic. ",
+      "disclaimer": "🔒 Vos données ne quittent jamais votre navigateur · Gemini Nano sur l'appareil ou votre propre clé API · Aucun compte requis",
+      "buttonPrimary": "Ajouter à Chrome – Gratuit",
+      "buttonSecondary": "Voyez comment ça marche ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "Comment ça marche",
+      "step1": {
+        "title": "1. Enregistrez en un clic",
+        "description": "Cliquez sur l'icône WorkDesk pour enregistrer tous les onglets ouverts dans votre fenêtre actuelle (ou toutes les fenêtres) en tant qu'espace de travail nommé."
+      },
+      "step2": {
+        "title": "2. Organisation alimentée par l'IA",
+        "description": "L'IA suggère automatiquement un nom pour votre espace de travail en fonction de vos onglets. "
+      },
+      "step3": {
+        "title": "3. Restaurer instantanément",
+        "description": "Ouvrez le tableau de bord de votre espace de travail et restaurez n'importe quelle session. "
+      }
+    },
+    "features": {
+      "sectionTitle": "Conçu pour la productivité.",
+      "unlimitedWorkspaces": {
+        "title": "Espaces de travail illimités",
+        "description": "Enregistrez autant d’espaces de travail que nécessaire. "
+      },
+      "aiNaming": {
+        "title": "Dénomination basée sur l'IA",
+        "description": "Ne perdez pas de temps à penser aux noms. "
+      },
+      "smartCleanup": {
+        "title": "Nettoyage intelligent de l'IA",
+        "description": "Regroupez automatiquement les onglets similaires, supprimez les doublons et organisez votre espace de travail pour une clarté maximale."
+      },
+      "geminiNano": {
+        "title": "IA 100% privée",
+        "description": "Utilisez Gemini Nano pour l'IA sur l'appareil : aucune donnée ne quitte votre machine. "
+      },
+      "multiWindow": {
+        "title": "Prise en charge de plusieurs fenêtres",
+        "description": "Enregistrez toutes les fenêtres ouvertes en même temps ou seulement celle en cours. "
+      },
+      "exportImport": {
+        "title": "Importation et exportation",
+        "description": "Exportez et importez vos espaces de travail dans des formats avancés : JSON, CSV et HTML Bookmarks. "
+      },
+      "semanticSearch": {
+        "title": "Recherche sémantique par IA",
+        "description": "Recherchez vos espaces de travail en langage naturel. "
+      },
+      "privacyFirst": {
+        "title": "La confidentialité avant tout",
+        "description": "Toutes les données de votre espace de travail sont stockées localement dans votre navigateur. "
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Tarification simple. ",
+      "free": {
+        "title": "Gratuit",
+        "price": "0 $",
+        "features": {
+          "f1": "Enregistrez jusqu'à 5 espaces de travail",
+          "f2": "Suggestions de noms d'IA",
+          "f3": "Résumés des cartes mémoire",
+          "f4": "Archivage de l'espace de travail",
+          "f5": "Gemini Nano (local, privé)",
+          "f6": "Modes de restauration de base"
+        },
+        "button": "Ajouter à Chrome"
+      },
+      "proMonthly": {
+        "title": "Pro – Mensuel",
+        "price": "4,99 $/mois",
+        "features": {
+          "f1": "Espaces de travail illimités",
+          "f2": "Enregistrez toutes les fenêtres à la fois",
+          "f3": "Exporter et importer : JSON, CSV, HTML",
+          "f4": "Appliquer le nettoyage de l'espace de travail IA",
+          "f5": "Recherche sémantique par IA",
+          "f6": "Assistance prioritaire"
+        },
+        "button": "Devenez Pro mensuellement"
+      },
+      "proYearly": {
+        "title": "Pro — Annuel",
+        "price": "29,99 $/an",
+        "subtitle": "~2,50$/mois",
+        "savings": "Économisez 50 % par rapport au mois",
+        "features": {
+          "f1": "Toutes les fonctionnalités mensuelles Pro",
+          "f2": "Le meilleur rapport qualité-prix pour les professionnels"
+        },
+        "button": "Devenez Pro chaque année"
+      },
+      "lifetime": {
+        "title": "À vie – Adopteur précoce",
+        "price": "49,99 $ une fois",
+        "earlyAdopter": "🚀 Early Adopter (durée limitée)",
+        "features": {
+          "f1": "Toutes les fonctionnalités Pro, pour toujours",
+          "f2": "Toutes les futures mises à jour incluses"
+        },
+        "button": "Obtenez la durée de vie",
+        "disclaimer": ""
+      }
+    },
+    "faq": {
+      "sectionTitle": "Foire aux questions",
+      "q1": {
+        "question": "Est-ce que ça marche avec les groupes d'onglets ?",
+        "answer": "Oui. "
+      },
+      "q2": {
+        "question": "Mes données sont-elles privées ?",
+        "answer": "Absolument. "
+      },
+      "q3": {
+        "question": "Quelle est la différence entre Gratuit et Pro ?",
+        "answer": "Gratuit comprend jusqu'à 5 espaces de travail, la dénomination AI et l'archivage. "
+      },
+      "q4": {
+        "question": "Puis-je exporter mes espaces de travail ?",
+        "answer": "Oui. "
+      }
+    },
+    "activate": {
+      "page": {
+        "title": "Activer la licence — Donbrico"
+      },
+      "loading": {
+        "title": "Activation de la licence",
+        "subtitle": "Connexion à l’extension Donbrico…"
+      },
+      "success": {
+        "title": "Pro activé !",
+        "subtitle": "Vous pouvez fermer cet onglet et revenir à Donbrico."
+      },
+      "manual": {
+        "title": "Activer Donbrico Pro",
+        "subtitle": "Copiez la clé ci-dessous et collez-la dans l'extension : ouvrez Donbrico → Options → Premium → coller → Activer.",
+        "copy": "Copie",
+        "copied": "✓ Copié",
+        "steps": {
+          "title": "Mesures",
+          "s1": "Cliquez sur l'icône de l'extension Donbrico dans votre barre d'outils",
+          "s2": "Ouvrez les <strong>Options</strong> (ou cliquez avec le bouton droit sur l'icône → Options)",
+          "s3": "Accédez à l'onglet <strong>Premium</strong>",
+          "s4": "Collez votre clé de licence et cliquez sur <strong>Activer</strong>"
+        },
+        "noKey": "(pas de clé dans l'URL — vérifiez votre e-mail d'achat)",
+        "notReachable": "L'extension n'est pas accessible à partir de cette page (installez Donbrico ou utilisez un navigateur Chromium pris en charge). ",
+        "lookupFailed": "La recherche d'activation a échoué ({{error}}). ",
+        "genericFailed": "L'activation a échoué. ",
+        "pending": "Paiement effectué, mais aucune clé de licence n'a été trouvée dans ce lien. "
+      }
     }
   }
 }

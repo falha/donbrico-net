@@ -2,7 +2,21 @@
   "app": {
     "name": "Donbrico Studio",
     "copyright": "© 2026 Donbrico Studio. All rights reserved.",
-    "builtBy": "Built by a solo developer."
+    "builtBy": "Built by a solo developer.",
+    "languages": {
+      "en": "English",
+      "es": "Español",
+      "ja": "日本語",
+      "pt_BR": "Português (Brasil)",
+      "fr": "Français",
+      "de": "Deutsch",
+      "it": "Italiano",
+      "zh_CN": "中文 (简体)",
+      "zh_TW": "中文 (繁體)",
+      "hi": "हिन्दी",
+      "ru": "Русский",
+      "ko": "한국어"
+    }
   },
   "nav": {
     "home": "Home",
@@ -10,14 +24,15 @@
     "nullCarrier": "Null Carrier",
     "privacyPolicy": "Privacy Policy",
     "support": "Support",
-    "aiReplyAssistant": "AI Reply Assistant"
+    "aiReplyAssistant": "AI Reply Assistant",
+    "workDesk": "WorkDesk"
   },
   "home": {
     "page": {
       "title": "Donbrico — Projects by a solo indie dev",
-      "description": "donbrico.net — home of Donbrico Autofill AI, AI Reply Assistant, and Null Carrier. Tools and games built by a solo developer.",
+      "description": "donbrico.net — home of Donbrico Autofill AI, AI Reply Assistant, Donbrico WorkDesk, and Null Carrier. Tools and games built by a solo developer.",
       "ogTitle": "Donbrico — Projects by a solo indie dev",
-      "ogDescription": "donbrico.net — home of Donbrico Autofill AI, AI Reply Assistant, and Null Carrier. Tools and games built by a solo developer."
+      "ogDescription": "donbrico.net — home of Donbrico Autofill AI, AI Reply Assistant, Donbrico WorkDesk, and Null Carrier. Tools and games built by a solo developer."
     },
     "hero": {
       "eyebrow": "INDEPENDENT DEVELOPER",
@@ -48,6 +63,14 @@
         "title": "Donbrico AI Reply Assistant",
         "description": "Save reply templates and generate AI-powered responses anywhere. Gmail, LinkedIn, Twitter, support tools — any text field.",
         "techStack": "[Chrome Extension] [AI] [Saved Replies] [Free tier]",
+        "button": "Learn More →"
+      },
+      "workDesk": {
+        "badgeChrome": "CHROME EXTENSION",
+        "badgeFree": "FREE / PRO",
+        "title": "Donbrico WorkDesk",
+        "description": "Save and restore your browser workspaces in one click. Smart session manager with AI naming, tab groups, and snapshots.",
+        "techStack": "[Chrome Extension] [AI] [Workspaces] [Privacy-first]",
         "button": "Learn More →"
       }
     },
@@ -361,6 +384,22 @@
         "question": "How do I report a bug or request a feature?",
         "answer": "Email support@donbrico.net with 'Bug:' or 'Feature Request:' at the start of your subject line."
       }
+    },
+    "workDesk": {
+      "sectionTitle": "Donbrico WorkDesk Support",
+      "subtitle": "Common Issues",
+      "q1": {
+        "question": "How do I save a workspace?",
+        "answer": "Click the extension icon to open the popup, then click 'Save Current window' or 'Save All Windows'. AI will suggest a name, or you can type your own."
+      },
+      "q2": {
+        "question": "Can I restore workspaces on another computer?",
+        "answer": "Yes, if you use the 'Export as JSON' feature (Pro) to backup your data and import it on your other device."
+      },
+      "q3": {
+        "question": "What happens if I delete a workspace?",
+        "answer": "Deleted workspaces are gone forever. However, you can use the 'Archive' feature to hide workspaces without deleting them."
+      }
     }
   },
   "privacyPolicy": {
@@ -430,6 +469,7 @@
       "overview": "Overview",
       "autofillAi": "Autofill AI Extension",
       "aiReplyAssistant": "AI Reply Assistant",
+      "workDesk": "WorkDesk",
       "nullCarrier": "Null Carrier Game",
       "website": "This Website",
       "contact": "Contact"
@@ -455,6 +495,29 @@
       "dataDeletion": {
         "sectionTitle": "Data deletion",
         "paragraph": "Uninstalling the extension deletes all locally stored replies, templates, and settings. No data is retained on Donbrico servers."
+      }
+    },
+    "workDesk": {
+      "sectionTitle": "Donbrico WorkDesk — Chrome Extension",
+      "whatWeCollect": {
+        "sectionTitle": "What data we collect",
+        "paragraph": "None. Your workspace names, tab URLs, and window arrangements are stored locally in Chrome's storage on your device. No data is transmitted to Donbrico servers."
+      },
+      "howStored": {
+        "sectionTitle": "How your data is stored",
+        "paragraph": "All workspace data is stored in Chrome's local storage. This data never leaves your device unless you manually export it."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Third-party AI providers (Bring Your Own Key)",
+        "paragraph": "When using AI features (naming, cleanup, search), tab titles and URLs may be sent to your configured AI provider (OpenAI, Anthropic, etc.). If you use Gemini Nano, all processing is on-device. Donbrico does not store or log any AI requests."
+      },
+      "permissions": {
+        "sectionTitle": "Permissions used",
+        "paragraph": "storage (for workspaces), tabs (to save/restore sessions), windows (to manage multiple windows), notifications (for save reminders)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Data deletion",
+        "paragraph": "Uninstalling the extension deletes all locally stored workspaces and settings. No data is retained on Donbrico servers."
       }
     }
   },
@@ -651,6 +714,187 @@
     },
     "footer": {
       "links": "Privacy Policy | Support"
+    }
+  },
+  "workDesk": {
+    "page": {
+      "title": "Donbrico WorkDesk — Smart Browser Workspaces & Session Manager",
+      "description": "Save and restore your browser workspaces in one click. Smart session manager with AI naming and tab groups. Powered by Gemini Nano or your own API key.",
+      "ogTitle": "Donbrico WorkDesk — Smart Browser Workspaces & Session Manager",
+      "ogDescription": "Save and restore your browser workspaces in one click. Smart session manager with AI naming and tab groups. Powered by Gemini Nano or your own API key."
+    },
+    "hero": {
+      "eyebrow": "CHROME EXTENSION",
+      "title": "Your browser workspaces,<br>organized by AI.",
+      "subtitle": "Save your current tabs as a workspace in one click. Restore them instantly later. AI-powered naming and smart cleanup keep your research organized.",
+      "disclaimer": "🔒 Your data never leaves your browser · On-device Gemini Nano or your own API key · No account required",
+      "buttonPrimary": "Add to Chrome — Free",
+      "buttonSecondary": "See how it works ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "How It Works",
+      "step1": {
+        "title": "1. Save with one click",
+        "description": "Click the WorkDesk icon to save all open tabs in your current window (or all windows) as a named workspace."
+      },
+      "step2": {
+        "title": "2. AI-powered organization",
+        "description": "AI automatically suggests a name for your workspace based on your tabs. Use AI cleanup to group tabs and remove duplicates."
+      },
+      "step3": {
+        "title": "3. Restore instantly",
+        "description": "Open your workspace dashboard and restore any session. Choose between 'Safe' (batch) or 'Fast' (instant) restore modes."
+      }
+    },
+    "features": {
+      "sectionTitle": "Built for productivity.",
+      "unlimitedWorkspaces": {
+        "title": "Unlimited workspaces",
+        "description": "Save as many workspaces as you need. Organize them with tags and colors for quick access."
+      },
+      "aiNaming": {
+        "title": "AI-powered naming",
+        "description": "Don't waste time thinking of names. AI analyzes your tabs and suggests the perfect title instantly."
+      },
+      "smartCleanup": {
+        "title": "Smart AI cleanup",
+        "description": "Automatically group similar tabs, remove duplicates, and organize your workspace for maximum clarity."
+      },
+      "geminiNano": {
+        "title": "100% private AI",
+        "description": "Use Gemini Nano for on-device AI — zero data leaves your machine. Or bring your own key (BYOK)."
+      },
+      "multiWindow": {
+        "title": "Multi-window support",
+        "description": "Save all open windows at once or just the current one. Restore them exactly as they were."
+      },
+      "exportImport": {
+        "title": "Import & Export",
+        "description": "Export and import your workspaces in advanced formats: JSON, CSV, and HTML Bookmarks. Keep your research safe and portable."
+      },
+      "semanticSearch": {
+        "title": "Semantic AI search",
+        "description": "Search your workspaces using natural language. Find that one tab you saved weeks ago instantly."
+      },
+      "privacyFirst": {
+        "title": "Privacy first",
+        "description": "All your workspace data is stored locally in your browser. No servers, no tracking, no accounts."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Simple pricing. No hidden costs.",
+      "free": {
+        "title": "Free",
+        "price": "$0",
+        "features": {
+          "f1": "Save up to 5 workspaces",
+          "f2": "AI naming suggestions",
+          "f3": "Memory Card summaries",
+          "f4": "Workspace archiving",
+          "f5": "Gemini Nano (local, private)",
+          "f6": "Basic restore modes"
+        },
+        "button": "Add to Chrome"
+      },
+      "proMonthly": {
+        "title": "Pro — Monthly",
+        "price": "$4.99/month",
+        "features": {
+          "f1": "Unlimited workspaces",
+          "f2": "Save all windows at once",
+          "f3": "Export and import: JSON, CSV, HTML",
+          "f4": "Apply AI workspace cleanup",
+          "f5": "Semantic AI search",
+          "f6": "Priority support"
+        },
+        "button": "Get Pro Monthly"
+      },
+      "proYearly": {
+        "title": "Pro — Yearly",
+        "price": "$29.99/year",
+        "subtitle": "~$2.50/month",
+        "savings": "Save 50% vs monthly",
+        "features": {
+          "f1": "All Monthly Pro features",
+          "f2": "Best value for professionals"
+        },
+        "button": "Get Pro Yearly"
+      },
+      "lifetime": {
+        "title": "Lifetime — Early Adopter",
+        "price": "$49.99 one-time",
+        "earlyAdopter": "🚀 Early Adopter (limited time)",
+        "features": {
+          "f1": "All Pro features, forever",
+          "f2": "All future updates included"
+        },
+        "button": "Get Lifetime",
+        "disclaimer": ""
+      }
+    },
+    "faq": {
+      "sectionTitle": "Frequently Asked Questions",
+      "q1": {
+        "question": "Does it work with tab groups?",
+        "answer": "Yes. WorkDesk fully supports Chrome tab groups. When you restore a workspace, your groups are recreated exactly as they were."
+      },
+      "q2": {
+        "question": "Is my data private?",
+        "answer": "Absolutely. Your workspace names, tab URLs, and window arrangements are stored locally in Chrome's storage. When using Gemini Nano, everything stays on your device."
+      },
+      "q3": {
+        "question": "What's the difference between Free and Pro?",
+        "answer": "Free includes up to 5 workspaces, AI naming, and archiving. Pro removes all limits: unlimited workspaces, AI cleanup, semantic search, and multi-window support."
+      },
+      "q4": {
+        "question": "Can I export my workspaces?",
+        "answer": "Yes. Pro users can export their entire library as JSON (for backups), CSV (for spreadsheets), or HTML Bookmarks."
+      }
+    },
+    "setupGuides": {
+      "sectionTitle": "AI Setup — Choose Your Power Source",
+      "subtitle": "Both options are free to start. Gemini Nano runs locally; BYOK gives you flexibility and higher limits.",
+      "geminiNano": {
+        "title": "Gemini Nano (Built Into Chrome)",
+        "description": "No API key needed. AI runs entirely on your device via Chrome's built-in Gemini Nano model. 100% private, zero data leaves your browser. Requires Chrome 127+ with sufficient RAM.",
+        "button": "View setup guide →"
+      },
+      "bringYourOwnKey": {
+        "title": "Bring Your Own API Key",
+        "description": "Connect your own key from OpenAI, Anthropic (Claude), Groq, or OpenRouter. Pay only for what you use. Unlimited AI generations (Pro).",
+        "button": "View setup guide →"
+      }
+    },
+    "activate": {
+      "page": {
+        "title": "Activate License — Donbrico"
+      },
+      "loading": {
+        "title": "Activating License",
+        "subtitle": "Connecting to the Donbrico extension…"
+      },
+      "success": {
+        "title": "Pro activated!",
+        "subtitle": "You can close this tab and return to Donbrico."
+      },
+      "manual": {
+        "title": "Activate Donbrico Pro",
+        "subtitle": "Copy the key below and paste it in the extension: open Donbrico → Options → Premium → paste → Activate.",
+        "copy": "Copy",
+        "copied": "✓ Copied",
+        "steps": {
+          "title": "Steps",
+          "s1": "Click the Donbrico extension icon in your toolbar",
+          "s2": "Open <strong>Options</strong> (or right-click the icon → Options)",
+          "s3": "Go to the <strong>Premium</strong> tab",
+          "s4": "Paste your license key and click <strong>Activate</strong>"
+        },
+        "noKey": "(no key in URL — check your purchase email)",
+        "notReachable": "The extension could not be reached from this page (install Donbrico, or use a supported Chromium browser). Activate manually below.",
+        "lookupFailed": "Activation lookup failed ({{error}}). You can still paste your key manually below.",
+        "genericFailed": "Activation failed. Try pasting the key in the extension Premium tab.",
+        "pending": "Payment completed, but no license key was found in this link. Use the key from your receipt email, or open the extension Premium tab."
+      }
     }
   }
 }

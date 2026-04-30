@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Activate License — Donbrico</title>
+  <title data-i18n="activate.page.title">Activate License — Donbrico</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
@@ -157,19 +157,19 @@
 <body>
   <div class="container">
     <div id="loading">
-      <h1>Activating License</h1>
+      <h1 data-i18n="activate.loading.title">Activating License</h1>
       <div class="spinner"></div>
-      <p>Connecting to the Donbrico extension…</p>
+      <p data-i18n="activate.loading.subtitle">Connecting to the Donbrico extension…</p>
     </div>
 
     <div id="success" class="hidden">
-      <h1 class="success">Pro activated!</h1>
-      <p>You can close this tab and return to Donbrico.</p>
+      <h1 class="success" data-i18n="activate.success.title">Pro activated!</h1>
+      <p data-i18n="activate.success.subtitle">You can close this tab and return to Donbrico.</p>
     </div>
 
     <div id="manual" class="hidden">
-      <h1>Activate Donbrico Pro</h1>
-      <p id="manualIntro">Copy the key below and paste it in the extension: open Donbrico → Options → Premium → paste → Activate.</p>
+      <h1 data-i18n="activate.manual.title">Activate Donbrico Pro</h1>
+      <p id="manualIntro" data-i18n="activate.manual.subtitle">Copy the key below and paste it in the extension: open Donbrico → Options → Premium → paste → Activate.</p>
 
       <div class="key-box">
         <span id="licenseKey" class="key-text"></span>
@@ -178,28 +178,38 @@
             <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
             <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
           </svg>
-          Copy
+          <span data-i18n="activate.manual.copy">Copy</span>
         </button>
       </div>
 
       <div id="extensionInstructions" class="instructions">
-        <h3>Steps</h3>
+        <h3 data-i18n="activate.manual.steps.title">Steps</h3>
         <ol>
-          <li>Click the Donbrico extension icon in your toolbar</li>
-          <li>Open <strong>Options</strong> (or right-click the icon → Options)</li>
-          <li>Go to the <strong>Premium</strong> tab</li>
-          <li>Paste your license key and click <strong>Activate</strong></li>
+          <li data-i18n="activate.manual.steps.s1">Click the Donbrico extension icon in your toolbar</li>
+          <li data-i18n="activate.manual.steps.s2">Open <strong>Options</strong> (or right-click the icon → Options)</li>
+          <li data-i18n="activate.manual.steps.s3">Go to the <strong>Premium</strong> tab</li>
+          <li data-i18n="activate.manual.steps.s4">Paste your license key and click <strong>Activate</strong></li>
         </ol>
       </div>
     </div>
   </div>
 
+  <script src="./js/i18n.js"></script>
   <script>
     (function() {
+      function getT(key, def) {
+        if (window.i18n && typeof window.i18n.t === 'function') {
+          const val = window.i18n.t(key);
+          return val.startsWith('[') && val.endsWith(']') ? def : val;
+        }
+        return def;
+      }
+
       var DEFAULT_PRODUCT_KEY = 'autofill-ai';
       var EXTENSIONS_BY_PRODUCT = {
         'autofill-ai': 'ldglmpphcjdamkmfpknojafocpihhbal',
-        'ai-reply': 'iokjfnedkqeonjpfcnptjfgacdrhcbal'
+        'ai-reply': 'iokjfnedkqeonjpfcnptjfgacdrhcbal',
+        'workdesk': 'REPLACE_WITH_WORKDESK_ID'
       };
       var params = new URLSearchParams(window.location.search);
       var key = parseLicenseKey(params);
@@ -334,9 +344,9 @@
       function showManual(message) {
         loadingEl.classList.add('hidden');
         manualEl.classList.remove('hidden');
-        licenseKeyEl.textContent = key || '(no key in URL — check your purchase email)';
+        licenseKeyEl.textContent = key || getT('activate.manual.noKey', '(no key in URL — check your purchase email)');
         if (message && manualIntro) {
-          manualIntro.textContent = message;
+          manualIntro.innerHTML = message;
         }
       }
 
@@ -351,9 +361,10 @@
       copyBtn.addEventListener('click', function() {
         var toCopy = key || licenseKeyEl.textContent || '';
         navigator.clipboard.writeText(toCopy).then(function() {
-          var original = copyBtn.innerHTML;
-          copyBtn.innerHTML = '✓ Copied';
-          setTimeout(function() { copyBtn.innerHTML = original; }, 2000);
+          var labelEl = copyBtn.querySelector('[data-i18n]');
+          var original = labelEl ? labelEl.textContent : 'Copy';
+          if (labelEl) labelEl.textContent = getT('activate.manual.copied', '✓ Copied');
+          setTimeout(function() { if (labelEl) labelEl.textContent = original; }, 2000);
         }).catch(function(err) {
           console.error('Copy failed:', err);
         });
@@ -361,7 +372,7 @@
 
       function continueActivation(missingKeyMessage) {
         if (!key) {
-          showManual(missingKeyMessage || 'Payment completed, but no license key was found in this link. Use the key from your receipt email, or open the extension Premium tab.');
+          showManual(missingKeyMessage || getT('activate.manual.pending', 'Payment completed, but no license key was found in this link. Use the key from your receipt email, or open the extension Premium tab.'));
           return;
         }
 
@@ -374,13 +385,13 @@
           chrome.runtime.sendMessage(targetExtId, { type: 'LICENSE_ACTIVATED', key: key }, function(response) {
             if (chrome.runtime.lastError) {
               console.warn('Extension not reachable:', chrome.runtime.lastError.message);
-              showManual('The extension could not be reached from this page (install Donbrico, or use a supported Chromium browser). Activate manually below.');
+              showManual(getT('activate.manual.notReachable', 'The extension could not be reached from this page (install Donbrico, or use a supported Chromium browser). Activate manually below.'));
               return;
             }
             if (response && response.success) {
               showSuccess();
             } else {
-              showManual((response && response.error) ? String(response.error) : 'Activation failed. Try pasting the key in the extension Premium tab.');
+              showManual((response && response.error) ? String(response.error) : getT('activate.manual.genericFailed', 'Activation failed. Try pasting the key in the extension Premium tab.'));
             }
           });
         } catch (e) {
@@ -390,7 +401,8 @@
       }
 
       if (key) {
-        continueActivation();
+        // Delay slightly to allow i18n to load
+        setTimeout(continueActivation, 500);
         return;
       }
 
@@ -403,7 +415,7 @@
         var errorMessage = '';
         if (result && result.error) {
           console.warn('Resolve-license failed:', result.error);
-          errorMessage = 'Activation lookup failed (' + result.error + '). You can still paste your key manually below.';
+          errorMessage = getT('activate.manual.lookupFailed', 'Activation lookup failed ({{error}}). You can still paste your key manually below.').replace('{{error}}', result.error);
         }
         continueActivation(errorMessage);
       }).catch(function() {
