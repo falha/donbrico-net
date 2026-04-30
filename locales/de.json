@@ -2,7 +2,21 @@
   "app": {
     "name": "Donbrico Studio",
     "copyright": "© 2026 Donbrico Studio. Alle Rechte vorbehalten.",
-    "builtBy": "Erstellt von einem Solo-Entwickler."
+    "builtBy": "Erstellt von einem Solo-Entwickler.",
+    "languages": {
+      "en": "Englisch",
+      "es": "Spanisch",
+      "ja": "日本語",
+      "pt_BR": "Português (Brasilien)",
+      "fr": "Französisch",
+      "de": "Deutsch",
+      "it": "Italienisch",
+      "zh_CN": "中文 (简体)",
+      "zh_TW": "中文 (繁體)",
+      "hi": "Ja",
+      "ru": "Russisch",
+      "ko": "한국어"
+    }
   },
   "nav": {
     "home": "Startseite",
@@ -10,14 +24,15 @@
     "nullCarrier": "Null Carrier",
     "privacyPolicy": "Datenschutzerklärung",
     "support": "Support",
-    "aiReplyAssistant": "AI Reply Assistant"
+    "aiReplyAssistant": "AI Reply Assistant",
+    "workDesk": "Arbeitsplatz"
   },
   "home": {
     "page": {
       "title": "Donbrico — Projekte eines Solo-Indie-Entwicklers",
-      "description": "donbrico.net – Heimat von Donbrico Autofill AI, AI Reply Assistant und Null Carrier. ",
+      "description": "donbrico.net – Heimat von Donbrico Autofill AI, AI Reply Assistant, Donbrico WorkDesk und Null Carrier. ",
       "ogTitle": "Donbrico — Projekte eines Solo-Indie-Entwicklers",
-      "ogDescription": "donbrico.net – Heimat von Donbrico Autofill AI, AI Reply Assistant und Null Carrier. "
+      "ogDescription": "donbrico.net – Heimat von Donbrico Autofill AI, AI Reply Assistant, Donbrico WorkDesk und Null Carrier. "
     },
     "hero": {
       "eyebrow": "UNABHÄNGIGER ENTWICKLER",
@@ -48,6 +63,14 @@
         "title": "Donbrico AI Reply Assistant",
         "description": "Speichern Sie Antwortvorlagen und generieren Sie überall KI-gestützte Antworten. ",
         "techStack": "[Chrome-Erweiterung] [KI] [Gespeicherte Antworten] [Kostenloses Kontingent]",
+        "button": "Erfahren Sie mehr →"
+      },
+      "workDesk": {
+        "badgeChrome": "CHROM-VERLÄNGERUNG",
+        "badgeFree": "KOSTENLOS / PRO",
+        "title": "Donbrico Schreibtisch",
+        "description": "Speichern und stellen Sie Ihre Browser-Arbeitsbereiche mit einem Klick wieder her. ",
+        "techStack": "[Chrome-Erweiterung] [KI] [Arbeitsbereiche] [Datenschutz geht vor]",
         "button": "Erfahren Sie mehr →"
       }
     },
@@ -350,7 +373,7 @@
         "answer": "Gemini Nano erfordert Chrome 127+ mit ausreichend RAM (normalerweise 8 GB+). "
       },
       "q4": {
-        "question": "KI-generierte Antworten klingen allgemein oder themenfremd",
+        "question": "KI-generierte Antworten klingen allgemein gehalten oder themenfremd",
         "answer": "Die KI verwendet den Kontext des Textfelds sowie Ihren ausgewählten Ton. "
       },
       "q5": {
@@ -360,6 +383,22 @@
       "q6": {
         "question": "Wie melde ich einen Fehler oder fordere eine Funktion an?",
         "answer": "Senden Sie eine E-Mail an support@donbrico.net mit „Bug:“ oder „Feature Request:“ am Anfang Ihrer Betreffzeile."
+      }
+    },
+    "workDesk": {
+      "sectionTitle": "Donbrico WorkDesk-Support",
+      "subtitle": "Häufige Probleme",
+      "q1": {
+        "question": "Wie speichere ich einen Arbeitsbereich?",
+        "answer": "Klicken Sie auf das Erweiterungssymbol, um das Popup zu öffnen, und klicken Sie dann auf „Aktuelles Fenster speichern“ oder „Alle Fenster speichern“. "
+      },
+      "q2": {
+        "question": "Kann ich Arbeitsbereiche auf einem anderen Computer wiederherstellen?",
+        "answer": "Ja, wenn Sie die Funktion „Als JSON exportieren“ (Pro) verwenden, um Ihre Daten zu sichern und auf Ihrem anderen Gerät zu importieren."
+      },
+      "q3": {
+        "question": "Was passiert, wenn ich einen Arbeitsbereich lösche?",
+        "answer": "Gelöschte Arbeitsbereiche sind für immer verschwunden. "
       }
     }
   },
@@ -432,7 +471,8 @@
       "aiReplyAssistant": "KI-Antwortassistent",
       "nullCarrier": "Null-Carrier-Spiel",
       "website": "Diese Website",
-      "contact": "Kontakt"
+      "contact": "Kontakt",
+      "workDesk": "Arbeitsplatz"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico AI Reply Assistant – Chrome-Erweiterung",
@@ -455,6 +495,29 @@
       "dataDeletion": {
         "sectionTitle": "Datenlöschung",
         "paragraph": "Durch die Deinstallation der Erweiterung werden alle lokal gespeicherten Antworten, Vorlagen und Einstellungen gelöscht. "
+      }
+    },
+    "workDesk": {
+      "sectionTitle": "Donbrico WorkDesk – Chrome-Erweiterung",
+      "whatWeCollect": {
+        "sectionTitle": "Welche Daten wir sammeln",
+        "paragraph": "Keiner. "
+      },
+      "howStored": {
+        "sectionTitle": "Wie Ihre Daten gespeichert werden",
+        "paragraph": "Alle Arbeitsbereichsdaten werden im lokalen Speicher von Chrome gespeichert. "
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "KI-Drittanbieter (Bring Your Own Key)",
+        "paragraph": "Bei der Verwendung von KI-Funktionen (Benennung, Bereinigung, Suche) können Tab-Titel und URLs an Ihren konfigurierten KI-Anbieter (OpenAI, Anthropic usw.) gesendet werden. "
+      },
+      "permissions": {
+        "sectionTitle": "Verwendete Berechtigungen",
+        "paragraph": "Speicher (für Arbeitsbereiche), Registerkarten (zum Speichern/Wiederherstellen von Sitzungen), Fenster (zum Verwalten mehrerer Fenster), Benachrichtigungen (für Speichererinnerungen)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Datenlöschung",
+        "paragraph": "Durch die Deinstallation der Erweiterung werden alle lokal gespeicherten Arbeitsbereiche und Einstellungen gelöscht. "
       }
     }
   },
@@ -488,9 +551,9 @@
   },
   "aiReplyAssistant": {
     "page": {
-      "title": "Donbrico AI Reply Assistant — Intelligente Antworten und KI-gestützte Antworten",
+      "title": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
       "description": "Erstellen Sie eine persönliche Antwortbibliothek und generieren Sie sofort KI-gestützte Antworten. ",
-      "ogTitle": "Donbrico AI Reply Assistant — Intelligente Antworten und KI-gestützte Antworten",
+      "ogTitle": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
       "ogDescription": "Erstellen Sie eine persönliche Antwortbibliothek und generieren Sie sofort KI-gestützte Antworten. "
     },
     "hero": {
@@ -548,7 +611,7 @@
       },
       "rewriteToolbar": {
         "title": "Symbolleiste neu schreiben",
-        "description": "Wählen Sie einen beliebigen Text auf einer Seite aus und schreiben Sie ihn mit KI in dem von Ihnen gewählten Ton um – perfekt, um E-Mails und Nachrichten aufzupolieren."
+        "description": "Wählen Sie einen beliebigen Text auf einer Seite aus und schreiben Sie ihn mit KI in dem von Ihnen gewählten Ton um – perfekt zum Aufpolieren von E-Mails und Nachrichten."
       },
       "multiProvider": {
         "title": "Mehrere KI-Anbieter (Pro)",
@@ -634,7 +697,7 @@
       },
       "q3": {
         "question": "Was ist der Unterschied zwischen Free und Pro?",
-        "answer": "Kostenlos beinhaltet 30 gespeicherte Antworten, 10 KI-Generierungen pro Tag, 3 Grundtöne und BYOK für einen einzelnen Anbieter. "
+        "answer": "Kostenlos beinhaltet 30 gespeicherte Antworten, 10 KI-Generierungen pro Tag, 3 Grundtöne und BYOK für einen einzigen Anbieter. "
       },
       "q4": {
         "question": "Kann ich später upgraden?",
@@ -651,6 +714,187 @@
     },
     "footer": {
       "links": "Datenschutzrichtlinie | "
+    }
+  },
+  "workDesk": {
+    "page": {
+      "title": "Donbrico WorkDesk – Intelligente Browser-Arbeitsbereiche und Sitzungsmanager",
+      "description": "Speichern und stellen Sie Ihre Browser-Arbeitsbereiche mit einem Klick wieder her. ",
+      "ogTitle": "Donbrico WorkDesk – Intelligente Browser-Arbeitsbereiche und Sitzungsmanager",
+      "ogDescription": "Speichern und stellen Sie Ihre Browser-Arbeitsbereiche mit einem Klick wieder her. "
+    },
+    "hero": {
+      "eyebrow": "CHROM-VERLÄNGERUNG",
+      "title": "Ihre Browser-Arbeitsbereiche,<br>organisiert durch KI.",
+      "subtitle": "Speichern Sie Ihre aktuellen Registerkarten mit einem Klick als Arbeitsbereich. ",
+      "disclaimer": "🔒 Ihre Daten verlassen nie Ihren Browser · Gemini Nano auf dem Gerät oder Ihr eigener API-Schlüssel · Kein Konto erforderlich",
+      "buttonPrimary": "Zu Chrome hinzufügen – kostenlos",
+      "buttonSecondary": "Sehen Sie, wie es funktioniert ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "Wie es funktioniert",
+      "step1": {
+        "title": "1. Mit einem Klick speichern",
+        "description": "Klicken Sie auf das WorkDesk-Symbol, um alle geöffneten Registerkarten in Ihrem aktuellen Fenster (oder allen Fenstern) als benannten Arbeitsbereich zu speichern."
+      },
+      "step2": {
+        "title": "2. KI-gestützte Organisation",
+        "description": "KI schlägt basierend auf Ihren Tabs automatisch einen Namen für Ihren Arbeitsbereich vor. "
+      },
+      "step3": {
+        "title": "3. Sofort wiederherstellen",
+        "description": "Öffnen Sie Ihr Workspace-Dashboard und stellen Sie eine beliebige Sitzung wieder her. "
+      }
+    },
+    "features": {
+      "sectionTitle": "Gebaut für Produktivität.",
+      "unlimitedWorkspaces": {
+        "title": "Unbegrenzte Arbeitsbereiche",
+        "description": "Speichern Sie so viele Arbeitsbereiche, wie Sie benötigen. "
+      },
+      "aiNaming": {
+        "title": "KI-gestützte Benennung",
+        "description": "Verschwenden Sie keine Zeit damit, über Namen nachzudenken. "
+      },
+      "smartCleanup": {
+        "title": "Intelligente KI-Bereinigung",
+        "description": "Gruppieren Sie ähnliche Registerkarten automatisch, entfernen Sie Duplikate und organisieren Sie Ihren Arbeitsbereich für maximale Übersichtlichkeit."
+      },
+      "geminiNano": {
+        "title": "100 % private KI",
+        "description": "Verwenden Sie Gemini Nano für KI auf dem Gerät – keine Daten verlassen Ihr Gerät. "
+      },
+      "multiWindow": {
+        "title": "Unterstützung für mehrere Fenster",
+        "description": "Speichern Sie alle geöffneten Fenster auf einmal oder nur das aktuelle. "
+      },
+      "exportImport": {
+        "title": "Importieren und Exportieren",
+        "description": "Exportieren und importieren Sie Ihre Arbeitsbereiche in erweiterten Formaten: JSON, CSV und HTML-Lesezeichen. "
+      },
+      "semanticSearch": {
+        "title": "Semantische KI-Suche",
+        "description": "Durchsuchen Sie Ihre Arbeitsbereiche in natürlicher Sprache. "
+      },
+      "privacyFirst": {
+        "title": "Datenschutz zuerst",
+        "description": "Alle Ihre Arbeitsbereichsdaten werden lokal in Ihrem Browser gespeichert. "
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Einfache Preisgestaltung. ",
+      "free": {
+        "title": "Frei",
+        "price": "0 $",
+        "features": {
+          "f1": "Speichern Sie bis zu 5 Arbeitsbereiche",
+          "f2": "KI-Namensvorschläge",
+          "f3": "Zusammenfassungen der Speicherkarten",
+          "f4": "Archivierung des Arbeitsbereichs",
+          "f5": "Gemini Nano (lokal, privat)",
+          "f6": "Grundlegende Wiederherstellungsmodi"
+        },
+        "button": "Zu Chrome hinzufügen"
+      },
+      "proMonthly": {
+        "title": "Pro – Monatlich",
+        "price": "4,99 $/Monat",
+        "features": {
+          "f1": "Unbegrenzte Arbeitsbereiche",
+          "f2": "Speichern Sie alle Fenster auf einmal",
+          "f3": "Export und Import: JSON, CSV, HTML",
+          "f4": "Wenden Sie die Bereinigung des KI-Arbeitsbereichs an",
+          "f5": "Semantische KI-Suche",
+          "f6": "Vorrangiger Support"
+        },
+        "button": "Holen Sie sich Pro Monthly"
+      },
+      "proYearly": {
+        "title": "Pro – Jährlich",
+        "price": "29,99 $/Jahr",
+        "subtitle": "~2,50 $/Monat",
+        "savings": "Sparen Sie 50 % im Vergleich zu monatlich",
+        "features": {
+          "f1": "Alle Monthly Pro-Funktionen",
+          "f2": "Bestes Preis-Leistungs-Verhältnis für Profis"
+        },
+        "button": "Holen Sie sich Pro Yearly"
+      },
+      "lifetime": {
+        "title": "Lebenszeit – Early Adopter",
+        "price": "49,99 $ einmalig",
+        "earlyAdopter": "🚀 Early Adopter (zeitlich begrenzt)",
+        "features": {
+          "f1": "Alle Pro-Funktionen, für immer",
+          "f2": "Alle zukünftigen Updates enthalten"
+        },
+        "button": "Holen Sie sich Lebenszeit",
+        "disclaimer": ""
+      }
+    },
+    "faq": {
+      "sectionTitle": "Häufig gestellte Fragen",
+      "q1": {
+        "question": "Funktioniert es mit Tab-Gruppen?",
+        "answer": "Ja. "
+      },
+      "q2": {
+        "question": "Sind meine Daten privat?",
+        "answer": "Absolut. "
+      },
+      "q3": {
+        "question": "Was ist der Unterschied zwischen Free und Pro?",
+        "answer": "Kostenlos beinhaltet bis zu 5 Arbeitsbereiche, KI-Benennung und Archivierung. "
+      },
+      "q4": {
+        "question": "Kann ich meine Arbeitsbereiche exportieren?",
+        "answer": "Ja. "
+      }
+    },
+    "setupGuides": {
+      "sectionTitle": "AI-Setup – Wählen Sie Ihre Stromquelle",
+      "subtitle": "Der Start beider Optionen ist kostenlos. ",
+      "geminiNano": {
+        "title": "Gemini Nano (integriert in Chrome)",
+        "description": "Kein API-Schlüssel erforderlich. ",
+        "button": "Setup-Anleitung anzeigen →"
+      },
+      "bringYourOwnKey": {
+        "title": "Bringen Sie Ihren eigenen API-Schlüssel mit",
+        "description": "Verbinden Sie Ihren eigenen Schlüssel von OpenAI, Anthropic (Claude), Groq oder OpenRouter. ",
+        "button": "Setup-Anleitung anzeigen →"
+      }
+    },
+    "activate": {
+      "page": {
+        "title": "Lizenz aktivieren – Donbrico"
+      },
+      "loading": {
+        "title": "Lizenz aktivieren",
+        "subtitle": "Verbindung zur Donbrico-Erweiterung herstellen…"
+      },
+      "success": {
+        "title": "Pro aktiviert!",
+        "subtitle": "Sie können diese Registerkarte schließen und zu Donbrico zurückkehren."
+      },
+      "manual": {
+        "title": "Aktivieren Sie Donbrico Pro",
+        "subtitle": "Kopieren Sie den Schlüssel unten und fügen Sie ihn in die Erweiterung ein: Öffnen Sie Donbrico → Optionen → Premium → Einfügen → Aktivieren.",
+        "copy": "Kopie",
+        "copied": "✓ Kopiert",
+        "steps": {
+          "title": "Schritte",
+          "s1": "Klicken Sie in Ihrer Symbolleiste auf das Donbrico-Erweiterungssymbol",
+          "s2": "Öffnen Sie <strong>Optionen</strong> (oder klicken Sie mit der rechten Maustaste auf das Symbol → Optionen).",
+          "s3": "Gehen Sie zur Registerkarte <strong>Premium</strong>",
+          "s4": "Fügen Sie Ihren Lizenzschlüssel ein und klicken Sie auf <strong>Aktivieren</strong>"
+        },
+        "noKey": "(keine Eingabe der URL – überprüfen Sie Ihre Kauf-E-Mail)",
+        "notReachable": "Die Erweiterung konnte von dieser Seite aus nicht erreicht werden (installieren Sie Donbrico oder verwenden Sie einen unterstützten Chromium-Browser). ",
+        "lookupFailed": "Aktivierungssuche fehlgeschlagen ({{error}}). ",
+        "genericFailed": "Die Aktivierung ist fehlgeschlagen. ",
+        "pending": "Die Zahlung wurde abgeschlossen, aber in diesem Link wurde kein Lizenzschlüssel gefunden. "
+      }
     }
   }
 }

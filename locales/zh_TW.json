@@ -2,7 +2,21 @@
   "app": {
     "name": "Donbrico Studio",
     "copyright": "© 2026 Donbrico Studio. 保留所有權利。",
-    "builtBy": "由獨立開發者打造。"
+    "builtBy": "由獨立開發者打造。",
+    "languages": {
+      "en": "英語",
+      "es": "西班牙語",
+      "ja": "日本語",
+      "pt_BR": "葡萄牙語（巴西）",
+      "fr": "法國人",
+      "de": "德文",
+      "it": "義大利人",
+      "zh_CN": "中文 (簡體)",
+      "zh_TW": "中文 (繁體)",
+      "hi": "हिन्दी",
+      "ru": "俄羅斯",
+      "ko": "한국어"
+    }
   },
   "nav": {
     "home": "首頁",
@@ -10,14 +24,15 @@
     "nullCarrier": "Null Carrier",
     "privacyPolicy": "隱私政策",
     "support": "支援",
-    "aiReplyAssistant": "AI Reply Assistant"
+    "aiReplyAssistant": "AI Reply Assistant",
+    "workDesk": "辦公桌"
   },
   "home": {
     "page": {
       "title": "Donbrico — 獨立開發者的專案",
-      "description": "donbrico.net — Donbrico Autofill AI、AI Reply Assistant 和 Null Carrier 的主頁。由獨立開發者建構的工具和遊戲。",
+      "description": "donbrico.net — Donbrico Autofill AI、AI Reply Assistant、Donbrico WorkDesk 和 Null Carrier 的主頁。由獨立開發者建構的工具和遊戲。",
       "ogTitle": "Donbrico — 獨立開發者的專案",
-      "ogDescription": "donbrico.net — Donbrico Autofill AI、AI Reply Assistant 和 Null Carrier 的主頁。由獨立開發者建構的工具和遊戲。"
+      "ogDescription": "donbrico.net — Donbrico Autofill AI、AI Reply Assistant、Donbrico WorkDesk 和 Null Carrier 的主頁。由獨立開發者建構的工具和遊戲。"
     },
     "hero": {
       "eyebrow": "獨立開發者",
@@ -48,6 +63,14 @@
         "title": "Donbrico AI Reply Assistant",
         "description": "儲存回覆範本並在任何地方產生人工智慧驅動的回應。 Gmail、LinkedIn、Twitter、支援工具 - 任何文字欄位。",
         "techStack": "[Chrome 擴充功能] [AI] [已儲存的回覆] [免費套餐]",
+        "button": "了解更多 →"
+      },
+      "workDesk": {
+        "badgeChrome": "鍍鉻擴展",
+        "badgeFree": "免費/專業版",
+        "title": "Donbrico 辦公桌",
+        "description": "一鍵儲存並恢復您的瀏覽器工作區。具有 AI 命名、選項卡組和快照的智慧會話管理器。",
+        "techStack": "[Chrome 擴充功能] [AI] [工作區] [隱私至上]",
         "button": "了解更多 →"
       }
     },
@@ -361,6 +384,22 @@
         "question": "如何回報錯誤或請求功能？",
         "answer": "發送電子郵件至 support@donbrico.net，並在主旨行開頭新增「錯誤：」或「功能請求：」。"
       }
+    },
+    "workDesk": {
+      "sectionTitle": "Donbrico 辦公桌支援",
+      "subtitle": "常見問題",
+      "q1": {
+        "question": "如何保存工作區？",
+        "answer": "點擊擴充圖示以開啟彈出窗口，然後點擊“儲存目前視窗”或“儲存所有視窗”。 AI 會建議一個名稱，或者您也可以輸入自己的名稱。"
+      },
+      "q2": {
+        "question": "我可以在另一台電腦上恢復工作區嗎？",
+        "answer": "是的，如果您使用「匯出為 JSON」功能（專業版）來備份資料並將其匯入到其他裝置上。"
+      },
+      "q3": {
+        "question": "如果我刪除工作區會發生什麼事？",
+        "answer": "刪除的工作區將永遠消失。但是，您可以使用「存檔」功能隱藏工作區而不刪除它們。"
+      }
     }
   },
   "privacyPolicy": {
@@ -432,7 +471,8 @@
       "aiReplyAssistant": "人工智慧回覆助手",
       "nullCarrier": "空載體遊戲",
       "website": "本網站",
-      "contact": "接觸"
+      "contact": "接觸",
+      "workDesk": "辦公桌"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico AI 回覆助理 — Chrome 擴充功能",
@@ -455,6 +495,29 @@
       "dataDeletion": {
         "sectionTitle": "資料刪除",
         "paragraph": "卸載擴充功能會刪除所有本機儲存的回應、範本和設定。 Donbrico 伺服器上不會保留任何資料。"
+      }
+    },
+    "workDesk": {
+      "sectionTitle": "Donbrico WorkDesk — Chrome 擴充功能",
+      "whatWeCollect": {
+        "sectionTitle": "我們收集哪些數據",
+        "paragraph": "沒有任何。您的工作區名稱、標籤 URL 和視窗排列都儲存在您裝置上的 Chrome 本機儲存體中。沒有資料傳輸到 Donbrico 伺服器。"
+      },
+      "howStored": {
+        "sectionTitle": "您的資料如何存儲",
+        "paragraph": "所有工作區資料都儲存在 Chrome 的本機儲存中。除非您手動匯出，否則這些數據永遠不會離開您的裝置。"
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "第三方人工智慧提供者（自備金鑰）",
+        "paragraph": "使用 AI 功能（命名、清理、搜尋）時，選項卡標題和 URL 可能會傳送到您配置的 AI 提供者（OpenAI、Anthropic 等）。如果您使用 Gemini Nano，則所有處理都在設備上進行。 Donbrico 不會儲存或記錄任何 AI 請求。"
+      },
+      "permissions": {
+        "sectionTitle": "使用的權限",
+        "paragraph": "儲存（用於工作區）、選項卡（用於保存/恢復會話）、視窗（用於管理多個視窗）、通知（用於儲存提醒）。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "資料刪除",
+        "paragraph": "卸載擴充功能會刪除所有本機儲存的工作區和設定。 Donbrico 伺服器上不會保留任何資料。"
       }
     }
   },
@@ -488,9 +551,9 @@
   },
   "aiReplyAssistant": {
     "page": {
-      "title": "Donbrico AI Reply Assistant — 智慧回復和人工智慧回應",
+      "title": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
       "description": "建立個人回應庫並立即產生人工智慧驅動的回應。適用於 Gmail、LinkedIn、Twitter 和任何網站。由 Gemini Nano 或您自己的 API 金鑰提供支援。",
-      "ogTitle": "Donbrico AI Reply Assistant — 智慧回復和人工智慧回應",
+      "ogTitle": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
       "ogDescription": "建立個人回應庫並立即產生人工智慧驅動的回應。適用於 Gmail、LinkedIn、Twitter 和任何網站。由 Gemini Nano 或您自己的 API 金鑰提供支援。"
     },
     "hero": {
@@ -544,7 +607,7 @@
       },
       "exportImport": {
         "title": "匯出與備份（專業版）",
-        "description": "將回复庫匯出為 JSON 並將其匯入到另一台裝置上。永遠不要失去來之不易的模板。"
+        "description": "將您的回覆庫匯出為 JSON 並將其匯入到另一台裝置上。永遠不要失去來之不易的模板。"
       },
       "rewriteToolbar": {
         "title": "重寫工具列",
@@ -565,7 +628,7 @@
           "f2": "10 代 AI/天",
           "f3": "3種基本音調",
           "f4": "Gemini Nano（本地、私人）",
-          "f5": "Single BYOK provider",
+          "f5": "單一 BYOK 提供者",
           "f6": "基本站點適配器"
         },
         "button": "添加到 Chrome"
@@ -630,7 +693,7 @@
       },
       "q2": {
         "question": "我的資料是私人的嗎？",
-        "answer": "絕對地。您儲存的回覆儲存在本機 Chrome 的儲存空間。使用 Gemini Nano 時，所有內容都保留在您的裝置上。如果您使用第三方 API 金鑰，資料將直接發送到該提供者 — Donbrico 永遠看不到它。"
+        "answer": "絕對地。您儲存的回覆儲存在本機 Chrome 儲存空間。使用 Gemini Nano 時，所有內容都保留在您的裝置上。如果您使用第三方 API 金鑰，資料將直接發送到該提供者 — Donbrico 永遠看不到它。"
       },
       "q3": {
         "question": "免費版和專業版有什麼差別？",
@@ -651,6 +714,187 @@
     },
     "footer": {
       "links": "隱私權政策 |支持"
+    }
+  },
+  "workDesk": {
+    "page": {
+      "title": "Donbrico WorkDesk — 智慧型瀏覽器工作區與會話管理器",
+      "description": "一鍵儲存並恢復您的瀏覽器工作區。具有 AI 命名和選項卡組的智慧會話管理器。由 Gemini Nano 或您自己的 API 金鑰提供支援。",
+      "ogTitle": "Donbrico WorkDesk — 智慧型瀏覽器工作區與會話管理器",
+      "ogDescription": "一鍵儲存並恢復您的瀏覽器工作區。具有 AI 命名和選項卡組的智慧會話管理器。由 Gemini Nano 或您自己的 API 金鑰提供支援。"
+    },
+    "hero": {
+      "eyebrow": "鍍鉻擴展",
+      "title": "您的瀏覽器工作區，<br> 由 AI 組織。",
+      "subtitle": "一鍵將目前選項卡儲存為工作區。稍後立即恢復它們。人工智慧驅動的命名和智慧清理讓您的研究井井有條。",
+      "disclaimer": "🔒 您的資料永遠不會離開您的瀏覽器 · 裝置上的 Gemini Nano 或您自己的 API 金鑰 · 無需帳戶",
+      "buttonPrimary": "添加到 Chrome — 免費",
+      "buttonSecondary": "看看效果如何↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "它是如何運作的",
+      "step1": {
+        "title": "1.一鍵保存",
+        "description": "按一下 WorkDesk 圖示可將目前視窗（或所有視窗）中所有開啟的標籤儲存為命名工作區。"
+      },
+      "step2": {
+        "title": "2.人工智慧驅動的組織",
+        "description": "AI 會根據您的標籤自動為您的工作區建議名稱。使用 AI 清理對選項卡進行分組並刪除重複項。"
+      },
+      "step3": {
+        "title": "3.立即恢復",
+        "description": "開啟您的工作區儀表板並恢復任何會話。選擇“安全性”（批次）或“快速”（即時）恢復模式。"
+      }
+    },
+    "features": {
+      "sectionTitle": "專為提高生產力而打造。",
+      "unlimitedWorkspaces": {
+        "title": "無限的工作空間",
+        "description": "根據需要保存盡可能多的工作區。使用標籤和顏色來組織它們以便快速存取。"
+      },
+      "aiNaming": {
+        "title": "AI驅動的命名",
+        "description": "不要浪費時間思考名字。人工智慧會分析您的標籤並立即建議完美的標題。"
+      },
+      "smartCleanup": {
+        "title": "智能AI清理",
+        "description": "自動對相似的選項卡進行分組、刪除重複項並組織您的工作區以實現最大程度的清晰度。"
+      },
+      "geminiNano": {
+        "title": "100% 私人人工智慧",
+        "description": "使用 Gemini Nano 實現設備上的人工智慧——零數據離開您的機器。或攜帶您自己的金鑰 (BYOK)。"
+      },
+      "multiWindow": {
+        "title": "多視窗支援",
+        "description": "一次儲存所有開啟的視窗或僅儲存目前視窗。將它們恢復原樣。"
+      },
+      "exportImport": {
+        "title": "進出口",
+        "description": "以進階格式匯出和匯入工作區：JSON、CSV 和 HTML 書籤。確保您的研究安全且便攜。"
+      },
+      "semanticSearch": {
+        "title": "語意人工智慧搜尋",
+        "description": "使用自然語言搜尋您的工作空間。立即找到您幾週前保存的一個標籤。"
+      },
+      "privacyFirst": {
+        "title": "隱私第一",
+        "description": "您的所有工作區資料都儲存在本機瀏覽器中。沒有伺服器，沒有跟踪，沒有帳戶。"
+      }
+    },
+    "pricing": {
+      "sectionTitle": "簡單的定價。無隱藏費用。",
+      "free": {
+        "title": "自由的",
+        "price": "$0",
+        "features": {
+          "f1": "最多保存 5 個工作區",
+          "f2": "AI命名建議",
+          "f3": "記憶卡摘要",
+          "f4": "工作區歸檔",
+          "f5": "Gemini Nano（本地、私人）",
+          "f6": "基本恢復模式"
+        },
+        "button": "添加到 Chrome"
+      },
+      "proMonthly": {
+        "title": "專業版 — 每月",
+        "price": "4.99 美元/月",
+        "features": {
+          "f1": "無限的工作空間",
+          "f2": "一次儲存所有視窗",
+          "f3": "匯出與匯入：JSON、CSV、HTML",
+          "f4": "應用 AI 工作區清理",
+          "f5": "語意人工智慧搜尋",
+          "f6": "優先支持"
+        },
+        "button": "每月獲得專業版"
+      },
+      "proYearly": {
+        "title": "專業版 — 每年",
+        "price": "$29.99/年",
+        "subtitle": "~$2.50/月",
+        "savings": "比每月節省 50%",
+        "features": {
+          "f1": "所有每月專業版功能",
+          "f2": "為專業人士提供最佳價值"
+        },
+        "button": "每年獲得專業版"
+      },
+      "lifetime": {
+        "title": "終生－早期採用者",
+        "price": "一次性 49.99 美元",
+        "earlyAdopter": "🚀 早期採用者（限時）",
+        "features": {
+          "f1": "永久保留所有 Pro 功能",
+          "f2": "包括所有未來的更新"
+        },
+        "button": "獲得終身",
+        "disclaimer": ""
+      }
+    },
+    "faq": {
+      "sectionTitle": "常見問題解答",
+      "q1": {
+        "question": "它可以與選項卡組一起使用嗎？",
+        "answer": "是的。 WorkDesk 完全支援 Chrome 選項卡組。當您恢復工作區時，您的群組將按原樣重新建立。"
+      },
+      "q2": {
+        "question": "我的資料是私人的嗎？",
+        "answer": "絕對地。您的工作區名稱、標籤 URL 和視窗排列都儲存在 Chrome 的本機儲存中。使用 Gemini Nano 時，所有內容都保留在您的裝置上。"
+      },
+      "q3": {
+        "question": "免費版和專業版有什麼差別？",
+        "answer": "免費包括最多 5 個工作區、AI 命名和歸檔。 Pro 消除了所有限制：無限工作空間、AI 清理、語意搜尋和多視窗支援。"
+      },
+      "q4": {
+        "question": "我可以匯出我的工作區嗎？",
+        "answer": "是的。專業使用者可以將整個庫匯出為 JSON（用於備份）、CSV（用於電子表格）或 HTML 書籤。"
+      }
+    },
+    "setupGuides": {
+      "sectionTitle": "AI 設定 — 選擇您的電源",
+      "subtitle": "這兩個選項都可以免費啟動。 Gemini Nano 在本地運行； BYOK 為您提供靈活性和更高的限制。",
+      "geminiNano": {
+        "title": "Gemini Nano（內建於 Chrome 中）",
+        "description": "無需 API 金鑰。 AI 透過 Chrome 內建的 Gemini Nano 模型完全在您的裝置上運作。 100% 私密，零數據離開您的瀏覽器。需要 Chrome 127+ 和足夠的 RAM。",
+        "button": "查看設定指南 →"
+      },
+      "bringYourOwnKey": {
+        "title": "自帶 API 金鑰",
+        "description": "從 OpenAI、Anthropic (Claude)、Groq 或 OpenRouter 連接您自己的金鑰。只需為您使用的內容付費。無限 AI 生成（專業版）。",
+        "button": "查看設定指南 →"
+      }
+    },
+    "activate": {
+      "page": {
+        "title": "啟動許可證 — Donbrico"
+      },
+      "loading": {
+        "title": "啟動許可證",
+        "subtitle": "正在連接到 Donbrico 擴充功能..."
+      },
+      "success": {
+        "title": "親激活了！",
+        "subtitle": "您可以關閉此選項卡並返回 Donbrico。"
+      },
+      "manual": {
+        "title": "激活 Donbrico Pro",
+        "subtitle": "複製下面的金鑰並將其貼上到擴充功能中：開啟 Donbrico → 選項 → Premium → 貼上 → 啟動。",
+        "copy": "複製",
+        "copied": "✓ 已複製",
+        "steps": {
+          "title": "步驟",
+          "s1": "點擊工具列中的 Donbrico 擴充圖標",
+          "s2": "開啟<strong>選項</strong>（或右鍵點選圖示→選項）",
+          "s3": "前往<strong>高級</strong>標籤",
+          "s4": "貼上您的許可證金鑰並點擊<strong>啟動</strong>"
+        },
+        "noKey": "（無需輸入 URL — 請檢查您的購買電子郵件）",
+        "notReachable": "無法從此頁面存取該擴充功能（安裝 Donbrico，或使用受支援的 Chromium 瀏覽器）。下面手動啟動。",
+        "lookupFailed": "啟動查找失敗 ({{error}})。您仍然可以在下面手動貼上您的金鑰。",
+        "genericFailed": "激活失敗。嘗試將密鑰貼上到擴展高級選項卡中。",
+        "pending": "付款已完成，但在此連結中找不到許可證密鑰。使用收據電子郵件中的金鑰，或開啟擴充進階標籤。"
+      }
     }
   }
 }

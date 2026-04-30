@@ -1,0 +1,855 @@
+{
+  "app": {
+    "name": "Donbrico Studio",
+    "copyright": "© 2026 Donbrico Studio. Todos os direitos reservados.",
+    "builtBy": "Construído por um desenvolvedor solo.",
+    "languages": {
+      "en": "Inglês",
+      "es": "Espanhol",
+      "ja": "日本語",
+      "pt_BR": "Português (Brasil)",
+      "fr": "Francês",
+      "de": "Alemão",
+      "it": "Italiano",
+      "zh_CN": "中文 (简体)",
+      "zh_TW": "中文 (繁體)",
+      "hi": "Adeus",
+      "ru": "Russo",
+      "ko": "한국어"
+    }
+  },
+  "nav": {
+    "home": "Início",
+    "autofillAi": "Autofill AI",
+    "nullCarrier": "Null Carrier",
+    "privacyPolicy": "Política de Privacidade",
+    "support": "Suporte",
+    "aiReplyAssistant": "AI Reply Assistant",
+    "workDesk": "Mesa de trabalho"
+  },
+  "home": {
+    "page": {
+      "title": "Donbrico — Projetos de um indie solo",
+      "description": "donbrico.net – casa do Donbrico Autofill AI, AI Reply Assistant, Donbrico WorkDesk e Null Carrier. ",
+      "ogTitle": "Donbrico — Projetos de um indie solo",
+      "ogDescription": "donbrico.net – casa do Donbrico Autofill AI, AI Reply Assistant, Donbrico WorkDesk e Null Carrier. "
+    },
+    "hero": {
+      "eyebrow": "DESENVOLVEDOR INDEPENDENTE",
+      "title": "Ferramentas que funcionam.<br>Jogos que pensam.",
+      "subtitle": "Eu construo extensões de navegador e jogos de puzzle. Sem VC. Sem equipe. Apenas código."
+    },
+    "projects": {
+      "sectionTitle": "PROJETOS",
+      "autofillAi": {
+        "badgeChrome": "EXTENSÃO CHROME",
+        "badgeFree": "GRATIS",
+        "title": "Donbrico Autofill AI",
+        "description": "Preenchedor de formulários com IA para qualquer site. Preenche do seu perfil instantaneamente. Usa Gemini Nano — seus dados nunca saem do seu navegador.",
+        "techStack": "[Extensão Chrome] [IA] [Privacidade primeiro] [Grátis]",
+        "button": "Saiba mais →"
+      },
+      "nullCarrier": {
+        "badgeGame": "JOGO STEAM",
+        "badgeComingSoon": "EM BREVE",
+        "title": "Null Carrier",
+        "description": "Um jogo de puzzle de reconstrução de sinais. Você opera uma array de escuta de espaço profundo. Ajuste frequências, decodifique transmissões, questione o que o Comando lhe diz.",
+        "techStack": "[Puzzle] [Atmosférico] [Steam] [Indie]",
+        "button": "Saiba mais →"
+      },
+      "aiReplyAssistant": {
+        "badgeChrome": "EXTENSÃO CROMADA",
+        "badgeFree": "GRATUITO / PRO",
+        "title": "Donbrico AI Reply Assistant",
+        "description": "Salve modelos de resposta e gere respostas baseadas em IA em qualquer lugar. ",
+        "techStack": "[Extensão do Chrome] [AI] [Respostas salvas] [Nível gratuito]",
+        "button": "Saiba mais →"
+      },
+      "workDesk": {
+        "badgeChrome": "EXTENSÃO CROMADA",
+        "badgeFree": "GRATUITO / PRO",
+        "title": "Donbrico WorkDesk",
+        "description": "Salve e restaure os espaços de trabalho do seu navegador com um clique. ",
+        "techStack": "[Extensão do Chrome] [AI] [Espaços de trabalho] [Privacidade em primeiro lugar]",
+        "button": "Saiba mais →"
+      }
+    },
+    "buttons": {
+      "seeAutofillAi": "Ver Autofill AI →",
+      "seeNullCarrier": "Ver Null Carrier →"
+    },
+    "footer": {
+      "links": "Política de Privacidade | Suporte"
+    }
+  },
+  "autofillAi": {
+    "page": {
+      "title": "Donbrico Autofill AI — Preenchedor de Formulários com IA para Chrome",
+      "description": "Preencha qualquer formulário web instantaneamente com IA. Funciona em solicitações de emprego, formulários de contato e mais. Usa Gemini Nano — seus dados nunca saem do seu navegador. Extensão gratuita para Chrome.",
+      "ogTitle": "Donbrico Autofill AI — Preenchedor de Formulários com IA para Chrome",
+      "ogDescription": "Preencha qualquer formulário web instantaneamente com IA. Funciona em solicitações de emprego, formulários de contato e mais. Usa Gemini Nano — seus dados nunca saem do seu navegador. Extensão gratuita para Chrome."
+    },
+    "hero": {
+      "eyebrow": "EXTENSÃO CHROME",
+      "title": "Preencha qualquer formulário.<br>Em um clique.",
+      "subtitle": "Donbrico Autofill AI detecta formulários em qualquer site, preenche suas informações instantaneamente e gera respostas geradas por IA para campos de texto abertos — completamente dentro do seu navegador.",
+      "disclaimer": "🔒 Seus dados nunca saem do seu navegador · Powered by Gemini Nano · Não é necessária conta",
+      "buttonPrimary": "Adicionar ao Chrome — Grátis",
+      "buttonSecondary": "Ver como funciona ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "Como Funciona",
+      "step1": {
+        "title": "1. Salve seu perfil",
+        "description": "Digite seu nome, email, LinkedIn, bio, habilidades. Armazenado localmente. Sincronizado pelo seu Chrome."
+      },
+      "step2": {
+        "title": "2. Visite qualquer formulário",
+        "description": "A extensão detecta formulários automaticamente em qualquer página. Um botão ⚡ aparece no topo do formulário."
+      },
+      "step3": {
+        "title": "3. Um clique, pronto",
+        "description": "Clique no botão. Campos padrão são preenchidos instantaneamente. A IA gera respostas para perguntas abertas."
+      }
+    },
+    "features": {
+      "sectionTitle": "Construído diferente.",
+      "worksEverywhere": {
+        "title": "Funciona em todo lugar",
+        "description": "Qualquer site com formulário. Solicitações de emprego, formulários de contato, cadastros."
+      },
+      "private": {
+        "title": "100% privado",
+        "description": "Gemini Nano roda dentro do Chrome. Seu perfil nunca chega a nenhum servidor."
+      },
+      "aiHardParts": {
+        "title": "IA para as partes difíceis",
+        "description": "Campos de texto abertos como cartas de apresentação? A IA as escreve a partir do seu perfil."
+      },
+      "bringYourOwnKey": {
+        "title": "Traga sua própria chave",
+        "description": "Use OpenAI, Anthropic, Groq ou OpenRouter se preferir."
+      },
+      "noAccount": {
+        "title": "Não precisa de conta",
+        "description": "Sem inscrição. Sem email. Apenas instale e use."
+      },
+      "editable": {
+        "title": "Editável antes de enviar",
+        "description": "Revise e ajuste cada resposta gerada por IA antes de enviar o formulário."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Preços simples.",
+      "autofillAi": {
+        "free": {
+          "title": "Grátis (para sempre)",
+          "price": "$0",
+          "features": {
+            "f1": "1 perfil",
+            "f2": "Preenchimento de formulários ilimitado",
+            "f3": "IA local via Gemini Nano",
+            "f4": "Traga sua própria chave de IA na nuvem",
+            "f5": "Aprendizado adaptativo (até 20 correções)"
+          },
+          "button": "Adicionar ao Chrome"
+        },
+        "monthly": {
+          "title": "Pro — Mensal",
+          "price": "$5.99/mês",
+          "features": {
+            "f1": "✅ Até 10 perfis",
+            "f2": "✅ Aprendizado adaptativo completo (até 2.000 correções)",
+            "f3": "✅ Gerador de carta de apresentação",
+            "f4": "✅ Barra de ferramentas Smart Rewrite",
+            "f5": "✅ Histórico de respostas e busca",
+            "f6": "✅ Exportar e importar backups",
+            "f7": "✅ Suporte prioritário"
+          },
+          "button": "Obter Mensal"
+        },
+        "yearly": {
+          "title": "Pro — Anual",
+          "price": "$47.99/ano",
+          "subtitle": "~$4.00/mês",
+          "savings": "Economize 33% em relação ao mensal",
+          "features": {
+            "f1": "Todos os recursos Pro mensais",
+            "f2": "Melhor valor"
+          },
+          "button": "Obter Anual"
+        },
+        "lifetime": {
+          "title": "Lifetime",
+          "price": "$59.99 pagamento único",
+          "earlyAdopter": "(oferta para adotantes iniciais, limitada aos primeiros 100 usuários)",
+          "features": {
+            "f1": "✅ Todos os recursos Pro, para sempre",
+            "f2": "✅ Todas as atualizações futuras incluídas"
+          },
+          "disclaimer": "",
+          "button": "Obter Lifetime"
+        }
+      }
+    },
+    "setupGuides": {
+      "sectionTitle": "Guias de Configuração",
+      "subtitle": "Escolha como quer alimentar a IA. Ambas as opções são gratuitas para começar.",
+      "geminiNano": {
+        "title": "Gemini Nano",
+        "description": "Rode inteiramente no seu navegador. Não é necessária chave API. 100% privado. Requer Chrome 127+ com 22GB de armazenamento livre.",
+        "button": "Ver guia de configuração →"
+      },
+      "bringYourOwnKey": {
+        "title": "Traga sua Própria Chave API",
+        "description": "Use sua própria chave de OpenAI, Anthropic, Groq ou OpenRouter. Funciona em qualquer dispositivo. Pague apenas pelo que usar.",
+        "button": "Ver guia de configuração →"
+      }
+    },
+    "faq": {
+      "sectionTitle": "Perguntas Frequentes",
+      "q1": {
+        "question": "Funciona em sites de trabalho como LinkedIn, Indeed, Greenhouse?",
+        "answer": "Sim. Detecta formulários em qualquer site, incluindo grandes portais de emprego e sistemas ATS."
+      },
+      "q2": {
+        "question": "Meus dados de perfil são privados?",
+        "answer": "Completamente. Seu perfil é armazenado no armazenamento local do Chrome no seu dispositivo. No entanto, ao usar IA para gerar respostas, o contexto do formulário e os dados relevantes do perfil são enviados ao modelo de IA. Se você usar sua própria chave API (OpenAI, Anthropic, Groq, etc.), esses dados são enviados a eles. Se você usar Gemini Nano, tudo fica local no seu navegador."
+      },
+      "q3": {
+        "question": "O que é Gemini Nano?",
+        "answer": "Gemini Nano é o modelo de IA da Google integrado diretamente no Chrome (versão 127+). Roda no seu dispositivo, o que significa respostas de IA sem que nenhum dado saia do seu navegador."
+      },
+      "q4": {
+        "question": "Preciso de uma chave API?",
+        "answer": "Não. A versão gratuita usa Gemini Nano que não requer chave. Se seu dispositivo não suportar, você pode opcionalmente adicionar sua própria chave de OpenAI, Anthropic, Groq ou OpenRouter."
+      },
+      "q5": {
+        "question": "Quando estará disponível?",
+        "answer": "Atualmente em desenvolvimento final. Adicione-o gratuitamente quando for lançado na Chrome Web Store."
+      },
+      "q6": {
+        "question": "O que é a Licença Vitalícia?",
+        "answer": "Uma \"Licença Vitalícia\" concede acesso ao Donbrico Autofill AI e a todas as futuras atualizações de nível Pro durante o período de manutenção ativa do produto.<br><br>Esta licença está vinculada à vida útil do próprio produto — não à vida do comprador ou a qualquer prazo fixo. O Donbrico reserva-se o direito de modificar, limitar ou descontinuar o produto a qualquer momento, incluindo em resposta a mudanças nas políticas da Chrome Web Store, APIs de extensões do Chrome ou disponibilidade de tecnologias de IA subjacentes (incluindo, mas não se limitando ao Google Gemini Nano ou provedores de IA configurados externamente).<br><br>Nesses eventos, nenhum reembolso ou compensação será devido. O preço para adotantes iniciais reflete o estágio atual de desenvolvimento do produto, e os compradores reconhecem os riscos inerentes de produtos de software dependentes de plataformas de terceiros em evolução."
+      }
+    },
+    "footer": {
+      "links": "Política de Privacidade | Suporte"
+    },
+    "licensing": {
+      "sectionTitle": "Licenciamento e Acesso Vitalício",
+      "paragraph": "O plano 'Vitalício' refere-se à vida útil do produto Donbrico Autofill AI. O acesso está sujeito à compatibilidade contínua com o Chrome e à disponibilidade das tecnologias de IA subjacentes."
+    }
+  },
+  "nullCarrier": {
+    "page": {
+      "title": "Null Carrier — Jogo de Puzzle de Sinais de Espaço Profundo | Steam",
+      "description": "Opere uma array de escuta de espaço profundo. Ajuste frequências, reconstrua sinais, questione suas ordens. Um jogo de puzzle minimalista atmosférico chegando ao Steam.",
+      "ogTitle": "Null Carrier — Jogo de Puzzle de Sinais de Espaço Profundo | Steam",
+      "ogDescription": "Opere uma array de escuta de espaço profundo. Ajuste frequências, reconstrua sinais, questione suas ordens. Um jogo de puzzle minimalista atmosférico chegando ao Steam."
+    },
+    "hero": {
+      "title": "Sinal recebido.<br>Fonte desconhecida.",
+      "subtitle": "Você opera a array de escuta de espaço profundo. Ajuste as frequências. Reconstrua as transmissões. Classifique para o Comando. Não faça perguntas.",
+      "terminal": {
+        "channel": "CANAL: 7734-ALPHA",
+        "timestamp": "TIMESTAMP: 0312.88.44",
+        "bandFreq": "FREQ BANDA: 847.3 MHz",
+        "status": "STATUS: ████ RECONSTRUINDO..."
+      },
+      "disclaimer": "PC · Em Breve · Desenvolvido solo",
+      "button": "Adicionar à lista de desejos da Steam →"
+    },
+    "section1": {
+      "title": "Uma tela. Dúvida infinita.",
+      "paragraph1": "Cada turno começa da mesma maneira. Um sinal chega. Você ajusta sua frequência portadora e porta de ruído até que a forma de onda limpe. Você reconstrói a transmissão — um padrão de pixels que pode significar algo. Você classifica e envia para o Comando.",
+      "paragraph2": "O Comando reconhece. Outro sinal chega.",
+      "paragraph3": "No turno 12, algo está ligeiramente errado. No turno 23, você nota que as coordenadas não somam. Até o turno 40, você parou de confiar nas leituras por completo."
+    },
+    "mechanics": {
+      "sectionTitle": "Mecânicas",
+      "card1": {
+        "title": "Ajustar para Receber",
+        "description": "Ajuste os sliders de frequência portadora e porta de ruído. Encontre a zona de bloqueio onde o pico de clareza ocorre. O sinal está lá — você só precisa encontrá-lo."
+      },
+      "card2": {
+        "title": "Reconstruir o Padrão",
+        "description": "Uma matriz de pixels emerge do ruído à medida que sua sintonia melhora. Cada célula trava quando a clareza é alta o suficiente."
+      },
+      "card3": {
+        "title": "Classificar para o Comando",
+        "description": "Envie sua reconstrução. O Comando responde. Crypticamente. Você não saberá se estava certo. Esse é o ponto."
+      },
+      "card4": {
+        "title": "Ler Entre os Turnos",
+        "description": "Sem tutorial. Sem objetivos. Apenas metadados, coordenadas, timestamps e padrões. A história só está lá se você procurar."
+      }
+    },
+    "philosophy": {
+      "sectionTitle": "Construído para parecer um instrumento real.",
+      "subtitle": "Sem 3D. Sem cutscenes. Sem diálogo. O jogo inteiro é jogado em uma tela que parece e se sente como hardware real de análise de sinal. Cada elemento visual merece seu lugar.",
+      "tagline": "Minimalismo radical · UI industrial · Narrativa orientada por sistemas"
+    },
+    "steam": {
+      "sectionTitle": "Chegando ao Steam",
+      "description": "Adicione Null Carrier à sua lista de desejos na Steam para ser notificado no lançamento.",
+      "button": "Adicionar à lista de desejos da Steam →"
+    },
+    "footer": {
+      "links": "Política de Privacidade | Suporte"
+    }
+  },
+  "support": {
+    "page": {
+      "title": "Suporte — Donbrico",
+      "description": "Obtenha suporte para Donbrico Autofill AI, AI Reply Assistant e Null Carrier. ",
+      "ogTitle": "Suporte — Donbrico",
+      "ogDescription": "Obtenha suporte para Donbrico Autofill AI, AI Reply Assistant e Null Carrier. "
+    },
+    "sectionTitle": "Suporte",
+    "subtitle": "Somos uma operação solo. Lemos todas as mensagens.",
+    "contact": {
+      "sectionTitle": "Contato",
+      "fastestWay": "Forma mais rápida de nos contatar:",
+      "email": "support@donbrico.net",
+      "responseTime": "Normalmente respondemos em 1–2 dias úteis."
+    },
+    "autofill": {
+      "sectionTitle": "Suporte ao Donbrico Autofill AI",
+      "subtitle": "Problemas Comuns",
+      "q1": {
+        "question": "O botão da extensão não aparece em um formulário",
+        "answer": "Alguns sites usam JavaScript para renderizar formulários dinamicamente. Tente rolar a página para baixo para disparar o carregamento completo, então procure o botão ⚡. Se ainda não aparecer, envie-nos um email com a URL do site."
+      },
+      "q2": {
+        "question": "Gemini Nano diz \"Não suportado neste dispositivo\"",
+        "answer": "Gemini Nano requer Chrome 127+ e RAM suficiente no dispositivo (normalmente 8GB+). Você ainda pode usar a extensão adicionando sua própria chave API em Configurações (Traga sua própria chave). OpenAI, Anthropic, Groq e OpenRouter são todos suportados."
+      },
+      "q3": {
+        "question": "Meu perfil não está salvando",
+        "answer": "Vá para a página de Opções da extensão (clique com botão direito no ícone da extensão → Opções). Certifique-se de clicar em Salvar após entrar com seu perfil. Se ainda não salvar, tente o botão Solucionar Problemas na página de Opções."
+      },
+      "q4": {
+        "question": "A resposta gerada por IA não parece comigo",
+        "answer": "A IA usa seu perfil para gerar respostas. Preencha os campos Bio e Experiência com detalhes — quanto mais contexto você der, melhor a saída. Você sempre pode editar qualquer resposta antes de enviar."
+      },
+      "q5": {
+        "question": "Como desinstalo e removo meus dados?",
+        "answer": "No Chrome, vá para chrome://extensions, encontre Donbrico Autofill AI, clique em Remover. Todos os dados do seu perfil serão excluídos automaticamente."
+      },
+      "q6": {
+        "question": "Como reportar um bug ou solicitar um recurso?",
+        "answer": "Envie email para support@donbrico.net com \"Bug:\" ou \"Feature Request:\" no início do assunto."
+      }
+    },
+    "nullCarrier": {
+      "sectionTitle": "Suporte ao Null Carrier",
+      "paragraph": "Para problemas com Null Carrier na Steam, você pode nos contatar através do sistema de suporte da Steam ou diretamente em support@donbrico.net.",
+      "steamNote": "Por favor inclua seu nome de usuário Steam e uma descrição do problema."
+    },
+    "responseTime": {
+      "sectionTitle": "Política de tempo de resposta",
+      "paragraph": "Donbrico é uma operação de desenvolvimento solo. O suporte é fornecido com base no melhor esforço. Pretendemos responder em 1–2 dias úteis. Bugs críticos da extensão são priorizados."
+    },
+    "footer": {
+      "links": "Política de Privacidade | Suporte"
+    },
+    "hero": {
+      "eyebrow": "SUPORTE"
+    },
+    "aiReplyAssistant": {
+      "sectionTitle": "Suporte do assistente de resposta Donbrico AI",
+      "subtitle": "Problemas comuns",
+      "q1": {
+        "question": "A barra de ferramentas de extensão não aparece em uma página",
+        "answer": "Certifique-se de estar em uma página com um campo de texto (entrada ou área de texto). "
+      },
+      "q2": {
+        "question": "Minhas respostas salvas não estão aparecendo",
+        "answer": "Verifique se você salvou as respostas na guia Biblioteca do pop-up da extensão. "
+      },
+      "q3": {
+        "question": "Gemini Nano diz 'Não é compatível com este dispositivo'",
+        "answer": "Gemini Nano requer Chrome 127+ com RAM suficiente (normalmente 8 GB+). "
+      },
+      "q4": {
+        "question": "As respostas geradas por IA parecem genéricas ou fora do assunto",
+        "answer": "A IA usa o contexto do campo de texto mais o tom selecionado. "
+      },
+      "q5": {
+        "question": "Como faço para desinstalar e remover meus dados?",
+        "answer": "No Chrome, vá para chrome://extensions, encontre Donbrico AI Reply Assistant e clique em Remover. "
+      },
+      "q6": {
+        "question": "Como faço para relatar um bug ou solicitar um recurso?",
+        "answer": "Envie um e-mail para support@donbrico.net com 'Bug:' ou 'Solicitação de recurso:' no início da linha de assunto."
+      }
+    }
+  },
+  "privacyPolicy": {
+    "page": {
+      "title": "Política de Privacidade — Donbrico",
+      "description": "Política de privacidade para donbrico.net, Donbrico Autofill AI, extensões AI Reply Assistant do Chrome e Null Carrier.",
+      "ogTitle": "Política de Privacidade — Donbrico",
+      "ogDescription": "Política de privacidade para donbrico.net, Donbrico Autofill AI, extensões AI Reply Assistant do Chrome e Null Carrier."
+    },
+    "sectionTitle": "Política de Privacidade",
+    "lastUpdated": "Last updated: February 2026",
+    "overview": {
+      "sectionTitle": "Visão geral",
+      "paragraph": "Donbrico is committed to protecting your privacy. All Donbrico Chrome extensions store data locally on your device. This website does not use analytics, cookies, or any tracking scripts."
+    },
+    "extension": {
+      "sectionTitle": "Donbrico Autofill AI — Extensão Chrome",
+      "whatWeCollect": {
+        "sectionTitle": "Quais dados coletamos",
+        "paragraph": "Nenhum. Todos os dados do perfil são armazenados localmente no armazenamento do Chrome no dispositivo do usuário. Nenhum dado é transmitido para qualquer servidor de propriedade ou operado pela Donbrico."
+      },
+      "howStored": {
+        "sectionTitle": "Como os dados do perfil são armazenados",
+        "paragraph": "Chrome's storage.local API, nunca chrome.storage.sync para dados sensíveis. Os dados permanecem no dispositivo e nunca são enviados."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Provedores de IA de terceiros (Traga sua própria chave)",
+        "paragraph": "Se o usuário configurar um provedor Traga sua própria chave como OpenAI, Anthropic, Groq ou OpenRouter, o contexto do formulário e os dados relevantes do perfil são enviados para esse provedor de terceiros. Donbrico não é responsável pelas práticas de privacidade desses provedores. Gemini Nano (a IA padrão) roda inteiramente no dispositivo."
+      },
+      "permissions": {
+        "sectionTitle": "Permissões usadas",
+        "paragraph": "storage (perfil local), activeTab (detectar formulários na aba atual), scripting (injetar botão de autopreenchimento), host_permissions (funcionar em qualquer site que o usuário visite)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Exclusão de dados",
+        "paragraph": "Desinstalar a extensão remove todos os dados armazenados."
+      }
+    },
+    "game": {
+      "sectionTitle": "Null Carrier — Jogo Steam",
+      "paragraph": "O jogo em si não coleta dados pessoais. A própria política de privacidade da Steam rege quaisquer dados coletados através da plataforma Steam."
+    },
+    "website": {
+      "sectionTitle": "Este Site (donbrico.net)",
+      "paragraph": "Sem análises, sem cookies, sem scripts de rastreamento. O site é um site HTML estático hospedado na Cloudflare Pages. Sem formulários, sem contas de usuário, sem coleta de dados de qualquer tipo."
+    },
+    "licensing": {
+      "sectionTitle": "Licenciamento e Acesso Vitalício",
+      "paragraph": "O plano 'Vitalício' refere-se à vida útil do produto Donbrico Autofill AI. O acesso está sujeito à compatibilidade contínua com o Chrome e à disponibilidade das tecnologias de IA subjacentes."
+    },
+    "contact": {
+      "sectionTitle": "Contato",
+      "paragraph": "Para questões de privacidade, contate: support@donbrico.net"
+    },
+    "changes": {
+      "sectionTitle": "Alterações a Esta Política",
+      "paragraph": "Esta política pode ser atualizada. Verifique esta página para a versão mais recente."
+    },
+    "footer": {
+      "links": "Política de Privacidade | Suporte"
+    },
+    "hero": {
+      "eyebrow": "POLÍTICA DE PRIVACIDADE",
+      "subtitle": "Como lidamos com seus dados em todos os produtos Donbrico."
+    },
+    "nav": {
+      "overview": "Visão geral",
+      "autofillAi": "Extensão AI de preenchimento automático",
+      "aiReplyAssistant": "Assistente de resposta de IA",
+      "workDesk": "Mesa de trabalho",
+      "nullCarrier": "Jogo de operadora nula",
+      "website": "Este site",
+      "contact": "Contato"
+    },
+    "aiReplyAssistant": {
+      "sectionTitle": "Donbrico AI Reply Assistant — Chrome Extension",
+      "whatWeCollect": {
+        "sectionTitle": "Quais dados coletamos",
+        "paragraph": "Nenhum. "
+      },
+      "howStored": {
+        "sectionTitle": "Como seus dados são armazenados",
+        "paragraph": "As respostas e os modelos salvos são armazenados no armazenamento local do Chrome. "
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Provedores terceirizados de IA (traga sua própria chave)",
+        "paragraph": "Quando você usa o recurso de geração de resposta de IA, o contexto de texto (o campo ao qual você está respondendo), o tom selecionado e quaisquer variáveis ​​de prompt ou modelo são enviados para seu provedor de IA configurado (OpenAI, Anthropic, Groq ou OpenRouter). "
+      },
+      "permissions": {
+        "sectionTitle": "Permissões usadas",
+        "paragraph": "storage (para respostas e configurações salvas), activeTab (para detectar campos de texto), scripting (para injetar a barra de ferramentas de resposta), host_permissions (para trabalhar em qualquer site que você visitar)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Exclusão de dados",
+        "paragraph": "A desinstalação da extensão exclui todas as respostas, modelos e configurações armazenados localmente. "
+      }
+    },
+    "workDesk": {
+      "sectionTitle": "Donbrico WorkDesk — Extensão do Chrome",
+      "whatWeCollect": {
+        "sectionTitle": "Quais dados coletamos",
+        "paragraph": "Nenhum. "
+      },
+      "howStored": {
+        "sectionTitle": "Como seus dados são armazenados",
+        "paragraph": "Todos os dados do espaço de trabalho são armazenados no armazenamento local do Chrome. "
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Provedores terceirizados de IA (traga sua própria chave)",
+        "paragraph": "Ao usar recursos de IA (nomeação, limpeza, pesquisa), títulos de guias e URLs podem ser enviados ao seu provedor de IA configurado (OpenAI, Anthropic, etc.). "
+      },
+      "permissions": {
+        "sectionTitle": "Permissões usadas",
+        "paragraph": "armazenamento (para espaços de trabalho), guias (para salvar/restaurar sessões), janelas (para gerenciar várias janelas), notificações (para salvar lembretes)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Exclusão de dados",
+        "paragraph": "A desinstalação da extensão exclui todos os espaços de trabalho e configurações armazenados localmente. "
+      }
+    }
+  },
+  "emails": {
+    "support": "support@donbrico.net"
+  },
+  "badges": {
+    "chromeExtension": "EXTENSÃO DO CHROME",
+    "free": "GRÁTIS",
+    "steamGame": "JOGO NA STEAM",
+    "comingSoon": "EM BREVE"
+  },
+  "cta": {
+    "addToChrome": "Adicionar ao Chrome",
+    "addToChromeFree": "Adicionar ao Chrome — Grátis",
+    "wishlistOnSteam": "Lista de desejos na Steam →",
+    "learnMore": "Saiba mais →",
+    "seeHowItWorks": "Veja como funciona ↓",
+    "getMonthly": "Obter Mensal",
+    "getYearly": "Obter Anual",
+    "getLifetime": "Obter Lifetime",
+    "viewSetupGuide": "Ver guia de configuração →"
+  },
+  "time": {
+    "responseTime": "1–2 dias úteis",
+    "lastUpdated": "Janeiro de 2026"
+  },
+  "tech": {
+    "chromeVersion": "Chrome 127+",
+    "ramRequirement": "22 GB de espaço livre"
+  },
+  "aiReplyAssistant": {
+    "page": {
+      "title": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
+      "description": "Crie uma biblioteca de respostas pessoal e gere respostas baseadas em IA instantaneamente. ",
+      "ogTitle": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
+      "ogDescription": "Crie uma biblioteca de respostas pessoal e gere respostas baseadas em IA instantaneamente. "
+    },
+    "hero": {
+      "eyebrow": "EXTENSÃO CROMADA",
+      "title": "Sua biblioteca de respostas pessoal,<br>supercarregada com IA.",
+      "subtitle": "Salve modelos de resposta ilimitados, gere respostas inteligentes com IA e insira-as em qualquer lugar: Gmail, LinkedIn, Twitter, ferramentas de suporte ou qualquer site com campo de texto.",
+      "disclaimer": "🔒 Seus dados nunca saem do seu navegador · Gemini Nano no dispositivo ou sua própria chave de API · Não é necessária uma conta",
+      "buttonPrimary": "Adicionar ao Chrome – grátis",
+      "buttonSecondary": "Veja como funciona ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "Como funciona",
+      "step1": {
+        "title": "1. Salve suas respostas",
+        "description": "Crie uma biblioteca pessoal de modelos de resposta. "
+      },
+      "step2": {
+        "title": "2. Gere com IA",
+        "description": "Abra a barra de ferramentas AI Reply ao lado de qualquer campo de texto. "
+      },
+      "step3": {
+        "title": "3. Insira e envie",
+        "description": "Revise, ajuste se necessário e insira a resposta diretamente na página. "
+      }
+    },
+    "features": {
+      "sectionTitle": "Recursos que se pagam.",
+      "savedReplies": {
+        "title": "Biblioteca de respostas salva",
+        "description": "Economize até 30 respostas gratuitamente ou ilimitadas com o Pro. "
+      },
+      "aiGeneration": {
+        "title": "Geração alimentada por IA",
+        "description": "Gere respostas sensíveis ao contexto a partir de um prompt curto. "
+      },
+      "toneSelection": {
+        "title": "Seleção de tom",
+        "description": "Escolha o tom certo: Amigável, Profissional, Conciso (gratuito) mais Persuasivo, Empático, Assertivo, Acompanhamento e muito mais (Pro)."
+      },
+      "geminiNano": {
+        "title": "IA 100% privada",
+        "description": "Use o Gemini Nano para IA no dispositivo: nenhum dado sai da sua máquina. "
+      },
+      "variables": {
+        "title": "Variáveis ​​inteligentes (Pro)",
+        "description": "Use {{placeholders}} como {{name}}, {{company}}, {{date}} para tornar os modelos dinâmicos e personalizados."
+      },
+      "siteAdaptive": {
+        "title": "Funciona em qualquer lugar",
+        "description": "Adaptadores integrados para Gmail, LinkedIn, Outlook, Yahoo Mail e detecção genérica de formulários. "
+      },
+      "exportImport": {
+        "title": "Exportar e fazer backup (Pro)",
+        "description": "Exporte sua biblioteca de respostas como JSON e importe-a em outro dispositivo. "
+      },
+      "rewriteToolbar": {
+        "title": "Barra de ferramentas de reescrita",
+        "description": "Selecione qualquer texto em uma página e reescreva-o com IA no tom escolhido – perfeito para aprimorar e-mails e mensagens."
+      },
+      "multiProvider": {
+        "title": "Vários provedores de IA (Pro)",
+        "description": "Configure várias chaves de API com ordem de prioridade. "
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Preços simples. ",
+      "free": {
+        "title": "Livre",
+        "price": "US$ 0",
+        "features": {
+          "f1": "30 respostas salvas",
+          "f2": "10 gerações de IA/dia",
+          "f3": "3 tons básicos",
+          "f4": "Gemini Nano (local, privado)",
+          "f5": "Provedor único de BYOK",
+          "f6": "Adaptadores de site básicos"
+        },
+        "button": "Adicionar ao Chrome"
+      },
+      "proMonthly": {
+        "title": "Pró – Mensal",
+        "price": "US$ 6,99/mês",
+        "features": {
+          "f1": "Respostas salvas ilimitadas",
+          "f2": "Gerações ilimitadas de IA",
+          "f3": "Todos os 10 tons (empatia, vendas, executivo…)",
+          "f4": "Variáveis ​​inteligentes ({{name}}, {{company}}…)",
+          "f5": "Vários provedores de IA",
+          "f6": "Exportar/importar backups",
+          "f7": "Todos os adaptadores de site",
+          "f8": "Suporte prioritário"
+        },
+        "button": "Obtenha o Pro mensalmente"
+      },
+      "proYearly": {
+        "title": "Pró – Anual",
+        "price": "US$ 49,99/ano",
+        "subtitle": "~$4,17/mês",
+        "savings": "Economize 40% em relação ao mês",
+        "features": {
+          "f1": "Todos os recursos mensais do Pro",
+          "f2": "Melhor valor a longo prazo"
+        },
+        "button": "Torne-se profissional anualmente"
+      },
+      "lifetime": {
+        "title": "Vitalício – Adepto pioneiro",
+        "price": "$ 59,99 único",
+        "earlyAdopter": "(limitado aos primeiros 100 compradores)",
+        "features": {
+          "f1": "Todos os recursos Pro, para sempre",
+          "f2": "Todas as atualizações futuras incluídas"
+        },
+        "button": "Obtenha vitalício",
+        "disclaimer": ""
+      }
+    },
+    "setupGuides": {
+      "sectionTitle": "Configuração de IA – Escolha sua fonte de energia",
+      "subtitle": "Ambas as opções são gratuitas para começar. ",
+      "geminiNano": {
+        "title": "Gemini Nano (integrado ao Chrome)",
+        "description": "Nenhuma chave de API necessária. ",
+        "button": "Veja o guia de configuração →"
+      },
+      "bringYourOwnKey": {
+        "title": "Traga sua própria chave de API",
+        "description": "Conecte sua própria chave do OpenAI, Anthropic (Claude), Groq ou OpenRouter. ",
+        "button": "Veja o guia de configuração →"
+      }
+    },
+    "faq": {
+      "sectionTitle": "Perguntas frequentes",
+      "q1": {
+        "question": "Funciona em todos os sites?",
+        "answer": "Sim. "
+      },
+      "q2": {
+        "question": "Meus dados são privados?",
+        "answer": "Absolutamente. "
+      },
+      "q3": {
+        "question": "Qual é a diferença entre Gratuito e Pro?",
+        "answer": "Gratuito inclui 30 respostas salvas, 10 gerações de IA por dia, 3 tons básicos e BYOK de provedor único. "
+      },
+      "q4": {
+        "question": "Posso atualizar mais tarde?",
+        "answer": "Sim. "
+      },
+      "q5": {
+        "question": "Como importo/exporto minhas respostas?",
+        "answer": "Vá para Configurações no pop-up da extensão. "
+      },
+      "q6": {
+        "question": "O que são variáveis ​​inteligentes?",
+        "answer": "Variáveis ​​inteligentes como {{name}}, {{company}} e {{date}} são automaticamente substituídas por valores específicos do contexto quando você insere uma resposta, tornando seus modelos dinâmicos e personalizados (recurso Pro)."
+      }
+    },
+    "footer": {
+      "links": "Política de Privacidade | "
+    }
+  },
+  "workDesk": {
+    "page": {
+      "title": "Donbrico WorkDesk — Espaços de trabalho de navegador inteligente e gerenciador de sessão",
+      "description": "Salve e restaure os espaços de trabalho do seu navegador com um clique. ",
+      "ogTitle": "Donbrico WorkDesk — Espaços de trabalho de navegador inteligente e gerenciador de sessão",
+      "ogDescription": "Salve e restaure os espaços de trabalho do seu navegador com um clique. "
+    },
+    "hero": {
+      "eyebrow": "EXTENSÃO CROMADA",
+      "title": "Os espaços de trabalho do seu navegador,<br>organizados por IA.",
+      "subtitle": "Salve suas guias atuais como um espaço de trabalho com um clique. ",
+      "disclaimer": "🔒 Seus dados nunca saem do seu navegador · Gemini Nano no dispositivo ou sua própria chave de API · Não é necessária uma conta",
+      "buttonPrimary": "Adicionar ao Chrome – grátis",
+      "buttonSecondary": "Veja como funciona ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "Como funciona",
+      "step1": {
+        "title": "1. Salve com um clique",
+        "description": "Clique no ícone WorkDesk para salvar todas as guias abertas na janela atual (ou todas as janelas) como um espaço de trabalho nomeado."
+      },
+      "step2": {
+        "title": "2. Organização movida a IA",
+        "description": "A IA sugere automaticamente um nome para o seu espaço de trabalho com base nas suas guias. "
+      },
+      "step3": {
+        "title": "3. Restaure instantaneamente",
+        "description": "Abra o painel do seu espaço de trabalho e restaure qualquer sessão. "
+      }
+    },
+    "features": {
+      "sectionTitle": "Construído para produtividade.",
+      "unlimitedWorkspaces": {
+        "title": "Espaços de trabalho ilimitados",
+        "description": "Salve quantos espaços de trabalho você precisar. "
+      },
+      "aiNaming": {
+        "title": "Nomenclatura baseada em IA",
+        "description": "Não perca tempo pensando em nomes. "
+      },
+      "smartCleanup": {
+        "title": "Limpeza inteligente de IA",
+        "description": "Agrupe automaticamente guias semelhantes, remova duplicatas e organize seu espaço de trabalho para obter o máximo de clareza."
+      },
+      "geminiNano": {
+        "title": "IA 100% privada",
+        "description": "Use o Gemini Nano para IA no dispositivo: nenhum dado sai da sua máquina. "
+      },
+      "multiWindow": {
+        "title": "Suporte para múltiplas janelas",
+        "description": "Salve todas as janelas abertas de uma vez ou apenas a atual. "
+      },
+      "exportImport": {
+        "title": "Importar e Exportar",
+        "description": "Exporte e importe seus espaços de trabalho em formatos avançados: JSON, CSV e marcadores HTML. "
+      },
+      "semanticSearch": {
+        "title": "Pesquisa semântica de IA",
+        "description": "Pesquise seus espaços de trabalho usando linguagem natural. "
+      },
+      "privacyFirst": {
+        "title": "Privacidade em primeiro lugar",
+        "description": "Todos os dados do seu espaço de trabalho são armazenados localmente no seu navegador. "
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Preços simples. ",
+      "free": {
+        "title": "Livre",
+        "price": "US$ 0",
+        "features": {
+          "f1": "Economize até 5 espaços de trabalho",
+          "f2": "Sugestões de nomenclatura de IA",
+          "f3": "Resumos do cartão de memória",
+          "f4": "Arquivamento do espaço de trabalho",
+          "f5": "Gemini Nano (local, privado)",
+          "f6": "Modos básicos de restauração"
+        },
+        "button": "Adicionar ao Chrome"
+      },
+      "proMonthly": {
+        "title": "Pró – Mensal",
+        "price": "US$ 4,99/mês",
+        "features": {
+          "f1": "Espaços de trabalho ilimitados",
+          "f2": "Salve todas as janelas de uma vez",
+          "f3": "Exportar e importar: JSON, CSV, HTML",
+          "f4": "Aplicar limpeza do espaço de trabalho de IA",
+          "f5": "Pesquisa semântica de IA",
+          "f6": "Suporte prioritário"
+        },
+        "button": "Obtenha o Pro mensalmente"
+      },
+      "proYearly": {
+        "title": "Pró – Anual",
+        "price": "US$ 29,99/ano",
+        "subtitle": "~$2,50/mês",
+        "savings": "Economize 50% em relação ao mês",
+        "features": {
+          "f1": "Todos os recursos mensais do Pro",
+          "f2": "Melhor valor para profissionais"
+        },
+        "button": "Torne-se profissional anualmente"
+      },
+      "lifetime": {
+        "title": "Vitalício – Adepto pioneiro",
+        "price": "$ 49,99 único",
+        "earlyAdopter": "🚀 Adepto pioneiro (tempo limitado)",
+        "features": {
+          "f1": "Todos os recursos Pro, para sempre",
+          "f2": "Todas as atualizações futuras incluídas"
+        },
+        "button": "Obtenha vitalício",
+        "disclaimer": ""
+      }
+    },
+    "faq": {
+      "sectionTitle": "Perguntas frequentes",
+      "q1": {
+        "question": "Funciona com grupos de guias?",
+        "answer": "Sim. "
+      },
+      "q2": {
+        "question": "Meus dados são privados?",
+        "answer": "Absolutamente. "
+      },
+      "q3": {
+        "question": "Qual é a diferença entre Gratuito e Pro?",
+        "answer": "Gratuito inclui até 5 espaços de trabalho, nomenclatura de IA e arquivamento. "
+      },
+      "q4": {
+        "question": "Posso exportar meus espaços de trabalho?",
+        "answer": "Sim. "
+      }
+    },
+    "activate": {
+      "page": {
+        "title": "Ativar Licença - Donbrico"
+      },
+      "loading": {
+        "title": "Ativando Licença",
+        "subtitle": "Conectando-se à extensão Donbrico…"
+      },
+      "success": {
+        "title": "Pró ativado!",
+        "subtitle": "Você pode fechar esta aba e retornar ao Donbrico."
+      },
+      "manual": {
+        "title": "Ativar Donbrico Pro",
+        "subtitle": "Copie a chave abaixo e cole na extensão: abra Donbrico → Opções → Premium → colar → Ativar.",
+        "copy": "Cópia",
+        "copied": "✓ Copiado",
+   
