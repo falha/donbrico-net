@@ -852,20 +852,4 @@
         "subtitle": "Copie a chave abaixo e cole na extensão: abra Donbrico → Opções → Premium → colar → Ativar.",
         "copy": "Cópia",
         "copied": "✓ Copiado",
-        "steps": {
-          "title": "Passos",
-          "s1": "Clique no ícone da extensão Donbrico na sua barra de ferramentas",
-          "s2": "Abra <strong>Opções</strong> (ou clique com o botão direito no ícone → Opções)",
-          "s3": "Vá para a guia <strong>Premium</strong>",
-          "s4": "Cole sua chave de licença e clique em <strong>Ativar</strong>"
-        },
-        "noKey": "(sem chave no URL – verifique seu e-mail de compra)",
-        "notReachable": "Não foi possível acessar a extensão nesta página (instale o Donbrico ou use um navegador Chromium compatível). ",
-        "lookupFailed": "Falha na pesquisa de ativação ({{error}}). ",
-        "genericFailed": "Falha na ativação. ",
-        "pending": "Pagamento concluído, mas nenhuma chave de licença foi encontrada neste link. "
-      }
-    }
-  }
-}
-        
+   

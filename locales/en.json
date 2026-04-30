@@ -811,9 +811,9 @@
       },
       "proYearly": {
         "title": "Pro — Yearly",
-        "price": "$29.99/year",
-        "subtitle": "~$2.50/month",
-        "savings": "Save 50% vs monthly",
+        "price": "$39.99/year",
+        "subtitle": "~$3.33/month",
+        "savings": "Save 33% vs monthly",
         "features": {
           "f1": "All Monthly Pro features",
           "f2": "Best value for professionals"
