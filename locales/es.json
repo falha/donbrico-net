@@ -850,38 +850,7 @@
         "question": "¿Puedo exportar mis espacios de trabajo?",
         "answer": "Sí. "
       }
-    },
-    "activate": {
-      "page": {
-        "title": "Activar Licencia — Donbrico"
-      },
-      "loading": {
-        "title": "Activando licencia",
-        "subtitle": "Conectándose a la extensión Donbrico…"
-      },
-      "success": {
-        "title": "¡Pro activado!",
-        "subtitle": "Puedes cerrar esta pestaña y volver a Donbrico."
-      },
-      "manual": {
-        "title": "Activar Donbrico Pro",
-        "subtitle": "Copie la clave a continuación y péguela en la extensión: abra Donbrico → Opciones → Premium → pegar → Activar.",
-        "copy": "Copiar",
-        "copied": "✓ Copiado",
-        "steps": {
-          "title": "Pasos",
-          "s1": "Haga clic en el icono de la extensión Donbrico en su barra de herramientas",
-          "s2": "Abra <strong>Opciones</strong> (o haga clic derecho en el icono → Opciones)",
-          "s3": "Vaya a la pestaña <strong>Premium</strong>",
-          "s4": "Pegue su clave de licencia y haga clic en <strong>Activar</strong>"
-        },
-        "noKey": "(sin clave en la URL; consulte el correo electrónico de compra)",
-        "notReachable": "No se pudo acceder a la extensión desde esta página (instale Donbrico o utilice un navegador Chromium compatible). ",
-        "lookupFailed": "Error en la búsqueda de activación ({{error}}). ",
-        "genericFailed": "La activación falló. ",
-        "pending": "Pago completado, pero no se encontró ninguna clave de licencia en este enlace. "
-      }
-    },
+  },
     "setupGuides": {
       "sectionTitle": "Configuración de IA: elija su fuente de energía",
       "subtitle": "Ambas opciones son gratuitas para comenzar. ",
@@ -895,6 +864,37 @@
         "description": "Conecte su propia clave de OpenAI, Anthropic (Claude), Groq u OpenRouter. ",
         "button": "Ver guía de configuración →"
       }
+    }
+  },
+  "activate": {
+    "page": {
+      "title": "Activar Licencia — Donbrico"
+    },
+    "loading": {
+      "title": "Activando licencia",
+      "subtitle": "Conectándose a la extensión Donbrico…"
+    },
+    "success": {
+      "title": "¡Pro activado!",
+      "subtitle": "Puedes cerrar esta pestaña y volver a Donbrico."
+    },
+    "manual": {
+      "title": "Activar Donbrico Pro",
+      "subtitle": "Copie la clave a continuación y péguela en la extensión: abra Donbrico → Opciones → Premium → pegar → Activar.",
+      "copy": "Copiar",
+      "copied": "✓ Copiado",
+      "steps": {
+        "title": "Pasos",
+        "s1": "Haga clic en el icono de la extensión Donbrico en su barra de herramientas",
+        "s2": "Abra <strong>Opciones</strong> (o haga clic derecho en el icono → Opciones)",
+        "s3": "Vaya a la pestaña <strong>Premium</strong>",
+        "s4": "Pegue su clave de licencia y haga clic en <strong>Activar</strong>"
+      },
+      "noKey": "(sin clave en la URL; consulte el correo electrónico de compra)",
+      "notReachable": "No se pudo acceder a la extensión desde esta página (instale Donbrico o utilice un navegador Chromium compatible). ",
+      "lookupFailed": "Error en la búsqueda de activation ({{error}}). ",
+      "genericFailed": "La activación falló. ",
+      "pending": "Pago completado, but no se encontró ninguna clave de licencia en este enlace. "
     }
   }
 }

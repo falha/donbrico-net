@@ -864,37 +864,36 @@
         "description": "Verbinden Sie Ihren eigenen Schlüssel von OpenAI, Anthropic (Claude), Groq oder OpenRouter. ",
         "button": "Setup-Anleitung anzeigen →"
       }
+  },
+  "activate": {
+    "page": {
+      "title": "Lizenz aktivieren – Donbrico"
     },
-    "activate": {
-      "page": {
-        "title": "Lizenz aktivieren – Donbrico"
+    "loading": {
+      "title": "Lizenz aktivieren",
+      "subtitle": "Verbindung zur Donbrico-Erweiterung herstellen…"
+    },
+    "success": {
+      "title": "Pro aktiviert!",
+      "subtitle": "Sie können diese Registerkarte schließen und zu Donbrico zurückkehren."
+    },
+    "manual": {
+      "title": "Aktivieren Sie Donbrico Pro",
+      "subtitle": "Kopieren Sie den Schlüssel unten und fügen Sie ihn in die Erweiterung ein: Öffnen Sie Donbrico → Optionen → Premium → Einfügen → Aktivieren.",
+      "copy": "Kopie",
+      "copied": "✓ Kopiert",
+      "steps": {
+        "title": "Schritte",
+        "s1": "Klicken Sie in Ihrer Symbolleiste auf das Donbrico-Erweiterungssymbol",
+        "s2": "Öffnen Sie <strong>Optionen</strong> (oder klicken Sie mit der rechten Maustaste auf das Symbol → Optionen).",
+        "s3": "Gehen Sie zur Registerkarte <strong>Premium</strong>",
+        "s4": "Fügen Sie Ihren Lizenzschlüssel ein und klicken Sie auf <strong>Aktivieren</strong>"
       },
-      "loading": {
-        "title": "Lizenz aktivieren",
-        "subtitle": "Verbindung zur Donbrico-Erweiterung herstellen…"
-      },
-      "success": {
-        "title": "Pro aktiviert!",
-        "subtitle": "Sie können diese Registerkarte schließen und zu Donbrico zurückkehren."
-      },
-      "manual": {
-        "title": "Aktivieren Sie Donbrico Pro",
-        "subtitle": "Kopieren Sie den Schlüssel unten und fügen Sie ihn in die Erweiterung ein: Öffnen Sie Donbrico → Optionen → Premium → Einfügen → Aktivieren.",
-        "copy": "Kopie",
-        "copied": "✓ Kopiert",
-        "steps": {
-          "title": "Schritte",
-          "s1": "Klicken Sie in Ihrer Symbolleiste auf das Donbrico-Erweiterungssymbol",
-          "s2": "Öffnen Sie <strong>Optionen</strong> (oder klicken Sie mit der rechten Maustaste auf das Symbol → Optionen).",
-          "s3": "Gehen Sie zur Registerkarte <strong>Premium</strong>",
-          "s4": "Fügen Sie Ihren Lizenzschlüssel ein und klicken Sie auf <strong>Aktivieren</strong>"
-        },
-        "noKey": "(keine Eingabe der URL – überprüfen Sie Ihre Kauf-E-Mail)",
-        "notReachable": "Die Erweiterung konnte von dieser Seite aus nicht erreicht werden (installieren Sie Donbrico oder verwenden Sie einen unterstützten Chromium-Browser). ",
-        "lookupFailed": "Aktivierungssuche fehlgeschlagen ({{error}}). ",
-        "genericFailed": "Die Aktivierung ist fehlgeschlagen. ",
-        "pending": "Die Zahlung wurde abgeschlossen, aber in diesem Link wurde kein Lizenzschlüssel gefunden. "
-      }
+      "noKey": "(keine Eingabe der URL – überprüfen Sie Ihre Kauf-E-Mail)",
+      "notReachable": "Die Erweiterung konnte von dieser Seite aus nicht erreicht werden (installieren Sie Donbrico oder verwenden Sie einen unterstützten Chromium-Browser). ",
+      "lookupFailed": "Aktivierungssuche fehlgeschlagen ({{error}}). ",
+      "genericFailed": "Die Aktivierung ist fehlgeschlagen. ",
+      "pending": "Die Zahlung wurde abgeschlossen, aber in diesem Link wurde kein Lizenzschlüssel gefunden. "
     }
   }
 }

@@ -864,37 +864,36 @@
         "description": "OpenAI, Anthropic(Claude), Groq 또는 OpenRouter에서 자체 키를 연결하세요. ",
         "button": "설정 가이드 보기 →"
       }
+  },
+  "activate": {
+    "page": {
+      "title": "라이선스 활성화 — Donbrico"
     },
-    "activate": {
-      "page": {
-        "title": "라이선스 활성화 — Donbrico"
+    "loading": {
+      "title": "라이선스 활성화",
+      "subtitle": "Donbrico 확장 프로그램에 연결하는 중…"
+    },
+    "success": {
+      "title": "프로 활성화!",
+      "subtitle": "이 탭을 닫고 돈브리코로 돌아갈 수 있습니다."
+    },
+    "manual": {
+      "title": "돈브리코 프로 활성화",
+      "subtitle": "아래 키를 복사하여 확장 프로그램에 붙여넣으세요: Donbrico 열기 → 옵션 → 프리미엄 → 붙여넣기 → 활성화.",
+      "copy": "복사",
+      "copied": "✓ 복사됨",
+      "steps": {
+        "title": "단계",
+        "s1": "도구 모음에서 Donbrico 확장 프로그램 아이콘을 클릭하세요.",
+        "s2": "<strong>옵션</strong>을 엽니다(또는 아이콘을 마우스 오른쪽 버튼으로 클릭 → 옵션).",
+        "s3": "<strong>프리미엄</strong> 탭으로 이동",
+        "s4": "라이센스 키를 붙여넣고 <strong>활성화</strong>를 클릭하세요."
       },
-      "loading": {
-        "title": "라이선스 활성화",
-        "subtitle": "Donbrico 확장 프로그램에 연결하는 중…"
-      },
-      "success": {
-        "title": "프로 활성화!",
-        "subtitle": "이 탭을 닫고 돈브리코로 돌아갈 수 있습니다."
-      },
-      "manual": {
-        "title": "돈브리코 프로 활성화",
-        "subtitle": "아래 키를 복사하여 확장 프로그램에 붙여넣으세요: Donbrico 열기 → 옵션 → 프리미엄 → 붙여넣기 → 활성화.",
-        "copy": "복사",
-        "copied": "✓ 복사됨",
-        "steps": {
-          "title": "단계",
-          "s1": "도구 모음에서 Donbrico 확장 프로그램 아이콘을 클릭하세요.",
-          "s2": "<strong>옵션</strong>을 엽니다(또는 아이콘을 마우스 오른쪽 버튼으로 클릭 → 옵션).",
-          "s3": "<strong>프리미엄</strong> 탭으로 이동",
-          "s4": "라이센스 키를 붙여넣고 <strong>활성화</strong>를 클릭하세요."
-        },
-        "noKey": "(URL에 키가 없습니다. 구매 이메일을 확인하세요)",
-        "notReachable": "이 페이지에서 확장 프로그램에 접근할 수 없습니다(Donbrico를 설치하거나 지원되는 Chromium 브라우저를 사용하세요). ",
-        "lookupFailed": "활성화 조회에 실패했습니다({{error}}). ",
-        "genericFailed": "활성화에 실패했습니다. ",
-        "pending": "결제가 완료되었지만 이 링크에서 라이센스 키를 찾을 수 없습니다. "
-      }
+      "noKey": "(URL에 키가 없습니다. 구매 이메일을 확인하세요)",
+      "notReachable": "이 페이지에서 확장 프로그램에 접근할 수 없습니다(Donbrico를 설치하거나 지원되는 Chromium 브라우저를 사용하세요). ",
+      "lookupFailed": "활성화 조회에 실패했습니다({{error}}). ",
+      "genericFailed": "활성화에 실패했습니다. ",
+      "pending": "결제가 완료되었지만 이 링크에서 라이센스 키를 찾을 수 없습니다. "
     }
   }
 }

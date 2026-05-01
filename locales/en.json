@@ -864,37 +864,36 @@
         "description": "Connect your own key from OpenAI, Anthropic (Claude), Groq, or OpenRouter. Pay only for what you use. Unlimited AI generations (Pro).",
         "button": "View setup guide →"
       }
+  },
+  "activate": {
+    "page": {
+      "title": "Activate License — Donbrico"
     },
-    "activate": {
-      "page": {
-        "title": "Activate License — Donbrico"
+    "loading": {
+      "title": "Activating License",
+      "subtitle": "Connecting to the Donbrico extension…"
+    },
+    "success": {
+      "title": "Pro activated!",
+      "subtitle": "You can close this tab and return to Donbrico."
+    },
+    "manual": {
+      "title": "Activate Donbrico Pro",
+      "subtitle": "Copy the key below and paste it in the extension: open Donbrico → Options → Premium → paste → Activate.",
+      "copy": "Copy",
+      "copied": "✓ Copied",
+      "steps": {
+        "title": "Steps",
+        "s1": "Click the Donbrico extension icon in your toolbar",
+        "s2": "Open <strong>Options</strong> (or right-click the icon → Options)",
+        "s3": "Go to the <strong>Premium</strong> tab",
+        "s4": "Paste your license key and click <strong>Activate</strong>"
       },
-      "loading": {
-        "title": "Activating License",
-        "subtitle": "Connecting to the Donbrico extension…"
-      },
-      "success": {
-        "title": "Pro activated!",
-        "subtitle": "You can close this tab and return to Donbrico."
-      },
-      "manual": {
-        "title": "Activate Donbrico Pro",
-        "subtitle": "Copy the key below and paste it in the extension: open Donbrico → Options → Premium → paste → Activate.",
-        "copy": "Copy",
-        "copied": "✓ Copied",
-        "steps": {
-          "title": "Steps",
-          "s1": "Click the Donbrico extension icon in your toolbar",
-          "s2": "Open <strong>Options</strong> (or right-click the icon → Options)",
-          "s3": "Go to the <strong>Premium</strong> tab",
-          "s4": "Paste your license key and click <strong>Activate</strong>"
-        },
-        "noKey": "(no key in URL — check your purchase email)",
-        "notReachable": "The extension could not be reached from this page (install Donbrico, or use a supported Chromium browser). Activate manually below.",
-        "lookupFailed": "Activation lookup failed ({{error}}). You can still paste your key manually below.",
-        "genericFailed": "Activation failed. Try pasting the key in the extension Premium tab.",
-        "pending": "Payment completed, but no license key was found in this link. Use the key from your receipt email, or open the extension Premium tab."
-      }
+      "noKey": "(no key in URL — check your purchase email)",
+      "notReachable": "The extension could not be reached from this page (install Donbrico, or use a supported Chromium browser). Activate manually below.",
+      "lookupFailed": "Activation lookup failed ({{error}}). You can still paste your key manually below.",
+      "genericFailed": "Activation failed. Try pasting the key in the extension Premium tab.",
+      "pending": "Payment completed, but no license key was found in this link. Use the key from your receipt email, or open the extension Premium tab."
     }
   }
 }

@@ -1,4 +1,5 @@
 import { resolveLicenseRequest } from '../functions/api/resolve-license.js';
+import { onRequestGet as getLifetimeSpots } from '../functions/api/lifetime-spots.js';
 
 export default {
   async fetch(request, env) {
@@ -9,6 +10,13 @@ export default {
         return Response.json({ ok: false, error: 'method_not_allowed' }, { status: 405 });
       }
       return resolveLicenseRequest(request, env);
+    }
+
+    if (url.pathname === '/api/lifetime-spots' || url.pathname === '/api/lifetime-spots/') {
+      if (request.method !== 'GET') {
+        return Response.json({ ok: false, error: 'method_not_allowed' }, { status: 405 });
+      }
+      return getLifetimeSpots({ env, request });
     }
 
     return env.ASSETS.fetch(request);

@@ -834,37 +834,36 @@
         "question": "Puis-je exporter mes espaces de travail ?",
         "answer": "Oui. "
       }
+  },
+  "activate": {
+    "page": {
+      "title": "Activer la licence — Donbrico"
     },
-    "activate": {
-      "page": {
-        "title": "Activer la licence — Donbrico"
+    "loading": {
+      "title": "Activation de la licence",
+      "subtitle": "Connexion à l’extension Donbrico…"
+    },
+    "success": {
+      "title": "Pro activé !",
+      "subtitle": "Vous pouvez fermer cet onglet et revenir à Donbrico."
+    },
+    "manual": {
+      "title": "Activer Donbrico Pro",
+      "subtitle": "Copiez la clé ci-dessous et collez-la dans l'extension : ouvrez Donbrico → Options → Premium → coller → Activer.",
+      "copy": "Copie",
+      "copied": "✓ Copié",
+      "steps": {
+        "title": "Mesures",
+        "s1": "Cliquez sur l'icône de l'extension Donbrico dans votre barre d'outils",
+        "s2": "Ouvrez les <strong>Options</strong> (ou cliquez avec le bouton droit sur l'icône → Options)",
+        "s3": "Accédez à l'onglet <strong>Premium</strong>",
+        "s4": "Collez votre clé de licence et cliquez sur <strong>Activer</strong>"
       },
-      "loading": {
-        "title": "Activation de la licence",
-        "subtitle": "Connexion à l’extension Donbrico…"
-      },
-      "success": {
-        "title": "Pro activé !",
-        "subtitle": "Vous pouvez fermer cet onglet et revenir à Donbrico."
-      },
-      "manual": {
-        "title": "Activer Donbrico Pro",
-        "subtitle": "Copiez la clé ci-dessous et collez-la dans l'extension : ouvrez Donbrico → Options → Premium → coller → Activer.",
-        "copy": "Copie",
-        "copied": "✓ Copié",
-        "steps": {
-          "title": "Mesures",
-          "s1": "Cliquez sur l'icône de l'extension Donbrico dans votre barre d'outils",
-          "s2": "Ouvrez les <strong>Options</strong> (ou cliquez avec le bouton droit sur l'icône → Options)",
-          "s3": "Accédez à l'onglet <strong>Premium</strong>",
-          "s4": "Collez votre clé de licence et cliquez sur <strong>Activer</strong>"
-        },
-        "noKey": "(pas de clé dans l'URL — vérifiez votre e-mail d'achat)",
-        "notReachable": "L'extension n'est pas accessible à partir de cette page (installez Donbrico ou utilisez un navigateur Chromium pris en charge). ",
-        "lookupFailed": "La recherche d'activation a échoué ({{error}}). ",
-        "genericFailed": "L'activation a échoué. ",
-        "pending": "Paiement effectué, mais aucune clé de licence n'a été trouvée dans ce lien. "
-      }
+      "noKey": "(pas de clé dans l'URL — vérifiez votre e-mail d'achat)",
+      "notReachable": "L'extension n'est pas accessible à partir de cette page (installez Donbrico ou utilisez un navigateur Chromium pris en charge). ",
+      "lookupFailed": "La recherche d'activation a échoué ({{error}}). ",
+      "genericFailed": "L'activation a échoué. ",
+      "pending": "Paiement effectué, mais aucune clé de licence n'a été trouvée dans ce lien. "
     }
   }
 }

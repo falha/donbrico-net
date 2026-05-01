@@ -1,10 +1,26 @@
 export async function onRequestGet(context) {
-  const { env } = context;
+  const { env, request } = context;
+  const url = new URL(request.url);
+  const productKey = url.searchParams.get('product') || 'workdesk';
 
-  const totalSpots = 100;
-  
-  // WorkDesk Lifetime Product ID
-  const productId = 'pdt_0NdlXnYSUfwfJLnO5MKgR';
+  const PRODUCTS = {
+    'workdesk': {
+      id: 'pdt_0NdlXnYSUfwfJLnO5MKgR',
+      total: 100
+    },
+    'autofill': {
+      id: 'pdt_0NdFaDTqfWsM6QuVwvw5u',
+      total: 100
+    },
+    'ai-reply': {
+      id: 'pdt_0NdJhVpvLyIfCiAyrA6YW',
+      total: 100
+    }
+  };
+
+  const product = PRODUCTS[productKey] || PRODUCTS['workdesk'];
+  const productId = product.id;
+  const totalSpots = product.total;
   
   const apiKey = env.DODO_PAYMENTS_API_KEY_LIVE || env.DODO_PAYMENTS_API_KEY;
   const apiBaseUrl = (env.DODO_PAYMENTS_API_BASE_URL_LIVE || env.DODO_PAYMENTS_API_BASE_URL || 'https://live.dodopayments.com').replace(/\/+$/, '');
@@ -31,13 +47,14 @@ export async function onRequestGet(context) {
         source = 'dodo_live';
       }
     } catch (err) {
-      console.error('Failed to fetch Dodo payments count', err);
+      console.error(`Failed to fetch Dodo payments count for ${productKey}`, err);
     }
   }
 
   const remaining = Math.max(0, totalSpots - sold);
 
   const payload = {
+    product: productKey,
     total: totalSpots,
     sold,
     remaining,

@@ -5,13 +5,19 @@ export async function resolveLicenseRequest(request, env) {
   const product = (url.searchParams.get('product') || '').trim().toLowerCase();
   const rawMode = (url.searchParams.get('mode') || '').trim().toLowerCase();
   if (rawMode && rawMode !== 'test' && rawMode !== 'live') {
-    return Response.json({ ok: false, error: 'invalid_mode', retryable: false }, { status: 400 });
+    return Response.json({ ok: false, error: 'invalid_mode', retryable: false }, {
+      status: 400,
+      headers: { 'access-control-allow-origin': '*' }
+    });
   }
   const mode = rawMode || 'live';
   const isTestMode = mode === 'test';
 
   if (!subscriptionId) {
-    return Response.json({ ok: false, error: 'subscription_id_required', retryable: false }, { status: 400 });
+    return Response.json({ ok: false, error: 'subscription_id_required', retryable: false }, {
+      status: 400,
+      headers: { 'access-control-allow-origin': '*' }
+    });
   }
 
   const legacyApiKey = env.DODO_PAYMENTS_API_KEY;
@@ -19,7 +25,10 @@ export async function resolveLicenseRequest(request, env) {
     ? (env.DODO_PAYMENTS_API_KEY_TEST || legacyApiKey)
     : (env.DODO_PAYMENTS_API_KEY_LIVE || legacyApiKey);
   if (!apiKey) {
-    return Response.json({ ok: false, error: 'server_missing_api_key', retryable: false, mode: isTestMode ? 'test' : 'live' }, { status: 500 });
+    return Response.json({ ok: false, error: 'server_missing_api_key', retryable: false, mode: isTestMode ? 'test' : 'live' }, {
+      status: 500,
+      headers: { 'access-control-allow-origin': '*' }
+    });
   }
 
   const defaultApiBaseUrl = isTestMode
@@ -43,7 +52,10 @@ export async function resolveLicenseRequest(request, env) {
       headers
     });
     if (!subscriptionResp.ok) {
-      return Response.json({ ok: false, error: 'subscription_not_found', retryable: false, mode: isTestMode ? 'test' : 'live' }, { status: 404 });
+      return Response.json({ ok: false, error: 'subscription_not_found', retryable: false, mode: isTestMode ? 'test' : 'live' }, {
+        status: 404,
+        headers: { 'access-control-allow-origin': '*' }
+      });
     }
 
     const subscriptionData = await subscriptionResp.json();
@@ -52,11 +64,17 @@ export async function resolveLicenseRequest(request, env) {
     const customerEmail = String(customer.email || '').trim().toLowerCase();
 
     if (email && customerEmail && email !== customerEmail) {
-      return Response.json({ ok: false, error: 'email_mismatch', retryable: false, mode: isTestMode ? 'test' : 'live' }, { status: 403 });
+      return Response.json({ ok: false, error: 'email_mismatch', retryable: false, mode: isTestMode ? 'test' : 'live' }, {
+        status: 403,
+        headers: { 'access-control-allow-origin': '*' }
+      });
     }
 
     if (!customerId) {
-      return Response.json({ ok: false, error: 'customer_not_found', retryable: false, mode: isTestMode ? 'test' : 'live' }, { status: 404 });
+      return Response.json({ ok: false, error: 'customer_not_found', retryable: false, mode: isTestMode ? 'test' : 'live' }, {
+        status: 404,
+        headers: { 'access-control-allow-origin': '*' }
+      });
     }
 
     const items = [];
@@ -71,7 +89,10 @@ export async function resolveLicenseRequest(request, env) {
 
       const licensesResp = await fetch(listUrl.toString(), { method: 'GET', headers });
       if (!licensesResp.ok) {
-        return Response.json({ ok: false, error: 'license_lookup_failed', retryable: true, mode: isTestMode ? 'test' : 'live' }, { status: 502 });
+        return Response.json({ ok: false, error: 'license_lookup_failed', retryable: true, mode: isTestMode ? 'test' : 'live' }, {
+          status: 502,
+          headers: { 'access-control-allow-origin': '*' }
+        });
       }
 
       const licensesData = await licensesResp.json();
@@ -142,7 +163,10 @@ export async function resolveLicenseRequest(request, env) {
           mode: isTestMode ? 'test' : 'live',
           subscription_status: subscriptionStatus || 'unknown',
         },
-        { status: shouldRetry ? 200 : 404 }
+        {
+          status: shouldRetry ? 200 : 404,
+          headers: { 'access-control-allow-origin': '*' }
+        }
       );
     }
 
@@ -151,6 +175,8 @@ export async function resolveLicenseRequest(request, env) {
       license_key: licenseKey,
       retryable: false,
       mode: isTestMode ? 'test' : 'live',
+    }, {
+      headers: { 'access-control-allow-origin': '*' }
     });
   } catch (err) {
     return Response.json(
@@ -160,7 +186,10 @@ export async function resolveLicenseRequest(request, env) {
         retryable: true,
         mode: isTestMode ? 'test' : 'live',
       },
-      { status: 500 }
+      {
+        status: 500,
+        headers: { 'access-control-allow-origin': '*' }
+      }
     );
   }
 }
