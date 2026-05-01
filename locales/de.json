@@ -864,6 +864,7 @@
         "description": "Verbinden Sie Ihren eigenen Schlüssel von OpenAI, Anthropic (Claude), Groq oder OpenRouter. ",
         "button": "Setup-Anleitung anzeigen →"
       }
+    }
   },
   "activate": {
     "page": {

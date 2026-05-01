@@ -835,63 +835,50 @@
         "answer": "Sim. "
       }
     },
-    "activate": {
-      "page": {
-        "title": "Ativar Licença - Donbrico"
+    "setupGuides": {
+      "sectionTitle": "Configuração de IA – Escolha sua fonte de energia",
+      "subtitle": "Ambas as opções são gratuitas para começar. ",
+      "geminiNano": {
+        "title": "Gemini Nano (integrado ao Chrome)",
+        "description": "Nenhuma chave de API é necessária. ",
+        "button": "Ver guia de configuração →"
       },
-      "loading": {
-        "title": "Ativando Licença",
-        "subtitle": "Conectando-se à extensão Donbrico…"
-      },
-      "success": {
-        "title": "Pró ativado!",
-        "subtitle": "Você pode fechar esta aba e retornar ao Donbrico."
-      },
-      "manual": {
-        "title": "Ativar Donbrico Pro",
-        "subtitle": "Copie a chave abaixo e cole na extensão: abra Donbrico → Opções → Premium → colar → Ativar.",
-        "copy": "Cópia",
-        "copied": "✓ Copiado",
-        "steps": {
-          "title": "Passos",
-          "s1": "Clique no ícone da extensão Donbrico na sua barra de ferramentas",
-          "s2": "Abra <strong>Opções</strong> (ou clique com o botão direito no ícone → Opções)",
-          "s3": "Vá para a guia <strong>Premium</strong>",
-          "s4": "Cole sua chave de licença e clique em <strong>Ativar</strong>"
-        },
-        "noKey": "(sem chave no URL – verifique seu e-mail de compra)",
-        "notReachable": "Não foi possível acessar a extensão nesta página (instale o Donbrico ou use um navegador Chromium compatível). ",
-        "lookupFailed": "Falha na pesquisa de ativação ({{error}}). ",
-        "genericFailed": "Falha na ativação. ",
-        "pending": "Pagamento concluído, mas nenhuma chave de licença foi encontrada neste link. "
+      "bringYourOwnKey": {
+        "title": "Traga sua própria chave de API",
+        "description": "Conecte sua própria chave da OpenAI, Anthropic (Claude), Groq ou OpenRouter. ",
+        "button": "Ver guia de configuração →"
       }
     }
-  }
-}
-        "subtitle": "Conectando-se à extensão Donbrico…"
+  },
+  "activate": {
+    "page": {
+      "title": "Ativar Licença - Donbrico"
+    },
+    "loading": {
+      "title": "Ativando Licença",
+      "subtitle": "Conectando-se à extensão Donbrico…"
+    },
+    "success": {
+      "title": "Pró ativado!",
+      "subtitle": "Você pode fechar esta aba e retornar ao Donbrico."
+    },
+    "manual": {
+      "title": "Ativar Donbrico Pro",
+      "subtitle": "Copie a chave abaixo e cole na extensão: abra Donbrico → Opções → Premium → colar → Ativar.",
+      "copy": "Cópia",
+      "copied": "✓ Copiado",
+      "steps": {
+        "title": "Passos",
+        "s1": "Clique no ícone da extensão Donbrico na sua barra de ferramentas",
+        "s2": "Abra <strong>Opções</strong> (ou clique com o botão direito no ícone → Opções)",
+        "s3": "Vá para a guia <strong>Premium</strong>",
+        "s4": "Cole sua chave de licença e clique em <strong>Ativar</strong>"
       },
-      "success": {
-        "title": "Pró ativado!",
-        "subtitle": "Você pode fechar esta aba e retornar ao Donbrico."
-      },
-      "manual": {
-        "title": "Ativar Donbrico Pro",
-        "subtitle": "Copie a chave abaixo e cole na extensão: abra Donbrico → Opções → Premium → colar → Ativar.",
-        "copy": "Cópia",
-        "copied": "✓ Copiado",
-        "steps": {
-          "title": "Passos",
-          "s1": "Clique no ícone da extensão Donbrico na sua barra de ferramentas",
-          "s2": "Abra <strong>Opções</strong> (ou clique com o botão direito no ícone → Opções)",
-          "s3": "Vá para a guia <strong>Premium</strong>",
-          "s4": "Cole sua chave de licença e clique em <strong>Ativar</strong>"
-        },
-        "noKey": "(sem chave no URL – verifique seu e-mail de compra)",
-        "notReachable": "Não foi possível acessar a extensão nesta página (instale o Donbrico ou use um navegador Chromium compatível). ",
-        "lookupFailed": "Falha na pesquisa de ativação ({{error}}). ",
-        "genericFailed": "Falha na ativação. ",
-        "pending": "Pagamento concluído, mas nenhuma chave de licença foi encontrada neste link. "
-      }
+      "noKey": "(sem chave no URL – verifique seu e-mail de compra)",
+      "notReachable": "Não foi possível acessar a extensão nesta página (instale o Donbrico ou use um navegador Chromium compatível). ",
+      "lookupFailed": "Falha na pesquisa de ativação ({{error}}). ",
+      "genericFailed": "Falha na ativação. ",
+      "pending": "Pagamento concluído, mas nenhuma chave de licença foi encontrada neste link. "
     }
   }
 }

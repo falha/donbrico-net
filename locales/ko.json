@@ -864,6 +864,7 @@
         "description": "OpenAI, Anthropic(Claude), Groq 또는 OpenRouter에서 자체 키를 연결하세요. ",
         "button": "설정 가이드 보기 →"
       }
+    }
   },
   "activate": {
     "page": {

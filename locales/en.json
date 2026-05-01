@@ -864,6 +864,7 @@
         "description": "Connect your own key from OpenAI, Anthropic (Claude), Groq, or OpenRouter. Pay only for what you use. Unlimited AI generations (Pro).",
         "button": "View setup guide →"
       }
+    }
   },
   "activate": {
     "page": {

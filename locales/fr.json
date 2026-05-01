@@ -834,6 +834,21 @@
         "question": "Puis-je exporter mes espaces de travail ?",
         "answer": "Oui. "
       }
+    },
+    "setupGuides": {
+      "sectionTitle": "Configuration de l'IA - Choisissez votre source d'énergie",
+      "subtitle": "Les deux options sont gratuites pour commencer. ",
+      "geminiNano": {
+        "title": "Gemini Nano (intégré à Chrome)",
+        "description": "Aucune clé API n'est requise. ",
+        "button": "Voir le guide de configuration →"
+      },
+      "bringYourOwnKey": {
+        "title": "Apportez votre propre clé API",
+        "description": "Connectez votre propre clé depuis OpenAI, Anthropic (Claude), Groq ou OpenRouter. ",
+        "button": "Voir le guide de configuration →"
+      }
+    }
   },
   "activate": {
     "page": {
