@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="docs.apiKeys.page.title"></title>
+  <title data-i18n="docs.apiKeys.page.title">API Keys Guide — Donbrico Autofill AI</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -101,6 +101,35 @@
       .nav input[type="checkbox"]:checked ~ .hamburger span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
       .nav input[type="checkbox"]:checked ~ .hamburger span:nth-child(2) { opacity: 0; }
       .nav input[type="checkbox"]:checked ~ .hamburger span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
+    }
+    
+    /* Dropdown */
+    .nav .dropdown { position: relative; }
+    .nav .dropdown-content {
+      display: none; position: absolute; background: var(--bg);
+      min-width: 220px; border: 1px solid var(--border); border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5); z-index: 1001;
+      top: 100%; left: 0; padding: 10px 0; margin-top: 8px;
+    }
+    .nav .dropdown:hover .dropdown-content { display: block; }
+    .nav .dropdown-content::before {
+      content: ""; position: absolute; top: -10px; left: 0; right: 0; height: 10px;
+    }
+    .nav .dropdown-content a {
+      display: block; padding: 8px 20px !important; border-radius: 0 !important;
+      background: transparent !important; color: var(--text) !important;
+      border-bottom: 1px solid var(--border); text-align: left;
+    }
+    .nav .dropdown-content a:last-child { border-bottom: none; }
+    .nav .dropdown-content a:hover { background: var(--indigo) !important; color: #fff !important; }
+
+    @media (max-width: 768px) {
+      .nav .dropdown-content {
+        position: static; display: block; box-shadow: none; border: none;
+        padding-left: 20px; margin-top: 0; background: rgba(255,255,255,0.03);
+      }
+      .nav .dropdown-content a { border-bottom: none; padding: 6px 12px !important; }
+      .nav .dropdown > a::after { content: ' ▾'; }
     }
 
     /* ── Breadcrumb ── */
@@ -303,11 +332,17 @@
         </label>
         <ul class="nav-links">
             <li><a href="./" data-i18n="nav.home">Home</a></li>
-            <li><a href="./autofill-ai/" class="active" data-i18n="nav.autofillAi">Autofill AI</a></li>
-            <li><a href="./ai-reply-assistant/" data-i18n="nav.aiReplyAssistant">AI Reply Assistant</a></li>
-            <li><a href="./workdesk/" data-i18n="nav.workDesk">WorkDesk</a></li>
-            <li><a href="./null-carrier/" data-i18n="nav.nullCarrier">Null Carrier</a></li>
+            <li class="dropdown">
+                <a href="#" class="active" data-i18n="nav.product">Product</a>
+                <div class="dropdown-content">
+                    <a href="./autofill-ai/" data-i18n="nav.autofillAi">Autofill AI</a>
+                    <a href="./ai-reply-assistant/" data-i18n="nav.aiReplyAssistant">AI Reply Assistant</a>
+                    <a href="./workdesk/" data-i18n="nav.workDesk">WorkDesk</a>
+                    <a href="./null-carrier/" data-i18n="nav.nullCarrier">Null Carrier</a>
+                </div>
+            </li>
             <li><a href="./privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a></li>
+            <li><a href="./terms/" data-i18n="nav.termsOfService">Terms of Service</a></li>
             <li><a href="./support/" data-i18n="nav.support">Support</a></li>
         </ul>
     </div>
@@ -317,23 +352,23 @@
 
   <!-- Breadcrumb -->
   <div class="breadcrumb">
-    <a href="/" data-i18n="docs.apiKeys.breadcrumb.home"></a>
+    <a href="/" data-i18n="nav.home">Home</a>
     <span>›</span>
-    <a href="#" data-i18n="docs.apiKeys.breadcrumb.docs"></a>
+    <a href="#" data-i18n="docs.apiKeys.breadcrumb.docs">Docs</a>
     <span>›</span>
-    <span data-i18n="docs.apiKeys.breadcrumb.title"></span>
+    <span data-i18n="docs.apiKeys.breadcrumb.title">API Keys</span>
   </div>
 
   <!-- Header -->
   <header class="doc-header">
-    <div class="doc-badge" data-i18n="docs.apiKeys.header.badge"></div>
-    <h1 data-i18n="docs.apiKeys.header.title"></h1>
-    <p class="doc-intro" data-i18n="docs.apiKeys.header.intro"></p>
+    <div class="doc-badge" data-i18n="docs.apiKeys.header.badge">Setup Guide</div>
+    <h1 data-i18n="docs.apiKeys.header.title">Get your <em>API Keys</em></h1>
+    <p class="doc-intro" data-i18n="docs.apiKeys.header.intro">Donbrico Autofill AI works best when you connect your own AI provider. Here is how to get your keys from the most popular services.</p>
     <div class="callout" style="margin-top: 16px; background: rgba(99,102,241,.1); border: 1px solid var(--indigo-dim);">
       <span class="callout-icon" style="color: #a5b4fc;">⚡</span>
       <div style="font-size: .87rem; color: #a5b4fc;">
-        <strong data-i18n="docs.apiKeys.header.speedNote.title"></strong> 
-        <span data-i18n="docs.apiKeys.header.speedNote.text"></span>
+        <strong data-i18n="docs.apiKeys.header.speedNote.title">Blazing fast.</strong> 
+        <span data-i18n="docs.apiKeys.header.speedNote.text">Using your own API key is typically 5-10x faster than the built-in free models and has much higher limits.</span>
       </div>
     </div>
   </header>
@@ -342,23 +377,23 @@
   <div class="provider-tabs">
     <a class="tab-btn active" href="#groq">
       <span class="provider-icon">⚡</span>
-      <div class="provider-name">Groq</div>
-      <div class="provider-tag">Fast · Free tier</div>
+      <div class="provider-name" data-i18n="docs.apiKeys.providers.groq.title">Groq</div>
+      <div class="provider-tag" data-i18n="docs.apiKeys.providers.groq.tag">Fast · Free tier</div>
     </a>
     <a class="tab-btn" href="#openrouter">
       <span class="provider-icon">🔀</span>
-      <div class="provider-name">OpenRouter</div>
-      <div class="provider-tag">100+ models</div>
+      <div class="provider-name" data-i18n="docs.apiKeys.providers.openrouter.title">OpenRouter</div>
+      <div class="provider-tag" data-i18n="docs.apiKeys.providers.openrouter.tag">100+ models</div>
     </a>
     <a class="tab-btn" href="#anthropic">
       <span class="provider-icon">🟣</span>
-      <div class="provider-name">Anthropic</div>
-      <div class="provider-tag">Claude</div>
+      <div class="provider-name" data-i18n="docs.apiKeys.providers.anthropic.title">Anthropic</div>
+      <div class="provider-tag" data-i18n="docs.apiKeys.providers.anthropic.tag">Claude</div>
     </a>
     <a class="tab-btn" href="#openai">
       <span class="provider-icon">🟢</span>
-      <div class="provider-name">OpenAI</div>
-      <div class="provider-tag">GPT-4o</div>
+      <div class="provider-name" data-i18n="docs.apiKeys.providers.openai.title">OpenAI</div>
+      <div class="provider-tag" data-i18n="docs.apiKeys.providers.openai.tag">GPT-4o</div>
     </a>
   </div>
 
@@ -368,60 +403,60 @@
   <div class="provider-section" id="groq">
     <div class="provider-header">
       <div class="provider-info">
-        <div class="provider-label">Provider 01</div>
-        <h2>⚡ Groq</h2>
-        <div class="provider-meta">console.groq.com</div>
+        <div class="provider-label" data-i18n="docs.apiKeys.providers.groq.label">Provider 01</div>
+        <h2 data-i18n="docs.apiKeys.providers.groq.title">⚡ Groq</h2>
+        <div class="provider-meta" data-i18n="docs.apiKeys.providers.groq.url">console.groq.com</div>
         <div class="provider-pills" style="margin-top:10px;">
-          <span class="pill green">Free tier available</span>
-          <span class="pill blue">Llama 3 · Mixtral · Gemma</span>
+          <span class="pill green" data-i18n="docs.apiKeys.providers.groq.pills.free">Free tier available</span>
+          <span class="pill blue" data-i18n="docs.apiKeys.providers.groq.pills.models">Llama 3 · Mixtral · Gemma</span>
         </div>
       </div>
-      <a class="cta-btn" href="https://console.groq.com" target="_blank" rel="noopener">
+      <a class="cta-btn" href="https://console.groq.com" target="_blank" rel="noopener" data-i18n="docs.apiKeys.providers.groq.cta">
         Create account ↗
       </a>
     </div>
     <div class="step-wrap">
-      <p>Groq runs open-source models on custom silicon (LPUs) — the result is remarkably fast inference. The free tier is generous enough for everyday autofill use at no cost.</p>
+      <p data-i18n="docs.apiKeys.providers.groq.intro">Groq runs open-source models on custom silicon (LPUs) — the result is remarkably fast inference. The free tier is generous enough for everyday autofill use at no cost.</p>
       <div class="steps">
         <div class="step">
           <div class="step-num">1</div>
           <div class="step-body">
-            <h4>Sign up for a free Groq account</h4>
-            <p>Go to <strong>console.groq.com</strong> and click <strong>Sign up</strong>. Groq supports Google, GitHub, and email signup. No credit card is required for the free tier.</p>
+            <h4 data-i18n="docs.apiKeys.providers.groq.step1.title">Sign up for a free Groq account</h4>
+            <p data-i18n="docs.apiKeys.providers.groq.step1.text">Go to <strong>console.groq.com</strong> and click <strong>Sign up</strong>. Groq supports Google, GitHub, and email signup. No credit card is required for the free tier.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">2</div>
           <div class="step-body">
-            <h4>Create an API key</h4>
-            <p>In the left sidebar, click <strong>API Keys</strong>. Click <strong>Create API Key</strong>, enter a name like "Donbrico", and click <strong>Submit</strong>.</p>
+            <h4 data-i18n="docs.apiKeys.providers.groq.step2.title">Create an API key</h4>
+            <p data-i18n="docs.apiKeys.providers.groq.step2.text">In the left sidebar, click <strong>API Keys</strong>. Click <strong>Create API Key</strong>, enter a name like "Donbrico", and click <strong>Submit</strong>.</p>
             <div class="callout warn">
               <span class="callout-icon">⚠️</span>
-              Copy the key immediately. Groq does not show it again after creation. It begins with <span class="code-inline">gsk_…</span>
+              <span data-i18n="docs.apiKeys.providers.groq.step2.warn">Copy the key immediately. Groq does not show it again after creation. It begins with <span class="code-inline">gsk_…</span></span>
             </div>
           </div>
         </div>
         <div class="step">
           <div class="step-num">3</div>
           <div class="step-body">
-            <h4>Paste into the extension</h4>
-            <p>Open the extension popup → <strong>Settings → AI Provider → Groq</strong>. Paste your key and save.</p>
+            <h4 data-i18n="docs.apiKeys.providers.groq.step3.title">Paste into the extension</h4>
+            <p data-i18n="docs.apiKeys.providers.groq.step3.text">Open the extension popup → <strong>Settings → AI Provider → Groq</strong>. Paste your key and save.</p>
           </div>
         </div>
       </div>
       <div class="callout info" style="margin-top:20px;">
         <span class="callout-icon">ℹ️</span>
-        <div>
+        <div data-i18n="docs.apiKeys.providers.groq.info">
           Groq free tier includes rate limits (e.g. 30 requests/minute for Llama 3). For typical autofill
           usage this is more than enough. If you hit limits, upgrading to a paid plan removes them.
         </div>
       </div>
       <table class="model-table" style="margin-top:16px;">
-        <thead><tr><th>Model</th><th>Speed</th><th>Free tier?</th></tr></thead>
+        <thead><tr><th data-i18n="docs.apiKeys.providers.groq.table.thModel">Model</th><th data-i18n="docs.apiKeys.providers.groq.table.thSpeed">Speed</th><th data-i18n="docs.apiKeys.providers.groq.table.thFree">Free tier?</th></tr></thead>
         <tbody>
-          <tr><td>Llama 3.1 8B <span class="badge-rec">Recommended</span></td><td>Extremely fast</td><td>Yes</td></tr>
-          <tr><td>Llama 3.1 70B</td><td>Fast</td><td>Yes (lower limit)</td></tr>
-          <tr><td>Mixtral 8x7B</td><td>Fast</td><td>Yes</td></tr>
+          <tr><td>Llama 3.1 8B <span class="badge-rec" data-i18n="docs.apiKeys.providers.groq.table.recommended">Recommended</span></td><td data-i18n="docs.apiKeys.providers.groq.table.extremelyFast">Extremely fast</td><td data-i18n="docs.apiKeys.providers.groq.table.yes">Yes</td></tr>
+          <tr><td>Llama 3.1 70B</td><td data-i18n="docs.apiKeys.providers.groq.table.fast">Fast</td><td data-i18n="docs.apiKeys.providers.groq.table.yesLower">Yes (lower limit)</td></tr>
+          <tr><td>Mixtral 8x7B</td><td data-i18n="docs.apiKeys.providers.groq.table.fast">Fast</td><td data-i18n="docs.apiKeys.providers.groq.table.yes">Yes</td></tr>
         </tbody>
       </table>
     </div>
@@ -434,65 +469,65 @@
   <div class="provider-section" id="openrouter">
     <div class="provider-header">
       <div class="provider-info">
-        <div class="provider-label">Provider 02</div>
-        <h2>🔀 OpenRouter</h2>
-        <div class="provider-meta">openrouter.ai</div>
+        <div class="provider-label" data-i18n="docs.apiKeys.providers.openrouter.label">Provider 02</div>
+        <h2 data-i18n="docs.apiKeys.providers.openrouter.title">🔀 OpenRouter</h2>
+        <div class="provider-meta" data-i18n="docs.apiKeys.providers.openrouter.url">openrouter.ai</div>
         <div class="provider-pills" style="margin-top:10px;">
-          <span class="pill green">Free models available</span>
-          <span class="pill blue">100+ models from any provider</span>
+          <span class="pill green" data-i18n="docs.apiKeys.providers.openrouter.pills.free">Free models available</span>
+          <span class="pill blue" data-i18n="docs.apiKeys.providers.openrouter.pills.models">100+ models from any provider</span>
         </div>
       </div>
-      <a class="cta-btn" href="https://openrouter.ai" target="_blank" rel="noopener">
+      <a class="cta-btn" href="https://openrouter.ai" target="_blank" rel="noopener" data-i18n="docs.apiKeys.providers.openrouter.cta">
         Create account ↗
       </a>
     </div>
     <div class="step-wrap">
-      <p>OpenRouter is a unified gateway to over 100 AI models — including GPT-4o, Claude, Llama, Mistral, and many more — through a single API key. Several models are permanently free with no credit card required.</p>
+      <p data-i18n="docs.apiKeys.providers.openrouter.intro">OpenRouter is a unified gateway to over 100 AI models — including GPT-4o, Claude, Llama, Mistral, and many more — through a single API key. Several models are permanently free with no credit card required.</p>
       <div class="steps">
         <div class="step">
           <div class="step-num">1</div>
           <div class="step-body">
-            <h4>Create an OpenRouter account</h4>
-            <p>Visit <strong>openrouter.ai</strong> and click <strong>Sign In</strong>. OpenRouter supports Google and GitHub sign-in, or you can use an email address.</p>
+            <h4 data-i18n="docs.apiKeys.providers.openrouter.step1.title">Create an OpenRouter account</h4>
+            <p data-i18n="docs.apiKeys.providers.openrouter.step1.text">Visit <strong>openrouter.ai</strong> and click <strong>Sign In</strong>. OpenRouter supports Google and GitHub sign-in, or you can use an email address.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">2</div>
           <div class="step-body">
-            <h4>Optional: add credits for paid models</h4>
-            <p>Go to <strong>Credits</strong> in your account and top up if you want to use paid models like GPT-4o or Claude. For free models only, no payment is needed.</p>
+            <h4 data-i18n="docs.apiKeys.providers.openrouter.step2.title">Optional: add credits for paid models</h4>
+            <p data-i18n="docs.apiKeys.providers.openrouter.step2.text">Go to <strong>Credits</strong> in your account and top up if you want to use paid models like GPT-4o or Claude. For free models only, no payment is needed.</p>
             <div class="callout tip">
               <span class="callout-icon">💡</span>
-              Filter by <strong>Free</strong> on the Models page to see the full list of zero-cost models available right now.
+              <span data-i18n="docs.apiKeys.providers.openrouter.step2.tip">Filter by <strong>Free</strong> on the Models page to see the full list of zero-cost models available right now.</span>
             </div>
           </div>
         </div>
         <div class="step">
           <div class="step-num">3</div>
           <div class="step-body">
-            <h4>Create an API key</h4>
-            <p>Go to <strong>Keys</strong> in the top navigation. Click <strong>Create Key</strong>, name it "Donbrico", and copy the key — it begins with <span class="code-inline">sk-or-…</span></p>
+            <h4 data-i18n="docs.apiKeys.providers.openrouter.step3.title">Create an API key</h4>
+            <p data-i18n="docs.apiKeys.providers.openrouter.step3.text">Go to <strong>Keys</strong> in the top navigation. Click <strong>Create Key</strong>, name it "Donbrico", and copy the key — it begins with <span class="code-inline">sk-or-…</span></p>
             <div class="callout warn">
               <span class="callout-icon">⚠️</span>
-              Copy the key now — it will be hidden after you close this dialog.
+              <span data-i18n="docs.apiKeys.providers.openrouter.step3.warn">Copy the key now — it will be hidden after you close this dialog.</span>
             </div>
           </div>
         </div>
         <div class="step">
           <div class="step-num">4</div>
           <div class="step-body">
-            <h4>Paste into the extension</h4>
-            <p>Open the extension popup → <strong>Settings → AI Provider → OpenRouter</strong>. Paste your key, choose your preferred model, and save.</p>
+            <h4 data-i18n="docs.apiKeys.providers.openrouter.step4.title">Paste into the extension</h4>
+            <p data-i18n="docs.apiKeys.providers.openrouter.step4.text">Open the extension popup → <strong>Settings → AI Provider → OpenRouter</strong>. Paste your key, choose your preferred model, and save.</p>
           </div>
         </div>
       </div>
       <table class="model-table" style="margin-top:24px;">
-        <thead><tr><th>Model</th><th>Notes</th><th>Cost</th></tr></thead>
+        <thead><tr><th data-i18n="docs.apiKeys.providers.openrouter.table.thModel">Model</th><th data-i18n="docs.apiKeys.providers.openrouter.table.thNotes">Notes</th><th data-i18n="docs.apiKeys.providers.openrouter.table.thCost">Cost</th></tr></thead>
         <tbody>
-          <tr><td>Llama 3.1 8B Instruct (free) <span class="badge-rec">Recommended</span></td><td>Fast, reliable free option</td><td>Free</td></tr>
-          <tr><td>Mistral 7B Instruct (free)</td><td>Good for structured outputs</td><td>Free</td></tr>
-          <tr><td>GPT-4o mini (via OpenRouter)</td><td>Premium quality</td><td>Pay-as-you-go</td></tr>
-          <tr><td>Claude 3.5 Haiku (via OpenRouter)</td><td>Premium quality</td><td>Pay-as-you-go</td></tr>
+          <tr><td>Llama 3.1 8B Instruct (free) <span class="badge-rec" data-i18n="docs.apiKeys.providers.groq.table.recommended">Recommended</span></td><td data-i18n="docs.apiKeys.providers.openrouter.table.llamaNote">Fast, reliable free option</td><td data-i18n="docs.apiKeys.providers.openrouter.table.free">Free</td></tr>
+          <tr><td>Mistral 7B Instruct (free)</td><td data-i18n="docs.apiKeys.providers.openrouter.table.mistralNote">Good for structured outputs</td><td data-i18n="docs.apiKeys.providers.openrouter.table.free">Free</td></tr>
+          <tr><td>GPT-4o mini (via OpenRouter)</td><td data-i18n="docs.apiKeys.providers.openrouter.table.gptNote">Premium quality</td><td data-i18n="docs.apiKeys.providers.openrouter.table.payAsYouGo">Pay-as-you-go</td></tr>
+          <tr><td>Claude 3.5 Haiku (via OpenRouter)</td><td data-i18n="docs.apiKeys.providers.openrouter.table.claudeNote">Premium quality</td><td data-i18n="docs.apiKeys.providers.openrouter.table.payAsYouGo">Pay-as-you-go</td></tr>
         </tbody>
       </table>
     </div>
@@ -505,63 +540,63 @@
   <div class="provider-section" id="anthropic">
     <div class="provider-header">
       <div class="provider-info">
-        <div class="provider-label">Provider 03</div>
-        <h2>🟣 Anthropic</h2>
-        <div class="provider-meta">console.anthropic.com</div>
+        <div class="provider-label" data-i18n="docs.apiKeys.providers.anthropic.label">Provider 03</div>
+        <h2 data-i18n="docs.apiKeys.providers.anthropic.title">🟣 Anthropic</h2>
+        <div class="provider-meta" data-i18n="docs.apiKeys.providers.anthropic.url">console.anthropic.com</div>
         <div class="provider-pills" style="margin-top:10px;">
-          <span class="pill amber">Pay-as-you-go</span>
-          <span class="pill blue">Claude 3.5 Haiku · Claude 3.5 Sonnet</span>
+          <span class="pill amber" data-i18n="docs.apiKeys.providers.anthropic.pills.payAsYouGo">Pay-as-you-go</span>
+          <span class="pill blue" data-i18n="docs.apiKeys.providers.anthropic.pills.models">Claude 3.5 Haiku · Claude 3.5 Sonnet</span>
         </div>
       </div>
-      <a class="cta-btn" href="https://console.anthropic.com" target="_blank" rel="noopener">
+      <a class="cta-btn" href="https://console.anthropic.com" target="_blank" rel="noopener" data-i18n="docs.apiKeys.providers.anthropic.cta">
         Create account ↗
       </a>
     </div>
     <div class="step-wrap">
-      <p>Anthropic's Claude models are known for following instructions precisely — ideal for generating well-structured cover letters and professional answers.</p>
+      <p data-i18n="docs.apiKeys.providers.anthropic.intro">Anthropic's Claude models are known for following instructions precisely — ideal for generating well-structured cover letters and professional answers.</p>
       <div class="steps">
         <div class="step">
           <div class="step-num">1</div>
           <div class="step-body">
-            <h4>Create an Anthropic account</h4>
-            <p>Visit <strong>console.anthropic.com</strong> and click <strong>Sign up</strong>. You can use Google or an email address.</p>
+            <h4 data-i18n="docs.apiKeys.providers.anthropic.step1.title">Create an Anthropic account</h4>
+            <p data-i18n="docs.apiKeys.providers.anthropic.step1.text">Visit <strong>console.anthropic.com</strong> and click <strong>Sign up</strong>. You can use Google or an email address.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">2</div>
           <div class="step-body">
-            <h4>Add billing information</h4>
-            <p>From the Console dashboard, go to <strong>Settings → Billing</strong>. Click <strong>Add credit card</strong> and complete the form. Anthropic is pay-as-you-go with no monthly fee.</p>
+            <h4 data-i18n="docs.apiKeys.providers.anthropic.step2.title">Add billing information</h4>
+            <p data-i18n="docs.apiKeys.providers.anthropic.step2.text">From the Console dashboard, go to <strong>Settings → Billing</strong>. Click <strong>Add credit card</strong> and complete the form. Anthropic is pay-as-you-go with no monthly fee.</p>
             <div class="callout tip">
               <span class="callout-icon">💡</span>
-              You can set a monthly spend limit under Billing → Usage limits to avoid any surprise charges.
+              <span data-i18n="docs.apiKeys.providers.anthropic.step2.tip">You can set a monthly spend limit under Billing → Usage limits to avoid any surprise charges.</span>
             </div>
           </div>
         </div>
         <div class="step">
           <div class="step-num">3</div>
           <div class="step-body">
-            <h4>Generate an API key</h4>
-            <p>In the left sidebar, click <strong>API Keys</strong>. Click <strong>Create Key</strong>, name it "Donbrico", and copy the key — it starts with <span class="code-inline">sk-ant-…</span></p>
+            <h4 data-i18n="docs.apiKeys.providers.anthropic.step3.title">Generate an API key</h4>
+            <p data-i18n="docs.apiKeys.providers.anthropic.step3.text">In the left sidebar, click <strong>API Keys</strong>. Click <strong>Create Key</strong>, name it "Donbrico", and copy the key — it starts with <span class="code-inline">sk-ant-…</span></p>
             <div class="callout warn">
               <span class="callout-icon">⚠️</span>
-              The key is shown only once at creation time. Copy it before closing the dialog.
+              <span data-i18n="docs.apiKeys.providers.anthropic.step3.warn">The key is shown only once at creation time. Copy it before closing the dialog.</span>
             </div>
           </div>
         </div>
         <div class="step">
           <div class="step-num">4</div>
           <div class="step-body">
-            <h4>Paste into the extension</h4>
-            <p>Open the extension popup → <strong>Settings → AI Provider → Anthropic</strong>. Paste your key and save.</p>
+            <h4 data-i18n="docs.apiKeys.providers.anthropic.step4.title">Paste into the extension</h4>
+            <p data-i18n="docs.apiKeys.providers.anthropic.step4.text">Open the extension popup → <strong>Settings → AI Provider → Anthropic</strong>. Paste your key and save.</p>
           </div>
         </div>
       </div>
       <table class="model-table" style="margin-top:24px;">
-        <thead><tr><th>Model</th><th>Speed</th><th>Cost (approx. per autofill)</th></tr></thead>
+        <thead><tr><th data-i18n="docs.apiKeys.providers.anthropic.table.thModel">Model</th><th data-i18n="docs.apiKeys.providers.anthropic.table.thSpeed">Speed</th><th data-i18n="docs.apiKeys.providers.anthropic.table.thCost">Cost (approx. per autofill)</th></tr></thead>
         <tbody>
-          <tr><td>Claude 3.5 Haiku <span class="badge-rec">Recommended</span></td><td>Very fast</td><td>~$0.001</td></tr>
-          <tr><td>Claude 3.5 Sonnet</td><td>Moderate</td><td>~$0.006</td></tr>
+          <tr><td data-i18n="docs.apiKeys.providers.anthropic.pills.models">Claude 3.5 Haiku · Claude 3.5 Sonnet</td><td data-i18n="docs.apiKeys.providers.anthropic.table.veryFast">Very fast</td><td data-i18n="docs.apiKeys.providers.anthropic.table.costHaiku">~$0.001</td></tr>
+          <tr><td>Claude 3.5 Sonnet</td><td data-i18n="docs.apiKeys.providers.anthropic.table.moderate">Moderate</td><td data-i18n="docs.apiKeys.providers.anthropic.table.costSonnet">~$0.006</td></tr>
         </tbody>
       </table>
     </div>
@@ -574,59 +609,59 @@
   <div class="provider-section" id="openai">
     <div class="provider-header">
       <div class="provider-info">
-        <div class="provider-label">Provider 04</div>
-        <h2>🟢 OpenAI</h2>
-        <div class="provider-meta">platform.openai.com</div>
+        <div class="provider-label" data-i18n="docs.apiKeys.providers.openai.label">Provider 04</div>
+        <h2 data-i18n="docs.apiKeys.providers.openai.title">🟢 OpenAI</h2>
+        <div class="provider-meta" data-i18n="docs.apiKeys.providers.openai.url">platform.openai.com</div>
         <div class="provider-pills" style="margin-top:10px;">
-          <span class="pill amber">Pay-as-you-go</span>
-          <span class="pill blue">GPT-4o · GPT-4o mini</span>
+          <span class="pill amber" data-i18n="docs.apiKeys.providers.openai.pills.payAsYouGo">Pay-as-you-go</span>
+          <span class="pill blue" data-i18n="docs.apiKeys.providers.openai.pills.models">GPT-4o · GPT-4o mini</span>
         </div>
       </div>
-      <a class="cta-btn" href="https://platform.openai.com/signup" target="_blank" rel="noopener">
+      <a class="cta-btn" href="https://platform.openai.com/signup" target="_blank" rel="noopener" data-i18n="docs.apiKeys.providers.openai.cta">
         Create account ↗
       </a>
     </div>
     <div class="step-wrap">
-      <p>OpenAI is the most widely used provider. GPT-4o mini is fast, accurate, and costs fractions of a cent per autofill.</p>
+      <p data-i18n="docs.apiKeys.providers.openai.intro">OpenAI is the most widely used provider. GPT-4o mini is fast, accurate, and costs fractions of a cent per autofill.</p>
       <div class="steps">
         <div class="step">
           <div class="step-num">1</div>
           <div class="step-body">
-            <h4>Create a free account</h4>
-            <p>Go to <strong>platform.openai.com</strong> and sign up. You can use Google, Microsoft, or email.</p>
+            <h4 data-i18n="docs.apiKeys.providers.openai.step1.title">Create a free account</h4>
+            <p data-i18n="docs.apiKeys.providers.openai.step1.text">Go to <strong>platform.openai.com</strong> and sign up. You can use Google, Microsoft, or email.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">2</div>
           <div class="step-body">
-            <h4>Add a payment method</h4>
-            <p>Navigate to <strong>Settings → Billing → Add payment method</strong>. OpenAI requires a credit card before generating API keys. You will only be charged for actual usage — new accounts receive $5 in free credits.</p>
+            <h4 data-i18n="docs.apiKeys.providers.openai.step2.title">Add a payment method</h4>
+            <p data-i18n="docs.apiKeys.providers.openai.step2.text">Navigate to <strong>Settings → Billing → Add payment method</strong>. OpenAI requires a credit card before generating API keys. You will only be charged for actual usage — new accounts receive $5 in free credits.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">3</div>
           <div class="step-body">
-            <h4>Create an API key</h4>
-            <p>Go to <strong>API Keys</strong> in the left sidebar (or visit <span class="code-inline">platform.openai.com/api-keys</span>). Click <strong>Create new secret key</strong>, give it a name like "Donbrico", and click <strong>Create secret key</strong>.</p>
+            <h4 data-i18n="docs.apiKeys.providers.openai.step3.title">Create an API key</h4>
+            <p data-i18n="docs.apiKeys.providers.openai.step3.text">Go to <strong>API Keys</strong> in the left sidebar (or visit <span class="code-inline">platform.openai.com/api-keys</span>). Click <strong>Create new secret key</strong>, give it a name like "Donbrico", and click <strong>Create secret key</strong>.</p>
             <div class="callout warn">
               <span class="callout-icon">⚠️</span>
-              Copy your key immediately — OpenAI only shows it once. Store it somewhere safe.
+              <span data-i18n="docs.apiKeys.providers.openai.step3.warn">Copy your key immediately — OpenAI only shows it once. Store it somewhere safe.</span>
             </div>
           </div>
         </div>
         <div class="step">
           <div class="step-num">4</div>
           <div class="step-body">
-            <h4>Paste the key into the extension</h4>
-            <p>Open the Donbrico Autofill AI popup → <strong>Settings → AI Provider → OpenAI</strong>. Paste your key (it starts with <span class="code-inline">sk-…</span>) and click Save.</p>
+            <h4 data-i18n="docs.apiKeys.providers.openai.step4.title">Paste the key into the extension</h4>
+            <p data-i18n="docs.apiKeys.providers.openai.step4.text">Open the Donbrico Autofill AI popup → <strong>Settings → AI Provider → OpenAI</strong>. Paste your key (it starts with <span class="code-inline">sk-…</span>) and click Save.</p>
           </div>
         </div>
       </div>
       <table class="model-table" style="margin-top:24px;">
-        <thead><tr><th>Model</th><th>Speed</th><th>Cost (approx. per autofill)</th></tr></thead>
+        <thead><tr><th data-i18n="docs.apiKeys.providers.openai.table.thModel">Model</th><th data-i18n="docs.apiKeys.providers.openai.table.thSpeed">Speed</th><th data-i18n="docs.apiKeys.providers.openai.table.thCost">Cost (approx. per autofill)</th></tr></thead>
         <tbody>
-          <tr><td>GPT-4o mini <span class="badge-rec">Recommended</span></td><td>Fast</td><td>~$0.001</td></tr>
-          <tr><td>GPT-4o</td><td>Moderate</td><td>~$0.005</td></tr>
+          <tr><td>GPT-4o mini <span class="badge-rec" data-i18n="docs.apiKeys.providers.groq.table.recommended">Recommended</span></td><td data-i18n="docs.apiKeys.providers.groq.table.fast">Fast</td><td data-i18n="docs.apiKeys.providers.openai.table.costMini">~$0.001</td></tr>
+          <tr><td>GPT-4o</td><td data-i18n="docs.apiKeys.providers.groq.table.fast">Moderate</td><td data-i18n="docs.apiKeys.providers.openai.table.costFull">~$0.005</td></tr>
         </tbody>
       </table>
     </div>
@@ -636,44 +671,44 @@
 
   <!-- ══ Comparison table ══ -->
   <div class="compare-section">
-    <h2>Quick comparison</h2>
+    <h2 data-i18n="docs.apiKeys.comparison.title">Quick comparison</h2>
     <table class="compare-table">
       <thead>
         <tr>
-          <th>Provider</th>
-          <th>Free tier?</th>
-          <th>Card required?</th>
-          <th>Best for</th>
-          <th>Key prefix</th>
+          <th data-i18n="docs.apiKeys.comparison.thProvider">Provider</th>
+          <th data-i18n="docs.apiKeys.comparison.thFreeTier">Free tier?</th>
+          <th data-i18n="docs.apiKeys.comparison.thCardRequired">Card required?</th>
+          <th data-i18n="docs.apiKeys.comparison.thBestFor">Best for</th>
+          <th data-i18n="docs.apiKeys.comparison.thKeyPrefix">Key prefix</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Groq</td>
-          <td>Yes ✓</td>
-          <td>No</td>
-          <td>Fastest responses, no cost</td>
+          <td data-i18n="docs.apiKeys.providers.groq.title">Groq</td>
+          <td data-i18n="docs.apiKeys.comparison.yes">Yes ✓</td>
+          <td data-i18n="docs.apiKeys.comparison.no">No</td>
+          <td data-i18n="docs.apiKeys.comparison.groqBest">Fastest responses, no cost</td>
           <td><span class="code-inline">gsk_…</span></td>
         </tr>
         <tr>
-          <td>OpenRouter</td>
-          <td>Yes ✓</td>
-          <td>No (free models)</td>
-          <td>Flexibility, free models</td>
+          <td data-i18n="docs.apiKeys.providers.openrouter.title">OpenRouter</td>
+          <td data-i18n="docs.apiKeys.comparison.yes">Yes ✓</td>
+          <td data-i18n="docs.apiKeys.comparison.yesFreeModels">No (free models)</td>
+          <td data-i18n="docs.apiKeys.comparison.openRouterBest">Flexibility, free models</td>
           <td><span class="code-inline">sk-or-…</span></td>
         </tr>
         <tr>
-          <td>Anthropic</td>
-          <td>No</td>
-          <td>Yes</td>
-          <td>Precise instruction-following</td>
+          <td data-i18n="docs.apiKeys.providers.anthropic.title">Anthropic</td>
+          <td data-i18n="docs.apiKeys.comparison.no">No</td>
+          <td data-i18n="docs.apiKeys.comparison.yes">Yes</td>
+          <td data-i18n="docs.apiKeys.comparison.anthropicBest">Precise instruction-following</td>
           <td><span class="code-inline">sk-ant-…</span></td>
         </tr>
         <tr>
-          <td>OpenAI</td>
-          <td>$5 credit on signup</td>
-          <td>Yes</td>
-          <td>Best overall quality</td>
+          <td data-i18n="docs.apiKeys.providers.openai.title">OpenAI</td>
+          <td data-i18n="docs.apiKeys.comparison.signupCredit">$5 credit on signup</td>
+          <td data-i18n="docs.apiKeys.comparison.yes">Yes</td>
+          <td data-i18n="docs.apiKeys.comparison.openaiBest">Best overall quality</td>
           <td><span class="code-inline">sk-…</span></td>
         </tr>
       </tbody>
@@ -682,20 +717,21 @@
 
   <!-- Gemini nano CTA -->
   <div style="background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--green);border-radius:10px;padding:24px 28px;">
-    <div style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;">Pro tip</div>
-    <p style="font-size:.92rem;color:var(--text);margin-bottom:8px;">
+    <div style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;" data-i18n="docs.apiKeys.proTip.label">Pro tip</div>
+    <p style="font-size:.92rem;color:var(--text);margin-bottom:8px;" data-i18n="docs.apiKeys.proTip.text">
       No API key needed at all — if your computer supports it, <strong>Gemini Nano</strong> runs directly in Chrome for free with complete privacy.
     </p>
-    <a href="/docs-gemini-nano.html" style="font-size:.85rem;color:var(--indigo);text-decoration:none;font-weight:500;">Check Gemini Nano compatibility →</a>
+    <a href="/docs-gemini-nano.html" style="font-size:.85rem;color:var(--indigo);text-decoration:none;font-weight:500;" data-i18n="docs.apiKeys.proTip.link">Check Gemini Nano compatibility →</a>
   </div>
 
 </div>
 
 <footer>
   <div style="max-width:860px;margin:0 auto;padding:0 24px;">
-    Donbrico Autofill AI &nbsp;·&nbsp; <a href="/docs-gemini-nano.html">Gemini Nano</a> &nbsp;·&nbsp; <a href="/docs-api-keys.html">API Keys</a> &nbsp;·&nbsp; <a href="/autofill-ai/">Extension</a> &nbsp;·&nbsp; <a href="/">Home</a>
+    <span data-i18n="app.name">Donbrico Studio</span> &nbsp;·&nbsp; <a href="/docs-gemini-nano.html" data-i18n="nav.geminiNano">Gemini Nano</a> &nbsp;·&nbsp; <a href="/docs-api-keys.html" data-i18n="docs.apiKeys.breadcrumb.title">API Keys</a> &nbsp;·&nbsp; <a href="/autofill-ai/" data-i18n="nav.autofillAi">Extension</a> &nbsp;·&nbsp; <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy</a> &nbsp;·&nbsp; <a href="/terms/" data-i18n="nav.termsOfService">Terms</a> &nbsp;·&nbsp; <a href="/" data-i18n="nav.home">Home</a>
   </div>
 </footer>
+
 
 <script>
   // Highlight the active provider tab on scroll

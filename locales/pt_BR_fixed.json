@@ -223,22 +223,10 @@
       "q4": {
         "question": "Preciso de uma chave API?",
         "answer": "Não. A versão gratuita usa Gemini Nano que não requer chave. Se seu dispositivo não suportar, você pode opcionalmente adicionar sua própria chave de OpenAI, Anthropic, Groq ou OpenRouter."
-      },
-      "q5": {
-        "question": "Quando estará disponível?",
-        "answer": "Atualmente em desenvolvimento final. Adicione-o gratuitamente quando for lançado na Chrome Web Store."
-      },
-      "q6": {
-        "question": "O que é a Licença Vitalícia?",
-        "answer": "Uma \"Licença Vitalícia\" concede acesso ao Donbrico Autofill AI e a todas as futuras atualizações de nível Pro durante o período de manutenção ativa do produto.<br><br>Esta licença está vinculada à vida útil do próprio produto — não à vida do comprador ou a qualquer prazo fixo. O Donbrico reserva-se o direito de modificar, limitar ou descontinuar o produto a qualquer momento, incluindo em resposta a mudanças nas políticas da Chrome Web Store, APIs de extensões do Chrome ou disponibilidade de tecnologias de IA subjacentes (incluindo, mas não se limitando ao Google Gemini Nano ou provedores de IA configurados externamente).<br><br>Nesses eventos, nenhum reembolso ou compensação será devido. O preço para adotantes iniciais reflete o estágio atual de desenvolvimento do produto, e os compradores reconhecem os riscos inerentes de produtos de software dependentes de plataformas de terceiros em evolução."
       }
     },
     "footer": {
       "links": "Política de Privacidade | Suporte"
-    },
-    "licensing": {
-      "sectionTitle": "Licenciamento e Acesso Vitalício",
-      "paragraph": "O plano 'Vitalício' refere-se à vida útil do produto Donbrico Autofill AI. O acesso está sujeito à compatibilidade contínua com o Chrome e à disponibilidade das tecnologias de IA subjacentes."
     }
   },
   "nullCarrier": {
@@ -429,10 +417,6 @@
     "website": {
       "sectionTitle": "Este Site (donbrico.net)",
       "paragraph": "Sem análises, sem cookies, sem scripts de rastreamento. O site é um site HTML estático hospedado na Cloudflare Pages. Sem formulários, sem contas de usuário, sem coleta de dados de qualquer tipo."
-    },
-    "licensing": {
-      "sectionTitle": "Licenciamento e Acesso Vitalício",
-      "paragraph": "O plano 'Vitalício' refere-se à vida útil do produto Donbrico Autofill AI. O acesso está sujeito à compatibilidade contínua com o Chrome e à disponibilidade das tecnologias de IA subjacentes."
     },
     "contact": {
       "sectionTitle": "Contato",
@@ -868,4 +852,3 @@
     }
   }
 }
-        

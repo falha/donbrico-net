@@ -24,15 +24,21 @@
                  <span></span>
                  <span></span>
              </label>
-              <ul class="nav-links">
-                  <li><a href="./" class="active" data-i18n="nav.home">Home</a></li>
-                  <li><a href="./autofill-ai/" data-i18n="nav.autofillAi">Autofill AI</a></li>
-                  <li><a href="./ai-reply-assistant/" data-i18n="nav.aiReplyAssistant">AI Reply Assistant</a></li>
-                  <li><a href="./workdesk/" data-i18n="nav.workDesk">WorkDesk</a></li>
-                  <li><a href="./null-carrier/" data-i18n="nav.nullCarrier">Null Carrier</a></li>
-                  <li><a href="./privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a></li>
-                  <li><a href="./support/" data-i18n="nav.support">Support</a></li>
-              </ul>
+               <ul class="nav-links">
+                   <li><a href="./" class="active" data-i18n="nav.home">Home</a></li>
+                   <li class="dropdown">
+                       <a href="#" data-i18n="nav.product">Product</a>
+                       <div class="dropdown-content">
+                           <a href="./autofill-ai/" data-i18n="nav.autofillAi">Autofill AI</a>
+                           <a href="./ai-reply-assistant/" data-i18n="nav.aiReplyAssistant">AI Reply Assistant</a>
+                           <a href="./workdesk/" data-i18n="nav.workDesk">WorkDesk</a>
+                           <a href="./null-carrier/" data-i18n="nav.nullCarrier">Null Carrier</a>
+                       </div>
+                   </li>
+                   <li><a href="./privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a></li>
+                   <li><a href="./terms/" data-i18n="nav.termsOfService">Terms of Service</a></li>
+                   <li><a href="./support/" data-i18n="nav.support">Support</a></li>
+               </ul>
          </div>
      </nav>
 
@@ -91,7 +97,7 @@
      <footer class="footer">
          <div class="container">
              <p data-i18n="app.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
-             <p><a href="./privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a> | <a href="./support/" data-i18n="nav.support">Support</a></p>
+             <p><a href="./privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a> | <a href="./terms/" data-i18n="nav.termsOfService">Terms of Service</a> | <a href="./support/" data-i18n="nav.support">Support</a></p>
              <p data-i18n="app.builtBy">Built by a solo developer.</p>
          </div>
      </footer>

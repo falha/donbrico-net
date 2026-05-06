@@ -25,7 +25,10 @@
     "privacyPolicy": "隱私政策",
     "support": "支援",
     "aiReplyAssistant": "AI Reply Assistant",
-    "workDesk": "辦公桌"
+    "workDesk": "辦公桌",
+    "product": "產品",
+    "termsOfService": "服務條款",
+    "geminiNano": "Gemini Nano"
   },
   "home": {
     "page": {
@@ -223,22 +226,10 @@
       "q4": {
         "question": "我需要 API 金鑰嗎？",
         "answer": "不需要。免費版本使用 Gemini Nano，不需要金鑰。如果你的裝置不支援，你可以選擇新增你自己的來自 OpenAI、Anthropic、Groq 或 OpenRouter 的金鑰。"
-      },
-      "q5": {
-        "question": "什麼時候可以使用？",
-        "answer": "目前處於最終開發階段。在 Chrome 線上應用程式商店發佈時即可免費添加。"
-      },
-      "q6": {
-        "question": "什麼是終身許可？",
-        "answer": "「終身許可」授予在產品的主動維護期間訪問 Donbrico Autofill AI 及其所有未來 Pro 級更新的權限。<br><br>此許可與產品本身的生命週期相關聯，而非購買者的壽命或任何固定期限。Donbrico 保留隨時修改、限制或終止產品的權利，包括為了響應 Chrome 線上應用程式商店政策的變化、Chrome 瀏覽器擴充功能 API 的更改或底層 AI 技術（包括但不限於 Google Gemini Nano 或外部配置的 AI 提供商）的可用性而做出的調整。<br><br>在這種情況下，不予退款或補償。早期採用者價格反映了產品目前的開發階段，購買者承認依賴於不斷演進的第三方平台的軟體產品所固有的風險。"
       }
     },
     "footer": {
       "links": "隱私政策 | 支援"
-    },
-    "licensing": {
-      "sectionTitle": "授權與終身存取",
-      "paragraph": "「終身」授權指的是 Donbrico Autofill AI 產品的生命週期。它包括產品維護期間的所有未來 Pro 更新。存取權限取決於與 Chrome 的持續相容性以及底層 AI 技術的可用性。"
     }
   },
   "nullCarrier": {
@@ -302,9 +293,9 @@
   "support": {
     "page": {
       "title": "支援 — Donbrico",
-      "description": "獲得對 Donbrico Autofill AI、AI Reply Assistant 和 Null Carrier 的支援。請透過 support@donbrico.net 與我們聯繫。",
+      "description": "获得对 Donbrico Autofill AI、AI Reply Assistant 和 Null Carrier 的支持。請透過 support@donbrico.net 與我們聯繫。",
       "ogTitle": "支援 — Donbrico",
-      "ogDescription": "獲得對 Donbrico Autofill AI、AI Reply Assistant 和 Null Carrier 的支援。請透過 support@donbrico.net 與我們聯繫。"
+      "ogDescription": "获得对 Donbrico Autofill AI、AI Reply Assistant 和 Null Carrier 的支持。請透過 support@donbrico.net 與我們聯繫。"
     },
     "sectionTitle": "支援",
     "subtitle": "我們是獨立營運。我們閱讀每條訊息。",
@@ -446,10 +437,6 @@
       "sectionTitle": "這個網站（donbrico.net）",
       "paragraph": "無分析、無 Cookie、無追蹤腳本。此網站是託管在 Cloudflare Pages 上的靜態 HTML 網站。無表單、無使用者帳戶、無任何形式的資料收集。"
     },
-    "licensing": {
-      "sectionTitle": "授權與終身存取",
-      "paragraph": "「終身」授權指的是 Donbrico Autofill AI 產品的生命週期。它包括產品維護期間的所有未來 Pro 更新。存取權限取決於與 Chrome 的持續相容性以及底層 AI 技術的可用性。"
-    },
     "contact": {
       "sectionTitle": "聯繫",
       "paragraph": "關於隱私問題，請聯繫：support@donbrico.net"
@@ -568,7 +555,7 @@
       "sectionTitle": "它是如何運作的",
       "step1": {
         "title": "1.保存您的回复",
-        "description": "建立個人回覆範本庫。按類別組織它們，新增可搜尋標籤，使用 {{variables}} 進行個人化（專業版）。"
+        "description": "建立個人回覆範本庫。按类别组织它们，添加可搜索标签，使用 {{variables}} 进行个性化（专业版）。"
       },
       "step2": {
         "title": "2. 用人工智慧生成",
@@ -675,7 +662,7 @@
       "sectionTitle": "AI 設定 — 選擇您的電源",
       "subtitle": "這兩個選項都可以免費啟動。 Gemini Nano 在本地運行； BYOK 為您提供靈活性和更高的限制。",
       "geminiNano": {
-        "title": "Gemini Nano（內建於 Chrome 中）",
+        "title": "Gemini Nano（內建 Chrome）",
         "description": "無需 API 金鑰。 AI 透過 Chrome 內建的 Gemini Nano 模型完全在您的裝置上運作。 100% 私密，零數據離開您的瀏覽器。需要 Chrome 127+ 和足夠的 RAM。",
         "button": "查看設定指南 →"
       },
@@ -693,7 +680,7 @@
       },
       "q2": {
         "question": "我的資料是私人的嗎？",
-        "answer": "絕對地。您儲存的回覆儲存在本機 Chrome 儲存空間。使用 Gemini Nano 時，所有內容都保留在您的裝置上。如果您使用第三方 API 金鑰，資料將直接發送到該提供者 — Donbrico 永遠看不到它。"
+        "answer": "絕對地。您儲存的回覆儲存在本機 Chrome 的儲存空間。使用 Gemini Nano 時，所有內容都保留在您的裝置上。如果您使用第三方 API 金鑰，資料將直接發送到該提供者 — Donbrico 永遠看不到它。"
       },
       "q3": {
         "question": "免費版和專業版有什麼差別？",
@@ -811,9 +798,9 @@
       },
       "proYearly": {
         "title": "專業版 — 每年",
-        "price": "$29.99/年",
-        "subtitle": "~$2.50/月",
-        "savings": "比每月節省 50%",
+        "price": "$39.99/年",
+        "subtitle": "~$3.33/月",
+        "savings": "與每月相比節省 33%",
         "features": {
           "f1": "所有每月專業版功能",
           "f2": "為專業人士提供最佳價值"
@@ -855,7 +842,7 @@
       "sectionTitle": "AI 設定 — 選擇您的電源",
       "subtitle": "這兩個選項都可以免費啟動。 Gemini Nano 在本地運行； BYOK 為您提供靈活性和更高的限制。",
       "geminiNano": {
-        "title": "Gemini Nano（內建於 Chrome 中）",
+        "title": "Gemini Nano（內建 Chrome）",
         "description": "無需 API 金鑰。 AI 透過 Chrome 內建的 Gemini Nano 模型完全在您的裝置上運作。 100% 私密，零數據離開您的瀏覽器。需要 Chrome 127+ 和足夠的 RAM。",
         "button": "查看設定指南 →"
       },
@@ -894,6 +881,287 @@
         "lookupFailed": "啟動查找失敗 ({{error}})。您仍然可以在下面手動貼上您的金鑰。",
         "genericFailed": "激活失敗。嘗試將密鑰貼上到擴展高級選項卡中。",
         "pending": "付款已完成，但在此連結中找不到許可證密鑰。使用收據電子郵件中的金鑰，或開啟擴充進階標籤。"
+      }
+    }
+  },
+  "activate": {
+    "page": {
+      "title": "啟動許可證 — Donbrico"
+    },
+    "loading": {
+      "title": "啟動許可證",
+      "subtitle": "正在連接到 Donbrico 擴充功能..."
+    },
+    "success": {
+      "title": "親激活了！",
+      "subtitle": "您可以關閉此選項卡並返回 Donbrico。"
+    },
+    "manual": {
+      "title": "激活 Donbrico Pro",
+      "subtitle": "複製下面的金鑰並將其貼上到擴充功能中：開啟 Donbrico → 選項 → Premium → 貼上 → 啟動。",
+      "copy": "複製",
+      "copied": "✓ 已複製",
+      "steps": {
+        "title": "步驟",
+        "s1": "點擊工具列中的 Donbrico 擴充圖標",
+        "s2": "開啟<strong>選項</strong>（或右鍵點選圖示→選項）",
+        "s3": "前往<strong>高級</strong>標籤",
+        "s4": "貼上您的許可證金鑰並點擊<strong>啟動</strong>"
+      },
+      "noKey": "（無需輸入 URL — 請檢查您的購買電子郵件）",
+      "notReachable": "無法從此頁面存取該擴充功能（安裝 Donbrico，或使用受支援的 Chromium 瀏覽器）。下面手動啟動。",
+      "lookupFailed": "啟動查找失敗 ({{error}})。您仍然可以在下面手動貼上您的金鑰。",
+      "genericFailed": "激活失敗。嘗試將密鑰貼上到擴展高級選項卡中。",
+      "pending": "付款已完成，但在此連結中找不到許可證密鑰。使用收據電子郵件中的金鑰，或開啟擴充進階標籤。"
+    }
+  },
+  "terms": {
+    "page": {
+      "title": "服務條款 — Donbrico Studio",
+      "description": "donbrico.net、我們的瀏覽器擴充功能和我們的遊戲的服務條款。",
+      "ogTitle": "服務條款 — Donbrico Studio",
+      "ogDescription": "donbrico.net、我們的瀏覽器擴充功能和我們的遊戲的服務條款。"
+    },
+    "hero": {
+      "title": "服務條款",
+      "subtitle": "最後更新時間：2026 年 5 月"
+    },
+    "translationDisclaimer": {
+      "title": "翻譯免責聲明",
+      "content": "為了您的方便，本文檔已翻譯成多種語言。 **英文版本**是這些條款的唯一具有法律約束力的版本。如果英文版本與任何翻譯之間存在任何差異或衝突，則以英文版本為準。"
+    },
+    "sections": {
+      "intro": {
+        "title": "一、簡介",
+        "content": "歡迎來到 Donbrico Studio（「我們」、「我們的」或「我們」）。透過造訪我們的網站 (donbrico.net)、安裝我們的瀏覽器擴充功能（Donbrico Autofill AI、Donbrico AI Reply Assistant、Donbrico WorkDesk）或玩我們的遊戲（Null Carrier），即表示您同意受本服務條款的約束。如果您不同意這些條款，請不要使用我們的服務。"
+      },
+      "services": {
+        "title": "2. 服務說明",
+        "content": "Donbrico Studio 提供生產力工具和數位娛樂，包括：<br><br>• **網站：** donbrico.net（資訊和支援）。 <br>• **擴充：** Chrome 線上應用程式商店和 Edge 外掛程式上提供的基於瀏覽器的生產力工具。 <br>• **遊戲：** Steam 等平台（例如 Null Carrier）上提供的數位遊戲。"
+      },
+      "use": {
+        "title": "3. 服務的使用",
+        "content": "您同意僅將我們的服務用於合法目的。禁止您：<br>• 嘗試反編譯、逆向工程或繞過我們軟體的安全功能。 <br>• 使用我們的人工智慧工具產生或傳播有害、非法或欺騙性內容。 <br>• 未經授權分發我們的軟體。"
+      },
+      "payments": {
+        "title": "4. 付款和許可",
+        "content": "我們的部分產品透過訂閱或一次性付款提供專業版功能。許可證授予您供個人或專業用途，且不可轉讓。 「終身」許可證是指特定產品的生命週期，如我們的產品特定免責聲明所述。付款透過第三方提供者（例如 Dodo Payments、Steam）進行處理。"
+      },
+      "ai": {
+        "title": "5. 人工智慧功能",
+        "content": "我們的擴充功能使用人工智慧（包括 Google Gemini Nano 和第三方提供者）。我們不保證人工智慧生成內容的準確性、完整性或實用性。您有責任在使用前檢查和驗證所有 AI 產生的輸出。"
+      },
+      "disclaimer": {
+        "title": "6. 免責聲明",
+        "content": "Our services are provided \"as is\" and \"as available\" without warranties of any kind, either express or implied. We do not warrant that the services will be uninterrupted or error-free."
+      },
+      "liability": {
+        "title": "7. 責任限制",
+        "content": "在法律允許的最大範圍內，Donbrico Studio 不對因使用或無法使用我們的服務而造成的任何間接、偶然、特殊或後果性損害承擔責任。"
+      },
+      "changes": {
+        "title": "8. 條款變更",
+        "content": "我們保留隨時修改這些條款的權利。我們將透過更新此頁面上的「上次更新」日期來通知使用者重大變更。"
+      },
+      "contact": {
+        "title": "九、聯絡方式",
+        "content": "如果您對這些條款有任何疑問，請透過 support@donbrico.net 與我們聯絡。"
+      }
+    }
+  },
+  "docs": {
+    "apiKeys": {
+      "page": {
+        "title": "API 金鑰指南 — Donbrico Autofill AI"
+      },
+      "breadcrumb": {
+        "home": "Home",
+        "docs": "Docs",
+        "title": "API 金鑰指南"
+      },
+      "header": {
+        "badge": "設定指南",
+        "title": "獲取您的 <em>API 金鑰</em>",
+        "intro": "Donbrico Autofill AI works best when you connect your own AI provider. Here is how to get your keys from the most popular services.",
+        "speedNote": {
+          "title": "Blazing fast.",
+          "text": "Using your own API key is typically 5-10x faster than the built-in free models and has much higher limits."
+        }
+      },
+      "providers": {
+        "groq": {
+          "title": "Groq",
+          "tag": "Fast · Free tier",
+          "label": "Provider 01",
+          "url": "console.groq.com",
+          "pills": {
+            "free": "Free tier available",
+            "models": "Llama 3 · Mixtral · Gemma"
+          },
+          "cta": "Create account ↗",
+          "intro": "Groq runs open-source models on custom silicon (LPUs) — the result is remarkably fast inference. The free tier is generous enough for everyday autofill use at no cost.",
+          "step1": {
+            "title": "Sign up for a free Groq account",
+            "text": "Go to <strong>console.groq.com</strong> and click <strong>Sign up</strong>. Groq supports Google, GitHub, and email signup. No credit card is required for the free tier."
+          },
+          "step2": {
+            "title": "Create an API key",
+            "text": "In the left sidebar, click <strong>API Keys</strong>. Click <strong>Create API Key</strong>, enter a name like \"Donbrico\", and click <strong>Submit</strong>.",
+            "warn": "Copy the key immediately. Groq does not show it again after creation. It begins with <span class=\"code-inline\">gsk_…</span>"
+          },
+          "step3": {
+            "title": "Paste into the extension",
+            "text": "Open the extension popup → <strong>Settings → AI Provider → Groq</strong>. Paste your key and save."
+          },
+          "info": "Groq free tier includes rate limits (e.g. 30 requests/minute for Llama 3). For typical autofill usage this is more than enough. If you hit limits, upgrading to a paid plan removes them.",
+          "table": {
+            "thModel": "Model",
+            "thSpeed": "Speed",
+            "thFree": "Free tier?",
+            "recommended": "Recommended",
+            "extremelyFast": "Extremely fast",
+            "fast": "Fast",
+            "yes": "Yes",
+            "yesLower": "Yes (lower limit)"
+          }
+        },
+        "openrouter": {
+          "title": "OpenRouter",
+          "tag": "100+ models",
+          "label": "Provider 02",
+          "url": "openrouter.ai",
+          "pills": {
+            "free": "Free models available",
+            "models": "100+ models from any provider"
+          },
+          "cta": "Create account ↗",
+          "intro": "OpenRouter is a unified gateway to over 100 AI models — including GPT-4o, Claude, Llama, Mistral, and many more — through a single API key. Several models are permanently free with no credit card required.",
+          "step1": {
+            "title": "Create an OpenRouter account",
+            "text": "Visit <strong>openrouter.ai</strong> and click <strong>Sign In</strong>. OpenRouter supports Google and GitHub sign-in, or you can use an email address."
+          },
+          "step2": {
+            "title": "Optional: add credits for paid models",
+            "text": "Go to <strong>Credits</strong> in your account and top up if you want to use paid models like GPT-4o or Claude. For free models only, no payment is needed.",
+            "tip": "Filter by <strong>Free</strong> on the Models page to see the full list of zero-cost models available right now."
+          },
+          "step3": {
+            "title": "Create an API key",
+            "text": "Go to <strong>Keys</strong> in the top navigation. Click <strong>Create Key</strong>, name it \"Donbrico\", and copy the key — it begins with <span class=\"code-inline\">sk-or-…</span>",
+            "warn": "Copy the key now — it will be hidden after you close this dialog."
+          },
+          "step4": {
+            "title": "Paste into the extension",
+            "text": "Open the extension popup → <strong>Settings → AI Provider → OpenRouter</strong>. Paste your key, choose your preferred model, and save."
+          },
+          "table": {
+            "thModel": "Model",
+            "thNotes": "Notes",
+            "thCost": "Cost",
+            "llamaNote": "Fast, reliable free option",
+            "mistralNote": "Good for structured outputs",
+            "gptNote": "Premium quality",
+            "claudeNote": "Premium quality",
+            "free": "Free",
+            "payAsYouGo": "Pay-as-you-go"
+          }
+        },
+        "anthropic": {
+          "title": "Anthropic",
+          "tag": "Claude",
+          "label": "Provider 03",
+          "url": "console.anthropic.com",
+          "pills": {
+            "payAsYouGo": "Pay-as-you-go",
+            "models": "Claude 3.5 Haiku · Claude 3.5 Sonnet"
+          },
+          "cta": "Create account ↗",
+          "intro": "Anthropic's Claude models are known for following instructions precisely — ideal for generating well-structured cover letters and professional answers.",
+          "step1": {
+            "title": "Create an Anthropic account",
+            "text": "Visit <strong>console.anthropic.com</strong> and click <strong>Sign up</strong>. You can use Google or an email address."
+          },
+          "step2": {
+            "title": "Add billing information",
+            "text": "From the Console dashboard, go to <strong>Settings → Billing</strong>. Click <strong>Add credit card</strong> and complete the form. Anthropic is pay-as-you-go with no monthly fee.",
+            "tip": "You can set a monthly spend limit under Billing → Usage limits to avoid any surprise charges."
+          },
+          "step3": {
+            "title": "Generate an API key",
+            "text": "In the left sidebar, click <strong>API Keys</strong>. Click <strong>Create Key</strong>, name it \"Donbrico\", and copy the key — it starts with <span class=\"code-inline\">sk-ant-…</span>",
+            "warn": "The key is shown only once at creation time. Copy it before closing the dialog."
+          },
+          "step4": {
+            "title": "Paste into the extension",
+            "text": "Open the extension popup → <strong>Settings → AI Provider → Anthropic</strong>. Paste your key and save."
+          },
+          "table": {
+            "thModel": "Model",
+            "thSpeed": "Speed",
+            "thCost": "Cost (approx. per autofill)",
+            "veryFast": "Very fast",
+            "moderate": "Moderate",
+            "costHaiku": "~$0.001",
+            "costSonnet": "~$0.006"
+          }
+        },
+        "openai": {
+          "title": "OpenAI",
+          "tag": "GPT-4o",
+          "label": "Provider 04",
+          "url": "platform.openai.com",
+          "pills": {
+            "payAsYouGo": "Pay-as-you-go",
+            "models": "GPT-4o · GPT-4o mini"
+          },
+          "cta": "Create account ↗",
+          "intro": "OpenAI is the most widely used provider. GPT-4o mini is fast, accurate, and costs fractions of a cent per autofill.",
+          "step1": {
+            "title": "Create a free account",
+            "text": "Go to <strong>platform.openai.com</strong> and sign up. You can use Google, Microsoft, or email."
+          },
+          "step2": {
+            "title": "Add a payment method",
+            "text": "Navigate to <strong>Settings → Billing → Add payment method</strong>. OpenAI requires a credit card before generating API keys. You will only be charged for actual usage — new accounts receive $5 in free credits."
+          },
+          "step3": {
+            "title": "Create an API key",
+            "text": "Go to <strong>API Keys</strong> in the left sidebar (or visit <span class=\"code-inline\">platform.openai.com/api-keys</span>). Click <strong>Create new secret key</strong>, give it a name like \"Donbrico\", and click <strong>Create secret key</strong>.",
+            "warn": "Copy your key immediately — OpenAI only shows it once. Store it somewhere safe."
+          },
+          "step4": {
+            "title": "Paste the key into the extension",
+            "text": "Open the Donbrico Autofill AI popup → <strong>Settings → AI Provider → OpenAI</strong>. Paste your key (it starts with <span class=\"code-inline\">sk-…</span>) and click Save."
+          },
+          "table": {
+            "thModel": "Model",
+            "thSpeed": "Speed",
+            "thCost": "Cost (approx. per autofill)",
+            "costMini": "~$0.001",
+            "costFull": "~$0.005"
+          }
+        }
+      },
+      "comparison": {
+        "title": "Quick comparison",
+        "thProvider": "Provider",
+        "thFreeTier": "Free tier?",
+        "thCardRequired": "Card required?",
+        "thBestFor": "Best for",
+        "thKeyPrefix": "Key prefix",
+        "groqBest": "Fastest responses, no cost",
+        "openRouterBest": "Flexibility, free models",
+        "anthropicBest": "Precise instruction-following",
+        "openaiBest": "Best overall quality",
+        "signupCredit": "$5 credit on signup",
+        "no": "No",
+        "yes": "Yes",
+        "yesFreeModels": "No (free models)"
+      },
+      "proTip": {
+        "label": "Pro tip",
+        "text": "No API key needed at all — if your computer supports it, <strong>Gemini Nano</strong> runs directly in Chrome for free with complete privacy.",
+        "link": "Check Gemini Nano compatibility →"
       }
     }
   }

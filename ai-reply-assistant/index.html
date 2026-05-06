@@ -25,15 +25,21 @@
                  <span></span>
                  <span></span>
              </label>
-             <ul class="nav-links">
-                 <li><a href="../" data-i18n="nav.home">Home</a></li>
-                 <li><a href="../autofill-ai/" data-i18n="nav.autofillAi">Autofill AI</a></li>
-                 <li><a href="./" class="active" data-i18n="nav.aiReplyAssistant">AI Reply Assistant</a></li>
-                 <li><a href="../workdesk/" data-i18n="nav.workDesk">WorkDesk</a></li>
-                 <li><a href="../null-carrier/" data-i18n="nav.nullCarrier">Null Carrier</a></li>
-                 <li><a href="../privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a></li>
-                 <li><a href="../support/" data-i18n="nav.support">Support</a></li>
-             </ul>
+              <ul class="nav-links">
+                  <li><a href="../" data-i18n="nav.home">Home</a></li>
+                  <li class="dropdown">
+                      <a href="#" class="active" data-i18n="nav.product">Product</a>
+                      <div class="dropdown-content">
+                          <a href="../autofill-ai/" data-i18n="nav.autofillAi">Autofill AI</a>
+                          <a href="./" data-i18n="nav.aiReplyAssistant">AI Reply Assistant</a>
+                          <a href="../workdesk/" data-i18n="nav.workDesk">WorkDesk</a>
+                          <a href="../null-carrier/" data-i18n="nav.nullCarrier">Null Carrier</a>
+                      </div>
+                  </li>
+                  <li><a href="../privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a></li>
+                  <li><a href="../terms/" data-i18n="nav.termsOfService">Terms of Service</a></li>
+                  <li><a href="../support/" data-i18n="nav.support">Support</a></li>
+              </ul>
          </div>
      </nav>
 
@@ -43,7 +49,7 @@
              <h1 data-i18n="aiReplyAssistant.hero.title">Your personal reply library,<br>supercharged with AI.</h1>
              <p class="subtitle" data-i18n="aiReplyAssistant.hero.subtitle">Save unlimited reply templates, generate smart responses with AI, and insert them anywhere — Gmail, LinkedIn, Twitter, support tools, or any website with a text field.</p>
              <div class="buttons">
-                 <a href="#" class="btn" style="opacity: 0.5; cursor: not-allowed;" title="Coming Soon" data-i18n="aiReplyAssistant.hero.buttonPrimary">Add to Chrome — Free</a>
+                 <a href="https://chromewebstore.google.com/detail/hkkbbcnmbhkcjcmmifbclgmbkipillih?utm_source=item-share-cb" class="btn" data-i18n="aiReplyAssistant.hero.buttonPrimary">Add to Chrome — Free</a>
                  <a href="#how-it-works" class="btn-outline" data-i18n="aiReplyAssistant.hero.buttonSecondary">See how it works ↓</a>
              </div>
              <p class="text-muted" style="margin-top: var(--spacing-md);" data-i18n="aiReplyAssistant.hero.disclaimer">🔒 Your data never leaves your browser · On-device Gemini Nano or your own API key · No account required</p>
@@ -129,7 +135,7 @@
                          <li data-i18n="aiReplyAssistant.pricing.free.features.f5">Single BYOK provider</li>
                          <li data-i18n="aiReplyAssistant.pricing.free.features.f6">Basic site adapters</li>
                      </ul>
-                     <a href="#" class="btn" style="opacity: 0.5; cursor: not-allowed;" title="Coming Soon" data-i18n="aiReplyAssistant.pricing.free.button">Add to Chrome</a>
+                     <a href="https://chromewebstore.google.com/detail/hkkbbcnmbhkcjcmmifbclgmbkipillih?utm_source=item-share-cb" class="btn" data-i18n="aiReplyAssistant.pricing.free.button">Add to Chrome</a>
                  </div>
                  <div class="card" style="border: 2px solid var(--accent);">
                      <h3 data-i18n="aiReplyAssistant.pricing.proMonthly.title">Pro — Monthly</h3>
@@ -240,7 +246,7 @@
      <footer class="footer">
          <div class="container">
              <p data-i18n="app.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
-             <p><a href="../privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a> | <a href="../support/" data-i18n="nav.support">Support</a></p>
+             <p><a href="../privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a> | <a href="../terms/" data-i18n="nav.termsOfService">Terms of Service</a> | <a href="../support/" data-i18n="nav.support">Support</a></p>
          </div>
      </footer>
      <script src="../js/i18n.js" defer></script>

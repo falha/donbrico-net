@@ -104,6 +104,35 @@
       .nav input[type="checkbox"]:checked ~ .hamburger span:nth-child(2) { opacity: 0; }
       .nav input[type="checkbox"]:checked ~ .hamburger span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
     }
+    
+    /* Dropdown */
+    .nav .dropdown { position: relative; }
+    .nav .dropdown-content {
+      display: none; position: absolute; background: var(--bg);
+      min-width: 220px; border: 1px solid var(--border); border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5); z-index: 1001;
+      top: 100%; left: 0; padding: 10px 0; margin-top: 8px;
+    }
+    .nav .dropdown:hover .dropdown-content { display: block; }
+    .nav .dropdown-content::before {
+      content: ""; position: absolute; top: -10px; left: 0; right: 0; height: 10px;
+    }
+    .nav .dropdown-content a {
+      display: block; padding: 8px 20px !important; border-radius: 0 !important;
+      background: transparent !important; color: var(--text) !important;
+      border-bottom: 1px solid var(--border); text-align: left;
+    }
+    .nav .dropdown-content a:last-child { border-bottom: none; }
+    .nav .dropdown-content a:hover { background: var(--indigo) !important; color: #fff !important; }
+
+    @media (max-width: 768px) {
+      .nav .dropdown-content {
+        position: static; display: block; box-shadow: none; border: none;
+        padding-left: 20px; margin-top: 0; background: rgba(255,255,255,0.03);
+      }
+      .nav .dropdown-content a { border-bottom: none; padding: 6px 12px !important; }
+      .nav .dropdown > a::after { content: ' ▾'; }
+    }
 
     .breadcrumb {
       display: flex; align-items: center; gap: 8px;
@@ -277,11 +306,17 @@
         </label>
         <ul class="nav-links">
             <li><a href="./" data-i18n="nav.home">Home</a></li>
-            <li><a href="./autofill-ai/" class="active" data-i18n="nav.autofillAi">Autofill AI</a></li>
-            <li><a href="./ai-reply-assistant/" data-i18n="nav.aiReplyAssistant">AI Reply Assistant</a></li>
-            <li><a href="./workdesk/" data-i18n="nav.workDesk">WorkDesk</a></li>
-            <li><a href="./null-carrier/" data-i18n="nav.nullCarrier">Null Carrier</a></li>
+            <li class="dropdown">
+                <a href="#" class="active" data-i18n="nav.product">Product</a>
+                <div class="dropdown-content">
+                    <a href="./autofill-ai/" data-i18n="nav.autofillAi">Autofill AI</a>
+                    <a href="./ai-reply-assistant/" data-i18n="nav.aiReplyAssistant">AI Reply Assistant</a>
+                    <a href="./workdesk/" data-i18n="nav.workDesk">WorkDesk</a>
+                    <a href="./null-carrier/" data-i18n="nav.nullCarrier">Null Carrier</a>
+                </div>
+            </li>
             <li><a href="./privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a></li>
+            <li><a href="./terms/" data-i18n="nav.termsOfService">Terms of Service</a></li>
             <li><a href="./support/" data-i18n="nav.support">Support</a></li>
         </ul>
     </div>
@@ -518,7 +553,7 @@
 
 <footer>
   <div style="max-width:860px;margin:0 auto;padding:0 24px;">
-    Donbrico Autofill AI &nbsp;·&nbsp; <a href="/docs-gemini-nano.html">Gemini Nano</a> &nbsp;·&nbsp; <a href="/docs-api-keys.html">API Keys</a> &nbsp;·&nbsp; <a href="/autofill-ai/">Extension</a> &nbsp;·&nbsp; <a href="/">Home</a>
+    Donbrico Autofill AI &nbsp;·&nbsp; <a href="/docs-gemini-nano.html">Gemini Nano</a> &nbsp;·&nbsp; <a href="/docs-api-keys.html">API Keys</a> &nbsp;·&nbsp; <a href="/autofill-ai/">Extension</a> &nbsp;·&nbsp; <a href="/privacy-policy/">Privacy</a> &nbsp;·&nbsp; <a href="/terms/">Terms</a> &nbsp;·&nbsp; <a href="/">Home</a>
   </div>
 </footer>
 
