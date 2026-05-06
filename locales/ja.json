@@ -972,196 +972,323 @@
   "docs": {
     "apiKeys": {
       "page": {
-        "title": "APIキーガイド — Donbrico Autofill AI"
+        "title": "API キー ガイド — Donbrico Autofill AI"
       },
       "breadcrumb": {
-        "home": "Home",
-        "docs": "Docs",
-        "title": "APIキーガイド"
+        "home": "家",
+        "docs": "ドキュメント",
+        "title": "APIキー"
       },
       "header": {
         "badge": "セットアップガイド",
-        "title": "<em>APIキー</em>を取得する",
-        "intro": "Donbrico Autofill AI works best when you connect your own AI provider. Here is how to get your keys from the most popular services.",
+        "title": "<em>API キー</em>を取得します。",
+        "intro": "Donbrico Autofill AI は、独自の AI プロバイダーに接続した場合に最適に機能します。",
         "speedNote": {
-          "title": "Blazing fast.",
-          "text": "Using your own API key is typically 5-10x faster than the built-in free models and has much higher limits."
+          "title": "猛烈な勢いで。",
+          "text": "独自の API キーを使用すると、通常、組み込みの無料モデルよりも 5 ～ 10 倍高速になり、制限が大幅に高くなります。"
         }
       },
       "providers": {
         "groq": {
-          "title": "Groq",
-          "tag": "Fast · Free tier",
-          "label": "Provider 01",
+          "title": "グロク",
+          "tag": "高速・無料枠",
+          "label": "プロバイダー01",
           "url": "console.groq.com",
           "pills": {
-            "free": "Free tier available",
-            "models": "Llama 3 · Mixtral · Gemma"
+            "free": "無料利用枠あり",
+            "models": "ラマ 3 · ミクストラル · ジェマ"
           },
-          "cta": "Create account ↗",
-          "intro": "Groq runs open-source models on custom silicon (LPUs) — the result is remarkably fast inference. The free tier is generous enough for everyday autofill use at no cost.",
+          "cta": "アカウントを作成する ↗",
+          "intro": "Groq はカスタム シリコン (LPU) 上でオープンソース モデルを実行します。その結果、推論が驚くほど高速になります。",
           "step1": {
-            "title": "Sign up for a free Groq account",
-            "text": "Go to <strong>console.groq.com</strong> and click <strong>Sign up</strong>. Groq supports Google, GitHub, and email signup. No credit card is required for the free tier."
+            "title": "無料の Groq アカウントにサインアップする",
+            "text": "<strong>console.groq.com</strong> にアクセスし、<strong>サインアップ</strong>をクリックします。 "
           },
           "step2": {
-            "title": "Create an API key",
-            "text": "In the left sidebar, click <strong>API Keys</strong>. Click <strong>Create API Key</strong>, enter a name like \"Donbrico\", and click <strong>Submit</strong>.",
-            "warn": "Copy the key immediately. Groq does not show it again after creation. It begins with <span class=\"code-inline\">gsk_…</span>"
+            "title": "APIキーを作成する",
+            "text": "左側のサイドバーで [<strong>API キー</strong>] をクリックします。 ",
+            "warn": "キーをすぐにコピーします。 "
           },
           "step3": {
-            "title": "Paste into the extension",
-            "text": "Open the extension popup → <strong>Settings → AI Provider → Groq</strong>. Paste your key and save."
+            "title": "拡張子に貼り付けます",
+            "text": "拡張機能ポップアップ → <strong>設定 → AI プロバイダー → Groq を</strong>開きます。"
           },
-          "info": "Groq free tier includes rate limits (e.g. 30 requests/minute for Llama 3). For typical autofill usage this is more than enough. If you hit limits, upgrading to a paid plan removes them.",
+          "info": "Groq の無料利用枠にはレート制限が含まれます (例: Llama 3 の場合は 30 リクエスト/分)。",
           "table": {
-            "thModel": "Model",
-            "thSpeed": "Speed",
-            "thFree": "Free tier?",
-            "recommended": "Recommended",
-            "extremelyFast": "Extremely fast",
-            "fast": "Fast",
-            "yes": "Yes",
-            "yesLower": "Yes (lower limit)"
+            "thModel": "モデル",
+            "thSpeed": "スピード",
+            "thFree": "無料枠?",
+            "recommended": "推奨",
+            "extremelyFast": "非常に速い",
+            "fast": "速い",
+            "yes": "はい",
+            "yesLower": "あり（下限値）"
           }
         },
         "openrouter": {
-          "title": "OpenRouter",
-          "tag": "100+ models",
-          "label": "Provider 02",
-          "url": "openrouter.ai",
+          "title": "オープンルーター",
+          "tag": "100以上のモデル",
+          "label": "プロバイダー02",
+          "url": "オープンルーター.ai",
           "pills": {
-            "free": "Free models available",
-            "models": "100+ models from any provider"
+            "free": "無料モデルが利用可能",
+            "models": "あらゆるプロバイダーの 100 以上のモデル"
           },
-          "cta": "Create account ↗",
-          "intro": "OpenRouter is a unified gateway to over 100 AI models — including GPT-4o, Claude, Llama, Mistral, and many more — through a single API key. Several models are permanently free with no credit card required.",
+          "cta": "アカウントを作成する ↗",
+          "intro": "OpenRouter は、単一の API キーを介して、GPT-4o、Claude、Llama、Mistral などを含む 100 を超える AI モデルへの統合ゲートウェイです。",
           "step1": {
-            "title": "Create an OpenRouter account",
-            "text": "Visit <strong>openrouter.ai</strong> and click <strong>Sign In</strong>. OpenRouter supports Google and GitHub sign-in, or you can use an email address."
+            "title": "OpenRouter アカウントを作成する",
+            "text": "<strong>openrouter.ai</strong> にアクセスし、[<strong>サインイン</strong>] をクリックします。 "
           },
           "step2": {
-            "title": "Optional: add credits for paid models",
-            "text": "Go to <strong>Credits</strong> in your account and top up if you want to use paid models like GPT-4o or Claude. For free models only, no payment is needed.",
-            "tip": "Filter by <strong>Free</strong> on the Models page to see the full list of zero-cost models available right now."
+            "title": "オプション: 有料モデルのクレジットを追加します",
+            "text": "GPT-4o や Claude などの有料モデルを使用する場合は、アカウントの<strong>クレジット</strong>に移動し、チャージしてください。",
+            "tip": "[モデル] ページで<strong>無料</strong>でフィルタすると、現在利用可能なゼロコスト モデルの完全なリストが表示されます。"
           },
           "step3": {
-            "title": "Create an API key",
-            "text": "Go to <strong>Keys</strong> in the top navigation. Click <strong>Create Key</strong>, name it \"Donbrico\", and copy the key — it begins with <span class=\"code-inline\">sk-or-…</span>",
-            "warn": "Copy the key now — it will be hidden after you close this dialog."
+            "title": "APIキーを作成する",
+            "text": "上部のナビゲーションで [<strong>キー</strong>] に移動します。 ",
+            "warn": "今すぐキーをコピーします。このダイアログを閉じるとキーは非表示になります。"
           },
           "step4": {
-            "title": "Paste into the extension",
-            "text": "Open the extension popup → <strong>Settings → AI Provider → OpenRouter</strong>. Paste your key, choose your preferred model, and save."
+            "title": "拡張子に貼り付けます",
+            "text": "拡張機能ポップアップ → <strong>設定 → AI プロバイダー → OpenRouter</strong> を開きます。"
           },
           "table": {
-            "thModel": "Model",
-            "thNotes": "Notes",
-            "thCost": "Cost",
-            "llamaNote": "Fast, reliable free option",
-            "mistralNote": "Good for structured outputs",
-            "gptNote": "Premium quality",
-            "claudeNote": "Premium quality",
-            "free": "Free",
-            "payAsYouGo": "Pay-as-you-go"
+            "thModel": "モデル",
+            "thNotes": "注意事項",
+            "thCost": "料金",
+            "llamaNote": "高速で信頼性の高い無料オプション",
+            "mistralNote": "構造化された出力に適しています",
+            "gptNote": "プレミアム品質",
+            "claudeNote": "プレミアム品質",
+            "free": "無料",
+            "payAsYouGo": "従量課金制"
           }
         },
         "anthropic": {
-          "title": "Anthropic",
-          "tag": "Claude",
-          "label": "Provider 03",
+          "title": "人間的",
+          "tag": "クロード",
+          "label": "プロバイダー03",
           "url": "console.anthropic.com",
           "pills": {
-            "payAsYouGo": "Pay-as-you-go",
-            "models": "Claude 3.5 Haiku · Claude 3.5 Sonnet"
+            "payAsYouGo": "従量課金制",
+            "models": "クロード 3.5 俳句 · クロード 3.5 ソネット"
           },
-          "cta": "Create account ↗",
-          "intro": "Anthropic's Claude models are known for following instructions precisely — ideal for generating well-structured cover letters and professional answers.",
+          "cta": "アカウントを作成する ↗",
+          "intro": "Anthropic の Claude モデルは、指示に正確に従うことで知られており、よく構成されたカバーレターや専門的な回答を作成するのに最適です。",
           "step1": {
-            "title": "Create an Anthropic account",
-            "text": "Visit <strong>console.anthropic.com</strong> and click <strong>Sign up</strong>. You can use Google or an email address."
+            "title": "Anthropic アカウントを作成する",
+            "text": "<strong>console.anthropic.com</strong> にアクセスし、[<strong>サインアップ</strong>] をクリックします。 "
           },
           "step2": {
-            "title": "Add billing information",
-            "text": "From the Console dashboard, go to <strong>Settings → Billing</strong>. Click <strong>Add credit card</strong> and complete the form. Anthropic is pay-as-you-go with no monthly fee.",
-            "tip": "You can set a monthly spend limit under Billing → Usage limits to avoid any surprise charges."
+            "title": "請求情報を追加する",
+            "text": "コンソールのダッシュボードから<strong>設定 → 請求</strong>に移動します。 ",
+            "tip": "予期せぬ請求を避けるために、[請求] → [使用制限] で毎月の使用制限を設定できます。"
           },
           "step3": {
-            "title": "Generate an API key",
-            "text": "In the left sidebar, click <strong>API Keys</strong>. Click <strong>Create Key</strong>, name it \"Donbrico\", and copy the key — it starts with <span class=\"code-inline\">sk-ant-…</span>",
-            "warn": "The key is shown only once at creation time. Copy it before closing the dialog."
+            "title": "APIキーを生成する",
+            "text": "左側のサイドバーで [<strong>API キー</strong>] をクリックします。 ",
+            "warn": "キーは作成時に 1 回だけ表示されます。"
           },
           "step4": {
-            "title": "Paste into the extension",
-            "text": "Open the extension popup → <strong>Settings → AI Provider → Anthropic</strong>. Paste your key and save."
+            "title": "拡張子に貼り付けます",
+            "text": "拡張機能ポップアップ → <strong>設定 → AI プロバイダー → Anthropic</strong> を開きます。"
           },
           "table": {
-            "thModel": "Model",
-            "thSpeed": "Speed",
-            "thCost": "Cost (approx. per autofill)",
-            "veryFast": "Very fast",
-            "moderate": "Moderate",
-            "costHaiku": "~$0.001",
-            "costSonnet": "~$0.006"
+            "thModel": "モデル",
+            "thSpeed": "スピード",
+            "thCost": "コスト (自動入力あたりの概算)",
+            "veryFast": "非常に速い",
+            "moderate": "適度",
+            "costHaiku": "~0.001ドル",
+            "costSonnet": "~0.006ドル"
           }
         },
         "openai": {
           "title": "OpenAI",
           "tag": "GPT-4o",
-          "label": "Provider 04",
+          "label": "プロバイダー04",
           "url": "platform.openai.com",
           "pills": {
-            "payAsYouGo": "Pay-as-you-go",
-            "models": "GPT-4o · GPT-4o mini"
+            "payAsYouGo": "従量課金制",
+            "models": "GPT-4o・GPT-4oミニ"
           },
-          "cta": "Create account ↗",
-          "intro": "OpenAI is the most widely used provider. GPT-4o mini is fast, accurate, and costs fractions of a cent per autofill.",
+          "cta": "アカウントを作成する ↗",
+          "intro": "OpenAI は最も広く使用されているプロバイダーです。 ",
           "step1": {
-            "title": "Create a free account",
-            "text": "Go to <strong>platform.openai.com</strong> and sign up. You can use Google, Microsoft, or email."
+            "title": "無料アカウントを作成する",
+            "text": "<strong>platform.openai.com</strong> にアクセスしてサインアップします。 "
           },
           "step2": {
-            "title": "Add a payment method",
-            "text": "Navigate to <strong>Settings → Billing → Add payment method</strong>. OpenAI requires a credit card before generating API keys. You will only be charged for actual usage — new accounts receive $5 in free credits."
+            "title": "支払い方法を追加する",
+            "text": "<strong>[設定] → [請求] → [支払い方法の追加]</strong>に移動します。 "
           },
           "step3": {
-            "title": "Create an API key",
-            "text": "Go to <strong>API Keys</strong> in the left sidebar (or visit <span class=\"code-inline\">platform.openai.com/api-keys</span>). Click <strong>Create new secret key</strong>, give it a name like \"Donbrico\", and click <strong>Create secret key</strong>.",
-            "warn": "Copy your key immediately — OpenAI only shows it once. Store it somewhere safe."
+            "title": "APIキーを作成する",
+            "text": "左側のサイドバーの <strong>API キー</strong>に移動します (または、<span class=\"code-inline\">platform.openai.com/api-keys</span> にアクセスします)。 ",
+            "warn": "キーをすぐにコピーします。OpenAI はキーを 1 回だけ表示します。"
           },
           "step4": {
-            "title": "Paste the key into the extension",
-            "text": "Open the Donbrico Autofill AI popup → <strong>Settings → AI Provider → OpenAI</strong>. Paste your key (it starts with <span class=\"code-inline\">sk-…</span>) and click Save."
+            "title": "キーを拡張機能に貼り付けます",
+            "text": "Donbrico Autofill AI ポップアップ → <strong>設定 → AI プロバイダー → OpenAI</strong> を開きます。"
           },
           "table": {
-            "thModel": "Model",
-            "thSpeed": "Speed",
-            "thCost": "Cost (approx. per autofill)",
-            "costMini": "~$0.001",
-            "costFull": "~$0.005"
+            "thModel": "モデル",
+            "thSpeed": "スピード",
+            "thCost": "コスト (自動入力あたりの概算)",
+            "costMini": "~0.001ドル",
+            "costFull": "~0.005ドル"
           }
         }
       },
       "comparison": {
-        "title": "Quick comparison",
-        "thProvider": "Provider",
-        "thFreeTier": "Free tier?",
-        "thCardRequired": "Card required?",
-        "thBestFor": "Best for",
-        "thKeyPrefix": "Key prefix",
-        "groqBest": "Fastest responses, no cost",
-        "openRouterBest": "Flexibility, free models",
-        "anthropicBest": "Precise instruction-following",
-        "openaiBest": "Best overall quality",
-        "signupCredit": "$5 credit on signup",
-        "no": "No",
-        "yes": "Yes",
-        "yesFreeModels": "No (free models)"
+        "title": "簡単な比較",
+        "thProvider": "プロバイダー",
+        "thFreeTier": "無料枠?",
+        "thCardRequired": "カードは必要ですか？",
+        "thBestFor": "こんな方に最適",
+        "thKeyPrefix": "キープレフィックス",
+        "groqBest": "最速の応答、費用なし",
+        "openRouterBest": "柔軟性、無料モデル",
+        "anthropicBest": "正確な指示に従ってください",
+        "openaiBest": "全体的に最高の品質",
+        "signupCredit": "サインアップ時に 5 ドルのクレジット",
+        "no": "いいえ",
+        "yes": "はい",
+        "yesFreeModels": "いいえ (無料モデル)"
       },
       "proTip": {
-        "label": "Pro tip",
-        "text": "No API key needed at all — if your computer supports it, <strong>Gemini Nano</strong> runs directly in Chrome for free with complete privacy.",
-        "link": "Check Gemini Nano compatibility →"
+        "label": "プロのヒント",
+        "text": "API キーはまったく必要ありません。お使いのコンピューターが API キーをサポートしていれば、<strong>Gemini Nano</strong> は完全なプライバシーを保ちながら Chrome で直接無料で実行できます。",
+        "link": "Gemini Nano の互換性を確認する →"
+      }
+    },
+    "geminiNano": {
+      "page": {
+        "title": "Gemini Nano セットアップ — Donbrico Autofill AI"
+      },
+      "breadcrumb": {
+        "home": "家",
+        "autofillAi": "オートフィルAI",
+        "title": "Gemini Nano Setup"
+      },
+      "header": {
+        "badge": "無料 · API キーなし · 100% プライベート",
+        "title": "Chrome で <em>Gemini Nano</em><br /> を使用する",
+        "intro": "Gemini Nano は、サポートされているハードウェアの Chrome に直接組み込まれています。",
+        "note": {
+          "title": "注記：",
+          "text": "Gemini Nano はデバイス上で実行されるため、クラウドベースの AI プロバイダーよりも遅くなる可能性があります。"
+        }
+      },
+      "toc": {
+        "title": "このページでは",
+        "requirements": "システム要件",
+        "enable": "Enable Gemini Nano in Chrome flags",
+        "verify": "動作していることを確認する",
+        "troubleshoot": "トラブルシューティング",
+        "fallback": "うまくいかない場合はどうなりますか?"
+      },
+      "requirements": {
+        "title": "システム要件",
+        "intro": "Gemini Nano はローカルで実行されるため、ハードウェアが重要です。 ",
+        "grid": {
+          "browser": {
+            "label": "ブラウザ",
+            "value": "Chrome 127以降",
+            "note": "デスクトップのみ。"
+          },
+          "os": {
+            "label": "オペレーティング·システム",
+            "value": "Windows 10/11 · macOS 13+ · Linux",
+            "note": "ChromeOS は新しい Chromebook でもサポートされています。"
+          },
+          "storage": {
+            "label": "利用可能なストレージ",
+            "value": "少なくとも 22 GB の空き容量",
+            "note": "Chrome は、初回使用時に Nano モデル (約 20 GB) をダウンロードします。"
+          },
+          "gpu": {
+            "label": "GPU / NPU",
+            "value": "4 GB 以上の VRAM を推奨",
+            "note": "通常は統合グラフィックスが機能しますが、専用の GPU により推論が大幅に高速化されます。"
+          }
+        },
+        "info": "マシンがこれらの要件を満たしていない場合、Donbrico Autofill AI は設定された API キーに自動的に戻ります。ユーザー側でのアクションは必要ありません。"
+      },
+      "enable": {
+        "title": "Chrome で Gemini Nano を有効にする",
+        "intro": "Gemini Nano と Prompt API は実験的な機能です。",
+        "step1": {
+          "title": "Chrome フラグを開く",
+          "text": "Chrome のアドレス バーに次のように入力し、Enter キーを押します。"
+        },
+        "step2": {
+          "title": "プロンプトAPIフラグを有効にする",
+          "text": "フラグ検索ボックスで<strong>Prompt API for Gemini Nano</strong> を検索し、 それを<strong>有効</strong>に設定します。",
+          "desc": "<code>window.ai</code> JavaScript API を有効にして、拡張機能が Gemini Nano と対話できるようにします。",
+          "val": "→ 設定：有効"
+        },
+        "step3": {
+          "title": "最適化ガイドを有効にする (モデルのダウンロード)",
+          "text": "[<strong>デバイス上の最適化ガイドを有効にする</strong>] を検索し、<strong>有効な BypassPerfRequirement</strong> に設定します。",
+          "desc": "Chrome が Gemini Nano モデルをデバイスにダウンロードできるようにします。",
+          "val": "→ に設定: 有効 BypassPerfRequirement"
+        },
+        "step4": {
+          "title": "Chromeを再起動する",
+          "text": "フラグ ページの下部に表示される青い [<strong>再起動</strong>] ボタンをクリックするか、Chrome を完全に閉じてから再度開きます。"
+        },
+        "step5": {
+          "title": "モデルのダウンロードをトリガーする",
+          "text": "再起動後、コンポーネント ページに移動して、Chrome に Nano モデルをダウンロードさせます。",
+          "text2": "リストから [<strong>デバイス モデルの最適化ガイド</strong>] を見つけて、[<strong>アップデートの確認</strong>] をクリックします。"
+        },
+        "warn": "モデルのダウンロードはバックグラウンドでサイレントに行われます。 "
+      },
+      "verify": {
+        "title": "動作していることを確認する",
+        "intro": "モデルがダウンロードされたら、Chrome を離れることなく、すべてが正しく設定されていることを確認できます。",
+        "devtools": {
+          "title": "DevTools によるクイックテスト",
+          "text": "任意の Web ページを開き、<strong>F12</strong> を押して (または右クリック→「検査」→「コンソール」)、次のスニペットを貼り付けます。"
+        },
+        "results": {
+          "title": "コンソール出力の意味は次のとおりです。",
+          "readily": "「準備完了」 — Gemini Nano がダウンロードされ、準備が整いました。",
+          "afterDownload": "「after-download」 — Chrome はモデルを認識していますが、まだダウンロード中です。",
+          "no": "\"no\" — このモデルはこのデバイスでは利用できません。"
+        },
+        "tip": "「<strong>準備完了」</strong>と表示されたら、Donbrico Autofill AI 拡張機能のポップアップを開きます。"
+      },
+      "troubleshoot": {
+        "title": "トラブルシューティング",
+        "console": {
+          "title": "コンソールが「no」を返すか、エラーをスローします",
+          "text": "上記の手順に戻って、(1 つだけではなく) 両方のフラグが有効になっていることを確認します。"
+        },
+        "components": {
+          "title": "chrome://components にはモデルのバージョンが表示されません",
+          "text": "Google アカウントを使用して Chrome にサインインしていることを確認してください。"
+        },
+        "stuck": {
+          "title": "モデルのダウンロードが停止します",
+          "text": "<code style=\"font-family:'DM Mono',monospace;color:#a5b4fc\">chrome://components</code> にアクセスし、最適化ガイド モデルを見つけて、再度 [<strong>アップデートの確認</strong>] をクリックします。"
+        },
+        "requirements": {
+          "title": "私のマシンは要件を満たしていますが、まだ「いいえ」と表示されます",
+          "list1": "Chrome バージョン 127 以降を使用していることを確認します (<code style=\"font-family:'DM Mono',monospace;color:#a5b4fc\">chrome://version</code> を確認してください)。",
+          "list2": "企業が管理する一部の Chrome インストールでは、実験的フラグがブロックされます。 ",
+          "list3": "モデルを保存するために、Chrome に少なくとも 22 GB の空きディスク容量があることを確認してください。",
+          "list4": "両方のフラグを無効にして再度有効にして、再起動してみてください。"
+        }
+      },
+      "fallback": {
+        "title": "うまくいかない場合はどうなりますか?",
+        "text1": "Donbrico Autofill AI は、Gemini Nano が利用できない場合は常に、Bring Your Own Key API キー (OpenAI、Anthropic、Groq、または OpenRouter) に正常にフォールバックします。 ",
+        "text2": "Gemini Nano も API キーも構成されていない場合、拡張機能はセットアップを案内するわかりやすいプロンプトを表示します。 ",
+        "tip": "API キーが必要ですか? "
       }
     }
   }

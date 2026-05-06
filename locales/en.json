@@ -1132,6 +1132,133 @@
         "text": "No API key needed at all — if your computer supports it, <strong>Gemini Nano</strong> runs directly in Chrome for free with complete privacy.",
         "link": "Check Gemini Nano compatibility →"
       }
+    },
+    "geminiNano": {
+      "page": {
+        "title": "Gemini Nano Setup — Donbrico Autofill AI"
+      },
+      "breadcrumb": {
+        "home": "Home",
+        "autofillAi": "Autofill AI",
+        "title": "Gemini Nano Setup"
+      },
+      "header": {
+        "badge": "Free · No API Key · 100% Private",
+        "title": "Using <em>Gemini Nano</em><br />in Chrome",
+        "intro": "Gemini Nano is built directly into Chrome on supported hardware. When it works, your AI completions run entirely on your device — free, instant, and never leaving your machine.",
+        "note": {
+          "title": "Note:",
+          "text": "Gemini Nano runs on your device, so it can be slower than cloud-based AI providers. For faster responses, consider using a Bring Your Own Key provider like <a href=\"/docs-api-keys.html\" style=\"color: inherit; font-weight: 600;\">Groq</a> (free tier available) or OpenAI."
+        }
+      },
+      "toc": {
+        "title": "On this page",
+        "requirements": "System requirements",
+        "enable": "Enable Gemini Nano in Chrome flags",
+        "verify": "Verify it's working",
+        "troubleshoot": "Troubleshooting",
+        "fallback": "What happens if it doesn't work?"
+      },
+      "requirements": {
+        "title": "System requirements",
+        "intro": "Gemini Nano runs locally, so your hardware matters. Chrome checks these requirements automatically before enabling the model.",
+        "grid": {
+          "browser": {
+            "label": "Browser",
+            "value": "Chrome 127 or later",
+            "note": "Desktop only. Not available on mobile Chrome or other browsers."
+          },
+          "os": {
+            "label": "Operating System",
+            "value": "Windows 10/11 · macOS 13+ · Linux",
+            "note": "ChromeOS also supported on newer Chromebooks."
+          },
+          "storage": {
+            "label": "Available Storage",
+            "value": "At least 22 GB free",
+            "note": "Chrome downloads the Nano model (~20 GB) on first use."
+          },
+          "gpu": {
+            "label": "GPU / NPU",
+            "value": "4 GB+ VRAM recommended",
+            "note": "Integrated graphics usually work, but a dedicated GPU speeds inference significantly."
+          }
+        },
+        "info": "If your machine doesn't meet these requirements, Donbrico Autofill AI will automatically fall back to your configured API key — no action needed on your part."
+      },
+      "enable": {
+        "title": "Enable Gemini Nano in Chrome",
+        "intro": "Gemini Nano and the Prompt API are experimental features. You need to enable two Chrome flags and then download the model before it will respond to requests.",
+        "step1": {
+          "title": "Open Chrome flags",
+          "text": "Type the following into your Chrome address bar and press Enter:"
+        },
+        "step2": {
+          "title": "Enable the Prompt API flag",
+          "text": "Search for <strong>Prompt API for Gemini Nano</strong> in the flags search box, then set it to <strong>Enabled</strong>.",
+          "desc": "Enables the <code>window.ai</code> JavaScript API so extensions can interact with Gemini Nano.",
+          "val": "→ Set to: Enabled"
+        },
+        "step3": {
+          "title": "Enable Optimization Guide (model download)",
+          "text": "Search for <strong>Enables optimization guide on device</strong> and set it to <strong>Enabled BypassPerfRequirement</strong>. The bypass option allows download even on lower-spec hardware.",
+          "desc": "Allows Chrome to download the Gemini Nano model to your device.",
+          "val": "→ Set to: Enabled BypassPerfRequirement"
+        },
+        "step4": {
+          "title": "Relaunch Chrome",
+          "text": "Click the blue <strong>Relaunch</strong> button that appears at the bottom of the flags page, or close and reopen Chrome completely."
+        },
+        "step5": {
+          "title": "Trigger the model download",
+          "text": "After relaunching, navigate to the components page to force Chrome to download the Nano model:",
+          "text2": "Find <strong>Optimization Guide On Device Model</strong> in the list and click <strong>Check for update</strong>. The download may take several minutes depending on your connection. The model is approximately 20 GB."
+        },
+        "warn": "The model download happens silently in the background. Chrome must be open and connected to the internet. Once downloaded, it stays on your device permanently."
+      },
+      "verify": {
+        "title": "Verify it's working",
+        "intro": "Once the model is downloaded, you can confirm everything is set up correctly without leaving Chrome.",
+        "devtools": {
+          "title": "Quick test via DevTools",
+          "text": "Open any webpage, press <strong>F12</strong> (or right-click → Inspect → Console), and paste this snippet:"
+        },
+        "results": {
+          "title": "The console output means:",
+          "readily": "\"readily\" — Gemini Nano is downloaded and ready. You're all set.",
+          "afterDownload": "\"after-download\" — Chrome knows about the model but it's still downloading. Wait and try again in a few minutes.",
+          "no": "\"no\" — The model isn't available on this device. Check the troubleshooting section below."
+        },
+        "tip": "Once you see <strong>\"readily\"</strong>, open the Donbrico Autofill AI extension popup. The AI status indicator in settings should show <strong>Gemini Nano · Active</strong>."
+      },
+      "troubleshoot": {
+        "title": "Troubleshooting",
+        "console": {
+          "title": "The console returns \"no\" or throws an error",
+          "text": "Go back through the steps above and confirm both flags are enabled (not just one). Then relaunch Chrome again and wait 5–10 minutes before retesting. Chrome sometimes delays initialising the API even after the flags are set."
+        },
+        "components": {
+          "title": "chrome://components shows no version for the model",
+          "text": "Make sure you're signed into Chrome with a Google account. In some regions, the model is gated behind a Google account sign-in. Also ensure Chrome is not running through a VPN or proxy that blocks Google's download servers."
+        },
+        "stuck": {
+          "title": "The model download is stuck",
+          "text": "Visit <code style=\"font-family:'DM Mono',monospace;color:#a5b4fc\">chrome://components</code>, find the Optimization Guide model, and click <strong>Check for update</strong> again. If it remains stuck, try restarting Chrome and checking for updates once more."
+        },
+        "requirements": {
+          "title": "My machine meets requirements but it still shows \"no\"",
+          "list1": "Confirm you're on Chrome version 127 or later (check <code style=\"font-family:'DM Mono',monospace;color:#a5b4fc\">chrome://version</code>).",
+          "list2": "Some enterprise-managed Chrome installs block experimental flags. Check with your IT team.",
+          "list3": "Ensure Chrome has at least 22 GB of free disk space to store the model.",
+          "list4": "Try disabling and re-enabling both flags, then relaunching."
+        }
+      },
+      "fallback": {
+        "title": "What happens if it doesn't work?",
+        "text1": "Donbrico Autofill AI gracefully falls back to your Bring Your Own Key API key (OpenAI, Anthropic, Groq, or OpenRouter) whenever Gemini Nano isn't available. You'll never be left without AI completions.",
+        "text2": "If neither Gemini Nano nor an API key is configured, the extension will show a friendly prompt guiding you to set one up. You can always add an API key in the extension's settings panel.",
+        "tip": "Need an API key? See the <a href=\"/docs-api-keys.html\" style=\"color:var(--indigo);text-decoration:none;font-weight:500;\">API Keys guide</a> to get one from OpenAI, Anthropic, Groq, or OpenRouter in under 5 minutes."
+      }
     }
   }
 }
