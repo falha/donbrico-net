@@ -972,196 +972,323 @@
   "docs": {
     "apiKeys": {
       "page": {
-        "title": "Guida alle Chiavi API — Donbrico Autofill AI"
+        "title": "Guida alle chiavi API: Donbrico Compilazione automatica AI"
       },
       "breadcrumb": {
-        "home": "Home",
-        "docs": "Docs",
-        "title": "Guida alle Chiavi API"
+        "home": "Casa",
+        "docs": "Documenti",
+        "title": "Chiavi API"
       },
       "header": {
-        "badge": "Guida alla Configurazione",
-        "title": "Ottieni le tue <em>Chiavi API</em>",
-        "intro": "Donbrico Autofill AI works best when you connect your own AI provider. Here is how to get your keys from the most popular services.",
+        "badge": "Guida all'installazione",
+        "title": "Ottieni le tue <em>chiavi API</em>",
+        "intro": "Donbrico Autofill AI funziona meglio quando colleghi il tuo provider AI. ",
         "speedNote": {
-          "title": "Blazing fast.",
-          "text": "Using your own API key is typically 5-10x faster than the built-in free models and has much higher limits."
+          "title": "Incredibilmente veloce.",
+          "text": "L'utilizzo della tua chiave API è in genere 5-10 volte più veloce rispetto ai modelli gratuiti integrati e presenta limiti molto più elevati."
         }
       },
       "providers": {
         "groq": {
           "title": "Groq",
-          "tag": "Fast · Free tier",
-          "label": "Provider 01",
+          "tag": "Veloce · Livello gratuito",
+          "label": "Fornitore 01",
           "url": "console.groq.com",
           "pills": {
-            "free": "Free tier available",
-            "models": "Llama 3 · Mixtral · Gemma"
+            "free": "Livello gratuito disponibile",
+            "models": "Lama 3 · Mixtral · Gemma"
           },
-          "cta": "Create account ↗",
-          "intro": "Groq runs open-source models on custom silicon (LPUs) — the result is remarkably fast inference. The free tier is generous enough for everyday autofill use at no cost.",
+          "cta": "Crea un account ↗",
+          "intro": "Groq esegue modelli open source su silicio personalizzato (LPU): il risultato è un'inferenza straordinariamente veloce. ",
           "step1": {
-            "title": "Sign up for a free Groq account",
-            "text": "Go to <strong>console.groq.com</strong> and click <strong>Sign up</strong>. Groq supports Google, GitHub, and email signup. No credit card is required for the free tier."
+            "title": "Registrati per un account Groq gratuito",
+            "text": "Vai su <strong>console.groq.com</strong> e fai clic su <strong>Registrati</strong>. "
           },
           "step2": {
-            "title": "Create an API key",
-            "text": "In the left sidebar, click <strong>API Keys</strong>. Click <strong>Create API Key</strong>, enter a name like \"Donbrico\", and click <strong>Submit</strong>.",
-            "warn": "Copy the key immediately. Groq does not show it again after creation. It begins with <span class=\"code-inline\">gsk_…</span>"
+            "title": "Crea una chiave API",
+            "text": "Nella barra laterale sinistra, fai clic su <strong>Chiavi API</strong>. ",
+            "warn": "Copia immediatamente la chiave. "
           },
           "step3": {
-            "title": "Paste into the extension",
-            "text": "Open the extension popup → <strong>Settings → AI Provider → Groq</strong>. Paste your key and save."
+            "title": "Incolla nell'estensione",
+            "text": "Apri il popup dell'estensione → <strong>Impostazioni → Fornitore AI → Groq</strong>. "
           },
-          "info": "Groq free tier includes rate limits (e.g. 30 requests/minute for Llama 3). For typical autofill usage this is more than enough. If you hit limits, upgrading to a paid plan removes them.",
+          "info": "Il livello gratuito di Groq include limiti di velocità (ad esempio 30 richieste/minuto per Llama 3). ",
           "table": {
-            "thModel": "Model",
-            "thSpeed": "Speed",
-            "thFree": "Free tier?",
-            "recommended": "Recommended",
-            "extremelyFast": "Extremely fast",
-            "fast": "Fast",
-            "yes": "Yes",
-            "yesLower": "Yes (lower limit)"
+            "thModel": "Modello",
+            "thSpeed": "Velocità",
+            "thFree": "Livello gratuito?",
+            "recommended": "Raccomandato",
+            "extremelyFast": "Estremamente veloce",
+            "fast": "Veloce",
+            "yes": "SÌ",
+            "yesLower": "Sì (limite inferiore)"
           }
         },
         "openrouter": {
           "title": "OpenRouter",
-          "tag": "100+ models",
-          "label": "Provider 02",
+          "tag": "Oltre 100 modelli",
+          "label": "Fornitore 02",
           "url": "openrouter.ai",
           "pills": {
-            "free": "Free models available",
-            "models": "100+ models from any provider"
+            "free": "Disponibili modelli gratuiti",
+            "models": "Oltre 100 modelli di qualsiasi fornitore"
           },
-          "cta": "Create account ↗",
-          "intro": "OpenRouter is a unified gateway to over 100 AI models — including GPT-4o, Claude, Llama, Mistral, and many more — through a single API key. Several models are permanently free with no credit card required.",
+          "cta": "Crea un account ↗",
+          "intro": "OpenRouter è un gateway unificato per oltre 100 modelli IA, tra cui GPT-4o, Claude, Llama, Mistral e molti altri, tramite un'unica chiave API. ",
           "step1": {
-            "title": "Create an OpenRouter account",
-            "text": "Visit <strong>openrouter.ai</strong> and click <strong>Sign In</strong>. OpenRouter supports Google and GitHub sign-in, or you can use an email address."
+            "title": "Crea un account OpenRouter",
+            "text": "Visita <strong>openrouter.ai</strong> e fai clic su <strong>Accedi</strong>. "
           },
           "step2": {
-            "title": "Optional: add credits for paid models",
-            "text": "Go to <strong>Credits</strong> in your account and top up if you want to use paid models like GPT-4o or Claude. For free models only, no payment is needed.",
-            "tip": "Filter by <strong>Free</strong> on the Models page to see the full list of zero-cost models available right now."
+            "title": "Facoltativo: aggiungi crediti per i modelli a pagamento",
+            "text": "Vai su <strong>Crediti</strong> nel tuo account e ricarica se desideri utilizzare modelli a pagamento come GPT-4o o Claude. ",
+            "tip": "Filtra per <strong>Gratuito</strong> nella pagina Modelli per visualizzare l'elenco completo dei modelli a costo zero disponibili in questo momento."
           },
           "step3": {
-            "title": "Create an API key",
-            "text": "Go to <strong>Keys</strong> in the top navigation. Click <strong>Create Key</strong>, name it \"Donbrico\", and copy the key — it begins with <span class=\"code-inline\">sk-or-…</span>",
-            "warn": "Copy the key now — it will be hidden after you close this dialog."
+            "title": "Crea una chiave API",
+            "text": "Vai a <strong>Chiavi</strong> nella barra di navigazione in alto. ",
+            "warn": "Copia la chiave adesso: verrà nascosta dopo aver chiuso questa finestra di dialogo."
           },
           "step4": {
-            "title": "Paste into the extension",
-            "text": "Open the extension popup → <strong>Settings → AI Provider → OpenRouter</strong>. Paste your key, choose your preferred model, and save."
+            "title": "Incolla nell'estensione",
+            "text": "Apri il popup dell'estensione → <strong>Impostazioni → Provider AI → OpenRouter</strong>. "
           },
           "table": {
-            "thModel": "Model",
-            "thNotes": "Notes",
-            "thCost": "Cost",
-            "llamaNote": "Fast, reliable free option",
-            "mistralNote": "Good for structured outputs",
-            "gptNote": "Premium quality",
-            "claudeNote": "Premium quality",
-            "free": "Free",
-            "payAsYouGo": "Pay-as-you-go"
+            "thModel": "Modello",
+            "thNotes": "Note",
+            "thCost": "Costo",
+            "llamaNote": "Opzione gratuita veloce e affidabile",
+            "mistralNote": "Buono per risultati strutturati",
+            "gptNote": "Qualità premium",
+            "claudeNote": "Qualità premium",
+            "free": "Gratuito",
+            "payAsYouGo": "Pagamento a consumo"
           }
         },
         "anthropic": {
-          "title": "Anthropic",
-          "tag": "Claude",
-          "label": "Provider 03",
+          "title": "Antropico",
+          "tag": "Claudio",
+          "label": "Fornitore 03",
           "url": "console.anthropic.com",
           "pills": {
-            "payAsYouGo": "Pay-as-you-go",
-            "models": "Claude 3.5 Haiku · Claude 3.5 Sonnet"
+            "payAsYouGo": "Pagamento a consumo",
+            "models": "Claude 3.5 Haiku · Claude 3.5 Sonetto"
           },
-          "cta": "Create account ↗",
-          "intro": "Anthropic's Claude models are known for following instructions precisely — ideal for generating well-structured cover letters and professional answers.",
+          "cta": "Crea un account ↗",
+          "intro": "I modelli Claude di Anthropic sono noti per seguire le istruzioni in modo preciso: ideali per generare lettere di accompagnamento ben strutturate e risposte professionali.",
           "step1": {
-            "title": "Create an Anthropic account",
-            "text": "Visit <strong>console.anthropic.com</strong> and click <strong>Sign up</strong>. You can use Google or an email address."
+            "title": "Crea un account antropico",
+            "text": "Visita <strong>console.anthropic.com</strong> e fai clic su <strong>Registrati</strong>. "
           },
           "step2": {
-            "title": "Add billing information",
-            "text": "From the Console dashboard, go to <strong>Settings → Billing</strong>. Click <strong>Add credit card</strong> and complete the form. Anthropic is pay-as-you-go with no monthly fee.",
-            "tip": "You can set a monthly spend limit under Billing → Usage limits to avoid any surprise charges."
+            "title": "Aggiungi informazioni di fatturazione",
+            "text": "Dalla dashboard della console, vai a <strong>Impostazioni → Fatturazione</strong>. ",
+            "tip": "Puoi impostare un limite di spesa mensile in Fatturazione → Limiti di utilizzo per evitare addebiti a sorpresa."
           },
           "step3": {
-            "title": "Generate an API key",
-            "text": "In the left sidebar, click <strong>API Keys</strong>. Click <strong>Create Key</strong>, name it \"Donbrico\", and copy the key — it starts with <span class=\"code-inline\">sk-ant-…</span>",
-            "warn": "The key is shown only once at creation time. Copy it before closing the dialog."
+            "title": "Genera una chiave API",
+            "text": "Nella barra laterale sinistra, fai clic su <strong>Chiavi API</strong>. ",
+            "warn": "La chiave viene visualizzata solo una volta al momento della creazione. "
           },
           "step4": {
-            "title": "Paste into the extension",
-            "text": "Open the extension popup → <strong>Settings → AI Provider → Anthropic</strong>. Paste your key and save."
+            "title": "Incolla nell'estensione",
+            "text": "Apri il popup dell'estensione → <strong>Impostazioni → Fornitore AI → Antropico</strong>. "
           },
           "table": {
-            "thModel": "Model",
-            "thSpeed": "Speed",
-            "thCost": "Cost (approx. per autofill)",
-            "veryFast": "Very fast",
-            "moderate": "Moderate",
-            "costHaiku": "~$0.001",
-            "costSonnet": "~$0.006"
+            "thModel": "Modello",
+            "thSpeed": "Velocità",
+            "thCost": "Costo (circa per compilazione automatica)",
+            "veryFast": "Molto veloce",
+            "moderate": "Moderare",
+            "costHaiku": "~$ 0,001",
+            "costSonnet": "~ $ 0,006"
           }
         },
         "openai": {
           "title": "OpenAI",
           "tag": "GPT-4o",
-          "label": "Provider 04",
+          "label": "Fornitore 04",
           "url": "platform.openai.com",
           "pills": {
-            "payAsYouGo": "Pay-as-you-go",
+            "payAsYouGo": "Pagamento a consumo",
             "models": "GPT-4o · GPT-4o mini"
           },
-          "cta": "Create account ↗",
-          "intro": "OpenAI is the most widely used provider. GPT-4o mini is fast, accurate, and costs fractions of a cent per autofill.",
+          "cta": "Crea un account ↗",
+          "intro": "OpenAI è il provider più utilizzato. ",
           "step1": {
-            "title": "Create a free account",
-            "text": "Go to <strong>platform.openai.com</strong> and sign up. You can use Google, Microsoft, or email."
+            "title": "Crea un account gratuito",
+            "text": "Vai su <strong>platform.openai.com</strong> e registrati. "
           },
           "step2": {
-            "title": "Add a payment method",
-            "text": "Navigate to <strong>Settings → Billing → Add payment method</strong>. OpenAI requires a credit card before generating API keys. You will only be charged for actual usage — new accounts receive $5 in free credits."
+            "title": "Aggiungi un metodo di pagamento",
+            "text": "Vai a <strong>Impostazioni → Fatturazione → Aggiungi metodo di pagamento</strong>. "
           },
           "step3": {
-            "title": "Create an API key",
-            "text": "Go to <strong>API Keys</strong> in the left sidebar (or visit <span class=\"code-inline\">platform.openai.com/api-keys</span>). Click <strong>Create new secret key</strong>, give it a name like \"Donbrico\", and click <strong>Create secret key</strong>.",
-            "warn": "Copy your key immediately — OpenAI only shows it once. Store it somewhere safe."
+            "title": "Crea una chiave API",
+            "text": "Vai a <strong>Chiavi API</strong> nella barra laterale di sinistra (o visita <span class=\"code-inline\">platform.openai.com/api-keys</span>). ",
+            "warn": "Copia immediatamente la tua chiave: OpenAI la mostra solo una volta. "
           },
           "step4": {
-            "title": "Paste the key into the extension",
-            "text": "Open the Donbrico Autofill AI popup → <strong>Settings → AI Provider → OpenAI</strong>. Paste your key (it starts with <span class=\"code-inline\">sk-…</span>) and click Save."
+            "title": "Incolla la chiave nell'estensione",
+            "text": "Apri il popup Donbrico Compilazione automatica AI → <strong>Impostazioni → Fornitore AI → OpenAI</strong>. "
           },
           "table": {
-            "thModel": "Model",
-            "thSpeed": "Speed",
-            "thCost": "Cost (approx. per autofill)",
-            "costMini": "~$0.001",
-            "costFull": "~$0.005"
+            "thModel": "Modello",
+            "thSpeed": "Velocità",
+            "thCost": "Costo (circa per compilazione automatica)",
+            "costMini": "~$ 0,001",
+            "costFull": "~$ 0,005"
           }
         }
       },
       "comparison": {
-        "title": "Quick comparison",
-        "thProvider": "Provider",
-        "thFreeTier": "Free tier?",
-        "thCardRequired": "Card required?",
-        "thBestFor": "Best for",
-        "thKeyPrefix": "Key prefix",
-        "groqBest": "Fastest responses, no cost",
-        "openRouterBest": "Flexibility, free models",
-        "anthropicBest": "Precise instruction-following",
-        "openaiBest": "Best overall quality",
-        "signupCredit": "$5 credit on signup",
-        "no": "No",
-        "yes": "Yes",
-        "yesFreeModels": "No (free models)"
+        "title": "Confronto veloce",
+        "thProvider": "Fornitore",
+        "thFreeTier": "Livello gratuito?",
+        "thCardRequired": "Carta richiesta?",
+        "thBestFor": "Meglio per",
+        "thKeyPrefix": "Prefisso chiave",
+        "groqBest": "Risposte più veloci, nessun costo",
+        "openRouterBest": "Flessibilità, modelli gratuiti",
+        "anthropicBest": "Seguire istruzioni precise",
+        "openaiBest": "Migliore qualità complessiva",
+        "signupCredit": "Credito di $ 5 al momento dell'iscrizione",
+        "no": "NO",
+        "yes": "SÌ",
+        "yesFreeModels": "No (modelli gratuiti)"
       },
       "proTip": {
-        "label": "Pro tip",
-        "text": "No API key needed at all — if your computer supports it, <strong>Gemini Nano</strong> runs directly in Chrome for free with complete privacy.",
-        "link": "Check Gemini Nano compatibility →"
+        "label": "Suggerimento professionale",
+        "text": "Non è necessaria alcuna chiave API: se il tuo computer la supporta, <strong>Gemini Nano</strong> viene eseguito direttamente in Chrome gratuitamente e in completa privacy.",
+        "link": "Controlla la compatibilità di Gemini Nano →"
+      }
+    },
+    "geminiNano": {
+      "page": {
+        "title": "Configurazione Gemini Nano - Donbrico Compilazione automatica AI"
+      },
+      "breadcrumb": {
+        "home": "Casa",
+        "autofillAi": "Compilazione automatica dell'IA",
+        "title": "Configurazione Gemini Nano"
+      },
+      "header": {
+        "badge": "Gratuito · Nessuna chiave API · 100% privato",
+        "title": "Utilizzo di <em>Gemini Nano</em><br />in Chrome",
+        "intro": "Gemini Nano è integrato direttamente in Chrome sull'hardware supportato. ",
+        "note": {
+          "title": "Nota:",
+          "text": "Gemini Nano viene eseguito sul tuo dispositivo, quindi può essere più lento rispetto ai provider di intelligenza artificiale basati su cloud. "
+        }
+      },
+      "toc": {
+        "title": "In questa pagina",
+        "requirements": "Requisiti di sistema",
+        "enable": "Abilita Gemini Nano nei flag di Chrome",
+        "verify": "Verifica che funzioni",
+        "troubleshoot": "Risoluzione dei problemi",
+        "fallback": "Cosa succede se non funziona?"
+      },
+      "requirements": {
+        "title": "Requisiti di sistema",
+        "intro": "Gemini Nano funziona localmente, quindi il tuo hardware è importante. ",
+        "grid": {
+          "browser": {
+            "label": "Navigatore",
+            "value": "Chrome 127 o successivo",
+            "note": "Solo desktop. "
+          },
+          "os": {
+            "label": "Sistema operativo",
+            "value": "Windows 10/11 · macOS 13+ · Linux",
+            "note": "ChromeOS è supportato anche sui Chromebook più recenti."
+          },
+          "storage": {
+            "label": "Spazio di archiviazione disponibile",
+            "value": "Almeno 22 GB liberi",
+            "note": "Chrome scarica il modello Nano (~20 GB) al primo utilizzo."
+          },
+          "gpu": {
+            "label": "GPU/NPU",
+            "value": "Consigliati 4 GB+ VRAM",
+            "note": "La grafica integrata di solito funziona, ma una GPU dedicata accelera significativamente l'inferenza."
+          }
+        },
+        "info": "Se la tua macchina non soddisfa questi requisiti, Donbrico Autofill AI utilizzerà automaticamente la chiave API configurata, senza che sia necessaria alcuna azione da parte tua."
+      },
+      "enable": {
+        "title": "Abilita Gemini Nano in Chrome",
+        "intro": "Gemini Nano e l'API Prompt sono funzionalità sperimentali. ",
+        "step1": {
+          "title": "Apri i flag di Chrome",
+          "text": "Digita quanto segue nella barra degli indirizzi di Chrome e premi Invio:"
+        },
+        "step2": {
+          "title": "Abilita il flag Prompt API",
+          "text": "Cerca <strong>Prompt API for Gemini Nano</strong> nella casella di ricerca dei flag, quindi impostalo su <strong>Abilitato</strong>.",
+          "desc": "Abilita l'API JavaScript <code>window.ai</code> in modo che le estensioni possano interagire con Gemini Nano.",
+          "val": "→ Imposta su: Abilitato"
+        },
+        "step3": {
+          "title": "Abilita guida all'ottimizzazione (download del modello)",
+          "text": "Cerca <strong>Abilita la guida all'ottimizzazione sul dispositivo</strong> e impostalo su <strong>Abilitato BypassPerfRequirement</strong>. ",
+          "desc": "Consente a Chrome di scaricare il modello Gemini Nano sul tuo dispositivo.",
+          "val": "→ Imposta su: Abilitato BypassPerfRequirement"
+        },
+        "step4": {
+          "title": "Riavvia Chrome",
+          "text": "Fai clic sul pulsante blu <strong>Riavvia</strong> visualizzato nella parte inferiore della pagina delle segnalazioni oppure chiudi e riapri Chrome completamente."
+        },
+        "step5": {
+          "title": "Attiva il download del modello",
+          "text": "Dopo il riavvio, vai alla pagina dei componenti per forzare Chrome a scaricare il modello Nano:",
+          "text2": "Trova la <strong>Guida all'ottimizzazione del modello del dispositivo</strong> nell'elenco e fai clic su <strong>Verifica aggiornamenti</strong>. "
+        },
+        "warn": "Il download del modello avviene silenziosamente in background. "
+      },
+      "verify": {
+        "title": "Verifica che funzioni",
+        "intro": "Una volta scaricato il modello, puoi verificare che tutto sia impostato correttamente senza uscire da Chrome.",
+        "devtools": {
+          "title": "Test rapido tramite DevTools",
+          "text": "Apri qualsiasi pagina web, premi <strong>F12</strong> (o fai clic con il pulsante destro del mouse → Ispeziona → Console) e incolla questo snippet:"
+        },
+        "results": {
+          "title": "L'output della console significa:",
+          "readily": "\"prontamente\" — Gemini Nano è stato scaricato ed è pronto. ",
+          "afterDownload": "\"after-download\" — Chrome knows about the model but it's still downloading. ",
+          "no": "\"no\": il modello non è disponibile su questo dispositivo. "
+        },
+        "tip": "Una volta visualizzato <strong>\"prontamente\"</strong>, apri il popup dell'estensione Donbrico Autofill AI. "
+      },
+      "troubleshoot": {
+        "title": "Risoluzione dei problemi",
+        "console": {
+          "title": "La console restituisce \"no\" o genera un errore",
+          "text": "Torna indietro attraverso i passaggi precedenti e conferma che entrambi i flag sono abilitati (non solo uno). "
+        },
+        "components": {
+          "title": "chrome://components non mostra alcuna versione per il modello",
+          "text": "Assicurati di aver effettuato l'accesso a Chrome con un account Google. "
+        },
+        "stuck": {
+          "title": "Il download del modello è bloccato",
+          "text": "Visit <code style=\"font-family:'DM Mono',monospace;color:#a5b4fc\">chrome://components</code>, find the Optimization Guide model, and click <strong>Check for update</strong> again. "
+        },
+        "requirements": {
+          "title": "La mia macchina soddisfa i requisiti ma mostra ancora \"no\"",
+          "list1": "Verifica di utilizzare Chrome versione 127 o successiva (seleziona <code style=\"font-family:'DM Mono',monospace;color:#a5b4fc\">chrome://version</code>).",
+          "list2": "Alcune installazioni di Chrome gestite dall'azienda bloccano i flag sperimentali. ",
+          "list3": "Assicurati che Chrome disponga di almeno 22 GB di spazio libero su disco per archiviare il modello.",
+          "list4": "Prova a disabilitare e riabilitare entrambi i flag, quindi a riavviare."
+        }
+      },
+      "fallback": {
+        "title": "Cosa succede se non funziona?",
+        "text1": "Donbrico Autofill AI ricorre con grazia alla chiave API Bring Your Own Key (OpenAI, Anthropic, Groq o OpenRouter) ogni volta che Gemini Nano non è disponibile. ",
+        "text2": "Se non sono configurati né Gemini Nano né una chiave API, l'estensione mostrerà un messaggio intuitivo che ti guiderà a configurarne una. ",
+        "tip": "Hai bisogno di una chiave API? "
       }
     }
   }

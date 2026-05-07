@@ -972,196 +972,323 @@
   "docs": {
     "apiKeys": {
       "page": {
-        "title": "API कुंजी गाइड — Donbrico Autofill AI"
+        "title": "एपीआई कुंजी गाइड - डोनब्रीको ऑटोफिल एआई"
       },
       "breadcrumb": {
-        "home": "Home",
-        "docs": "Docs",
-        "title": "API कुंजी गाइड"
+        "home": "घर",
+        "docs": "डॉक्स",
+        "title": "एपीआई कुंजी"
       },
       "header": {
         "badge": "सेटअप गाइड",
-        "title": "अपनी <em>API कुंजियाँ</em> प्राप्त करें",
-        "intro": "Donbrico Autofill AI works best when you connect your own AI provider. Here is how to get your keys from the most popular services.",
+        "title": "अपनी <em>एपीआई कुंजी</em> प्राप्त करें",
+        "intro": "जब आप अपने स्वयं के एआई प्रदाता से जुड़ते हैं तो डोनब्रीको ऑटोफिल एआई सबसे अच्छा काम करता है। ",
         "speedNote": {
-          "title": "Blazing fast.",
-          "text": "Using your own API key is typically 5-10x faster than the built-in free models and has much higher limits."
+          "title": "तेजी से धधकता।",
+          "text": "अपनी खुद की एपीआई कुंजी का उपयोग आम तौर पर अंतर्निहित मुफ्त मॉडल की तुलना में 5-10 गुना तेज है और इसकी सीमाएं बहुत अधिक हैं।"
         }
       },
       "providers": {
         "groq": {
-          "title": "Groq",
-          "tag": "Fast · Free tier",
-          "label": "Provider 01",
+          "title": "ग्रोक",
+          "tag": "तेज़ · फ्री टियर",
+          "label": "प्रदाता 01",
           "url": "console.groq.com",
           "pills": {
-            "free": "Free tier available",
-            "models": "Llama 3 · Mixtral · Gemma"
+            "free": "निःशुल्क टियर उपलब्ध है",
+            "models": "लामा 3 · मिक्सट्रल · जेम्मा"
           },
-          "cta": "Create account ↗",
-          "intro": "Groq runs open-source models on custom silicon (LPUs) — the result is remarkably fast inference. The free tier is generous enough for everyday autofill use at no cost.",
+          "cta": "खाता बनाएं ↗",
+          "intro": "ग्रोक कस्टम सिलिकॉन (एलपीयू) पर ओपन-सोर्स मॉडल चलाता है - परिणाम उल्लेखनीय रूप से तेज़ अनुमान है। ",
           "step1": {
-            "title": "Sign up for a free Groq account",
-            "text": "Go to <strong>console.groq.com</strong> and click <strong>Sign up</strong>. Groq supports Google, GitHub, and email signup. No credit card is required for the free tier."
+            "title": "मुफ़्त ग्रोक खाते के लिए साइन अप करें",
+            "text": "<strong>console.groq.com</strong> पर जाएं और <strong>साइन अप</strong> पर क्लिक करें। "
           },
           "step2": {
-            "title": "Create an API key",
-            "text": "In the left sidebar, click <strong>API Keys</strong>. Click <strong>Create API Key</strong>, enter a name like \"Donbrico\", and click <strong>Submit</strong>.",
-            "warn": "Copy the key immediately. Groq does not show it again after creation. It begins with <span class=\"code-inline\">gsk_…</span>"
+            "title": "एक एपीआई कुंजी बनाएं",
+            "text": "बाएं साइडबार में, <strong>एपीआई कुंजी</strong> पर क्लिक करें। ",
+            "warn": "कुंजी को तुरंत कॉपी करें. "
           },
           "step3": {
-            "title": "Paste into the extension",
-            "text": "Open the extension popup → <strong>Settings → AI Provider → Groq</strong>. Paste your key and save."
+            "title": "एक्सटेंशन में चिपकाएँ",
+            "text": "एक्सटेंशन पॉपअप → <strong>सेटिंग्स → एआई प्रदाता → ग्रोक</strong> खोलें। "
           },
-          "info": "Groq free tier includes rate limits (e.g. 30 requests/minute for Llama 3). For typical autofill usage this is more than enough. If you hit limits, upgrading to a paid plan removes them.",
+          "info": "ग्रोक फ्री टियर में दर सीमाएँ शामिल हैं (उदाहरण के लिए लामा 3 के लिए 30 अनुरोध/मिनट)। ",
           "table": {
-            "thModel": "Model",
-            "thSpeed": "Speed",
-            "thFree": "Free tier?",
-            "recommended": "Recommended",
-            "extremelyFast": "Extremely fast",
-            "fast": "Fast",
-            "yes": "Yes",
-            "yesLower": "Yes (lower limit)"
+            "thModel": "नमूना",
+            "thSpeed": "रफ़्तार",
+            "thFree": "निःशुल्क स्तर?",
+            "recommended": "अनुशंसित",
+            "extremelyFast": "बेहद तेज़",
+            "fast": "तेज़",
+            "yes": "हाँ",
+            "yesLower": "हाँ (निचली सीमा)"
           }
         },
         "openrouter": {
-          "title": "OpenRouter",
-          "tag": "100+ models",
-          "label": "Provider 02",
+          "title": "ओपनराउटर",
+          "tag": "100+ मॉडल",
+          "label": "प्रदाता 02",
           "url": "openrouter.ai",
           "pills": {
-            "free": "Free models available",
-            "models": "100+ models from any provider"
+            "free": "निःशुल्क मॉडल उपलब्ध हैं",
+            "models": "किसी भी प्रदाता से 100+ मॉडल"
           },
-          "cta": "Create account ↗",
-          "intro": "OpenRouter is a unified gateway to over 100 AI models — including GPT-4o, Claude, Llama, Mistral, and many more — through a single API key. Several models are permanently free with no credit card required.",
+          "cta": "खाता बनाएं ↗",
+          "intro": "ओपनराउटर एक एकल एपीआई कुंजी के माध्यम से 100 से अधिक एआई मॉडल के लिए एक एकीकृत प्रवेश द्वार है - जिसमें जीपीटी-4ओ, क्लाउड, लामा, मिस्ट्रल और कई अन्य शामिल हैं। ",
           "step1": {
-            "title": "Create an OpenRouter account",
-            "text": "Visit <strong>openrouter.ai</strong> and click <strong>Sign In</strong>. OpenRouter supports Google and GitHub sign-in, or you can use an email address."
+            "title": "एक ओपनराउटर खाता बनाएं",
+            "text": "<strong>openrouter.ai</strong> पर जाएं और <strong>साइन इन</strong> पर क्लिक करें। "
           },
           "step2": {
-            "title": "Optional: add credits for paid models",
-            "text": "Go to <strong>Credits</strong> in your account and top up if you want to use paid models like GPT-4o or Claude. For free models only, no payment is needed.",
-            "tip": "Filter by <strong>Free</strong> on the Models page to see the full list of zero-cost models available right now."
+            "title": "वैकल्पिक: सशुल्क मॉडल के लिए क्रेडिट जोड़ें",
+            "text": "यदि आप GPT-4o या क्लाउड जैसे सशुल्क मॉडल का उपयोग करना चाहते हैं तो अपने खाते में <strong>क्रेडिट</strong> पर जाएं और टॉप अप करें। ",
+            "tip": "अभी उपलब्ध शून्य-लागत मॉडलों की पूरी सूची देखने के लिए मॉडल पृष्ठ पर <strong>निःशुल्क</strong> द्वारा फ़िल्टर करें।"
           },
           "step3": {
-            "title": "Create an API key",
-            "text": "Go to <strong>Keys</strong> in the top navigation. Click <strong>Create Key</strong>, name it \"Donbrico\", and copy the key — it begins with <span class=\"code-inline\">sk-or-…</span>",
-            "warn": "Copy the key now — it will be hidden after you close this dialog."
+            "title": "एक एपीआई कुंजी बनाएं",
+            "text": "शीर्ष नेविगेशन में <strong>कुंजियाँ</strong> पर जाएं. ",
+            "warn": "कुंजी को अभी कॉपी करें - आपके द्वारा इस संवाद को बंद करने के बाद यह छिपा दिया जाएगा।"
           },
           "step4": {
-            "title": "Paste into the extension",
-            "text": "Open the extension popup → <strong>Settings → AI Provider → OpenRouter</strong>. Paste your key, choose your preferred model, and save."
+            "title": "एक्सटेंशन में चिपकाएँ",
+            "text": "एक्सटेंशन पॉपअप → <strong>सेटिंग्स → AI प्रदाता → OpenRouter</strong> खोलें। "
           },
           "table": {
-            "thModel": "Model",
-            "thNotes": "Notes",
-            "thCost": "Cost",
-            "llamaNote": "Fast, reliable free option",
-            "mistralNote": "Good for structured outputs",
-            "gptNote": "Premium quality",
-            "claudeNote": "Premium quality",
-            "free": "Free",
-            "payAsYouGo": "Pay-as-you-go"
+            "thModel": "नमूना",
+            "thNotes": "टिप्पणियाँ",
+            "thCost": "लागत",
+            "llamaNote": "तेज़, विश्वसनीय मुफ़्त विकल्प",
+            "mistralNote": "संरचित आउटपुट के लिए अच्छा है",
+            "gptNote": "प्रीमियम गुणवत्ता",
+            "claudeNote": "प्रीमियम गुणवत्ता",
+            "free": "मुक्त",
+            "payAsYouGo": "उपयोगानुसार भुगतान करो"
           }
         },
         "anthropic": {
-          "title": "Anthropic",
-          "tag": "Claude",
-          "label": "Provider 03",
+          "title": "anthropic",
+          "tag": "क्लाउड",
+          "label": "प्रदाता 03",
           "url": "console.anthropic.com",
           "pills": {
-            "payAsYouGo": "Pay-as-you-go",
-            "models": "Claude 3.5 Haiku · Claude 3.5 Sonnet"
+            "payAsYouGo": "उपयोगानुसार भुगतान करो",
+            "models": "क्लाउड 3.5 हाइकु · क्लाउड 3.5 सॉनेट"
           },
-          "cta": "Create account ↗",
-          "intro": "Anthropic's Claude models are known for following instructions precisely — ideal for generating well-structured cover letters and professional answers.",
+          "cta": "खाता बनाएं ↗",
+          "intro": "एंथ्रोपिक के क्लाउड मॉडल निर्देशों का सटीक रूप से पालन करने के लिए जाने जाते हैं - जो अच्छी तरह से संरचित कवर लेटर और पेशेवर उत्तर तैयार करने के लिए आदर्श हैं।",
           "step1": {
-            "title": "Create an Anthropic account",
-            "text": "Visit <strong>console.anthropic.com</strong> and click <strong>Sign up</strong>. You can use Google or an email address."
+            "title": "एक एंथ्रोपिक खाता बनाएं",
+            "text": "<strong>console.anthropic.com</strong> पर जाएं और <strong>साइन अप</strong> पर क्लिक करें। "
           },
           "step2": {
-            "title": "Add billing information",
-            "text": "From the Console dashboard, go to <strong>Settings → Billing</strong>. Click <strong>Add credit card</strong> and complete the form. Anthropic is pay-as-you-go with no monthly fee.",
-            "tip": "You can set a monthly spend limit under Billing → Usage limits to avoid any surprise charges."
+            "title": "बिलिंग जानकारी जोड़ें",
+            "text": "कंसोल डैशबोर्ड से, <strong>सेटिंग्स → बिलिंग</strong> पर जाएं। ",
+            "tip": "आप किसी भी आश्चर्यजनक शुल्क से बचने के लिए बिलिंग → उपयोग सीमा के अंतर्गत मासिक खर्च सीमा निर्धारित कर सकते हैं।"
           },
           "step3": {
-            "title": "Generate an API key",
-            "text": "In the left sidebar, click <strong>API Keys</strong>. Click <strong>Create Key</strong>, name it \"Donbrico\", and copy the key — it starts with <span class=\"code-inline\">sk-ant-…</span>",
-            "warn": "The key is shown only once at creation time. Copy it before closing the dialog."
+            "title": "एक एपीआई कुंजी उत्पन्न करें",
+            "text": "बाएं साइडबार में, <strong>एपीआई कुंजी</strong> पर क्लिक करें। ",
+            "warn": "निर्माण के समय कुंजी केवल एक बार दिखाई जाती है। "
           },
           "step4": {
-            "title": "Paste into the extension",
-            "text": "Open the extension popup → <strong>Settings → AI Provider → Anthropic</strong>. Paste your key and save."
+            "title": "एक्सटेंशन में चिपकाएँ",
+            "text": "एक्सटेंशन पॉपअप खोलें → <strong>सेटिंग्स → एआई प्रदाता → एंथ्रोपिक</strong>। "
           },
           "table": {
-            "thModel": "Model",
-            "thSpeed": "Speed",
-            "thCost": "Cost (approx. per autofill)",
-            "veryFast": "Very fast",
-            "moderate": "Moderate",
+            "thModel": "नमूना",
+            "thSpeed": "रफ़्तार",
+            "thCost": "लागत (लगभग प्रति ऑटोफ़िल)",
+            "veryFast": "बहुत तेज",
+            "moderate": "मध्यम",
             "costHaiku": "~$0.001",
             "costSonnet": "~$0.006"
           }
         },
         "openai": {
-          "title": "OpenAI",
+          "title": "ओपनएआई",
           "tag": "GPT-4o",
-          "label": "Provider 04",
+          "label": "प्रदाता 04",
           "url": "platform.openai.com",
           "pills": {
-            "payAsYouGo": "Pay-as-you-go",
-            "models": "GPT-4o · GPT-4o mini"
+            "payAsYouGo": "उपयोगानुसार भुगतान करो",
+            "models": "GPT-4o · GPT-4o मिनी"
           },
-          "cta": "Create account ↗",
-          "intro": "OpenAI is the most widely used provider. GPT-4o mini is fast, accurate, and costs fractions of a cent per autofill.",
+          "cta": "खाता बनाएं ↗",
+          "intro": "OpenAI सबसे व्यापक रूप से उपयोग किया जाने वाला प्रदाता है। ",
           "step1": {
-            "title": "Create a free account",
-            "text": "Go to <strong>platform.openai.com</strong> and sign up. You can use Google, Microsoft, or email."
+            "title": "एक नि: शुल्क खाता बनाएं",
+            "text": "<strong>platform.openai.com</strong> पर जाएं और साइन अप करें। "
           },
           "step2": {
-            "title": "Add a payment method",
-            "text": "Navigate to <strong>Settings → Billing → Add payment method</strong>. OpenAI requires a credit card before generating API keys. You will only be charged for actual usage — new accounts receive $5 in free credits."
+            "title": "कोई भुगतान विधि जोड़ें",
+            "text": "<strong>सेटिंग्स → बिलिंग → भुगतान विधि जोड़ें</strong> पर नेविगेट करें। "
           },
           "step3": {
-            "title": "Create an API key",
-            "text": "Go to <strong>API Keys</strong> in the left sidebar (or visit <span class=\"code-inline\">platform.openai.com/api-keys</span>). Click <strong>Create new secret key</strong>, give it a name like \"Donbrico\", and click <strong>Create secret key</strong>.",
-            "warn": "Copy your key immediately — OpenAI only shows it once. Store it somewhere safe."
+            "title": "एक एपीआई कुंजी बनाएं",
+            "text": "बाएं साइडबार में <strong>एपीआई कुंजी</strong> पर जाएं (या <span class=\"code-inline\">platform.openai.com/api-keys</span> पर जाएं)। ",
+            "warn": "अपनी कुंजी तुरंत कॉपी करें - OpenAI इसे केवल एक बार दिखाता है। "
           },
           "step4": {
-            "title": "Paste the key into the extension",
-            "text": "Open the Donbrico Autofill AI popup → <strong>Settings → AI Provider → OpenAI</strong>. Paste your key (it starts with <span class=\"code-inline\">sk-…</span>) and click Save."
+            "title": "कुंजी को एक्सटेंशन में चिपकाएँ",
+            "text": "डोनब्रीको ऑटोफिल एआई पॉपअप → <strong>सेटिंग्स → एआई प्रदाता → ओपनएआई</strong> खोलें। "
           },
           "table": {
-            "thModel": "Model",
-            "thSpeed": "Speed",
-            "thCost": "Cost (approx. per autofill)",
+            "thModel": "नमूना",
+            "thSpeed": "रफ़्तार",
+            "thCost": "लागत (लगभग प्रति ऑटोफ़िल)",
             "costMini": "~$0.001",
             "costFull": "~$0.005"
           }
         }
       },
       "comparison": {
-        "title": "Quick comparison",
-        "thProvider": "Provider",
-        "thFreeTier": "Free tier?",
-        "thCardRequired": "Card required?",
-        "thBestFor": "Best for",
-        "thKeyPrefix": "Key prefix",
-        "groqBest": "Fastest responses, no cost",
-        "openRouterBest": "Flexibility, free models",
-        "anthropicBest": "Precise instruction-following",
-        "openaiBest": "Best overall quality",
-        "signupCredit": "$5 credit on signup",
-        "no": "No",
-        "yes": "Yes",
-        "yesFreeModels": "No (free models)"
+        "title": "त्वरित तुलना",
+        "thProvider": "प्रदाता",
+        "thFreeTier": "निःशुल्क स्तर?",
+        "thCardRequired": "कार्ड आवश्यक है?",
+        "thBestFor": "के लिए सर्वोत्तम",
+        "thKeyPrefix": "कुंजी उपसर्ग",
+        "groqBest": "सबसे तेज़ प्रतिक्रियाएँ, कोई कीमत नहीं",
+        "openRouterBest": "लचीलापन, मुफ़्त मॉडल",
+        "anthropicBest": "सटीक अनुदेश-पालन",
+        "openaiBest": "सर्वोत्तम समग्र गुणवत्ता",
+        "signupCredit": "साइनअप पर $5 क्रेडिट",
+        "no": "नहीं",
+        "yes": "हाँ",
+        "yesFreeModels": "नहीं (मुफ़्त मॉडल)"
       },
       "proTip": {
-        "label": "Pro tip",
-        "text": "No API key needed at all — if your computer supports it, <strong>Gemini Nano</strong> runs directly in Chrome for free with complete privacy.",
-        "link": "Check Gemini Nano compatibility →"
+        "label": "प्रो टिप",
+        "text": "किसी एपीआई कुंजी की बिल्कुल भी आवश्यकता नहीं है - यदि आपका कंप्यूटर इसका समर्थन करता है, तो <strong>जेमिनी नैनो</strong> पूरी गोपनीयता के साथ सीधे क्रोम में मुफ्त में चलता है।",
+        "link": "जेमिनी नैनो अनुकूलता की जाँच करें →"
+      }
+    },
+    "geminiNano": {
+      "page": {
+        "title": "जेमिनी नैनो सेटअप - डोनब्रीको ऑटोफिल एआई"
+      },
+      "breadcrumb": {
+        "home": "घर",
+        "autofillAi": "स्वतः भरण एआई",
+        "title": "जेमिनी नैनो सेटअप"
+      },
+      "header": {
+        "badge": "मुफ़्त · कोई एपीआई कुंजी नहीं · 100% निजी",
+        "title": "क्रोम में <em>मिथुन नैनो</em><br /> का उपयोग करना",
+        "intro": "जेमिनी नैनो को समर्थित हार्डवेयर पर सीधे क्रोम में बनाया गया है। ",
+        "note": {
+          "title": "टिप्पणी:",
+          "text": "जेमिनी नैनो आपके डिवाइस पर चलता है, इसलिए यह क्लाउड-आधारित AI प्रदाताओं की तुलना में धीमा हो सकता है। "
+        }
+      },
+      "toc": {
+        "title": "इस पेज पर",
+        "requirements": "सिस्टम आवश्यकताएं",
+        "enable": "क्रोम फ़्लैग में जेमिनी नैनो सक्षम करें",
+        "verify": "सत्यापित करें कि यह काम कर रहा है",
+        "troubleshoot": "समस्या निवारण",
+        "fallback": "यदि यह काम नहीं करता तो क्या होगा?"
+      },
+      "requirements": {
+        "title": "सिस्टम आवश्यकताएं",
+        "intro": "जेमिनी नैनो स्थानीय रूप से चलती है, इसलिए आपका हार्डवेयर मायने रखता है। ",
+        "grid": {
+          "browser": {
+            "label": "ब्राउज़र",
+            "value": "क्रोम 127 या बाद का संस्करण",
+            "note": "केवल डेस्कटॉप. "
+          },
+          "os": {
+            "label": "ऑपरेटिंग सिस्टम",
+            "value": "विंडोज़ 10/11 · मैकओएस 13+ · लिनक्स",
+            "note": "ChromeOS नए Chromebook पर भी समर्थित है।"
+          },
+          "storage": {
+            "label": "उपलब्ध भंडार",
+            "value": "कम से कम 22 जीबी मुफ़्त",
+            "note": "Chrome पहली बार उपयोग करने पर नैनो मॉडल (~20 जीबी) डाउनलोड करता है।"
+          },
+          "gpu": {
+            "label": "जीपीयू/एनपीयू",
+            "value": "4 जीबी+ वीआरएएम अनुशंसित",
+            "note": "एकीकृत ग्राफिक्स आमतौर पर काम करते हैं, लेकिन एक समर्पित जीपीयू गति का अनुमान महत्वपूर्ण रूप से लगाता है।"
+          }
+        },
+        "info": "यदि आपकी मशीन इन आवश्यकताओं को पूरा नहीं करती है, तो डोनब्रिको ऑटोफिल एआई स्वचालित रूप से आपकी कॉन्फ़िगर की गई एपीआई कुंजी पर वापस आ जाएगी - आपकी ओर से किसी कार्रवाई की आवश्यकता नहीं है।"
+      },
+      "enable": {
+        "title": "क्रोम में जेमिनी नैनो सक्षम करें",
+        "intro": "जेमिनी नैनो और प्रॉम्प्ट एपीआई प्रायोगिक विशेषताएं हैं। ",
+        "step1": {
+          "title": "Chrome फ़्लैग खोलें",
+          "text": "अपने Chrome एड्रेस बार में निम्नलिखित टाइप करें और Enter दबाएँ:"
+        },
+        "step2": {
+          "title": "प्रॉम्प्ट एपीआई ध्वज सक्षम करें",
+          "text": "फ़्लैग खोज बॉक्स में <strong>जेमिनी नैनो के लिए प्रॉम्प्ट एपीआई</strong> खोजें, फिर इसे <strong>सक्षम</strong> पर सेट करें।",
+          "desc": "<code>window.ai</code> जावास्क्रिप्ट एपीआई को सक्षम करता है ताकि एक्सटेंशन जेमिनी नैनो के साथ इंटरैक्ट कर सकें।",
+          "val": "→ इस पर सेट करें: सक्षम"
+        },
+        "step3": {
+          "title": "अनुकूलन गाइड सक्षम करें (मॉडल डाउनलोड)",
+          "text": "<strong>डिवाइस पर ऑप्टिमाइज़ेशन गाइड सक्षम करता है</strong> खोजें और इसे <strong>सक्षम BypassPerfRequirement</strong> पर सेट करें। ",
+          "desc": "Chrome को आपके डिवाइस पर जेमिनी नैनो मॉडल डाउनलोड करने की अनुमति देता है।",
+          "val": "→ इस पर सेट करें: सक्षम BypassPerfRequirement"
+        },
+        "step4": {
+          "title": "क्रोम पुनः लॉन्च करें",
+          "text": "फ़्लैग पेज के नीचे दिखाई देने वाले नीले <strong>पुनः लॉन्च</strong> बटन पर क्लिक करें, या Chrome को पूरी तरह से बंद करें और फिर से खोलें।"
+        },
+        "step5": {
+          "title": "मॉडल डाउनलोड ट्रिगर करें",
+          "text": "पुन: लॉन्च करने के बाद, Chrome को नैनो मॉडल डाउनलोड करने के लिए बाध्य करने के लिए घटक पृष्ठ पर जाएँ:",
+          "text2": "सूची में <strong>डिवाइस मॉडल पर अनुकूलन गाइड</strong> ढूंढें और <strong>अपडेट की जांच करें</strong> पर क्लिक करें। "
+        },
+        "warn": "मॉडल डाउनलोड पृष्ठभूमि में चुपचाप होता है। "
+      },
+      "verify": {
+        "title": "सत्यापित करें कि यह काम कर रहा है",
+        "intro": "एक बार मॉडल डाउनलोड हो जाने पर, आप क्रोम छोड़े बिना पुष्टि कर सकते हैं कि सब कुछ सही ढंग से सेट हो गया है।",
+        "devtools": {
+          "title": "DevTools के माध्यम से त्वरित परीक्षण",
+          "text": "कोई भी वेबपेज खोलें, <strong>F12</strong> दबाएं (या राइट-क्लिक करें → निरीक्षण → कंसोल), और इस स्निपेट को पेस्ट करें:"
+        },
+        "results": {
+          "title": "कंसोल आउटपुट का अर्थ है:",
+          "readily": "\"तत्काल\" - जेमिनी नैनो डाउनलोड होकर तैयार है। ",
+          "afterDownload": "\"डाउनलोड के बाद\" - क्रोम मॉडल के बारे में जानता है लेकिन यह अभी भी डाउनलोड हो रहा है। ",
+          "no": "\"नहीं\" - मॉडल इस डिवाइस पर उपलब्ध नहीं है। "
+        },
+        "tip": "एक बार जब आप <strong>\"रेडीली\"</strong> देख लें, तो डोनब्रीको ऑटोफिल एआई एक्सटेंशन पॉपअप खोलें। "
+      },
+      "troubleshoot": {
+        "title": "समस्या निवारण",
+        "console": {
+          "title": "कंसोल \"नहीं\" लौटाता है या कोई त्रुटि देता है",
+          "text": "उपरोक्त चरणों पर वापस जाएं और पुष्टि करें कि दोनों झंडे सक्षम हैं (सिर्फ एक नहीं)। "
+        },
+        "components": {
+          "title": "chrome://components मॉडल के लिए कोई संस्करण नहीं दिखाता है",
+          "text": "सुनिश्चित करें कि आप Chrome में Google खाते से साइन इन हैं। "
+        },
+        "stuck": {
+          "title": "मॉडल डाउनलोड रुका हुआ है",
+          "text": "<code style=\"font-family:'DM Mono',monospace;color:#a5b4fc\">chrome://components</code> पर जाएं, ऑप्टिमाइज़ेशन गाइड मॉडल ढूंढें और <strong>अपडेट की जांच करें</strong> पर दोबारा क्लिक करें। "
+        },
+        "requirements": {
+          "title": "मेरी मशीन आवश्यकताओं को पूरा करती है लेकिन यह अभी भी \"नहीं\" दिखाती है",
+          "list1": "पुष्टि करें कि आप Chrome संस्करण 127 या उसके बाद के संस्करण पर हैं (<code style=\"font-family:'DM Mono',monospace;color:#a5b4fc\">chrome://version</code> जांचें)।",
+          "list2": "कुछ एंटरप्राइज़-प्रबंधित Chrome इंस्टॉल प्रयोगात्मक फ़्लैग को रोकते हैं। ",
+          "list3": "सुनिश्चित करें कि क्रोम में मॉडल को संग्रहीत करने के लिए कम से कम 22 जीबी खाली डिस्क स्थान हो।",
+          "list4": "दोनों फ़्लैग को अक्षम और पुनः सक्षम करने का प्रयास करें, फिर पुनः लॉन्च करें।"
+        }
+      },
+      "fallback": {
+        "title": "यदि यह काम नहीं करता तो क्या होगा?",
+        "text1": "जब भी जेमिनी नैनो उपलब्ध नहीं होती है, तो डोनब्रीको ऑटोफिल एआई आपके ब्रिंग योर ओन की एपीआई कुंजी (ओपनएआई, एंथ्रोपिक, ग्रोक, या ओपनराउटर) पर वापस आ जाता है। ",
+        "text2": "यदि न तो जेमिनी नैनो और न ही कोई एपीआई कुंजी कॉन्फ़िगर की गई है, तो एक्सटेंशन आपको एक सेट अप करने के लिए मार्गदर्शन करते हुए एक अनुकूल संकेत दिखाएगा। ",
+        "tip": "एपीआई कुंजी की आवश्यकता है? "
       }
     }
   }

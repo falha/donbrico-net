@@ -975,193 +975,320 @@
         "title": "API 金鑰指南 — Donbrico Autofill AI"
       },
       "breadcrumb": {
-        "home": "Home",
-        "docs": "Docs",
-        "title": "API 金鑰指南"
+        "home": "家",
+        "docs": "文件",
+        "title": "API 金鑰"
       },
       "header": {
         "badge": "設定指南",
-        "title": "獲取您的 <em>API 金鑰</em>",
-        "intro": "Donbrico Autofill AI works best when you connect your own AI provider. Here is how to get your keys from the most popular services.",
+        "title": "取得您的 API 金鑰<em></em>",
+        "intro": "當您連接自己的 AI 提供者時，Donbrico Autofill AI 效果最佳。以下是如何從最受歡迎的服務中取得金鑰的方法。",
         "speedNote": {
-          "title": "Blazing fast.",
-          "text": "Using your own API key is typically 5-10x faster than the built-in free models and has much higher limits."
+          "title": "速度極快。",
+          "text": "使用您自己的 API 金鑰通常比內建免費模型快 5-10 倍，並且具有更高的限制。"
         }
       },
       "providers": {
         "groq": {
-          "title": "Groq",
-          "tag": "Fast · Free tier",
-          "label": "Provider 01",
+          "title": "格羅克",
+          "tag": "快速·免費套餐",
+          "label": "供應商01",
           "url": "console.groq.com",
           "pills": {
-            "free": "Free tier available",
-            "models": "Llama 3 · Mixtral · Gemma"
+            "free": "提供免費套餐",
+            "models": "駱駝 3 · 混合 · 傑瑪"
           },
-          "cta": "Create account ↗",
-          "intro": "Groq runs open-source models on custom silicon (LPUs) — the result is remarkably fast inference. The free tier is generous enough for everyday autofill use at no cost.",
+          "cta": "建立帳戶 ↗",
+          "intro": "Groq 在客製化晶片 (LPU) 上運行開源模型 — 結果是推理速度非常快。免費套餐夠免費，可供日常自動填入使用。",
           "step1": {
-            "title": "Sign up for a free Groq account",
-            "text": "Go to <strong>console.groq.com</strong> and click <strong>Sign up</strong>. Groq supports Google, GitHub, and email signup. No credit card is required for the free tier."
+            "title": "註冊一個免費的 Groq 帳戶",
+            "text": "前往 <strong>console.groq.com</strong> 並點選<strong>註冊</strong>。 Groq 支援 Google、GitHub 和電子郵件註冊。免費套餐不需要信用卡。"
           },
           "step2": {
-            "title": "Create an API key",
-            "text": "In the left sidebar, click <strong>API Keys</strong>. Click <strong>Create API Key</strong>, enter a name like \"Donbrico\", and click <strong>Submit</strong>.",
-            "warn": "Copy the key immediately. Groq does not show it again after creation. It begins with <span class=\"code-inline\">gsk_…</span>"
+            "title": "建立 API 金鑰",
+            "text": "在左側邊欄中，點選<strong>API 金鑰</strong>。點選<strong>建立 API 金鑰</strong>，輸入名稱（例如「Donbrico」），然後按<strong>提交</strong>。",
+            "warn": "立即複製密鑰。 Groq 建立後不會再次顯示它。它以 <span class=\"code-inline\">gsk_...</span> 開頭"
           },
           "step3": {
-            "title": "Paste into the extension",
-            "text": "Open the extension popup → <strong>Settings → AI Provider → Groq</strong>. Paste your key and save."
+            "title": "貼到擴充中",
+            "text": "開啟擴充彈出視窗 → <strong>設定 → AI Provider → Groq</strong>。貼上您的密鑰並保存。"
           },
-          "info": "Groq free tier includes rate limits (e.g. 30 requests/minute for Llama 3). For typical autofill usage this is more than enough. If you hit limits, upgrading to a paid plan removes them.",
+          "info": "Groq 免費套餐包含速率限制（例如 Llama 3 每分鐘 30 個請求）。對於典型的自動填充用法來說，這已經足夠了。如果您達到限制，升級到付費方案可以消除這些限制。",
           "table": {
-            "thModel": "Model",
-            "thSpeed": "Speed",
-            "thFree": "Free tier?",
-            "recommended": "Recommended",
-            "extremelyFast": "Extremely fast",
-            "fast": "Fast",
-            "yes": "Yes",
-            "yesLower": "Yes (lower limit)"
+            "thModel": "模型",
+            "thSpeed": "速度",
+            "thFree": "免費等級？",
+            "recommended": "受到推崇的",
+            "extremelyFast": "極快",
+            "fast": "快速地",
+            "yes": "是的",
+            "yesLower": "是（下限）"
           }
         },
         "openrouter": {
-          "title": "OpenRouter",
-          "tag": "100+ models",
-          "label": "Provider 02",
-          "url": "openrouter.ai",
+          "title": "開放路由器",
+          "tag": "100+型號",
+          "label": "供應商02",
+          "url": "開放路由器.ai",
           "pills": {
-            "free": "Free models available",
-            "models": "100+ models from any provider"
+            "free": "提供免費模型",
+            "models": "來自任何提供者的 100 多個模型"
           },
-          "cta": "Create account ↗",
-          "intro": "OpenRouter is a unified gateway to over 100 AI models — including GPT-4o, Claude, Llama, Mistral, and many more — through a single API key. Several models are permanently free with no credit card required.",
+          "cta": "建立帳戶 ↗",
+          "intro": "OpenRouter 是透過單一 API 金鑰連接超過 100 個 AI 模型（包括 GPT-4o、Claude、Llama、Mistral 等）的統一閘道。有幾種型號是永久免費的，無需信用卡。",
           "step1": {
-            "title": "Create an OpenRouter account",
-            "text": "Visit <strong>openrouter.ai</strong> and click <strong>Sign In</strong>. OpenRouter supports Google and GitHub sign-in, or you can use an email address."
+            "title": "建立一個 OpenRouter 帳戶",
+            "text": "造訪 <strong>openrouter.ai</strong> 並點選<strong>登入</strong>。 OpenRouter 支援 Google 和 GitHub 登錄，也可以使用電子郵件地址。"
           },
           "step2": {
-            "title": "Optional: add credits for paid models",
-            "text": "Go to <strong>Credits</strong> in your account and top up if you want to use paid models like GPT-4o or Claude. For free models only, no payment is needed.",
-            "tip": "Filter by <strong>Free</strong> on the Models page to see the full list of zero-cost models available right now."
+            "title": "可選：為付費模型添加積分",
+            "text": "如果您想使用 GPT-4o 或 Claude 等付費模型，請前往帳戶中的<strong>積分</strong>並充值。僅適用於免費模型，無需付款。",
+            "tip": "在「型號」頁面上按<strong>免費</strong>進行篩選，即可查看目前可用的零成本型號的完整清單。"
           },
           "step3": {
-            "title": "Create an API key",
-            "text": "Go to <strong>Keys</strong> in the top navigation. Click <strong>Create Key</strong>, name it \"Donbrico\", and copy the key — it begins with <span class=\"code-inline\">sk-or-…</span>",
-            "warn": "Copy the key now — it will be hidden after you close this dialog."
+            "title": "建立 API 金鑰",
+            "text": "前往頂部導覽中的<strong>按鍵</strong>。點擊<strong>建立金鑰</strong>，將其命名為“Donbrico”，然後複製金鑰 - 它以 <span class=\"code-inline\">sk-or-...</span> 開頭",
+            "warn": "立即複製密鑰 - 關閉此對話框後它將被隱藏。"
           },
           "step4": {
-            "title": "Paste into the extension",
-            "text": "Open the extension popup → <strong>Settings → AI Provider → OpenRouter</strong>. Paste your key, choose your preferred model, and save."
+            "title": "貼到擴充中",
+            "text": "開啟擴充彈出視窗 → <strong>設定 → AI Provider → OpenRouter</strong>。貼上您的金鑰，選擇您喜歡的型號，然後儲存。"
           },
           "table": {
-            "thModel": "Model",
-            "thNotes": "Notes",
-            "thCost": "Cost",
-            "llamaNote": "Fast, reliable free option",
-            "mistralNote": "Good for structured outputs",
-            "gptNote": "Premium quality",
-            "claudeNote": "Premium quality",
-            "free": "Free",
-            "payAsYouGo": "Pay-as-you-go"
+            "thModel": "模型",
+            "thNotes": "筆記",
+            "thCost": "成本",
+            "llamaNote": "快速、可靠的免費選項",
+            "mistralNote": "適合結構化輸出",
+            "gptNote": "優質品質",
+            "claudeNote": "優質品質",
+            "free": "自由的",
+            "payAsYouGo": "按量付費"
           }
         },
         "anthropic": {
-          "title": "Anthropic",
-          "tag": "Claude",
-          "label": "Provider 03",
+          "title": "人擇",
+          "tag": "克洛德",
+          "label": "供應商03",
           "url": "console.anthropic.com",
           "pills": {
-            "payAsYouGo": "Pay-as-you-go",
-            "models": "Claude 3.5 Haiku · Claude 3.5 Sonnet"
+            "payAsYouGo": "按量付費",
+            "models": "克勞德 3.5 俳句 · 克勞德 3.5 十四行詩"
           },
-          "cta": "Create account ↗",
-          "intro": "Anthropic's Claude models are known for following instructions precisely — ideal for generating well-structured cover letters and professional answers.",
+          "cta": "建立帳戶 ↗",
+          "intro": "Anthropic 的 Claude 模型以精確遵循指令而聞名，非常適合產生結構良好的求職信和專業答案。",
           "step1": {
-            "title": "Create an Anthropic account",
-            "text": "Visit <strong>console.anthropic.com</strong> and click <strong>Sign up</strong>. You can use Google or an email address."
+            "title": "建立一個人類帳戶",
+            "text": "請造訪 <strong>console.anthropic.com</strong> 並點選<strong>註冊</strong>。您可以使用 Google 或電子郵件地址。"
           },
           "step2": {
-            "title": "Add billing information",
-            "text": "From the Console dashboard, go to <strong>Settings → Billing</strong>. Click <strong>Add credit card</strong> and complete the form. Anthropic is pay-as-you-go with no monthly fee.",
-            "tip": "You can set a monthly spend limit under Billing → Usage limits to avoid any surprise charges."
+            "title": "新增帳單資訊",
+            "text": "從控制台儀表板，前往<strong>設定 → 計費</strong>。點擊<strong>新增信用卡</strong>並填寫表格。 Anthropic 是按需付費的，沒有月費。",
+            "tip": "您可以在「帳單」→「使用限制」下設定每月支出限額，以避免任何意外費用。"
           },
           "step3": {
-            "title": "Generate an API key",
-            "text": "In the left sidebar, click <strong>API Keys</strong>. Click <strong>Create Key</strong>, name it \"Donbrico\", and copy the key — it starts with <span class=\"code-inline\">sk-ant-…</span>",
-            "warn": "The key is shown only once at creation time. Copy it before closing the dialog."
+            "title": "產生 API 金鑰",
+            "text": "在左側邊欄中，點選<strong>API 金鑰</strong>。點擊<strong>建立金鑰</strong>，將其命名為“Donbrico”，然後複製金鑰 - 它以 <span class=\"code-inline\">sk-ant-...</span> 開頭",
+            "warn": "此密鑰僅在建立時顯示一次。在關閉對話框之前複製它。"
           },
           "step4": {
-            "title": "Paste into the extension",
-            "text": "Open the extension popup → <strong>Settings → AI Provider → Anthropic</strong>. Paste your key and save."
+            "title": "貼到擴充中",
+            "text": "開啟擴充彈出視窗 → <strong>設定 → AI Provider → Anthropic</strong>。貼上您的密鑰並保存。"
           },
           "table": {
-            "thModel": "Model",
-            "thSpeed": "Speed",
-            "thCost": "Cost (approx. per autofill)",
-            "veryFast": "Very fast",
-            "moderate": "Moderate",
+            "thModel": "模型",
+            "thSpeed": "速度",
+            "thCost": "成本（大約每次自動填充）",
+            "veryFast": "非常快",
+            "moderate": "緩和",
             "costHaiku": "~$0.001",
             "costSonnet": "~$0.006"
           }
         },
         "openai": {
-          "title": "OpenAI",
+          "title": "開放人工智慧",
           "tag": "GPT-4o",
-          "label": "Provider 04",
-          "url": "platform.openai.com",
+          "label": "供應商04",
+          "url": "平台.openai.com",
           "pills": {
-            "payAsYouGo": "Pay-as-you-go",
-            "models": "GPT-4o · GPT-4o mini"
+            "payAsYouGo": "按量付費",
+            "models": "GPT-4o · GPT-4o 迷你"
           },
-          "cta": "Create account ↗",
-          "intro": "OpenAI is the most widely used provider. GPT-4o mini is fast, accurate, and costs fractions of a cent per autofill.",
+          "cta": "建立帳戶 ↗",
+          "intro": "OpenAI 是使用最廣泛的供應商。 GPT-4o mini 快速、準確，每次自動填充的成本僅為幾美分。",
           "step1": {
-            "title": "Create a free account",
-            "text": "Go to <strong>platform.openai.com</strong> and sign up. You can use Google, Microsoft, or email."
+            "title": "建立一個免費帳戶",
+            "text": "前往 <strong>platform.openai.com</strong> 並報名。您可以使用 Google、Microsoft 或電子郵件。"
           },
           "step2": {
-            "title": "Add a payment method",
-            "text": "Navigate to <strong>Settings → Billing → Add payment method</strong>. OpenAI requires a credit card before generating API keys. You will only be charged for actual usage — new accounts receive $5 in free credits."
+            "title": "新增付款方式",
+            "text": "導覽至<strong>設定 → 結算 → 新增付款方式</strong>。 OpenAI 在產生 API 金鑰之前需要信用卡。您只需按實際使用量付費 — 新帳戶將獲得 5 美元的免費積分。"
           },
           "step3": {
-            "title": "Create an API key",
-            "text": "Go to <strong>API Keys</strong> in the left sidebar (or visit <span class=\"code-inline\">platform.openai.com/api-keys</span>). Click <strong>Create new secret key</strong>, give it a name like \"Donbrico\", and click <strong>Create secret key</strong>.",
-            "warn": "Copy your key immediately — OpenAI only shows it once. Store it somewhere safe."
+            "title": "建立 API 金鑰",
+            "text": "前往左側邊欄中的 <strong>API 金鑰</strong>（或造訪 <span class=\"code-inline\">platform.openai.com/api-keys</span>）。點擊<strong>建立新金鑰</strong>，為其命名，例如“Donbrico”，然後點擊<strong>建立金鑰</strong>。",
+            "warn": "立即複製您的金鑰 — OpenAI 僅顯示一次。將其存放在安全的地方。"
           },
           "step4": {
-            "title": "Paste the key into the extension",
-            "text": "Open the Donbrico Autofill AI popup → <strong>Settings → AI Provider → OpenAI</strong>. Paste your key (it starts with <span class=\"code-inline\">sk-…</span>) and click Save."
+            "title": "將金鑰貼到擴充功能中",
+            "text": "開啟 Donbrico Autofill AI 彈出視窗 → <strong>設定 → AI 供應商 → OpenAI</strong>。貼上您的金鑰（以 <span class=\"code-inline\">sk-...</span> 開頭），然後按一下「儲存」。"
           },
           "table": {
-            "thModel": "Model",
-            "thSpeed": "Speed",
-            "thCost": "Cost (approx. per autofill)",
+            "thModel": "模型",
+            "thSpeed": "速度",
+            "thCost": "成本（大約每次自動填充）",
             "costMini": "~$0.001",
             "costFull": "~$0.005"
           }
         }
       },
       "comparison": {
-        "title": "Quick comparison",
-        "thProvider": "Provider",
-        "thFreeTier": "Free tier?",
-        "thCardRequired": "Card required?",
-        "thBestFor": "Best for",
-        "thKeyPrefix": "Key prefix",
-        "groqBest": "Fastest responses, no cost",
-        "openRouterBest": "Flexibility, free models",
-        "anthropicBest": "Precise instruction-following",
-        "openaiBest": "Best overall quality",
-        "signupCredit": "$5 credit on signup",
-        "no": "No",
-        "yes": "Yes",
-        "yesFreeModels": "No (free models)"
+        "title": "快速比較",
+        "thProvider": "提供者",
+        "thFreeTier": "免費等級？",
+        "thCardRequired": "需要刷卡嗎？",
+        "thBestFor": "最適合",
+        "thKeyPrefix": "鍵前綴",
+        "groqBest": "最快響應，無成本",
+        "openRouterBest": "靈活性、免費模型",
+        "anthropicBest": "精確遵循指令",
+        "openaiBest": "最佳綜合品質",
+        "signupCredit": "報名時可獲得 5 美元贈金",
+        "no": "不",
+        "yes": "是的",
+        "yesFreeModels": "否（免費模型）"
       },
       "proTip": {
-        "label": "Pro tip",
-        "text": "No API key needed at all — if your computer supports it, <strong>Gemini Nano</strong> runs directly in Chrome for free with complete privacy.",
-        "link": "Check Gemini Nano compatibility →"
+        "label": "專業提示",
+        "text": "根本不需要 API 金鑰 - 如果您的電腦支持，<strong>Gemini Nano</strong> 可以直接在 Chrome 中免費運行，並具有完全的隱私性。",
+        "link": "檢查 Gemini Nano 相容性 →"
+      }
+    },
+    "geminiNano": {
+      "page": {
+        "title": "Gemini Nano 設定 — Donbrico Autofill AI"
+      },
+      "breadcrumb": {
+        "home": "家",
+        "autofillAi": "自動填充人工智慧",
+        "title": "Gemini Nano 設定"
+      },
+      "header": {
+        "badge": "免費 · 無 API 金鑰 · 100% 私密",
+        "title": "在 Chrome 中使用<em>Gemini Nano</em><br />",
+        "intro": "Gemini Nano 在支援的硬體上直接內建於 Chrome 中。當它工作時，你的人工智慧補全完全在你的設備上運行——免費、即時，並且永遠不會離開你的機器。",
+        "note": {
+          "title": "筆記：",
+          "text": "Gemini Nano 在您的裝置上運行，因此它可能比基於雲端的 AI 供應商慢。為了更快回應，請考慮使用自備金鑰供應商，例如 <a href=\"/docs-api-keys.html\" style=\"color:繼承; font-weight: 600;\">Groq</a>（提供免費方案）或 OpenAI。"
+        }
+      },
+      "toc": {
+        "title": "在此頁面上",
+        "requirements": "系統需求",
+        "enable": "在 Chrome 標誌中啟用 Gemini Nano",
+        "verify": "驗證它是否正常工作",
+        "troubleshoot": "故障排除",
+        "fallback": "如果不起作用會發生什麼？"
+      },
+      "requirements": {
+        "title": "系統需求",
+        "intro": "Gemini Nano 在本地運行，因此您的硬體很重要。 Chrome 在啟用模型之前會自動檢查這些要求。",
+        "grid": {
+          "browser": {
+            "label": "瀏覽器",
+            "value": "Chrome 127 或更高版本",
+            "note": "僅限桌面。不適用於行動 Chrome 或其他瀏覽器。"
+          },
+          "os": {
+            "label": "作業系統",
+            "value": "Windows 10/11 · macOS 13+ · Linux",
+            "note": "較新的 Chromebook 也支援 ChromeOS。"
+          },
+          "storage": {
+            "label": "可用儲存空間",
+            "value": "至少 22 GB 可用空間",
+            "note": "首次使用時，Chrome 會下載 Nano 模型（約 20 GB）。"
+          },
+          "gpu": {
+            "label": "圖形處理器/神經網路處理器",
+            "value": "建議 4 GB+ VRAM",
+            "note": "整合式顯示卡通常可以工作，但專用 GPU 可以顯著加快推理速度。"
+          }
+        },
+        "info": "如果您的電腦不符合這些要求，Donbrico Autofill AI 將自動回退到您配置的 API 金鑰 - 您無需執行任何操作。"
+      },
+      "enable": {
+        "title": "在 Chrome 啟用 Gemini Nano",
+        "intro": "Gemini Nano 和 Prompt API 是實驗性功能。您需要啟用兩個 Chrome 標誌，然後下載模型，然後模型才會回應請求。",
+        "step1": {
+          "title": "開啟 Chrome 標誌",
+          "text": "在 Chrome 網址列中輸入以下內容並按 Enter："
+        },
+        "step2": {
+          "title": "啟用提示 API 標誌",
+          "text": "在標誌搜尋框中搜尋<strong>Prompt API for Gemini Nano</strong>，然後將其設為<strong>啟用</strong>。",
+          "desc": "啟用 <code>window.ai</code> JavaScript API，以便擴充功能可以與 Gemini Nano 互動。",
+          "val": "→ 設定為：啟用"
+        },
+        "step3": {
+          "title": "啟用優化指南（模型下載）",
+          "text": "搜尋<strong>在裝置上啟用最佳化指南</strong>並將其設定為<strong>啟用BypassPerfRequirement</strong>。旁路選項甚至允許在較低規格的硬體上下載。",
+          "desc": "允許 Chrome 將 Gemini Nano 模型下載到您的裝置。",
+          "val": "→ 設定為：啟用 BypassPerfRequirement"
+        },
+        "step4": {
+          "title": "重新啟動 Chrome",
+          "text": "點擊標誌頁面底部顯示的藍色<strong>重新啟動</strong>按鈕，或完全關閉並重新開啟 Chrome。"
+        },
+        "step5": {
+          "title": "觸發模型下載",
+          "text": "重新啟動後，導覽至元件頁面以強制 Chrome 下載 Nano 模型：",
+          "text2": "在清單中找到<strong>裝置型號最佳化指南</strong>，然後按一下<strong>檢查更新</strong>。下載可能需要幾分鐘時間，具體取決於您的連線情況。該模型大約為 20 GB。"
+        },
+        "warn": "模型下載在背景默默進行。 Chrome 必須開啟並連接到網路。下載後，它將永久保留在您的裝置上。"
+      },
+      "verify": {
+        "title": "驗證它是否正常工作",
+        "intro": "下載模型後，您無需離開 Chrome 即可確認一切設定正確。",
+        "devtools": {
+          "title": "透過 DevTools 進行快速測試",
+          "text": "開啟任何網頁，按<strong>F12</strong>（或右鍵點選→檢查→控制台），然後貼上以下程式碼片段："
+        },
+        "results": {
+          "title": "控制台輸出的意思是：",
+          "readily": "「readily」—Gemini Nano 已下載並準備就緒。你已經準備好了。",
+          "afterDownload": "「下載後」—Chrome 知道該模型，但仍在下載。等待幾分鐘後重試。",
+          "no": "“否”— 該模型在此裝置上不可用。檢查下面的故障排除部分。"
+        },
+        "tip": "一旦您看到<strong>「隨時」</strong>，請開啟 Donbrico Autofill AI 擴充功能彈出視窗。設定中的AI狀態指示器應顯示<strong>Gemini Nano·Active</strong>。"
+      },
+      "troubleshoot": {
+        "title": "故障排除",
+        "console": {
+          "title": "控制台返回“no”或拋出錯誤",
+          "text": "返回上述步驟並確認兩個標誌均已啟用（而不僅僅是一個）。然後再次重新啟動 Chrome 並等待 5-10 分鐘，然後重新測試。即使設定了標誌，Chrome 有時也會延遲初始化 API。"
+        },
+        "components": {
+          "title": "chrome://components 顯示沒有該模型的版本",
+          "text": "確保您已使用 Google 帳戶登入 Chrome。在某些地區，該模型需要透過 Google 帳戶登入進行控制。也要確保 Chrome 沒有透過阻止 Google 下載伺服器的 VPN 或代理程式來運作。"
+        },
+        "stuck": {
+          "title": "模型下載卡住了",
+          "text": "造訪 <code style=\"font-family:'DM Mono',monospace;color:#a5b4fc\">chrome://components</code>，找到 Optimization Guide 模型，然後再點擊<strong>檢查更新</strong>。如果仍然卡住，請嘗試重新啟動 Chrome 並再次檢查更新。"
+        },
+        "requirements": {
+          "title": "我的機器符合要求，但仍然顯示“否”",
+          "list1": "確認您使用的是 Chrome 版本 127 或更高版本（檢查 <code style=\"font-family:'DM Mono',monospace;color:#a5b4fc\">chrome://version</code>）。",
+          "list2": "某些企業管理的 Chrome 安裝會阻止實驗性標誌。請諮詢您的 IT 團隊。",
+          "list3": "確保 Chrome 至少有 22 GB 的可用磁碟空間來儲存模型。",
+          "list4": "嘗試停用並重新啟用這兩個標誌，然後重新啟動。"
+        }
+      },
+      "fallback": {
+        "title": "如果不起作用會發生什麼？",
+        "text1": "當 Gemini Nano 不可用時，Donbrico Autofill AI 會優雅地退回到您的自備金鑰 API 金鑰（OpenAI、Anthropic、Groq 或 OpenRouter）。你永遠不會沒有人工智慧完成。",
+        "text2": "如果 Gemini Nano 和 API 金鑰都未配置，擴充功能將顯示友善的提示，引導您進行設定。您始終可以在擴充功能的設定面板中新增 API 金鑰。",
+        "tip": "需要 API 金鑰嗎？請參閱 <a href=\"/docs-api-keys.html\" style=\"color:var(--indigo);text-decoration:none;font-weight:500;\">API 金鑰指南</a>，在 5 分鐘內從 OpenAI、Anthropic、Groq 或 OpenRouter 取得一個。"
       }
     }
   }

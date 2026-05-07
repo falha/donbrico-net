@@ -941,196 +941,323 @@
   "docs": {
     "apiKeys": {
       "page": {
-        "title": "API 키 가이드 — Donbrico Autofill AI"
+        "title": "API 키 가이드 — Donbrico 자동 완성 AI"
       },
       "breadcrumb": {
-        "home": "Home",
-        "docs": "Docs",
-        "title": "API 키 가이드"
+        "home": "집",
+        "docs": "문서",
+        "title": "API 키"
       },
       "header": {
         "badge": "설정 가이드",
-        "title": "<em>API 키</em> 가져오기",
-        "intro": "Donbrico Autofill AI works best when you connect your own AI provider. Here is how to get your keys from the most popular services.",
+        "title": "<em>API 키</em> 받기",
+        "intro": "Donbrico Autofill AI는 자체 AI 제공업체를 연결할 때 가장 잘 작동합니다. ",
         "speedNote": {
-          "title": "Blazing fast.",
-          "text": "Using your own API key is typically 5-10x faster than the built-in free models and has much higher limits."
+          "title": "엄청나게 빠릅니다.",
+          "text": "자체 API 키를 사용하는 것은 일반적으로 내장된 무료 모델보다 5~10배 빠르며 한도도 훨씬 더 높습니다."
         }
       },
       "providers": {
         "groq": {
-          "title": "Groq",
-          "tag": "Fast · Free tier",
-          "label": "Provider 01",
+          "title": "그로크",
+          "tag": "빠른 · 무료 등급",
+          "label": "공급자 01",
           "url": "console.groq.com",
           "pills": {
-            "free": "Free tier available",
-            "models": "Llama 3 · Mixtral · Gemma"
+            "free": "무료 등급 이용 가능",
+            "models": "라마 3 · 믹스트랄 · 젬마"
           },
-          "cta": "Create account ↗",
-          "intro": "Groq runs open-source models on custom silicon (LPUs) — the result is remarkably fast inference. The free tier is generous enough for everyday autofill use at no cost.",
+          "cta": "계정 만들기 ↗",
+          "intro": "Groq는 맞춤형 실리콘(LPU)에서 오픈 소스 모델을 실행하므로 놀라울 정도로 빠른 추론이 가능합니다. ",
           "step1": {
-            "title": "Sign up for a free Groq account",
-            "text": "Go to <strong>console.groq.com</strong> and click <strong>Sign up</strong>. Groq supports Google, GitHub, and email signup. No credit card is required for the free tier."
+            "title": "무료 Groq 계정에 가입하세요",
+            "text": "<strong>console.groq.com</strong>으로 이동하여 <strong>가입</strong>을 클릭하세요. "
           },
           "step2": {
-            "title": "Create an API key",
-            "text": "In the left sidebar, click <strong>API Keys</strong>. Click <strong>Create API Key</strong>, enter a name like \"Donbrico\", and click <strong>Submit</strong>.",
-            "warn": "Copy the key immediately. Groq does not show it again after creation. It begins with <span class=\"code-inline\">gsk_…</span>"
+            "title": "API 키 만들기",
+            "text": "왼쪽 사이드바에서 <strong>API 키</strong>를 클릭합니다. ",
+            "warn": "즉시 키를 복사하세요. "
           },
           "step3": {
-            "title": "Paste into the extension",
-            "text": "Open the extension popup → <strong>Settings → AI Provider → Groq</strong>. Paste your key and save."
+            "title": "확장 프로그램에 붙여넣기",
+            "text": "확장 팝업 → <strong>설정 → AI 제공업체 → Groq</strong>를 엽니다. "
           },
-          "info": "Groq free tier includes rate limits (e.g. 30 requests/minute for Llama 3). For typical autofill usage this is more than enough. If you hit limits, upgrading to a paid plan removes them.",
+          "info": "Groq 무료 계층에는 속도 제한이 포함됩니다(예: Llama 3의 경우 분당 요청 30개). ",
           "table": {
-            "thModel": "Model",
-            "thSpeed": "Speed",
-            "thFree": "Free tier?",
-            "recommended": "Recommended",
-            "extremelyFast": "Extremely fast",
-            "fast": "Fast",
-            "yes": "Yes",
-            "yesLower": "Yes (lower limit)"
+            "thModel": "모델",
+            "thSpeed": "속도",
+            "thFree": "무료 등급?",
+            "recommended": "추천",
+            "extremelyFast": "매우 빠르다",
+            "fast": "빠른",
+            "yes": "예",
+            "yesLower": "예(하한)"
           }
         },
         "openrouter": {
-          "title": "OpenRouter",
-          "tag": "100+ models",
-          "label": "Provider 02",
+          "title": "오픈라우터",
+          "tag": "100개 이상의 모델",
+          "label": "공급자 02",
           "url": "openrouter.ai",
           "pills": {
-            "free": "Free models available",
-            "models": "100+ models from any provider"
+            "free": "무료 모델 이용 가능",
+            "models": "모든 제공업체의 100개 이상의 모델"
           },
-          "cta": "Create account ↗",
-          "intro": "OpenRouter is a unified gateway to over 100 AI models — including GPT-4o, Claude, Llama, Mistral, and many more — through a single API key. Several models are permanently free with no credit card required.",
+          "cta": "계정 만들기 ↗",
+          "intro": "OpenRouter는 단일 API 키를 통해 GPT-4o, Claude, Llama, Mistral 등을 포함한 100개 이상의 AI 모델에 대한 통합 게이트웨이입니다. ",
           "step1": {
-            "title": "Create an OpenRouter account",
-            "text": "Visit <strong>openrouter.ai</strong> and click <strong>Sign In</strong>. OpenRouter supports Google and GitHub sign-in, or you can use an email address."
+            "title": "OpenRouter 계정 만들기",
+            "text": "<strong>openrouter.ai</strong>를 방문하여 <strong>로그인</strong>을 클릭하세요. "
           },
           "step2": {
-            "title": "Optional: add credits for paid models",
-            "text": "Go to <strong>Credits</strong> in your account and top up if you want to use paid models like GPT-4o or Claude. For free models only, no payment is needed.",
-            "tip": "Filter by <strong>Free</strong> on the Models page to see the full list of zero-cost models available right now."
+            "title": "선택사항: 유료 모델에 대한 크레딧 추가",
+            "text": "GPT-4o 또는 Claude와 같은 유료 모델을 사용하려면 계정의 <strong>크레딧</strong>으로 이동하여 충전하세요. ",
+            "tip": "현재 사용 가능한 무료 모델의 전체 목록을 보려면 모델 페이지에서 <strong>무료</strong>로 필터링하세요."
           },
           "step3": {
-            "title": "Create an API key",
-            "text": "Go to <strong>Keys</strong> in the top navigation. Click <strong>Create Key</strong>, name it \"Donbrico\", and copy the key — it begins with <span class=\"code-inline\">sk-or-…</span>",
-            "warn": "Copy the key now — it will be hidden after you close this dialog."
+            "title": "API 키 만들기",
+            "text": "상단 탐색 메뉴에서 <strong>키</strong>로 이동합니다. ",
+            "warn": "지금 키를 복사하세요. 이 대화 상자를 닫으면 키가 숨겨집니다."
           },
           "step4": {
-            "title": "Paste into the extension",
-            "text": "Open the extension popup → <strong>Settings → AI Provider → OpenRouter</strong>. Paste your key, choose your preferred model, and save."
+            "title": "확장 프로그램에 붙여넣기",
+            "text": "확장 프로그램 팝업 → <strong>설정 → AI 제공업체 → OpenRouter</strong>를 엽니다. "
           },
           "table": {
-            "thModel": "Model",
-            "thNotes": "Notes",
-            "thCost": "Cost",
-            "llamaNote": "Fast, reliable free option",
-            "mistralNote": "Good for structured outputs",
-            "gptNote": "Premium quality",
-            "claudeNote": "Premium quality",
-            "free": "Free",
-            "payAsYouGo": "Pay-as-you-go"
+            "thModel": "모델",
+            "thNotes": "메모",
+            "thCost": "비용",
+            "llamaNote": "빠르고 안정적인 무료 옵션",
+            "mistralNote": "구조화된 출력에 적합",
+            "gptNote": "프리미엄 품질",
+            "claudeNote": "프리미엄 품질",
+            "free": "무료",
+            "payAsYouGo": "종량제"
           }
         },
         "anthropic": {
-          "title": "Anthropic",
-          "tag": "Claude",
-          "label": "Provider 03",
+          "title": "인류학",
+          "tag": "클로드",
+          "label": "공급자 03",
           "url": "console.anthropic.com",
           "pills": {
-            "payAsYouGo": "Pay-as-you-go",
-            "models": "Claude 3.5 Haiku · Claude 3.5 Sonnet"
+            "payAsYouGo": "종량제",
+            "models": "클로드 3.5 하이쿠 · 클로드 3.5 소네트"
           },
-          "cta": "Create account ↗",
-          "intro": "Anthropic's Claude models are known for following instructions precisely — ideal for generating well-structured cover letters and professional answers.",
+          "cta": "계정 만들기 ↗",
+          "intro": "Anthropic의 Claude 모델은 지침을 정확하게 따르는 것으로 알려져 있습니다. 이는 잘 구성된 자기소개서와 전문적인 답변을 생성하는 데 이상적입니다.",
           "step1": {
-            "title": "Create an Anthropic account",
-            "text": "Visit <strong>console.anthropic.com</strong> and click <strong>Sign up</strong>. You can use Google or an email address."
+            "title": "Anthropic 계정 만들기",
+            "text": "<strong>console.anthropic.com</strong>을 방문하여 <strong>가입</strong>을 클릭하세요. "
           },
           "step2": {
-            "title": "Add billing information",
-            "text": "From the Console dashboard, go to <strong>Settings → Billing</strong>. Click <strong>Add credit card</strong> and complete the form. Anthropic is pay-as-you-go with no monthly fee.",
-            "tip": "You can set a monthly spend limit under Billing → Usage limits to avoid any surprise charges."
+            "title": "결제 정보 추가",
+            "text": "콘솔 대시보드에서 <strong>설정 → 결제</strong>로 이동합니다. ",
+            "tip": "예상치 못한 비용이 발생하지 않도록 결제 → 사용 한도에서 월별 지출 한도를 설정할 수 있습니다."
           },
           "step3": {
-            "title": "Generate an API key",
-            "text": "In the left sidebar, click <strong>API Keys</strong>. Click <strong>Create Key</strong>, name it \"Donbrico\", and copy the key — it starts with <span class=\"code-inline\">sk-ant-…</span>",
-            "warn": "The key is shown only once at creation time. Copy it before closing the dialog."
+            "title": "API 키 생성",
+            "text": "왼쪽 사이드바에서 <strong>API 키</strong>를 클릭합니다. ",
+            "warn": "키는 생성 시 한 번만 표시됩니다. "
           },
           "step4": {
-            "title": "Paste into the extension",
-            "text": "Open the extension popup → <strong>Settings → AI Provider → Anthropic</strong>. Paste your key and save."
+            "title": "확장 프로그램에 붙여넣기",
+            "text": "확장 프로그램 팝업 → <strong>설정 → AI 제공자 → Anthropic</strong>을 엽니다. "
           },
           "table": {
-            "thModel": "Model",
-            "thSpeed": "Speed",
-            "thCost": "Cost (approx. per autofill)",
-            "veryFast": "Very fast",
-            "moderate": "Moderate",
+            "thModel": "모델",
+            "thSpeed": "속도",
+            "thCost": "비용(대략 자동완성당)",
+            "veryFast": "매우 빠르다",
+            "moderate": "보통의",
             "costHaiku": "~$0.001",
             "costSonnet": "~$0.006"
           }
         },
         "openai": {
-          "title": "OpenAI",
+          "title": "오픈AI",
           "tag": "GPT-4o",
-          "label": "Provider 04",
+          "label": "공급자 04",
           "url": "platform.openai.com",
           "pills": {
-            "payAsYouGo": "Pay-as-you-go",
-            "models": "GPT-4o · GPT-4o mini"
+            "payAsYouGo": "종량제",
+            "models": "GPT-4o · GPT-4o 미니"
           },
-          "cta": "Create account ↗",
-          "intro": "OpenAI is the most widely used provider. GPT-4o mini is fast, accurate, and costs fractions of a cent per autofill.",
+          "cta": "계정 만들기 ↗",
+          "intro": "OpenAI는 가장 널리 사용되는 공급자입니다. ",
           "step1": {
-            "title": "Create a free account",
-            "text": "Go to <strong>platform.openai.com</strong> and sign up. You can use Google, Microsoft, or email."
+            "title": "무료 계정 만들기",
+            "text": "<strong>platform.openai.com</strong>으로 이동하여 가입하세요. "
           },
           "step2": {
-            "title": "Add a payment method",
-            "text": "Navigate to <strong>Settings → Billing → Add payment method</strong>. OpenAI requires a credit card before generating API keys. You will only be charged for actual usage — new accounts receive $5 in free credits."
+            "title": "결제 수단 추가",
+            "text": "<strong>설정 → 결제 → 결제 수단 추가</strong>로 이동합니다. "
           },
           "step3": {
-            "title": "Create an API key",
-            "text": "Go to <strong>API Keys</strong> in the left sidebar (or visit <span class=\"code-inline\">platform.openai.com/api-keys</span>). Click <strong>Create new secret key</strong>, give it a name like \"Donbrico\", and click <strong>Create secret key</strong>.",
-            "warn": "Copy your key immediately — OpenAI only shows it once. Store it somewhere safe."
+            "title": "API 키 만들기",
+            "text": "왼쪽 사이드바에서 <strong>API 키</strong>로 이동합니다(또는 <span class=\"code-inline\">platform.openai.com/api-keys</span> 방문). ",
+            "warn": "키를 즉시 복사하세요. OpenAI는 키를 한 번만 표시합니다. "
           },
           "step4": {
-            "title": "Paste the key into the extension",
-            "text": "Open the Donbrico Autofill AI popup → <strong>Settings → AI Provider → OpenAI</strong>. Paste your key (it starts with <span class=\"code-inline\">sk-…</span>) and click Save."
+            "title": "확장 프로그램에 키를 붙여넣으세요.",
+            "text": "돈브리코 AI 자동완성 팝업 → <strong>설정 → AI 제공업체 → OpenAI</strong>를 엽니다. "
           },
           "table": {
-            "thModel": "Model",
-            "thSpeed": "Speed",
-            "thCost": "Cost (approx. per autofill)",
+            "thModel": "모델",
+            "thSpeed": "속도",
+            "thCost": "비용(대략 자동완성당)",
             "costMini": "~$0.001",
             "costFull": "~$0.005"
           }
         }
       },
       "comparison": {
-        "title": "Quick comparison",
-        "thProvider": "Provider",
-        "thFreeTier": "Free tier?",
-        "thCardRequired": "Card required?",
-        "thBestFor": "Best for",
-        "thKeyPrefix": "Key prefix",
-        "groqBest": "Fastest responses, no cost",
-        "openRouterBest": "Flexibility, free models",
-        "anthropicBest": "Precise instruction-following",
-        "openaiBest": "Best overall quality",
-        "signupCredit": "$5 credit on signup",
-        "no": "No",
-        "yes": "Yes",
-        "yesFreeModels": "No (free models)"
+        "title": "빠른 비교",
+        "thProvider": "공급자",
+        "thFreeTier": "무료 등급?",
+        "thCardRequired": "카드가 필요합니까?",
+        "thBestFor": "다음에 가장 적합",
+        "thKeyPrefix": "키 접두사",
+        "groqBest": "가장 빠른 응답, 비용 없음",
+        "openRouterBest": "유연성, 무료 모델",
+        "anthropicBest": "정확한 지시 따르기",
+        "openaiBest": "전반적으로 최고의 품질",
+        "signupCredit": "가입 시 $5 크레딧",
+        "no": "아니요",
+        "yes": "예",
+        "yesFreeModels": "아니요(무료 모델)"
       },
       "proTip": {
-        "label": "Pro tip",
-        "text": "No API key needed at all — if your computer supports it, <strong>Gemini Nano</strong> runs directly in Chrome for free with complete privacy.",
-        "link": "Check Gemini Nano compatibility →"
+        "label": "전문가의 팁",
+        "text": "API 키가 전혀 필요하지 않습니다. 컴퓨터에서 지원하는 경우 <strong>Gemini Nano</strong>는 완전한 개인정보 보호를 유지하면서 Chrome에서 무료로 직접 실행됩니다.",
+        "link": "Gemini Nano 호환성 확인 →"
+      }
+    },
+    "geminiNano": {
+      "page": {
+        "title": "Gemini Nano 설정 — Donbrico 자동 채우기 AI"
+      },
+      "breadcrumb": {
+        "home": "집",
+        "autofillAi": "AI 자동완성",
+        "title": "Gemini 나노 설정"
+      },
+      "header": {
+        "badge": "무료 · API 키 없음 · 100% 비공개",
+        "title": "Chrome에서 <em>Gemini Nano</em><br /> 사용하기",
+        "intro": "Gemini Nano는 지원되는 하드웨어의 Chrome에 직접 내장되어 있습니다. ",
+        "note": {
+          "title": "메모:",
+          "text": "Gemini Nano는 귀하의 장치에서 실행되므로 클라우드 기반 AI 제공업체보다 속도가 느릴 수 있습니다. "
+        }
+      },
+      "toc": {
+        "title": "이 페이지에서",
+        "requirements": "시스템 요구사항",
+        "enable": "Chrome 플래그에서 Gemini Nano 활성화",
+        "verify": "작동하는지 확인하세요",
+        "troubleshoot": "문제 해결",
+        "fallback": "작동하지 않으면 어떻게 되나요?"
+      },
+      "requirements": {
+        "title": "시스템 요구사항",
+        "intro": "Gemini Nano는 로컬에서 실행되므로 하드웨어가 중요합니다. ",
+        "grid": {
+          "browser": {
+            "label": "브라우저",
+            "value": "크롬 127 이상",
+            "note": "데스크탑 전용. "
+          },
+          "os": {
+            "label": "운영 체제",
+            "value": "윈도우 10/11 · macOS 13+ · 리눅스",
+            "note": "ChromeOS는 최신 Chromebook에서도 지원됩니다."
+          },
+          "storage": {
+            "label": "사용 가능한 스토리지",
+            "value": "최소 22GB 무료",
+            "note": "Chrome은 처음 사용할 때 Nano 모델(~20GB)을 다운로드합니다."
+          },
+          "gpu": {
+            "label": "GPU / NPU",
+            "value": "4GB+ VRAM 권장",
+            "note": "통합 그래픽은 일반적으로 작동하지만 전용 GPU는 추론 속도를 크게 향상시킵니다."
+          }
+        },
+        "info": "귀하의 컴퓨터가 이러한 요구 사항을 충족하지 않는 경우 Donbrico Autofill AI는 자동으로 귀하가 구성한 API 키로 대체하므로 귀하가 취해야 할 조치는 없습니다."
+      },
+      "enable": {
+        "title": "Chrome에서 Gemini Nano 활성화",
+        "intro": "Gemini Nano와 Prompt API는 실험적인 기능입니다. ",
+        "step1": {
+          "title": "Chrome 플래그 열기",
+          "text": "Chrome 주소 표시줄에 다음을 입력하고 Enter를 누르세요."
+        },
+        "step2": {
+          "title": "프롬프트 API 플래그 활성화",
+          "text": "플래그 검색창에서 <strong>Gemini Nano용 프롬프트 API</strong>를 검색한 다음 <strong>활성화</strong>로 설정합니다.",
+          "desc": "확장 프로그램이 Gemini Nano와 상호 작용할 수 있도록 <code>window.ai</code> JavaScript API를 활성화합니다.",
+          "val": "→ 설정: 활성화"
+        },
+        "step3": {
+          "title": "최적화 가이드 활성화(모델 다운로드)",
+          "text": "<strong>기기에서 최적화 가이드 활성화</strong>를 검색하고 <strong>BypassPerfRequirement 활성화</strong>로 설정합니다. ",
+          "desc": "Chrome에서 Gemini Nano 모델을 기기에 다운로드할 수 있도록 허용합니다.",
+          "val": "→ 설정: 활성화됨 BypassPerfRequirement"
+        },
+        "step4": {
+          "title": "Chrome을 다시 시작하세요.",
+          "text": "플래그 페이지 하단에 표시되는 파란색 <strong>다시 시작</strong> 버튼을 클릭하거나 Chrome을 완전히 닫았다가 다시 엽니다."
+        },
+        "step5": {
+          "title": "모델 다운로드 트리거",
+          "text": "다시 시작한 후 구성요소 페이지로 이동하여 Chrome이 Nano 모델을 다운로드하도록 강제합니다.",
+          "text2": "목록에서 <strong>기기 모델에 대한 최적화 가이드</strong>를 찾아 <strong>업데이트 확인</strong>을 클릭하세요. "
+        },
+        "warn": "모델 다운로드는 백그라운드에서 자동으로 수행됩니다. "
+      },
+      "verify": {
+        "title": "작동하는지 확인하세요",
+        "intro": "모델이 다운로드되면 Chrome을 종료하지 않고도 모든 것이 올바르게 설정되었는지 확인할 수 있습니다.",
+        "devtools": {
+          "title": "DevTools를 통한 빠른 테스트",
+          "text": "웹페이지를 열고 <strong>F12</strong> 키를 누른 후(또는 마우스 오른쪽 버튼 클릭 → 검사 → 콘솔) 다음 스니펫을 붙여넣습니다."
+        },
+        "results": {
+          "title": "콘솔 출력은 다음을 의미합니다.",
+          "readily": "\"readily\" — Gemini Nano가 다운로드되어 준비되었습니다. ",
+          "afterDownload": "\"after-download\" — Chrome은 모델에 대해 알고 있지만 아직 다운로드 중입니다. ",
+          "no": "\"no\" — 해당 모델은 이 장치에서 사용할 수 없습니다. "
+        },
+        "tip": "<strong>'readily'</strong>가 표시되면 Donbrico Autofill AI 확장 팝업을 엽니다. "
+      },
+      "troubleshoot": {
+        "title": "문제 해결",
+        "console": {
+          "title": "콘솔이 \"아니요\"를 반환하거나 오류를 발생시킵니다.",
+          "text": "위의 단계로 돌아가서 두 플래그가 모두 활성화되어 있는지 확인합니다(단지 하나가 아님). "
+        },
+        "components": {
+          "title": "chrome://comComponents에 해당 모델의 버전이 표시되지 않습니다.",
+          "text": "Google 계정으로 Chrome에 로그인했는지 확인하세요. "
+        },
+        "stuck": {
+          "title": "모델 다운로드가 중단되었습니다.",
+          "text": "<code style=\"font-family:'DM Mono',monospace;color:#a5b4fc\">chrome://comComponents</code>를 방문하여 최적화 가이드 모델을 찾은 다음 <strong>업데이트 확인</strong>을 다시 클릭하세요. "
+        },
+        "requirements": {
+          "title": "내 컴퓨터가 요구 사항을 충족하지만 여전히 \"아니요\"라고 표시됩니다.",
+          "list1": "Chrome 버전 127 이상인지 확인하세요(<code style=\"font-family:'DM Mono',monospace;color:#a5b4fc\">chrome://version</code> 확인).",
+          "list2": "일부 기업 관리 Chrome 설치에서는 실험적 플래그를 차단합니다. ",
+          "list3": "Chrome에 모델을 저장할 수 있는 최소 22GB의 여유 디스크 공간이 있는지 확인하세요.",
+          "list4": "두 플래그를 모두 비활성화했다가 다시 활성화한 후 다시 시작해 보세요."
+        }
+      },
+      "fallback": {
+        "title": "작동하지 않으면 어떻게 되나요?",
+        "text1": "Donbrico Autofill AI는 Gemini Nano를 사용할 수 없을 때마다 Bring Your Own Key API 키(OpenAI, Anthropic, Groq 또는 OpenRouter)로 정상적으로 대체됩니다. ",
+        "text2": "Gemini Nano나 API 키가 모두 구성되지 않은 경우 확장 프로그램은 설정을 안내하는 친숙한 프롬프트를 표시합니다. ",
+        "tip": "API 키가 필요합니까? "
       }
     }
   }
