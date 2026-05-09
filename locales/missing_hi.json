@@ -1,0 +1,763 @@
+{
+  "footer.solutions": "Solutions",
+  "footer.workflows": "Workflows",
+  "footer.extensions": "Extensions",
+  "footer.company": "Company",
+  "footer.copyright": "© 2026 Donbrico Studio. All rights reserved.",
+  "footer.privacyPolicy": "Privacy Policy",
+  "footer.terms": "Terms",
+  "footer.allRightsReserved": "© 2026 Donbrico Studio. All rights reserved.",
+  "faq.title": "Frequently Asked Questions",
+  "home.hero.buttonPrimary": "Install Extensions",
+  "home.hero.buttonSecondary": "Explore Solutions →",
+  "home.hero.disclaimer": "🔒 On Chrome: local AI via Gemini Nano — data stays in your browser · Edge versions coming soon",
+  "home.solutions.sectionTitle": "THREE WAYS TO WORK FASTER",
+  "home.solutions.subtitle": "Each extension targets a specific type of repetitive work. Pick what slows you down.",
+  "home.solutions.communication.title": "Write & Respond",
+  "home.solutions.communication.description": "Automate email replies, support responses, and outreach messages. Stop rewriting the same answers for every ticket and inquiry.",
+  "home.solutions.communication.cta": "Explore AI Reply Assistant →",
+  "home.solutions.automation.title": "Fill & Process",
+  "home.solutions.automation.description": "Autofill job applications, CRM entries, insurance forms, and admin data — from a single saved profile, in one click.",
+  "home.solutions.automation.cta": "Explore Autofill AI →",
+  "home.solutions.workspace.title": "Organize & Focus",
+  "home.solutions.workspace.description": "Save and restore browser workspaces. Keep complex research sessions organized and instantly accessible across projects.",
+  "home.solutions.workspace.cta": "Explore WorkDesk →",
+  "home.cta.notSure": "Not sure where to start?",
+  "home.cta.button": "Browse by workflow →",
+  "home.alsoFromDonbrico": "ALSO FROM DONBRICO",
+  "home.steamGame": "STEAM GAME",
+  "home.comingSoon": "COMING SOON",
+  "home.nullCarrierTitle": "Null Carrier",
+  "home.nullCarrierDescription": "A signal-reconstruction puzzle game. You operate a deep-space listening array. Tune frequencies, decode transmissions, question what Command tells you.",
+  "home.learnMore": "Learn More →",
+  "nav.solutions": "Solutions",
+  "nav.extensions": "Extensions",
+  "nav.extensionsHub": "All Extensions",
+  "nav.about": "About",
+  "nav.game": "Game",
+  "nav.solutionsCommunication": "Write & Respond",
+  "nav.solutionsAutomation": "Fill & Process",
+  "nav.solutionsWorkspace": "Organize & Focus",
+  "nav.solutionsRecruiters": "For Recruiters",
+  "nav.solutionsEcommerce": "For E-commerce Support",
+  "nav.solutionsInsurance": "For Insurance",
+  "nav.solutionsSupportTeams": "For Support Teams",
+  "nav.solutionsBrowserWorkspace": "Browser Workspace",
+  "nav.solutionsJobSeekers": "For Job Seekers",
+  "nav.solutionsEcommerceSupport": "For Ecommerce",
+  "nav.solutionsRealEstate": "For Real Estate",
+  "nav.extensionsAll": "All Extensions",
+  "nav.extensionsAutofill": "Autofill AI",
+  "nav.extensionsReply": "AI Reply Assistant",
+  "nav.extensionsWorkdesk": "WorkDesk",
+  "nav.categories": "Categories",
+  "nav.byRole": "By Role",
+  "home2.page.title": "AI Browser Tools for Automation, Writing & Workflow Efficiency | Donbrico",
+  "home2.page.description": "AI browser extensions that automate writing, form filling, and tab management. Save time on repetitive work with tools built for real workflows.",
+  "home2.page.ogTitle": "AI Browser Tools for Automation, Writing & Workflow Efficiency | Donbrico",
+  "home2.page.ogDescription": "AI browser extensions that automate writing, form filling, and tab management. Save time on repetitive work with tools built for real workflows.",
+  "home2.hero.eyebrow": "AI BROWSER EXTENSIONS",
+  "home2.hero.title": "AI browser tools that remove repetitive work from your daily workflows",
+  "home2.hero.subtitle": "Browser extensions that automate writing, form filling, and session management — built for professionals who need to move faster without sacrificing quality.",
+  "home2.hero.btnInstall": "Install Extensions",
+  "home2.hero.btnSolutions": "Explore Solutions",
+  "home2.solutions.sectionTitle": "THREE WAYS TO WORK FASTER",
+  "home2.solutions.sectionSubtitle": "Each extension targets a specific type of repetitive work. Pick what slows you down.",
+  "home2.solutions.communication.icon": "✉️",
+  "home2.solutions.communication.title": "Write & Respond",
+  "home2.solutions.communication.description": "Automate email replies, support responses, and messages. Stop rewriting the same answers.",
+  "home2.solutions.communication.cta": "Explore →",
+  "home2.solutions.automation.icon": "⚡",
+  "home2.solutions.automation.title": "Fill & Process",
+  "home2.solutions.automation.description": "Autofill job applications, CRM entries, insurance forms, and admin data — in one click.",
+  "home2.solutions.automation.cta": "Explore →",
+  "home2.solutions.workspace.icon": "🗂️",
+  "home2.solutions.workspace.title": "Organize & Focus",
+  "home2.solutions.workspace.description": "Save and restore browser workspaces. Keep research sessions organized across complex projects.",
+  "home2.solutions.workspace.cta": "Explore →",
+  "home2.nullCarrierStrip.label": "ALSO FROM DONBRICO",
+  "home2.nullCarrierStrip.title": "Null Carrier — A Deep-Space Signal Puzzle Game",
+  "home2.nullCarrierStrip.description": "A minimalist atmospheric puzzle game coming to Steam. Something completely different.",
+  "home2.nullCarrierStrip.cta": "Learn More →",
+  "solutions.hub.page.title": "AI Workflow Solutions for Work Automation in Your Browser | Donbrico",
+  "solutions.hub.page.description": "Explore AI tools for communication, form automation, and browser workspace management. Designed for professionals handling repetitive digital tasks.",
+  "solutions.hub.page.ogTitle": "AI Workflow Solutions for Work Automation in Your Browser | Donbrico",
+  "solutions.hub.page.ogDescription": "Explore AI tools for communication, form automation, and browser workspace management. Designed for professionals handling repetitive digital tasks.",
+  "solutions.hub.eyebrow": "SOLUTIONS",
+  "solutions.hub.title": "Choose what you want to automate in your browser workflows",
+  "solutions.hub.subtitle": "Three focused extension categories. Each one eliminates a specific type of repetitive work.",
+  "solutions.hub.niches.label": "SPECIFIC WORKFLOWS",
+  "solutions.hub.niches.title": "Find your exact use case",
+  "solutions.hub.niches.subtitle": "Each niche page shows exactly how Donbrico extensions solve that workflow.",
+  "solutions.hub.categories": "Categories",
+  "solutions.hub.workflows": "Workflows",
+  "solutions.hub.automation.title": "Fill & Process",
+  "solutions.hub.automation.description": "Automate repetitive form filling and structured data entry. Built for recruiters, admins, and operations teams.",
+  "solutions.hub.automation.cta": "View workflow →",
+  "solutions.hub.communication.title": "Write & Respond",
+  "solutions.hub.communication.description": "Automate email replies, support responses, and outreach messages. Built for high-volume communication roles.",
+  "solutions.hub.communication.cta": "View workflow →",
+  "solutions.hub.workspace.title": "Organize & Focus",
+  "solutions.hub.workspace.description": "Save and restore browser workspaces. Built for researchers, developers, and complex project workflows.",
+  "solutions.hub.workspace.cta": "View workflow →",
+  "solutions.hub.insurance.title": "Insurance",
+  "solutions.hub.insurance.description": "Fill claim forms and policy data with AI-assisted filling. Fewer errors, less time.",
+  "solutions.hub.insurance.cta": "View workflow →",
+  "solutions.hub.browserWorkspace.title": "Researchers & Developers",
+  "solutions.hub.browserWorkspace.description": "Organize complex browser sessions. Save workspaces, restore instantly, search with AI.",
+  "solutions.hub.browserWorkspace.cta": "View workflow →",
+  "solutions.hub.ecommerceSupport.title": "Ecommerce Support",
+  "solutions.hub.ecommerceSupport.description": "Automate support replies for orders, refunds, and customer questions. Reduce ticket load.",
+  "solutions.hub.ecommerceSupport.cta": "View workflow →",
+  "solutions.hub.supportTeams.title": "Support Teams",
+  "solutions.hub.supportTeams.description": "AI-powered reply library for support agents. Generate accurate responses faster.",
+  "solutions.hub.supportTeams.cta": "View workflow →",
+  "solutions.hub.jobSeekers.title": "Job Seekers",
+  "solutions.hub.jobSeekers.description": "Autofill job applications with AI-generated cover letters. Apply faster.",
+  "solutions.hub.jobSeekers.cta": "View workflow →",
+  "solutions.hub.cta.title": "Ready to install?",
+  "solutions.hub.cta.subtitle": "All three extensions are free to start. Chrome only for now — Edge coming soon.",
+  "solutions.hub.cta.button": "See all extensions →",
+  "solutions.communication.page.title": "AI Communication Copilot for Emails, Support & Messaging | Donbrico",
+  "solutions.communication.page.description": "Automate replies, emails, and messages using AI. Built for support teams, sales, and professionals managing high-volume communication.",
+  "solutions.communication.page.ogTitle": "AI Communication Copilot for Emails, Support & Messaging | Donbrico",
+  "solutions.communication.page.ogDescription": "Automate replies, emails, and messages using AI. Built for support teams, sales, and professionals managing high-volume communication.",
+  "solutions.communication.eyebrow": "WRITE & RESPOND",
+  "solutions.communication.title": "Stop rewriting the same messages. Use AI to handle high-volume communication.",
+  "solutions.communication.subtitle": "The AI Reply Assistant extension works in Gmail, LinkedIn, Outlook, Twitter, and any website with a text field — without leaving your browser.",
+  "solutions.communication.who.title": "Built for people who write a lot",
+  "solutions.communication.who.chips": [
+    "Customer support teams",
+    "Sales & SDRs",
+    "Recruiters doing outreach",
+    "Community managers",
+    "Ecommerce support"
+  ],
+  "solutions.communication.pain.title": "The problem",
+  "solutions.communication.pain.items": [
+    {
+      "icon": "⏱️",
+      "text": "Spending 2–3 hours per day writing replies to similar questions"
+    },
+    {
+      "icon": "📋",
+      "text": "Maintaining tone consistency across a high-volume inbox"
+    },
+    {
+      "icon": "🔄",
+      "text": "Rebuilding the same message from scratch every time"
+    }
+  ],
+  "solutions.communication.solution.title": "How AI Reply Assistant solves it",
+  "solutions.communication.solution.description": "Build a personal reply library. Generate on-brand responses with a single prompt. Insert them anywhere in one click.",
+  "solutions.communication.niches.title": "Related workflows",
+  "solutions.communication.niches.items": [
+    {
+      "label": "Support Teams",
+      "url": "/solutions/support-teams/"
+    },
+    {
+      "label": "Ecommerce Support",
+      "url": "/solutions/ecommerce-support/"
+    }
+  ],
+  "solutions.automation.page.title": "AI Workflow Automation for Forms, Data Entry & Admin Tasks | Donbrico",
+  "solutions.automation.page.description": "Automate repetitive form filling and structured data entry with AI browser tools. Built for recruiters, admins, and operations teams.",
+  "solutions.automation.page.ogTitle": "AI Workflow Automation for Forms, Data Entry & Admin Tasks | Donbrico",
+  "solutions.automation.page.ogDescription": "Automate repetitive form filling and structured data entry with AI browser tools. Built for recruiters, admins, and operations teams.",
+  "solutions.automation.eyebrow": "FILL & PROCESS",
+  "solutions.automation.title": "Fill any form in one click. Stop manual data entry on every website.",
+  "solutions.automation.subtitle": "Donbrico Autofill AI detects forms on any website and fills them from your saved profile — with AI-generated answers for open-ended fields.",
+  "solutions.automation.who.title": "Built for data-heavy roles",
+  "solutions.automation.who.chips": [
+    "Recruiters & sourcers",
+    "Insurance agents",
+    "Operations & admin teams",
+    "HR professionals",
+    "Sales reps entering CRM data"
+  ],
+  "solutions.automation.pain.title": "The problem",
+  "solutions.automation.pain.items": [
+    {
+      "icon": "📝",
+      "text": "Filling the same information into dozens of different forms every week"
+    },
+    {
+      "icon": "🕐",
+      "text": "Switching between tabs to copy-paste data into job boards and ATS systems"
+    },
+    {
+      "icon": "😤",
+      "text": "Writing cover letters and open-ended answers from scratch each time"
+    }
+  ],
+  "solutions.automation.solution.title": "How Autofill AI solves it",
+  "solutions.automation.solution.description": "Save your profile once. The extension fills standard fields instantly and uses on-device AI to write custom answers for open-ended questions — entirely in your browser.",
+  "solutions.automation.niches.title": "Related workflows",
+  "solutions.automation.niches.items": [
+    {
+      "label": "Recruiters",
+      "url": "/solutions/recruiters/"
+    },
+    {
+      "label": "Insurance Workflows",
+      "url": "/solutions/insurance/"
+    }
+  ],
+  "solutions.workspace.page.title": "AI Browser Workspace Manager for Research & Productivity | Donbrico",
+  "solutions.workspace.page.description": "Organize tabs, research sessions, and workflows with AI-powered browser workspace tools. Stay focused across complex tasks.",
+  "solutions.workspace.page.ogTitle": "AI Browser Workspace Manager for Research & Productivity | Donbrico",
+  "solutions.workspace.page.ogDescription": "Organize tabs, research sessions, and workflows with AI-powered browser workspace tools. Stay focused across complex tasks.",
+  "solutions.workspace.eyebrow": "ORGANIZE & FOCUS",
+  "solutions.workspace.title": "Stop losing your research. Save and restore browser workspaces in one click.",
+  "solutions.workspace.subtitle": "WorkDesk saves your entire browser state — tabs, windows, groups — and restores it exactly. AI names and organizes your sessions automatically.",
+  "solutions.workspace.who.title": "Built for context-switching roles",
+  "solutions.workspace.who.chips": [
+    "Researchers & analysts",
+    "Developers",
+    "Consultants managing multiple clients",
+    "Project managers",
+    "Content creators"
+  ],
+  "solutions.workspace.pain.title": "The problem",
+  "solutions.workspace.pain.items": [
+    {
+      "icon": "🗃️",
+      "text": "Losing tab sessions when the browser crashes or you close the wrong window"
+    },
+    {
+      "icon": "🔀",
+      "text": "Juggling 30+ tabs across multiple projects with no structure"
+    },
+    {
+      "icon": "⏳",
+      "text": "Spending time rebuilding research sessions you've built before"
+    }
+  ],
+  "solutions.workspace.solution.title": "How WorkDesk solves it",
+  "solutions.workspace.solution.description": "Save any browser state as a named workspace. Restore it with one click. AI automatically groups tabs, removes duplicates, and suggests workspace names.",
+  "solutions.workspace.features.f1.text": "Saves tabs, windows, and Chrome tab groups",
+  "solutions.workspace.features.f2.text": "AI-powered semantic search across all saved sessions",
+  "solutions.workspace.features.f3.text": "Export as JSON, CSV, or HTML bookmarks",
+  "solutions.workspace.features.f4.text": "All workspace data stored locally — no account required",
+  "solutions.workspace.niches.title": "Related workflows",
+  "solutions.workspace.niches.items": [
+    {
+      "label": "Browser Workspace Management",
+      "url": "/solutions/browser-workspace/"
+    }
+  ],
+  "solutions.jobSeekers.page.title": "AI Tools for Job Seekers: Autofill Applications & Cover Letters | Donbrico",
+  "solutions.jobSeekers.page.description": "Fill job applications automatically and generate personalised cover letters using AI. Save time on your job search.",
+  "solutions.jobSeekers.page.ogTitle": "AI Tools for Job Seekers: Autofill Applications & Cover Letters | Donbrico",
+  "solutions.jobSeekers.page.ogDescription": "Fill job applications automatically and generate personalised cover letters using AI. Save time on your job search.",
+  "solutions.jobSeekers.eyebrow": "FOR JOB SEEKERS",
+  "solutions.jobSeekers.breadcrumb.2": "For Job Seekers",
+  "solutions.jobSeekers.title": "Stop retyping your resume on every job application",
+  "solutions.jobSeekers.subtitle": "Donbrico Autofill AI fills job application forms from your saved profile in one click — name, email, LinkedIn, work history, skills. AI writes the open-ended answers like cover letters and \"Why do you want this role?\"",
+  "solutions.jobSeekers.pain.title": "What slows down every job search",
+  "solutions.jobSeekers.pain.items.0.text": "Re-entering your name, email, phone, LinkedIn URL, and work history into every single application form — even when your resume is right there",
+  "solutions.jobSeekers.pain.items.1.text": "Writing a fresh cover letter answer for every \"Why do you want to work here?\" or \"Describe your experience with X\" field",
+  "solutions.jobSeekers.pain.items.2.text": "Spending 20–30 minutes per application on data entry instead of actually tailoring your pitch",
+  "solutions.jobSeekers.solution.title": "How Autofill AI solves it",
+  "solutions.jobSeekers.solution.primary.label": "Primary Tool",
+  "solutions.jobSeekers.solution.primary.name": "Donbrico Autofill AI",
+  "solutions.jobSeekers.solution.primary.description": "Save your profile once — name, contact, LinkedIn, resume summary, skills. Visit any job board or ATS. The ⚡ button appears automatically. One click fills all standard fields. AI writes tailored answers for open-ended questions using your profile as context.",
+  "solutions.jobSeekers.solution.primary.points": [
+    "Works on LinkedIn, Indeed, Greenhouse, Lever, Workday, Ashby",
+    "AI writes cover letters and role-specific answers from your profile",
+    "Save multiple profiles for different roles or industries (Pro)",
+    "On-device AI (Chrome) — your data never leaves your browser"
+  ],
+  "solutions.jobSeekers.solution.secondary.label": "Also Useful",
+  "solutions.jobSeekers.solution.secondary.name": "AI Reply Assistant",
+  "solutions.jobSeekers.solution.secondary.description": "Build a library of follow-up email templates — thank-you notes, status-check emails, salary negotiation starters. AI drafts personalised versions in seconds for each application.",
+  "solutions.jobSeekers.solution.secondary.points": [
+    "Saved templates for every stage of the hiring process",
+    "AI drafts personalised follow-ups from a short prompt"
+  ],
+  "solutions.jobSeekers.steps.title": "How it works",
+  "solutions.jobSeekers.steps.s1.title": "1. Save your profile once",
+  "solutions.jobSeekers.steps.s1.text": "Enter your contact details, LinkedIn, work history, education, and skills. Add a bio paragraph the AI can draw from when writing open-ended answers.",
+  "solutions.jobSeekers.steps.s2.title": "2. Visit any job application",
+  "solutions.jobSeekers.steps.s2.text": "Open a role on LinkedIn, Indeed, or go directly to an employer's ATS (Greenhouse, Lever, Workday, Ashby). The ⚡ button appears when a form is detected.",
+  "solutions.jobSeekers.steps.s3.title": "3. One click, then review",
+  "solutions.jobSeekers.steps.s3.text": "Hit ⚡ to fill standard fields instantly. AI drafts responses to open-ended questions based on your profile. You review everything before submitting — it's always your call.",
+  "solutions.jobSeekers.faq.q1.q": "Which job boards and ATS platforms does it support?",
+  "solutions.jobSeekers.faq.q1.a": "Autofill AI detects forms on any website with standard HTML inputs. This includes LinkedIn, Indeed, Glassdoor, Greenhouse, Lever, Workday, Ashby, SmartRecruiters, and most employer career portals.",
+  "solutions.jobSeekers.faq.q2.q": "Can it write cover letters for me?",
+  "solutions.jobSeekers.faq.q2.a": "Yes. When it encounters a cover letter or open-ended question field, AI drafts an answer using your saved profile — your experience, skills, and bio. You always review and edit before submitting.",
+  "solutions.jobSeekers.faq.q3.q": "Can I save different profiles for different types of roles?",
+  "solutions.jobSeekers.faq.q3.a": "Yes — with the Pro plan (up to 10 profiles). For example, one profile tailored for product management roles and another for operations roles, each with different bio emphasis and skill highlights.",
+  "solutions.jobSeekers.faq.q4.q": "Is my personal data safe?",
+  "solutions.jobSeekers.faq.q4.a": "Your profile is stored locally on your device. When using Gemini Nano (Chrome's built-in AI), all AI processing stays on-device — nothing leaves your browser. If you use a third-party API key, data goes to that provider only. Donbrico never stores your data.",
+  "solutions.jobSeekers.faq.q5.q": "Is it free?",
+  "solutions.jobSeekers.faq.q5.a": "The free plan includes unlimited form filling with one profile and local AI via Gemini Nano. Pro ($5.99/month) adds multiple profiles, adaptive learning, and cover letter generation.",
+  "solutions.jobSeekers.cta.title": "Start applying faster today",
+  "solutions.jobSeekers.cta.subtitle": "Free to install. No account required. Works on LinkedIn, Indeed, Greenhouse, and any employer ATS.",
+  "solutions.jobSeekers.related.title": "Related workflows",
+  "solutions.jobSeekers.related.items.0.label": "Recruiters Overview",
+  "solutions.jobSeekers.related.items.1.label": "Fill & Process Overview",
+  "solutions.recruiters.page.title": "AI Tools for Recruiters: Automate Job Applications & ATS Workflows | Donbrico",
+  "solutions.recruiters.page.description": "Speed up recruiting with AI that autofills job boards, generates candidate summaries, and reduces manual ATS data entry.",
+  "solutions.recruiters.page.ogTitle": "AI Tools for Recruiters: Automate Job Applications & ATS Workflows | Donbrico",
+  "solutions.recruiters.page.ogDescription": "Speed up recruiting with AI that autofills job boards, generates candidate summaries, and reduces manual ATS data entry.",
+  "solutions.recruiters.eyebrow": "FOR RECRUITERS",
+  "solutions.recruiters.breadcrumb": [
+    "Home",
+    "Solutions",
+    "For Recruiters"
+  ],
+  "solutions.recruiters.title": "Recruiters: automate job board submissions and ATS data entry with AI",
+  "solutions.recruiters.subtitle": "Donbrico Autofill AI fills job applications and ATS forms from a single saved profile — letting you process more candidates without the copy-paste grind.",
+  "solutions.recruiters.pain.title": "What's slowing you down",
+  "solutions.recruiters.pain.items": [
+    {
+      "icon": "🔁",
+      "text": "Re-entering the same candidate data into LinkedIn, Indeed, Greenhouse, Lever, and Workday — every single day"
+    },
+    {
+      "icon": "⌨️",
+      "text": "Manually writing outreach messages for each candidate from scratch"
+    },
+    {
+      "icon": "📂",
+      "text": "Switching between 10 tabs to copy-paste the same information across job boards and ATS systems"
+    }
+  ],
+  "solutions.recruiters.solution.title": "How Donbrico solves it",
+  "solutions.recruiters.solution.primary.label": "Primary tool",
+  "solutions.recruiters.solution.primary.name": "Donbrico Autofill AI",
+  "solutions.recruiters.solution.primary.description": "Detects forms on any job board or ATS. Fills standard fields (name, email, LinkedIn, experience) from your saved profile in one click. AI writes custom answers for open-ended fields like \"Why are you a good fit?\"",
+  "solutions.recruiters.solution.primary.points": [
+    "Works on LinkedIn, Indeed, Greenhouse, Lever, Workday, and more",
+    "Fills multiple candidate profiles with one extension",
+    "On-device AI (Chrome) — candidate data never hits external servers"
+  ],
+  "solutions.recruiters.solution.secondary.label": "Also useful",
+  "solutions.recruiters.solution.secondary.name": "AI Reply Assistant",
+  "solutions.recruiters.solution.secondary.description": "Build a library of outreach message templates. Generate personalised candidate messages with one prompt.",
+  "solutions.recruiters.solution.secondary.points": [
+    "Saved reply templates for common outreach scenarios",
+    "AI drafts context-aware responses to candidate inquiries"
+  ],
+  "solutions.recruiters.steps.title": "How it works for recruiters",
+  "solutions.recruiters.steps.s1.title": "Save your profile (or candidate profiles)",
+  "solutions.recruiters.steps.s1.text": "Enter the key information once: name, contact, role details, skills. The extension handles the rest.",
+  "solutions.recruiters.steps.s2.title": "Visit any job board or ATS",
+  "solutions.recruiters.steps.s2.text": "Navigate to LinkedIn Jobs, Indeed, Greenhouse, or any form-based system. The extension activates automatically.",
+  "solutions.recruiters.steps.s3.title": "One click to fill",
+  "solutions.recruiters.steps.s3.text": "Hit the ⚡ button. Standard fields fill instantly. Open-ended questions get AI-generated answers tailored to the role.",
+  "solutions.recruiters.faq.q1.q": "Does it work on LinkedIn, Greenhouse, Lever, and Workday?",
+  "solutions.recruiters.faq.q1.a": "Yes. Autofill AI detects forms on any website, including major ATS platforms and job boards. It works wherever there are HTML input fields.",
+  "solutions.recruiters.faq.q2.q": "Can I save multiple candidate profiles?",
+  "solutions.recruiters.faq.q2.a": "Pro users can save up to 10 profiles. Each profile can represent a different candidate or role type, making it easy to switch between submissions.",
+  "solutions.recruiters.faq.q3.q": "Is candidate data sent to any server?",
+  "solutions.recruiters.faq.q3.a": "No. When using Gemini Nano (Chrome's built-in AI), all data stays on your device. If you use a third-party API key, data goes to that provider only — never to Donbrico.",
+  "solutions.recruiters.faq.q4.q": "How does it handle cover letter fields?",
+  "solutions.recruiters.faq.q4.a": "AI Reply Assistant generates cover letters and open-ended responses from your profile. You review and edit before submitting — it's always your call.",
+  "solutions.recruiters.faq.q5.q": "Is it free?",
+  "solutions.recruiters.faq.q5.a": "The free plan includes unlimited form filling with one profile and local AI via Gemini Nano. Pro ($5.99/month) adds multiple profiles and advanced features.",
+  "solutions.recruiters.related.title": "Related workflows",
+  "solutions.recruiters.related.items": [
+    {
+      "label": "AI Communication for Support Teams",
+      "url": "/solutions/support-teams/"
+    },
+    {
+      "label": "Fill & Process Overview",
+      "url": "/solutions/automation/"
+    }
+  ],
+  "solutions.ecommerceSupport.page.title": "AI Customer Support Tool for Shopify & Ecommerce Teams | Donbrico",
+  "solutions.ecommerceSupport.page.description": "Automate ecommerce support replies for orders, refunds, and customer questions. Reduce ticket load with AI-powered responses.",
+  "solutions.ecommerceSupport.page.ogTitle": "AI Customer Support Tool for Shopify & Ecommerce Teams | Donbrico",
+  "solutions.ecommerceSupport.page.ogDescription": "Automate ecommerce support replies for orders, refunds, and customer questions. Reduce ticket load with AI-powered responses.",
+  "solutions.ecommerceSupport.eyebrow": "FOR ECOMMERCE SUPPORT",
+  "solutions.ecommerceSupport.breadcrumb": [
+    "Home",
+    "Solutions",
+    "Ecommerce Support"
+  ],
+  "solutions.ecommerceSupport.title": "Ecommerce support teams: answer orders, refunds & shipping questions faster with AI",
+  "solutions.ecommerceSupport.subtitle": "AI Reply Assistant lets you build a library of on-brand support responses and generate context-aware answers in seconds — without leaving your helpdesk.",
+  "solutions.ecommerceSupport.pain.title": "What's slowing you down",
+  "solutions.ecommerceSupport.pain.items": [
+    {
+      "icon": "📦",
+      "text": "Answering the same order-status, refund, and shipping questions hundreds of times per week"
+    },
+    {
+      "icon": "✍️",
+      "text": "Maintaining brand tone and accuracy under ticket volume pressure"
+    },
+    {
+      "icon": "🔄",
+      "text": "Writing fresh responses when templates don't quite fit the customer's specific situation"
+    }
+  ],
+  "solutions.ecommerceSupport.solution.title": "How Donbrico solves it",
+  "solutions.ecommerceSupport.solution.primary.label": "Primary tool",
+  "solutions.ecommerceSupport.solution.primary.name": "AI Reply Assistant",
+  "solutions.ecommerceSupport.solution.primary.description": "Build a library of support reply templates for your most common ticket types. For edge cases, generate a custom response with a quick prompt — AI drafts it in seconds, you review and send.",
+  "solutions.ecommerceSupport.solution.primary.points": [
+    "Template library for order, refund, shipping, and product queries",
+    "Works in Gorgias, Zendesk, Freshdesk, Shopify inbox, Gmail, and any text field",
+    "Choose reply tone: empathetic, professional, concise"
+  ],
+  "solutions.ecommerceSupport.solution.primary.features.f1.title": "Template library",
+  "solutions.ecommerceSupport.solution.primary.features.f1.text": "Order, refund, shipping, product query templates — searchable and organised by tag",
+  "solutions.ecommerceSupport.solution.primary.features.f2.title": "Helpdesk integration",
+  "solutions.ecommerceSupport.solution.primary.features.f2.text": "Works in Gorgias, Zendesk, Freshdesk, Shopify Inbox, Gmail — any text field",
+  "solutions.ecommerceSupport.solution.primary.features.f3.title": "Tone control",
+  "solutions.ecommerceSupport.solution.primary.features.f3.text": "Choose reply tone: empathetic, professional, or concise — per message",
+  "solutions.ecommerceSupport.steps.title": "How it works for ecommerce support",
+  "solutions.ecommerceSupport.steps.s1.title": "Build your template library",
+  "solutions.ecommerceSupport.steps.s1.text": "Save your top 30+ support replies. Tag them by category (refunds, shipping, product questions) for fast search.",
+  "solutions.ecommerceSupport.steps.s2.title": "Click inside any support ticket",
+  "solutions.ecommerceSupport.steps.s2.text": "Open a ticket in Gorgias, Zendesk, or Gmail. Click inside the reply field — the AI toolbar appears.",
+  "solutions.ecommerceSupport.steps.s3.title": "Insert a template or generate a custom reply",
+  "solutions.ecommerceSupport.steps.s3.text": "Search saved templates or type a quick prompt. Review the AI draft and send in seconds.",
+  "solutions.ecommerceSupport.faq.q1.q": "Does it work in Gorgias and Zendesk?",
+  "solutions.ecommerceSupport.faq.q1.a": "Yes. AI Reply Assistant works in any website with a text field, including Gorgias, Zendesk, Freshdesk, Shopify Inbox, and Gmail.",
+  "solutions.ecommerceSupport.faq.q2.q": "Can I maintain brand tone?",
+  "solutions.ecommerceSupport.faq.q2.a": "Yes. You can save your brand voice as a tone preset and AI will match it when generating responses.",
+  "solutions.ecommerceSupport.faq.q3.q": "How many templates can I save?",
+  "solutions.ecommerceSupport.faq.q3.a": "Free plan includes 30 templates. Pro gives you unlimited templates, plus smart variables like {{order_id}} and {{customer_name}}.",
+  "solutions.ecommerceSupport.faq.q4.q": "Is AI data private?",
+  "solutions.ecommerceSupport.faq.q4.a": "When using Gemini Nano (Chrome-only), everything stays on-device. If you use a third-party API key, data goes directly to that provider — never to Donbrico.",
+  "solutions.ecommerceSupport.faq.q5.q": "Does the team plan exist?",
+  "solutions.ecommerceSupport.faq.q5.a": "Currently licenses are per-user. Each agent installs their own copy. Team billing is on the roadmap.",
+  "solutions.ecommerceSupport.related.title": "Related workflows",
+  "solutions.ecommerceSupport.related.items": [
+    {
+      "label": "Support Teams Overview",
+      "url": "/solutions/support-teams/"
+    },
+    {
+      "label": "Write & Respond Overview",
+      "url": "/solutions/communication/"
+    }
+  ],
+  "solutions.insurance.page.title": "AI Form Automation for Insurance Workflows & Data Entry | Donbrico",
+  "solutions.insurance.page.description": "Fill insurance forms faster with AI-assisted automation for claims, policy data entry, and administrative documentation.",
+  "solutions.insurance.page.ogTitle": "AI Form Automation for Insurance Workflows & Data Entry | Donbrico",
+  "solutions.insurance.page.ogDescription": "Fill insurance forms faster with AI-assisted automation for claims, policy data entry, and administrative documentation.",
+  "solutions.insurance.eyebrow": "FOR INSURANCE PROFESSIONALS",
+  "solutions.insurance.breadcrumb": [
+    "Home",
+    "Solutions",
+    "Insurance Workflows"
+  ],
+  "solutions.insurance.title": "Insurance professionals: eliminate manual form entry with AI-assisted autofill",
+  "solutions.insurance.subtitle": "Donbrico Autofill AI fills claim forms, policy entry screens, and admin paperwork from a saved data profile — reducing repetitive entry errors and saving hours each week.",
+  "solutions.insurance.pain.title": "What's slowing you down",
+  "solutions.insurance.pain.items": [
+    {
+      "icon": "📋",
+      "text": "Re-entering policyholder details across multiple forms and internal systems every day"
+    },
+    {
+      "icon": "⚠️",
+      "text": "Risk of data entry errors on claims forms that require exact accuracy"
+    },
+    {
+      "icon": "🕐",
+      "text": "Hours of administrative paperwork that pull time away from client-facing work"
+    }
+  ],
+  "solutions.insurance.solution.title": "How Donbrico solves it",
+  "solutions.insurance.solution.primary.label": "Primary tool",
+  "solutions.insurance.solution.primary.name": "Donbrico Autofill AI",
+  "solutions.insurance.solution.primary.description": "Save a profile with policy data, contact details, and standard fields. Navigate to any form — claim submission, policy entry, or admin screen — and fill it in one click. AI handles open-ended narrative fields.",
+  "solutions.insurance.solution.primary.points": [
+    "Works on web-based insurance portals and internal admin systems",
+    "Reduces keystroke errors on critical data fields",
+    "On-device AI keeps sensitive client data off external servers (Chrome)"
+  ],
+  "solutions.insurance.solution.primary.features.f1.title": "Works on web portals",
+  "solutions.insurance.solution.primary.features.f1.text": "Web-based insurance portals and internal admin systems with standard form inputs",
+  "solutions.insurance.solution.primary.features.f2.title": "Reduces entry errors",
+  "solutions.insurance.solution.primary.features.f2.text": "Profile-filled fields eliminate keystroke errors on critical data fields",
+  "solutions.insurance.solution.primary.features.f3.title": "On-device AI (Chrome)",
+  "solutions.insurance.solution.primary.features.f3.text": "Sensitive client data never leaves your machine with Gemini Nano",
+  "solutions.insurance.steps.title": "How it works for insurance workflows",
+  "solutions.insurance.steps.s1.title": "Save your data profile",
+  "solutions.insurance.steps.s1.text": "Enter policyholder info, agent details, and common field values once. Pro users can save multiple profiles for different clients or policy types.",
+  "solutions.insurance.steps.s2.title": "Open any insurance form",
+  "solutions.insurance.steps.s2.text": "Navigate to your claim submission portal, policy entry screen, or any web-based admin form. The extension detects it automatically.",
+  "solutions.insurance.steps.s3.title": "Fill in one click",
+  "solutions.insurance.steps.s3.text": "Hit ⚡ to fill standard fields instantly. For narrative fields (descriptions, summaries), AI drafts a response from your profile context.",
+  "solutions.insurance.faq.q1.q": "Does it work on web-based insurance portals?",
+  "solutions.insurance.faq.q1.a": "Yes. Autofill AI works on any website with standard HTML form fields, including web-based insurance portals and agent management systems.",
+  "solutions.insurance.faq.q2.q": "Is sensitive policyholder data safe?",
+  "solutions.insurance.faq.q2.a": "When using Gemini Nano (Chrome built-in AI), all data stays on your device. No data is ever sent to Donbrico. If you use a third-party API key, data goes to that provider per their privacy policy.",
+  "solutions.insurance.faq.q3.q": "Can I save multiple client profiles?",
+  "solutions.insurance.faq.q3.a": "Pro users can save up to 10 profiles, making it easy to switch between different clients or policy types within a single session.",
+  "solutions.insurance.faq.q4.q": "Does it work on internal company systems?",
+  "solutions.insurance.faq.q4.a": "As long as the system is browser-based and uses standard HTML inputs, yes. Legacy systems with non-standard form elements may have limited support.",
+  "solutions.insurance.faq.q5.q": "Is it compliant with data privacy regulations?",
+  "solutions.insurance.faq.q5.a": "The extension stores data locally on your device and does not transmit data to Donbrico. For regulatory compliance requirements, review your organisation's policies on browser extensions before use.",
+  "solutions.insurance.related.title": "Related workflows",
+  "solutions.insurance.related.items": [
+    {
+      "label": "Recruiters Workflow",
+      "url": "/solutions/recruiters/"
+    },
+    {
+      "label": "Fill & Process Overview",
+      "url": "/solutions/automation/"
+    }
+  ],
+  "solutions.supportTeams.page.title": "AI Customer Support Assistant for Faster Ticket Replies | Donbrico",
+  "solutions.supportTeams.page.description": "Generate accurate support replies instantly using AI. Reduce response time for Shopify, SaaS, and ecommerce support teams.",
+  "solutions.supportTeams.page.ogTitle": "AI Customer Support Assistant for Faster Ticket Replies | Donbrico",
+  "solutions.supportTeams.page.ogDescription": "Generate accurate support replies instantly using AI. Reduce response time for Shopify, SaaS, and ecommerce support teams.",
+  "solutions.supportTeams.eyebrow": "FOR SUPPORT TEAMS",
+  "solutions.supportTeams.breadcrumb": [
+    "Home",
+    "Solutions",
+    "Support Teams"
+  ],
+  "solutions.supportTeams.title": "Support agents: cut reply time in half with AI-assisted ticket responses",
+  "solutions.supportTeams.subtitle": "AI Reply Assistant gives support agents a personal reply library and an AI draft button — so they can respond to tickets faster without sacrificing quality or brand voice.",
+  "solutions.supportTeams.pain.title": "What's slowing your team down",
+  "solutions.supportTeams.pain.items": [
+    {
+      "icon": "⏰",
+      "text": "High ticket volume means agents spend most of their day copy-pasting or rewriting near-identical answers"
+    },
+    {
+      "icon": "📉",
+      "text": "Inconsistent tone and accuracy across replies when agents work at speed"
+    },
+    {
+      "icon": "🧠",
+      "text": "New agents need weeks to learn standard answers — there's no structured knowledge base in the ticketing tool"
+    }
+  ],
+  "solutions.supportTeams.solution.title": "How Donbrico solves it",
+  "solutions.supportTeams.solution.primary.label": "Primary tool",
+  "solutions.supportTeams.solution.primary.name": "AI Reply Assistant",
+  "solutions.supportTeams.solution.primary.description": "Each agent builds their own structured reply library. For new ticket types, AI drafts a response in seconds based on the ticket context and the agent's tone settings. No more blank-page moments.",
+  "solutions.supportTeams.solution.primary.points": [
+    "Saved reply library searchable by keyword or tag",
+    "Works in Zendesk, Gorgias, Freshdesk, Intercom, Front, and any helpdesk with a text field",
+    "AI generates context-aware drafts — agent reviews and sends"
+  ],
+  "solutions.supportTeams.solution.primary.features.f1.title": "Searchable reply library",
+  "solutions.supportTeams.solution.primary.features.f1.text": "Find saved replies by keyword or tag — no more digging through bookmarks or wikis",
+  "solutions.supportTeams.solution.primary.features.f2.title": "Works in every helpdesk",
+  "solutions.supportTeams.solution.primary.features.f2.text": "Zendesk, Gorgias, Freshdesk, Intercom, Front, Helpscout, Gmail — any text field",
+  "solutions.supportTeams.solution.primary.features.f3.title": "AI context-aware drafts",
+  "solutions.supportTeams.solution.primary.features.f3.text": "AI reads the ticket context and drafts a relevant response — agent reviews and sends",
+  "solutions.supportTeams.steps.title": "How it works for support agents",
+  "solutions.supportTeams.steps.s1.title": "Build your reply library",
+  "solutions.supportTeams.steps.s1.text": "Each agent saves their most-used answers. Organise by category, tag for fast search, use {{variables}} for personalisation.",
+  "solutions.supportTeams.steps.s2.title": "Open any ticket",
+  "solutions.supportTeams.steps.s2.text": "Click into the reply field in Zendesk, Gorgias, or any helpdesk. The AI toolbar appears automatically.",
+  "solutions.supportTeams.steps.s3.title": "Insert or generate",
+  "solutions.supportTeams.steps.s3.text": "Search saved replies, or type a 5-word prompt and let AI draft a full response. Review, adjust tone if needed, and send.",
+  "solutions.supportTeams.faq.q1.q": "Which helpdesks does it support?",
+  "solutions.supportTeams.faq.q1.a": "AI Reply Assistant works in any website with a text field — Zendesk, Gorgias, Freshdesk, Intercom, Front, Helpscout, and Gmail. No integration required.",
+  "solutions.supportTeams.faq.q2.q": "Can multiple agents use it?",
+  "solutions.supportTeams.faq.q2.a": "Each agent installs their own copy and builds their own library. The extension is per-user. Team plan is on the roadmap.",
+  "solutions.supportTeams.faq.q3.q": "How does the AI know what to say?",
+  "solutions.supportTeams.faq.q3.a": "The AI reads the context of the text field (the ticket content around the cursor) and uses your tone setting to generate a contextual draft. The better your prompt, the better the draft.",
+  "solutions.supportTeams.faq.q4.q": "Can we enforce brand tone?",
+  "solutions.supportTeams.faq.q4.a": "Yes. Agents can set a default tone (Professional, Empathetic, Concise, etc.) and save on-brand reply templates. Pro tones include Persuasive, Executive, and Assertive.",
+  "solutions.supportTeams.faq.q5.q": "Is the AI data private?",
+  "solutions.supportTeams.faq.q5.a": "When using Gemini Nano (Chrome only), all AI processing is on-device. If using a third-party API key, data goes to that provider. Donbrico never sees ticket content.",
+  "solutions.supportTeams.cta.title": "Start replying faster today",
+  "solutions.supportTeams.cta.subtitle": "Free to install. Works immediately in your existing helpdesk. No integration required.",
+  "solutions.supportTeams.related.title": "Related workflows",
+  "solutions.supportTeams.related.items": [
+    {
+      "label": "Ecommerce Support",
+      "url": "/solutions/ecommerce-support/"
+    },
+    {
+      "label": "Write & Respond Overview",
+      "url": "/solutions/communication/"
+    }
+  ],
+  "solutions.browserWorkspace.page.title": "AI Tab & Workspace Manager for Structured Browser Workflows | Donbrico",
+  "solutions.browserWorkspace.page.description": "Save and organize browser sessions with AI. Ideal for researchers, developers, and professionals managing complex workflows.",
+  "solutions.browserWorkspace.page.ogTitle": "AI Tab & Workspace Manager for Structured Browser Workflows | Donbrico",
+  "solutions.browserWorkspace.page.ogDescription": "Save and organize browser sessions with AI. Ideal for researchers, developers, and professionals managing complex workflows.",
+  "solutions.browserWorkspace.eyebrow": "BROWSER WORKSPACE MANAGEMENT",
+  "solutions.browserWorkspace.breadcrumb": [
+    "Home",
+    "Solutions",
+    "Browser Workspace"
+  ],
+  "solutions.browserWorkspace.title": "Researchers & developers: stop losing browser sessions. Organize complex workflows with AI.",
+  "solutions.browserWorkspace.subtitle": "WorkDesk saves your entire browser state and restores it with one click. AI automatically names, groups, and organizes your tabs so you can focus on the work, not the browser.",
+  "solutions.browserWorkspace.pain.title": "What's costing you time",
+  "solutions.browserWorkspace.pain.items": [
+    {
+      "icon": "💥",
+      "text": "Losing hours of research context when your browser crashes, restarts, or you accidentally close the wrong window"
+    },
+    {
+      "icon": "🌀",
+      "text": "Managing 5 different projects across 40+ tabs with no structure or memory of what's what"
+    },
+    {
+      "icon": "🔍",
+      "text": "Spending 10 minutes finding a tab you opened last week but can't remember the URL for"
+    }
+  ],
+  "solutions.browserWorkspace.solution.title": "How WorkDesk solves it",
+  "solutions.browserWorkspace.solution.primary.label": "Primary tool",
+  "solutions.browserWorkspace.solution.primary.name": "Donbrico WorkDesk",
+  "solutions.browserWorkspace.solution.primary.description": "One click saves your entire current browser state as a named workspace. Restore it exactly as it was. AI suggests names, groups similar tabs, and cleans up duplicates.",
+  "solutions.browserWorkspace.solution.primary.points": [
+    "Saves tabs, windows, and tab groups",
+    "AI-powered semantic search finds any saved tab by description",
+    "Export workspaces as JSON, CSV, or HTML bookmarks"
+  ],
+  "solutions.browserWorkspace.solution.primary.features.f1.title": "Full session saving",
+  "solutions.browserWorkspace.solution.primary.features.f1.text": "Saves tabs, windows, and Chrome tab groups — restored exactly as you left them",
+  "solutions.browserWorkspace.solution.primary.features.f2.title": "AI semantic search",
+  "solutions.browserWorkspace.solution.primary.features.f2.text": "Find any saved tab or workspace using natural language, not exact URLs",
+  "solutions.browserWorkspace.solution.primary.features.f3.title": "Export & portability",
+  "solutions.browserWorkspace.solution.primary.features.f3.text": "Export workspaces as JSON, CSV, or HTML bookmarks for backup or transfer",
+  "solutions.browserWorkspace.steps.title": "How it works",
+  "solutions.browserWorkspace.steps.s1.title": "Save your current session",
+  "solutions.browserWorkspace.steps.s1.text": "Click the WorkDesk icon. Save the current window or all open windows as a workspace. AI suggests a name based on your tabs.",
+  "solutions.browserWorkspace.steps.s2.title": "Switch contexts cleanly",
+  "solutions.browserWorkspace.steps.s2.text": "Close the session. Open a new one. Come back to your saved workspace any time — all tabs restore exactly where you left them.",
+  "solutions.browserWorkspace.steps.s3.title": "Find anything with AI search",
+  "solutions.browserWorkspace.steps.s3.text": "Search workspaces using natural language: \"the React docs I had open last Tuesday\" finds it instantly.",
+  "solutions.browserWorkspace.faq.q1.q": "Does it restore tab groups?",
+  "solutions.browserWorkspace.faq.q1.a": "Yes. WorkDesk fully supports Chrome tab groups. When you restore a workspace, your groups are recreated exactly as you left them.",
+  "solutions.browserWorkspace.faq.q2.q": "What if my browser crashes?",
+  "solutions.browserWorkspace.faq.q2.a": "WorkDesk saves workspaces to Chrome's local storage. As long as you saved before the crash, your session is safe and restorable.",
+  "solutions.browserWorkspace.faq.q3.q": "Can I use it across multiple computers?",
+  "solutions.browserWorkspace.faq.q3.a": "Pro users can export workspaces as JSON and import them on another device. Cloud sync is on the roadmap.",
+  "solutions.browserWorkspace.faq.q4.q": "How is it different from Chrome's built-in session restore?",
+  "solutions.browserWorkspace.faq.q4.a": "Chrome session restore only brings back the last session. WorkDesk lets you save unlimited named workspaces, switch between them, search them, and restore any historical session.",
+  "solutions.browserWorkspace.faq.q5.q": "Is my browsing data private?",
+  "solutions.browserWorkspace.faq.q5.a": "All workspace data is stored locally on your device. Tab URLs and titles may be sent to your AI provider (for naming/search) if you use a BYOK key. With Gemini Nano, everything is on-device.",
+  "solutions.browserWorkspace.cta.title": "Stop losing your browser context",
+  "solutions.browserWorkspace.cta.subtitle": "Free to install. Save up to 5 workspaces on the free plan. No account required.",
+  "solutions.browserWorkspace.related.title": "Related workflows",
+  "solutions.browserWorkspace.related.items": [
+    {
+      "label": "Organize & Focus Overview",
+      "url": "/solutions/workspace/"
+    },
+    {
+      "label": "All Extensions",
+      "url": "/extensions/"
+    }
+  ],
+  "solutions.realEstate.page.title": "AI Browser Tools for Real Estate Agents: Listings, Clients & Communication | Donbrico",
+  "solutions.realEstate.page.description": "Real estate agents save hours daily with AI that fills listing forms, writes client follow-ups, and organises browser workspaces per property — all in Chrome.",
+  "solutions.realEstate.page.ogTitle": "AI Browser Tools for Real Estate Agents | Donbrico",
+  "solutions.realEstate.page.ogDescription": "Real estate agents save hours daily with AI that fills listing forms, writes client follow-ups, and organises browser workspaces per property — all in Chrome.",
+  "solutions.realEstate.eyebrow": "FOR REAL ESTATE AGENTS",
+  "solutions.realEstate.title": "Stop retyping listings, re-writing emails, and losing tabs",
+  "solutions.realEstate.subtitle": "Real estate agents juggle clients, listings, portals, and paperwork across dozens of browser tabs every day. Donbrico's three extensions cut the repetition: fill any form in one click, reply to clients in seconds, and keep every property research session organised.",
+  "solutions.realEstate.pain.title": "Where agents lose hours every week",
+  "solutions.realEstate.pain.items": [
+    "Re-entering the same property details (address, beds, baths, price, description) into Zillow, Redfin, Realtor.com, and the MLS — every new listing, every update",
+    "Writing the same \"following up on your inquiry\" and \"here are three properties\" emails from scratch, 15 times a day, personalised for each client",
+    "Losing track of which tabs belong to which client or listing — 40 open tabs with no way to restore a research session from last week",
+    "Filling buyer/seller intake questionnaires and CRM contact forms by hand for every new lead"
+  ],
+  "solutions.realEstate.howEachHelpsTitle": "How each Donbrico extension helps",
+  "solutions.realEstate.aiReply.badge": "Client Communication",
+  "solutions.realEstate.aiReply.title": "AI Reply Assistant",
+  "solutions.realEstate.aiReply.fullDetails": "Full details →",
+  "solutions.realEstate.aiReply.description": "Build a personal library of every email type you send: property inquiry responses, follow-up sequences, showing confirmations, offer/counter-offer notifications, and closing status updates. When a client emails, AI personalises your saved template for that client and property in one click — right inside Gmail.",
+  "solutions.realEstate.aiReply.templatesTitle": "Templates you'd save:",
+  "solutions.realEstate.aiReply.templates": [
+    "→ Property inquiry response",
+    "→ \"Here are 3 listings for you\"",
+    "→ Showing follow-up",
+    "→ Offer submitted / accepted",
+    "→ Counter-offer explanation",
+    "→ Closing timeline update"
+  ],
+  "solutions.realEstate.aiReply.timeSavedTitle": "Time saved:",
+  "solutions.realEstate.aiReply.timeSaved": [
+    "✓ Works in Gmail, Outlook Web",
+    "✓ Smart variables: {{client}}, {{address}}, {{price}}",
+    "✓ AI rewrites for each client in seconds",
+    "✓ You review before sending — always"
+  ],
+  "solutions.realEstate.autofill.badge": "Form Filling",
+  "solutions.realEstate.autofill.title": "Autofill AI",
+  "solutions.realEstate.autofill.fullDetails": "Full details →",
+  "solutions.realEstate.autofill.description": "Every new listing means re-entering the same property details across Zillow, Redfin, Realtor.com, and your broker's MLS portal. Autofill AI detects those forms and fills them from a saved property profile in one click. Same for buyer/seller intake forms and CRM contact entries.",
+  "solutions.realEstate.autofill.formsTitle": "Forms it fills:",
+  "solutions.realEstate.autofill.forms": [
+    "→ MLS listing submissions",
+    "→ Zillow / Realtor.com portals",
+    "→ Buyer/seller intake forms",
+    "→ CRM contact entry (HubSpot, Salesforce)",
+    "→ Rental application forms"
+  ],
+  "solutions.realEstate.autofill.howItWorksTitle": "How it works:",
+  "solutions.realEstate.autofill.howItWorks": [
+    "✓ Save profiles for your own info + client info",
+    "✓ ⚡ button appears on any form",
+    "✓ Multiple profiles — switch per client (Pro)",
+    "✓ On-device AI — no data leaves Chrome"
+  ],
+  "solutions.realEstate.workdesk.badge": "Tab Organisation",
+  "solutions.realEstate.workdesk.title": "WorkDesk",
+  "solutions.realEstate.workdesk.fullDetails": "Full details →",
+  "solutions.realEstate.workdesk.description": "Each active listing deserves its own browser workspace — MLS details, street view, neighbourhood data, school ratings, mortgage calculator, competing listings. WorkDesk saves your current tabs as a named workspace in one click and restores the whole session instantly. No more tab chaos when you have 6 active clients.",
+  "solutions.realEstate.workdesk.workspacesTitle": "Workspaces agents create:",
+  "solutions.realEstate.workdesk.workspaces": [
+    "→ \"Smith Family — Buyers\" (12 tabs)",
+    "→ \"123 Oak St Listing\" (8 tabs)",
+    "→ \"Market Research — Downtown\"",
+    "→ \"Johnson Rental Search\""
+  ],
+  "solutions.realEstate.workdesk.keyFeaturesTitle": "Key features:",
+  "solutions.realEstate.workdesk.keyFeatures": [
+    "✓ AI names workspaces automatically",
+    "✓ Restore any session from any device",
+    "✓ Archive closed deals, restore if needed",
+    "✓ Semantic search across all workspaces (Pro)"
+  ],
+  "solutions.realEstate.faq.q1.q": "Do these extensions work with Zillow, Realtor.com, and MLS portals?",
+  "solutions.realEstate.faq.q1.a": "Autofill AI works on any website with standard HTML forms, including Zillow, Realtor.com, Redfin, and most MLS portals. AI Reply Assistant works in any text field, including Gmail and Outlook Web.",
+  "solutions.realEstate.faq.q2.q": "Is client or property data stored anywhere?",
+  "solutions.realEstate.faq.q2.a": "No. All data is stored locally in your browser. AI processing uses Gemini Nano — Chrome's built-in on-device model — so nothing is sent to any server. If you use your own API key, only you control which provider receives data.",
+  "solutions.realEstate.faq.q3.q": "Can I save a separate profile for each listing?",
+  "solutions.realEstate.faq.q3.a": "Yes. Autofill AI Pro allows up to 10 saved profiles. Create one per major listing or client profile, then select the right one from the popup before filling any form.",
+  "solutions.realEstate.faq.q4.q": "Can WorkDesk restore tabs from a previous session?",
+  "solutions.realEstate.faq.q4.a": "Yes. WorkDesk saves your open tabs as a named workspace. You can restore any saved workspace at any time, even after closing Chrome. Pro users can also export workspaces and search across them.",
+  "solutions.realEstate.faq.q5.q": "Are all three extensions free?",
+  "solutions.realEstate.faq.q5.a": "All three have a generous free tier. AI Reply Assistant and Autofill AI unlock advanced features (multiple profiles, smart variables, AI generation) on Pro plans starting at $5.99/month each. WorkDesk Pro removes workspace limits.",
+  "solutions.realEstate.cta.title": "Three extensions. One less stressful workday.",
+  "solutions.realEstate.cta.subtitle": "All free to install. No account required. Chrome only for now — Edge rolling out soon.",
+  "about.page.title": "About Donbrico | AI Browser Tools for Real Workflows",
+  "about.page.description": "Donbrico builds AI browser extensions focused on automation, productivity, and workflow efficiency for professionals and teams.",
+  "about.page.ogTitle": "About Donbrico | AI Browser Tools for Real Workflows",
+  "about.page.ogDescription": "Donbrico builds AI browser extensions focused on automation, productivity, and workflow efficiency for professionals and teams.",
+  "about.eyebrow": "ABOUT DONBRICO",
+  "about.title": "Built to remove the repetitive parts of professional work",
+  "about.subtitle": "Donbrico builds AI browser extensions for professionals who want to move faster without sacrificing quality.",
+  "about.mission.title": "Mission",
+  "about.mission.text": "Every professional has workflows that are mostly repetitive. Filling the same forms. Writing near-identical replies. Rebuilding the same research session. These tasks aren't the job — they're the overhead of the job. Donbrico builds browser extensions that automate the overhead, so the work that actually matters gets more of your attention.",
+  "about.products.title": "The extensions",
+  "about.products.autofill.name": "Autofill AI",
+  "about.products.autofill.desc": "Fills any web form from a saved profile. AI handles open-ended questions.",
+  "about.products.reply.name": "AI Reply Assistant",
+  "about.products.reply.desc": "Saves reply templates and generates AI responses in any text field.",
+  "about.products.workdesk.name": "WorkDesk",
+  "about.products.workdesk.desc": "Saves and restores browser workspaces. AI names and organizes sessions.",
+  "about.privacy.title": "Privacy stance",
+  "about.privacy.chrome": "On Chrome, all three extensions default to Gemini Nano — Google's on-device AI model built into Chrome. This means AI runs entirely on your machine: no API calls, no data leaving your browser.",
+  "about.privacy.edge": "On Edge (coming soon), Gemini Nano is not available. Users can connect their own API key (OpenAI, Anthropic, Groq, or OpenRouter) to unlock AI features.",
+  "about.privacy.principle": "Donbrico never stores your data. Never.",
+  "about.contact.title": "Get in touch",
+  "about.contact.email": "support@donbrico.net",
+  "about.solo.title": "Solo-built"
+}

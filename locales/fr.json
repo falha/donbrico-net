@@ -1,4 +1,37 @@
 {
+  "footer": {
+    "solutions": "Solutions",
+    "workflows": "Flux de travail",
+    "extensions": "Extensions",
+    "company": "Entreprise",
+    "copyright": "© 2026 Donbrico Studio. Tous droits réservés.",
+    "privacyPolicy": "Politique de confidentialité",
+    "terms": "Conditions",
+    "allRightsReserved": "© 2026 Donbrico Studio. Tous droits réservés."
+  },
+  "common": {
+    "addToChromeFree": "Ajouter à Chrome — Gratuit",
+    "faq": "Questions fréquemment posées",
+    "seeFullExtensionDetails": "Voir les détails complets de l'extension →",
+    "comingSoon": "Bientôt disponible",
+    "soon": "Bientôt",
+    "comingSoonOnEdge": "Bientôt disponible sur Edge",
+    "allSolutions": "Toutes les solutions",
+    "allExtensions": "Toutes les extensions",
+    "seeAllExtensions": "Voir toutes les extensions",
+    "aboutDonbrico": "À propos de Donbrico",
+    "tryAiReplyFree": "Essayer AI Reply Assistant — Gratuit",
+    "tryAutofillFree": "Essayer Autofill AI — Gratuit",
+    "tryWorkDeskFree": "Essayer WorkDesk — Gratuit",
+    "fullExtensionDetails": "Détails complets de l'extension →",
+    "learnMore": "En savoir plus →",
+    "tryAiReply": "Essayer AI Reply Assistant →",
+    "tryAutofill": "Essayer Autofill AI →",
+    "tryWorkDesk": "Essayer WorkDesk →"
+  },
+  "faq": {
+    "title": "Questions fréquemment posées"
+  },
   "app": {
     "name": "Donbrico Studio",
     "copyright": "© 2026 Donbrico Studio. Tous droits réservés.",
@@ -20,70 +53,82 @@
   },
   "nav": {
     "home": "Accueil",
+    "solutions": "Solutions",
+    "extensions": "Extensions",
+    "extensionsHub": "Toutes les extensions",
+    "about": "À propos",
+    "game": "Jeu",
+    "product": "Produit",
     "autofillAi": "Autofill AI",
     "nullCarrier": "Null Carrier",
     "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation",
     "support": "Support",
     "aiReplyAssistant": "AI Reply Assistant",
     "workDesk": "Bureau de travail",
-    "product": "Produit",
-    "termsOfService": "Conditions d'utilisation",
-    "geminiNano": "Gemini Nano"
+    "geminiNano": "Gemini Nano",
+    "solutionsCommunication": "Écrire et répondre",
+    "solutionsAutomation": "Remplir et traiter",
+    "solutionsWorkspace": "Organiser et se concentrer",
+    "solutionsRecruiters": "Pour les recruteurs",
+    "solutionsEcommerce": "Pour le support e-commerce",
+    "solutionsInsurance": "Pour l'assurance",
+    "solutionsSupportTeams": "Pour les équipes de support",
+    "solutionsBrowserWorkspace": "Espace de travail navigateur",
+    "solutionsJobSeekers": "Pour les chercheurs d'emploi",
+    "solutionsEcommerceSupport": "Pour le support e-commerce",
+    "solutionsRealEstate": "Pour l'immobilier",
+    "extensionsAll": "Toutes les extensions",
+    "extensionsAutofill": "Autofill AI",
+    "extensionsReply": "AI Reply Assistant",
+    "extensionsWorkdesk": "WorkDesk",
+    "categories": "Catégories",
+    "byRole": "Par rôle"
   },
   "home": {
     "page": {
-      "title": "Donbrico — Projets d'un développeur indie solo",
-      "description": "donbrico.net – héberge Donbrico Autofill AI, AI Reply Assistant, Donbrico WorkDesk et Null Carrier. ",
-      "ogTitle": "Donbrico — Projets d'un développeur indie solo",
-      "ogDescription": "donbrico.net – héberge Donbrico Autofill AI, AI Reply Assistant, Donbrico WorkDesk et Null Carrier. "
+      "title": "Outils navigateur IA pour l'automatisation, l'écriture et l'efficacité des flux de travail | Donbrico",
+      "description": "Extensions navigateur IA qui automatisent l'écriture, le remplissage de formulaires et la gestion des onglets. Gagnez du temps sur le travail répétitif avec des outils conçus pour des flux de travail réels.",
+      "ogTitle": "Outils navigateur IA pour l'automatisation, l'écriture et l'efficacité des flux de travail | Donbrico",
+      "ogDescription": "Extensions navigateur IA qui automatisent l'écriture, le remplissage de formulaires et la gestion des onglets. Gagnez du temps sur le travail répétitif avec des outils conçus pour des flux de travail réels."
     },
     "hero": {
-      "eyebrow": "DÉVELOPPEUR INDÉPENDANT",
-      "title": "Des outils qui fonctionnent.<br>Des jeux qui réfléchissent.",
-      "subtitle": "Je construis des extensions navigateur et des jeux de puzzle. Pas de VC. Pas d'équipe. Juste du code."
+      "eyebrow": "EXTENSIONS NAVIGATEUR IA",
+      "title": "Outils navigateur IA qui éliminent le travail répétitif<br />de vos flux de travail quotidiens",
+      "subtitle": "Extensions navigateur qui automatisent l'écriture, le remplissage de formulaires et la gestion de session — conçues pour les professionnels qui doivent avancer plus vite sans sacrifier la qualité.",
+      "buttonPrimary": "Installer les extensions",
+      "buttonSecondary": "Explorer les solutions →",
+      "disclaimer": " Sur Chrome : IA locale via Gemini Nano — les données restent dans votre navigateur · Versions Edge à venir"
     },
-    "projects": {
-      "sectionTitle": "PROJETS",
-      "autofillAi": {
-        "badgeChrome": "EXTENSION CHROME",
-        "badgeFree": "GRATUIT",
-        "title": "Donbrico Autofill AI",
-        "description": "Remplisseur de formulaires avec IA pour n'importe quel site. Remplit depuis votre profil instantanément. Utilise Gemini Nano — vos données ne quittent jamais votre navigateur.",
-        "techStack": "[Extension Chrome] [IA] [Confidentialité d'abord] [Gratuit]",
-        "button": "En savoir plus →"
+    "solutions": {
+      "sectionTitle": "TROIS FAÇONS DE TRAVAILLER PLUS VITE",
+      "subtitle": "Chaque extension cible un type spécifique de travail répétitif. Choisissez ce qui vous ralentit.",
+      "communication": {
+        "title": "Écrire et répondre",
+        "description": "Automatisez les réponses par e-mail, les réponses de support et les messages de prospection. Arrêtez de réécrire les mêmes réponses pour chaque ticket et demande.",
+        "cta": "Explorer AI Reply Assistant →"
       },
-      "nullCarrier": {
-        "badgeGame": "JEU STEAM",
-        "badgeComingSoon": "BIENTÔT DISPONIBLE",
-        "title": "Null Carrier",
-        "description": "Un jeu de puzzle de reconstruction de signaux. Vous opérez un array d'écoute de l'espace profond. Accordez les fréquences, décodez les transmissions, questionnez ce que le Commandement vous dit.",
-        "techStack": "[Puzzle] [Atmosphérique] [Steam] [Indie]",
-        "button": "En savoir plus →"
+      "automation": {
+        "title": "Remplir et traiter",
+        "description": "Remplissez automatiquement les candidatures d'emploi, les entrées CRM, les formulaires d'assurance et les données administratives — à partir d'un seul profil enregistré, en un clic.",
+        "cta": "Explorer Autofill AI →"
       },
-      "aiReplyAssistant": {
-        "badgeChrome": "EXTENSION CHROMÉE",
-        "badgeFree": "GRATUIT / PRO",
-        "title": "Donbrico AI Reply Assistant",
-        "description": "Enregistrez des modèles de réponse et générez des réponses basées sur l'IA n'importe où. ",
-        "techStack": "[Extension Chrome] [AI] [Réponses enregistrées] [Niveau gratuit]",
-        "button": "En savoir plus →"
-      },
-      "workDesk": {
-        "badgeChrome": "EXTENSION CHROMÉE",
-        "badgeFree": "GRATUIT / PRO",
-        "title": "Bureau de travail Donbrico",
-        "description": "Enregistrez et restaurez les espaces de travail de votre navigateur en un clic. ",
-        "techStack": "[Extension Chrome] [AI] [Espaces de travail] [Privacy d'abord]",
-        "button": "En savoir plus →"
+      "workspace": {
+        "title": "Organiser et se concentrer",
+        "description": "Enregistrez et restaurez les espaces de travail navigateur. Gardez les sessions de recherche complexes organisées et instantanément accessibles entre les projets.",
+        "cta": "Explorer WorkDesk →"
       }
     },
-    "buttons": {
-      "seeAutofillAi": "Voir Autofill AI →",
-      "seeNullCarrier": "Voir Null Carrier →"
+    "cta": {
+      "notSure": "Pas sûr par où commencer ?",
+      "button": "Parcourir par flux de travail →"
     },
-    "footer": {
-      "links": "Politique de confidentialité | Support"
-    }
+    "alsoFromDonbrico": "AUSSI DE DONBRICO",
+    "steamGame": "JEU STEAM",
+    "comingSoon": "BIENTÔT DISPONIBLE",
+    "nullCarrierTitle": "Null Carrier",
+    "nullCarrierDescription": "Un jeu de puzzle de reconstruction de signaux. Vous opérez un array d'écoute de l'espace profond. Accordez les fréquences, décodez les transmissions, questionnez vos ordres.",
+    "learnMore": "En savoir plus →"
   },
   "autofillAi": {
     "page": {
@@ -1259,6 +1304,1273 @@
         "text2": "Si ni Gemini Nano ni une clé API ne sont configurés, l'extension affichera une invite conviviale vous guidant pour en configurer une. ",
         "tip": "Besoin d'une clé API ? "
       }
+    }
+  },
+  "home2": {
+    "page": {
+      "title": "Outils navigateur IA pour l'automatisation, l'écriture et l'efficacité des flux de travail | Donbrico",
+      "description": "Extensions navigateur IA qui automatisent l'écriture, le remplissage de formulaires et la gestion des onglets. Gagnez du temps sur les tâches répétitives avec des outils conçus pour des flux de travail réels.",
+      "ogTitle": "Outils navigateur IA pour l'automatisation, l'écriture et l'efficacité des flux de travail | Donbrico",
+      "ogDescription": "Extensions navigateur IA qui automatisent l'écriture, le remplissage de formulaires et la gestion des onglets. Gagnez du temps sur les tâches répétitives avec des outils conçus pour des flux de travail réels."
+    },
+    "hero": {
+      "eyebrow": "EXTENSIONS NAVIGATEUR IA",
+      "title": "Outils navigateur IA qui éliminent le travail répétitif de vos flux quotidiens",
+      "subtitle": "Extensions navigateur qui automatisent l'écriture, le remplissage de formulaires et la gestion de session — conçues pour les professionnels qui doivent avancer plus vite sans sacrifier la qualité.",
+      "btnInstall": "Installer les extensions",
+      "btnSolutions": "Explorer les solutions"
+    },
+    "solutions": {
+      "sectionTitle": "TROIS FAÇONS DE TRAVAILLER PLUS VITE",
+      "sectionSubtitle": "Chaque extension cible un type spécifique de travail répétitif. Choisissez ce qui vous ralentit.",
+      "communication": {
+        "icon": "✉️",
+        "title": "Écrire et répondre",
+        "description": "Automatisez les réponses par e-mail, les réponses de support et les messages. Arrêtez de réécrire les mêmes réponses.",
+        "cta": "Explorer →"
+      },
+      "automation": {
+        "icon": "⚡",
+        "title": "Remplir et traiter",
+        "description": "Remplissage automatique des candidatures, des entrées CRM, des formulaires d'assurance et des données administratives — en un clic.",
+        "cta": "Explorer →"
+      },
+      "workspace": {
+        "icon": "🗂️",
+        "title": "Organiser et se concentrer",
+        "description": "Enregistrez et restaurez les espaces de travail navigateur. Gardez les sessions de recherche organisées sur des projets complexes.",
+        "cta": "Explorer →"
+      }
+    },
+    "nullCarrierStrip": {
+      "label": "AUSSI DE DONBRICO",
+      "title": "Null Carrier — Un jeu de puzzle de signal de l'espace profond",
+      "description": "Un jeu de puzzle atmosphérique minimaliste arrivant sur Steam. Quelque chose de complètement différent.",
+      "cta": "En savoir plus →"
+    }
+  },
+  "solutions": {
+    "hub": {
+      "page": {
+        "title": "Solutions de flux de travail IA pour l'automatisation du travail dans votre navigateur | Donbrico",
+        "description": "Explorez les outils d'IA pour la communication, l'automatisation des formulaires et la gestion de l'espace de travail du navigateur. Conçu pour les professionnels effectuant des tâches numériques répétitives.",
+        "ogTitle": "Solutions de flux de travail IA pour l'automatisation du travail dans votre navigateur | Donbrico",
+        "ogDescription": "Explorez les outils d'IA pour la communication, l'automatisation des formulaires et la gestion de l'espace de travail du navigateur. Conçu pour les professionnels effectuant des tâches numériques répétitives."
+      },
+      "eyebrow": "SOLUTIONS",
+      "title": "Choisissez ce que vous souhaitez automatiser dans les flux de travail de votre navigateur",
+      "subtitle": "Trois catégories d'extensions ciblées. Chacun élimine un type spécifique de travail répétitif.",
+      "niches": {
+        "label": "FLUX DE TRAVAIL SPÉCIFIQUES",
+        "title": "Trouvez votre cas d'utilisation exact",
+        "subtitle": "Chaque page de niche montre exactement comment les extensions Donbrico résolvent ce flux de travail."
+      },
+      "categories": {
+        "communication": {
+          "title": "Écrire et répondre",
+          "description": "Automatisez les réponses aux e-mails, les réponses d’assistance et les messages de sensibilisation. Conçu pour les rôles de communication à volume élevé.",
+          "cta": "Afficher le flux de travail →"
+        },
+        "automation": {
+          "title": "Remplissage et traitement",
+          "description": "Automatisez le remplissage de formulaires répétitifs et la saisie de données structurées. Conçu pour les recruteurs, les administrateurs et les équipes opérationnelles.",
+          "cta": "Afficher le flux de travail →"
+        },
+        "workspace": {
+          "title": "Organiser et se concentrer",
+          "description": "Enregistrez et restaurez les espaces de travail du navigateur. Conçu pour les chercheurs, les développeurs et les flux de travail de projets complexes.",
+          "cta": "Afficher le flux de travail →"
+        }
+      },
+      "workflows": {
+        "title": "FLUX DE TRAVAIL SPÉCIFIQUES",
+        "subtitle": "Chaque page de niche montre exactement comment les extensions Donbrico résolvent ce flux de travail.",
+        "cta": "Afficher le flux de travail →",
+        "supportTeams": {
+          "title": "Équipes d'assistance",
+          "description": "Bibliothèque de réponses alimentée par l'IA pour les agents d'assistance. Générez des réponses précises plus rapidement.",
+          "cta": "Afficher le flux de travail →"
+        },
+        "ecommerceSupport": {
+          "title": "Prise en charge du commerce électronique",
+          "description": "Automatisez les réponses d'assistance pour les commandes, les remboursements et les questions des clients. Réduisez le nombre de tickets.",
+          "cta": "Afficher le flux de travail →"
+        },
+        "recruiters": {
+          "title": "Recruteurs",
+          "description": "Accélérez le recrutement grâce à l'IA qui remplit automatiquement les sites d'emploi, génère des résumés de candidats et réduit la saisie manuelle des données ATS.",
+          "cta": "Afficher le flux de travail →"
+        },
+        "insurance": {
+          "title": "Assurance",
+          "description": "Remplissez les formulaires de réclamation et les données de police avec le remplissage assisté par l'IA. Moins d'erreurs, moins de temps.",
+          "cta": "Afficher le flux de travail →"
+        },
+        "browserWorkspace": {
+          "title": "Chercheurs et développeurs",
+          "description": "Organisez des sessions de navigation complexes. Enregistrez les espaces de travail, restaurez instantanément, effectuez des recherches avec l'IA.",
+          "cta": "Afficher le flux de travail →"
+        },
+        "jobSeekers": {
+          "title": "Chercheurs d'emploi",
+          "description": "Remplissez automatiquement les candidatures avec des lettres de motivation générées par l'IA. Appliquez plus rapidement.",
+          "cta": "Afficher le flux de travail →"
+        }
+      },
+      "cta": {
+        "title": "Prêt à installer ?",
+        "subtitle": "Les trois extensions sont gratuites au démarrage. Chrome uniquement pour le moment – ​​Edge sera bientôt disponible.",
+        "button": "Voir toutes les extensions →"
+      }
+    },
+    "communication": {
+      "page": {
+        "title": "Copilote de communication IA pour les e-mails, le support et la messagerie | Donbrico",
+        "description": "Automatisez les réponses, les e-mails et les messages à l'aide de l'IA. Conçu pour les équipes de support, les ventes et les professionnels gérant une communication à volume élevé.",
+        "ogTitle": "Copilote de communication IA pour les e-mails, le support et la messagerie | Donbrico",
+        "ogDescription": "Automatisez les réponses, les e-mails et les messages à l'aide de l'IA. Conçu pour les équipes de support, les ventes et les professionnels gérant une communication à volume élevé."
+      },
+      "eyebrow": "ÉCRIRE ET RÉPONDRE",
+      "breadcrumb": {
+        "2": "Écrire et répondre"
+      },
+      "title": "Arrêtez de réécrire les mêmes messages.<br>Utilisez l'IA pour gérer la communication à volume élevé.",
+      "subtitle": "L'extension AI Reply Assistant fonctionne dans Gmail, LinkedIn, Outlook, Twitter et tout site web avec un champ de texte — sans quitter votre navigateur.",
+      "target": {
+        "title": "Conçu pour les personnes qui écrivent beaucoup",
+        "chips": {
+          "0": "Équipes de support client",
+          "1": "Ventes et SDRs",
+          "2": "Recruteurs en prospection",
+          "3": "Responsables de communauté",
+          "4": "Support e-commerce"
+        }
+      },
+      "pain": {
+        "title": "Le problème",
+        "items": {
+          "0": {
+            "text": "Réécrire les mêmes réponses pour les questions courantes encore et encore"
+          },
+          "1": {
+            "text": "Chercher dans des notes ou feuilles de calcul pour trouver la bonne réponse précédente"
+          },
+          "2": {
+            "text": "Maintenir un ton de marque cohérent entre tous les membres de l'équipe"
+          }
+        }
+      },
+      "solution": {
+        "title": "Comment Donbrico résout le problème",
+        "description": "AI Reply Assistant vous donne une bibliothèque de réponses personnelle et un bouton de brouillon IA — afin que vous puissiez répondre aux messages plus rapidement sans sacrifier la qualité ou la voix de la marque."
+      },
+      "steps": {
+        "title": "Comment ça marche",
+        "s1": {
+          "title": "Créez votre bibliothèque de modèles",
+          "text": "Enregistrez vos réponses les plus courantes comme modèles. Organisez-les par catégorie (retours, expédition, technique)."
+        },
+        "s2": {
+          "title": "Répondez avec l'IA",
+          "text": "Ouvrez la barre d'outils AI Reply à côté de n'importe quel message. L'IA suggère une réponse basée sur votre bibliothèque et le contexte du message."
+        },
+        "s3": {
+          "title": "Insérez et envoyez",
+          "text": "Révisez, ajustez si nécessaire, puis insérez directement dans le champ de réponse. Un clic et le message est envoyé."
+        }
+      },
+      "related": {
+        "title": "Flux de travail associés",
+        "items": {
+          "0": {
+            "label": "Aperçu Support e-commerce"
+          },
+          "1": {
+            "label": "Aperçu Écrire et répondre"
+          }
+        }
+      }
+    },
+    "automation": {
+      "page": {
+        "title": "Automatisation de formulaires IA pour le remplissage et le traitement de données | Donbrico",
+        "description": "Remplissez automatiquement les candidatures d'emploi, les entrées CRM, les formulaires d'assurance et les données administratives à partir d'un seul profil enregistré.",
+        "ogTitle": "Automatisation de formulaires IA pour le remplissage et le traitement de données | Donbrico",
+        "ogDescription": "Remplissez automatiquement les candidatures d'emploi, les entrées CRM, les formulaires d'assurance et les données administratives à partir d'un seul profil enregistré."
+      },
+      "eyebrow": "REMPLIR ET TRAITER",
+      "breadcrumb": {
+        "2": "Remplir et traiter"
+      },
+      "title": "Remplissez les formulaires et traitez les données<br>à partir d'un seul profil enregistré.",
+      "subtitle": "Autofill AI remplit les formulaires d'emploi, les entrées CRM, les formulaires d'assurance et les données administratives — à partir d'un seul profil enregistré, en un clic.",
+      "target": {
+        "title": "Conçu pour les rôles de saisie de données",
+        "chips": {
+          "0": "Chercheurs d'emploi",
+          "1": "Recruteurs",
+          "2": "Professionnels de l'assurance",
+          "3": "Équipes administratives",
+          "4": "Représentants commerciaux"
+        }
+      },
+      "pain": {
+        "title": "Le problème",
+        "items": {
+          "0": {
+            "text": "Saisir manuellement les mêmes informations sur chaque formulaire de candidature"
+          },
+          "1": {
+            "text": "Rechercher dans des dossiers précédents pour trouver les détails du candidat"
+          },
+          "2": {
+            "text": "Basculer entre plusieurs systèmes de gestion de formulaires"
+          }
+        }
+      },
+      "solution": {
+        "title": "Comment Donbrico résout le problème",
+        "description": "Autofill AI détecte les formulaires sur n'importe quel site web et les remplit en un clic. L'IA génère des réponses pour les questions ouvertes."
+      },
+      "steps": {
+        "title": "Comment ça marche",
+        "s1": {
+          "title": "Enregistrez votre profil",
+          "text": "Entrez vos informations professionnelles une fois. Stocké localement dans votre navigateur, jamais sur un serveur."
+        },
+        "s2": {
+          "title": "Visitez n'importe quel formulaire",
+          "text": "Systèmes de candidature, formulaires d'assurance, CRM — l'extension détecte automatiquement les formulaires. Un bouton ⚡ apparaît en haut."
+        },
+        "s3": {
+          "title": "Un clic, c'est fait",
+          "text": "Cliquez pour remplir instantanément tous les champs standards. L'IA génère des réponses pour les questions ouvertes."
+        }
+      },
+      "related": {
+        "title": "Flux de travail associés",
+        "items": {
+          "0": {
+            "label": "Aperçu Recruteurs"
+          },
+          "1": {
+            "label": "Aperçu Pour les chercheurs d'emploi"
+          }
+        }
+      }
+    },
+    "workspace": {
+      "page": {
+        "title": "Gestion d'espaces de travail navigateur IA pour l'organisation et la concentration | Donbrico",
+        "description": "Enregistrez et restaurez les espaces de travail navigateur en un clic. Idéal pour les chercheurs, développeurs et professionnels gérant des sessions complexes.",
+        "ogTitle": "Gestion d'espaces de travail navigateur IA pour l'organisation et la concentration | Donbrico",
+        "ogDescription": "Enregistrez et restaurez les espaces de travail navigateur en un clic. Idéal pour les chercheurs, développeurs et professionnels gérant des sessions complexes."
+      },
+      "eyebrow": "ORGANISER ET SE CONCENTRER",
+      "breadcrumb": {
+        "2": "Organiser et se concentrer"
+      },
+      "title": "Arrêtez de perdre vos recherches.<br>Enregistrez et restaurez les espaces de travail navigateur en un clic.",
+      "subtitle": "WorkDesk enregistre votre état navigateur entier — onglets, fenêtres, groupes — et le restaure exactement. L'IA nomme et organise vos sessions automatiquement.",
+      "target": {
+        "title": "Conçu pour les rôles de changement de contexte",
+        "chips": {
+          "0": "Chercheurs et analystes",
+          "1": "Développeurs",
+          "2": "Consultants gérant plusieurs clients",
+          "3": "Chefs de projet",
+          "4": "Créateurs de contenu"
+        }
+      },
+      "pain": {
+        "title": "Le problème",
+        "items": {
+          "0": {
+            "text": "Perdre des sessions d'onglets lorsque le navigateur plante ou que vous fermez la mauvaise fenêtre"
+          },
+          "1": {
+            "text": "Gérer 30+ onglets sur plusieurs projets sans structure ni mémoire de ce qui est quoi"
+          },
+          "2": {
+            "text": "Passer 10 minutes à chercher un onglet que vous avez ouvert la semaine dernière mais dont vous ne vous souvenez plus de l'URL"
+          }
+        }
+      },
+      "solution": {
+        "title": "Comment Donbrico résout le problème",
+        "description": "WorkDesk enregistre votre état navigateur entier comme un espace de travail nommé. Restaurez-le exactement comme il était. L'IA suggère des noms, regroupe les onglets similaires et nettoie les doublons."
+      },
+      "steps": {
+        "title": "Comment ça marche",
+        "s1": {
+          "title": "Enregistrez votre session actuelle",
+          "text": "Cliquez sur l'icône WorkDesk. Enregistrez la fenêtre actuelle ou toutes les fenêtres ouvertes comme un espace de travail. L'IA suggère un nom basé sur vos onglets ouverts."
+        },
+        "s2": {
+          "title": "Changez de contexte proprement",
+          "text": "Fermez la session. Ouvrez un nouveau projet. Revenez à votre espace de travail enregistré à tout moment — tous les onglets restaurent exactement là où vous les avez laissés."
+        },
+        "s3": {
+          "title": "Trouvez n'importe quoi avec la recherche IA",
+          "text": "Recherchez des espaces de travail en langage naturel. \"La documentation React que j'avais ouverte mardi dernier\" — WorkDesk la trouve instantanément sans avoir besoin de l'URL."
+        }
+      },
+      "related": {
+        "title": "Flux de travail associés",
+        "items": {
+          "0": {
+            "label": "Aperçu Organiser et se concentrer"
+          },
+          "1": {
+            "label": "Toutes les solutions"
+          },
+          "2": {
+            "label": "Toutes les extensions"
+          }
+        }
+      }
+    },
+    "recruiters": {
+      "page": {
+        "title": "Outils IA pour les recruteurs : rédiger des messages de prospection à grande échelle | Donbrico",
+        "description": "Gagnez du temps sur la prospection de candidats. Créez une bibliothèque de réponses pour le sourcing, les suivis, les offres et les refus — puis laissez l'IA personnaliser chaque message en quelques secondes.",
+        "ogTitle": "Outils IA pour les recruteurs : rédiger des messages de prospection à grande échelle | Donbrico",
+        "ogDescription": "Gagnez du temps sur la prospection de candidats. Créez une bibliothèque de réponses pour le sourcing, les suivis, les offres et les refus — puis laissez l'IA personnaliser chaque message en quelques secondes."
+      },
+      "eyebrow": "POUR LES RECRUTEURS",
+      "breadcrumb": [
+        "Accueil",
+        "Solutions",
+        "Pour les recruteurs"
+      ],
+      "title": "Recruteurs : rédiger des messages de prospection à grande échelle avec l'IA",
+      "subtitle": "Construisez une bibliothèque personnelle de messages de sourcing, suivis, offres et refus — puis laissez l'IA personnaliser chaque message pour le candidat spécifique en quelques secondes, directement dans votre navigateur.",
+      "pain": {
+        "title": "Ce qui ralentit votre travail",
+        "items": [
+          {
+            "icon": "✍️",
+            "text": "Personnaliser le même message de prospection pour chaque candidat à partir de zéro — LinkedIn InMails, séquences d'e-mails et notes de sourcing"
+          },
+          {
+            "icon": "🔁",
+            "text": "Réécrire les e-mails de suivi et de mise à jour de statut plusieurs fois par jour avec seulement des variations mineures par candidat"
+          },
+          {
+            "icon": "🎯",
+            "text": "Rédiger des lettres de refus et d'offre qui semblent humaines, pas copiées-collées à partir d'un modèle RH générique"
+          },
+          {
+            "icon": "⏱️",
+            "text": "Basculer entre les notes, l'ATS, LinkedIn et l'e-mail pour reconstituer le contexte avant d'écrire chaque message"
+          }
+        ]
+      },
+      "solution": {
+        "title": "Comment Donbrico résout le problème",
+        "primary": {
+          "label": "Outil principal",
+          "name": "AI Reply Assistant",
+          "description": "Enregistrez chaque modèle de message que vous écrivez une fois — sourcing initial, premier suivi, deuxième suivi, offre, refus, contre-offre. Lorsque vous en avez besoin, l'IA le réécrit pour le candidat spécifique en utilisant le contexte que vous fournissez : rôle, entreprise, nom du candidat.",
+          "points": [
+            "Bibliothèque de modèles enregistrés avec des entrées illimitées",
+            "L'IA personnalise n'importe quel modèle en un clic — sur n'importe quelle page",
+            "Variables intelligentes : {{name}}, {{role}}, {{company}} remplacées automatiquement (Pro)",
+            "Fonctionne dans Gmail, LinkedIn, le composeur d'e-mail de votre ATS"
+          ]
+        },
+        "secondary": {
+          "label": "Également utile",
+          "name": "Autofill AI",
+          "description": "Lorsque vous devez soumettre des profils de candidats dans les job boards ou remplir des formulaires d'intégration ATS au nom d'un candidat, Autofill AI remplit ces formulaires à partir d'un profil enregistré en un clic — éliminant la saisie de données répétitive.",
+          "points": [
+            "Fonctionne sur Greenhouse, Lever, Workday, LinkedIn, Indeed",
+            "Enregistrez plusieurs profils de candidats et basculez instantanément (Pro)"
+          ]
+        }
+      },
+      "messageLibrary": {
+        "title": "Votre bibliothèque de messages de recrutement",
+        "subtitle": "Enregistrez une fois, personnalisez toujours",
+        "sourcing": {
+          "title": "Prospection de sourcing",
+          "description": "Modèles LinkedIn InMail et e-mail pour les candidats passifs. L'IA les réécrit avec le nom du candidat, le rôle et ce qui rend l'opportunité pertinente pour eux."
+        },
+        "followup": {
+          "title": "Séquences de suivi",
+          "description": "Suivis jour-3, jour-7 et jour-14. L'IA ajuste le ton et le contexte en fonction de l'étape du candidat dans le pipeline."
+        },
+        "offerRejection": {
+          "title": "Lettres d'offre et de refus",
+          "description": "Modèles professionnels chaleureux qui ne semblent pas génériques. Les variables intelligentes injectent automatiquement le nom du candidat, le titre du rôle et les détails du package."
+        },
+        "interview": {
+          "title": "Planification d'entretien",
+          "description": "Modèles de confirmation, rappel et reprogrammation. Insérez directement dans Gmail, Outlook ou le composeur d'e-mail de votre ATS en un clic."
+        }
+      },
+      "faq": {
+        "q1": {
+          "q": "Fonctionne-t-il dans LinkedIn, Gmail et notre ATS ?",
+          "a": "Oui. AI Reply Assistant fonctionne sur n'importe quel site Web avec un champ de texte, y compris Gmail, LinkedIn, Outlook Web et la plupart des composeurs d'e-mail ATS (Greenhouse, Lever, Workday)."
+        },
+        "q2": {
+          "q": "Comment l'IA personnalise-t-elle mes modèles ?",
+          "a": "Lorsque vous déclenchez l'IA sur un modèle enregistré, elle réécrit le message en utilisant le contexte qu'elle trouve sur la page actuelle (nom du candidat, titre du rôle, entreprise) plus toute invite que vous ajoutez. Vous révisez et modifiez avant d'envoyer."
+        },
+        "q3": {
+          "q": "Puis-je partager des modèles avec mon équipe ?",
+          "a": "L'extension stocke les modèles localement par navigateur. L'exportation/importation en JSON (Pro) vous permet de sauvegarder et de partager des modèles avec vos collègues."
+        },
+        "q4": {
+          "q": "Les données des candidats sont-elles en sécurité ?",
+          "a": "Oui. Tout le traitement reste sur l'appareil avec Gemini Nano (Chrome). Si vous utilisez votre propre clé API, les données vont uniquement à ce fournisseur. Donbrico ne voit jamais vos messages ou données de candidats."
+        }
+      },
+      "cta": {
+        "title": "Construisez votre bibliothèque de prospection aujourd'hui",
+        "subtitle": "Gratuit à installer. Aucun compte requis. Fonctionne sur LinkedIn, Gmail et tout ATS."
+      },
+      "related": {
+        "title": "Flux de travail connexes",
+        "items": [
+          {
+            "label": "Aperçu Écrire et répondre",
+            "url": "/solutions/communication/"
+          },
+          {
+            "label": "Pour les chercheurs d'emploi",
+            "url": "/solutions/job-seekers/"
+          },
+          {
+            "label": "Pour les équipes de support",
+            "url": "/solutions/support-teams/"
+          },
+          {
+            "label": "Toutes les solutions",
+            "url": "/solutions/"
+          }
+        ]
+      }
+    },
+    "ecommerceSupport": {
+      "page": {
+        "title": "Outil de support client IA pour Shopify et les équipes e-commerce | Donbrico",
+        "description": "Automatisez les réponses de support e-commerce pour les commandes, remboursements et questions des clients. Réduisez la charge de tickets avec des réponses alimentées par l'IA.",
+        "ogTitle": "Outil de support client IA pour Shopify et les équipes e-commerce | Donbrico",
+        "ogDescription": "Automatisez les réponses de support e-commerce pour les commandes, remboursements et questions des clients. Réduisez la charge de tickets avec des réponses alimentées par l'IA."
+      },
+      "eyebrow": "POUR LE SUPPORT E-COMMERCE",
+      "breadcrumb": [
+        "Accueil",
+        "Solutions",
+        "Support E-commerce"
+      ],
+      "title": "Équipes de support e-commerce : répondez aux commandes, remboursements et questions d'expédition plus rapidement avec l'IA",
+      "subtitle": "AI Reply Assistant vous permet de créer une bibliothèque de réponses de support cohérentes avec la marque et de générer des réponses contextuelles en quelques secondes — sans quitter votre helpdesk.",
+      "pain": {
+        "title": "Ce qui vous ralentit",
+        "items": [
+          {
+            "icon": "📦",
+            "text": "Répondre aux mêmes questions de statut de commande, de remboursement et d'expédition des centaines de fois par semaine"
+          },
+          {
+            "icon": "✍️",
+            "text": "Maintenir le ton de la marque et la précision sous la pression du volume de tickets"
+          },
+          {
+            "icon": "🔄",
+            "text": "Écrire des réponses fraîches lorsque les modèles ne correspondent pas tout à fait à la situation spécifique du client"
+          }
+        ]
+      },
+      "solution": {
+        "title": "Comment Donbrico résout le problème",
+        "primary": {
+          "label": "Outil principal",
+          "name": "AI Reply Assistant",
+          "description": "Créez une bibliothèque de modèles de réponses de support pour vos types de tickets les plus courants. Pour les cas particuliers, générez une réponse personnalisée avec une invite rapide — l'IA la rédige en quelques secondes, vous révisez et envoyez.",
+          "points": [
+            "Bibliothèque de modèles pour les commandes, remboursements, expéditions et requêtes de produits",
+            "Fonctionne dans Gorgias, Zendesk, Freshdesk, boîte de réception Shopify, Gmail et tout champ de texte",
+            "Choisissez le ton de réponse : empathique, professionnel, concis"
+          ],
+          "features": {
+            "f1": {
+              "title": "Bibliothèque de modèles",
+              "text": "Modèles pour commandes, remboursements, expédition, questions produits — recherchables et organisés par tag"
+            },
+            "f2": {
+              "title": "Intégration helpdesk",
+              "text": "Fonctionne dans Gorgias, Zendesk, Freshdesk, boîte de réception Shopify, Gmail — n'importe quel champ de texte"
+            },
+            "f3": {
+              "title": "Contrôle du ton",
+              "text": "Choisissez le ton de réponse : empathique, professionnel ou concis — par message"
+            }
+          }
+        }
+      },
+      "steps": {
+        "title": "Comment ça marche pour le support e-commerce",
+        "s1": {
+          "title": "Créez votre bibliothèque de modèles",
+          "text": "Enregistrez vos 30+ meilleures réponses de support. Étiquetez-les par catégorie (remboursements, expédition, questions sur les produits) pour une recherche rapide."
+        },
+        "s2": {
+          "title": "Cliquez dans n'importe quel ticket de support",
+          "text": "Ouvrez un ticket dans Gorgias, Zendesk ou Gmail. Cliquez dans le champ de réponse — la barre d'outils IA apparaît."
+        },
+        "s3": {
+          "title": "Insérez un modèle ou générez une réponse personnalisée",
+          "text": "Recherchez les modèles enregistrés ou tapez une invite rapide. Révisez le brouillon IA et envoyez en quelques secondes."
+        }
+      },
+      "faq": {
+        "q1": {
+          "q": "Fonctionne-t-il dans Gorgias et Zendesk ?",
+          "a": "Oui. AI Reply Assistant fonctionne sur n'importe quel site Web avec un champ de texte, y compris Gorgias, Zendesk, Freshdesk, boîte de réception Shopify et Gmail."
+        },
+        "q2": {
+          "q": "Puis-je maintenir le ton de la marque ?",
+          "a": "Oui. Vous pouvez enregistrer votre voix de marque comme préréglage de ton et l'IA la correspondra lors de la génération de réponses."
+        },
+        "q3": {
+          "q": "Combien de modèles puis-je enregistrer ?",
+          "a": "Le plan gratuit comprend 30 modèles. Pro vous donne des modèles illimités, plus des variables intelligentes comme {{order_id}} et {{customer_name}}."
+        },
+        "q4": {
+          "q": "Les données IA sont-elles privées ?",
+          "a": "Lors de l'utilisation de Gemini Nano (Chrome uniquement), tout reste sur l'appareil. Si vous utilisez une clé API tierce, les données vont directement à ce fournisseur — jamais à Donbrico."
+        },
+        "q5": {
+          "q": "Le plan d'équipe existe-t-il ?",
+          "a": "Actuellement les licences sont par utilisateur. Chaque agent installe sa propre copie. La facturation d'équipe est sur la feuille de route."
+        }
+      },
+      "cta": {
+        "title": "Commencez à répondre plus rapidement aujourd'hui",
+        "subtitle": "Gratuit à installer. Aucun compte requis. Fonctionne dans votre helpdesk existant."
+      },
+      "related": {
+        "title": "Flux de travail connexes",
+        "items": [
+          {
+            "label": "Aperçu des équipes de support",
+            "url": "/solutions/support-teams/"
+          },
+          {
+            "label": "Aperçu Écrire et répondre",
+            "url": "/solutions/communication/"
+          }
+        ]
+      }
+    },
+    "insurance": {
+      "page": {
+        "title": "Automatisation de formulaires IA pour les flux de travail d'assurance et la saisie de données | Donbrico",
+        "description": "Remplissez les formulaires d'assurance plus rapidement avec une automatisation assistée par l'IA pour les réclamations, la saisie de données de police et la documentation administrative.",
+        "ogTitle": "Automatisation de formulaires IA pour les flux de travail d'assurance et la saisie de données | Donbrico",
+        "ogDescription": "Remplissez les formulaires d'assurance plus rapidement avec une automatisation assistée par l'IA pour les réclamations, la saisie de données de police et la documentation administrative."
+      },
+      "eyebrow": "POUR LES PROFESSIONNELS DE L'ASSURANCE",
+      "breadcrumb": {
+        "2": "Flux de travail assurance"
+      },
+      "title": "Professionnels de l'assurance : éliminez la saisie manuelle des formulaires avec le remplissage assisté par l'IA",
+      "subtitle": "Remplissez les formulaires de réclamation, les données de polices et les entrées CRM à partir d'un seul profil enregistré. L'IA génère des réponses pour les questions ouvertes.",
+      "target": {
+        "title": "Conçu pour les professionnels de l'assurance",
+        "chips": {
+          "0": "Agents de réclamation",
+          "1": "Courtiers",
+          "2": "Assureurs",
+          "3": "Souscripteurs"
+        }
+      },
+      "pain": {
+        "title": "Ce qui vous coûte du temps",
+        "items": {
+          "0": {
+            "text": "Saisir manuellement les mêmes informations client sur chaque formulaire de réclamation"
+          },
+          "1": {
+            "text": "Rechercher dans des dossiers précédents pour trouver les détails de la police"
+          },
+          "2": {
+            "text": "Basculer entre plusieurs systèmes de gestion de formulaires"
+          }
+        }
+      },
+      "solution": {
+        "title": "Comment Donbrico le résout",
+        "primary": {
+          "label": "Outil principal",
+          "name": "Donbrico Autofill AI",
+          "description": "Enregistrez votre profil professionnel une fois — détails d'agence, informations de contact, certifications. L'extension détecte automatiquement les formulaires et les remplit en un clic.",
+          "features": {
+            "f1": {
+              "title": "Fonctionne sur les portails web",
+              "text": "Portails d'assurance web et systèmes d'administration internes avec champs de formulaire standard"
+            },
+            "f2": {
+              "title": "Réduit les erreurs de saisie",
+              "text": "Les champs remplis par profil éliminent les erreurs de frappe sur les champs de données critiques"
+            },
+            "f3": {
+              "title": "IA sur appareil (Chrome)",
+              "text": "Les données sensibles des clients ne quittent jamais votre machine avec Gemini Nano"
+            }
+          }
+        }
+      },
+      "steps": {
+        "title": "Comment ça marche",
+        "s1": {
+          "title": "1. Enregistrez votre profil",
+          "text": "Entrez vos informations professionnelles une fois. Stocké localement dans votre navigateur, jamais sur un serveur."
+        },
+        "s2": {
+          "title": "2. Visitez n'importe quel formulaire",
+          "text": "Systèmes de réclamation, formulaires de police, CRM — l'extension détecte automatiquement les formulaires. Un bouton ⚡ apparaît en haut."
+        },
+        "s3": {
+          "title": "3. Un clic, c'est fait",
+          "text": "Cliquez pour remplir instantanément tous les champs standards. L'IA génère des réponses pour les questions ouvertes."
+        }
+      },
+      "faq": {
+        "title": "Foire aux questions",
+        "q1": {
+          "q": "Fonctionne-t-il sur les portails d'assurance basés sur le web ?",
+          "a": "Oui. Autofill AI fonctionne sur tout site web avec des champs de formulaire HTML standards, y compris les portails d'assurance en ligne et les systèmes de gestion des agents."
+        },
+        "q2": {
+          "q": "Les données sensibles des assurés sont-elles en sécurité ?",
+          "a": "Avec Gemini Nano (IA intégrée à Chrome), toutes les données restent sur votre appareil. Aucune donnée n'est envoyée à Donbrico. Si vous utilisez une clé API tierce, les données vont vers ce fournisseur selon sa politique de confidentialité."
+        },
+        "q3": {
+          "q": "Puis-je enregistrer plusieurs profils client ?",
+          "a": "Les utilisateurs Pro peuvent enregistrer jusqu'à 10 profils, ce qui facilite le passage entre différents clients ou types de police dans une seule session."
+        },
+        "q4": {
+          "q": "Fonctionne-t-il avec les systèmes internes de l'entreprise ?",
+          "a": "Tant que le système est basé sur le navigateur et utilise des champs HTML standards, oui. Les systèmes hérités avec des composants non standards peuvent avoir une prise en charge limitée."
+        },
+        "q5": {
+          "q": "Est-ce conforme aux réglementations sur la confidentialité des données ?",
+          "a": "L'extension stocke les données localement sur votre appareil et ne les transmet pas à Donbrico. Pour les exigences de conformité réglementaire, vérifiez les politiques de votre organisation concernant les extensions de navigateur avant utilisation."
+        }
+      },
+      "cta": {
+        "title": "Réduisez la saisie manuelle dès aujourd'hui",
+        "subtitle": "Gratuit à installer. Aucun compte requis. Chrome uniquement pour l'instant — Edge à venir."
+      },
+      "related": {
+        "title": "Flux de travail associés",
+        "items": {
+          "0": {
+            "label": "Aperçu Recruteurs"
+          },
+          "1": {
+            "label": "Aperçu Pour les chercheurs d'emploi"
+          }
+        }
+      }
+    },
+    "supportTeams": {
+      "page": {
+        "title": "Assistant de support client IA pour des réponses de tickets plus rapides | Donbrico",
+        "description": "Générez des réponses de support précises instantanément à l'aide de l'IA. Réduisez le temps de réponse pour les équipes de support Shopify, SaaS et e-commerce.",
+        "ogTitle": "Assistant de support client IA pour des réponses de tickets plus rapides | Donbrico",
+        "ogDescription": "Générez des réponses de support précises instantanément à l'aide de l'IA. Réduisez le temps de réponse pour les équipes de support Shopify, SaaS et e-commerce."
+      },
+      "eyebrow": "POUR LES ÉQUIPES DE SUPPORT",
+      "breadcrumb": {
+        "2": "Équipes de support"
+      },
+      "title": "Agents de support : réduisez de moitié le temps de réponse avec des réponses de tickets assistées par l'IA",
+      "subtitle": "AI Reply Assistant donne aux agents de support une bibliothèque de réponses personnelle et un bouton de brouillon IA — afin qu'ils puissent répondre aux tickets plus rapidement sans sacrifier la qualité ou la voix de la marque.",
+      "target": {
+        "title": "Conçu pour les équipes de support",
+        "chips": {
+          "0": "Support client",
+          "1": "Support technique",
+          "2": "Équipes d'assistance",
+          "3": "Success client"
+        }
+      },
+      "pain": {
+        "title": "Ce qui vous coûte du temps",
+        "items": {
+          "0": {
+            "text": "Réécrire les mêmes réponses pour les questions courantes encore et encore"
+          },
+          "1": {
+            "text": "Chercher dans des feuilles de calcul ou notes pour trouver la bonne réponse précédente"
+          },
+          "2": {
+            "text": "Maintenir un ton de marque cohérent entre tous les agents"
+          }
+        }
+      },
+      "solution": {
+        "title": "Comment Donbrico le résout",
+        "primary": {
+          "label": "Outil principal",
+          "name": "Donbrico AI Reply Assistant",
+          "description": "Enregistrez des réponses réutilisables comme modèles. L'IA génère des réponses contextuelles à partir d'une courte invite. Insérez instantanément dans n'importe quel champ de texte.",
+          "features": {
+            "f1": {
+              "title": "Bibliothèque de réponses recherchable",
+              "text": "Retrouvez les réponses enregistrées par mot-clé ou tag — plus besoin de fouiller dans les favoris ou wikis"
+            },
+            "f2": {
+              "title": "Fonctionne dans tous les helpdesks",
+              "text": "Zendesk, Gorgias, Freshdesk, Intercom, Front, Helpscout, Gmail — n'importe quel champ de texte"
+            },
+            "f3": {
+              "title": "Brouillons contextuels IA",
+              "text": "L'IA lit le contexte du ticket et rédige une réponse pertinente — l'agent révise et envoie"
+            }
+          }
+        }
+      },
+      "steps": {
+        "title": "Comment ça marche",
+        "s1": {
+          "title": "1. Créez votre bibliothèque de modèles",
+          "text": "Enregistrez vos réponses les plus courantes comme modèles. Organisez-les par catégorie (retours, expédition, technique)."
+        },
+        "s2": {
+          "title": "2. Répondez avec l'IA",
+          "text": "Ouvrez la barre d'outils AI Reply à côté de n'importe quel ticket. L'IA suggère une réponse basée sur votre bibliothèque et le contexte du ticket."
+        },
+        "s3": {
+          "title": "3. Insérez et envoyez",
+          "text": "Révisez, ajustez si nécessaire, puis insérez directement dans le champ de réponse. Un clic et le ticket est résolu."
+        }
+      },
+      "faq": {
+        "title": "Foire aux questions",
+        "q1": {
+          "q": "Quels helpdesks sont pris en charge ?",
+          "a": "AI Reply Assistant fonctionne sur tout site web avec un champ de texte : Zendesk, Gorgias, Freshdesk, Intercom, Front, Helpscout et Gmail. Aucune intégration requise."
+        },
+        "q2": {
+          "q": "Plusieurs agents peuvent-ils l'utiliser ?",
+          "a": "Chaque agent installe sa propre copie et construit sa propre bibliothèque. L'extension est par utilisateur. Un plan équipe est sur la feuille de route."
+        },
+        "q3": {
+          "q": "Comment l'IA sait quoi répondre ?",
+          "a": "L'IA lit le contexte du champ de texte (le contenu du ticket autour du curseur) et utilise votre réglage de ton pour générer un brouillon contextuel. Plus votre invite est précise, meilleur est le résultat."
+        },
+        "q4": {
+          "q": "Peut-on imposer un ton de marque ?",
+          "a": "Oui. Les agents peuvent définir un ton par défaut (Professionnel, Empathique, Concis, etc.) et enregistrer des modèles de réponse conformes à la marque. Les tons Pro incluent Persuasif, Exécutif et Assertif."
+        },
+        "q5": {
+          "q": "Les données de l'IA sont-elles privées ?",
+          "a": "Avec Gemini Nano (Chrome uniquement), tout le traitement IA reste sur l'appareil. Si vous utilisez une clé API tierce, les données sont envoyées à ce fournisseur. Donbrico ne voit jamais le contenu des tickets."
+        }
+      },
+      "cta": {
+        "title": "Commencez à répondre plus rapidement aujourd'hui",
+        "subtitle": "Gratuit à installer. Fonctionne immédiatement dans votre helpdesk existant. Aucune intégration requise."
+      },
+      "related": {
+        "title": "Flux de travail associés",
+        "items": [
+          {
+            "label": "Support E-commerce",
+            "url": "/solutions/ecommerce-support/"
+          },
+          {
+            "label": "Aperçu Écrire et répondre",
+            "url": "/solutions/communication/"
+          }
+        ]
+      }
+    },
+    "browserWorkspace": {
+      "page": {
+        "title": "Gestionnaire d'onglets et d'espaces de travail IA pour les flux de travail navigateur structurés | Donbrico",
+        "description": "Enregistrez et organisez les sessions de navigateur avec l'IA. Idéal pour les chercheurs, développeurs et professionnels gérant des flux de travail complexes.",
+        "ogTitle": "Gestionnaire d'onglets et d'espaces de travail IA pour les flux de travail navigateur structurés | Donbrico",
+        "ogDescription": "Enregistrez et organisez les sessions de navigateur avec l'IA. Idéal pour les chercheurs, développeurs et professionnels gérant des flux de travail complexes."
+      },
+      "eyebrow": "GESTION DE L'ESPACE DE TRAVAIL NAVIGATEUR",
+      "breadcrumb": {
+        "2": "Gestion de l'espace de travail navigateur"
+      },
+      "title": "Chercheurs et développeurs : arrêtez de perdre vos sessions navigateur.<br>Organisez les flux de travail complexes avec l'IA.",
+      "subtitle": "WorkDesk enregistre votre état navigateur entier et le restaure en un clic. L'IA nomme, groupe et organise automatiquement vos onglets pour que vous puissiez vous concentrer sur le travail, pas sur le navigateur.",
+      "target": {
+        "title": "Conçu pour les rôles de changement de contexte",
+        "chips": {
+          "0": "Chercheurs et analystes",
+          "1": "Développeurs",
+          "2": "Consultants gérant plusieurs clients",
+          "3": "Chefs de projet",
+          "4": "Créateurs de contenu"
+        }
+      },
+      "pain": {
+        "title": "Ce qui vous coûte du temps",
+        "items": {
+          "0": {
+            "text": "Perdre des heures de contexte de recherche lorsque votre navigateur plante, redémarre, ou vous fermez accidentellement la mauvaise fenêtre"
+          },
+          "1": {
+            "text": "Gérer 5 projets différents sur 40+ onglets sans structure ni mémoire de ce qui est quoi"
+          },
+          "2": {
+            "text": "Passer 10 minutes à chercher un onglet que vous avez ouvert la semaine dernière mais dont vous ne vous souvenez plus de l'URL"
+          }
+        }
+      },
+      "solution": {
+        "title": "Comment Donbrico le résout",
+        "primary": {
+          "label": "Outil principal",
+          "name": "Donbrico WorkDesk",
+          "description": "Un clic enregistre votre état navigateur entier comme un espace de travail nommé. Restaurez-le exactement comme il était. L'IA suggère des noms, regroupe les onglets similaires, et nettoie les doublons.",
+          "features": {
+            "f1": {
+              "title": "Sauvegarde de session complète",
+              "text": "Enregistre les onglets, fenêtres et groupes d'onglets Chrome — restaurés exactement comme vous les avez laissés"
+            },
+            "f2": {
+              "title": "Recherche sémantique IA",
+              "text": "Trouvez n'importe quel onglet ou espace de travail enregistré en langage naturel, pas par URL exacte"
+            },
+            "f3": {
+              "title": "Export et portabilité",
+              "text": "Exportez les espaces de travail en JSON, CSV ou favoris HTML pour sauvegarde ou transfert"
+            }
+          }
+        }
+      },
+      "steps": {
+        "title": "Comment ça marche",
+        "s1": {
+          "title": "1. Enregistrez votre session actuelle",
+          "text": "Cliquez sur l'icône WorkDesk. Enregistrez la fenêtre actuelle ou toutes les fenêtres ouvertes comme un espace de travail. L'IA suggère un nom basé sur vos onglets ouverts."
+        },
+        "s2": {
+          "title": "2. Changez de contexte proprement",
+          "text": "Fermez la session. Ouvrez un nouveau projet. Revenez à votre espace de travail enregistré à tout moment — tous les onglets restaurent exactement là où vous les avez laissés."
+        },
+        "s3": {
+          "title": "3. Trouvez n'importe quoi avec la recherche IA",
+          "text": "Recherchez des espaces de travail en langage naturel. \"La documentation React que j'avais ouverte mardi dernier\" — WorkDesk la trouve instantanément sans avoir besoin de l'URL."
+        }
+      },
+      "faq": {
+        "title": "Foire aux questions",
+        "q1": {
+          "q": "Restaure-t-il les groupes d'onglets ?",
+          "a": "Oui. WorkDesk prend entièrement en charge les groupes d'onglets Chrome. Lorsque vous restaurez un espace de travail, vos groupes sont recréés exactement comme vous les avez laissés."
+        },
+        "q2": {
+          "q": "Et si mon navigateur plante ?",
+          "a": "WorkDesk enregistre les espaces de travail dans le stockage local de Chrome. Tant que vous avez sauvegardé avant le plantage, votre session est en sécurité et peut être restaurée."
+        },
+        "q3": {
+          "q": "Puis-je l'utiliser sur plusieurs ordinateurs ?",
+          "a": "Les utilisateurs Pro peuvent exporter des espaces de travail en JSON et les importer sur un autre appareil. La synchronisation cloud est sur la feuille de route."
+        },
+        "q4": {
+          "q": "En quoi est-ce différent de la restauration de session intégrée de Chrome ?",
+          "a": "La restauration de Chrome ne récupère que la dernière session. WorkDesk vous permet d'enregistrer des espaces de travail nommés illimités, de basculer entre eux, de les rechercher et de restaurer n'importe quelle session historique."
+        },
+        "q5": {
+          "q": "Mes données de navigation sont-elles privées ?",
+          "a": "Toutes les données d'espace de travail sont stockées localement sur votre appareil. Les URL et titres d'onglets peuvent être envoyés à votre fournisseur IA (pour la nomination/recherche) si vous utilisez une clé BYOK. Avec Gemini Nano, tout reste sur l'appareil."
+        }
+      },
+      "cta": {
+        "title": "Arrêtez de perdre votre contexte navigateur",
+        "subtitle": "Gratuit à installer. Enregistrez jusqu'à 5 espaces de travail avec le plan gratuit. Aucun compte requis."
+      },
+      "related": {
+        "title": "Flux de travail associés",
+        "items": {
+          "0": {
+            "label": "Aperçu Organiser et se concentrer"
+          },
+          "1": {
+            "label": "Toutes les solutions"
+          },
+          "2": {
+            "label": "Toutes les extensions"
+          }
+        }
+      }
+    },
+    "jobSeekers": {
+      "page": {
+        "title": "Outils IA pour les chercheurs d'emploi : automatiser les candidatures et les lettres de motivation | Donbrico",
+        "description": "Remplissez automatiquement les candidatures d'emploi et générez des lettres de motivation personnalisées à l'aide de l'IA. Gagnez du temps sur la recherche d'emploi.",
+        "ogTitle": "Outils IA pour les chercheurs d'emploi : automatiser les candidatures et les lettres de motivation | Donbrico",
+        "ogDescription": "Remplissez automatiquement les candidatures d'emploi et générez des lettres de motivation personnalisées à l'aide de l'IA. Gagnez du temps sur la recherche d'emploi."
+      },
+      "eyebrow": "POUR LES CHERCHEURS D'EMPLOI",
+      "breadcrumb": {
+        "2": "Pour les chercheurs d'emploi"
+      },
+      "title": "Chercheurs d'emploi : remplissez les candidatures et générez des lettres de motivation avec l'IA",
+      "subtitle": "Autofill AI remplit les formulaires de candidature en un clic. L'IA rédige des lettres de motivation personnalisées basées sur votre profil et le poste.",
+      "target": {
+        "title": "Conçu pour les chercheurs d'emploi",
+        "chips": {
+          "0": "Chercheurs d'emploi actifs",
+          "1": "Nouveaux diplômés",
+          "2": "Changement de carrière",
+          "3": "Freelances",
+          "4": "Chercheurs de stage"
+        }
+      },
+      "pain": {
+        "title": "Le problème",
+        "items": {
+          "0": {
+            "text": "Remplir manuellement les mêmes informations sur chaque site d'emploi"
+          },
+          "1": {
+            "text": "Rédiger des lettres de motivation personnalisées pour chaque candidature"
+          },
+          "2": {
+            "text": "Gérer plusieurs candidatures en cours sans perdre le contexte"
+          }
+        }
+      },
+      "solution": {
+        "title": "Comment Autofill AI résout le problème",
+        "description": "Enregistrez votre profil de chercheur d'emploi une fois. L'extension détecte les formulaires et les remplit automatiquement. L'IA génère des lettres de motivation personnalisées.",
+        "primary": {
+          "label": "Outil principal",
+          "name": "Donbrico Autofill AI",
+          "description": "Enregistrez votre profil une fois — nom, contact, LinkedIn, résumé, compétences. Visitez n'importe quel site d'emploi ou ATS. Le bouton ⚡ apparaît automatiquement. Un clic remplit tous les champs standard. L'IA rédige des réponses personnalisées pour les questions ouvertes.",
+          "points": [
+            "Fonctionne sur LinkedIn, Indeed, Greenhouse, Lever, Workday, Ashby",
+            "L'IA rédige des lettres de motivation et des réponses spécifiques au poste à partir de votre profil",
+            "Enregistrez plusieurs profils pour différents rôles ou secteurs (Pro)",
+            "IA sur appareil (Chrome) — vos données ne quittent jamais votre navigateur"
+          ]
+        },
+        "secondary": {
+          "label": "Également utile",
+          "name": "AI Reply Assistant",
+          "description": "Créez une bibliothèque de modèles d'e-mails de suivi — notes de remerciement, e-mails de vérification de statut, négociation salariale. L'IA rédige des versions personnalisées en quelques secondes.",
+          "points": [
+            "Modèles enregistrés pour chaque étape du processus de recrutement",
+            "L'IA rédige des suivis personnalisés à partir d'une courte invite"
+          ]
+        }
+      },
+      "steps": {
+        "title": "Comment ça marche",
+        "s1": {
+          "title": "1. Enregistrez votre profil une fois",
+          "text": "Entrez vos informations personnelles, compétences, expérience et objectifs de carrière une fois."
+        },
+        "s2": {
+          "title": "2. Visitez n'importe quelle candidature",
+          "text": "LinkedIn, Indeed, Greenhouse — l'extension détecte automatiquement les formulaires de candidature."
+        },
+        "s3": {
+          "title": "Un clic, c'est fait",
+          "text": "Cliquez pour remplir instantanément tous les champs. L'IA génère une lettre de motivation personnalisée basée sur le poste."
+        }
+      },
+      "faq": {
+        "q1": {
+          "q": "Quels sites d'emploi et plateformes ATS sont pris en charge ?",
+          "a": "Autofill AI détecte les formulaires sur n'importe quel site avec des champs HTML standard. Cela inclut LinkedIn, Indeed, Glassdoor, Greenhouse, Lever, Workday, Ashby, SmartRecruiters et la plupart des portails carrière."
+        },
+        "q2": {
+          "q": "Peut-il rédiger des lettres de motivation pour moi ?",
+          "a": "Oui. Lorsqu'il rencontre une lettre de motivation ou un champ de question ouverte, l'IA rédige une réponse en utilisant votre profil enregistré. Vous relisez et modifiez toujours avant de soumettre."
+        },
+        "q3": {
+          "q": "Puis-je enregistrer différents profils pour différents types de postes ?",
+          "a": "Oui — avec le plan Pro (jusqu'à 10 profils). Par exemple, un profil pour les rôles de gestion de produit et un autre pour les opérations, chacun avec différentes mises en avant."
+        },
+        "q4": {
+          "q": "Mes données personnelles sont-elles sécurisées ?",
+          "a": "Votre profil est stocké localement sur votre appareil. Avec Gemini Nano (IA intégrée de Chrome), tout le traitement IA reste sur l'appareil. Si vous utilisez une clé API tierce, les données vont uniquement à ce fournisseur. Donbrico ne stocke jamais vos données."
+        },
+        "q5": {
+          "q": "Est-ce gratuit ?",
+          "a": "Le plan gratuit inclut le remplissage illimité de formulaires avec un profil et l'IA locale via Gemini Nano. Pro (5,99 $/mois) ajoute plusieurs profils, l'apprentissage adaptatif et la génération de lettres de motivation."
+        }
+      },
+      "cta": {
+        "title": "Commencez à postuler plus rapidement aujourd'hui",
+        "subtitle": "Gratuit à installer. Aucun compte requis. Fonctionne sur LinkedIn, Indeed, Greenhouse et tout ATS employeur."
+      },
+      "related": {
+        "title": "Flux de travail associés",
+        "items": {
+          "0": {
+            "label": "Aperçu Recruteurs"
+          },
+          "1": {
+            "label": "Aperçu Remplir et traiter"
+          }
+        }
+      }
+    },
+    "realEstate": {
+      "page": {
+        "title": "Outils navigateur IA pour les agents immobiliers : annonces, clients et communication | Donbrico",
+        "description": "Les agents immobiliers économisent des heures chaque jour avec une IA qui remplit les formulaires d'annonces, rédige les suivis clients et organise les espaces de travail navigateur par propriété — le tout dans Chrome.",
+        "ogTitle": "Outils navigateur IA pour les agents immobiliers : annonces, clients et communication | Donbrico",
+        "ogDescription": "Les agents immobiliers économisent des heures chaque jour avec une IA qui remplit les formulaires d'annonces, rédige les suivis clients et organise les espaces de travail navigateur par propriété — le tout dans Chrome."
+      },
+      "eyebrow": "POUR LES AGENTS IMMOBILIERS",
+      "title": "Arrêtez de retaper les annonces, de réécrire les e-mails et de perdre vos onglets",
+      "subtitle": "Les agents immobiliers jonglent avec les clients, les annonces, les portails et les documents sur des dizaines d'onglets navigateur chaque jour. Les trois extensions Donbrico éliminent la répétition : remplissez n'importe quel formulaire en un clic, répondez aux clients en quelques secondes et gardez chaque session de recherche de propriété organisée.",
+      "pain": {
+        "title": "Où les agents perdent des heures chaque semaine",
+        "items": [
+          "Réentrer les mêmes détails de propriété (adresse, chambres, salles de bain, prix, description) dans Zillow, Redfin, Realtor.com et le MLS — pour chaque nouvelle annonce, chaque mise à jour",
+          "Rédiger les mêmes e-mails \"suite à votre demande\" et \"voici trois propriétés\" à partir de zéro, 15 fois par jour, personnalisés pour chaque client",
+          "Perdre le fil des onglets appartenant à quel client ou quelle annonce — 40 onglets ouverts sans moyen de restaurer une session de recherche de la semaine dernière",
+          "Remplir les questionnaires d'entrée acheteur/vendeur et les formulaires de contact CRM à la main pour chaque nouveau prospect"
+        ]
+      },
+      "howEachHelpsTitle": "Comment chaque extension Donbrico aide",
+      "aiReply": {
+        "badge": "Communication client",
+        "title": "AI Reply Assistant",
+        "fullDetails": "Voir les détails →",
+        "description": "Créez une bibliothèque personnelle de chaque type d'e-mail que vous envoyez : réponses aux demandes de propriété, séquences de suivi, confirmations de visites, notifications d'offre/contre-offre et mises à jour du statut de clôture. Lorsqu'un client vous envoie un e-mail, l'IA personnalise votre modèle enregistré pour ce client et cette propriété en un clic — directement dans Gmail.",
+        "templatesTitle": "Modèles que vous enregistreriez :",
+        "templates": [
+          "→ Réponse à la demande de propriété",
+          "→ \"Voici 3 annonces pour vous\"",
+          "→ Suivi de visite",
+          "→ Offre soumise / acceptée",
+          "→ Explication de la contre-offre",
+          "→ Mise à jour du calendrier de clôture"
+        ],
+        "timeSavedTitle": "Temps économisé :",
+        "timeSaved": [
+          "✓ Fonctionne dans Gmail, Outlook Web",
+          "✓ Variables intelligentes : {{client}}, {{adresse}}, {{prix}}",
+          "✓ IA réécrit pour chaque client en quelques secondes",
+          "✓ Vous révisez avant l'envoi — toujours"
+        ]
+      },
+      "autofill": {
+        "badge": "Remplissage de formulaire",
+        "title": "Autofill AI",
+        "fullDetails": "Voir les détails →",
+        "description": "Chaque nouvelle annonce signifie réentrer les mêmes détails de propriété sur Zillow, Redfin, Realtor.com et le portail MLS de votre courtier. Autofill AI détecte ces formulaires et les remplit à partir d'un profil de propriété enregistré en un clic. Idem pour les formulaires d'entrée acheteur/vendeur et les entrées de contact CRM.",
+        "formsTitle": "Formulaires qu'il remplit :",
+        "forms": [
+          "→ Soumissions de listings MLS",
+          "→ Portails Zillow / Realtor.com",
+          "→ Formulaires d'entrée acheteur/vendeur",
+          "→ Entrée de contact CRM (HubSpot, Salesforce)",
+          "→ Formulaires de demande de location"
+        ],
+        "howItWorksTitle": "Comment ça fonctionne :",
+        "howItWorks": [
+          "✓ Enregistrez des profils pour vos infos + infos client",
+          "✓ Le bouton ⚡ apparaît sur n'importe quel formulaire",
+          "✓ Profils multiples — changez par client (Pro)",
+          "✓ IA sur appareil — aucune donnée ne quitte Chrome"
+        ]
+      },
+      "workdesk": {
+        "badge": "Organisation des onglets",
+        "title": "WorkDesk",
+        "fullDetails": "Voir les détails →",
+        "description": "Chaque annonce active mérite son propre espace de travail navigateur — détails MLS, vue de rue, données du quartier, évaluations scolaires, calculateur hypothécaire, annonces concurrentes. WorkDesk enregistre vos onglets actuels comme un espace de travail nommé en un clic et restaure toute la session instantanément. Plus de chaos d'onglets lorsque vous avez 6 clients actifs.",
+        "workspacesTitle": "Espaces de travail créés par les agents :",
+        "workspaces": [
+          "→ \"Famille Smith — Acheteurs\" (12 onglets)",
+          "→ \"Annonce 123 Rue du Chêne\" (8 onglets)",
+          "→ \"Recherche de marché — Centre-ville\"",
+          "→ \"Recherche de location Johnson\""
+        ],
+        "keyFeaturesTitle": "Fonctionnalités clés :",
+        "keyFeatures": [
+          "✓ L'IA nomme les espaces de travail automatiquement",
+          "✓ Restaurez n'importe quelle session depuis n'importe quel appareil",
+          "✓ Archivez les transactions closes, restaurez si nécessaire",
+          "✓ Recherche sémantique dans tous les espaces de travail (Pro)"
+        ]
+      },
+      "faq": {
+        "q1": {
+          "q": "Ces extensions fonctionnent-elles avec Zillow, Realtor.com et les portails MLS ?",
+          "a": "Autofill AI fonctionne sur n'importe quel site web avec des formulaires HTML standard, y compris Zillow, Realtor.com, Redfin et la plupart des portails MLS. AI Reply Assistant fonctionne dans n'importe quel champ de texte, y compris Gmail et Outlook Web."
+        },
+        "q2": {
+          "q": "Les données client ou propriété sont-elles stockées quelque part ?",
+          "a": "Non. Toutes les données sont stockées localement dans votre navigateur. Le traitement IA utilise Gemini Nano — le modèle intégré à Chrome — donc rien n'est envoyé à aucun serveur. Si vous utilisez votre propre clé API, seul vous contrôlez quel fournisseur reçoit les données."
+        },
+        "q3": {
+          "q": "Puis-je enregistrer un profil séparé pour chaque annonce ?",
+          "a": "Oui. Autofill AI Pro permet jusqu'à 10 profils enregistrés. Créez-en un par annonce ou profil client important, puis sélectionnez le bon dans la fenêtre contextuelle avant de remplir n'importe quel formulaire."
+        },
+        "q4": {
+          "q": "WorkDesk peut-il restaurer les onglets d'une session précédente ?",
+          "a": "Oui. WorkDesk enregistre vos onglets ouverts comme un espace de travail nommé. Vous pouvez restaurer n'importe quel espace de travail enregistré à tout moment, même après avoir fermé Chrome. Les utilisateurs Pro peuvent également exporter des espaces de travail et effectuer des recherches dans ceux-ci."
+        },
+        "q5": {
+          "q": "Les trois extensions sont-elles gratuites ?",
+          "a": "Les trois ont un niveau gratuit généreux. AI Reply Assistant et Autofill AI débloquent des fonctionnalités avancées (profils multiples, variables intelligentes, génération IA) avec des plans Pro à partir de 5,99 $/mois chacun. WorkDesk Pro supprime les limites d'espaces de travail."
+        }
+      },
+      "cta": {
+        "title": "Trois extensions. Une journée de travail moins stressante.",
+        "subtitle": "Toutes gratuites à installer. Aucun compte requis. Chrome uniquement pour le moment — Edge arrive bientôt."
+      }
+    }
+  },
+  "extensionsHub": {
+    "page": {
+      "title": "Extensions navigateur IA par Donbrico | Outils de productivité et de flux de travail",
+      "description": "Téléchargez des extensions navigateur IA pour l'écriture, l'automatisation de formulaires et la gestion d'espaces de travail. Outils légers conçus pour une productivité réelle.",
+      "ogTitle": "Extensions navigateur IA par Donbrico | Outils de productivité et de flux de travail",
+      "ogDescription": "Téléchargez des extensions navigateur IA pour l'écriture, l'automatisation de formulaires et la gestion d'espaces de travail. Outils légers conçus pour une productivité réelle."
+    },
+    "eyebrow": "EXTENSIONS",
+    "title": "Trois extensions navigateur IA. Un but ciblé chacune.",
+    "subtitle": "Chaque extension élimine un type spécifique de travail répétitif de votre flux de travail navigateur. Légères, axées sur la confidentialité et conçues pour les professionnels.",
+    "privacyNote": "🔒 Sur Chrome : IA locale via Gemini Nano — les données restent dans votre navigateur · Versions Edge à venir (BYOK uniquement sur Edge)",
+    "autofill": {
+      "title": "Donbrico Autofill AI",
+      "description": "Remplisseur de formulaires IA pour n'importe quel site. Enregistrez votre profil une fois — nom, email, LinkedIn, compétences, bio. L'extension détecte automatiquement les formulaires et les remplit en un clic. L'IA rédige des réponses contextuelles pour les champs ouverts comme les lettres de motivation."
+    },
+    "reply": {
+      "title": "Donbrico AI Reply Assistant",
+      "description": "Enregistre les modèles de réponse et génère des réponses IA n'importe où sur le web. Fonctionne dans Gmail, LinkedIn, Zendesk, Gorgias, Freshdesk et tout site web avec un champ de texte. Créez une bibliothèque de réponses enregistrées — recherchez et insérez en un clic, ou laissez l'IA rédiger à partir d'une courte invite."
+    },
+    "workdesk": {
+      "title": "Donbrico WorkDesk",
+      "description": "Enregistre et restaure les espaces de travail navigateur en un clic. WorkDesk capture votre session entière — onglets, fenêtres, groupes d'onglets — et la restaure exactement. L'IA nomme les espaces de travail automatiquement, regroupe les onglets similaires et vous permet de rechercher les sessions en langage naturel."
+    },
+    "edge": {
+      "eyebrow": "EDGE — BIENTÔT DISPONIBLE",
+      "title": "Les versions Edge arrivent bientôt",
+      "description": "Les trois extensions sont en cours de soumission au magasin de compléments Microsoft Edge. Une fois acceptées, les liens d'installation seront activés ici."
+    }
+  },
+  "extensions": {
+    "hub": {
+      "eyebrow": "EXTENSIONS",
+      "title": "Trois extensions navigateur IA. Un but ciblé chacune.",
+      "subtitle": "Chaque extension élimine un type spécifique de travail répétitif de votre flux de travail navigateur. Légères, axées sur la confidentialité et conçues pour les professionnels.",
+      "privacyNote": "🔒 Sur Chrome : IA locale via Gemini Nano — les données restent dans votre navigateur · Versions Edge à venir (BYOK uniquement sur Edge)",
+      "autofill": {
+        "title": "Donbrico Autofill AI",
+        "description": "Remplisseur de formulaires IA pour n'importe quel site. Enregistrez votre profil une fois — nom, email, LinkedIn, compétences, bio. L'extension détecte automatiquement les formulaires et les remplit en un clic. L'IA rédige des réponses contextuelles pour les champs ouverts comme les lettres de motivation."
+      },
+      "reply": {
+        "title": "Donbrico AI Reply Assistant",
+        "description": "Enregistre les modèles de réponse et génère des réponses IA n'importe où sur le web. Fonctionne dans Gmail, LinkedIn, Zendesk, Gorgias, Freshdesk et tout site web avec un champ de texte. Créez une bibliothèque de réponses enregistrées — recherchez et insérez en un clic, ou laissez l'IA rédiger à partir d'une courte invite."
+      },
+      "workdesk": {
+        "title": "Donbrico WorkDesk",
+        "description": "Enregistre et restaure les espaces de travail navigateur en un clic. WorkDesk capture votre session entière — onglets, fenêtres, groupes d'onglets — et la restaure exactement. L'IA nomme les espaces de travail automatiquement, regroupe les onglets similaires et vous permet de rechercher les sessions en langage naturel."
+      },
+      "organizeFocus": "Organiser & Se concentrer",
+      "fillProcess": "Remplir & Traiter",
+      "freePro": "Gratuit / Pro",
+      "writeRespond": "Écrire & Répondre",
+      "addToChromeFree": "Ajouter à Chrome — Gratuit",
+      "edgeComingSoon": "Edge Bientôt disponible",
+      "learnMore": "En savoir plus",
+      "tags": {
+        "recruiters": "Recruteurs",
+        "insurance": "Assurance",
+        "adminOps": "Admin & Opérations",
+        "supportTeams": "Équipes de support",
+        "ecommerceSupport": "Support E-commerce",
+        "salesOutreach": "Ventes & Prospection",
+        "researchers": "Chercheurs",
+        "developers": "Développeurs"
+      },
+      "edge": {
+        "eyebrow": "EDGE — BIENTÔT DISPONIBLE",
+        "title": "Les versions Edge arrivent bientôt",
+        "description": "Les trois extensions sont en cours de soumission au magasin de compléments Microsoft Edge. Une fois acceptées, les liens d'installation seront activés ici.",
+        "note": "<strong>Important :</strong> Microsoft Edge ne prend pas en charge Gemini Nano sur appareil. Le mode de confidentialité IA entièrement local est uniquement sur Chrome. Les utilisateurs Edge peuvent toujours utiliser toutes les fonctionnalités IA en connectant leur propre clé API (OpenAI, Anthropic, Groq ou OpenRouter)."
+      },
+      "comparison": {
+        "title": "Comparaison des fonctionnalités",
+        "feature": "Fonctionnalité",
+        "chrome": "Chrome",
+        "edge": "Edge",
+        "rows": {
+          "formAutofill": "Remplissage automatique des formulaires",
+          "replyTemplates": "Modèles de réponse",
+          "workspaceSaving": "Sauvegarde d'espaces de travail",
+          "onDeviceAi": "IA sur appareil (Gemini Nano)",
+          "byok": "BYOK (OpenAI, Groq, etc.)"
+        }
+      },
+      "cta": {
+        "title": "Vous ne savez pas quelle extension choisir ?",
+        "subtitle": "Parcourez les solutions par flux de travail pour trouver celle qui correspond a votre role.",
+        "button": "Explorer les solutions →"
+      }
+    }
+  },
+  "about": {
+    "page": {
+      "title": "À propos de Donbrico | Outils navigateur IA pour les flux de travail réels",
+      "description": "Donbrico construit des extensions navigateur IA axées sur l'automatisation, la productivité et l'efficacité des flux de travail pour les professionnels et les équipes.",
+      "ogTitle": "À propos de Donbrico | Outils navigateur IA pour les flux de travail réels",
+      "ogDescription": "Donbrico construit des extensions navigateur IA axées sur l'automatisation, la productivité et l'efficacité des flux de travail pour les professionnels et les équipes."
+    },
+    "eyebrow": "À PROPOS DE DONBRICO",
+    "title": "Conçu pour éliminer les parties répétitives du travail professionnel",
+    "subtitle": "Donbrico construit des extensions navigateur IA pour les professionnels qui veulent avancer plus vite sans sacrifier la qualité.",
+    "extensions": {
+      "title": "Les extensions"
+    },
+    "mission": {
+      "title": "Mission",
+      "text": "Chaque professionnel a des flux de travail qui sont principalement répétitifs. Remplir les mêmes formulaires. Écrire des réponses presque identiques. Reconstruire la même session de recherche. Ces tâches ne sont pas le travail — ce sont les frais généraux du travail. Donbrico construit des extensions navigateur qui automatisent les frais généraux, afin que le travail qui compte vraiment reçoive plus de votre attention."
+    },
+    "products": {
+      "title": "Les extensions",
+      "autofill": {
+        "name": "Autofill AI",
+        "desc": "Remplit n'importe quel formulaire Web à partir d'un profil enregistré. L'IA gère les questions ouvertes."
+      },
+      "reply": {
+        "name": "AI Reply Assistant",
+        "desc": "Enregistre les modèles de réponse et génère des réponses IA dans n'importe quel champ de texte."
+      },
+      "workdesk": {
+        "name": "WorkDesk",
+        "desc": "Enregistre et restaure les espaces de travail navigateur. L'IA nomme et organise les sessions."
+      }
+    },
+    "privacy": {
+      "title": "Position sur la confidentialité",
+      "chrome": "Sur Chrome, les trois extensions utilisent par défaut Gemini Nano — le modèle IA sur l'appareil de Google intégré à Chrome. Cela signifie que l'IA fonctionne entièrement sur votre machine : aucun appel d'API, aucune donnée ne quitte votre navigateur.",
+      "edge": "Sur Edge (bientôt), Gemini Nano n'est pas disponible. Les utilisateurs peuvent connecter leur propre clé API (OpenAI, Anthropic, Groq ou OpenRouter) pour débloquer les fonctionnalités IA.",
+      "principle": "Donbrico ne stocke jamais vos données. Jamais."
+    },
+    "solo": {
+      "title": "Construit en solo",
+      "description": "Donbrico est une opération en solo. Chaque ligne de code, chaque décision de conception, chaque réponse de support — une seule personne. Cela signifie que les produits restent légers, concentrés et honnêtes. Aucune fonctionnalité ajoutée pour atteindre des métriques. Aucune feuille de route dictée par la pression des investisseurs.",
+      "game": "Il y a aussi un jeu en préparation : <a href=\"/null-carrier/\">Null Carrier</a> — un puzzle de signal de l'espace profond, quelque chose de complètement différent des extensions."
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "description": "Questions, commentaires ou demandes de partenariat :",
+      "responseTime": "Réponse sous 1–2 jours ouvrables. Opération solo — chaque message est lu."
     }
   }
 }

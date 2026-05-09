@@ -1,17 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="privacyPolicy.page.title">Privacy Policy — Donbrico</title>
-    <meta name="description" data-i18n="privacyPolicy.page.description" content="Privacy Policy for donbrico.net, Donbrico Autofill AI Chrome extension, AI Reply Assistant, and Null Carrier.">
-    <meta property="og:title" data-i18n="privacyPolicy.page.ogTitle" content="Privacy Policy — Donbrico">
-    <meta property="og:description" data-i18n="privacyPolicy.page.ogDescription" content="Privacy Policy for donbrico.net, Donbrico Autofill AI Chrome extension, AI Reply Assistant, and Null Carrier.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://donbrico.net/privacy-policy/">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
-    <meta name="theme-color" content="#0a0a0f">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="privacyPolicy.page.title">
+      Privacy Policy — Donbrico
+    </title>
+    <meta
+      name="description"
+      data-i18n="privacyPolicy.page.description"
+      content="Privacy Policy for donbrico.net, Donbrico Autofill AI Chrome extension, AI Reply Assistant, and Null Carrier."
+    />
+    <meta
+      property="og:title"
+      data-i18n="privacyPolicy.page.ogTitle"
+      content="Privacy Policy — Donbrico"
+    />
+    <meta
+      property="og:description"
+      data-i18n="privacyPolicy.page.ogDescription"
+      content="Privacy Policy for donbrico.net, Donbrico Autofill AI Chrome extension, AI Reply Assistant, and Null Carrier."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://donbrico.net/privacy-policy/" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
     <style>
       .policy-nav {
         display: flex;
@@ -53,148 +67,368 @@
       }
     </style>
 
-    <link rel="canonical" href="https://donbrico.net/privacy-policy/">
-</head>
-<body>
-     <nav class="nav">
-         <div class="container">
-             <a href="../" class="logo" data-i18n="app.name">Donbrico Studio</a>
-             <input type="checkbox" id="nav-toggle">
-             <label for="nav-toggle" class="hamburger">
-                 <span></span>
-                 <span></span>
-                 <span></span>
-             </label>
-               <ul class="nav-links">
-                   <li><a href="../" data-i18n="nav.home">Home</a></li>
-                   <li class="dropdown">
-                       <a href="#" data-i18n="nav.product">Product</a>
-                       <div class="dropdown-content">
-                           <a href="../autofill-ai/" data-i18n="nav.autofillAi">Autofill AI</a>
-                           <a href="../ai-reply-assistant/" data-i18n="nav.aiReplyAssistant">AI Reply Assistant</a>
-                           <a href="../workdesk/" data-i18n="nav.workDesk">WorkDesk</a>
-                           <a href="../null-carrier/" data-i18n="nav.nullCarrier">Null Carrier</a>
-                       </div>
-                   </li>
-                   <li><a href="./" class="active" data-i18n="nav.privacyPolicy">Privacy Policy</a></li>
-                   <li><a href="../terms/" data-i18n="nav.termsOfService">Terms of Service</a></li>
-                   <li><a href="../support/" data-i18n="nav.support">Support</a></li>
-               </ul>
-          </div>
-      </nav>
-
-       <section class="hero">
-           <div class="container">
-               <p class="eyebrow" data-i18n="privacyPolicy.hero.eyebrow">PRIVACY POLICY</p>
-               <h1 data-i18n="privacyPolicy.sectionTitle">Privacy Policy</h1>
-               <p class="subtitle" data-i18n="privacyPolicy.hero.subtitle">How we handle your data across all Donbrico products.</p>
-           </div>
-       </section>
-
-      <!-- On-page sub navigation -->
-      <div class="container" style="margin-top: calc(var(--spacing-xl) * -1); margin-bottom: var(--spacing-xl);">
-          <nav class="policy-nav" aria-label="Privacy Policy Sections">
-              <a href="#overview" data-i18n="privacyPolicy.nav.overview">Overview</a>
-              <a href="#autofill-ai" data-i18n="privacyPolicy.nav.autofillAi">Autofill AI</a>
-              <a href="#ai-reply-assistant" data-i18n="privacyPolicy.nav.aiReplyAssistant">AI Reply Assistant</a>
-              <a href="#workdesk" data-i18n="privacyPolicy.nav.workDesk">WorkDesk</a>
-              <a href="#null-carrier" data-i18n="privacyPolicy.nav.nullCarrier">Null Carrier</a>
-              <a href="#website" data-i18n="privacyPolicy.nav.website">This Website</a>
-              <a href="#contact" data-i18n="privacyPolicy.nav.contact">Contact</a>
-          </nav>
+    <link rel="canonical" href="https://donbrico.net/privacy-policy/" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"
+          ><span></span><span></span><span></span
+        ></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a
+                href="/solutions/communication/"
+                data-i18n="nav.solutionsCommunication"
+                >Write &amp; Respond</a
+              >
+              <a
+                href="/solutions/automation/"
+                data-i18n="nav.solutionsAutomation"
+                >Fill &amp; Process</a
+              >
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace"
+                >Organize &amp; Focus</a
+              >
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a
+                href="/solutions/job-seekers/"
+                data-i18n="nav.solutionsJobSeekers"
+                >For Job Seekers</a
+              >
+              <a
+                href="/solutions/recruiters/"
+                data-i18n="nav.solutionsRecruiters"
+                >For Recruiters</a
+              >
+              <a
+                href="/solutions/support-teams/"
+                data-i18n="nav.solutionsSupportTeams"
+                >For Support Teams</a
+              >
+              <a
+                href="/solutions/ecommerce-support/"
+                data-i18n="nav.solutionsEcommerceSupport"
+                >For Ecommerce</a
+              >
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance"
+                >For Insurance</a
+              >
+              <a
+                href="/solutions/real-estate/"
+                data-i18n="nav.solutionsRealEstate"
+                >For Real Estate</a
+              >
+              <a
+                href="/solutions/browser-workspace/"
+                data-i18n="nav.solutionsBrowserWorkspace"
+                >Browser Workspace</a
+              >
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll"
+                >All Extensions</a
+              >
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill"
+                >Autofill AI</a
+              >
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply"
+                >AI Reply Assistant</a
+              >
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk"
+                >WorkDesk</a
+              >
+            </div>
+          </li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
       </div>
+    </nav>
 
-       <section style="padding: var(--spacing-xl) 0;" id="overview">
-           <div class="container">
-               <h2 data-i18n="privacyPolicy.overview.sectionTitle">Overview</h2>
-               <p style="color: var(--muted); font-size: 0.875rem; margin-bottom: var(--spacing-lg);"><em data-i18n="privacyPolicy.lastUpdated">Last updated: January 2026</em></p>
-               <p data-i18n="privacyPolicy.overview.paragraph">Donbrico is committed to protecting your privacy. All Donbrico Chrome extensions store data locally on your device. This website does not use analytics, cookies, or any tracking scripts.</p>
-           </div>
-       </section>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow" data-i18n="privacyPolicy.hero.eyebrow">
+          PRIVACY POLICY
+        </p>
+        <h1 data-i18n="privacyPolicy.sectionTitle">Privacy Policy</h1>
+        <p class="subtitle" data-i18n="privacyPolicy.hero.subtitle">
+          How we handle your data across all Donbrico products.
+        </p>
+      </div>
+    </section>
 
-      <section style="padding: var(--spacing-xl) 0;" id="autofill-ai">
-          <div class="container">
-              <h2 data-i18n="privacyPolicy.extension.sectionTitle">Donbrico Autofill AI — Chrome Extension</h2>
-              <h3 data-i18n="privacyPolicy.extension.whatWeCollect.sectionTitle">What data we collect</h3>
-              <p data-i18n="privacyPolicy.extension.whatWeCollect.paragraph">None. All profile data is stored locally in Chrome's storage on the user's device. No data is transmitted to any server owned or operated by Donbrico.</p>
-              <h3 data-i18n="privacyPolicy.extension.howStored.sectionTitle">How profile data is stored</h3>
-              <p data-i18n="privacyPolicy.extension.howStored.paragraph">Chrome's storage.local API, never chrome.storage.sync for sensitive data. Data remains on the device and is never uploaded.</p>
-              <h3 data-i18n="privacyPolicy.extension.thirdPartyAI.sectionTitle">Third-party AI providers (Bring Your Own Key)</h3>
-              <p data-i18n="privacyPolicy.extension.thirdPartyAI.paragraph">If the user configures a Bring Your Own Key provider such as OpenAI, Anthropic, Groq, or OpenRouter, their form context and relevant profile data is sent to that third-party provider. Donbrico is not responsible for the privacy practices of those providers. Gemini Nano (the default AI) runs entirely on-device.</p>
-              <h3 data-i18n="privacyPolicy.extension.permissions.sectionTitle">Permissions used</h3>
-              <p data-i18n="privacyPolicy.extension.permissions.paragraph">storage (local profile), activeTab (detect forms on current tab), scripting (inject autofill button), host_permissions (work on any website the user visits).</p>
-              <h3 data-i18n="privacyPolicy.extension.dataDeletion.sectionTitle">Data deletion</h3>
-              <p data-i18n="privacyPolicy.extension.dataDeletion.paragraph">Uninstalling the extension removes all stored data.</p>
-          </div>
-      </section>
+    <!-- On-page sub navigation -->
+    <div
+      class="container"
+      style="
+        margin-top: calc(var(--spacing-xl) * -1);
+        margin-bottom: var(--spacing-xl);
+      "
+    >
+      <nav class="policy-nav" aria-label="Privacy Policy Sections">
+        <a href="#overview" data-i18n="privacyPolicy.nav.overview">Overview</a>
+        <a href="#autofill-ai" data-i18n="privacyPolicy.nav.autofillAi"
+          >Autofill AI</a
+        >
+        <a
+          href="#ai-reply-assistant"
+          data-i18n="privacyPolicy.nav.aiReplyAssistant"
+          >AI Reply Assistant</a
+        >
+        <a href="#workdesk" data-i18n="privacyPolicy.nav.workDesk">WorkDesk</a>
+        <a href="#null-carrier" data-i18n="privacyPolicy.nav.nullCarrier"
+          >Null Carrier</a
+        >
+        <a href="#website" data-i18n="privacyPolicy.nav.website"
+          >This Website</a
+        >
+        <a href="#contact" data-i18n="privacyPolicy.nav.contact">Contact</a>
+      </nav>
+    </div>
 
-      <section style="padding: var(--spacing-xl) 0;" id="ai-reply-assistant">
-          <div class="container">
-              <h2 data-i18n="privacyPolicy.aiReplyAssistant.sectionTitle">Donbrico AI Reply Assistant — Chrome Extension</h2>
-              <h3 data-i18n="privacyPolicy.aiReplyAssistant.whatWeCollect.sectionTitle">What data we collect</h3>
-              <p data-i18n="privacyPolicy.aiReplyAssistant.whatWeCollect.paragraph">None. All saved replies and settings are stored locally in Chrome's storage on your device. No data is transmitted to Donbrico servers.</p>
-              <h3 data-i18n="privacyPolicy.aiReplyAssistant.howStored.sectionTitle">How your data is stored</h3>
-              <p data-i18n="privacyPolicy.aiReplyAssistant.howStored.paragraph">Saved replies and templates are stored in Chrome's local storage. If you enable Chrome sync, this data may be synced across your devices via Google's servers — that sync is controlled by Chrome, not by this extension.</p>
-              <h3 data-i18n="privacyPolicy.aiReplyAssistant.thirdPartyAI.sectionTitle">Third-party AI providers (Bring Your Own Key)</h3>
-              <p data-i18n="privacyPolicy.aiReplyAssistant.thirdPartyAI.paragraph">When you use the AI reply generation feature, the text context (the field you're replying to), your selected tone, and any prompt or template variables are sent to your configured AI provider (OpenAI, Anthropic, Groq, or OpenRouter). If you use Gemini Nano (the default), all AI processing occurs on-device and nothing leaves your browser. Donbrico does not store, log, or process any AI requests.</p>
-              <h3 data-i18n="privacyPolicy.aiReplyAssistant.permissions.sectionTitle">Permissions used</h3>
-              <p data-i18n="privacyPolicy.aiReplyAssistant.permissions.paragraph">storage (for saved replies and settings), activeTab (to detect text fields), scripting (to inject the reply toolbar), host_permissions (to work on any website you visit).</p>
-              <h3 data-i18n="privacyPolicy.aiReplyAssistant.dataDeletion.sectionTitle">Data deletion</h3>
-              <p data-i18n="privacyPolicy.aiReplyAssistant.dataDeletion.paragraph">Uninstalling the extension deletes all locally stored replies, templates, and settings. No data is retained on Donbrico servers.</p>
-          </div>
-      </section>
+    <section style="padding: var(--spacing-xl) 0" id="overview">
+      <div class="container">
+        <h2 data-i18n="privacyPolicy.overview.sectionTitle">Overview</h2>
+        <p
+          style="
+            color: var(--muted);
+            font-size: 0.875rem;
+            margin-bottom: var(--spacing-lg);
+          "
+        >
+          <em data-i18n="privacyPolicy.lastUpdated"
+            >Last updated: January 2026</em
+          >
+        </p>
+        <p data-i18n="privacyPolicy.overview.paragraph">
+          Donbrico is committed to protecting your privacy. All Donbrico Chrome
+          extensions store data locally on your device. This website does not
+          use analytics, cookies, or any tracking scripts.
+        </p>
+      </div>
+    </section>
 
-      <section style="padding: var(--spacing-xl) 0;" id="workdesk">
-          <div class="container">
-              <h2 data-i18n="privacyPolicy.workDesk.sectionTitle">Donbrico WorkDesk — Chrome Extension</h2>
-              <h3 data-i18n="privacyPolicy.workDesk.whatWeCollect.sectionTitle">What data we collect</h3>
-              <p data-i18n="privacyPolicy.workDesk.whatWeCollect.paragraph">None. Your workspace names, tab URLs, and window arrangements are stored locally in Chrome's storage on your device. No data is transmitted to Donbrico servers.</p>
-              <h3 data-i18n="privacyPolicy.workDesk.howStored.sectionTitle">How your data is stored</h3>
-              <p data-i18n="privacyPolicy.workDesk.howStored.paragraph">All workspace data is stored in Chrome's local storage. This data never leaves your device unless you manually export it.</p>
-              <h3 data-i18n="privacyPolicy.workDesk.thirdPartyAI.sectionTitle">Third-party AI providers (Bring Your Own Key)</h3>
-              <p data-i18n="privacyPolicy.workDesk.thirdPartyAI.paragraph">When using AI features (naming, cleanup, search), tab titles and URLs may be sent to your configured AI provider (OpenAI, Anthropic, etc.). If you use Gemini Nano, all processing is on-device. Donbrico does not store or log any AI requests.</p>
-              <h3 data-i18n="privacyPolicy.workDesk.permissions.sectionTitle">Permissions used</h3>
-              <p data-i18n="privacyPolicy.workDesk.permissions.paragraph">storage (for workspaces), tabs (to save/restore sessions), windows (to manage multiple windows), notifications (for save reminders).</p>
-              <h3 data-i18n="privacyPolicy.workDesk.dataDeletion.sectionTitle">Data deletion</h3>
-              <p data-i18n="privacyPolicy.workDesk.dataDeletion.paragraph">Uninstalling the extension deletes all locally stored workspaces and settings. No data is retained on Donbrico servers.</p>
-          </div>
-      </section>
+    <section style="padding: var(--spacing-xl) 0" id="autofill-ai">
+      <div class="container">
+        <h2 data-i18n="privacyPolicy.extension.sectionTitle">
+          Donbrico Autofill AI — Chrome Extension
+        </h2>
+        <h3 data-i18n="privacyPolicy.extension.whatWeCollect.sectionTitle">
+          What data we collect
+        </h3>
+        <p data-i18n="privacyPolicy.extension.whatWeCollect.paragraph">
+          None. All profile data is stored locally in Chrome's storage on the
+          user's device. No data is transmitted to any server owned or operated
+          by Donbrico.
+        </p>
+        <h3 data-i18n="privacyPolicy.extension.howStored.sectionTitle">
+          How profile data is stored
+        </h3>
+        <p data-i18n="privacyPolicy.extension.howStored.paragraph">
+          Chrome's storage.local API, never chrome.storage.sync for sensitive
+          data. Data remains on the device and is never uploaded.
+        </p>
+        <h3 data-i18n="privacyPolicy.extension.thirdPartyAI.sectionTitle">
+          Third-party AI providers (Bring Your Own Key)
+        </h3>
+        <p data-i18n="privacyPolicy.extension.thirdPartyAI.paragraph">
+          If the user configures a Bring Your Own Key provider such as OpenAI,
+          Anthropic, Groq, or OpenRouter, their form context and relevant
+          profile data is sent to that third-party provider. Donbrico is not
+          responsible for the privacy practices of those providers. Gemini Nano
+          (the default AI) runs entirely on-device.
+        </p>
+        <h3 data-i18n="privacyPolicy.extension.permissions.sectionTitle">
+          Permissions used
+        </h3>
+        <p data-i18n="privacyPolicy.extension.permissions.paragraph">
+          storage (local profile), activeTab (detect forms on current tab),
+          scripting (inject autofill button), host_permissions (work on any
+          website the user visits).
+        </p>
+        <h3 data-i18n="privacyPolicy.extension.dataDeletion.sectionTitle">
+          Data deletion
+        </h3>
+        <p data-i18n="privacyPolicy.extension.dataDeletion.paragraph">
+          Uninstalling the extension removes all stored data.
+        </p>
+      </div>
+    </section>
 
-      <section style="padding: var(--spacing-xl) 0;" id="null-carrier">
-          <div class="container">
-              <h2 data-i18n="privacyPolicy.game.sectionTitle">Null Carrier — Steam Game</h2>
-              <p data-i18n="privacyPolicy.game.paragraph">The game itself does not collect personal data. Steam's own privacy policy governs any data collected through the Steam platform.</p>
-          </div>
-      </section>
+    <section style="padding: var(--spacing-xl) 0" id="ai-reply-assistant">
+      <div class="container">
+        <h2 data-i18n="privacyPolicy.aiReplyAssistant.sectionTitle">
+          Donbrico AI Reply Assistant — Chrome Extension
+        </h2>
+        <h3
+          data-i18n="privacyPolicy.aiReplyAssistant.whatWeCollect.sectionTitle"
+        >
+          What data we collect
+        </h3>
+        <p data-i18n="privacyPolicy.aiReplyAssistant.whatWeCollect.paragraph">
+          None. All saved replies and settings are stored locally in Chrome's
+          storage on your device. No data is transmitted to Donbrico servers.
+        </p>
+        <h3 data-i18n="privacyPolicy.aiReplyAssistant.howStored.sectionTitle">
+          How your data is stored
+        </h3>
+        <p data-i18n="privacyPolicy.aiReplyAssistant.howStored.paragraph">
+          Saved replies and templates are stored in Chrome's local storage. If
+          you enable Chrome sync, this data may be synced across your devices
+          via Google's servers — that sync is controlled by Chrome, not by this
+          extension.
+        </p>
+        <h3
+          data-i18n="privacyPolicy.aiReplyAssistant.thirdPartyAI.sectionTitle"
+        >
+          Third-party AI providers (Bring Your Own Key)
+        </h3>
+        <p data-i18n="privacyPolicy.aiReplyAssistant.thirdPartyAI.paragraph">
+          When you use the AI reply generation feature, the text context (the
+          field you're replying to), your selected tone, and any prompt or
+          template variables are sent to your configured AI provider (OpenAI,
+          Anthropic, Groq, or OpenRouter). If you use Gemini Nano (the default),
+          all AI processing occurs on-device and nothing leaves your browser.
+          Donbrico does not store, log, or process any AI requests.
+        </p>
+        <h3 data-i18n="privacyPolicy.aiReplyAssistant.permissions.sectionTitle">
+          Permissions used
+        </h3>
+        <p data-i18n="privacyPolicy.aiReplyAssistant.permissions.paragraph">
+          storage (for saved replies and settings), activeTab (to detect text
+          fields), scripting (to inject the reply toolbar), host_permissions (to
+          work on any website you visit).
+        </p>
+        <h3
+          data-i18n="privacyPolicy.aiReplyAssistant.dataDeletion.sectionTitle"
+        >
+          Data deletion
+        </h3>
+        <p data-i18n="privacyPolicy.aiReplyAssistant.dataDeletion.paragraph">
+          Uninstalling the extension deletes all locally stored replies,
+          templates, and settings. No data is retained on Donbrico servers.
+        </p>
+      </div>
+    </section>
 
-      <section style="padding: var(--spacing-xl) 0;" id="website">
-          <div class="container">
-              <h2 data-i18n="privacyPolicy.website.sectionTitle">This Website (donbrico.net)</h2>
-              <p data-i18n="privacyPolicy.website.paragraph">No analytics, no cookies, no tracking scripts. The website is a static HTML site hosted on Cloudflare Pages. No forms, no user accounts, no data collection of any kind.</p>
-          </div>
-       </section>
+    <section style="padding: var(--spacing-xl) 0" id="workdesk">
+      <div class="container">
+        <h2 data-i18n="privacyPolicy.workDesk.sectionTitle">
+          Donbrico WorkDesk — Chrome Extension
+        </h2>
+        <h3 data-i18n="privacyPolicy.workDesk.whatWeCollect.sectionTitle">
+          What data we collect
+        </h3>
+        <p data-i18n="privacyPolicy.workDesk.whatWeCollect.paragraph">
+          None. Your workspace names, tab URLs, and window arrangements are
+          stored locally in Chrome's storage on your device. No data is
+          transmitted to Donbrico servers.
+        </p>
+        <h3 data-i18n="privacyPolicy.workDesk.howStored.sectionTitle">
+          How your data is stored
+        </h3>
+        <p data-i18n="privacyPolicy.workDesk.howStored.paragraph">
+          All workspace data is stored in Chrome's local storage. This data
+          never leaves your device unless you manually export it.
+        </p>
+        <h3 data-i18n="privacyPolicy.workDesk.thirdPartyAI.sectionTitle">
+          Third-party AI providers (Bring Your Own Key)
+        </h3>
+        <p data-i18n="privacyPolicy.workDesk.thirdPartyAI.paragraph">
+          When using AI features (naming, cleanup, search), tab titles and URLs
+          may be sent to your configured AI provider (OpenAI, Anthropic, etc.).
+          If you use Gemini Nano, all processing is on-device. Donbrico does not
+          store or log any AI requests.
+        </p>
+        <h3 data-i18n="privacyPolicy.workDesk.permissions.sectionTitle">
+          Permissions used
+        </h3>
+        <p data-i18n="privacyPolicy.workDesk.permissions.paragraph">
+          storage (for workspaces), tabs (to save/restore sessions), windows (to
+          manage multiple windows), notifications (for save reminders).
+        </p>
+        <h3 data-i18n="privacyPolicy.workDesk.dataDeletion.sectionTitle">
+          Data deletion
+        </h3>
+        <p data-i18n="privacyPolicy.workDesk.dataDeletion.paragraph">
+          Uninstalling the extension deletes all locally stored workspaces and
+          settings. No data is retained on Donbrico servers.
+        </p>
+      </div>
+    </section>
 
-       <section style="padding: var(--spacing-xl) 0;" id="contact">
-          <div class="container">
-              <h2 data-i18n="privacyPolicy.contact.sectionTitle">Contact</h2>
-             <p data-i18n="privacyPolicy.contact.paragraph">For privacy questions, contact: <a href="mailto:support@donbrico.net">support@donbrico.net</a></p>
-         </div>
-     </section>
+    <section style="padding: var(--spacing-xl) 0" id="null-carrier">
+      <div class="container">
+        <h2 data-i18n="privacyPolicy.game.sectionTitle">
+          Null Carrier — Steam Game
+        </h2>
+        <p data-i18n="privacyPolicy.game.paragraph">
+          The game itself does not collect personal data. Steam's own privacy
+          policy governs any data collected through the Steam platform.
+        </p>
+      </div>
+    </section>
 
-      <section style="padding: var(--spacing-xl) 0;">
-          <div class="container">
-              <h2 data-i18n="privacyPolicy.changes.sectionTitle">Changes to This Policy</h2>
-              <p data-i18n="privacyPolicy.changes.paragraph">This policy may be updated. Check this page for the latest version.</p>
-          </div>
-      </section>
+    <section style="padding: var(--spacing-xl) 0" id="website">
+      <div class="container">
+        <h2 data-i18n="privacyPolicy.website.sectionTitle">
+          This Website (donbrico.net)
+        </h2>
+        <p data-i18n="privacyPolicy.website.paragraph">
+          No analytics, no cookies, no tracking scripts. The website is a static
+          HTML site hosted on Cloudflare Pages. No forms, no user accounts, no
+          data collection of any kind.
+        </p>
+      </div>
+    </section>
 
-      <footer class="footer">
-          <div class="container">
-              <p data-i18n="app.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
-               <p><a href="./" data-i18n="nav.privacyPolicy">Privacy Policy</a> | <a href="../terms/" data-i18n="nav.termsOfService">Terms of Service</a> | <a href="../support/" data-i18n="nav.support">Support</a></p>
-          </div>
-      </footer>
-      <script src="../js/i18n.js" defer></script>
-      <script src="../js/chatwoot.js" defer></script>
-</body>
+    <section style="padding: var(--spacing-xl) 0" id="contact">
+      <div class="container">
+        <h2 data-i18n="privacyPolicy.contact.sectionTitle">Contact</h2>
+        <p data-i18n="privacyPolicy.contact.paragraph">
+          For privacy questions, contact:
+          <a href="mailto:support@donbrico.net">support@donbrico.net</a>
+        </p>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2 data-i18n="privacyPolicy.changes.sectionTitle">
+          Changes to This Policy
+        </h2>
+        <p data-i18n="privacyPolicy.changes.paragraph">
+          This policy may be updated. Check this page for the latest version.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p data-i18n="app.copyright">
+          © 2026 Donbrico Studio. All rights reserved.
+        </p>
+        <p>
+          <a href="./" data-i18n="nav.privacyPolicy">Privacy Policy</a> |
+          <a href="../terms/" data-i18n="nav.termsOfService"
+            >Terms of Service</a
+          >
+          | <a href="../support/" data-i18n="nav.support">Support</a>
+        </p>
+      </div>
+    </footer>
+    <script src="../js/i18n.js" defer></script>
+    <script src="../js/chatwoot.js" defer></script>
+  </body>
 </html>

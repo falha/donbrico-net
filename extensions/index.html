@@ -1,0 +1,790 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      AI Browser Extensions by Donbrico | Productivity &amp; Workflow Tools
+    </title>
+    <meta
+      name="description"
+      content="Download AI browser extensions for writing, form automation, and workspace management. Lightweight tools built for real-world productivity."
+    />
+    <meta
+      property="og:title"
+      content="AI Browser Extensions by Donbrico | Productivity &amp; Workflow Tools"
+    />
+    <meta
+      property="og:description"
+      content="Download AI browser extensions for writing, form automation, and workspace management. Lightweight tools built for real-world productivity."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://donbrico.net/extensions/" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/extensions/" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://donbrico.net/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Extensions",
+            "item": "https://donbrico.net/extensions/"
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Donbrico AI Browser Extensions",
+        "itemListElement": [
+          {
+            "@type": "SoftwareApplication",
+            "position": 1,
+            "name": "Donbrico Autofill AI",
+            "applicationCategory": "BrowserApplication",
+            "operatingSystem": "Chrome",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 2,
+            "name": "Donbrico AI Reply Assistant",
+            "applicationCategory": "BrowserApplication",
+            "operatingSystem": "Chrome",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 3,
+            "name": "Donbrico WorkDesk",
+            "applicationCategory": "BrowserApplication",
+            "operatingSystem": "Chrome",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"
+          ><span></span><span></span><span></span
+        ></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories"
+                >Categories</span
+              >
+              <a
+                href="/solutions/communication/"
+                data-i18n="nav.solutionsCommunication"
+                >Write &amp; Respond</a
+              >
+              <a
+                href="/solutions/automation/"
+                data-i18n="nav.solutionsAutomation"
+                >Fill &amp; Process</a
+              >
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace"
+                >Organize &amp; Focus</a
+              >
+              <span class="dropdown-group-label" data-i18n="nav.byRole"
+                >By Role</span
+              >
+              <a
+                href="/solutions/job-seekers/"
+                data-i18n="nav.solutionsJobSeekers"
+                >For Job Seekers</a
+              >
+              <a
+                href="/solutions/recruiters/"
+                data-i18n="nav.solutionsRecruiters"
+                >For Recruiters</a
+              >
+              <a
+                href="/solutions/support-teams/"
+                data-i18n="nav.solutionsSupportTeams"
+                >For Support Teams</a
+              >
+              <a
+                href="/solutions/ecommerce-support/"
+                data-i18n="nav.solutionsEcommerceSupport"
+                >For Ecommerce</a
+              >
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance"
+                >For Insurance</a
+              >
+              <a
+                href="/solutions/real-estate/"
+                data-i18n="nav.solutionsRealEstate"
+                >For Real Estate</a
+              >
+              <a
+                href="/solutions/browser-workspace/"
+                data-i18n="nav.solutionsBrowserWorkspace"
+                >Browser Workspace</a
+              >
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" class="active" data-i18n="nav.extensions"
+              >Extensions</a
+            >
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="common.allExtensions"
+                >All Extensions</a
+              >
+              <a href="/autofill-ai/">Autofill AI</a>
+              <a href="/ai-reply-assistant/">AI Reply Assistant</a>
+              <a href="/workdesk/">WorkDesk</a>
+            </div>
+          </li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow" data-i18n="extensions.hub.eyebrow">EXTENSIONS</p>
+        <h1 data-i18n="extensions.hub.title">
+          Three AI browser extensions.<br />One focused purpose each.
+        </h1>
+        <p class="subtitle" data-i18n="extensions.hub.subtitle">
+          Each extension removes a specific type of repetitive work from your
+          browser workflow. Lightweight, privacy-first, and built for
+          professionals.
+        </p>
+        <p
+          style="
+            margin-top: var(--spacing-md);
+            color: var(--muted);
+            font-size: 0.9rem;
+          "
+          data-i18n="extensions.hub.privacyNote"
+        >
+          🔒 On Chrome: local AI via Gemini Nano — data never leaves your
+          browser &nbsp;·&nbsp; Edge versions coming soon (BYOK only on Edge)
+        </p>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <!-- Autofill AI -->
+        <div
+          class="card"
+          style="margin-bottom: var(--spacing-lg); border-color: #2a2a2f"
+        >
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr auto;
+              gap: var(--spacing-lg);
+              align-items: start;
+            "
+          >
+            <div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: var(--spacing-sm);
+                  flex-wrap: wrap;
+                  margin-bottom: var(--spacing-sm);
+                "
+              >
+                <div class="badge" data-i18n="extensions.hub.fillProcess">
+                  Fill &amp; Process
+                </div>
+                <div
+                  class="badge"
+                  style="
+                    background: transparent;
+                    border: 1px solid var(--accent);
+                    color: var(--accent);
+                  "
+                  data-i18n="extensions.hub.freePro"
+                >
+                  Free / Pro
+                </div>
+              </div>
+              <h2
+                style="font-size: 1.75rem; margin-bottom: var(--spacing-sm)"
+                data-i18n="extensions.hub.autofill.title"
+              >
+                Donbrico Autofill AI
+              </h2>
+              <p
+                style="color: var(--muted); margin-bottom: var(--spacing-sm)"
+                data-i18n="extensions.hub.autofill.description"
+              >
+                AI-powered form filler for any website. Save your profile once —
+                name, email, LinkedIn, skills, bio. The extension detects forms
+                automatically and fills them in one click. AI writes
+                context-aware answers for open-ended fields like cover letters.
+              </p>
+              <div class="niche-chips" style="margin-bottom: var(--spacing-md)">
+                <a
+                  href="/solutions/recruiters/"
+                  class="niche-chip"
+                  data-i18n="extensions.hub.tags.recruiters"
+                  >Recruiters</a
+                >
+                <a
+                  href="/solutions/insurance/"
+                  class="niche-chip"
+                  data-i18n="extensions.hub.tags.insurance"
+                  >Insurance</a
+                >
+                <a
+                  href="/solutions/automation/"
+                  class="niche-chip"
+                  data-i18n="extensions.hub.tags.adminOps"
+                  >Admin &amp; Ops</a
+                >
+              </div>
+              <div class="install-group">
+                <a
+                  href="https://chromewebstore.google.com/detail/donbrico-autofill-ai/ldglmpphcjdamkmfpknojafocpihhbal"
+                  class="btn"
+                  data-i18n="extensions.hub.addToChromeFree"
+                  >Add to Chrome — Free</a
+                >
+                <span
+                  class="btn-disabled"
+                  title="Edge version coming soon. Note: Gemini Nano is not available on Edge — use BYOK for AI features."
+                  data-i18n="extensions.hub.edgeComingSoon"
+                  >Edge &nbsp;<span class="badge-soon">Coming Soon</span></span
+                >
+                <a
+                  href="/autofill-ai/"
+                  class="btn-outline"
+                  data-i18n="extensions.hub.learnMore"
+                  >Learn more →</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Reply Assistant -->
+        <div
+          class="card"
+          style="margin-bottom: var(--spacing-lg); border-color: #2a2a2f"
+        >
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr auto;
+              gap: var(--spacing-lg);
+              align-items: start;
+            "
+          >
+            <div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: var(--spacing-sm);
+                  flex-wrap: wrap;
+                  margin-bottom: var(--spacing-sm);
+                "
+              >
+                <div class="badge" data-i18n="extensions.hub.writeRespond">
+                  Write &amp; Respond
+                </div>
+                <div
+                  class="badge"
+                  style="
+                    background: transparent;
+                    border: 1px solid var(--accent);
+                    color: var(--accent);
+                  "
+                  data-i18n="extensions.hub.freePro"
+                >
+                  Free / Pro
+                </div>
+              </div>
+              <h2
+                style="font-size: 1.75rem; margin-bottom: var(--spacing-sm)"
+                data-i18n="extensions.hub.reply.title"
+              >
+                Donbrico AI Reply Assistant
+              </h2>
+              <p
+                style="color: var(--muted); margin-bottom: var(--spacing-sm)"
+                data-i18n="extensions.hub.reply.description"
+              >
+                Saves reply templates and generates AI-powered responses
+                anywhere on the web. Works in Gmail, LinkedIn, Zendesk, Gorgias,
+                Freshdesk, and any website with a text field. Build a library of
+                saved replies — search and insert in one click, or let AI draft
+                from a short prompt.
+              </p>
+              <div class="niche-chips" style="margin-bottom: var(--spacing-md)">
+                <a
+                  href="/solutions/support-teams/"
+                  class="niche-chip"
+                  data-i18n="extensions.hub.tags.supportTeams"
+                  >Support Teams</a
+                >
+                <a
+                  href="/solutions/ecommerce-support/"
+                  class="niche-chip"
+                  data-i18n="extensions.hub.tags.ecommerceSupport"
+                  >Ecommerce Support</a
+                >
+                <a
+                  href="/solutions/communication/"
+                  class="niche-chip"
+                  data-i18n="extensions.hub.tags.salesOutreach"
+                  >Sales &amp; Outreach</a
+                >
+              </div>
+              <div class="install-group">
+                <a
+                  href="https://chromewebstore.google.com/detail/hkkbbcnmbhkcjcmmifbclgmbkipillih?utm_source=item-share-cb"
+                  class="btn"
+                  data-i18n="extensions.hub.addToChromeFree"
+                  >Add to Chrome — Free</a
+                >
+                <span
+                  class="btn-disabled"
+                  title="Edge version coming soon. Note: Gemini Nano is not available on Edge — use BYOK for AI features."
+                  data-i18n="extensions.hub.edgeComingSoon"
+                  >Edge &nbsp;<span class="badge-soon">Coming Soon</span></span
+                >
+                <a
+                  href="/ai-reply-assistant/"
+                  class="btn-outline"
+                  data-i18n="extensions.hub.learnMore"
+                  >Learn more →</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WorkDesk -->
+        <div class="card" style="margin-bottom: 0; border-color: #2a2a2f">
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr auto;
+              gap: var(--spacing-lg);
+              align-items: start;
+            "
+          >
+            <div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: var(--spacing-sm);
+                  flex-wrap: wrap;
+                  margin-bottom: var(--spacing-sm);
+                "
+              >
+                <div class="badge" data-i18n="extensions.hub.organizeFocus">
+                  Organize &amp; Focus
+                </div>
+                <div
+                  class="badge"
+                  style="
+                    background: transparent;
+                    border: 1px solid var(--accent);
+                    color: var(--accent);
+                  "
+                  data-i18n="extensions.hub.freePro"
+                >
+                  Free / Pro
+                </div>
+              </div>
+              <h2
+                style="font-size: 1.75rem; margin-bottom: var(--spacing-sm)"
+                data-i18n="extensions.hub.workdesk.title"
+              >
+                Donbrico WorkDesk
+              </h2>
+              <p
+                style="color: var(--muted); margin-bottom: var(--spacing-sm)"
+                data-i18n="extensions.hub.workdesk.description"
+              >
+                Save and restore browser workspaces in one click. WorkDesk
+                captures your entire session — tabs, windows, tab groups — and
+                restores it exactly. AI names workspaces automatically, groups
+                similar tabs, and lets you search sessions using natural
+                language.
+              </p>
+              <div class="niche-chips" style="margin-bottom: var(--spacing-md)">
+                <a
+                  href="/solutions/browser-workspace/"
+                  class="niche-chip"
+                  data-i18n="nav.solutionsBrowserWorkspace"
+                >
+                  >Browser Workspace</a
+                >
+                <a
+                  href="/solutions/workspace/"
+                  class="niche-chip"
+                  data-i18n="extensions.hub.tags.researchers"
+                >
+                  >Researchers</a
+                >
+                <a
+                  href="/solutions/workspace/"
+                  class="niche-chip"
+                  data-i18n="extensions.hub.tags.developers"
+                >
+                  >Developers</a
+                >
+              </div>
+              <div class="install-group">
+                <a
+                  href="https://chromewebstore.google.com/detail/kilfjjkfocajofinfhplccpmojdjplhb?utm_source=item-share-cb"
+                  class="btn"
+                  data-i18n="extensions.hub.addToChromeFree"
+                  >Add to Chrome — Free</a
+                >
+                <span
+                  class="btn-disabled"
+                  title="Edge version coming soon. Note: Gemini Nano is not available on Edge — use BYOK for AI features."
+                  data-i18n="extensions.hub.edgeComingSoon"
+                  >Edge &nbsp;<span class="badge-soon">Coming Soon</span></span
+                >
+                <a
+                  href="/workdesk/"
+                  class="btn-outline"
+                  data-i18n="extensions.hub.learnMore"
+                  >Learn more →</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      style="
+        padding: var(--spacing-xl) 0;
+        background: rgba(99, 102, 241, 0.04);
+        border-top: 1px solid var(--border);
+      "
+    >
+      <div class="container">
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xl);
+            align-items: center;
+          "
+        >
+          <div>
+            <p
+              class="eyebrow"
+              style="margin-bottom: var(--spacing-sm)"
+              data-i18n="extensions.hub.edge.eyebrow"
+            >
+              EDGE — COMING SOON
+            </p>
+            <h2 data-i18n="extensions.hub.edge.title">
+              Edge versions launching soon
+            </h2>
+            <p data-i18n="extensions.hub.edge.description">
+              All three extensions are being submitted to the Microsoft Edge
+              Add-ons store. Once accepted, install links will be activated
+              here.
+            </p>
+            <p style="color: var(--muted)" data-i18n="extensions.hub.edge.note">
+              <strong>Important:</strong> Microsoft Edge does not support
+              on-device Gemini Nano. The fully-local AI privacy mode is
+              Chrome-only. Edge users can still use all AI features by
+              connecting their own API key (OpenAI, Anthropic, Groq, or
+              OpenRouter).
+            </p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="extensions.hub.comparison.title">Feature comparison</h3>
+            <table
+              style="
+                width: 100%;
+                border-collapse: collapse;
+                font-size: 0.9rem;
+                margin-top: var(--spacing-sm);
+              "
+            >
+              <thead>
+                <tr>
+                  <th
+                    style="
+                      text-align: left;
+                      padding: var(--spacing-xs) 0;
+                      color: var(--muted);
+                      font-weight: 500;
+                      border-bottom: 1px solid var(--border);
+                    "
+                  >
+                    <span data-i18n="extensions.hub.comparison.feature"
+                      >Feature</span
+                    >
+                  </th>
+                  <th
+                    style="
+                      text-align: center;
+                      padding: var(--spacing-xs);
+                      color: var(--muted);
+                      font-weight: 500;
+                      border-bottom: 1px solid var(--border);
+                    "
+                  >
+                    <span data-i18n="extensions.hub.comparison.chrome"
+                      >Chrome</span
+                    >
+                  </th>
+                  <th
+                    style="
+                      text-align: center;
+                      padding: var(--spacing-xs);
+                      color: var(--muted);
+                      font-weight: 500;
+                      border-bottom: 1px solid var(--border);
+                    "
+                  >
+                    <span data-i18n="extensions.hub.comparison.edge">Edge</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td
+                    style="
+                      padding: var(--spacing-xs) 0;
+                      border-bottom: 1px solid var(--border);
+                    "
+                  >
+                    <span data-i18n="extensions.hub.comparison.rows.formAutofill"
+                      >Form autofill</span
+                    >
+                  </td>
+                  <td
+                    style="
+                      text-align: center;
+                      border-bottom: 1px solid var(--border);
+                    "
+                  >
+                    ✓
+                  </td>
+                  <td
+                    style="
+                      text-align: center;
+                      border-bottom: 1px solid var(--border);
+                    "
+                  >
+                    ✓
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding: var(--spacing-xs) 0;
+                      border-bottom: 1px solid var(--border);
+                    "
+                  >
+                    <span data-i18n="extensions.hub.comparison.rows.replyTemplates"
+                      >Reply templates</span
+                    >
+                  </td>
+                  <td
+                    style="
+                      text-align: center;
+                      border-bottom: 1px solid var(--border);
+                    "
+                  >
+                    ✓
+                  </td>
+                  <td
+                    style="
+                      text-align: center;
+                      border-bottom: 1px solid var(--border);
+                    "
+                  >
+                    ✓
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding: var(--spacing-xs) 0;
+                      border-bottom: 1px solid var(--border);
+                    "
+                  >
+                    <span data-i18n="extensions.hub.comparison.rows.workspaceSaving"
+                      >Workspace saving</span
+                    >
+                  </td>
+                  <td
+                    style="
+                      text-align: center;
+                      border-bottom: 1px solid var(--border);
+                    "
+                  >
+                    ✓
+                  </td>
+                  <td
+                    style="
+                      text-align: center;
+                      border-bottom: 1px solid var(--border);
+                    "
+                  >
+                    ✓
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding: var(--spacing-xs) 0;
+                      border-bottom: 1px solid var(--border);
+                    "
+                  >
+                    <span data-i18n="extensions.hub.comparison.rows.onDeviceAi"
+                      >On-device AI (Gemini Nano)</span
+                    >
+                  </td>
+                  <td
+                    style="
+                      text-align: center;
+                      border-bottom: 1px solid var(--border);
+                    "
+                  >
+                    ✓
+                  </td>
+                  <td
+                    style="
+                      text-align: center;
+                      color: var(--muted);
+                      border-bottom: 1px solid var(--border);
+                    "
+                  >
+                    ✗
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: var(--spacing-xs) 0">
+                    <span data-i18n="extensions.hub.comparison.rows.byok"
+                      >BYOK (OpenAI, Groq, etc.)</span
+                    >
+                  </td>
+                  <td style="text-align: center">✓</td>
+                  <td style="text-align: center">✓</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0; text-align: center">
+      <div class="container">
+        <h2 data-i18n="extensions.hub.cta.title">
+          Not sure which extension you need?
+        </h2>
+        <p
+          style="color: var(--muted); margin-bottom: var(--spacing-lg)"
+          data-i18n="extensions.hub.cta.subtitle"
+        >
+          Browse solutions by workflow to find the right fit for your role.
+        </p>
+        <a href="/solutions/" class="btn" data-i18n="extensions.hub.cta.button"
+          >Explore Solutions →</a
+        >
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication"
+              >Write &amp; Respond</a
+            >
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation"
+              >Fill &amp; Process</a
+            >
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace"
+              >Organize &amp; Focus</a
+            >
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams"
+              >Support Teams</a
+            >
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters"
+              >Recruiters</a
+            >
+            <a
+              href="/solutions/ecommerce-support/"
+              data-i18n="nav.solutionsEcommerceSupport"
+              >Ecommerce</a
+            >
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance"
+              >Insurance</a
+            >
+            <a
+              href="/solutions/browser-workspace/"
+              data-i18n="nav.solutionsBrowserWorkspace"
+              >Browser Workspace</a
+            >
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/">Autofill AI</a>
+            <a href="/ai-reply-assistant/">AI Reply Assistant</a>
+            <a href="/workdesk/">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="footer.privacyPolicy"
+              >Privacy Policy</a
+            >
+            <a href="/terms/" data-i18n="footer.terms">Terms</a>
+            <a href="/null-carrier/">Null Carrier Game</a>
+          </div>
+        </div>
+        <p data-i18n="footer.allRightsReserved">
+          © 2026 Donbrico Studio. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="../js/i18n.js" defer></script>
+    <script src="../js/chatwoot.js" defer></script>
+  </body>
+</html>

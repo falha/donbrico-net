@@ -28,7 +28,29 @@
     "workDesk": "辦公桌",
     "product": "產品",
     "termsOfService": "服務條款",
-    "geminiNano": "Gemini Nano"
+    "geminiNano": "Gemini Nano",
+    "solutions": "解決方案",
+    "extensions": "擴充",
+    "extensionsHub": "所有擴充",
+    "about": "關於",
+    "game": "遊戲",
+    "solutionsCommunication": "寫信回覆",
+    "solutionsAutomation": "填充和處理",
+    "solutionsWorkspace": "組織和重點",
+    "solutionsRecruiters": "對於招募人員",
+    "solutionsEcommerce": "電子商務支持",
+    "solutionsInsurance": "對於保險",
+    "solutionsSupportTeams": "對於支援團隊",
+    "solutionsBrowserWorkspace": "瀏覽器工作區",
+    "solutionsJobSeekers": "對於求職者",
+    "solutionsEcommerceSupport": "對於電子商務",
+    "solutionsRealEstate": "對於房地產",
+    "extensionsAll": "所有擴充",
+    "extensionsAutofill": "Autofill AI",
+    "extensionsReply": "AI Reply Assistant",
+    "extensionsWorkdesk": "辦公桌",
+    "categories": "類別",
+    "byRole": "按角色"
   },
   "home": {
     "page": {
@@ -40,7 +62,10 @@
     "hero": {
       "eyebrow": "獨立開發者",
       "title": "能用的工具。<br>會思考的遊戲。",
-      "subtitle": "我打造瀏覽器擴充功能與益智遊戲。沒VC。沒團隊。只有程式碼。"
+      "subtitle": "我打造瀏覽器擴充功能與益智遊戲。沒VC。沒團隊。只有程式碼。",
+      "buttonPrimary": "安裝擴充",
+      "buttonSecondary": "探索解決方案 →",
+      "disclaimer": "🔒 在 Chrome 上：透過 Gemini Nano 實現本地 AI — 資料保留在您的瀏覽器中 · Edge 版本即將推出"
     },
     "projects": {
       "sectionTitle": "專案",
@@ -83,7 +108,36 @@
     },
     "footer": {
       "links": "隱私政策 | 支援"
-    }
+    },
+    "solutions": {
+      "sectionTitle": "提高工作速度的三種方法",
+      "subtitle": "每個擴充功能都針對特定類型的重複性工作。選擇那些讓你慢下來的東西。",
+      "communication": {
+        "title": "寫信回覆",
+        "description": "自動回覆電子郵件、支援回應和外展訊息。不再為每張票和詢問重寫相同的答案。",
+        "cta": "探索AI回覆小幫手 →"
+      },
+      "automation": {
+        "title": "填充和處理",
+        "description": "自動填入工作申請、CRM 條目、保險表格和管理資料 — 從單一儲存的個人資料中，一鍵完成。",
+        "cta": "探索自動填充人工智慧 →"
+      },
+      "workspace": {
+        "title": "組織和重點",
+        "description": "儲存和還原瀏覽器工作區。讓複雜的研究會議井井有條，並可跨專案即時存取。",
+        "cta": "探索 WorkDesk →"
+      }
+    },
+    "cta": {
+      "notSure": "不知道從哪裡開始？",
+      "button": "按工作流程瀏覽 →"
+    },
+    "alsoFromDonbrico": "同樣來自 Donbrico",
+    "steamGame": "蒸氣遊戲",
+    "comingSoon": "即將推出",
+    "nullCarrierTitle": "空載體",
+    "nullCarrierDescription": "訊號重建益智遊戲。你操作一個深空監聽陣列。調諧頻率、解碼傳輸、詢問指揮部告訴您的內容。",
+    "learnMore": "了解更多 →"
   },
   "autofillAi": {
     "page": {
@@ -516,6 +570,87 @@
     "free": "免費",
     "steamGame": "STEAM 遊戲",
     "comingSoon": "即將推出"
+  },
+  "common": {
+    "addToChromeFree": "新增至 Chrome — 免費",
+    "faq": "常見問題",
+    "seeFullExtensionDetails": "查看擴充功能完整資訊 →",
+    "comingSoon": "即將推出",
+    "soon": "即將",
+    "comingSoonOnEdge": "Edge 即將推出",
+    "allSolutions": "所有解決方案",
+    "allExtensions": "所有擴充功能",
+    "seeAllExtensions": "查看所有擴充功能",
+    "aboutDonbrico": "關於 Donbrico",
+    "tryAiReplyFree": "免費試用 AI Reply Assistant",
+    "tryAutofillFree": "免費試用 Autofill AI",
+    "tryWorkDeskFree": "免費試用 WorkDesk",
+    "fullExtensionDetails": "擴充功能完整資訊 →",
+    "learnMore": "了解更多 →",
+    "tryAiReply": "試用 AI Reply Assistant →",
+    "tryAutofill": "試用 Autofill AI →",
+    "tryWorkDesk": "試用 WorkDesk →"
+  },
+  "extensions": {
+    "hub": {
+      "eyebrow": "擴充功能",
+      "title": "三個 AI 瀏覽器擴充功能。每個都有專注的目的。",
+      "subtitle": "每個擴充功能都能消除瀏覽器工作流程中的特定類型重複工作。輕量級、隱私優先，專為專業人士打造。",
+      "privacyNote": "🔒 在 Chrome 上：透過 Gemini Nano 本地 AI — 資料保留在您的瀏覽器中 · Edge 版本即將推出（Edge 上僅限 BYOK）",
+      "fillProcess": "填寫與處理",
+      "writeRespond": "編寫與回覆",
+      "organizeFocus": "組織與專注",
+      "freePro": "免費 / 專業版",
+      "addToChromeFree": "新增至 Chrome — 免費",
+      "edgeComingSoon": "Edge 即將推出",
+      "learnMore": "了解更多",
+      "autofill": {
+        "title": "Donbrico Autofill AI",
+        "description": "適用於任何網站的 AI 驅動表單填寫器。儲存您的個人資料一次 — 姓名、電子郵件、LinkedIn、技能、簡介。擴充功能會自動偵測表單並一鍵填寫。AI 會為求職信等開放欄位編寫上下文感知的答案。"
+      },
+      "reply": {
+        "title": "Donbrico AI Reply Assistant",
+        "description": "儲存回覆範本並在網路上的任何地方生成 AI 驅動的回覆。適用於 Gmail、LinkedIn、Zendesk、Gorgias、Freshdesk 以及任何帶有文字欄位的網站。建構已儲存回覆的庫 — 一鍵搜尋和插入，或讓 AI 從簡短提示中起草。"
+      },
+      "workdesk": {
+        "title": "Donbrico WorkDesk",
+        "description": "一鍵儲存和復原瀏覽器工作區。WorkDesk 捕獲您的整個工作階段 — 分頁、視窗、分頁群組 — 並精確復原。AI 自動命名工作區、對相似分頁進行分組，並讓您使用自然語言搜尋工作階段。"
+      },
+      "tags": {
+        "recruiters": "招聘人員",
+        "insurance": "保險",
+        "adminOps": "行政與營運",
+        "supportTeams": "支援團隊",
+        "ecommerceSupport": "電子商務支援",
+        "salesOutreach": "銷售與外展",
+        "researchers": "研究人員",
+        "developers": "開發人員"
+      },
+      "edge": {
+        "eyebrow": "EDGE — 即將推出",
+        "title": "Edge 版本即將推出",
+        "description": "所有三個擴充功能正在提交到 Microsoft Edge 增益集商店。一旦獲得批准，安裝連結將在此處啟用。",
+        "note": "<strong>重要：</strong> Microsoft Edge 不支援裝置上的 Gemini Nano。完全本地的 AI 隱私模式僅適用於 Chrome。Edge 使用者仍可透過連接自己的 API 金鑰（OpenAI、Anthropic、Groq 或 OpenRouter）使用所有 AI 功能。"
+      },
+      "comparison": {
+        "title": "功能比較",
+        "feature": "功能",
+        "chrome": "Chrome",
+        "edge": "Edge",
+        "rows": {
+          "formAutofill": "表單自動填寫",
+          "replyTemplates": "回覆範本",
+          "workspaceSaving": "工作區儲存",
+          "onDeviceAi": "裝置上 AI (Gemini Nano)",
+          "byok": "BYOK (OpenAI、Groq 等)"
+        }
+      },
+      "cta": {
+        "title": "不確定需要哪個擴充功能？",
+        "subtitle": "按工作流程瀏覽解決方案，找到適合您角色的解決方案。",
+        "button": "探索解決方案 →"
+      }
+    }
   },
   "cta": {
     "addToChrome": "新增至 Chrome",
@@ -1161,7 +1296,7 @@
       "proTip": {
         "label": "專業提示",
         "text": "根本不需要 API 金鑰 - 如果您的電腦支持，<strong>Gemini Nano</strong> 可以直接在 Chrome 中免費運行，並具有完全的隱私性。",
-        "link": "檢查 Gemini Nano 相容性 →"
+        "link": "Check Gemini Nano compatibility →"
       }
     },
     "geminiNano": {
@@ -1287,9 +1422,1330 @@
       "fallback": {
         "title": "如果不起作用會發生什麼？",
         "text1": "當 Gemini Nano 不可用時，Donbrico Autofill AI 會優雅地退回到您的自備金鑰 API 金鑰（OpenAI、Anthropic、Groq 或 OpenRouter）。你永遠不會沒有人工智慧完成。",
-        "text2": "如果 Gemini Nano 和 API 金鑰都未配置，擴充功能將顯示友善的提示，引導您進行設定。您始終可以在擴充功能的設定面板中新增 API 金鑰。",
+        "text2": "If neither Gemini Nano nor an API key is configured, the extension will show a friendly prompt guiding you to set one up. You can always add an API key in the extension's settings panel.",
         "tip": "需要 API 金鑰嗎？請參閱 <a href=\"/docs-api-keys.html\" style=\"color:var(--indigo);text-decoration:none;font-weight:500;\">API 金鑰指南</a>，在 5 分鐘內從 OpenAI、Anthropic、Groq 或 OpenRouter 取得一個。"
       }
+    }
+  },
+  "about": {
+    "contact": {
+      "description": "問題、回饋或合作夥伴關係查詢：",
+      "responseTime": "1-2 個工作天內回覆。單獨操作－每條訊息都會被讀取。",
+      "title": "聯絡我們",
+      "email": "支援@donbrico.net"
+    },
+    "extensions": {
+      "title": "擴充"
+    },
+    "solo": {
+      "description": "Donbrico 是一項單獨行動。每行程式碼、每個設計決策、每個支援回應都是一個人。這意味著產品保持精益、專注和誠實。沒有添加任何功能到命中指標。沒有由投資人壓力決定的路線圖。",
+      "game": "There's also a game in development: <a href=\"/null-carrier/\">Null Carrier</a> — a deep space signal puzzle, something completely different from the extensions.",
+      "title": "獨建"
+    },
+    "page": {
+      "title": "關於 Donbrico |適用於真實工作流程的 AI 瀏覽器工具",
+      "description": "Donbrico 建立 AI 瀏覽器擴展，專注於為專業人士和團隊提供自動化、生產力和工作流程效率。",
+      "ogTitle": "關於 Donbrico |適用於真實工作流程的 AI 瀏覽器工具",
+      "ogDescription": "Donbrico 建立 AI 瀏覽器擴展，專注於為專業人士和團隊提供自動化、生產力和工作流程效率。"
+    },
+    "eyebrow": "關於東布里科",
+    "title": "Built to remove the repetitive parts of professional work",
+    "subtitle": "Donbrico 為希望在不犧牲品質的情況下更快行動的專業人士建立 AI 瀏覽器擴充功能。",
+    "mission": {
+      "title": "使命",
+      "text": "每個專業人員的工作流程大多是重複的。填寫相同的表格。寫出幾乎相同的回覆。重建相同的研究會議。這些任務不是工作──它們是工作的開銷。 Donbrico 建立了可自動處理開銷的瀏覽器擴展，因此真正重要的工作會引起您更多的關注。"
+    },
+    "products": {
+      "title": "擴充",
+      "autofill": {
+        "name": "自動填充人工智慧",
+        "desc": "從已儲存的個人資料填寫任何網頁表單。人工智慧處理開放式問題。"
+      },
+      "reply": {
+        "name": "人工智慧回覆助手",
+        "desc": "儲存回覆範本並在任何文字欄位中產生 AI 回應。"
+      },
+      "workdesk": {
+        "name": "辦公桌",
+        "desc": "儲存和還原瀏覽器工作區。人工智慧命名並組織會議。"
+      }
+    },
+    "privacy": {
+      "title": "隱私立場",
+      "chrome": "在 Chrome 上，所有三個擴充功能均預設為 Gemini Nano——Chrome 內建的 Google 裝置上人工智慧模型。這意味著人工智慧完全在您的機器上運行：沒有 API 調用，沒有資料離開您的瀏覽器。",
+      "edge": "On Edge (coming soon), Gemini Nano is not available. Users can connect their own API key (OpenAI, Anthropic, Groq, or OpenRouter) to unlock AI features.",
+      "principle": "Donbrico 從不儲存您的資料。絕不。"
+    }
+  },
+  "extensionsHub": {
+    "autofill": {
+      "title": "Donbrico Autofill AI",
+      "description": "適用於任何網站的人工智慧表單填充程式。儲存您的個人資料一次 - 姓名、電子郵件、LinkedIn、技能、履歷。此擴充功能會自動偵測表單並一鍵填寫。人工智慧為求職信等開放式欄位編寫上下文感知答案。"
+    },
+    "edge": {
+      "eyebrow": "邊緣—即將推出",
+      "title": "Edge 版本即將推出",
+      "description": "所有三个扩展都将提交到 Microsoft Edge 附加组件商店。一旦接受，安裝連結將在此處啟動。"
+    },
+    "privacyNote": "🔒 在 Chrome 上：透過 Gemini Nano 實現本地 AI — 資料保留在您的瀏覽器中 · Edge 版本即將推出（BYOK 僅在 Edge 上）",
+    "reply": {
+      "title": "Donbrico AI回覆助理",
+      "description": "儲存回覆範本並在網路上的任何位置產生人工智慧驅動的回應。适用于 Gmail、LinkedIn、Zendesk、Gorgias、Freshdesk 以及任何带有文本字段的网站。建立一个保存的回复库——一键搜索和插入，或者让人工智能根据简短的提示起草。"
+    },
+    "workdesk": {
+      "title": "Donbrico WorkDesk",
+      "description": "一鍵儲存和恢復瀏覽器工作區。 WorkDesk 可擷取您的整個工作階段（選項卡、視窗、選項卡組）並準確恢復。 AI 會自動命名工作區、將相似的選項卡進行分組，並允許您使用自然語言搜尋會話。"
+    }
+  },
+  "solutions": {
+    "automation": {
+      "breadcrumb": {
+        "2": "填充和處理"
+      },
+      "target": {
+        "title": "專為資料輸入角色而設計",
+        "chips": {
+          "0": "求職者",
+          "1": "招募人員",
+          "2": "保險專業人士",
+          "3": "管理團隊",
+          "4": "銷售代表"
+        }
+      },
+      "steps": {
+        "title": "它是如何運作的",
+        "s1": {
+          "title": "儲存您的個人資料",
+          "text": "輸入您的專業資訊一次。儲存在本機瀏覽器中，而不是儲存在伺服器上。"
+        },
+        "s2": {
+          "title": "訪問任何形式",
+          "text": "工作申請系統、保險表格、CRM－擴充程式自動偵測表格。頂部出現一個 ⚡ 按鈕。"
+        },
+        "s3": {
+          "title": "一鍵完成",
+          "text": "點擊即可立即填寫所有標準欄位。人工智慧為開放式問題產生答案。"
+        }
+      },
+      "related": {
+        "title": "相關工作流程",
+        "items": {
+          "0": {
+            "label": "招募人員概述"
+          },
+          "1": {
+            "label": "對於求職者概述"
+          }
+        }
+      },
+      "page": {
+        "title": "用於表單、資料輸入和管理任務的 AI 工作流程自動化 |東布里科",
+        "description": "使用 AI 瀏覽器工具自動執行重複的表單填寫和結構化資料輸入。專為招募人員、管理員和營運團隊而設計。",
+        "ogTitle": "用於表單、資料輸入和管理任務的 AI 工作流程自動化 |東布里科",
+        "ogDescription": "使用 AI 瀏覽器工具自動執行重複的表單填寫和結構化資料輸入。專為招募人員、管理員和營運團隊而設計。"
+      },
+      "eyebrow": "填充和加工",
+      "title": "一鍵填寫任何表格。停止在每個網站上手動輸入資料。",
+      "subtitle": "Donbrico Autofill AI 可以偵測任何網站上的表格，並從您儲存的個人資料中填寫表格，並使用 AI 為開放式欄位產生的答案。",
+      "who": {
+        "title": "專為數據密集型角色而構建",
+        "chips": [
+          "招募人員和採購人員",
+          "保險代理人",
+          "營運和管理團隊",
+          "人力資源專業人士",
+          "銷售代表輸入 CRM 數據"
+        ]
+      },
+      "pain": {
+        "title": "問題",
+        "items": [
+          {
+            "icon": null,
+            "text": "每週將相同的資訊填寫到數十份不同的表格中"
+          },
+          {
+            "icon": null,
+            "text": "Switching between tabs to copy-paste data into job boards and ATS systems"
+          },
+          {
+            "icon": null,
+            "text": "每次從頭開始寫求職信和開放式答案"
+          }
+        ]
+      },
+      "solution": {
+        "title": "自動填充人工智慧如何解決這個問題",
+        "description": "儲存您的個人資料一次。該擴充功能會立即填充標準字段，並使用設備上的人工智慧為開放式問題編寫自訂答案 - 完全在您的瀏覽器中。"
+      },
+      "niches": {
+        "title": "相關工作流程",
+        "items": [
+          {
+            "label": "招募人員",
+            "url": "/解決方案/招募人員/"
+          },
+          {
+            "label": "保險工作流程",
+            "url": "/解決方案/保險/"
+          }
+        ]
+      }
+    },
+    "communication": {
+      "breadcrumb": {
+        "2": "寫信回覆"
+      },
+      "target": {
+        "title": "專為大容量通訊設計",
+        "chips": {
+          "0": "客戶支援",
+          "1": "技術支援",
+          "2": "援助團隊",
+          "3": "客戶成功"
+        }
+      },
+      "steps": {
+        "title": "它是如何運作的",
+        "s1": {
+          "title": "儲存您的回复",
+          "text": "Create a personal library of reply templates. Save once, use forever."
+        },
+        "s2": {
+          "title": "用人工智慧生成",
+          "text": "For new situations, AI drafts a response from a short prompt. You review and edit."
+        },
+        "s3": {
+          "title": "插入任意位置",
+          "text": "適用於 Gmail、LinkedIn、Zendesk、Gorgias、Freshdesk 和任何文字欄位。"
+        }
+      },
+      "related": {
+        "title": "相關工作流程",
+        "items": {
+          "0": {
+            "label": "支援團隊概述"
+          },
+          "1": {
+            "label": "電子商務支援概述"
+          }
+        }
+      },
+      "page": {
+        "title": "用於電子郵件、支援和訊息傳遞的 AI 通訊副駕駛 |東布里科",
+        "description": "使用 AI 自動回覆、電子郵件和訊息。專為支援團隊、銷售和管理大量通訊的專業人員而建置。",
+        "ogTitle": "用於電子郵件、支援和訊息傳遞的 AI 通訊副駕駛 |東布里科",
+        "ogDescription": "使用 AI 自動回覆、電子郵件和訊息。專為支援團隊、銷售和管理大量通訊的專業人員而建置。"
+      },
+      "eyebrow": "寫信回覆",
+      "title": "停止重寫相同的訊息。使用人工智慧處理大量通訊。",
+      "subtitle": "AI 回覆助理擴充功能適用於 Gmail、LinkedIn、Outlook、Twitter 和任何帶有文字欄位的網站 - 無需離開瀏覽器。",
+      "who": {
+        "title": "專為經常寫作的人打造",
+        "chips": [
+          "客戶支援團隊",
+          "銷售和特別提款權",
+          "招募人員進行外展活動",
+          "社群管理者",
+          "電子商務支持"
+        ]
+      },
+      "pain": {
+        "title": "問題",
+        "items": [
+          {
+            "icon": null,
+            "text": "每天花 2-3 小時撰寫類似問題的回复"
+          },
+          {
+            "icon": null,
+            "text": "在大容量收件匣中保持語氣一致性"
+          },
+          {
+            "icon": null,
+            "text": "Rebuilding the same message from scratch every time"
+          }
+        ]
+      },
+      "solution": {
+        "title": "AI回覆助理如何解決",
+        "description": "建立個人回應庫。透過單一提示產生品牌回應。一鍵將它們插入任意位置。"
+      },
+      "niches": {
+        "title": "相關工作流程",
+        "items": [
+          {
+            "label": "支援團隊",
+            "url": "/解決方案/支援團隊/"
+          },
+          {
+            "label": "電子商務支持",
+            "url": "/solutions/ecommerce-support/"
+          }
+        ]
+      }
+    },
+    "workspace": {
+      "breadcrumb": {
+        "2": "組織和重點"
+      },
+      "target": {
+        "title": "專為上下文切換角色而設計",
+        "chips": {
+          "0": "研究人員和分析師",
+          "1": "開發商",
+          "2": "管理多個客戶的顧問",
+          "3": "專案經理",
+          "4": "內容創作者"
+        }
+      },
+      "steps": {
+        "title": "它是如何運作的",
+        "s1": {
+          "title": "保存目前會話",
+          "text": "按一下“WorkDesk”圖示。將目前視窗或所有開啟的視窗儲存為工作區。 AI 根據您開啟的標籤建議一個名稱。"
+        },
+        "s2": {
+          "title": "乾淨地切換上下文",
+          "text": "關閉會話。打開一個新項目。隨時返回您保存的工作區 - 所有選項卡都準確地恢復到您離開時的位置。"
+        },
+        "s3": {
+          "title": "透過 AI 搜尋尋找任何內容",
+          "text": "Search workspaces in natural language. \"The React docs I had open last Tuesday\" — WorkDesk finds it instantly without needing the URL."
+        }
+      },
+      "related": {
+        "title": "相關工作流程",
+        "items": {
+          "0": {
+            "label": "Organize & Focus Overview"
+          },
+          "1": {
+            "label": "所有解決方案"
+          },
+          "2": {
+            "label": "所有擴充"
+          }
+        }
+      },
+      "page": {
+        "title": "用於研究和生產力的 AI 瀏覽器工作區管理器 |東布里科",
+        "description": "使用人工智慧驅動的瀏覽器工作區工具組織標籤、研究會議和工作流程。在複雜的任務中保持專注。",
+        "ogTitle": "用於研究和生產力的 AI 瀏覽器工作區管理器 |東布里科",
+        "ogDescription": "使用人工智慧驅動的瀏覽器工作區工具組織標籤、研究會議和工作流程。在複雜的任務中保持專注。"
+      },
+      "eyebrow": "組織和集中",
+      "title": "別再失去你的研究成果了。一鍵儲存和恢復瀏覽器工作區。",
+      "subtitle": "WorkDesk 會儲存您的整個瀏覽器狀態（標籤、視窗、群組）並準確恢復。人工智慧會自動命名並組織您的會話。",
+      "who": {
+        "title": "專為上下文切換角色而設計",
+        "chips": [
+          "研究人員和分析師",
+          "開發商",
+          "管理多個客戶的顧問",
+          "專案經理",
+          "內容創作者"
+        ]
+      },
+      "pain": {
+        "title": "問題",
+        "items": [
+          {
+            "icon": null,
+            "text": "當瀏覽器崩潰或關閉錯誤的視窗時遺失選項卡會話"
+          },
+          {
+            "icon": null,
+            "text": "在多個沒有結構的專案中處理 30 多個選項卡"
+          },
+          {
+            "icon": null,
+            "text": "花時間重建您之前建立的研究課程"
+          }
+        ]
+      },
+      "solution": {
+        "title": "How WorkDesk solves it",
+        "description": "將任何瀏覽器狀態儲存為命名工作區。一鍵恢復。 AI 會自動將選項卡分組、刪除重複項並建議工作區名稱。"
+      },
+      "features": {
+        "f1": {
+          "text": "儲存選項卡、視窗和 Chrome 選項卡組"
+        },
+        "f2": {
+          "text": "跨所有保存的會話進行人工智慧驅動的語義搜索"
+        },
+        "f3": {
+          "text": "匯出為 JSON、CSV 或 HTML 書籤"
+        },
+        "f4": {
+          "text": "所有工作區資料儲存在本機 - 無需帳戶"
+        }
+      },
+      "niches": {
+        "title": "相關工作流程",
+        "items": [
+          {
+            "label": "瀏覽器工作區管理",
+            "url": "/解決方案/瀏覽器工作區/"
+          }
+        ]
+      }
+    },
+    "ecommerceSupport": {
+      "cta": {
+        "title": "從今天開始更快回复",
+        "subtitle": "免費安裝。立即在您現有的幫助台中工作。無需集成。",
+        "buttonPrimary": "添加到 Chrome — 免費",
+        "buttonSecondary": "看看效果如何↓"
+      },
+      "page": {
+        "title": "面向 Shopify 和電子商務團隊的 AI 客戶支援工具 |東布里科",
+        "description": "自動回覆訂單、退款和客戶問題的電子商務支援。透過人工智慧驅動的回應減少工單負載。",
+        "ogTitle": "面向 Shopify 和電子商務團隊的 AI 客戶支援工具 |東布里科",
+        "ogDescription": "自動回覆訂單、退款和客戶問題的電子商務支援。透過人工智慧驅動的回應減少工單負載。"
+      },
+      "eyebrow": "電子商務支持",
+      "breadcrumb": [
+        "家",
+        "解決方案",
+        "電子商務支持"
+      ],
+      "title": "電子商務支援團隊：利用人工智慧更快回答訂單、退款和運輸問題",
+      "subtitle": "AI Reply Assistant 可讓您建立品牌支援回應庫，並在幾秒鐘內產生上下文感知答案 - 無需離開幫助台。",
+      "pain": {
+        "title": "是什麼讓你放慢腳步",
+        "items": [
+          {
+            "icon": null,
+            "text": "每週數百次回答相同的訂單狀態、退款和運輸問題"
+          },
+          {
+            "icon": null,
+            "text": "在門票量壓力下保持品牌基調和準確性"
+          },
+          {
+            "icon": null,
+            "text": "當模板不太適合客戶的具體情況時，請編寫新的回复"
+          }
+        ]
+      },
+      "solution": {
+        "title": "Donbrico 如何解決這個問題",
+        "primary": {
+          "label": "主要工具",
+          "name": "人工智慧回覆助手",
+          "description": "為您最常見的票證類型建立支援回應範本庫。對於邊緣情況，透過快速提示產生自訂回應 - AI 在幾秒鐘內起草它，您審查並發送。",
+          "points": [
+            "用於訂單、退款、運輸和產品查詢的範本庫",
+            "適用於 Gorgias、Zendesk、Freshdesk、Shopify 收件匣、Gmail 和任何文字字段",
+            "選擇回覆語氣：善解人意、專業、簡潔"
+          ],
+          "features": {
+            "f1": {
+              "title": "範本庫",
+              "text": "訂單、退款、運送、產品查詢範本 — 可依標籤搜尋及組織"
+            },
+            "f2": {
+              "title": "幫助台集成",
+              "text": "適用於 Gorgias、Zendesk、Freshdesk、Shopify Inbox、Gmail — 任何文字字段"
+            },
+            "f3": {
+              "title": "音調控制",
+              "text": "選擇回覆語氣：同理心、專業或簡潔 - 每個訊息"
+            }
+          }
+        }
+      },
+      "steps": {
+        "title": "電子商務支援如何運作",
+        "s1": {
+          "title": "Build your template library",
+          "text": "儲存您的前 30 個支援回應。按類別（退款、運輸、產品問題）標記它們以便快速搜尋。"
+        },
+        "s2": {
+          "title": "點擊任何支援票證內部",
+          "text": "在 Gorgias、Zendesk 或 Gmail 中開啟票證。在回覆欄位內點選 — 將出現 AI 工具列。"
+        },
+        "s3": {
+          "title": "插入範本或產生自訂回复",
+          "text": "搜尋已儲存的範本或鍵入快速提示。審核 AI 草稿並在幾秒鐘內發送。"
+        }
+      },
+      "faq": {
+        "q1": {
+          "q": "它在 Gorgias 和 Zendesk 中工作嗎？",
+          "a": "是的。 AI 回覆助理適用於任何有文字欄位的網站，包括 Gorgias、Zendesk、Freshdesk、Shopify Inbox 和 Gmail。"
+        },
+        "q2": {
+          "q": "Can I maintain brand tone?",
+          "a": "是的。您可以將您的品牌聲音儲存為預設音調，人工智慧會在產生回應時進行匹配。"
+        },
+        "q3": {
+          "q": "我可以儲存多少個模板？",
+          "a": "免費方案包括 30 個模板。 Pro 為您提供無限的模板，以及 {{order_id}} 和 {{customer_name}} 等智慧變數。"
+        },
+        "q4": {
+          "q": "人工智慧資料是私有的嗎？",
+          "a": "使用 Gemini Nano（僅限 Chrome）時，所有內容都保留在裝置上。如果您使用第三方 API 金鑰，資料將直接傳送至該供應商，而不會傳送至 Donbrico。"
+        },
+        "q5": {
+          "q": "團隊計劃是否存在？",
+          "a": "目前許可證是針對每個使用者的。每個代理程式都會安裝自己的副本。團隊計費已在路線圖上。"
+        }
+      },
+      "related": {
+        "title": "相關工作流程",
+        "items": [
+          {
+            "label": "支援團隊概述",
+            "url": "/解決方案/支援團隊/"
+          },
+          {
+            "label": "撰寫與回覆概述",
+            "url": "/解決方案/通訊/"
+          }
+        ]
+      }
+    },
+    "insurance": {
+      "target": {
+        "title": "專為保險專業人士打造",
+        "chips": {
+          "0": "保險代理人",
+          "1": "理賠員",
+          "2": "承銷商",
+          "3": "政策管理員"
+        }
+      },
+      "cta": {
+        "title": "開始更快填寫表格",
+        "subtitle": "免費安裝。適用於網路為基礎的保險入口網站和內部管理系統。",
+        "buttonPrimary": "添加到 Chrome — 免費",
+        "buttonSecondary": "看看效果如何↓"
+      },
+      "faq": {
+        "title": "常見問題解答",
+        "q1": {
+          "q": "它可以在基於網路的保險入口網站上使用嗎？",
+          "a": "是的。 Autofill AI 適用於任何具有標準 HTML 表單欄位的網站，包括基於網路的保險入口網站和代理程式管理系統。"
+        },
+        "q2": {
+          "q": "敏感的投保人資料安全嗎？",
+          "a": "使用 Gemini Nano（Chrome 內建 AI）時，所有資料都保留在您的裝置上。從未向 Donbrico 發送任何資料。如果您使用第三方 API 金鑰，資料將根據該提供者的隱私權政策傳送至該提供者。"
+        },
+        "q3": {
+          "q": "我可以儲存多個客戶資料嗎？",
+          "a": "專業版使用者最多可以保存 10 個設定文件，從而可以在單一會話中輕鬆地在不同客戶端或策略類型之間切換。"
+        },
+        "q4": {
+          "q": "它適用於公司內部系統嗎？",
+          "a": "只要係統基於瀏覽器並使用標準 HTML 輸入，就可以。具有非標準表單元素的舊系統的支援可能有限。"
+        },
+        "q5": {
+          "q": "是否符合資料隱私法規？",
+          "a": "該擴充功能將資料本地儲存在您的裝置上，並且不會將資料傳輸到 Donbrico。為了滿足法規合規性要求，請在使用前查看您組織的瀏覽器擴充政策。"
+        }
+      },
+      "page": {
+        "title": "用於保險工作流程和資料輸入的人工智慧表單自動化 |東布里科",
+        "description": "透過人工智慧輔助的索賠、保單資料輸入和管理文件自動化，更快地填寫保險表格。",
+        "ogTitle": "用於保險工作流程和資料輸入的人工智慧表單自動化 |東布里科",
+        "ogDescription": "透過人工智慧輔助的索賠、保單資料輸入和管理文件自動化，更快地填寫保險表格。"
+      },
+      "eyebrow": "對於保險專業人士",
+      "breadcrumb": [
+        "家",
+        "解決方案",
+        "保險工作流程"
+      ],
+      "title": "保險專業人士：透過人工智慧輔助自動填入消除手動表單輸入",
+      "subtitle": "Donbrico Autofill AI 透過已儲存的資料設定檔填寫索賠表、保單輸入畫面和管理文書工作 - 減少重複輸入錯誤並每週節省時間。",
+      "pain": {
+        "title": "是什麼讓你放慢腳步",
+        "items": [
+          {
+            "icon": null,
+            "text": "每天透過多種表格和內部系統重新輸入投保人詳細信息"
+          },
+          {
+            "icon": null,
+            "text": "需要精確準確性的索賠表上存在資料輸入錯誤的風險"
+          },
+          {
+            "icon": null,
+            "text": "數小時的行政文書工作佔用了面向客戶的工作時間"
+          }
+        ]
+      },
+      "solution": {
+        "title": "Donbrico 如何解決這個問題",
+        "primary": {
+          "label": "主要工具",
+          "name": "Donbrico 自動填充 AI",
+          "description": "儲存包含策略資料、聯絡資訊和標準欄位的設定檔。導航至任何表單（索賠提交、保單輸入或管理螢幕）並一鍵填寫。人工智慧處理開放式敘事領域。",
+          "points": [
+            "Works on web-based insurance portals and internal admin systems",
+            "減少關鍵資料欄位的擊鍵錯誤",
+            "裝置上的 AI 使敏感的客戶端資料遠離外部伺服器 (Chrome)"
+          ],
+          "features": {
+            "f1": {
+              "title": "適用於入口網站",
+              "text": "基於網路的保險入口網站和具有標準表單輸入的內部管理系統"
+            },
+            "f2": {
+              "title": "減少輸入錯誤",
+              "text": "設定檔填充欄位消除了關鍵資料欄位上的擊鍵錯誤"
+            },
+            "f3": {
+              "title": "設備端人工智慧 (Chrome)",
+              "text": "使用 Gemini Nano，敏感的客戶資料永遠不會離開您的機器"
+            }
+          }
+        }
+      },
+      "steps": {
+        "title": "保險工作流程如何運作",
+        "s1": {
+          "title": "儲存您的資料配置文件",
+          "text": "輸入保單持有人資訊、代理人詳細資料和公共欄位值一次。專業用戶可以為不同的用戶端或策略類型儲存多個設定檔。"
+        },
+        "s2": {
+          "title": "打開任何保險表格",
+          "text": "導航至您的索賠提交入口網站、保單輸入畫面或任何基於網路的管理表單。擴充功能會自動檢測它。"
+        },
+        "s3": {
+          "title": "一鍵填寫",
+          "text": "點選 ⚡ 立即填寫標準欄位。對於敘述性欄位（描述、摘要），人工智慧會根據您的個人資料上下文起草回應。"
+        }
+      },
+      "related": {
+        "title": "相關工作流程",
+        "items": [
+          {
+            "label": "招募人員工作流程",
+            "url": "/解決方案/招募人員/"
+          },
+          {
+            "label": "灌裝和工藝概述",
+            "url": "/解決方案/自動化/"
+          }
+        ]
+      }
+    },
+    "supportTeams": {
+      "faq": {
+        "title": "常見問題解答",
+        "q1": {
+          "q": "它支援哪些幫助台？",
+          "a": "AI 回覆助理適用於任何帶有文字欄位的網站 - Zendesk、Gorgias、Freshdesk、Intercom、Front、Helpscout 和 Gmail。無需集成。"
+        },
+        "q2": {
+          "q": "多個代理可以使用嗎？",
+          "a": "每个代理都会安装自己的副本并构建自己的库。該擴充功能是針對每個用戶的。團隊計劃在路線圖上。"
+        },
+        "q3": {
+          "q": "AI 如何知道該說什麼？",
+          "a": "AI 讀取文字欄位的上下文（遊標周圍的工單內容）並使用您的語氣設定來產生上下文草稿。你的提示越好，草稿就越好。"
+        },
+        "q4": {
+          "q": "我們可以加強品牌基調嗎？",
+          "a": "是的。客服人員可以設定預設語氣（專業、同理心、簡潔等）並儲存品牌回覆範本。專業語氣包括說服性、執行性和斷言性。"
+        },
+        "q5": {
+          "q": "AI 資料是私有的嗎？",
+          "a": "使用 Gemini Nano（僅限 Chrome）時，所有 AI 處理都在裝置上進行。如果使用第三方 API 金鑰，資料將傳送至該提供者。 Donbrico 永遠不會看到票證內容。"
+        }
+      },
+      "target": {
+        "title": "Built for support teams",
+        "chips": {
+          "0": "客戶支援",
+          "1": "技術支援",
+          "2": "SaaS支持",
+          "3": "電子商務支持"
+        }
+      },
+      "page": {
+        "title": "AI 客戶支援助理可實現更快的工單回覆 |東布里科",
+        "description": "使用 AI 立即產生準確的支援回應。缩短 Shopify、SaaS 和电子商务支持团队的响应时间。",
+        "ogTitle": "AI 客戶支援助理可實現更快的工單回覆 |東布里科",
+        "ogDescription": "使用 AI 立即產生準確的支援回應。縮短 Shopify、SaaS 和電子商務支援團隊的回應時間。"
+      },
+      "eyebrow": "對於支援團隊",
+      "breadcrumb": [
+        "家",
+        "解決方案",
+        "支援團隊"
+      ],
+      "title": "支援代理：透過人工智慧輔助工單回應將回覆時間縮短一半",
+      "subtitle": "AI 回覆助理為支援代理提供了個人回覆庫和 AI 草稿按鈕，讓他們可以更快地回覆請求，而不會犧牲品質或品牌形象。",
+      "pain": {
+        "title": "是什麼讓你的團隊放慢了腳步",
+        "items": [
+          {
+            "icon": null,
+            "text": "高票務量意味著客服人員一天中的大部分時間都在複製貼上或重寫幾乎相同的答案"
+          },
+          {
+            "icon": null,
+            "text": "當客服人員快速工作時，回覆的語氣和準確性不一致"
+          },
+          {
+            "icon": null,
+            "text": "新客服人員需要數週時間來學習標準答案 - 票務工具中沒有結構化知識庫"
+          }
+        ]
+      },
+      "solution": {
+        "title": "Donbrico 如何解決這個問題",
+        "primary": {
+          "label": "主要工具",
+          "name": "人工智慧回覆助手",
+          "description": "每個代理程式都會建立自己的結構化回應庫。對於新的工單類型，人工智慧會根據工單上下文和客服人員的語氣設定在幾秒鐘內起草回應。不再有空白頁時刻。",
+          "points": [
+            "儲存的回應庫可透過關鍵字或標籤搜尋",
+            "適用於 Zendesk、Gorgias、Freshdesk、Intercom、Front 和任何帶有文字欄位的幫助台",
+            "人工智慧生成上下文感知草稿——代理審閱並發送"
+          ],
+          "features": {
+            "f1": {
+              "title": "可搜尋回覆庫",
+              "text": "Find saved replies by keyword or tag — no more digging through bookmarks or wikis"
+            },
+            "f2": {
+              "title": "適用於每個服務台",
+              "text": "Zendesk、Gorgias、Freshdesk、Intercom、Front、Helpscout、Gmail — 任何文字字段"
+            },
+            "f3": {
+              "title": "AI情境感知草稿",
+              "text": "人工智慧讀取工單上下文並起草相關回應——代理審查並發送"
+            }
+          }
+        }
+      },
+      "steps": {
+        "title": "支援代理如何運作",
+        "s1": {
+          "title": "建立您的回覆庫",
+          "text": "每位客服人員都會保存他們最常用的答案。按類別進行組織，使用標籤進行快速搜索，使用 {{variables}} 進行個人化設定。"
+        },
+        "s2": {
+          "title": "Open any ticket",
+          "text": "點選 Zendesk、Gorgias 或任何幫助台中的回覆欄位。 AI 工具列會自動出現。"
+        },
+        "s3": {
+          "title": "插入或生成",
+          "text": "搜尋已儲存的回复，或輸入 5 個單字的提示，讓 AI 起草完整的回复。檢查、根據需要調整語氣，然後發送。"
+        }
+      },
+      "cta": {
+        "title": "從今天開始更快回复",
+        "subtitle": "免費安裝。立即在您現有的幫助台中工作。無需集成。"
+      },
+      "related": {
+        "title": "相關工作流程",
+        "items": [
+          {
+            "label": "電子商務支持",
+            "url": "/解決方案/電子商務支援/"
+          },
+          {
+            "label": "撰寫與回覆概述",
+            "url": "/解決方案/通訊/"
+          }
+        ]
+      }
+    },
+    "browserWorkspace": {
+      "faq": {
+        "title": "常見問題解答",
+        "q1": {
+          "q": "它會恢復選項卡組嗎？",
+          "a": "是的。 WorkDesk 完全支援 Chrome 選項卡組。當您恢復工作區時，您的群組將按照您離開時的樣子重新建立。"
+        },
+        "q2": {
+          "q": "如果我的瀏覽器崩潰了怎麼辦？",
+          "a": "WorkDesk 將工作區儲存到 Chrome 的本機儲存中。只要您在崩潰之前進行了保存，您的會話就是安全且可恢復的。"
+        },
+        "q3": {
+          "q": "Can I use it across multiple computers?",
+          "a": "專業使用者可以將工作區匯出為 JSON 並將其匯入到另一台裝置上。雲端同步已在路線圖上。"
+        },
+        "q4": {
+          "q": "它與 Chrome 內建的會話恢復有何不同？",
+          "a": "Chrome 會話恢復僅恢復最後一個會話。 WorkDesk 可讓您儲存無限的命名工作區、在它們之間切換、搜尋它們以及恢復任何歷史會話。"
+        },
+        "q5": {
+          "q": "我的瀏覽資料是私人的嗎？",
+          "a": "所有工作區資料都儲存在您的裝置本地。如果您使用 BYOK 金鑰，選項卡 URL 和標題可能會傳送到您的 AI 提供者（用於命名/搜尋）。有了 Gemini Nano，一切都在設備上。"
+        }
+      },
+      "target": {
+        "title": "專為研究人員和開發人員打造",
+        "chips": {
+          "0": "研究人員和分析師",
+          "1": "開發商",
+          "2": "數據科學家",
+          "3": "技術作家"
+        }
+      },
+      "page": {
+        "title": "用於結構化瀏覽器工作流程的 AI 標籤和工作區管理器 |東布里科",
+        "description": "使用 AI 儲存和組織瀏覽器會話。非常適合管理複雜工作流程的研究人員、開發人員和專業人員。",
+        "ogTitle": "用於結構化瀏覽器工作流程的 AI 標籤和工作區管理器 |東布里科",
+        "ogDescription": "使用 AI 儲存和組織瀏覽器會話。非常適合管理複雜工作流程的研究人員、開發人員和專業人員。"
+      },
+      "eyebrow": "瀏覽器工作區管理",
+      "breadcrumb": [
+        "家",
+        "解決方案",
+        "瀏覽器工作區"
+      ],
+      "title": "研究人員和開發人員：停止遺失瀏覽器會話。使用人工智慧組織複雜的工作流程。",
+      "subtitle": "WorkDesk 會儲存您的整個瀏覽器狀態並一鍵恢復。 AI 會自動命名、分組和組織您的選項卡，以便您可以專注於工作，而不是瀏覽器。",
+      "pain": {
+        "title": "是什麼浪費了你的時間",
+        "items": [
+          {
+            "icon": null,
+            "text": "當瀏覽器崩潰、重新啟動或不小心關閉了錯誤的視窗時，您會損失數小時的研究背景"
+          },
+          {
+            "icon": null,
+            "text": "跨 40 多個選項卡管理 5 個不同的項目，沒有結構或記憶"
+          },
+          {
+            "icon": null,
+            "text": "花費 10 分鐘查找您上週打開的標籤頁，但不記得其 URL"
+          }
+        ]
+      },
+      "solution": {
+        "title": "WorkDesk 如何解決這個問題",
+        "primary": {
+          "label": "主要工具",
+          "name": "Donbrico 辦公桌",
+          "description": "一鍵單擊即可將整個目前瀏覽器狀態儲存為命名工作區。將其恢復原樣。人工智慧建議名稱、將相似的選項卡進行分組並清除重複。",
+          "points": [
+            "儲存選項卡、視窗和選項卡組",
+            "人工智慧驅動的語義搜尋按描述查找任何已儲存的選項卡",
+            "將工作區匯出為 JSON、CSV 或 HTML 書籤"
+          ],
+          "features": {
+            "f1": {
+              "title": "完整會話保存",
+              "text": "儲存標籤、視窗和 Chrome 標籤群組 — 完全恢復為您離開時的狀態"
+            },
+            "f2": {
+              "title": "人工智慧語義搜尋",
+              "text": "使用自然語言而不是確切的 URL 來尋找任何已儲存的標籤或工作區"
+            },
+            "f3": {
+              "title": "導出和便攜性",
+              "text": "將工作區匯出為 JSON、CSV 或 HTML 書籤以進行備份或傳輸"
+            }
+          }
+        }
+      },
+      "steps": {
+        "title": "它是如何運作的",
+        "s1": {
+          "title": "保存目前會話",
+          "text": "按一下“WorkDesk”圖示。將目前視窗或所有開啟的視窗儲存為工作區。 AI 根據您的選項卡建議一個名稱。"
+        },
+        "s2": {
+          "title": "乾淨地切換上下文",
+          "text": "關閉會話。打開一個新的。隨時返回您保存的工作區 - 所有選項卡都準確地恢復到您離開的位置。"
+        },
+        "s3": {
+          "title": "透過 AI 搜尋尋找任何內容",
+          "text": "使用自然語言搜尋工作區：「我上週二開啟的 React 文件」立即找到它。"
+        }
+      },
+      "cta": {
+        "title": "不再遺失瀏覽器上下文",
+        "subtitle": "免費安裝。免費方案中最多可保存 5 個工作區。無需帳戶。"
+      },
+      "related": {
+        "title": "相關工作流程",
+        "items": [
+          {
+            "label": "組織與重點概述",
+            "url": "/解決方案/工作區/"
+          },
+          {
+            "label": "所有擴充",
+            "url": "/擴充/"
+          }
+        ]
+      }
+    },
+    "jobSeekers": {
+      "solution": {
+        "description": "儲存您的個人資料一次 - 姓名、聯絡方式、LinkedIn、履歷摘要、技能。請造訪任何工作委員會或 ATS。 ⚡ 按鈕會自動出現。一鍵填寫所有標準欄位。人工智慧使用您的個人資料作為背景，為開放式問題編寫量身定制的答案。",
+        "title": "自動填充人工智慧如何解決這個問題",
+        "primary": {
+          "label": "主要工具",
+          "name": "Donbrico 自動填充 AI",
+          "description": "儲存您的個人資料一次 - 姓名、聯絡方式、LinkedIn、履歷摘要、技能。請造訪任何工作委員會或 ATS。 ⚡ 按鈕會自動出現。一鍵填寫所有標準欄位。人工智慧使用您的個人資料作為背景，為開放式問題編寫量身定制的答案。",
+          "points": [
+            "適用於 LinkedIn、Indeed、Greenhouse、Lever、Workday、Ashby",
+            "人工智慧根據您的個人資料撰寫求職信和特定職位的答案",
+            "為不同角色或行業保存多個設定檔（專業版）",
+            "裝置上的 AI (Chrome) — 您的資料永遠不會離開您的瀏覽器"
+          ]
+        },
+        "secondary": {
+          "label": "也很有用",
+          "name": "人工智慧回覆助手",
+          "description": "建立一個後續電子郵件範本庫－感謝信、狀態檢查電子郵件、薪資談判入門。人工智慧可以在幾秒鐘內為每個應用程式起草個人化版本。",
+          "points": [
+            "為招募流程的每個階段儲存模板",
+            "人工智慧根據簡短的提示起草個人化的後續內容"
+          ]
+        }
+      },
+      "target": {
+        "title": "專為求職者打造",
+        "chips": {
+          "0": "積極求職者",
+          "1": "職業改變者",
+          "2": "應屆畢業生",
+          "3": "遠距工作者"
+        }
+      },
+      "page": {
+        "title": "求職者的人工智慧工具：自動填寫申請表和求職信 |東布里科",
+        "description": "使用人工智慧自動填寫工作申請並產生個人化求職信。節省您找工作的時間。",
+        "ogTitle": "求職者的人工智慧工具：自動填寫申請表和求職信 |東布里科",
+        "ogDescription": "使用人工智慧自動填寫工作申請並產生個人化求職信。節省您找工作的時間。"
+      },
+      "eyebrow": "對於求職者",
+      "breadcrumb": {
+        "2": "對於求職者"
+      },
+      "title": "Stop retyping your resume on every job application",
+      "subtitle": "Donbrico Autofill AI 可一鍵從您儲存的個人資料中填寫工作申請表 - 姓名、電子郵件、LinkedIn、工作歷史、技能。人工智慧會寫出開放式答案，例如求職信和“你為什麼想要這個角色？”",
+      "pain": {
+        "title": "What slows down every job search",
+        "items": {
+          "0": {
+            "text": "在每份申請表中重新輸入您的姓名、電子郵件、電話、LinkedIn URL 和工作經驗 - 即使您的履歷就在那裡"
+          },
+          "1": {
+            "text": "為每個「為什麼想在這裡工作？」寫一封新的求職信答案。或“描述您對 X 的體驗”字段"
+          },
+          "2": {
+            "text": "每個申請花費 20-30 分鐘進行資料輸入，而不是實際自訂您的推廣"
+          }
+        }
+      },
+      "steps": {
+        "title": "它是如何運作的",
+        "s1": {
+          "title": "1. 儲存一次您的個人資料",
+          "text": "輸入您的聯絡方式、LinkedIn、工作經驗、教育背景和技能。添加人工智慧在撰寫開放式答案時可以從中提取的個人簡介段落。"
+        },
+        "s2": {
+          "title": "2. 訪問任何職位申請",
+          "text": "在 LinkedIn、Indeed 上開設職位，或直接拜訪雇主的 ATS（Greenhouse、Lever、Workday、Ashby）。當偵測到表單時，會出現 ⚡ 按鈕。"
+        },
+        "s3": {
+          "title": "3.一鍵查看",
+          "text": "點選 ⚡ 立即填寫標準欄位。人工智慧根據您的個人資料起草對開放式問題的答案。您在提交之前檢查所有內容 - 這始終是您的決定。"
+        }
+      },
+      "faq": {
+        "q1": {
+          "q": "它支援哪些招募委員會和 ATS 平台？",
+          "a": "自動填入 AI 可以使用標準 HTML 輸入來偵測任何網站上的表單。這包括 LinkedIn、Indeed、Glassdoor、Greenhouse、Lever、Workday、Ashby、SmartRecruiters 和大多數雇主職業入口網站。"
+        },
+        "q2": {
+          "q": "Can it write cover letters for me?",
+          "a": "是的。當遇到求職信或開放式問題欄位時，人工智慧會使用您儲存的個人資料（您的經驗、技能和履歷）來起草答案。您始終在提交之前進行審查和編輯。"
+        },
+        "q3": {
+          "q": "我可以為不同類型的角色保存不同的設定檔嗎？",
+          "a": "是的 — 使用 Pro 計劃（最多 10 個設定檔）。例如，一份針對產品管理角色的個人資料，另一份針對營運角色的個人資料，每個角色都有不同的生物重點和技能亮點。"
+        },
+        "q4": {
+          "q": "我的個人資料安全嗎？",
+          "a": "您的个人资料存储在您的设备本地。使用 Gemini Nano（Chrome 的內建 AI）時，所有 AI 處理都保留在裝置上 - 任何內容都不會離開您的瀏覽器。如果您使用第三方 API 金鑰，則資料僅傳送至該提供者。 Donbrico 从不存储您的数据。"
+        },
+        "q5": {
+          "q": "免費嗎？",
+          "a": "The free plan includes unlimited form filling with one profile and local AI via Gemini Nano. Pro ($5.99/month) adds multiple profiles, adaptive learning, and cover letter generation."
+        }
+      },
+      "cta": {
+        "title": "今天開始更快申請",
+        "subtitle": "免費安裝。無需帳戶。适用于 LinkedIn、Indeed、Greenhouse 和任何雇主 ATS。"
+      },
+      "related": {
+        "title": "相關工作流程",
+        "items": {
+          "0": {
+            "label": "招募人員概述"
+          },
+          "1": {
+            "label": "Fill & Process Overview"
+          }
+        }
+      }
+    },
+    "recruiters": {
+      "cta": {
+        "title": "今天開始更快地招聘",
+        "subtitle": "免費安裝。適用於 LinkedIn、Indeed、Greenhouse、Lever 和任何 ATS 平台。"
+      },
+      "messageLibrary": {
+        "title": "訊息庫",
+        "description": "Build a library of outreach templates for candidate communication. AI drafts personalised versions for each candidate."
+      },
+      "page": {
+        "title": "招募人員的人工智慧工具：自動化職位申請和 ATS 工作流程 |東布里科",
+        "description": "利用人工智慧自動填入職位委員會、產生候選人摘要並減少手動 ATS 資料輸入，加快招募速度。",
+        "ogTitle": "招募人員的人工智慧工具：自動化職位申請和 ATS 工作流程 |東布里科",
+        "ogDescription": "利用人工智慧自動填入職位委員會、產生候選人摘要並減少手動 ATS 資料輸入，加快招募速度。"
+      },
+      "eyebrow": "對於招募人員",
+      "breadcrumb": [
+        "家",
+        "解決方案",
+        "對於招募人員"
+      ],
+      "title": "Recruiters: automate job board submissions and ATS data entry with AI",
+      "subtitle": "Donbrico Autofill AI 從單一已儲存的個人資料中填寫工作申請和 ATS 表格，讓您無需複製貼上即可處理更多候選人。",
+      "pain": {
+        "title": "是什麼讓你放慢腳步",
+        "items": [
+          {
+            "icon": null,
+            "text": "Re-entering the same candidate data into LinkedIn, Indeed, Greenhouse, Lever, and Workday — every single day"
+          },
+          {
+            "icon": null,
+            "text": "從頭開始為每個候選人手動編寫外展訊息"
+          },
+          {
+            "icon": null,
+            "text": "在 10 個選項卡之間切換，以在求職板和 ATS 系統之間複製貼上相同的訊息"
+          }
+        ]
+      },
+      "solution": {
+        "title": "Donbrico 如何解決這個問題",
+        "primary": {
+          "label": "主要工具",
+          "name": "Donbrico 自動填充 AI",
+          "description": "偵測任何求職板或 ATS 上的表格。一鍵填寫您已儲存的個人資料中的標準欄位（姓名、電子郵件、LinkedIn、經驗）。人工智慧為開放式欄位編寫自訂答案，例如“為什麼你很適合？”",
+          "points": [
+            "適用於 LinkedIn、Indeed、Greenhouse、Lever、Workday 等",
+            "透過一個分機填寫多個候選人資料",
+            "裝置上的 AI (Chrome) — 候選資料永遠不會到達外部伺服器"
+          ]
+        },
+        "secondary": {
+          "label": "也有用",
+          "name": "人工智慧回覆助手",
+          "description": "建立外展訊息範本庫。透過一個提示即可產生個人化的候選人訊息。",
+          "points": [
+            "已儲存常見外展場景的回覆模板",
+            "人工智慧針對候選人詢問起草情境感知回复"
+          ]
+        }
+      },
+      "steps": {
+        "title": "招募人員如何運作",
+        "s1": {
+          "title": "Save your profile (or candidate profiles)",
+          "text": "輸入一次關鍵資訊：姓名、聯絡人、角色詳細資料、技能。擴充程式處理其餘的事情。"
+        },
+        "s2": {
+          "title": "請造訪任何工作委員會或 ATS",
+          "text": "導覽至 LinkedIn Jobs、Indeed、Greenhouse 或任何基於表單的系統。擴充功能會自動啟動。"
+        },
+        "s3": {
+          "title": "一鍵填寫",
+          "text": "點擊⚡按鈕。標準欄位會立即填入。開放式問題會得到人工智慧產生的適​​合該角色的答案。"
+        }
+      },
+      "faq": {
+        "q1": {
+          "q": "它適用於 LinkedIn、Greenhouse、Lever 和 Workday 嗎？",
+          "a": "是的。自動填入 AI 可以偵測任何網站上的表格，包括主要的 ATS 平台和求職板。只要有 HTML 輸入字段，它就可以工作。"
+        },
+        "q2": {
+          "q": "我可以儲存多個候選人資料嗎？",
+          "a": "專業用戶最多可以儲存 10 個設定檔。每個個人資料可以代表不同的候選人或角色類型，從而可以輕鬆地在提交之間切換。"
+        },
+        "q3": {
+          "q": "候選數據是否發送到任何伺服器？",
+          "a": "不會。使用 Gemini Nano（Chrome 的內建 AI）時，所有資料都會保留在您的裝置上。如果您使用第三方 API 金鑰，資料將僅傳送給該提供者，而不會傳送給 Donbrico。"
+        },
+        "q4": {
+          "q": "它如何處理求職信字段？",
+          "a": "AI 回覆助理根據您的個人資料產生求職信和開放式回覆。您在提交之前進行審查和編輯—這始終由您決定。"
+        },
+        "q5": {
+          "q": "免費嗎？",
+          "a": "免費方案包括使用一份個人資料無限填寫表格以及透過 Gemini Nano 進行本地人工智慧。 Pro（5.99 美元/月）新增了多個設定檔和高級功能。"
+        }
+      },
+      "related": {
+        "title": "相關工作流程",
+        "items": [
+          {
+            "label": "支援團隊的人工智慧溝通",
+            "url": "/解決方案/支援團隊/"
+          },
+          {
+            "label": "灌裝和工藝概述",
+            "url": "/解決方案/自動化/"
+          }
+        ]
+      }
+    },
+    "hub": {
+      "page": {
+        "title": "在瀏覽器中實現工作自動化的 AI 工作流程解決方案 |東布里科",
+        "description": "探索用於通訊、表單自動化和瀏覽器工作區管理的 AI 工具。專為處理重複性數位任務的專業人員而設計。",
+        "ogTitle": "在瀏覽器中實現工作自動化的 AI 工作流程解決方案 |東布里科",
+        "ogDescription": "探索用於通訊、表單自動化和瀏覽器工作區管理的 AI 工具。專為處理重複性數位任務的專業人員而設計。"
+      },
+      "eyebrow": "解決方案",
+      "title": "選擇您想要在瀏覽器工作流程中自動化的內容",
+      "subtitle": "三個重點擴展類別。每一項都消除了特定類型的重複工作。",
+      "niches": {
+        "label": "具體工作流程",
+        "title": "找到您的確切用例",
+        "subtitle": "每個利基頁面都準確地顯示了 Donbrico 擴充功能如何解決該工作流程。"
+      },
+      "cta": {
+        "title": "準備好安裝了嗎？",
+        "subtitle": "所有三個擴充功能均可免費啟動。目前僅限 Chrome - Edge 即將推出。",
+        "button": "查看所有擴充 →"
+      },
+      "categories": {
+        "communication": {
+          "title": "寫信回覆",
+          "description": "自動回覆電子郵件、支援回應和外展訊息。專為高容量通訊角色而設計。",
+          "cta": "查看工作流程 →"
+        },
+        "automation": {
+          "title": "填充和處理",
+          "description": "自動執行重複的表單填寫和結構化資料輸入。專為招募人員、管理員和營運團隊而設計。",
+          "cta": "查看工作流程 →"
+        },
+        "workspace": {
+          "title": "組織和重點",
+          "description": "儲存和還原瀏覽器工作區。專為研究人員、開發人員和複雜的專案工作流程而建置。",
+          "cta": "查看工作流程 →"
+        }
+      },
+      "workflows": {
+        "title": "具體工作流程",
+        "subtitle": "每個利基頁面都準確地顯示了 Donbrico 擴充功能如何解決該工作流程。",
+        "cta": "查看工作流程 →",
+        "supportTeams": {
+          "title": "支援團隊",
+          "description": "支援代理的人工智慧回复庫。更快地產生準確的響應。",
+          "cta": "查看工作流程 →"
+        },
+        "ecommerceSupport": {
+          "title": "電子商務支持",
+          "description": "自動支援回覆訂單、退款和客戶問題。減少票務負擔。",
+          "cta": "查看工作流程 →"
+        },
+        "recruiters": {
+          "title": "Recruiters",
+          "description": "利用人工智慧自動填入職位委員會、產生候選人摘要並減少手動 ATS 資料輸入，加快招募速度。",
+          "cta": "查看工作流程 →"
+        },
+        "insurance": {
+          "title": "保險",
+          "description": "使用人工智慧輔助填寫填寫索賠表和保單資料。錯誤更少，時間更少。",
+          "cta": "查看工作流程 →"
+        },
+        "browserWorkspace": {
+          "title": "研究人員和開發人員",
+          "description": "組織複雜的瀏覽器會話。儲存工作空間、立即復原、使用 AI 進行搜尋。",
+          "cta": "查看工作流程 →"
+        },
+        "jobSeekers": {
+          "title": "求職者",
+          "description": "使用人工智慧產生的求職信自動填寫工作申請。申請更快。",
+          "cta": "查看工作流程 →"
+        }
+      }
+    },
+    "realEstate": {
+      "page": {
+        "title": "房地產經紀人的人工智慧瀏覽器工具：清單、客戶和溝通 |東布里科",
+        "description": "房地產經紀人每天可以透過人工智慧填寫清單表格、編寫客戶跟進資訊並組織每個房產的瀏覽器工作區，從而節省時間——所有這些都在 Chrome 中完成。",
+        "ogTitle": "房地產經紀人的人工智慧瀏覽器工具 |東布里科",
+        "ogDescription": "房地產經紀人每天可以透過人工智慧填寫清單表格、編寫客戶跟進資訊並組織每個房產的瀏覽器工作區，從而節省時間——所有這些都在 Chrome 中完成。"
+      },
+      "eyebrow": "對於房地產經紀人",
+      "title": "停止重新輸入清單、重寫電子郵件和遺失標籤",
+      "subtitle": "房地產經紀人每天在數十個瀏覽器標籤上處理客戶、清單、入口網站和文書工作。 Donbrico 的三個擴充功能減少了重複：一鍵填寫任何表格，幾秒鐘內回覆客戶，並讓每次房地產研究會議井井有條。",
+      "pain": {
+        "title": "客服人員每週都會損失工作時間",
+        "items": [
+          "Re-entering the same property details (address, beds, baths, price, description) into Zillow, Redfin, Realtor.com, and the MLS — every new listing, every update",
+          "從頭開始編寫相同的「跟進您的詢問」和「這是三處房產」電子郵件，每天 15 次，針對每位客戶進行個性化處理",
+          "無法追蹤哪些選項卡屬於哪個客戶或清單 — 40 個開啟的選項卡無法恢復上週的研究會話",
+          "為每位新潛在客戶手動填寫買家/賣家問捲和 CRM 聯絡表"
+        ]
+      },
+      "howEachHelpsTitle": "每個 Donbrico 擴充功能如何提供幫助",
+      "aiReply": {
+        "badge": "客戶溝通",
+        "title": "人工智慧回覆助手",
+        "fullDetails": "完整詳情 →",
+        "description": "為您發送的每種電子郵件類型建立個人庫：房產查詢回覆、後續序列、顯示確認、報價/還價通知和成交狀態更新。當客戶發送電子郵件時，人工智慧會在 Gmail 中一鍵個性化您為該客戶和財產保存的範本。",
+        "templatesTitle": "您要儲存的範本：",
+        "templates": [
+          "→ Property inquiry response",
+          "→“這裡有 3 個清單供您選擇”",
+          "→ 顯示後續",
+          "→ 報價已提交/接受",
+          "→ 還盤說明",
+          "→ 結束時間表更新"
+        ],
+        "timeSavedTitle": "節省時間：",
+        "timeSaved": [
+          "✓ 適用於 Gmail、Outlook 網頁版",
+          "✓ 智慧變數：{{client}}、{{address}}、{{price}}",
+          "✓ AI rewrites for each client in seconds",
+          "✓ 發送前一定要先查看"
+        ]
+      },
+      "autofill": {
+        "badge": "填寫表格",
+        "title": "自動填充人工智慧",
+        "fullDetails": "完整詳情 →",
+        "description": "每個新清單都意味著在 Zillow、Redfin、Realtor.com 和經紀人的 MLS 入口網站上重新輸入相同的房產詳細資料。自動填入 AI 會偵測這些表格，並一鍵從已儲存的屬性設定檔中填寫它們。買家/賣家入庫表格和 CRM 聯絡人條目也是如此。",
+        "formsTitle": "其填寫的表格：",
+        "forms": [
+          "→ MLS 上市提交",
+          "→ Zillow / Realtor.com 入口網站",
+          "→ 買家/賣家入庫表格",
+          "→ CRM 聯絡人條目（HubSpot、Salesforce）",
+          "→ 租賃申請表"
+        ],
+        "howItWorksTitle": "工作原理：",
+        "howItWorks": [
+          "✓ 保存您自己的資訊+客戶資訊的個人資料",
+          "✓ ⚡ 按鈕出現在任何表格上",
+          "✓ 多個設定檔 — 每個客戶端切換（專業版）",
+          "✓ 裝置上的人工智慧－沒有資料離開 Chrome"
+        ]
+      },
+      "workdesk": {
+        "badge": "選項卡組織",
+        "title": "辦公桌",
+        "fullDetails": "完整詳情 →",
+        "description": "每個活躍清單都應該有自己的瀏覽器工作區 - MLS 詳細資料、街景、社區數據、學校評級、抵押貸款計算器、競爭清單。 WorkDesk 一鍵將您目前的標籤儲存為命名工作區，並立即復原整個工作階段。當您有 6 位活躍客戶時，標籤不再混亂。",
+        "workspacesTitle": "工作空間代理程式創建：",
+        "workspaces": [
+          "→ \"Smith Family — Buyers\" (12 tabs)",
+          "→「123 Oak St 清單」（8 個選項卡）",
+          "→“市場研究—市中心”",
+          "→ \"Johnson Rental Search\""
+        ],
+        "keyFeaturesTitle": "主要特點：",
+        "keyFeatures": [
+          "✓ AI 自動命名工作空間",
+          "✓ 從任何裝置恢復任何會話",
+          "✓ 存檔已結束的交易，需要時恢復",
+          "✓ 跨所有工作區的語意搜尋（專業版）"
+        ]
+      },
+      "faq": {
+        "q1": {
+          "q": "這些擴充功能是否適用於 Zillow、Realtor.com 和 MLS 入口網站？",
+          "a": "Autofill AI 適用於任何具有標準 HTML 表單的網站，包括 Zillow、Realtor.com、Redfin 和大多數 MLS 入口網站。 AI回覆助理適用於任何文字字段，包括Gmail和Outlook Web。"
+        },
+        "q2": {
+          "q": "客戶或財產資料是否儲存在任何地方？",
+          "a": "不會。所有資料都儲存在您本地的瀏覽器中。人工智慧處理使用 Gemini Nano（Chrome 的內建裝置模型），因此不會將任何內容傳送到任何伺服器。如果您使用自己的 API 金鑰，則只有您可以控制哪個提供者接收資料。"
+        },
+        "q3": {
+          "q": "我可以為每個清單保存單獨的設定檔嗎？",
+          "a": "是的。自動填入 AI Pro 最多允許保存 10 個設定檔。為每個主要清單或客戶資料建立一個，然後在填寫任何表格之前從彈出視窗中選擇正確的一個。"
+        },
+        "q4": {
+          "q": "WorkDesk 可以恢復先前會話中的選項卡嗎？",
+          "a": "是的。 WorkDesk 將您開啟的標籤儲存為命名工作區。您可以隨時恢復任何已儲存的工作區，即使在關閉 Chrome 後也是如此。專業用戶還可以匯出工作區並在其中進行搜尋。"
+        },
+        "q5": {
+          "q": "三個擴充都是免費的嗎？",
+          "a": "這三者都有慷慨的免費套餐。 AI Reply Assistant 和 Autofill AI 可解锁 Pro 套餐的高级功能（多个配置文件、智能变量、AI 生成），每个套餐起价为 5.99 美元/月。 WorkDesk Pro 消除了工作空間限制。"
+        }
+      },
+      "cta": {
+        "title": "三個擴展。壓力較小的工作日。",
+        "subtitle": "全部免費安裝。無需帳戶。目前僅限 Chrome - Edge 即將推出。"
+      }
+    }
+  },
+  "footer": {
+    "solutions": "解決方案",
+    "workflows": "工作流程",
+    "extensions": "擴充",
+    "company": "公司",
+    "copyright": "© 2026 唐布里科工作室。版權所有。",
+    "privacyPolicy": "隱私權政策",
+    "terms": "條款",
+    "allRightsReserved": "© 2026 唐布里科工作室。版權所有。"
+  },
+  "faq": {
+    "title": "常見問題解答"
+  },
+  "home2": {
+    "page": {
+      "title": "AI Browser Tools for Automation, Writing & Workflow Efficiency | Donbrico",
+      "description": "AI 瀏覽器擴充功能可自動執行書寫、表單填寫和標籤管理。使用為實際工作流程建立的工具節省重複性工作的時間。",
+      "ogTitle": "用於自動化、寫作和工作流程效率的 AI 瀏覽器工具 |東布里科",
+      "ogDescription": "AI 瀏覽器擴充功能可自動執行書寫、表單填寫和標籤管理。使用為實際工作流程建立的工具節省重複性工作的時間。"
+    },
+    "hero": {
+      "eyebrow": "人工智慧瀏覽器擴充",
+      "title": "AI 瀏覽器工具可消除日常工作流程中的重複性工作",
+      "subtitle": "Browser extensions that automate writing, form filling, and session management — built for professionals who need to move faster without sacrificing quality.",
+      "btnInstall": "安裝擴充",
+      "btnSolutions": "探索解決方案"
+    },
+    "solutions": {
+      "sectionTitle": "提高工作速度的三種方法",
+      "sectionSubtitle": "每個擴充功能都針對特定類型的重複性工作。選擇那些讓你慢下來的東西。",
+      "communication": {
+        "icon": null,
+        "title": "寫信回覆",
+        "description": "自動回覆電子郵件、支援回應和訊息。停止重寫相同的答案。",
+        "cta": "探索 →"
+      },
+      "automation": {
+        "icon": null,
+        "title": "填充和處理",
+        "description": "一鍵自動填寫工作申請、CRM 條目、保險表格和管理資料。",
+        "cta": "探索 →"
+      },
+      "workspace": {
+        "icon": null,
+        "title": "組織和重點",
+        "description": "儲存和還原瀏覽器工作區。在複雜的專案中組織研究會議。",
+        "cta": "探索 →"
+      }
+    },
+    "nullCarrierStrip": {
+      "label": "同樣來自 Donbrico",
+      "title": "空載體－深空訊號益智遊戲",
+      "description": "一款簡約大氣的益智遊戲即將登陸 Steam。完全不同的東西。",
+      "cta": "了解更多 →"
     }
   }
 }

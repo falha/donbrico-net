@@ -28,7 +28,29 @@
     "workDesk": "Arbeitsplatz",
     "product": "Produkt",
     "termsOfService": "Nutzungsbedingungen",
-    "geminiNano": "Gemini Nano"
+    "geminiNano": "Gemini Nano",
+    "solutions": "Lösungen",
+    "extensions": "Erweiterungen",
+    "extensionsHub": "Alle Erweiterungen",
+    "about": "Um",
+    "game": "Spiel",
+    "solutionsCommunication": "Schreiben und antworten",
+    "solutionsAutomation": "Füllen und verarbeiten",
+    "solutionsWorkspace": "Organisieren und fokussieren",
+    "solutionsRecruiters": "Für Personalvermittler",
+    "solutionsEcommerce": "Für E-Commerce-Support",
+    "solutionsInsurance": "Für Versicherungen",
+    "solutionsSupportTeams": "Für Support-Teams",
+    "solutionsBrowserWorkspace": "Browser-Arbeitsbereich",
+    "solutionsJobSeekers": "Für Arbeitssuchende",
+    "solutionsEcommerceSupport": "Für E-Commerce",
+    "solutionsRealEstate": "Für Immobilien",
+    "extensionsAll": "Alle Erweiterungen",
+    "extensionsAutofill": "Autofill-KI",
+    "extensionsReply": "KI-Antwortassistent",
+    "extensionsWorkdesk": "Arbeitsplatz",
+    "categories": "Kategorien",
+    "byRole": "Nach Rolle"
   },
   "home": {
     "page": {
@@ -40,7 +62,10 @@
     "hero": {
       "eyebrow": "UNABHÄNGIGER ENTWICKLER",
       "title": "Tools, die funktionieren.<br>Spiele, die denken.",
-      "subtitle": "Ich baue Browser-Erweiterungen und Puzzle-Spiele. Kein VC. Kein Team. Nur Code."
+      "subtitle": "Ich baue Browser-Erweiterungen und Puzzle-Spiele. Kein VC. Kein Team. Nur Code.",
+      "buttonPrimary": "Installieren Sie Erweiterungen",
+      "buttonSecondary": "Entdecken Sie Lösungen →",
+      "disclaimer": "🔒 Auf Chrome: lokale KI über Gemini Nano – Daten bleiben in Ihrem Browser · Edge-Versionen folgen in Kürze"
     },
     "projects": {
       "sectionTitle": "PROJEKTE",
@@ -83,7 +108,36 @@
     },
     "footer": {
       "links": "Datenschutzerklärung | Support"
-    }
+    },
+    "solutions": {
+      "sectionTitle": "DREI MÖGLICHKEITEN, SCHNELLER ZU ARBEITEN",
+      "subtitle": "Jede Erweiterung zielt auf eine bestimmte Art sich wiederholender Arbeit ab. Wählen Sie aus, was Sie ausbremst.",
+      "communication": {
+        "title": "Schreiben und antworten",
+        "description": "Automatisieren Sie E-Mail-Antworten, Support-Antworten und Outreach-Nachrichten. Hören Sie auf, für jedes Ticket und jede Anfrage die gleichen Antworten neu zu schreiben.",
+        "cta": "Entdecken Sie AI Reply Assistant →"
+      },
+      "automation": {
+        "title": "Füllen und verarbeiten",
+        "description": "Füllen Sie Bewerbungen, CRM-Einträge, Versicherungsformulare und Verwaltungsdaten automatisch aus – aus einem einzigen gespeicherten Profil, mit einem Klick.",
+        "cta": "Entdecken Sie Autofill AI →"
+      },
+      "workspace": {
+        "title": "Organisieren und fokussieren",
+        "description": "Browser-Arbeitsbereiche speichern und wiederherstellen. Halten Sie komplexe Forschungssitzungen projektübergreifend organisiert und sofort zugänglich.",
+        "cta": "Entdecken Sie WorkDesk →"
+      }
+    },
+    "cta": {
+      "notSure": "Sie wissen nicht, wo Sie anfangen sollen?",
+      "button": "Nach Workflow durchsuchen →"
+    },
+    "alsoFromDonbrico": "AUCH AUS DONBRICO",
+    "steamGame": "STEAM-SPIEL",
+    "comingSoon": "KOMMT BALD",
+    "nullCarrierTitle": "Null-Carrier",
+    "nullCarrierDescription": "Ein Puzzlespiel zur Signalrekonstruktion. Sie betreiben ein Deep-Space-Listening-Array. Stimmen Sie Frequenzen ab, dekodieren Sie Übertragungen und hinterfragen Sie, was Ihnen das Kommando sagt.",
+    "learnMore": "Erfahren Sie mehr →"
   },
   "autofillAi": {
     "page": {
@@ -516,6 +570,87 @@
     "free": "KOSTENLOS",
     "steamGame": "STEAM-SPIEL",
     "comingSoon": "DEMNÄCHST"
+  },
+  "common": {
+    "addToChromeFree": "Zu Chrome hinzufügen — Kostenlos",
+    "faq": "Häufig gestellte Fragen",
+    "seeFullExtensionDetails": "Vollständige Erweiterungsdetails anzeigen →",
+    "comingSoon": "Demnächst",
+    "soon": "Bald",
+    "comingSoonOnEdge": "Demnächst auf Edge",
+    "allSolutions": "Alle Lösungen",
+    "allExtensions": "Alle Erweiterungen",
+    "seeAllExtensions": "Alle Erweiterungen anzeigen",
+    "aboutDonbrico": "Über Donbrico",
+    "tryAiReplyFree": "AI Reply Assistant testen — Kostenlos",
+    "tryAutofillFree": "Autofill AI testen — Kostenlos",
+    "tryWorkDeskFree": "WorkDesk testen — Kostenlos",
+    "fullExtensionDetails": "Vollständige Erweiterungsdetails →",
+    "learnMore": "Mehr erfahren →",
+    "tryAiReply": "AI Reply Assistant testen →",
+    "tryAutofill": "Autofill AI testen →",
+    "tryWorkDesk": "WorkDesk testen →"
+  },
+  "extensions": {
+    "hub": {
+      "eyebrow": "ERWEITERUNGEN",
+      "title": "Drei KI-Browsererweiterungen. Jede mit einem fokussierten Zweck.",
+      "subtitle": "Jede Erweiterung entfernt einen bestimmten Typ repetitiver Arbeit aus Ihrem Browser-Workflow. Leichtgewichtig, datenschutzorientiert und für Profis entwickelt.",
+      "privacyNote": "🔒 Unter Chrome: lokale KI über Gemini Nano — Daten bleiben in Ihrem Browser · Edge-Versionen kommen bald (nur BYOK unter Edge)",
+      "fillProcess": "Ausfüllen & Verarbeiten",
+      "writeRespond": "Schreiben & Antworten",
+      "organizeFocus": "Organisieren & Fokussieren",
+      "freePro": "Kostenlos / Pro",
+      "addToChromeFree": "Zu Chrome hinzufügen — Kostenlos",
+      "edgeComingSoon": "Edge kommt bald",
+      "learnMore": "Mehr erfahren",
+      "autofill": {
+        "title": "Donbrico Autofill AI",
+        "description": "KI-gestützter Formularfüller für jede Website. Speichern Sie Ihr Profil einmal — Name, E-Mail, LinkedIn, Fähigkeiten, Bio. Die Erweiterung erkennt Formulare automatisch und füllt sie mit einem Klick aus. Die KI schreibt kontextbewusste Antworten für offene Felder wie Anschreiben."
+      },
+      "reply": {
+        "title": "Donbrico AI Reply Assistant",
+        "description": "Speichert Antwortvorlagen und generiert KI-gestützte Antworten überall im Web. Funktioniert in Gmail, LinkedIn, Zendesk, Gorgias, Freshdesk und jeder Website mit einem Textfeld. Erstellen Sie eine Bibliothek gespeicherter Antworten — suchen und fügen Sie mit einem Klick ein, oder lassen Sie die KI aus einer kurzen Eingabe entwerfen."
+      },
+      "workdesk": {
+        "title": "Donbrico WorkDesk",
+        "description": "Speichern und stellen Sie Browser-Arbeitsbereiche mit einem Klick wieder her. WorkDesk erfasst Ihre gesamte Sitzung — Tabs, Fenster, Tab-Gruppen — und stellt sie exakt wieder her. Die KI benennt Arbeitsbereiche automatisch, gruppiert ähnliche Tabs und ermöglicht es Ihnen, Sitzungen mit natürlicher Sprache zu durchsuchen."
+      },
+      "tags": {
+        "recruiters": "Recruiter",
+        "insurance": "Versicherung",
+        "adminOps": "Administration & Ops",
+        "supportTeams": "Support-Teams",
+        "ecommerceSupport": "E-Commerce-Support",
+        "salesOutreach": "Vertrieb & Outreach",
+        "researchers": "Forscher",
+        "developers": "Entwickler"
+      },
+      "edge": {
+        "eyebrow": "EDGE — KOMMT BALD",
+        "title": "Edge-Versionen kommen bald",
+        "description": "Alle drei Erweiterungen werden zum Microsoft Edge Add-ons Store eingereicht. Sobald sie akzeptiert sind, werden die Installationslinks hier aktiviert.",
+        "note": "<strong>Wichtig:</strong> Microsoft Edge unterstützt kein lokales Gemini Nano. Der vollständig lokale KI-Datenschutzmodus ist nur unter Chrome verfügbar. Edge-User können alle KI-Funktionen weiterhin nutzen, indem sie ihren eigenen API-Schlüssel verbinden (OpenAI, Anthropic, Groq oder OpenRouter)."
+      },
+      "comparison": {
+        "title": "Funktionsvergleich",
+        "feature": "Funktion",
+        "chrome": "Chrome",
+        "edge": "Edge",
+        "rows": {
+          "formAutofill": "Formular-Autofill",
+          "replyTemplates": "Antwortvorlagen",
+          "workspaceSaving": "Arbeitsbereich-Speicherung",
+          "onDeviceAi": "On-Device-KI (Gemini Nano)",
+          "byok": "BYOK (OpenAI, Groq, etc.)"
+        }
+      },
+      "cta": {
+        "title": "Nicht sicher, welche Erweiterung Sie benötigen?",
+        "subtitle": "Durchsuchen Sie Lösungen nach Workflow, um die passende für Ihre Rolle zu finden.",
+        "button": "Lösungen erkunden →"
+      }
+    }
   },
   "cta": {
     "addToChrome": "Zu Chrome hinzufügen",
@@ -1256,9 +1391,1330 @@
       "fallback": {
         "title": "Was passiert, wenn es nicht funktioniert?",
         "text1": "Donbrico Autofill AI greift elegant auf Ihren Bring Your Own Key-API-Schlüssel (OpenAI, Anthropic, Groq oder OpenRouter) zurück, wenn Gemini Nano nicht verfügbar ist. ",
-        "text2": "Wenn weder Gemini Nano noch ein API-Schlüssel konfiguriert sind, zeigt die Erweiterung eine freundliche Aufforderung an, die Sie zur Einrichtung eines solchen Schlüssels führt. ",
+        "text2": "Wenn weder Gemini Nano noch ein API-Schlüssel konfiguriert sind, zeigt die Erweiterung eine freundliche Aufforderung an, die Sie zur Einrichtung eines solchen Schlüssels führt. Sie können jederzeit einen API-Schlüssel im Einstellungsfeld der Erweiterung hinzufügen.",
         "tip": "Benötigen Sie einen API-Schlüssel? "
       }
+    }
+  },
+  "about": {
+    "contact": {
+      "description": "Fragen, Feedback oder Partnerschaftsanfragen:",
+      "responseTime": "Antwort innerhalb von 1–2 Werktagen. Solo-Betrieb – jede Nachricht wird gelesen.",
+      "title": "Nehmen Sie Kontakt auf",
+      "email": "support@donbrico.net"
+    },
+    "extensions": {
+      "title": "Die Erweiterungen"
+    },
+    "solo": {
+      "description": "Donbrico ist ein Solobetrieb. Jede Codezeile, jede Designentscheidung, jede Support-Antwort – eine Person. Das bedeutet, dass die Produkte schlank, fokussiert und ehrlich bleiben. Den Treffermetriken wurden keine Funktionen hinzugefügt. Keine Roadmap, die durch den Druck der Investoren diktiert wird.",
+      "game": "Es gibt auch ein Spiel in der Entwicklung:<a href=\"/null-carrier/\">Null-Carrier</a>– ein Deep-Space-Signal-Rätsel, etwas völlig anderes als die Erweiterungen.",
+      "title": "Solo gebaut"
+    },
+    "page": {
+      "title": "Über Donbrico | KI-Browser-Tools für echte Arbeitsabläufe",
+      "description": "Donbrico entwickelt KI-Browsererweiterungen mit Schwerpunkt auf Automatisierung, Produktivität und Workflow-Effizienz für Fachleute und Teams.",
+      "ogTitle": "Über Donbrico | KI-Browser-Tools für echte Arbeitsabläufe",
+      "ogDescription": "Donbrico entwickelt KI-Browsererweiterungen mit Schwerpunkt auf Automatisierung, Produktivität und Workflow-Effizienz für Fachleute und Teams."
+    },
+    "eyebrow": "ÜBER DONBRICO",
+    "title": "Entwickelt, um sich wiederholende Teile professioneller Arbeit zu eliminieren",
+    "subtitle": "Donbrico entwickelt KI-Browsererweiterungen für Profis, die schneller vorankommen möchten, ohne auf Qualität zu verzichten.",
+    "mission": {
+      "title": "Mission",
+      "text": "Jeder Fachmann hat Arbeitsabläufe, die sich größtenteils wiederholen. Die gleichen Formulare ausfüllen. Nahezu identische Antworten schreiben. Wiederaufbau derselben Forschungssitzung. Diese Aufgaben sind nicht der Job – sie sind der Overhead des Jobs. Donbrico erstellt Browser-Erweiterungen, die den Overhead automatisieren, sodass Sie sich mehr auf die Arbeit konzentrieren können, die wirklich wichtig ist."
+    },
+    "products": {
+      "title": "Die Erweiterungen",
+      "autofill": {
+        "name": "Autofill-KI",
+        "desc": "Füllt jedes Webformular aus einem gespeicherten Profil aus. KI bearbeitet offene Fragen."
+      },
+      "reply": {
+        "name": "KI-Antwortassistent",
+        "desc": "Speichert Antwortvorlagen und generiert KI-Antworten in jedem Textfeld."
+      },
+      "workdesk": {
+        "name": "Arbeitsplatz",
+        "desc": "Speichert und stellt Browser-Arbeitsbereiche wieder her. KI benennt und organisiert Sitzungen."
+      }
+    },
+    "privacy": {
+      "title": "Datenschutz-Haltung",
+      "chrome": "In Chrome verwenden alle drei Erweiterungen standardmäßig Gemini Nano – das in Chrome integrierte On-Device-KI-Modell von Google. Das bedeutet, dass KI vollständig auf Ihrem Computer läuft: keine API-Aufrufe, keine Daten, die Ihren Browser verlassen.",
+      "edge": "Auf Edge (bald erhältlich) ist Gemini Nano nicht verfügbar. Benutzer können ihren eigenen API-Schlüssel (OpenAI, Anthropic, Groq oder OpenRouter) verbinden, um KI-Funktionen freizuschalten.",
+      "principle": "Donbrico speichert Ihre Daten niemals. Niemals."
+    }
+  },
+  "extensionsHub": {
+    "autofill": {
+      "title": "Donbrico Autofill AI",
+      "description": "KI-gestützter Formularausfüller für jede Website. Speichern Sie Ihr Profil einmal – Name, E-Mail, LinkedIn, Fähigkeiten, Biografie. Die Erweiterung erkennt Formulare automatisch und füllt sie mit einem Klick aus. KI schreibt kontextbezogene Antworten für offene Felder wie Anschreiben."
+    },
+    "edge": {
+      "eyebrow": "EDGE – BALD ERHÄLTLICH",
+      "title": "Edge-Versionen kommen bald auf den Markt",
+      "description": "Alle drei Erweiterungen werden an den Microsoft Edge Add-ons Store übermittelt. Nach der Annahme werden die Installationslinks hier aktiviert."
+    },
+    "privacyNote": "🔒 Auf Chrome: lokale KI über Gemini Nano – Daten bleiben in Ihrem Browser · Edge-Versionen folgen in Kürze (BYOK nur auf Edge)",
+    "reply": {
+      "title": "Donbrico AI-Antwortassistent",
+      "description": "Speichert Antwortvorlagen und generiert KI-gestützte Antworten überall im Web. Funktioniert in Gmail, LinkedIn, Zendesk, Gorgias, Freshdesk und jeder Website mit einem Textfeld. Erstellen Sie eine Bibliothek gespeicherter Antworten – suchen und fügen Sie sie mit einem Klick ein oder lassen Sie die KI anhand einer kurzen Eingabeaufforderung entwerfen."
+    },
+    "workdesk": {
+      "title": "Donbrico Schreibtisch",
+      "description": "Speichern und wiederherstellen Sie Browser-Arbeitsbereiche mit einem Klick. WorkDesk erfasst Ihre gesamte Sitzung – Registerkarten, Fenster, Registerkartengruppen – und stellt sie exakt wieder her. KI benennt Arbeitsbereiche automatisch, gruppiert ähnliche Registerkarten und ermöglicht die Suche nach Sitzungen in natürlicher Sprache."
+    }
+  },
+  "solutions": {
+    "automation": {
+      "breadcrumb": {
+        "2": "Füllen und verarbeiten"
+      },
+      "target": {
+        "title": "Entwickelt für Dateneingaberollen",
+        "chips": {
+          "0": "Arbeitssuchende",
+          "1": "Personalvermittler",
+          "2": "Versicherungsprofis",
+          "3": "Admin-Teams",
+          "4": "Vertriebsmitarbeiter"
+        }
+      },
+      "steps": {
+        "title": "Wie es funktioniert",
+        "s1": {
+          "title": "Speichern Sie Ihr Profil",
+          "text": "Geben Sie einmalig Ihre beruflichen Daten ein. Lokal in Ihrem Browser gespeichert, niemals auf einem Server."
+        },
+        "s2": {
+          "title": "Besuchen Sie ein beliebiges Formular",
+          "text": "Bewerbungssysteme, Versicherungsformulare, CRM – die Erweiterung erkennt Formulare automatisch. Oben erscheint eine ⚡-Schaltfläche."
+        },
+        "s3": {
+          "title": "Ein Klick, fertig",
+          "text": "Klicken Sie, um alle Standardfelder sofort auszufüllen. KI generiert Antworten auf offene Fragen."
+        }
+      },
+      "related": {
+        "title": "Verwandte Arbeitsabläufe",
+        "items": {
+          "0": {
+            "label": "Überblick über Personalvermittler"
+          },
+          "1": {
+            "label": "Übersicht für Arbeitssuchende"
+          }
+        }
+      },
+      "page": {
+        "title": "KI-Workflow-Automatisierung für Formulare, Dateneingabe und Verwaltungsaufgaben | Donbrico",
+        "description": "Automatisieren Sie das wiederholte Ausfüllen von Formularen und die strukturierte Dateneingabe mit KI-Browsertools. Entwickelt für Personalvermittler, Administratoren und Betriebsteams.",
+        "ogTitle": "KI-Workflow-Automatisierung für Formulare, Dateneingabe und Verwaltungsaufgaben | Donbrico",
+        "ogDescription": "Automatisieren Sie das wiederholte Ausfüllen von Formularen und die strukturierte Dateneingabe mit KI-Browsertools. Entwickelt für Personalvermittler, Administratoren und Betriebsteams."
+      },
+      "eyebrow": "FÜLLEN & VERARBEITEN",
+      "title": "Füllen Sie jedes Formular mit einem Klick aus. Stoppen Sie die manuelle Dateneingabe auf jeder Website.",
+      "subtitle": "Donbrico Autofill AI erkennt Formulare auf jeder Website und füllt sie aus Ihrem gespeicherten Profil aus – mit KI-generierten Antworten für offene Felder.",
+      "who": {
+        "title": "Entwickelt für datenintensive Rollen",
+        "chips": [
+          "Personalvermittler und Quellenvermittler",
+          "Versicherungsvertreter",
+          "Betriebs- und Verwaltungsteams",
+          "HR-Profis",
+          "Vertriebsmitarbeiter geben CRM-Daten ein"
+        ]
+      },
+      "pain": {
+        "title": "Das Problem",
+        "items": [
+          {
+            "icon": null,
+            "text": "Füllen Sie jede Woche die gleichen Informationen in Dutzende verschiedener Formulare aus"
+          },
+          {
+            "icon": null,
+            "text": "Wechseln zwischen Registerkarten, um Daten in Jobbörsen und ATS-Systeme zu kopieren und einzufügen"
+          },
+          {
+            "icon": null,
+            "text": "Anschreiben und offene Antworten jedes Mal von Grund auf neu schreiben"
+          }
+        ]
+      },
+      "solution": {
+        "title": "Wie Autofill AI dieses Problem löst",
+        "description": "Speichern Sie Ihr Profil einmal. Die Erweiterung füllt Standardfelder sofort aus und nutzt die KI auf dem Gerät, um benutzerdefinierte Antworten auf offene Fragen zu schreiben – vollständig in Ihrem Browser."
+      },
+      "niches": {
+        "title": "Verwandte Arbeitsabläufe",
+        "items": [
+          {
+            "label": "Personalvermittler",
+            "url": "/solutions/recruiters/"
+          },
+          {
+            "label": "Versicherungs-Workflows",
+            "url": "/Lösungen/Versicherung/"
+          }
+        ]
+      }
+    },
+    "communication": {
+      "breadcrumb": {
+        "2": "Schreiben und antworten"
+      },
+      "target": {
+        "title": "Entwickelt für die Kommunikation mit hohem Datenvolumen",
+        "chips": {
+          "0": "Kundenbetreuung",
+          "1": "Technische Unterstützung",
+          "2": "Hilfsteams",
+          "3": "Kundenerfolg"
+        }
+      },
+      "steps": {
+        "title": "Wie es funktioniert",
+        "s1": {
+          "title": "Speichern Sie Ihre Antworten",
+          "text": "Erstellen Sie eine persönliche Bibliothek mit Antwortvorlagen. Einmal speichern, für immer nutzen."
+        },
+        "s2": {
+          "title": "Generieren Sie mit KI",
+          "text": "Für neue Situationen entwirft die KI anhand einer kurzen Eingabeaufforderung eine Antwort. Sie überprüfen und bearbeiten."
+        },
+        "s3": {
+          "title": "Überall einfügen",
+          "text": "Funktioniert in Gmail, LinkedIn, Zendesk, Gorgias, Freshdesk und jedem Textfeld."
+        }
+      },
+      "related": {
+        "title": "Verwandte Arbeitsabläufe",
+        "items": {
+          "0": {
+            "label": "Übersicht über die Support-Teams"
+          },
+          "1": {
+            "label": "Übersicht über den E-Commerce-Support"
+          }
+        }
+      },
+      "page": {
+        "title": "KI-Kommunikations-Copilot für E-Mails, Support und Messaging | Donbrico",
+        "description": "Automatisieren Sie Antworten, E-Mails und Nachrichten mithilfe von KI. Entwickelt für Supportteams, Vertriebsmitarbeiter und Fachleute, die umfangreiche Kommunikation verwalten.",
+        "ogTitle": "KI-Kommunikations-Copilot für E-Mails, Support und Messaging | Donbrico",
+        "ogDescription": "Automatisieren Sie Antworten, E-Mails und Nachrichten mithilfe von KI. Entwickelt für Supportteams, Vertriebsmitarbeiter und Fachleute, die umfangreiche Kommunikation verwalten."
+      },
+      "eyebrow": "SCHREIBEN & ANTWORTEN",
+      "title": "Hören Sie auf, immer wieder dieselben Nachrichten zu schreiben. Nutzen Sie KI für die Abwicklung hochvolumiger Kommunikation.",
+      "subtitle": "Die AI Reply Assistant-Erweiterung funktioniert in Gmail, LinkedIn, Outlook, Twitter und jeder Website mit einem Textfeld – ohne Ihren Browser zu verlassen.",
+      "who": {
+        "title": "Gebaut für Leute, die viel schreiben",
+        "chips": [
+          "Kundensupport-Teams",
+          "Verkäufe und SDRs",
+          "Personalvermittler machen Outreach",
+          "Community-Manager",
+          "E-Commerce-Unterstützung"
+        ]
+      },
+      "pain": {
+        "title": "Das Problem",
+        "items": [
+          {
+            "icon": null,
+            "text": "Verbringen Sie 2–3 Stunden pro Tag damit, Antworten auf ähnliche Fragen zu schreiben"
+          },
+          {
+            "icon": null,
+            "text": "Aufrechterhaltung der Tonkonsistenz in einem hochvolumigen Posteingang"
+          },
+          {
+            "icon": null,
+            "text": "Jedes Mal die gleiche Nachricht von Grund auf neu erstellen"
+          }
+        ]
+      },
+      "solution": {
+        "title": "Wie AI Reply Assistant das Problem löst",
+        "description": "Erstellen Sie eine persönliche Antwortbibliothek. Generieren Sie markengerechte Antworten mit einer einzigen Eingabeaufforderung. Fügen Sie sie mit einem Klick an einer beliebigen Stelle ein."
+      },
+      "niches": {
+        "title": "Verwandte Arbeitsabläufe",
+        "items": [
+          {
+            "label": "Support-Teams",
+            "url": "/solutions/support-teams/"
+          },
+          {
+            "label": "E-Commerce-Unterstützung",
+            "url": "/solutions/ecommerce-support/"
+          }
+        ]
+      }
+    },
+    "workspace": {
+      "breadcrumb": {
+        "2": "Organisieren und fokussieren"
+      },
+      "target": {
+        "title": "Entwickelt für kontextwechselnde Rollen",
+        "chips": {
+          "0": "Forscher und Analysten",
+          "1": "Entwickler",
+          "2": "Berater, die mehrere Kunden verwalten",
+          "3": "Projektmanager",
+          "4": "Inhaltsersteller"
+        }
+      },
+      "steps": {
+        "title": "Wie es funktioniert",
+        "s1": {
+          "title": "Speichern Sie Ihre aktuelle Sitzung",
+          "text": "Klicken Sie auf das WorkDesk-Symbol. Speichern Sie das aktuelle Fenster oder alle geöffneten Fenster als Arbeitsbereich. KI schlägt einen Namen basierend auf Ihren geöffneten Tabs vor."
+        },
+        "s2": {
+          "title": "Wechseln Sie den Kontext sauber",
+          "text": "Schließen Sie die Sitzung. Öffnen Sie ein neues Projekt. Kehren Sie jederzeit zu Ihrem gespeicherten Arbeitsbereich zurück – alle Registerkarten werden genau dort wiederhergestellt, wo Sie sie verlassen haben."
+        },
+        "s3": {
+          "title": "Finden Sie alles mit der KI-Suche",
+          "text": "Durchsuchen Sie Arbeitsbereiche in natürlicher Sprache. „Die React-Dokumente, die ich letzten Dienstag geöffnet hatte“ – WorkDesk findet sie sofort, ohne dass die URL erforderlich ist."
+        }
+      },
+      "related": {
+        "title": "Verwandte Arbeitsabläufe",
+        "items": {
+          "0": {
+            "label": "Übersicht über „Organisieren und Fokussieren“."
+          },
+          "1": {
+            "label": "Alle Lösungen"
+          },
+          "2": {
+            "label": "Alle Erweiterungen"
+          }
+        }
+      },
+      "page": {
+        "title": "AI Browser Workspace Manager für Forschung und Produktivität | Donbrico",
+        "description": "Organisieren Sie Registerkarten, Recherchesitzungen und Arbeitsabläufe mit KI-gestützten Browser-Arbeitsbereichstools. Bleiben Sie bei komplexen Aufgaben konzentriert.",
+        "ogTitle": "AI Browser Workspace Manager für Forschung und Produktivität | Donbrico",
+        "ogDescription": "Organisieren Sie Registerkarten, Recherchesitzungen und Arbeitsabläufe mit KI-gestützten Browser-Arbeitsbereichstools. Bleiben Sie bei komplexen Aufgaben konzentriert."
+      },
+      "eyebrow": "ORGANISIEREN UND FOKUSIEREN",
+      "title": "Hören Sie auf, Ihre Forschung zu verlieren. Speichern und wiederherstellen Sie Browser-Arbeitsbereiche mit einem Klick.",
+      "subtitle": "WorkDesk speichert Ihren gesamten Browserstatus – Registerkarten, Fenster, Gruppen – und stellt ihn exakt wieder her. KI benennt und organisiert Ihre Sitzungen automatisch.",
+      "who": {
+        "title": "Entwickelt für kontextwechselnde Rollen",
+        "chips": [
+          "Forscher und Analysten",
+          "Entwickler",
+          "Berater, die mehrere Kunden verwalten",
+          "Projektmanager",
+          "Inhaltsersteller"
+        ]
+      },
+      "pain": {
+        "title": "Das Problem",
+        "items": [
+          {
+            "icon": null,
+            "text": "Tab-Sitzungen gehen verloren, wenn der Browser abstürzt oder Sie das falsche Fenster schließen"
+          },
+          {
+            "icon": null,
+            "text": "Jonglieren Sie über 30 Tabs in mehreren Projekten ohne Struktur"
+          },
+          {
+            "icon": null,
+            "text": "Nehmen Sie sich Zeit für den Wiederaufbau bereits erstellter Forschungssitzungen"
+          }
+        ]
+      },
+      "solution": {
+        "title": "Wie WorkDesk es löst",
+        "description": "Speichern Sie jeden Browserstatus als benannten Arbeitsbereich. Stellen Sie es mit einem Klick wieder her. KI gruppiert Tabs automatisch, entfernt Duplikate und schlägt Arbeitsbereichsnamen vor."
+      },
+      "features": {
+        "f1": {
+          "text": "Speichert Tabs, Fenster und Chrome-Tab-Gruppen"
+        },
+        "f2": {
+          "text": "KI-gestützte semantische Suche über alle gespeicherten Sitzungen hinweg"
+        },
+        "f3": {
+          "text": "Exportieren Sie als JSON-, CSV- oder HTML-Lesezeichen"
+        },
+        "f4": {
+          "text": "Alle Arbeitsbereichsdaten werden lokal gespeichert – kein Konto erforderlich"
+        }
+      },
+      "niches": {
+        "title": "Verwandte Arbeitsabläufe",
+        "items": [
+          {
+            "label": "Browser-Arbeitsbereichsverwaltung",
+            "url": "/solutions/browser-workspace/"
+          }
+        ]
+      }
+    },
+    "ecommerceSupport": {
+      "cta": {
+        "title": "Beginnen Sie noch heute damit, schneller zu antworten",
+        "subtitle": "Kostenlose Installation. Funktioniert sofort in Ihrem bestehenden Helpdesk. Keine Integration erforderlich.",
+        "buttonPrimary": "Zu Chrome hinzufügen – kostenlos",
+        "buttonSecondary": "Sehen Sie, wie es funktioniert ↓"
+      },
+      "page": {
+        "title": "KI-Kundensupport-Tool für Shopify- und E-Commerce-Teams | Donbrico",
+        "description": "Automatisieren Sie E-Commerce-Support-Antworten auf Bestellungen, Rückerstattungen und Kundenfragen. Reduzieren Sie die Ticketlast mit KI-gestützten Antworten.",
+        "ogTitle": "KI-Kundensupport-Tool für Shopify- und E-Commerce-Teams | Donbrico",
+        "ogDescription": "Automatisieren Sie E-Commerce-Support-Antworten auf Bestellungen, Rückerstattungen und Kundenfragen. Reduzieren Sie die Ticketlast mit KI-gestützten Antworten."
+      },
+      "eyebrow": "FÜR E-COMMERCE-UNTERSTÜTZUNG",
+      "breadcrumb": [
+        "Heim",
+        "Lösungen",
+        "E-Commerce-Unterstützung"
+      ],
+      "title": "E-Commerce-Supportteams: Beantworten Sie Bestellungen, Rückerstattungen und Versandfragen schneller mit KI",
+      "subtitle": "Mit AI Reply Assistant können Sie eine Bibliothek mit markenbezogenen Support-Antworten erstellen und in Sekundenschnelle kontextbezogene Antworten generieren – ohne Ihren Helpdesk zu verlassen.",
+      "pain": {
+        "title": "Was bremst dich aus?",
+        "items": [
+          {
+            "icon": null,
+            "text": "Hunderte Male pro Woche werden dieselben Fragen zu Bestellstatus, Rückerstattung und Versand beantwortet"
+          },
+          {
+            "icon": null,
+            "text": "Aufrechterhaltung des Markentons und der Markenpräzision unter Druck auf das Ticketvolumen"
+          },
+          {
+            "icon": null,
+            "text": "Verfassen neuer Antworten, wenn Vorlagen nicht ganz zur spezifischen Situation des Kunden passen"
+          }
+        ]
+      },
+      "solution": {
+        "title": "Wie Donbrico es löst",
+        "primary": {
+          "label": "Primäres Werkzeug",
+          "name": "KI-Antwortassistent",
+          "description": "Erstellen Sie eine Bibliothek mit Support-Antwortvorlagen für Ihre gängigsten Tickettypen. Generieren Sie für Grenzfälle eine benutzerdefinierte Antwort mit einer schnellen Eingabeaufforderung – die KI erstellt sie in Sekundenschnelle, Sie überprüfen und senden sie.",
+          "points": [
+            "Vorlagenbibliothek für Bestell-, Rückerstattungs-, Versand- und Produktanfragen",
+            "Funktioniert in Gorgias, Zendesk, Freshdesk, Shopify-Posteingang, Gmail und jedem Textfeld",
+            "Wählen Sie den Antwortton: einfühlsam, professionell, prägnant"
+          ],
+          "features": {
+            "f1": {
+              "title": "Vorlagenbibliothek",
+              "text": "Vorlagen für Bestellung, Rückerstattung, Versand und Produktabfragen – durchsuchbar und nach Tags geordnet"
+            },
+            "f2": {
+              "title": "Helpdesk-Integration",
+              "text": "Funktioniert in Gorgias, Zendesk, Freshdesk, Shopify Inbox, Gmail – jedem Textfeld"
+            },
+            "f3": {
+              "title": "Klangregelung",
+              "text": "Wählen Sie den Antwortton: einfühlsam, professionell oder prägnant – pro Nachricht"
+            }
+          }
+        }
+      },
+      "steps": {
+        "title": "So funktioniert es für den E-Commerce-Support",
+        "s1": {
+          "title": "Erstellen Sie Ihre Vorlagenbibliothek",
+          "text": "Speichern Sie Ihre über 30 häufigsten Support-Antworten. Markieren Sie sie nach Kategorie (Rückerstattungen, Versand, Produktfragen), um eine schnelle Suche zu ermöglichen."
+        },
+        "s2": {
+          "title": "Klicken Sie in ein beliebiges Support-Ticket",
+          "text": "Öffnen Sie ein Ticket in Gorgias, Zendesk oder Gmail. Klicken Sie in das Antwortfeld – die KI-Symbolleiste wird angezeigt."
+        },
+        "s3": {
+          "title": "Fügen Sie eine Vorlage ein oder generieren Sie eine benutzerdefinierte Antwort",
+          "text": "Durchsuchen Sie gespeicherte Vorlagen oder geben Sie eine kurze Eingabeaufforderung ein. Überprüfen Sie den KI-Entwurf und senden Sie ihn in Sekundenschnelle."
+        }
+      },
+      "faq": {
+        "q1": {
+          "q": "Funktioniert es in Gorgias und Zendesk?",
+          "a": "Ja. AI Reply Assistant funktioniert auf jeder Website mit einem Textfeld, einschließlich Gorgias, Zendesk, Freshdesk, Shopify Inbox und Gmail."
+        },
+        "q2": {
+          "q": "Kann ich den Markenton beibehalten?",
+          "a": "Ja. Sie können Ihre Markenstimme als Tonvoreinstellung speichern und die KI passt sie bei der Generierung von Antworten an."
+        },
+        "q3": {
+          "q": "Wie viele Vorlagen kann ich speichern?",
+          "a": "Der kostenlose Plan beinhaltet 30 Vorlagen. Pro bietet Ihnen unbegrenzte Vorlagen sowie intelligente Variablen wie {{order_id}} und {{customer_name}}."
+        },
+        "q4": {
+          "q": "Sind KI-Daten privat?",
+          "a": "Bei Verwendung von Gemini Nano (nur Chrome) bleibt alles auf dem Gerät. Wenn Sie einen API-Schlüssel eines Drittanbieters verwenden, gehen die Daten direkt an diesen Anbieter – niemals an Donbrico."
+        },
+        "q5": {
+          "q": "Existiert der Teamplan?",
+          "a": "Derzeit gelten Lizenzen pro Benutzer. Jeder Agent installiert seine eigene Kopie. Die Teamabrechnung steht auf der Roadmap."
+        }
+      },
+      "related": {
+        "title": "Verwandte Arbeitsabläufe",
+        "items": [
+          {
+            "label": "Übersicht über die Support-Teams",
+            "url": "/solutions/support-teams/"
+          },
+          {
+            "label": "Übersicht über „Schreiben und Antworten“.",
+            "url": "/Lösungen/Kommunikation/"
+          }
+        ]
+      }
+    },
+    "insurance": {
+      "target": {
+        "title": "Entwickelt für Versicherungsprofis",
+        "chips": {
+          "0": "Versicherungsvertreter",
+          "1": "Schadenregulierer",
+          "2": "Underwriter",
+          "3": "Richtlinienadministratoren"
+        }
+      },
+      "cta": {
+        "title": "Füllen Sie Formulare schneller aus",
+        "subtitle": "Kostenlose Installation. Funktioniert auf webbasierten Versicherungsportalen und internen Verwaltungssystemen.",
+        "buttonPrimary": "Zu Chrome hinzufügen – kostenlos",
+        "buttonSecondary": "Sehen Sie, wie es funktioniert ↓"
+      },
+      "faq": {
+        "title": "Häufig gestellte Fragen",
+        "q1": {
+          "q": "Funktioniert es auf webbasierten Versicherungsportalen?",
+          "a": "Ja. Autofill AI funktioniert auf jeder Website mit Standard-HTML-Formularfeldern, einschließlich webbasierten Versicherungsportalen und Agentenverwaltungssystemen."
+        },
+        "q2": {
+          "q": "Sind sensible Daten von Versicherungsnehmern sicher?",
+          "a": "Bei Verwendung von Gemini Nano (Chrome integrierte KI) bleiben alle Daten auf Ihrem Gerät. Es werden niemals Daten an Donbrico gesendet. Wenn Sie einen API-Schlüssel eines Drittanbieters verwenden, gehen die Daten gemäß dessen Datenschutzrichtlinie an diesen Anbieter."
+        },
+        "q3": {
+          "q": "Kann ich mehrere Kundenprofile speichern?",
+          "a": "Pro-Benutzer können bis zu 10 Profile speichern und so innerhalb einer einzigen Sitzung problemlos zwischen verschiedenen Kunden oder Richtlinientypen wechseln."
+        },
+        "q4": {
+          "q": "Funktioniert es auf unternehmensinternen Systemen?",
+          "a": "Solange das System browserbasiert ist und Standard-HTML-Eingaben verwendet, ja. Ältere Systeme mit nicht standardmäßigen Formularelementen werden möglicherweise nur eingeschränkt unterstützt."
+        },
+        "q5": {
+          "q": "Ist es datenschutzkonform?",
+          "a": "Die Erweiterung speichert Daten lokal auf Ihrem Gerät und übermittelt keine Daten an Donbrico. Überprüfen Sie vor der Verwendung die Richtlinien Ihrer Organisation zu Browsererweiterungen, um die Einhaltung gesetzlicher Vorschriften zu gewährleisten."
+        }
+      },
+      "page": {
+        "title": "KI-Formularautomatisierung für Versicherungs-Workflows und Dateneingabe | Donbrico",
+        "description": "Füllen Sie Versicherungsformulare schneller aus mit KI-gestützter Automatisierung für Ansprüche, Policendateneingabe und Verwaltungsdokumentation.",
+        "ogTitle": "KI-Formularautomatisierung für Versicherungs-Workflows und Dateneingabe | Donbrico",
+        "ogDescription": "Füllen Sie Versicherungsformulare schneller aus mit KI-gestützter Automatisierung für Ansprüche, Policendateneingabe und Verwaltungsdokumentation."
+      },
+      "eyebrow": "FÜR VERSICHERUNGSPROFIS",
+      "breadcrumb": [
+        "Heim",
+        "Lösungen",
+        "Versicherungs-Workflows"
+      ],
+      "title": "Versicherungsprofis: Eliminieren Sie die manuelle Formulareingabe durch KI-gestütztes automatisches Ausfüllen",
+      "subtitle": "Donbrico Autofill AI füllt Antragsformulare, Richtlinieneingabebildschirme und Verwaltungsunterlagen aus einem gespeicherten Datenprofil aus – wodurch wiederholte Eingabefehler reduziert und jede Woche Stunden gespart werden.",
+      "pain": {
+        "title": "Was bremst dich aus?",
+        "items": [
+          {
+            "icon": null,
+            "text": "Tägliche Neueingabe von Versicherungsnehmerdaten über mehrere Formulare und interne Systeme hinweg"
+          },
+          {
+            "icon": null,
+            "text": "Risiko von Dateneingabefehlern auf Schadensformularen, die genaue Genauigkeit erfordern"
+          },
+          {
+            "icon": null,
+            "text": "Stundenlanger administrativer Papierkram, der Ihnen Zeit für die Arbeit mit dem Kunden verschafft"
+          }
+        ]
+      },
+      "solution": {
+        "title": "Wie Donbrico es löst",
+        "primary": {
+          "label": "Primäres Werkzeug",
+          "name": "Donbrico Autofill AI",
+          "description": "Speichern Sie ein Profil mit Richtliniendaten, Kontaktdaten und Standardfeldern. Navigieren Sie zu einem beliebigen Formular – Anspruchseinreichung, Policeneintrag oder Verwaltungsbildschirm – und füllen Sie es mit einem Klick aus. KI bearbeitet offene Erzählfelder.",
+          "points": [
+            "Funktioniert auf webbasierten Versicherungsportalen und internen Verwaltungssystemen",
+            "Reduziert Tastaturfehler bei kritischen Datenfeldern",
+            "Die KI auf dem Gerät hält sensible Kundendaten von externen Servern fern (Chrome)"
+          ],
+          "features": {
+            "f1": {
+              "title": "Funktioniert auf Webportalen",
+              "text": "Webbasierte Versicherungsportale und interne Verwaltungssysteme mit Standardformulareingaben"
+            },
+            "f2": {
+              "title": "Reduziert Eingabefehler",
+              "text": "Mit Profilen gefüllte Felder verhindern Tastaturfehler bei kritischen Datenfeldern"
+            },
+            "f3": {
+              "title": "KI auf dem Gerät (Chrome)",
+              "text": "Mit Gemini Nano verlassen sensible Kundendaten niemals Ihren Computer"
+            }
+          }
+        }
+      },
+      "steps": {
+        "title": "So funktioniert es für Versicherungs-Workflows",
+        "s1": {
+          "title": "Speichern Sie Ihr Datenprofil",
+          "text": "Geben Sie einmalig Versicherungsnehmerinformationen, Agentendetails und allgemeine Feldwerte ein. Pro-Benutzer können mehrere Profile für verschiedene Kunden oder Richtlinientypen speichern."
+        },
+        "s2": {
+          "title": "Öffnen Sie ein beliebiges Versicherungsformular",
+          "text": "Navigieren Sie zu Ihrem Anspruchseinreichungsportal, zum Policeneingabebildschirm oder zu einem beliebigen webbasierten Verwaltungsformular. Die Erweiterung erkennt es automatisch."
+        },
+        "s3": {
+          "title": "Mit einem Klick ausfüllen",
+          "text": "Klicken Sie auf ⚡, um Standardfelder sofort auszufüllen. Für narrative Felder (Beschreibungen, Zusammenfassungen) entwirft die KI eine Antwort aus Ihrem Profilkontext."
+        }
+      },
+      "related": {
+        "title": "Verwandte Arbeitsabläufe",
+        "items": [
+          {
+            "label": "Arbeitsablauf für Personalvermittler",
+            "url": "/solutions/recruiters/"
+          },
+          {
+            "label": "Übersicht über Abfüllung und Prozess",
+            "url": "/Lösungen/Automatisierung/"
+          }
+        ]
+      }
+    },
+    "supportTeams": {
+      "faq": {
+        "title": "Häufig gestellte Fragen",
+        "q1": {
+          "q": "Welche Helpdesks werden unterstützt?",
+          "a": "AI Reply Assistant funktioniert auf jeder Website mit einem Textfeld – Zendesk, Gorgias, Freshdesk, Intercom, Front, Helpscout und Gmail. Keine Integration erforderlich."
+        },
+        "q2": {
+          "q": "Können mehrere Agenten es verwenden?",
+          "a": "Jeder Agent installiert seine eigene Kopie und erstellt seine eigene Bibliothek. Die Erweiterung gilt pro Benutzer. Der Teamplan steht auf der Roadmap."
+        },
+        "q3": {
+          "q": "Woher weiß die KI, was sie sagen soll?",
+          "a": "Die KI liest den Kontext des Textfelds (den Ticketinhalt um den Cursor herum) und generiert anhand Ihrer Toneinstellung einen kontextbezogenen Entwurf. Je besser Ihre Eingabeaufforderung, desto besser der Entwurf."
+        },
+        "q4": {
+          "q": "Können wir den Markenton durchsetzen?",
+          "a": "Ja. Agenten können einen Standardton festlegen (professionell, einfühlsam, prägnant usw.) und markenspezifische Antwortvorlagen speichern. Zu den Pro-Tönen gehören „Persuasive“, „Executive“ und „Assertive“."
+        },
+        "q5": {
+          "q": "Sind die KI-Daten privat?",
+          "a": "Bei Verwendung von Gemini Nano (nur Chrome) erfolgt die gesamte KI-Verarbeitung auf dem Gerät. Wenn Sie einen API-Schlüssel eines Drittanbieters verwenden, gehen die Daten an diesen Anbieter. Donbrico sieht nie den Ticketinhalt."
+        }
+      },
+      "target": {
+        "title": "Entwickelt für Support-Teams",
+        "chips": {
+          "0": "Kundenbetreuung",
+          "1": "Technische Unterstützung",
+          "2": "SaaS-Unterstützung",
+          "3": "E-Commerce-Unterstützung"
+        }
+      },
+      "page": {
+        "title": "KI-Kundensupport-Assistent für schnellere Ticketantworten | Donbrico",
+        "description": "Generieren Sie mithilfe von KI sofort präzise Support-Antworten. Reduzieren Sie die Reaktionszeit für Shopify-, SaaS- und E-Commerce-Supportteams.",
+        "ogTitle": "KI-Kundensupport-Assistent für schnellere Ticketantworten | Donbrico",
+        "ogDescription": "Generieren Sie mithilfe von KI sofort präzise Support-Antworten. Reduzieren Sie die Reaktionszeit für Shopify-, SaaS- und E-Commerce-Supportteams."
+      },
+      "eyebrow": "FÜR SUPPORT-TEAMS",
+      "breadcrumb": [
+        "Heim",
+        "Lösungen",
+        "Support-Teams"
+      ],
+      "title": "Supportmitarbeiter: Halbieren Sie die Antwortzeit mit KI-gestützten Ticketantworten",
+      "subtitle": "AI Reply Assistant bietet Supportmitarbeitern eine persönliche Antwortbibliothek und eine KI-Entwurfsschaltfläche – so können sie schneller auf Tickets reagieren, ohne Einbußen bei der Qualität oder der Markenbotschaft hinnehmen zu müssen.",
+      "pain": {
+        "title": "Was bremst Ihr Team?",
+        "items": [
+          {
+            "icon": null,
+            "text": "Ein hohes Ticketvolumen bedeutet, dass Agenten den größten Teil ihres Tages damit verbringen, nahezu identische Antworten zu kopieren oder neu zu schreiben"
+          },
+          {
+            "icon": null,
+            "text": "Inkonsistenter Ton und Genauigkeit in den Antworten, wenn Agenten schnell arbeiten"
+          },
+          {
+            "icon": null,
+            "text": "Neue Agenten brauchen Wochen, um Standardantworten zu lernen – es gibt keine strukturierte Wissensdatenbank im Ticketing-Tool"
+          }
+        ]
+      },
+      "solution": {
+        "title": "Wie Donbrico es löst",
+        "primary": {
+          "label": "Primäres Werkzeug",
+          "name": "KI-Antwortassistent",
+          "description": "Jeder Agent erstellt seine eigene strukturierte Antwortbibliothek. Für neue Tickettypen erstellt die KI in Sekundenschnelle eine Antwort basierend auf dem Ticketkontext und den Toneinstellungen des Agenten. Keine Momente mit leeren Seiten mehr.",
+          "points": [
+            "Gespeicherte Antwortbibliothek, durchsuchbar nach Schlüsselwort oder Tag",
+            "Funktioniert in Zendesk, Gorgias, Freshdesk, Intercom, Front und jedem Helpdesk mit einem Textfeld",
+            "KI generiert kontextbezogene Entwürfe – Überprüfungen und Versendungen durch Agenten"
+          ],
+          "features": {
+            "f1": {
+              "title": "Durchsuchbare Antwortbibliothek",
+              "text": "Finden Sie gespeicherte Antworten anhand von Schlüsselwörtern oder Tags – kein Suchen mehr in Lesezeichen oder Wikis"
+            },
+            "f2": {
+              "title": "Funktioniert in jedem Helpdesk",
+              "text": "Zendesk, Gorgias, Freshdesk, Intercom, Front, Helpscout, Gmail – jedes Textfeld"
+            },
+            "f3": {
+              "title": "KI-kontextbezogene Entwürfe",
+              "text": "KI liest den Ticketkontext und verfasst eine relevante Antwort – der Agent prüft und sendet sie"
+            }
+          }
+        }
+      },
+      "steps": {
+        "title": "So funktioniert es für Supportmitarbeiter",
+        "s1": {
+          "title": "Erstellen Sie Ihre Antwortbibliothek",
+          "text": "Jeder Agent speichert seine am häufigsten verwendeten Antworten. Organisieren Sie nach Kategorien, markieren Sie sie für eine schnelle Suche und verwenden Sie {{Variablen}} zur Personalisierung."
+        },
+        "s2": {
+          "title": "Öffnen Sie ein beliebiges Ticket",
+          "text": "Klicken Sie in das Antwortfeld in Zendesk, Gorgias oder einem anderen Helpdesk. Die AI-Symbolleiste erscheint automatisch."
+        },
+        "s3": {
+          "title": "Einfügen oder generieren",
+          "text": "Durchsuchen Sie gespeicherte Antworten oder geben Sie eine Eingabeaufforderung mit fünf Wörtern ein und lassen Sie die KI eine vollständige Antwort verfassen. Überprüfen Sie es, passen Sie den Ton bei Bedarf an und senden Sie es."
+        }
+      },
+      "cta": {
+        "title": "Beginnen Sie noch heute damit, schneller zu antworten",
+        "subtitle": "Kostenlose Installation. Funktioniert sofort in Ihrem bestehenden Helpdesk. Keine Integration erforderlich."
+      },
+      "related": {
+        "title": "Verwandte Arbeitsabläufe",
+        "items": [
+          {
+            "label": "E-Commerce-Unterstützung",
+            "url": "/solutions/ecommerce-support/"
+          },
+          {
+            "label": "Übersicht über „Schreiben und Antworten“.",
+            "url": "/Lösungen/Kommunikation/"
+          }
+        ]
+      }
+    },
+    "browserWorkspace": {
+      "faq": {
+        "title": "Häufig gestellte Fragen",
+        "q1": {
+          "q": "Werden Tab-Gruppen wiederhergestellt?",
+          "a": "Ja. WorkDesk unterstützt Chrome-Tab-Gruppen vollständig. Wenn Sie einen Arbeitsbereich wiederherstellen, werden Ihre Gruppen genau so neu erstellt, wie Sie sie verlassen haben."
+        },
+        "q2": {
+          "q": "Was passiert, wenn mein Browser abstürzt?",
+          "a": "WorkDesk speichert Arbeitsbereiche im lokalen Speicher von Chrome. Solange Sie vor dem Absturz gespeichert haben, ist Ihre Sitzung sicher und wiederherstellbar."
+        },
+        "q3": {
+          "q": "Kann ich es auf mehreren Computern verwenden?",
+          "a": "Pro-Benutzer können Arbeitsbereiche als JSON exportieren und auf einem anderen Gerät importieren. Cloud-Synchronisierung steht auf der Roadmap."
+        },
+        "q4": {
+          "q": "Wie unterscheidet es sich von der integrierten Sitzungswiederherstellung von Chrome?",
+          "a": "Bei der Chrome-Sitzungswiederherstellung wird nur die letzte Sitzung wiederhergestellt. Mit WorkDesk können Sie unbegrenzt benannte Arbeitsbereiche speichern, zwischen ihnen wechseln, sie durchsuchen und alle historischen Sitzungen wiederherstellen."
+        },
+        "q5": {
+          "q": "Sind meine Browserdaten privat?",
+          "a": "Alle Arbeitsbereichsdaten werden lokal auf Ihrem Gerät gespeichert. Tab-URLs und Titel können an Ihren KI-Anbieter gesendet werden (zur Benennung/Suche), wenn Sie einen BYOK-Schlüssel verwenden. Bei Gemini Nano ist alles auf dem Gerät."
+        }
+      },
+      "target": {
+        "title": "Entwickelt für Forscher und Entwickler",
+        "chips": {
+          "0": "Forscher und Analysten",
+          "1": "Entwickler",
+          "2": "Datenwissenschaftler",
+          "3": "Technische Redakteure"
+        }
+      },
+      "page": {
+        "title": "AI Tab & Workspace Manager für strukturierte Browser-Workflows | Donbrico",
+        "description": "Speichern und organisieren Sie Browsersitzungen mit KI. Ideal für Forscher, Entwickler und Fachleute, die komplexe Arbeitsabläufe verwalten.",
+        "ogTitle": "AI Tab & Workspace Manager für strukturierte Browser-Workflows | Donbrico",
+        "ogDescription": "Speichern und organisieren Sie Browsersitzungen mit KI. Ideal für Forscher, Entwickler und Fachleute, die komplexe Arbeitsabläufe verwalten."
+      },
+      "eyebrow": "BROWSER-ARBEITSBEREICHSVERWALTUNG",
+      "breadcrumb": [
+        "Heim",
+        "Lösungen",
+        "Browser-Arbeitsbereich"
+      ],
+      "title": "Forscher und Entwickler: Hören Sie auf, Browsersitzungen zu verlieren. Organisieren Sie komplexe Arbeitsabläufe mit KI.",
+      "subtitle": "WorkDesk speichert Ihren gesamten Browserstatus und stellt ihn mit einem Klick wieder her. KI benennt, gruppiert und organisiert Ihre Tabs automatisch, sodass Sie sich auf die Arbeit und nicht auf den Browser konzentrieren können.",
+      "pain": {
+        "title": "Was kostet Sie Zeit?",
+        "items": [
+          {
+            "icon": null,
+            "text": "Stundenlanger Recherchekontext geht verloren, wenn Ihr Browser abstürzt, neu startet oder Sie versehentlich das falsche Fenster schließen"
+          },
+          {
+            "icon": null,
+            "text": "Verwalten Sie 5 verschiedene Projekte auf über 40 Registerkarten ohne Struktur oder Erinnerung daran, was was ist"
+          },
+          {
+            "icon": null,
+            "text": "Verbringen Sie 10 Minuten damit, einen Tab zu finden, den Sie letzte Woche geöffnet haben, dessen URL Sie jedoch nicht mehr kennen"
+          }
+        ]
+      },
+      "solution": {
+        "title": "Wie WorkDesk es löst",
+        "primary": {
+          "label": "Primäres Werkzeug",
+          "name": "Donbrico Schreibtisch",
+          "description": "Ein Klick speichert Ihren gesamten aktuellen Browserstatus als benannten Arbeitsbereich. Stellen Sie es genau so wieder her, wie es war. KI schlägt Namen vor, gruppiert ähnliche Tabs und bereinigt Duplikate.",
+          "points": [
+            "Speichert Registerkarten, Fenster und Registerkartengruppen",
+            "Die KI-gestützte semantische Suche findet alle gespeicherten Tabs anhand der Beschreibung",
+            "Exportieren Sie Arbeitsbereiche als JSON-, CSV- oder HTML-Lesezeichen"
+          ],
+          "features": {
+            "f1": {
+              "title": "Vollständige Sitzungsspeicherung",
+              "text": "Speichert Tabs, Fenster und Chrome-Tab-Gruppen – wird genau so wiederhergestellt, wie Sie sie verlassen haben"
+            },
+            "f2": {
+              "title": "Semantische KI-Suche",
+              "text": "Suchen Sie alle gespeicherten Tabs oder Arbeitsbereiche in natürlicher Sprache, nicht anhand exakter URLs"
+            },
+            "f3": {
+              "title": "Export und Portabilität",
+              "text": "Exportieren Sie Arbeitsbereiche als JSON-, CSV- oder HTML-Lesezeichen zur Sicherung oder Übertragung"
+            }
+          }
+        }
+      },
+      "steps": {
+        "title": "Wie es funktioniert",
+        "s1": {
+          "title": "Speichern Sie Ihre aktuelle Sitzung",
+          "text": "Klicken Sie auf das WorkDesk-Symbol. Speichern Sie das aktuelle Fenster oder alle geöffneten Fenster als Arbeitsbereich. KI schlägt basierend auf Ihren Tabs einen Namen vor."
+        },
+        "s2": {
+          "title": "Wechseln Sie den Kontext sauber",
+          "text": "Schließen Sie die Sitzung. Öffnen Sie ein neues. Kehren Sie jederzeit zu Ihrem gespeicherten Arbeitsbereich zurück – alle Registerkarten werden genau dort wiederhergestellt, wo Sie sie verlassen haben."
+        },
+        "s3": {
+          "title": "Finden Sie alles mit der KI-Suche",
+          "text": "Durchsuchen Sie Arbeitsbereiche mit natürlicher Sprache: „Die React-Dokumente, die ich letzten Dienstag geöffnet hatte“ finden sie sofort."
+        }
+      },
+      "cta": {
+        "title": "Hören Sie auf, Ihren Browserkontext zu verlieren",
+        "subtitle": "Kostenlose Installation. Sparen Sie bis zu 5 Arbeitsbereiche mit dem kostenlosen Plan. Kein Konto erforderlich."
+      },
+      "related": {
+        "title": "Verwandte Arbeitsabläufe",
+        "items": [
+          {
+            "label": "Übersicht über „Organisieren und Fokussieren“.",
+            "url": "/solutions/workspace/"
+          },
+          {
+            "label": "Alle Erweiterungen",
+            "url": "/Erweiterungen/"
+          }
+        ]
+      }
+    },
+    "jobSeekers": {
+      "solution": {
+        "description": "Speichern Sie Ihr Profil einmal – Name, Kontakt, LinkedIn, Zusammenfassung des Lebenslaufs, Fähigkeiten. Besuchen Sie eine Jobbörse oder ein ATS. Die Schaltfläche ⚡ erscheint automatisch. Ein Klick füllt alle Standardfelder. AI schreibt maßgeschneiderte Antworten auf offene Fragen und verwendet dabei Ihr Profil als Kontext.",
+        "title": "Wie Autofill AI dieses Problem löst",
+        "primary": {
+          "label": "Primäres Werkzeug",
+          "name": "Donbrico Autofill AI",
+          "description": "Speichern Sie Ihr Profil einmal – Name, Kontakt, LinkedIn, Zusammenfassung des Lebenslaufs, Fähigkeiten. Besuchen Sie eine Jobbörse oder ein ATS. Die Schaltfläche ⚡ erscheint automatisch. Ein Klick füllt alle Standardfelder. AI schreibt maßgeschneiderte Antworten auf offene Fragen und verwendet dabei Ihr Profil als Kontext.",
+          "points": [
+            "Funktioniert auf LinkedIn, Indeed, Greenhouse, Lever, Workday, Ashby",
+            "AI schreibt Anschreiben und rollenspezifische Antworten aus Ihrem Profil",
+            "Speichern Sie mehrere Profile für verschiedene Rollen oder Branchen (Pro)",
+            "KI auf dem Gerät (Chrome) – Ihre Daten verlassen nie Ihren Browser"
+          ]
+        },
+        "secondary": {
+          "label": "Auch nützlich",
+          "name": "KI-Antwortassistent",
+          "description": "Erstellen Sie eine Bibliothek mit Follow-up-E-Mail-Vorlagen – Dankesbriefe, E-Mails zur Statusüberprüfung, Starter für Gehaltsverhandlungen. KI erstellt in Sekundenschnelle personalisierte Versionen für jede Anwendung.",
+          "points": [
+            "Gespeicherte Vorlagen für jede Phase des Einstellungsprozesses",
+            "KI entwirft anhand einer kurzen Eingabeaufforderung personalisierte Folgemaßnahmen"
+          ]
+        }
+      },
+      "target": {
+        "title": "Gebaut für Arbeitssuchende",
+        "chips": {
+          "0": "Aktive Arbeitssuchende",
+          "1": "Quereinsteiger",
+          "2": "Aktuelle Absolventen",
+          "3": "Remote-Mitarbeiter"
+        }
+      },
+      "page": {
+        "title": "KI-Tools für Arbeitssuchende: Bewerbungen und Anschreiben automatisch ausfüllen | Donbrico",
+        "description": "Füllen Sie Bewerbungen automatisch aus und erstellen Sie mithilfe von KI personalisierte Anschreiben. Sparen Sie Zeit bei Ihrer Jobsuche.",
+        "ogTitle": "KI-Tools für Arbeitssuchende: Bewerbungen und Anschreiben automatisch ausfüllen | Donbrico",
+        "ogDescription": "Füllen Sie Bewerbungen automatisch aus und erstellen Sie mithilfe von KI personalisierte Anschreiben. Sparen Sie Zeit bei Ihrer Jobsuche."
+      },
+      "eyebrow": "FÜR JOBSUCHENDE",
+      "breadcrumb": {
+        "2": "Für Arbeitssuchende"
+      },
+      "title": "Hören Sie auf, Ihren Lebenslauf bei jeder Bewerbung erneut abzutippen",
+      "subtitle": "Donbrico Autofill AI füllt mit einem Klick Bewerbungsformulare aus Ihrem gespeicherten Profil aus – Name, E-Mail, LinkedIn, beruflicher Werdegang, Fähigkeiten. AI schreibt die offenen Antworten wie Anschreiben und „Warum möchten Sie diese Rolle?“",
+      "pain": {
+        "title": "Was jede Jobsuche verlangsamt",
+        "items": {
+          "0": {
+            "text": "Geben Sie Ihren Namen, Ihre E-Mail-Adresse, Ihre Telefonnummer, Ihre LinkedIn-URL und Ihren beruflichen Werdegang in jedes einzelne Bewerbungsformular erneut ein – selbst wenn Ihr Lebenslauf direkt dort steht"
+          },
+          "1": {
+            "text": "Schreiben Sie für jedes „Warum möchten Sie hier arbeiten?“ eine neue Antwort auf Ihr Anschreiben. oder „Beschreiben Sie Ihre Erfahrungen mit X“."
+          },
+          "2": {
+            "text": "Verbringen Sie pro Bewerbung 20 bis 30 Minuten mit der Dateneingabe, anstatt Ihren Pitch tatsächlich anzupassen"
+          }
+        }
+      },
+      "steps": {
+        "title": "Wie es funktioniert",
+        "s1": {
+          "title": "1. Speichern Sie Ihr Profil einmal",
+          "text": "Geben Sie Ihre Kontaktdaten, LinkedIn, Ihren beruflichen Werdegang, Ihre Ausbildung und Ihre Fähigkeiten ein. Fügen Sie einen Biografieabsatz hinzu, auf den die KI zurückgreifen kann, wenn sie offene Antworten schreibt."
+        },
+        "s2": {
+          "title": "2. Besuchen Sie eine beliebige Stellenbewerbung",
+          "text": "Eröffnen Sie eine Stelle auf LinkedIn oder Indeed oder gehen Sie direkt zum ATS eines Arbeitgebers (Greenhouse, Lever, Workday, Ashby). Die Schaltfläche ⚡ erscheint, wenn ein Formular erkannt wird."
+        },
+        "s3": {
+          "title": "3. Ein Klick, dann überprüfen",
+          "text": "Klicken Sie auf ⚡, um Standardfelder sofort auszufüllen. AI entwirft Antworten auf offene Fragen basierend auf Ihrem Profil. Sie überprüfen alles, bevor Sie es absenden – es liegt immer bei Ihnen."
+        }
+      },
+      "faq": {
+        "q1": {
+          "q": "Welche Jobbörsen und ATS-Plattformen werden unterstützt?",
+          "a": "Autofill AI erkennt Formulare auf jeder Website mit Standard-HTML-Eingaben. Dazu gehören LinkedIn, Indeed, Glassdoor, Greenhouse, Lever, Workday, Ashby, SmartRecruiters und die meisten Arbeitgeber-Karriereportale."
+        },
+        "q2": {
+          "q": "Kann es Anschreiben für mich schreiben?",
+          "a": "Ja. Wenn es auf ein Anschreiben oder ein offenes Fragefeld stößt, entwirft die KI eine Antwort anhand Ihres gespeicherten Profils – Ihrer Erfahrung, Fähigkeiten und Biografie. Sie überprüfen und bearbeiten immer, bevor Sie sie einreichen."
+        },
+        "q3": {
+          "q": "Kann ich unterschiedliche Profile für unterschiedliche Rollentypen speichern?",
+          "a": "Ja – mit dem Pro-Plan (bis zu 10 Profile). Beispielsweise gibt es ein Profil, das auf Rollen im Produktmanagement zugeschnitten ist, und ein anderes auf Rollen im operativen Bereich, jeweils mit unterschiedlichen Schwerpunkten in der Biografie und besonderen Fähigkeiten."
+        },
+        "q4": {
+          "q": "Sind meine persönlichen Daten sicher?",
+          "a": "Ihr Profil wird lokal auf Ihrem Gerät gespeichert. Wenn Sie Gemini Nano (die integrierte KI von Chrome) verwenden, bleibt die gesamte KI-Verarbeitung auf dem Gerät – nichts verlässt Ihren Browser. Wenn Sie einen API-Schlüssel eines Drittanbieters verwenden, gehen die Daten nur an diesen Anbieter. Donbrico speichert Ihre Daten niemals."
+        },
+        "q5": {
+          "q": "Ist es kostenlos?",
+          "a": "Der kostenlose Plan beinhaltet unbegrenztes Ausfüllen von Formularen mit einem Profil und lokaler KI über Gemini Nano. Pro (5,99 $/Monat) bietet mehrere Profile, adaptives Lernen und die Erstellung von Anschreiben."
+        }
+      },
+      "cta": {
+        "title": "Bewerben Sie sich noch heute schneller",
+        "subtitle": "Kostenlose Installation. Kein Konto erforderlich. Funktioniert auf LinkedIn, Indeed, Greenhouse und jedem Arbeitgeber-ATS."
+      },
+      "related": {
+        "title": "Verwandte Arbeitsabläufe",
+        "items": {
+          "0": {
+            "label": "Überblick über Personalvermittler"
+          },
+          "1": {
+            "label": "Übersicht über Abfüllung und Prozess"
+          }
+        }
+      }
+    },
+    "recruiters": {
+      "cta": {
+        "title": "Beginnen Sie noch heute mit der schnelleren Rekrutierung",
+        "subtitle": "Kostenlose Installation. Funktioniert auf LinkedIn, Indeed, Greenhouse, Lever und jeder ATS-Plattform."
+      },
+      "messageLibrary": {
+        "title": "Nachrichtenbibliothek",
+        "description": "Erstellen Sie eine Bibliothek mit Outreach-Vorlagen für die Kandidatenkommunikation. KI erstellt personalisierte Versionen für jeden Kandidaten."
+      },
+      "page": {
+        "title": "KI-Tools für Personalvermittler: Automatisieren Sie Bewerbungen und ATS-Workflows | Donbrico",
+        "description": "Beschleunigen Sie die Rekrutierung mit KI, die Jobbörsen automatisch ausfüllt, Kandidatenzusammenfassungen erstellt und die manuelle ATS-Dateneingabe reduziert.",
+        "ogTitle": "KI-Tools für Personalvermittler: Automatisieren Sie Bewerbungen und ATS-Workflows | Donbrico",
+        "ogDescription": "Beschleunigen Sie die Rekrutierung mit KI, die Jobbörsen automatisch ausfüllt, Kandidatenzusammenfassungen erstellt und die manuelle ATS-Dateneingabe reduziert."
+      },
+      "eyebrow": "FÜR RECRUITERS",
+      "breadcrumb": [
+        "Heim",
+        "Lösungen",
+        "Für Personalvermittler"
+      ],
+      "title": "Personalvermittler: Automatisieren Sie die Einreichung von Stellenbörsen und die ATS-Dateneingabe mit KI",
+      "subtitle": "Donbrico Autofill AI füllt Bewerbungen und ATS-Formulare aus einem einzigen gespeicherten Profil aus – so können Sie mehr Kandidaten bearbeiten, ohne den Aufwand des Kopierens und Einfügens.",
+      "pain": {
+        "title": "Was bremst dich aus?",
+        "items": [
+          {
+            "icon": null,
+            "text": "Tägliche erneute Eingabe derselben Kandidatendaten in LinkedIn, Indeed, Greenhouse, Lever und Workday"
+          },
+          {
+            "icon": null,
+            "text": "Manuelles Verfassen von Outreach-Nachrichten für jeden Kandidaten von Grund auf"
+          },
+          {
+            "icon": null,
+            "text": "Wechseln Sie zwischen 10 Registerkarten, um dieselben Informationen in Jobbörsen und ATS-Systemen zu kopieren und einzufügen"
+          }
+        ]
+      },
+      "solution": {
+        "title": "Wie Donbrico es löst",
+        "primary": {
+          "label": "Primäres Werkzeug",
+          "name": "Donbrico Autofill AI",
+          "description": "Erkennt Formulare in jeder Jobbörse oder jedem ATS. Füllt Standardfelder (Name, E-Mail, LinkedIn, Erfahrung) aus Ihrem gespeicherten Profil mit einem Klick aus. AI schreibt benutzerdefinierte Antworten für offene Felder wie „Warum passen Sie gut zu Ihnen?“",
+          "points": [
+            "Funktioniert auf LinkedIn, Indeed, Greenhouse, Lever, Workday und mehr",
+            "Füllt mehrere Kandidatenprofile mit einer Erweiterung",
+            "KI auf dem Gerät (Chrome) – Kandidatendaten gelangen niemals auf externe Server"
+          ]
+        },
+        "secondary": {
+          "label": "Auch nützlich",
+          "name": "KI-Antwortassistent",
+          "description": "Erstellen Sie eine Bibliothek mit Vorlagen für Outreach-Nachrichten. Generieren Sie personalisierte Kandidatennachrichten mit einer Eingabeaufforderung.",
+          "points": [
+            "Gespeicherte Antwortvorlagen für gängige Outreach-Szenarien",
+            "KI entwirft kontextbezogene Antworten auf Kandidatenanfragen"
+          ]
+        }
+      },
+      "steps": {
+        "title": "So funktioniert es für Personalvermittler",
+        "s1": {
+          "title": "Speichern Sie Ihr Profil (oder Kandidatenprofile)",
+          "text": "Geben Sie die wichtigsten Informationen einmal ein: Name, Kontakt, Rollendetails, Fähigkeiten. Den Rest erledigt die Erweiterung."
+        },
+        "s2": {
+          "title": "Besuchen Sie eine Jobbörse oder ein ATS",
+          "text": "Navigieren Sie zu LinkedIn Jobs, Indeed, Greenhouse oder einem anderen formularbasierten System. Die Erweiterung wird automatisch aktiviert."
+        },
+        "s3": {
+          "title": "Ein Klick zum Ausfüllen",
+          "text": "Klicken Sie auf die ⚡-Taste. Standardfelder werden sofort ausgefüllt. Offene Fragen erhalten KI-generierte Antworten, die auf die Rolle zugeschnitten sind."
+        }
+      },
+      "faq": {
+        "q1": {
+          "q": "Funktioniert es auf LinkedIn, Greenhouse, Lever und Workday?",
+          "a": "Ja. Autofill AI erkennt Formulare auf jeder Website, einschließlich der wichtigsten ATS-Plattformen und Jobbörsen. Es funktioniert überall dort, wo HTML-Eingabefelder vorhanden sind."
+        },
+        "q2": {
+          "q": "Kann ich mehrere Kandidatenprofile speichern?",
+          "a": "Pro-Benutzer können bis zu 10 Profile speichern. Jedes Profil kann einen anderen Kandidaten oder Rollentyp repräsentieren, sodass ein einfacher Wechsel zwischen Einreichungen möglich ist."
+        },
+        "q3": {
+          "q": "Werden Kandidatendaten an einen beliebigen Server gesendet?",
+          "a": "Nein. Wenn Sie Gemini Nano (die integrierte KI von Chrome) verwenden, bleiben alle Daten auf Ihrem Gerät. Wenn Sie einen API-Schlüssel eines Drittanbieters verwenden, gehen die Daten nur an diesen Anbieter – niemals an Donbrico."
+        },
+        "q4": {
+          "q": "Wie werden Anschreibenfelder behandelt?",
+          "a": "AI Reply Assistant generiert Anschreiben und offene Antworten aus Ihrem Profil. Sie überprüfen und bearbeiten vor dem Absenden – es liegt immer bei Ihnen."
+        },
+        "q5": {
+          "q": "Ist es kostenlos?",
+          "a": "Der kostenlose Plan beinhaltet unbegrenztes Ausfüllen von Formularen mit einem Profil und lokaler KI über Gemini Nano. Pro (5,99 $/Monat) fügt mehrere Profile und erweiterte Funktionen hinzu."
+        }
+      },
+      "related": {
+        "title": "Verwandte Arbeitsabläufe",
+        "items": [
+          {
+            "label": "KI-Kommunikation für Support-Teams",
+            "url": "/solutions/support-teams/"
+          },
+          {
+            "label": "Übersicht über Abfüllung und Prozess",
+            "url": "/Lösungen/Automatisierung/"
+          }
+        ]
+      }
+    },
+    "hub": {
+      "page": {
+        "title": "KI-Workflow-Lösungen für die Arbeitsautomatisierung in Ihrem Browser | Donbrico",
+        "description": "Entdecken Sie KI-Tools für Kommunikation, Formularautomatisierung und Browser-Arbeitsbereichsverwaltung. Entwickelt für Profis, die sich wiederholende digitale Aufgaben erledigen.",
+        "ogTitle": "KI-Workflow-Lösungen für die Arbeitsautomatisierung in Ihrem Browser | Donbrico",
+        "ogDescription": "Entdecken Sie KI-Tools für Kommunikation, Formularautomatisierung und Browser-Arbeitsbereichsverwaltung. Entwickelt für Profis, die sich wiederholende digitale Aufgaben erledigen."
+      },
+      "eyebrow": "LÖSUNGEN",
+      "title": "Wählen Sie aus, was Sie in Ihren Browser-Workflows automatisieren möchten",
+      "subtitle": "Drei fokussierte Erweiterungskategorien. Jedes davon eliminiert eine bestimmte Art sich wiederholender Arbeit.",
+      "niches": {
+        "label": "SPEZIFISCHE ABLÄUFE",
+        "title": "Finden Sie Ihren genauen Anwendungsfall",
+        "subtitle": "Jede Nischenseite zeigt genau, wie Donbrico-Erweiterungen diesen Arbeitsablauf lösen."
+      },
+      "cta": {
+        "title": "Bereit zur Installation?",
+        "subtitle": "Der Start aller drei Erweiterungen ist kostenlos. Vorerst nur Chrome – Edge kommt bald.",
+        "button": "Alle Erweiterungen anzeigen →"
+      },
+      "categories": {
+        "communication": {
+          "title": "Schreiben und antworten",
+          "description": "Automatisieren Sie E-Mail-Antworten, Support-Antworten und Outreach-Nachrichten. Entwickelt für hochvolumige Kommunikationsaufgaben.",
+          "cta": "Workflow anzeigen →"
+        },
+        "automation": {
+          "title": "Füllen und verarbeiten",
+          "description": "Automatisieren Sie das wiederholte Ausfüllen von Formularen und die strukturierte Dateneingabe. Entwickelt für Personalvermittler, Administratoren und Betriebsteams.",
+          "cta": "Workflow anzeigen →"
+        },
+        "workspace": {
+          "title": "Organisieren und fokussieren",
+          "description": "Browser-Arbeitsbereiche speichern und wiederherstellen. Entwickelt für Forscher, Entwickler und komplexe Projektabläufe.",
+          "cta": "Workflow anzeigen →"
+        }
+      },
+      "workflows": {
+        "title": "SPEZIFISCHE ABLÄUFE",
+        "subtitle": "Jede Nischenseite zeigt genau, wie Donbrico-Erweiterungen diesen Arbeitsablauf lösen.",
+        "cta": "Workflow anzeigen →",
+        "supportTeams": {
+          "title": "Support-Teams",
+          "description": "KI-gestützte Antwortbibliothek für Supportmitarbeiter. Generieren Sie schneller präzise Antworten.",
+          "cta": "Workflow anzeigen →"
+        },
+        "ecommerceSupport": {
+          "title": "E-Commerce-Unterstützung",
+          "description": "Automatisieren Sie Support-Antworten auf Bestellungen, Rückerstattungen und Kundenfragen. Reduzieren Sie die Ticketlast.",
+          "cta": "Workflow anzeigen →"
+        },
+        "recruiters": {
+          "title": "Personalvermittler",
+          "description": "Beschleunigen Sie die Rekrutierung mit KI, die Jobbörsen automatisch ausfüllt, Kandidatenzusammenfassungen erstellt und die manuelle ATS-Dateneingabe reduziert.",
+          "cta": "Workflow anzeigen →"
+        },
+        "insurance": {
+          "title": "Versicherung",
+          "description": "Füllen Sie Anspruchsformulare und Versicherungsdaten mit KI-gestütztem Ausfüllen aus. Weniger Fehler, weniger Zeit.",
+          "cta": "Workflow anzeigen →"
+        },
+        "browserWorkspace": {
+          "title": "Forscher und Entwickler",
+          "description": "Organisieren Sie komplexe Browsersitzungen. Speichern Sie Arbeitsbereiche, stellen Sie sie sofort wieder her und suchen Sie mit KI.",
+          "cta": "Workflow anzeigen →"
+        },
+        "jobSeekers": {
+          "title": "Arbeitssuchende",
+          "description": "Füllen Sie Bewerbungen automatisch mit KI-generierten Anschreiben aus. Bewerben Sie sich schneller.",
+          "cta": "Workflow anzeigen →"
+        }
+      }
+    },
+    "realEstate": {
+      "page": {
+        "title": "KI-Browser-Tools für Immobilienmakler: Einträge, Kunden und Kommunikation | Donbrico",
+        "description": "Immobilienmakler sparen täglich Stunden mit KI, die Angebotsformulare ausfüllt, Kundennachmeldungen schreibt und Browser-Arbeitsbereiche pro Immobilie organisiert – alles in Chrome.",
+        "ogTitle": "KI-Browser-Tools für Immobilienmakler | Donbrico",
+        "ogDescription": "Immobilienmakler sparen täglich Stunden mit KI, die Angebotsformulare ausfüllt, Kundennachmeldungen schreibt und Browser-Arbeitsbereiche pro Immobilie organisiert – alles in Chrome."
+      },
+      "eyebrow": "FÜR IMMOBILIENMAKLER",
+      "title": "Hören Sie auf, Einträge erneut einzugeben, E-Mails neu zu schreiben und Tabs zu verlieren",
+      "subtitle": "Immobilienmakler jonglieren täglich mit Kunden, Angeboten, Portalen und Papierkram über Dutzende von Browser-Registerkarten. Die drei Erweiterungen von Donbrico reduzieren die Wiederholung: Füllen Sie jedes Formular mit einem Klick aus, antworten Sie Kunden in Sekundenschnelle und sorgen Sie für die Organisation jeder Immobilienrecherchesitzung.",
+      "pain": {
+        "title": "Wo Agenten jede Woche Stunden verlieren",
+        "items": [
+          "Erneute Eingabe derselben Immobiliendetails (Adresse, Betten, Bäder, Preis, Beschreibung) in Zillow, Redfin, Realtor.com und dem MLS – bei jedem neuen Eintrag, bei jeder Aktualisierung",
+          "Verfassen Sie 15-mal am Tag die gleichen E-Mails „Nachbereitung Ihrer Anfrage“ und „Hier sind drei Immobilien“ von Grund auf, personalisiert für jeden Kunden",
+          "Den Überblick darüber verloren, welche Tabs zu welchem ​​Kunden oder Eintrag gehören – 40 offene Tabs ohne Möglichkeit, eine Recherchesitzung der letzten Woche wiederherzustellen",
+          "Manuelles Ausfüllen von Käufer-/Verkäuferfragebögen und CRM-Kontaktformularen für jeden neuen Lead"
+        ]
+      },
+      "howEachHelpsTitle": "Wie jede Donbrico-Erweiterung hilft",
+      "aiReply": {
+        "badge": "Kundenkommunikation",
+        "title": "KI-Antwortassistent",
+        "fullDetails": "Alle Details →",
+        "description": "Erstellen Sie eine persönliche Bibliothek aller E-Mail-Typen, die Sie senden: Antworten auf Immobilienanfragen, Folgesequenzen, Anzeigebestätigungen, Angebots-/Gegenangebotsbenachrichtigungen und Abschlussstatusaktualisierungen. Wenn ein Kunde eine E-Mail sendet, personalisiert KI Ihre gespeicherte Vorlage für diesen Kunden und dieses Objekt mit einem Klick – direkt in Gmail.",
+        "templatesTitle": "Vorlagen, die Sie speichern würden:",
+        "templates": [
+          "→ Antwort auf die Immobilienanfrage",
+          "→ „Hier sind 3 Angebote für Sie“",
+          "→ Follow-up anzeigen",
+          "→ Angebot abgegeben / angenommen",
+          "→ Erläuterung des Gegenangebots",
+          "→ Abschlussaktualisierung der Zeitleiste"
+        ],
+        "timeSavedTitle": "Zeitersparnis:",
+        "timeSaved": [
+          "✓ Funktioniert in Gmail und Outlook Web",
+          "✓ Intelligente Variablen: {{client}}, {{address}}, {{price}}",
+          "✓ KI schreibt für jeden Kunden in Sekundenschnelle neu",
+          "✓ Sie überprüfen es vor dem Senden – immer"
+        ]
+      },
+      "autofill": {
+        "badge": "Ausfüllen von Formularen",
+        "title": "Autofill-KI",
+        "fullDetails": "Alle Details →",
+        "description": "Bei jedem neuen Eintrag müssen Sie dieselben Immobiliendetails bei Zillow, Redfin, Realtor.com und im MLS-Portal Ihres Maklers erneut eingeben. Autofill AI erkennt diese Formulare und füllt sie mit einem Klick aus einem gespeicherten Immobilienprofil aus. Das Gleiche gilt für Käufer-/Verkäufer-Aufnahmeformulare und CRM-Kontakteinträge.",
+        "formsTitle": "Formen, die es ausfüllt:",
+        "forms": [
+          "→ MLS-Einreichungen",
+          "→ Zillow / Realtor.com-Portale",
+          "→ Aufnahmeformulare für Käufer/Verkäufer",
+          "→ CRM-Kontakteintrag (HubSpot, Salesforce)",
+          "→ Mietantragsformulare"
+        ],
+        "howItWorksTitle": "So funktioniert es:",
+        "howItWorks": [
+          "✓ Speichern Sie Profile für Ihre eigenen Informationen und Kundeninformationen",
+          "✓ Die Schaltfläche ⚡ erscheint auf jedem Formular",
+          "✓ Mehrere Profile – pro Kunde wechseln (Pro)",
+          "✓ KI auf dem Gerät – keine Daten verlassen Chrome"
+        ]
+      },
+      "workdesk": {
+        "badge": "Registerkarte Organisation",
+        "title": "Arbeitsplatz",
+        "fullDetails": "Alle Details →",
+        "description": "Jeder aktive Eintrag verdient seinen eigenen Browser-Arbeitsbereich – MLS-Details, Straßenansicht, Nachbarschaftsdaten, Schulbewertungen, Hypothekenrechner, konkurrierende Einträge. WorkDesk speichert Ihre aktuellen Tabs mit einem Klick als benannten Arbeitsbereich und stellt die gesamte Sitzung sofort wieder her. Kein Tab-Chaos mehr, wenn Sie 6 aktive Kunden haben.",
+        "workspacesTitle": "Workspaces-Agenten erstellen:",
+        "workspaces": [
+          "→ „Familie Smith – Käufer“ (12 Registerkarten)",
+          "→ „123 Oak St Listing“ (8 Registerkarten)",
+          "→ „Marktforschung – Innenstadt“",
+          "→ „Johnson Mietsuche“"
+        ],
+        "keyFeaturesTitle": "Hauptmerkmale:",
+        "keyFeatures": [
+          "✓ KI benennt Arbeitsbereiche automatisch",
+          "✓ Stellen Sie jede Sitzung von jedem Gerät wieder her",
+          "✓ Abgeschlossene Geschäfte archivieren und bei Bedarf wiederherstellen",
+          "✓ Semantische Suche über alle Arbeitsbereiche hinweg (Pro)"
+        ]
+      },
+      "faq": {
+        "q1": {
+          "q": "Funktionieren diese Erweiterungen mit den Portalen Zillow, Realtor.com und MLS?",
+          "a": "Autofill AI funktioniert auf jeder Website mit Standard-HTML-Formularen, einschließlich Zillow, Realtor.com, Redfin und den meisten MLS-Portalen. AI Reply Assistant funktioniert in jedem Textfeld, einschließlich Gmail und Outlook Web."
+        },
+        "q2": {
+          "q": "Werden Kunden- oder Objektdaten irgendwo gespeichert?",
+          "a": "Nein. Alle Daten werden lokal in Ihrem Browser gespeichert. Die KI-Verarbeitung nutzt Gemini Nano – das integrierte On-Device-Modell von Chrome – sodass nichts an einen Server gesendet wird. Wenn Sie Ihren eigenen API-Schlüssel verwenden, steuern nur Sie, welcher Anbieter Daten erhält."
+        },
+        "q3": {
+          "q": "Kann ich für jedes Inserat ein separates Profil speichern?",
+          "a": "Ja. Autofill AI Pro ermöglicht bis zu 10 gespeicherte Profile. Erstellen Sie eines pro Haupteintrag oder Kundenprofil und wählen Sie dann das richtige aus dem Popup aus, bevor Sie ein Formular ausfüllen."
+        },
+        "q4": {
+          "q": "Kann WorkDesk Tabs aus einer vorherigen Sitzung wiederherstellen?",
+          "a": "Ja. WorkDesk speichert Ihre geöffneten Tabs als benannten Arbeitsbereich. Sie können jeden gespeicherten Arbeitsbereich jederzeit wiederherstellen, auch nach dem Schließen von Chrome. Pro-Benutzer können Arbeitsbereiche auch exportieren und darin durchsuchen."
+        },
+        "q5": {
+          "q": "Sind alle drei Erweiterungen kostenlos?",
+          "a": "Alle drei verfügen über ein großzügiges kostenloses Kontingent. AI Reply Assistant und Autofill AI schalten erweiterte Funktionen (mehrere Profile, intelligente Variablen, KI-Generierung) in Pro-Plänen ab jeweils 5,99 $/Monat frei. WorkDesk Pro hebt Arbeitsbereichsbeschränkungen auf."
+        }
+      },
+      "cta": {
+        "title": "Drei Erweiterungen. Ein stressiger Arbeitstag weniger.",
+        "subtitle": "Alles kostenlos zu installieren. Kein Konto erforderlich. Vorerst nur Chrome – Edge kommt bald auf den Markt."
+      }
+    }
+  },
+  "footer": {
+    "solutions": "Lösungen",
+    "workflows": "Arbeitsabläufe",
+    "extensions": "Erweiterungen",
+    "company": "Unternehmen",
+    "copyright": "© 2026 Donbrico Studio. Alle Rechte vorbehalten.",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "terms": "Bedingungen",
+    "allRightsReserved": "© 2026 Donbrico Studio. Alle Rechte vorbehalten."
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen"
+  },
+  "home2": {
+    "page": {
+      "title": "KI-Browser-Tools für Automatisierung, Schreib- und Workflow-Effizienz | Donbrico",
+      "description": "KI-Browsererweiterungen, die das Schreiben, Ausfüllen von Formularen und die Tab-Verwaltung automatisieren. Sparen Sie Zeit bei sich wiederholenden Arbeiten mit Tools, die für echte Arbeitsabläufe entwickelt wurden.",
+      "ogTitle": "KI-Browser-Tools für Automatisierung, Schreib- und Workflow-Effizienz | Donbrico",
+      "ogDescription": "KI-Browsererweiterungen, die das Schreiben, Ausfüllen von Formularen und die Tab-Verwaltung automatisieren. Sparen Sie Zeit bei sich wiederholenden Arbeiten mit Tools, die für echte Arbeitsabläufe entwickelt wurden."
+    },
+    "hero": {
+      "eyebrow": "KI-BROWSER-ERWEITERUNGEN",
+      "title": "KI-Browsertools, die sich wiederholende Arbeiten aus Ihren täglichen Arbeitsabläufen entfernen",
+      "subtitle": "Browser-Erweiterungen, die das Schreiben, Ausfüllen von Formularen und die Sitzungsverwaltung automatisieren – entwickelt für Profis, die schneller vorankommen müssen, ohne auf Qualität zu verzichten.",
+      "btnInstall": "Installieren Sie Erweiterungen",
+      "btnSolutions": "Entdecken Sie Lösungen"
+    },
+    "solutions": {
+      "sectionTitle": "DREI MÖGLICHKEITEN, SCHNELLER ZU ARBEITEN",
+      "sectionSubtitle": "Jede Erweiterung zielt auf eine bestimmte Art sich wiederholender Arbeit ab. Wählen Sie aus, was Sie ausbremst.",
+      "communication": {
+        "icon": null,
+        "title": "Schreiben und antworten",
+        "description": "Automatisieren Sie E-Mail-Antworten, Support-Antworten und Nachrichten. Hören Sie auf, immer wieder dieselben Antworten zu schreiben.",
+        "cta": "Entdecken →"
+      },
+      "automation": {
+        "icon": null,
+        "title": "Füllen und verarbeiten",
+        "description": "Füllen Sie Bewerbungen, CRM-Einträge, Versicherungsformulare und Verwaltungsdaten automatisch aus – mit einem Klick.",
+        "cta": "Entdecken →"
+      },
+      "workspace": {
+        "icon": null,
+        "title": "Organisieren und fokussieren",
+        "description": "Browser-Arbeitsbereiche speichern und wiederherstellen. Halten Sie Forschungssitzungen über komplexe Projekte hinweg organisiert.",
+        "cta": "Entdecken →"
+      }
+    },
+    "nullCarrierStrip": {
+      "label": "AUCH AUS DONBRICO",
+      "title": "Null Carrier – Ein Deep-Space-Signal-Puzzlespiel",
+      "description": "Ein minimalistisches, atmosphärisches Puzzlespiel für Steam. Etwas völlig anderes.",
+      "cta": "Erfahren Sie mehr →"
     }
   }
 }

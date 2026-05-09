@@ -1,133 +1,306 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="nullCarrier.page.title">Null Carrier — Deep-Space Signal Puzzle Game | Steam</title>
-    <meta name="description" data-i18n="nullCarrier.page.description" content="Operate a deep-space listening array. Tune frequencies, reconstruct signals, question your orders. A minimalist atmospheric puzzle game coming to Steam.">
-    <meta property="og:title" data-i18n="nullCarrier.page.ogTitle" content="Null Carrier — Deep-Space Signal Puzzle Game | Steam">
-    <meta property="og:description" data-i18n="nullCarrier.page.ogDescription" content="Operate a deep-space listening array. Tune frequencies, reconstruct signals, question your orders. A minimalist atmospheric puzzle game coming to Steam.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://donbrico.net/null-carrier/">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
-    <meta name="theme-color" content="#0a0a0f">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="nullCarrier.page.title">
+      Null Carrier — Deep-Space Signal Puzzle Game | Steam
+    </title>
+    <meta
+      name="description"
+      data-i18n="nullCarrier.page.description"
+      content="Operate a deep-space listening array. Tune frequencies, reconstruct signals, question your orders. A minimalist atmospheric puzzle game coming to Steam."
+    />
+    <meta
+      property="og:title"
+      data-i18n="nullCarrier.page.ogTitle"
+      content="Null Carrier — Deep-Space Signal Puzzle Game | Steam"
+    />
+    <meta
+      property="og:description"
+      data-i18n="nullCarrier.page.ogDescription"
+      content="Operate a deep-space listening array. Tune frequencies, reconstruct signals, question your orders. A minimalist atmospheric puzzle game coming to Steam."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://donbrico.net/null-carrier/" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
 
-    <link rel="canonical" href="https://donbrico.net/null-carrier/">
-</head>
-<body>
-     <nav class="nav">
-         <div class="container">
-             <a href="../" class="logo" data-i18n="app.name">Donbrico Studio</a>
-             <input type="checkbox" id="nav-toggle">
-             <label for="nav-toggle" class="hamburger">
-                 <span></span>
-                 <span></span>
-                 <span></span>
-             </label>
-               <ul class="nav-links">
-                   <li><a href="../" data-i18n="nav.home">Home</a></li>
-                   <li class="dropdown">
-                       <a href="#" class="active" data-i18n="nav.product">Product</a>
-                       <div class="dropdown-content">
-                           <a href="../autofill-ai/" data-i18n="nav.autofillAi">Autofill AI</a>
-                           <a href="../ai-reply-assistant/" data-i18n="nav.aiReplyAssistant">AI Reply Assistant</a>
-                           <a href="../workdesk/" data-i18n="nav.workDesk">WorkDesk</a>
-                           <a href="./" data-i18n="nav.nullCarrier">Null Carrier</a>
-                       </div>
-                   </li>
-                   <li><a href="../privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a></li>
-                   <li><a href="../terms/" data-i18n="nav.termsOfService">Terms of Service</a></li>
-                   <li><a href="../support/" data-i18n="nav.support">Support</a></li>
-               </ul>
-         </div>
-     </nav>
+    <link rel="canonical" href="https://donbrico.net/null-carrier/" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"
+          ><span></span><span></span><span></span
+        ></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a
+                href="/solutions/communication/"
+                data-i18n="nav.solutionsCommunication"
+                >Write &amp; Respond</a
+              >
+              <a
+                href="/solutions/automation/"
+                data-i18n="nav.solutionsAutomation"
+                >Fill &amp; Process</a
+              >
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace"
+                >Organize &amp; Focus</a
+              >
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a
+                href="/solutions/job-seekers/"
+                data-i18n="nav.solutionsJobSeekers"
+                >For Job Seekers</a
+              >
+              <a
+                href="/solutions/recruiters/"
+                data-i18n="nav.solutionsRecruiters"
+                >For Recruiters</a
+              >
+              <a
+                href="/solutions/support-teams/"
+                data-i18n="nav.solutionsSupportTeams"
+                >For Support Teams</a
+              >
+              <a
+                href="/solutions/ecommerce-support/"
+                data-i18n="nav.solutionsEcommerceSupport"
+                >For Ecommerce</a
+              >
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance"
+                >For Insurance</a
+              >
+              <a
+                href="/solutions/real-estate/"
+                data-i18n="nav.solutionsRealEstate"
+                >For Real Estate</a
+              >
+              <a
+                href="/solutions/browser-workspace/"
+                data-i18n="nav.solutionsBrowserWorkspace"
+                >Browser Workspace</a
+              >
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll"
+                >All Extensions</a
+              >
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill"
+                >Autofill AI</a
+              >
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply"
+                >AI Reply Assistant</a
+              >
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk"
+                >WorkDesk</a
+              >
+            </div>
+          </li>
+          <li>
+            <a href="/null-carrier/" class="active" data-i18n="nav.game"
+              >Game</a
+            >
+          </li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
 
-      <section class="hero">
-          <div class="container">
-              <h1 data-i18n="nullCarrier.hero.title">Signal received.<br>Source unknown.</h1>
-             <div class="terminal">
-                 <pre><span data-i18n="nullCarrier.hero.terminal.channel"></span>
+    <section class="hero">
+      <div class="container">
+        <h1 data-i18n="nullCarrier.hero.title">
+          Signal received.<br />Source unknown.
+        </h1>
+        <div class="terminal">
+          <pre><span data-i18n="nullCarrier.hero.terminal.channel"></span>
 <span data-i18n="nullCarrier.hero.terminal.timestamp"></span>
 <span data-i18n="nullCarrier.hero.terminal.bandFreq"></span>
 <span data-i18n="nullCarrier.hero.terminal.status"></span></pre>
-             </div>
-              <p class="subtitle" data-i18n="nullCarrier.hero.subtitle">You work the deep-space listening array. Tune the frequencies. Reconstruct the transmissions. Classify for Command. Don't ask questions.</p>
-              <div class="buttons">
-                  <a href="https://store.steampowered.com/app/4643740/Null_Carrier/" class="btn steam-btn" data-i18n="nullCarrier.hero.button">Wishlist on Steam →</a>
-              </div>
-              <p class="text-muted" data-i18n="nullCarrier.hero.disclaimer">PC · Coming Soon · Developed solo</p>
+        </div>
+        <p class="subtitle" data-i18n="nullCarrier.hero.subtitle">
+          You work the deep-space listening array. Tune the frequencies.
+          Reconstruct the transmissions. Classify for Command. Don't ask
+          questions.
+        </p>
+        <div class="buttons">
+          <a
+            href="https://store.steampowered.com/app/4643740/Null_Carrier/"
+            class="btn steam-btn"
+            data-i18n="nullCarrier.hero.button"
+            >Wishlist on Steam →</a
+          >
+        </div>
+        <p class="text-muted" data-i18n="nullCarrier.hero.disclaimer">
+          PC · Coming Soon · Developed solo
+        </p>
+      </div>
+      <div class="waveform"></div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <div class="video-wrapper">
+          <video controls poster="../assets/main_capsule.png">
+            <source
+              src="https://media.donbrico.net/Null%20Carrier%20trailer.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2 class="section-title" data-i18n="nullCarrier.section1.title">
+          One screen. Infinite doubt.
+        </h2>
+        <p data-i18n="nullCarrier.section1.paragraph1">
+          Every shift begins the same way. A signal arrives. You tune your
+          carrier frequency and noise gate until the waveform clears. You
+          reconstruct the transmission — a pixel pattern that might mean
+          something. You classify it and send it to Command.
+        </p>
+        <p data-i18n="nullCarrier.section1.paragraph2">
+          Command acknowledges. Another signal arrives.
+        </p>
+        <p data-i18n="nullCarrier.section1.paragraph3">
+          At shift 12, something is slightly off. At shift 23, you notice the
+          coordinates don't add up. By shift 40, you've stopped trusting the
+          readouts entirely.
+        </p>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2
+          class="section-title"
+          data-i18n="nullCarrier.mechanics.sectionTitle"
+        >
+          Mechanics
+        </h2>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+          "
+        >
+          <div class="card">
+            <h3 data-i18n="nullCarrier.mechanics.card1.title">
+              Tune to Receive
+            </h3>
+            <p data-i18n="nullCarrier.mechanics.card1.description">
+              Adjust carrier frequency and noise gate sliders. Find the lock
+              zone where clarity peaks. The signal is there — you just have to
+              find it.
+            </p>
           </div>
-          <div class="waveform"></div>
-      </section>
-
-      <section style="padding: var(--spacing-xl) 0;">
-          <div class="container">
-              <div class="video-wrapper">
-                  <video controls poster="../assets/main_capsule.png">
-                       <source src="https://media.donbrico.net/Null%20Carrier%20trailer.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                  </video>
-              </div>
+          <div class="card">
+            <h3 data-i18n="nullCarrier.mechanics.card2.title">
+              Reconstruct the Pattern
+            </h3>
+            <p data-i18n="nullCarrier.mechanics.card2.description">
+              A pixel matrix emerges from noise as your tuning improves. Each
+              cell locks in when clarity is high enough.
+            </p>
           </div>
-      </section>
-
-     <section style="padding: var(--spacing-xl) 0;">
-         <div class="container">
-             <h2 class="section-title" data-i18n="nullCarrier.section1.title">One screen. Infinite doubt.</h2>
-             <p data-i18n="nullCarrier.section1.paragraph1">Every shift begins the same way. A signal arrives. You tune your carrier frequency and noise gate until the waveform clears. You reconstruct the transmission — a pixel pattern that might mean something. You classify it and send it to Command.</p>
-             <p data-i18n="nullCarrier.section1.paragraph2">Command acknowledges. Another signal arrives.</p>
-             <p data-i18n="nullCarrier.section1.paragraph3">At shift 12, something is slightly off. At shift 23, you notice the coordinates don't add up. By shift 40, you've stopped trusting the readouts entirely.</p>
-         </div>
-     </section>
-
-     <section style="padding: var(--spacing-xl) 0;">
-         <div class="container">
-             <h2 class="section-title" data-i18n="nullCarrier.mechanics.sectionTitle">Mechanics</h2>
-             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-lg);">
-                 <div class="card">
-                     <h3 data-i18n="nullCarrier.mechanics.card1.title">Tune to Receive</h3>
-                     <p data-i18n="nullCarrier.mechanics.card1.description">Adjust carrier frequency and noise gate sliders. Find the lock zone where clarity peaks. The signal is there — you just have to find it.</p>
-                 </div>
-                 <div class="card">
-                     <h3 data-i18n="nullCarrier.mechanics.card2.title">Reconstruct the Pattern</h3>
-                     <p data-i18n="nullCarrier.mechanics.card2.description">A pixel matrix emerges from noise as your tuning improves. Each cell locks in when clarity is high enough.</p>
-                 </div>
-                 <div class="card">
-                     <h3 data-i18n="nullCarrier.mechanics.card3.title">Classify for Command</h3>
-                     <p data-i18n="nullCarrier.mechanics.card3.description">Submit your reconstruction. Command responds. Cryptically. You won't know if you were right. That's the point.</p>
-                 </div>
-                 <div class="card">
-                     <h3 data-i18n="nullCarrier.mechanics.card4.title">Read Between the Shifts</h3>
-                     <p data-i18n="nullCarrier.mechanics.card4.description">No tutorial. No objectives. Just metadata, coordinates, timestamps, and patterns. The story is only there if you look for it.</p>
-                 </div>
-             </div>
-         </div>
-     </section>
-
-     <section style="padding: var(--spacing-xl) 0;">
-         <div class="container">
-             <h2 class="section-title" data-i18n="nullCarrier.philosophy.sectionTitle">Built to feel like a real instrument.</h2>
-             <p class="section-subtitle" data-i18n="nullCarrier.philosophy.subtitle">No 3D. No cutscenes. No dialogue. The entire game is played on one screen that looks and feels like actual signal analysis hardware. Every visual element earns its place.</p>
-             <p style="text-align: center; font-size: 1.25rem; color: var(--muted);" data-i18n="nullCarrier.philosophy.tagline">Radical minimalism · Industrial UI · Systems-driven narrative</p>
-         </div>
-     </section>
-
-      <section style="padding: var(--spacing-xl) 0;">
-          <div class="container" style="text-align: center;">
-              <h2 class="section-title" data-i18n="nullCarrier.steam.sectionTitle">Coming to Steam</h2>
-              <p data-i18n="nullCarrier.steam.description">Wishlist Null Carrier on Steam to be notified at launch.</p>
-              <a href="https://store.steampowered.com/app/4643740/Null_Carrier/" class="btn steam-btn" data-i18n="nullCarrier.steam.button">Wishlist on Steam →</a>
+          <div class="card">
+            <h3 data-i18n="nullCarrier.mechanics.card3.title">
+              Classify for Command
+            </h3>
+            <p data-i18n="nullCarrier.mechanics.card3.description">
+              Submit your reconstruction. Command responds. Cryptically. You
+              won't know if you were right. That's the point.
+            </p>
           </div>
-      </section>
+          <div class="card">
+            <h3 data-i18n="nullCarrier.mechanics.card4.title">
+              Read Between the Shifts
+            </h3>
+            <p data-i18n="nullCarrier.mechanics.card4.description">
+              No tutorial. No objectives. Just metadata, coordinates,
+              timestamps, and patterns. The story is only there if you look for
+              it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-     <footer class="footer">
-         <div class="container">
-             <p data-i18n="app.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
-             <p><a href="../privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a> | <a href="../terms/" data-i18n="nav.termsOfService">Terms of Service</a> | <a href="../support/" data-i18n="nav.support">Support</a></p>
-         </div>
-     </footer>
-     <script src="../js/i18n.js" defer></script>
-     <script src="../js/chatwoot.js" defer></script>
- </body>
- </html>
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2
+          class="section-title"
+          data-i18n="nullCarrier.philosophy.sectionTitle"
+        >
+          Built to feel like a real instrument.
+        </h2>
+        <p class="section-subtitle" data-i18n="nullCarrier.philosophy.subtitle">
+          No 3D. No cutscenes. No dialogue. The entire game is played on one
+          screen that looks and feels like actual signal analysis hardware.
+          Every visual element earns its place.
+        </p>
+        <p
+          style="text-align: center; font-size: 1.25rem; color: var(--muted)"
+          data-i18n="nullCarrier.philosophy.tagline"
+        >
+          Radical minimalism · Industrial UI · Systems-driven narrative
+        </p>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container" style="text-align: center">
+        <h2 class="section-title" data-i18n="nullCarrier.steam.sectionTitle">
+          Coming to Steam
+        </h2>
+        <p data-i18n="nullCarrier.steam.description">
+          Wishlist Null Carrier on Steam to be notified at launch.
+        </p>
+        <a
+          href="https://store.steampowered.com/app/4643740/Null_Carrier/"
+          class="btn steam-btn"
+          data-i18n="nullCarrier.steam.button"
+          >Wishlist on Steam →</a
+        >
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p data-i18n="app.copyright">
+          © 2026 Donbrico Studio. All rights reserved.
+        </p>
+        <p>
+          <a href="../privacy-policy/" data-i18n="nav.privacyPolicy"
+            >Privacy Policy</a
+          >
+          |
+          <a href="../terms/" data-i18n="nav.termsOfService"
+            >Terms of Service</a
+          >
+          | <a href="../support/" data-i18n="nav.support">Support</a>
+        </p>
+      </div>
+    </footer>
+    <script src="../js/i18n.js" defer></script>
+    <script src="../js/chatwoot.js" defer></script>
+  </body>
+</html>

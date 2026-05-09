@@ -1,21 +1,9 @@
-(function(d,t) {
-  var BASE_URL="https://support.donbrico.net";
-  var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-  g.src=BASE_URL+"/packs/js/sdk.js";
-  g.defer = true;
-  g.async = true;
-  s.parentNode.insertBefore(g,s);
-  g.onload=function(){
-    window.chatwootSDK.run({
-      websiteToken: 'Lh4G8U5jNtuBe8gEWnzW8i2j',
-      baseUrl: BASE_URL
-    })
-  }
-})(document,"script");
-
-window.chatwootSettings = {
-  hideMessageBubble: false,
-  position: 'right',
-  locale: 'en',
-  type: 'standard'
-};
+window.$crisp = [];
+window.CRISP_WEBSITE_ID = "2ba6c39b-8c44-4602-a6a8-6afaafc59d0e";
+(function () {
+  var d = document;
+  var s = d.createElement("script");
+  s.src = "https://client.crisp.chat/l.js";
+  s.async = 1;
+  d.getElementsByTagName("head")[0].appendChild(s);
+})();
