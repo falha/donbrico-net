@@ -42,11 +42,13 @@
     "solutionsInsurance": "보험용",
     "solutionsSupportTeams": "지원팀용",
     "solutionsBrowserWorkspace": "브라우저 작업공간",
-    "solutionsJobSeekers": "구직자를 위한",
+    "solutionsJobSeekers": "For Job Seekers",
+    "solutionsMedicalAdmin": "For Medical Admin",
     "solutionsEcommerceSupport": "전자상거래용",
     "solutionsRealEstate": "부동산의 경우",
     "extensionsAll": "모든 확장",
     "extensionsAutofill": "AI 자동완성",
+    "extensionsMedAutoFill": "MedAutoFill",
     "extensionsReply": "AI 답장 도우미",
     "extensionsWorkdesk": "업무용 책상",
     "categories": "카테고리",
@@ -1775,11 +1777,7 @@
         "ogDescription": "주문, 환불, 고객 질문에 대한 전자상거래 지원 응답을 자동화합니다. AI 기반 응답으로 티켓 부하를 줄입니다."
       },
       "eyebrow": "전자상거래 지원을 위해",
-      "breadcrumb": [
-        "집",
-        "솔루션",
-        "전자상거래 지원"
-      ],
+      "breadcrumb": ["집", "솔루션", "전자상거래 지원"],
       "title": "전자상거래 지원팀: AI를 통해 주문, 환불, 배송 관련 질문에 더 빠르게 답변",
       "subtitle": "AI Reply Assistant를 사용하면 헬프데스크를 떠나지 않고도 브랜드 내 지원 응답 라이브러리를 구축하고 몇 초 만에 상황 인식 답변을 생성할 수 있습니다.",
       "pain": {
@@ -1923,11 +1921,7 @@
         "ogDescription": "청구, 정책 데이터 입력 및 관리 문서에 대한 AI 지원 자동화를 통해 보험 양식을 더 빠르게 작성하세요."
       },
       "eyebrow": "보험 전문가를 위한",
-      "breadcrumb": [
-        "집",
-        "솔루션",
-        "보험 워크플로우"
-      ],
+      "breadcrumb": ["집", "솔루션", "보험 워크플로우"],
       "title": "보험 전문가: AI 지원 자동 완성으로 수동 양식 입력 제거",
       "subtitle": "Donbrico Autofill AI는 저장된 데이터 프로필에서 청구 양식, 정책 입력 화면 및 관리 서류를 작성하여 반복적인 입력 오류를 줄이고 매주 시간을 절약합니다.",
       "pain": {
@@ -2043,11 +2037,7 @@
         "ogDescription": "AI를 사용해 정확한 지원 답변을 즉시 생성합니다. Shopify, SaaS 및 전자상거래 지원팀의 응답 시간을 단축합니다."
       },
       "eyebrow": "지원팀용",
-      "breadcrumb": [
-        "집",
-        "솔루션",
-        "지원팀"
-      ],
+      "breadcrumb": ["집", "솔루션", "지원팀"],
       "title": "지원 상담원: AI 지원 티켓 응답으로 응답 시간을 절반으로 단축",
       "subtitle": "AI 회신 도우미는 지원 상담원에게 개인 회신 라이브러리와 AI 초안 버튼을 제공하므로 품질이나 브랜드 음성을 희생하지 않고도 티켓에 더 빠르게 응답할 수 있습니다.",
       "pain": {
@@ -2167,11 +2157,7 @@
         "ogDescription": "AI로 브라우저 세션을 저장하고 구성하세요. 복잡한 워크플로우를 관리하는 연구자, 개발자 및 전문가에게 적합합니다."
       },
       "eyebrow": "브라우저 작업 공간 관리",
-      "breadcrumb": [
-        "집",
-        "솔루션",
-        "브라우저 작업공간"
-      ],
+      "breadcrumb": ["집", "솔루션", "브라우저 작업공간"],
       "title": "연구원 및 개발자: 브라우저 세션 손실을 중지하세요. AI로 복잡한 워크플로를 구성하세요.",
       "subtitle": "WorkDesk는 전체 브라우저 상태를 저장하고 한 번의 클릭으로 복원합니다. AI는 자동으로 탭 이름을 지정하고 그룹화하며 구성하므로 사용자는 브라우저가 아닌 작업에 집중할 수 있습니다.",
       "pain": {
@@ -2380,11 +2366,7 @@
         "ogDescription": "채용 게시판을 자동으로 채우고, 후보자 요약을 생성하고, 수동 ATS 데이터 입력을 줄이는 AI로 채용 속도를 높이세요."
       },
       "eyebrow": "채용자를 위한",
-      "breadcrumb": [
-        "집",
-        "솔루션",
-        "채용 담당자용"
-      ],
+      "breadcrumb": ["집", "솔루션", "채용 담당자용"],
       "title": "채용 담당자: AI를 통해 채용 게시판 제출 및 ATS 데이터 입력 자동화",
       "subtitle": "Donbrico Autofill AI는 저장된 단일 프로필에서 입사 지원서와 ATS 양식을 작성하므로 복사하여 붙여넣을 필요 없이 더 많은 지원자를 처리할 수 있습니다.",
       "pain": {
@@ -2715,6 +2697,137 @@
       "title": "Null Carrier — 심우주 신호 퍼즐 게임",
       "description": "미니멀한 분위기의 퍼즐 게임이 Steam에 출시됩니다. 완전히 다른 것.",
       "cta": "자세히 알아보기 →"
+    }
+  },
+  "medAutoFill": {
+    "page": {
+      "title": "MedAutoFill — Chrome용 의료 양식 자동 작성 | Donbrico",
+      "description": "보험사 포털, 사전 승인, 청구 및 환자 접수 양식을 위한 AI 자동 작성. 환자 데이터는 브라우저 내에 보관됩니다.",
+      "ogTitle": "MedAutoFill — Chrome용 의료 양식 자동 작성 | Donbrico",
+      "ogDescription": "보험사 포털, 사전 승인, 청구 및 환자 접수 양식을 위한 AI 자동 작성. 환자 데이터는 브라우저 내에 보관됩니다."
+    },
+    "hero": {
+      "badge": "의료 관리자 · Chrome 확장 프로그램",
+      "title": "의료 양식을 작성하세요.<br>클릭 한 번으로.",
+      "subtitle": "MedAutoFill은 접수, 청구, 사전 승인 팀이 보험사 포털, 환자 접수, 승인 양식을 더 빠르게 작성할 수 있도록 도움주며 — 환자 데이터를 기기에 보관하는 로컈 AI 사용.",
+      "buttonPrimary": "Chrome에 추가 — 무료",
+      "buttonSecondary": "작성 내용 보기 ↓",
+      "disclaimer": "🔒 환자 데이터는 브라우저를 벗어나지 않습니다 · Chrome의 로컈 AI · 계정 불필요"
+    },
+    "roles": {
+      "frontDesk": "접수",
+      "priorAuth": "사전 승인",
+      "billing": "의료 청구",
+      "insurance": "보험 확인",
+      "credentialing": "자격 인증 직원"
+    },
+    "howItWorks": {
+      "sectionTitle": "작동 방식",
+      "step1": {
+        "title": "1. 프로필 저장",
+        "description": "환자 정보, 보험 세부 정보, 의료 제공자 데이터 및 임상 코드를 입력합니다. 모두 브라우저에 안전하게 저장됩니다."
+      },
+      "step2": {
+        "title": "2. 모든 웹 양식 열기",
+        "description": "보험사 포털, 사전 승인 플랫폼, 자격 인증 사이트에서 작동합니다. 양식을 자동 감지합니다."
+      },
+      "step3": {
+        "title": "3. 작성 및 검토",
+        "description": "MedAutoFill이 저장된 데이터를 올바른 필드와 매칭합니다. 제출 전에 모두 검토하세요."
+      }
+    },
+    "whatItFills": {
+      "sectionTitle": "작성 내용.",
+      "patient": {
+        "title": "환자 정보",
+        "items": "이름 · 생년월일 · MRN · SSN 마지마 4자리 · 전화 · 이메일 · 주소"
+      },
+      "insurance": {
+        "title": "보험 및 보험사",
+        "items": "회원 ID · 그룹 번호 · 보험사 ID · BIN/PCN · 가입자"
+      },
+      "provider": {
+        "title": "의료 제공자 및 기관",
+        "items": "NPI · 청구 NPI · 세금 ID/EIN · 분류 코드 · 전문 분야"
+      },
+      "clinical": {
+        "title": "임상 및 승인",
+        "items": "ICD-10 코드 · CPT/HCPCS · 서비스 날짜 · POS · 사전 승인 번호"
+      }
+    },
+    "features": {
+      "sectionTitle": "의료 워크플로우를 위해 구축.",
+      "aiMatching": {
+        "title": "AI 필드 매칭",
+        "description": "보험사 포털 전반의 레이블 변형을 이해합니다."
+      },
+      "private": {
+        "title": "기본적으로 100% 비공개",
+        "description": "환자 데이터는 Chrome 로컈 스토리지에 보관됩니다. Donbrico 서버로 전송되지 않습니다."
+      },
+      "noAutoSubmit": {
+        "title": "모든 작성을 제어",
+        "description": "자동 제출 없음. 데이터 전송 전 모든 필드를 검토하세요."
+      },
+      "byok": {
+        "title": "자체 AI 키 사용",
+        "description": "향상된 필드 매칭을 위해 OpenAI, Anthropic, Groq 또는 OpenRouter 사용."
+      },
+      "multiProfile": {
+        "title": "최대 10개 프로필",
+        "description": "다양한 환자, 제공자 또는 보험 플랜을 위한 별도 프로필 저장."
+      },
+      "noAccount": {
+        "title": "계정 불필요",
+        "description": "회원가입 없음. 이메일 없음. 설치 후 즉시 시작."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "간단한 요금제.",
+      "free": {
+        "title": "무료",
+        "price": "$0",
+        "features": {
+          "f1": "하루 25회 작성",
+          "f2": "1개 저장 프로필",
+          "f3": "Gemini Nano를 통한 로컈 AI",
+          "f4": "자체 클라우드 AI 키"
+        },
+        "button": "Chrome에 추가"
+      },
+      "lifetime": {
+        "title": "Lifetime Pro",
+        "price": "$89.99 일회성",
+        "tagline": "일회성 결제 · 구독 없음",
+        "features": {
+          "f1": "무제한 작성",
+          "f2": "최대 10개 프로필",
+          "f3": "답변 기록",
+          "f4": "내보내기 및 가져오기",
+          "f5": "우선 지원",
+          "f6": "향후 모든 업데이트 포함"
+        },
+        "button": "Lifetime Pro 구매"
+      }
+    },
+    "faq": {
+      "sectionTitle": "자주 묻는 질문",
+      "q1": {
+        "question": "환자 데이터가 안전하게 저장됩니까?",
+        "answer": "네. 모든 프로필 데이터는 Chrome 로컈 스토리지에 저장됩니다. Donbrico 서버로 전송되지 않습니다."
+      },
+      "q2": {
+        "question": "Availity 및 보험사 포털에서 작동합니까?",
+        "answer": "MedAutoFill은 보험사 포털 및 사전 승인 플랫폼을 포함한 표준 웹 양식에서 작동하도록 설계되었습니다."
+      },
+      "q3": {
+        "question": "양식에 특이한 필드 레이블이 있으면 어떻게 됩니까?",
+        "answer": "MedAutoFill은 AI를 사용하여 레이블 변형을 인식합니다. 확실하지 않으면 필드를 비우고 둥니다."
+      },
+      "q4": {
+        "question": "HIPAA 준수입니까?",
+        "answer": "MedAutoFill은 데이터를 로컈에 저장합니다. Gemini Nano 사용 시 데이터가 브라우저를 벗어나지 않습니다. 컴플라이언스 팀이 사용을 평가해야 합니다."
+      }
     }
   }
 }

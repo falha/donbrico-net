@@ -78,8 +78,10 @@
     "solutionsJobSeekers": "Pour les chercheurs d'emploi",
     "solutionsEcommerceSupport": "Pour le support e-commerce",
     "solutionsRealEstate": "Pour l'immobilier",
+    "solutionsMedicalAdmin": "Pour l'administration médicale",
     "extensionsAll": "Toutes les extensions",
     "extensionsAutofill": "Autofill AI",
+    "extensionsMedAutoFill": "MedAutoFill",
     "extensionsReply": "AI Reply Assistant",
     "extensionsWorkdesk": "WorkDesk",
     "categories": "Catégories",
@@ -1638,11 +1640,7 @@
         "ogDescription": "Gagnez du temps sur la prospection de candidats. Créez une bibliothèque de réponses pour le sourcing, les suivis, les offres et les refus — puis laissez l'IA personnaliser chaque message en quelques secondes."
       },
       "eyebrow": "POUR LES RECRUTEURS",
-      "breadcrumb": [
-        "Accueil",
-        "Solutions",
-        "Pour les recruteurs"
-      ],
+      "breadcrumb": ["Accueil", "Solutions", "Pour les recruteurs"],
       "title": "Recruteurs : rédiger des messages de prospection à grande échelle avec l'IA",
       "subtitle": "Construisez une bibliothèque personnelle de messages de sourcing, suivis, offres et refus — puis laissez l'IA personnaliser chaque message pour le candidat spécifique en quelques secondes, directement dans votre navigateur.",
       "pain": {
@@ -1761,11 +1759,7 @@
         "ogDescription": "Automatisez les réponses de support e-commerce pour les commandes, remboursements et questions des clients. Réduisez la charge de tickets avec des réponses alimentées par l'IA."
       },
       "eyebrow": "POUR LE SUPPORT E-COMMERCE",
-      "breadcrumb": [
-        "Accueil",
-        "Solutions",
-        "Support E-commerce"
-      ],
+      "breadcrumb": ["Accueil", "Solutions", "Support E-commerce"],
       "title": "Équipes de support e-commerce : répondez aux commandes, remboursements et questions d'expédition plus rapidement avec l'IA",
       "subtitle": "AI Reply Assistant vous permet de créer une bibliothèque de réponses de support cohérentes avec la marque et de générer des réponses contextuelles en quelques secondes — sans quitter votre helpdesk.",
       "pain": {
@@ -2571,6 +2565,137 @@
       "title": "Contactez-nous",
       "description": "Questions, commentaires ou demandes de partenariat :",
       "responseTime": "Réponse sous 1–2 jours ouvrables. Opération solo — chaque message est lu."
+    }
+  },
+  "medAutoFill": {
+    "page": {
+      "title": "MedAutoFill — Remplissage de Formulaires Médicaux pour Chrome | Donbrico",
+      "description": "Remplissage automatique IA pour les portails payeurs, autorisation préalable, facturation et formulaires d'admission. Les données patients restent dans votre navigateur.",
+      "ogTitle": "MedAutoFill — Remplissage de Formulaires Médicaux pour Chrome | Donbrico",
+      "ogDescription": "Remplissage automatique IA pour les portails payeurs, autorisation préalable, facturation et formulaires d'admission. Les données patients restent dans votre navigateur."
+    },
+    "hero": {
+      "badge": "ADMIN MÉDICAL · EXTENSION CHROME",
+      "title": "Remplissez les formulaires médicaux.<br>En un clic.",
+      "subtitle": "MedAutoFill aide les équipes d'accueil, de facturation et d'autorisation préalable à remplir les portails payeurs, les formulaires d'admission et d'autorisation plus rapidement — avec une IA locale qui garde les données sur votre appareil.",
+      "buttonPrimary": "Ajouter à Chrome — Gratuit",
+      "buttonSecondary": "Voir ce qu'il remplit ↓",
+      "disclaimer": "🔒 Les données patients ne quittent jamais le navigateur · IA locale sur Chrome · Aucun compte requis"
+    },
+    "roles": {
+      "frontDesk": "Accueil",
+      "priorAuth": "Autorisation Préalable",
+      "billing": "Facturation Médicale",
+      "insurance": "Vérification des Assurances",
+      "credentialing": "Crédentialisation"
+    },
+    "howItWorks": {
+      "sectionTitle": "Comment ça fonctionne",
+      "step1": {
+        "title": "1. Enregistrez vos profils",
+        "description": "Saisissez les informations du patient, les détails de l'assurance, les données du prestataire et les codes cliniques. Tout stocké sécurié dans votre navigateur."
+      },
+      "step2": {
+        "title": "2. Ouvrez n'importe quel formulaire",
+        "description": "Fonctionne sur les portails payeurs, les plateformes d'autorisation préalable et les sites de crédentialisation. Détection automatique."
+      },
+      "step3": {
+        "title": "3. Remplissez et vérifiez",
+        "description": "MedAutoFill associe vos données aux bons champs. Vérifiez tout avant de soumettre."
+      }
+    },
+    "whatItFills": {
+      "sectionTitle": "Ce qu'il remplit.",
+      "patient": {
+        "title": "Informations Patient",
+        "items": "Nom · Date naissance · MRN · 4 derniers SSN · Téléphone · Email · Adresse"
+      },
+      "insurance": {
+        "title": "Assurance & Payeur",
+        "items": "ID membre · Groupe # · ID payeur · BIN/PCN · Abonné"
+      },
+      "provider": {
+        "title": "Prestataire & Cabinet",
+        "items": "NPI prestataire · NPI facturation · Tax ID/EIN · Code taxonomie · Spécialité"
+      },
+      "clinical": {
+        "title": "Clinique & Autorisation",
+        "items": "Codes ICD-10 · CPT/HCPCS · Date de service · POS · Numéros d'autorisation"
+      }
+    },
+    "features": {
+      "sectionTitle": "Conçu pour les flux de travail de santé.",
+      "aiMatching": {
+        "title": "Correspondance de champs IA",
+        "description": "Comprend les variations d'étiquettes sur les portails payeurs."
+      },
+      "private": {
+        "title": "100% privé par défaut",
+        "description": "Les données patients restent dans le stockage local de Chrome. Jamais envoyées aux serveurs Donbrico."
+      },
+      "noAutoSubmit": {
+        "title": "Vous contrôlez chaque remplissage",
+        "description": "Pas de soumission automatique. Vérifiez chaque champ avant envoi."
+      },
+      "byok": {
+        "title": "Utilisez votre propre clé IA",
+        "description": "OpenAI, Anthropic, Groq ou OpenRouter pour une correspondance améliorée."
+      },
+      "multiProfile": {
+        "title": "Jusqu'à 10 profils",
+        "description": "Profils séparés pour différents patients, prestataires ou plans d'assurance."
+      },
+      "noAccount": {
+        "title": "Aucun compte requis",
+        "description": "Pas d'inscription. Pas d'email. Installez et commencez immédiatement."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Tarification simple.",
+      "free": {
+        "title": "Gratuit",
+        "price": "$0",
+        "features": {
+          "f1": "25 remplissages par jour",
+          "f2": "1 profil enregistré",
+          "f3": "IA locale via Gemini Nano",
+          "f4": "Votre propre clé IA cloud"
+        },
+        "button": "Ajouter à Chrome"
+      },
+      "lifetime": {
+        "title": "Lifetime Pro",
+        "price": "89,99 $ unique",
+        "tagline": "Paiement unique · Sans abonnement",
+        "features": {
+          "f1": "Remplissages illimités",
+          "f2": "Jusqu'à 10 profils",
+          "f3": "Historique des réponses",
+          "f4": "Export & import",
+          "f5": "Support prioritaire",
+          "f6": "Toutes les mises à jour futures"
+        },
+        "button": "Obtenir Lifetime Pro"
+      }
+    },
+    "faq": {
+      "sectionTitle": "FAQ",
+      "q1": {
+        "question": "Les données patients sont-elles stockées de façon sécurisée ?",
+        "answer": "Oui. Toutes les données sont stockées dans le stockage local de Chrome. Jamais envoyées aux serveurs Donbrico."
+      },
+      "q2": {
+        "question": "Fonctionne-t-il sur les portails payeurs ?",
+        "answer": "MedAutoFill est conçu pour les formulaires web standard, y compris les portails payeurs et les plateformes d'autorisation préalable."
+      },
+      "q3": {
+        "question": "Que faire si un formulaire utilise des étiquettes inhabituelles ?",
+        "answer": "MedAutoFill utilise l'IA pour reconnaître les variations. Si la correspondance n'est pas certaine, le champ est laissé vide."
+      },
+      "q4": {
+        "question": "Est-ce conforme HIPAA ?",
+        "answer": "MedAutoFill stocke les données localement. Avec Gemini Nano, rien ne quitte le navigateur. Votre équipe de conformité doit évaluer l'utilisation."
+      }
     }
   }
 }

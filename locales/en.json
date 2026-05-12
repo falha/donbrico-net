@@ -1035,10 +1035,12 @@
     "solutionsSupportTeams": "For Support Teams",
     "solutionsBrowserWorkspace": "Browser Workspace",
     "solutionsJobSeekers": "For Job Seekers",
+    "solutionsMedicalAdmin": "For Medical Admin",
     "solutionsEcommerceSupport": "For Ecommerce",
     "solutionsRealEstate": "For Real Estate",
     "extensionsAll": "All Extensions",
     "extensionsAutofill": "Autofill AI",
+    "extensionsMedAutoFill": "MedAutoFill",
     "extensionsReply": "AI Reply Assistant",
     "extensionsWorkdesk": "WorkDesk",
     "categories": "Categories",
@@ -2643,6 +2645,137 @@
         "text1": "Donbrico Autofill AI gracefully falls back to your Bring Your Own Key API key (OpenAI, Anthropic, Groq, or OpenRouter) whenever Gemini Nano isn't available. You'll never be left without AI completions.",
         "text2": "If neither Gemini Nano nor an API key is configured, the extension will show a friendly prompt guiding you to set one up. You can always add an API key in the extension's settings panel.",
         "tip": "Need an API key? See the <a href=\"/docs-api-keys.html\" style=\"color:var(--indigo);text-decoration:none;font-weight:500;\">API Keys guide</a> to get one from OpenAI, Anthropic, Groq, or OpenRouter in under 5 minutes."
+      }
+    }
+  },
+  "medAutoFill": {
+    "page": {
+      "title": "MedAutoFill — Medical Form Autofill for Chrome | Donbrico",
+      "description": "AI-powered autofill for payer portals, prior auth, billing, and patient intake forms. Patient data stays local in your browser. Free Chrome extension for medical admins.",
+      "ogTitle": "MedAutoFill — Medical Form Autofill for Chrome | Donbrico",
+      "ogDescription": "AI-powered autofill for payer portals, prior auth, billing, and patient intake forms. Patient data stays local in your browser. Free Chrome extension for medical admins."
+    },
+    "hero": {
+      "badge": "MEDICAL ADMIN · CHROME EXTENSION",
+      "title": "Fill medical forms.<br>In one click.",
+      "subtitle": "MedAutoFill helps front desk, billing, and prior auth teams fill payer portals, patient intake, and authorization forms faster — with local AI that keeps patient data on your device.",
+      "buttonPrimary": "Add to Chrome — Free",
+      "buttonSecondary": "See what it fills ↓",
+      "disclaimer": "🔒 Patient data never leaves your browser · Local AI on Chrome · No account required"
+    },
+    "roles": {
+      "frontDesk": "Front Desk",
+      "priorAuth": "Prior Authorization",
+      "billing": "Medical Billing",
+      "insurance": "Insurance Verification",
+      "credentialing": "Credentialing Staff"
+    },
+    "howItWorks": {
+      "sectionTitle": "How It Works",
+      "step1": {
+        "title": "1. Save your profiles",
+        "description": "Enter patient info, insurance details, provider data, and clinical codes. Everything stored securely in your browser."
+      },
+      "step2": {
+        "title": "2. Open any web form",
+        "description": "Works on payer portals, prior auth platforms, EHR web portals, and credentialing sites. Detects forms automatically."
+      },
+      "step3": {
+        "title": "3. Fill and review",
+        "description": "MedAutoFill matches your saved data to the right fields. Review everything before submitting — you're always in control."
+      }
+    },
+    "whatItFills": {
+      "sectionTitle": "What it fills.",
+      "patient": {
+        "title": "Patient Information",
+        "items": "Name · DOB · MRN · SSN last 4 · Phone · Email · Address"
+      },
+      "insurance": {
+        "title": "Insurance & Payer",
+        "items": "Member ID · Group # · Payer ID · BIN/PCN · Subscriber name & DOB"
+      },
+      "provider": {
+        "title": "Provider & Practice",
+        "items": "Rendering NPI · Billing NPI · Tax ID/EIN · Taxonomy code · Specialty"
+      },
+      "clinical": {
+        "title": "Clinical & Authorization",
+        "items": "ICD-10 codes · CPT/HCPCS · Date of service · POS · Prior auth numbers"
+      }
+    },
+    "features": {
+      "sectionTitle": "Built for healthcare workflows.",
+      "aiMatching": {
+        "title": "AI field matching",
+        "description": "Understands label variations across payer portals — \"Member Information\", \"Rendering Provider\", \"Subscriber\"."
+      },
+      "private": {
+        "title": "100% private by default",
+        "description": "Patient data stays in Chrome's local storage on your device. Never sent to Donbrico servers."
+      },
+      "noAutoSubmit": {
+        "title": "You control every fill",
+        "description": "No auto-submit. Review every field before any data is submitted. You stay in control at all times."
+      },
+      "byok": {
+        "title": "Bring your own AI key",
+        "description": "Use OpenAI, Anthropic, Groq, or OpenRouter for enhanced field matching on any device."
+      },
+      "multiProfile": {
+        "title": "Up to 10 profiles",
+        "description": "Store separate profiles for different patients, providers, or insurance plans."
+      },
+      "noAccount": {
+        "title": "No account needed",
+        "description": "No sign-up. No email. Install and start filling immediately."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Simple pricing.",
+      "free": {
+        "title": "Free",
+        "price": "$0",
+        "features": {
+          "f1": "25 fills per day",
+          "f2": "1 saved profile",
+          "f3": "Local AI via Gemini Nano",
+          "f4": "Bring your own cloud AI key"
+        },
+        "button": "Add to Chrome"
+      },
+      "lifetime": {
+        "title": "Lifetime Pro",
+        "price": "$89.99 one-time",
+        "tagline": "One-time payment · No subscription ever",
+        "features": {
+          "f1": "Unlimited fills",
+          "f2": "Up to 10 saved profiles",
+          "f3": "Answer history",
+          "f4": "Export & import backups",
+          "f5": "Priority support",
+          "f6": "All future updates included"
+        },
+        "button": "Get Lifetime Pro"
+      }
+    },
+    "faq": {
+      "sectionTitle": "FAQ",
+      "q1": {
+        "question": "Is patient data stored securely?",
+        "answer": "Yes. All saved profile data is stored in Chrome's local storage on your device. It is never sent to Donbrico's servers. When using Gemini Nano (Chrome's built-in AI), everything stays entirely local."
+      },
+      "q2": {
+        "question": "Does it work on Availity, CoverMyMeds, and payer portals?",
+        "answer": "MedAutoFill is designed to work on standard web forms including payer portals, prior auth platforms, credentialing sites, and EHR web portals. Compatibility varies by website structure and form implementation."
+      },
+      "q3": {
+        "question": "What if a form uses unusual field labels?",
+        "answer": "MedAutoFill uses AI-assisted matching to recognize label variations — such as \"Member Information\", \"Rendering Provider\", or \"Subscriber\". If it cannot confidently match a field, it leaves it empty for you to fill manually."
+      },
+      "q4": {
+        "question": "Is this HIPAA compliant?",
+        "answer": "MedAutoFill stores data locally on your device. When using local AI (Gemini Nano), no data leaves your browser. If you enable a cloud AI provider, data is sent to them per their policies. Your organization's compliance team should evaluate usage for your specific requirements."
       }
     }
   }

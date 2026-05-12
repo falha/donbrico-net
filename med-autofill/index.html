@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="medAutoFill.page.title">
+      MedAutoFill — Medical Form Autofill for Chrome | Donbrico
+    </title>
+    <meta
+      name="description"
+      data-i18n="medAutoFill.page.description"
+      content="AI-powered autofill for payer portals, prior auth, billing, and patient intake forms. Patient data stays local in your browser. Free Chrome extension for medical admins."
+    />
+    <meta
+      property="og:title"
+      data-i18n="medAutoFill.page.ogTitle"
+      content="MedAutoFill — Medical Form Autofill for Chrome | Donbrico"
+    />
+    <meta
+      property="og:description"
+      data-i18n="medAutoFill.page.ogDescription"
+      content="AI-powered autofill for payer portals, prior auth, billing, and patient intake forms. Patient data stays local in your browser. Free Chrome extension for medical admins."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://donbrico.net/med-autofill/" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/med-autofill/" />
+    <style>
+      .role-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin-top: var(--spacing-lg);
+      }
+      .role-tag {
+        background: rgba(99, 102, 241, 0.12);
+        border: 1px solid rgba(99, 102, 241, 0.3);
+        color: #a5b4fc;
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+      }
+      .fill-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: var(--spacing-lg);
+      }
+      .fill-card {
+        background: rgba(99, 102, 241, 0.06);
+        border: 1px solid rgba(99, 102, 241, 0.2);
+        border-radius: 12px;
+        padding: var(--spacing-lg);
+      }
+      .fill-card-icon {
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+        display: block;
+      }
+      .fill-card h4 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #e8e8f0;
+      }
+      .fill-card p {
+        font-size: 0.85rem;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: var(--spacing-lg);
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      .badge-medical {
+        display: inline-block;
+        background: rgba(34, 197, 94, 0.12);
+        border: 1px solid rgba(34, 197, 94, 0.3);
+        color: #4ade80;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        padding: 3px 10px;
+        border-radius: 4px;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"
+          ><span></span><span></span><span></span
+        ></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/ecommerce-support/" data-i18n="nav.solutionsEcommerceSupport">For Ecommerce</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" class="active" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+            </div>
+          </li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ── Hero ─────────────────────────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="container">
+        <span class="badge-medical" data-i18n="medAutoFill.hero.badge">MEDICAL ADMIN · CHROME EXTENSION</span>
+        <h1 data-i18n="medAutoFill.hero.title">
+          Fill medical forms.<br />In one click.
+        </h1>
+        <p class="subtitle" data-i18n="medAutoFill.hero.subtitle">
+          MedAutoFill helps front desk, billing, and prior auth teams fill payer
+          portals, patient intake, and authorization forms faster — with local AI
+          that keeps patient data on your device.
+        </p>
+        <div class="install-group">
+          <a
+            href="https://chromewebstore.google.com/detail/medautofill-medical-admin-autofill/cnpmpohneoaakpllhkaieoognepcalai"
+            class="btn"
+            data-i18n="medAutoFill.hero.buttonPrimary"
+            >Add to Chrome — Free</a
+          >
+          <a
+            href="#what-it-fills"
+            class="btn-outline"
+            data-i18n="medAutoFill.hero.buttonSecondary"
+            >See what it fills ↓</a
+          >
+        </div>
+        <p
+          class="text-muted"
+          style="margin-top: var(--spacing-md)"
+          data-i18n="medAutoFill.hero.disclaimer"
+        >
+          🔒 Patient data never leaves your browser · Local AI on Chrome · No
+          account required
+        </p>
+
+        <!-- Role tags -->
+        <div class="role-tags">
+          <span class="role-tag" data-i18n="medAutoFill.roles.frontDesk">Front Desk</span>
+          <span class="role-tag" data-i18n="medAutoFill.roles.priorAuth">Prior Authorization</span>
+          <span class="role-tag" data-i18n="medAutoFill.roles.billing">Medical Billing</span>
+          <span class="role-tag" data-i18n="medAutoFill.roles.insurance">Insurance Verification</span>
+          <span class="role-tag" data-i18n="medAutoFill.roles.credentialing">Credentialing Staff</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── How It Works ──────────────────────────────────────────────────────── -->
+    <section id="how-it-works" style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2 class="section-title" data-i18n="medAutoFill.howItWorks.sectionTitle">
+          How It Works
+        </h2>
+        <div style="display: flex; gap: var(--spacing-lg); justify-content: center; flex-wrap: wrap;">
+          <div class="card" style="flex: 1; min-width: 250px">
+            <h3 data-i18n="medAutoFill.howItWorks.step1.title">1. Save your profiles</h3>
+            <p data-i18n="medAutoFill.howItWorks.step1.description">
+              Enter patient info, insurance details, provider data, and clinical
+              codes. Everything stored securely in your browser.
+            </p>
+          </div>
+          <div class="card" style="flex: 1; min-width: 250px">
+            <h3 data-i18n="medAutoFill.howItWorks.step2.title">2. Open any web form</h3>
+            <p data-i18n="medAutoFill.howItWorks.step2.description">
+              Works on payer portals, prior auth platforms, EHR web portals, and
+              credentialing sites. Detects forms automatically.
+            </p>
+          </div>
+          <div class="card" style="flex: 1; min-width: 250px">
+            <h3 data-i18n="medAutoFill.howItWorks.step3.title">3. Fill and review</h3>
+            <p data-i18n="medAutoFill.howItWorks.step3.description">
+              MedAutoFill matches your saved data to the right fields. Review
+              everything before submitting — you're always in control.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── What It Fills ─────────────────────────────────────────────────────── -->
+    <section id="what-it-fills" style="padding: var(--spacing-xl) 0; background: rgba(99,102,241,0.03); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border)">
+      <div class="container">
+        <h2 class="section-title" data-i18n="medAutoFill.whatItFills.sectionTitle">
+          What it fills.
+        </h2>
+        <div class="fill-grid">
+          <div class="fill-card">
+            <span class="fill-card-icon">🧑‍⚕️</span>
+            <h4 data-i18n="medAutoFill.whatItFills.patient.title">Patient Information</h4>
+            <p data-i18n="medAutoFill.whatItFills.patient.items">
+              Name · DOB · MRN · SSN last 4 · Phone · Email · Address
+            </p>
+          </div>
+          <div class="fill-card">
+            <span class="fill-card-icon">🏥</span>
+            <h4 data-i18n="medAutoFill.whatItFills.insurance.title">Insurance &amp; Payer</h4>
+            <p data-i18n="medAutoFill.whatItFills.insurance.items">
+              Member ID · Group # · Payer ID · BIN/PCN · Subscriber name &amp; DOB
+            </p>
+          </div>
+          <div class="fill-card">
+            <span class="fill-card-icon">🩺</span>
+            <h4 data-i18n="medAutoFill.whatItFills.provider.title">Provider &amp; Practice</h4>
+            <p data-i18n="medAutoFill.whatItFills.provider.items">
+              Rendering NPI · Billing NPI · Tax ID/EIN · Taxonomy code · Specialty
+            </p>
+          </div>
+          <div class="fill-card">
+            <span class="fill-card-icon">📋</span>
+            <h4 data-i18n="medAutoFill.whatItFills.clinical.title">Clinical &amp; Authorization</h4>
+            <p data-i18n="medAutoFill.whatItFills.clinical.items">
+              ICD-10 codes · CPT/HCPCS · Date of service · POS · Prior auth numbers
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Features ──────────────────────────────────────────────────────────── -->
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2 class="section-title" data-i18n="medAutoFill.features.sectionTitle">
+          Built for healthcare workflows.
+        </h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-lg);">
+          <div class="card">
+            <h4 data-i18n="medAutoFill.features.aiMatching.title">AI field matching</h4>
+            <p data-i18n="medAutoFill.features.aiMatching.description">
+              Understands label variations across payer portals — "Member
+              Information", "Rendering Provider", "Subscriber".
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="medAutoFill.features.private.title">100% private by default</h4>
+            <p data-i18n="medAutoFill.features.private.description">
+              Patient data stays in Chrome's local storage on your device. Never
+              sent to Donbrico servers.
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="medAutoFill.features.noAutoSubmit.title">You control every fill</h4>
+            <p data-i18n="medAutoFill.features.noAutoSubmit.description">
+              No auto-submit. Review every field before any data is submitted.
+              You stay in control at all times.
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="medAutoFill.features.byok.title">Bring your own AI key</h4>
+            <p data-i18n="medAutoFill.features.byok.description">
+              Use OpenAI, Anthropic, Groq, or OpenRouter for enhanced field
+              matching on any device.
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="medAutoFill.features.multiProfile.title">Up to 10 profiles</h4>
+            <p data-i18n="medAutoFill.features.multiProfile.description">
+              Store separate profiles for different patients, providers, or
+              insurance plans.
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="medAutoFill.features.noAccount.title">No account needed</h4>
+            <p data-i18n="medAutoFill.features.noAccount.description">
+              No sign-up. No email. Install and start filling immediately.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Pricing ───────────────────────────────────────────────────────────── -->
+    <section style="padding: var(--spacing-xl) 0; background: rgba(99,102,241,0.03); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border)">
+      <div class="container">
+        <h2 class="section-title" data-i18n="medAutoFill.pricing.sectionTitle">
+          Simple pricing.
+        </h2>
+        <div class="pricing-grid">
+          <!-- Free -->
+          <div class="card" style="border: 2px solid var(--accent)">
+            <h3 data-i18n="medAutoFill.pricing.free.title">Free</h3>
+            <p style="font-size: 2rem; font-weight: 700; color: var(--accent)"
+               data-i18n="medAutoFill.pricing.free.price">$0</p>
+            <ul>
+              <li data-i18n="medAutoFill.pricing.free.features.f1">25 fills per day</li>
+              <li data-i18n="medAutoFill.pricing.free.features.f2">1 saved profile</li>
+              <li data-i18n="medAutoFill.pricing.free.features.f3">Local AI via Gemini Nano</li>
+              <li data-i18n="medAutoFill.pricing.free.features.f4">Bring your own cloud AI key</li>
+            </ul>
+            <a
+              href="https://chromewebstore.google.com/detail/medautofill-medical-admin-autofill/cnpmpohneoaakpllhkaieoognepcalai"
+              class="btn"
+              data-i18n="medAutoFill.pricing.free.button"
+              >Add to Chrome</a
+            >
+          </div>
+          <!-- Lifetime Pro -->
+          <div class="card" style="border: 2px solid #ffd700">
+            <h3 data-i18n="medAutoFill.pricing.lifetime.title">Lifetime Pro</h3>
+            <p style="font-size: 2rem; font-weight: 700; color: #ffd700"
+               data-i18n="medAutoFill.pricing.lifetime.price">$89.99 one-time</p>
+            <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 12px"
+               data-i18n="medAutoFill.pricing.lifetime.tagline">One-time payment · No subscription ever</p>
+            <ul>
+              <li data-i18n="medAutoFill.pricing.lifetime.features.f1">Unlimited fills</li>
+              <li data-i18n="medAutoFill.pricing.lifetime.features.f2">Up to 10 saved profiles</li>
+              <li data-i18n="medAutoFill.pricing.lifetime.features.f3">Answer history</li>
+              <li data-i18n="medAutoFill.pricing.lifetime.features.f4">Export &amp; import backups</li>
+              <li data-i18n="medAutoFill.pricing.lifetime.features.f5">Priority support</li>
+              <li data-i18n="medAutoFill.pricing.lifetime.features.f6">All future updates included</li>
+            </ul>
+            <a
+              href="https://checkout.dodopayments.com/buy/pdt_0NeYhltbL3446BvDvjpUF?quantity=1&redirect_url=https%3A%2F%2Fdonbrico.net%2Factivate.html"
+              class="btn"
+              data-i18n="medAutoFill.pricing.lifetime.button"
+              >Get Lifetime Pro</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ───────────────────────────────────────────────────────────────── -->
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2 class="section-title" data-i18n="medAutoFill.faq.sectionTitle">FAQ</h2>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary style="cursor: pointer; font-weight: 600"
+                   data-i18n="medAutoFill.faq.q1.question">
+            Is patient data stored securely?
+          </summary>
+          <p data-i18n="medAutoFill.faq.q1.answer">
+            Yes. All saved profile data is stored in Chrome's local storage on
+            your device. It is never sent to Donbrico's servers. When using
+            Gemini Nano (Chrome's built-in AI), everything stays entirely local.
+          </p>
+        </details>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary style="cursor: pointer; font-weight: 600"
+                   data-i18n="medAutoFill.faq.q2.question">
+            Does it work on Availity, CoverMyMeds, and payer portals?
+          </summary>
+          <p data-i18n="medAutoFill.faq.q2.answer">
+            MedAutoFill is designed to work on standard web forms including
+            payer portals, prior auth platforms, credentialing sites, and EHR
+            web portals. Compatibility varies by website structure and form
+            implementation.
+          </p>
+        </details>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary style="cursor: pointer; font-weight: 600"
+                   data-i18n="medAutoFill.faq.q3.question">
+            What if a form uses unusual field labels?
+          </summary>
+          <p data-i18n="medAutoFill.faq.q3.answer">
+            MedAutoFill uses AI-assisted matching to recognize label variations —
+            such as "Member Information", "Rendering Provider", or "Subscriber".
+            If it cannot confidently match a field, it leaves it empty for you
+            to fill manually.
+          </p>
+        </details>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary style="cursor: pointer; font-weight: 600"
+                   data-i18n="medAutoFill.faq.q4.question">
+            Is this HIPAA compliant?
+          </summary>
+          <p data-i18n="medAutoFill.faq.q4.answer">
+            MedAutoFill stores data locally on your device. When using local AI
+            (Gemini Nano), no data leaves your browser. If you enable a cloud AI
+            provider, data is sent to them per their policies. Your
+            organization's compliance team should evaluate usage for your
+            specific requirements.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ── Footer ────────────────────────────────────────────────────────────── -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../js/i18n.js" defer></script>
+    <script src="../js/chatwoot.js" defer></script>
+  </body>
+</html>

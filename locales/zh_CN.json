@@ -36,17 +36,11 @@
     "game": "游戏",
     "solutionsCommunication": "写信并回复",
     "solutionsAutomation": "填充和处理",
-    "solutionsWorkspace": "组织和重点",
-    "solutionsRecruiters": "对于招聘人员",
-    "solutionsEcommerce": "电子商务支持",
-    "solutionsInsurance": "对于保险",
-    "solutionsSupportTeams": "对于支持团队",
-    "solutionsBrowserWorkspace": "浏览器工作区",
-    "solutionsJobSeekers": "对于求职者",
-    "solutionsEcommerceSupport": "对于电子商务",
-    "solutionsRealEstate": "对于房地产",
-    "extensionsAll": "所有扩展",
-    "extensionsAutofill": "自动填充人工智能",
+    "extensionsMedAutoFill": "MedAutoFill",
+    "extensionsReply": "",
+    "extensionsWorkdesk": "",
+    "categories": "",
+    "byRole": ""
     "extensionsReply": "人工智能回复助手",
     "extensionsWorkdesk": "办公桌",
     "categories": "类别",
@@ -1806,11 +1800,7 @@
         "ogDescription": "自动回复订单、退款和客户问题的电子商务支持。通过人工智能驱动的响应减少工单负载。"
       },
       "eyebrow": "电子商务支持",
-      "breadcrumb": [
-        "家",
-        "解决方案",
-        "电子商务支持"
-      ],
+      "breadcrumb": ["家", "解决方案", "电子商务支持"],
       "title": "电子商务支持团队：利用人工智能更快地回答订单、退款和运输问题",
       "subtitle": "AI Reply Assistant 可让您构建品牌支持响应库，并在几秒钟内生成上下文感知答案 - 无需离开帮助台。",
       "pain": {
@@ -1954,11 +1944,7 @@
         "ogDescription": "通过人工智能辅助的索赔、保单数据输入和管理文档自动化，更快地填写保险表格。"
       },
       "eyebrow": "对于保险专业人士",
-      "breadcrumb": [
-        "家",
-        "解决方案",
-        "保险工作流程"
-      ],
+      "breadcrumb": ["家", "解决方案", "保险工作流程"],
       "title": "保险专业人士：通过人工智能辅助自动填充消除手动表格输入",
       "subtitle": "Donbrico Autofill AI 通过保存的数据配置文件填写索赔表、保单输入屏幕和管理文书工作 - 减少重复输入错误并每周节省时间。",
       "pain": {
@@ -2074,11 +2060,7 @@
         "ogDescription": "使用 AI 立即生成准确的支持回复。缩短 Shopify、SaaS 和电子商务支持团队的响应时间。"
       },
       "eyebrow": "对于支持团队",
-      "breadcrumb": [
-        "家",
-        "解决方案",
-        "支持团队"
-      ],
+      "breadcrumb": ["家", "解决方案", "支持团队"],
       "title": "支持代理：通过人工智能辅助工单响应将回复时间缩短一半",
       "subtitle": "AI 回复助手为支持代理提供了个人回复库和 AI 草稿按钮，这样他们就可以更快地回复请求，而不会牺牲质量或品牌形象。",
       "pain": {
@@ -2198,11 +2180,7 @@
         "ogDescription": "使用 AI 保存和组织浏览器会话。非常适合管理复杂工作流程的研究人员、开发人员和专业人员。"
       },
       "eyebrow": "浏览器工作区管理",
-      "breadcrumb": [
-        "家",
-        "解决方案",
-        "浏览器工作区"
-      ],
+      "breadcrumb": ["家", "解决方案", "浏览器工作区"],
       "title": "研究人员和开发人员：停止丢失浏览器会话。使用人工智能组织复杂的工作流程。",
       "subtitle": "WorkDesk 会保存您的整个浏览器状态并一键恢复。 AI 会自动命名、分组和组织您的选项卡，以便您可以专注于工作，而不是浏览器。",
       "pain": {
@@ -2411,11 +2389,7 @@
         "ogDescription": "利用人工智能自动填充职位委员会、生成候选人摘要并减少手动 ATS 数据输入，加快招聘速度。"
       },
       "eyebrow": "对于招聘人员",
-      "breadcrumb": [
-        "家",
-        "解决方案",
-        "对于招聘人员"
-      ],
+      "breadcrumb": ["家", "解决方案", "对于招聘人员"],
       "title": "招聘人员：利用 AI 自动提交求职板和 ATS 数据输入",
       "subtitle": "Donbrico Autofill AI 从单个保存的个人资料中填写工作申请和 ATS 表格，让您无需复制粘贴即可处理更多候选人。",
       "pain": {
@@ -2746,6 +2720,137 @@
       "title": "空载体——深空信号益智游戏",
       "description": "一款简约大气的益智游戏即将登陆 Steam。完全不同的东西。",
       "cta": "了解更多 →"
+    }
+  },
+  "medAutoFill": {
+    "page": {
+      "title": "MedAutoFill — Chrome 医疗表格自动填写工具 | Donbrico",
+      "description": "AI 自动填写保险方门户、预先授权、账单及患者入院表格。患者数据保留在您的浏览器中。",
+      "ogTitle": "MedAutoFill — Chrome 医疗表格自动填写工具 | Donbrico",
+      "ogDescription": "AI 自动填写保险方门户、预先授权、账单及患者入院表格。患者数据保留在您的浏览器中。"
+    },
+    "hero": {
+      "badge": "医疗行政 · Chrome 扩展程序",
+      "title": "医疗表格，一键填写。",
+      "subtitle": "MedAutoFill 帮助前台、账单和预先授权团队更快地填写保险方门户、患者入院和授权表格 — 使用将患者数据保留在您设备上的本地 AI。",
+      "buttonPrimary": "添加到 Chrome — 免费",
+      "buttonSecondary": "查看填写内容 ↓",
+      "disclaimer": "🔒 患者数据永不离开浏览器 · Chrome 本地 AI · 无需账户"
+    },
+    "roles": {
+      "frontDesk": "前台",
+      "priorAuth": "预先授权",
+      "billing": "医疗账单",
+      "insurance": "保险验证",
+      "credentialing": "资质认证人员"
+    },
+    "howItWorks": {
+      "sectionTitle": "使用方法",
+      "step1": {
+        "title": "1. 保存您的档案",
+        "description": "输入患者信息、保险详情、医疗提供者数据和临床代码。全部安全存储在您的浏览器中。"
+      },
+      "step2": {
+        "title": "2. 打开任意网页表单",
+        "description": "适用于保险方门户、预先授权平台和资质认证网站。自动检测表单。"
+      },
+      "step3": {
+        "title": "3. 填写并核对",
+        "description": "MedAutoFill 将您保存的数据与正确字段匹配。提交前核对所有内容。"
+      }
+    },
+    "whatItFills": {
+      "sectionTitle": "填写内容。",
+      "patient": {
+        "title": "患者信息",
+        "items": "姓名 · 出生日期 · MRN · SSN 后4位 · 电话 · 邮筱 · 地址"
+      },
+      "insurance": {
+        "title": "保险和付款方",
+        "items": "会员ID · 群组编号 · 付款方ID · BIN/PCN · 被保人"
+      },
+      "provider": {
+        "title": "医疗提供者和機构",
+        "items": "NPI · 账单NPI · 税务ID/EIN · 分类代码 · 专科"
+      },
+      "clinical": {
+        "title": "临床和授权",
+        "items": "ICD-10代码 · CPT/HCPCS · 服务日期 · POS · 预先授权编号"
+      }
+    },
+    "features": {
+      "sectionTitle": "为医疗工作流程打造。",
+      "aiMatching": {
+        "title": "AI 字段匹配",
+        "description": "理解保险方门户中的标签变体。"
+      },
+      "private": {
+        "title": "默认100%私密",
+        "description": "患者数据保留在Chrome本地存储中。永不发送到Donbrico服务器。"
+      },
+      "noAutoSubmit": {
+        "title": "您控制每次填写",
+        "description": "无自动提交。数据发送前核对每个字段。"
+      },
+      "byok": {
+        "title": "使用自己的AI密钥",
+        "description": "使用OpenAI、Anthropic、Groq或OpenRouter进行增强字段匹配。"
+      },
+      "multiProfile": {
+        "title": "最夐10个档案",
+        "description": "为不同患者、医疗提供者或保险计划保存独立档案。"
+      },
+      "noAccount": {
+        "title": "无需账户",
+        "description": "无需注册。无需邮筱。安装后立即开始使用。"
+      }
+    },
+    "pricing": {
+      "sectionTitle": "简单定价。",
+      "free": {
+        "title": "免费",
+        "price": "$0",
+        "features": {
+          "f1": "每天25次填写",
+          "f2": "1个保存档案",
+          "f3": "Gemini Nano 本地AI",
+          "f4": "使用自己的云AI密钥"
+        },
+        "button": "添加到 Chrome"
+      },
+      "lifetime": {
+        "title": "Lifetime Pro",
+        "price": "$89.99 一次性",
+        "tagline": "一次性付款 · 无需订阅",
+        "features": {
+          "f1": "无限填写",
+          "f2": "最夐10个档案",
+          "f3": "回答历史",
+          "f4": "导出和导入",
+          "f5": "优先支持",
+          "f6": "包含所有未来更新"
+        },
+        "button": "获取 Lifetime Pro"
+      }
+    },
+    "faq": {
+      "sectionTitle": "常见问题",
+      "q1": {
+        "question": "患者数据是否安全存储？",
+        "answer": "是的。所有档案数据存储在您设备的Chrome本地存储中。永不发送到Donbrico服务器。"
+      },
+      "q2": {
+        "question": "它能在Availity和保险方门户上使用吗？",
+        "answer": "MedAutoFill专为标准网页表单设计，包括保险方门户和预先授权平台。"
+      },
+      "q3": {
+        "question": "如果表单使用不常见的字段标签怎么办？",
+        "answer": "MedAutoFill使用AI识别标签变体。如果不确定，将该字段留空。"
+      },
+      "q4": {
+        "question": "是否符合HIPAA要求？",
+        "answer": "MedAutoFill在本地存储数据。使用Gemini Nano时，数据不会离开浏览器。您的合规团队应评估使用情况。"
+      }
     }
   }
 }

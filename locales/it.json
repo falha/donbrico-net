@@ -45,8 +45,10 @@
     "solutionsJobSeekers": "Per chi cerca lavoro",
     "solutionsEcommerceSupport": "Per l'e-commerce",
     "solutionsRealEstate": "Per il settore immobiliare",
+    "solutionsMedicalAdmin": "Per l'amministrazione sanitaria",
     "extensionsAll": "Tutte le estensioni",
     "extensionsAutofill": "Compilazione automatica dell'IA",
+    "extensionsMedAutoFill": "MedAutoFill",
     "extensionsReply": "Assistente di risposta AI",
     "extensionsWorkdesk": "Scrivania",
     "categories": "Categorie",
@@ -1806,11 +1808,7 @@
         "ogDescription": "Automatizza le risposte del supporto e-commerce per ordini, rimborsi e domande dei clienti. Riduci il carico dei ticket con risposte basate sull'intelligenza artificiale."
       },
       "eyebrow": "PER IL SUPPORTO ALL'ECOMMERCE",
-      "breadcrumb": [
-        "Casa",
-        "Soluzioni",
-        "Supporto per l'e-commerce"
-      ],
+      "breadcrumb": ["Casa", "Soluzioni", "Supporto per l'e-commerce"],
       "title": "Team di supporto e-commerce: rispondi più velocemente a domande su ordini, rimborsi e spedizioni con l'intelligenza artificiale",
       "subtitle": "AI Reply Assistant ti consente di creare una libreria di risposte di supporto in base al marchio e generare risposte sensibili al contesto in pochi secondi, senza lasciare il tuo helpdesk.",
       "pain": {
@@ -1954,11 +1952,7 @@
         "ogDescription": "Compila i moduli assicurativi più velocemente con l'automazione assistita dall'intelligenza artificiale per sinistri, immissione di dati di polizze e documentazione amministrativa."
       },
       "eyebrow": "PER I PROFESSIONISTI DELLE ASSICURAZIONI",
-      "breadcrumb": [
-        "Casa",
-        "Soluzioni",
-        "Flussi di lavoro assicurativi"
-      ],
+      "breadcrumb": ["Casa", "Soluzioni", "Flussi di lavoro assicurativi"],
       "title": "Professionisti del settore assicurativo: elimina l'immissione manuale dei moduli con la compilazione automatica assistita dall'intelligenza artificiale",
       "subtitle": "Donbrico Autofill AI compila moduli di richiesta, schermate di immissione delle polizze e documenti amministrativi da un profilo di dati salvato, riducendo gli errori di immissione ripetitivi e risparmiando ore ogni settimana.",
       "pain": {
@@ -2074,11 +2068,7 @@
         "ogDescription": "Genera istantaneamente risposte di supporto accurate utilizzando l'intelligenza artificiale. Riduci i tempi di risposta per Shopify, SaaS e i team di supporto e-commerce."
       },
       "eyebrow": "PER LE SQUADRE DI SUPPORTO",
-      "breadcrumb": [
-        "Casa",
-        "Soluzioni",
-        "Squadre di supporto"
-      ],
+      "breadcrumb": ["Casa", "Soluzioni", "Squadre di supporto"],
       "title": "Agenti di supporto: dimezza i tempi di risposta con le risposte ai ticket assistite dall'intelligenza artificiale",
       "subtitle": "AI Reply Assistant offre agli agenti dell'assistenza una libreria di risposte personali e un pulsante per bozze AI, in modo che possano rispondere ai ticket più rapidamente senza sacrificare la qualità o l'immagine del marchio.",
       "pain": {
@@ -2198,11 +2188,7 @@
         "ogDescription": "Salva e organizza le sessioni del browser con l'intelligenza artificiale. Ideale per ricercatori, sviluppatori e professionisti che gestiscono flussi di lavoro complessi."
       },
       "eyebrow": "GESTIONE DELL'AREA DI LAVORO DEL BROWSER",
-      "breadcrumb": [
-        "Casa",
-        "Soluzioni",
-        "Area di lavoro del browser"
-      ],
+      "breadcrumb": ["Casa", "Soluzioni", "Area di lavoro del browser"],
       "title": "Ricercatori e sviluppatori: basta perdere sessioni del browser. Organizza flussi di lavoro complessi con l'intelligenza artificiale.",
       "subtitle": "WorkDesk salva l'intero stato del browser e lo ripristina con un clic. L'intelligenza artificiale nomina, raggruppa e organizza automaticamente le tue schede in modo che tu possa concentrarti sul lavoro e non sul browser.",
       "pain": {
@@ -2411,11 +2397,7 @@
         "ogDescription": "Velocizza il reclutamento con l'intelligenza artificiale che compila automaticamente le bacheche di lavoro, genera riepiloghi dei candidati e riduce l'immissione manuale dei dati ATS."
       },
       "eyebrow": "PER I RECLUTATORI",
-      "breadcrumb": [
-        "Casa",
-        "Soluzioni",
-        "Per reclutatori"
-      ],
+      "breadcrumb": ["Casa", "Soluzioni", "Per reclutatori"],
       "title": "Reclutatori: automatizza gli invii alle bacheche di lavoro e l'immissione dei dati ATS con l'intelligenza artificiale",
       "subtitle": "Donbrico Autofill AI compila le domande di lavoro e i moduli ATS da un unico profilo salvato, consentendoti di elaborare più candidati senza la fatica del copia-incolla.",
       "pain": {
@@ -2746,6 +2728,137 @@
       "title": "Portante nullo: un puzzle game con segnali nello spazio profondo",
       "description": "Un puzzle game dall'atmosfera minimalista in arrivo su Steam. Qualcosa di completamente diverso.",
       "cta": "Scopri di più →"
+    }
+  },
+  "medAutoFill": {
+    "page": {
+      "title": "MedAutoFill — Compilazione Automatica di Moduli Medici per Chrome | Donbrico",
+      "description": "Compilazione automatica IA per portali pagatori, autorizzazione preventiva, fatturazione e moduli di accettazione. I dati del paziente rimangono nel browser.",
+      "ogTitle": "MedAutoFill — Compilazione Automatica di Moduli Medici per Chrome | Donbrico",
+      "ogDescription": "Compilazione automatica IA per portali pagatori, autorizzazione preventiva, fatturazione e moduli di accettazione. I dati del paziente rimangono nel browser."
+    },
+    "hero": {
+      "badge": "ADMIN MEDICO · ESTENSIONE CHROME",
+      "title": "Compila moduli medici.<br>In un clic.",
+      "subtitle": "MedAutoFill aiuta reception, fatturazione e team di autorizzazione preventiva a compilare portali pagatori, moduli di accettazione e autorizzazioni più velocemente — con IA locale che mantiene i dati sul tuo dispositivo.",
+      "buttonPrimary": "Aggiungi a Chrome — Gratis",
+      "buttonSecondary": "Vedi cosa compila ↓",
+      "disclaimer": "🔒 I dati del paziente non lasciano mai il browser · IA locale su Chrome · Nessun account richiesto"
+    },
+    "roles": {
+      "frontDesk": "Reception",
+      "priorAuth": "Autorizzazione Preventiva",
+      "billing": "Fatturazione Medica",
+      "insurance": "Verifica Assicurativa",
+      "credentialing": "Accreditamento"
+    },
+    "howItWorks": {
+      "sectionTitle": "Come Funziona",
+      "step1": {
+        "title": "1. Salva i tuoi profili",
+        "description": "Inserisci informazioni del paziente, dettagli assicurativi, dati del fornitore e codici clinici. Tutto archiviato in modo sicuro nel browser."
+      },
+      "step2": {
+        "title": "2. Apri qualsiasi modulo web",
+        "description": "Funziona su portali pagatori, piattaforme di autorizzazione preventiva e siti di accreditamento. Rilevamento automatico."
+      },
+      "step3": {
+        "title": "3. Compila e verifica",
+        "description": "MedAutoFill abbina i tuoi dati salvati ai campi giusti. Verifica tutto prima di inviare."
+      }
+    },
+    "whatItFills": {
+      "sectionTitle": "Cosa compila.",
+      "patient": {
+        "title": "Informazioni Paziente",
+        "items": "Nome · Data di nascita · MRN · Ultimi 4 SSN · Telefono · Email · Indirizzo"
+      },
+      "insurance": {
+        "title": "Assicurazione & Pagatore",
+        "items": "ID membro · Gruppo # · ID pagatore · BIN/PCN · Sottoscrittore"
+      },
+      "provider": {
+        "title": "Fornitore & Studio",
+        "items": "NPI fornitore · NPI fatturazione · Tax ID/EIN · Codice tassonomia · Specialità"
+      },
+      "clinical": {
+        "title": "Clinico & Autorizzazione",
+        "items": "Codici ICD-10 · CPT/HCPCS · Data servizio · POS · Numeri autorizzazione"
+      }
+    },
+    "features": {
+      "sectionTitle": "Costruito per i flussi di lavoro sanitari.",
+      "aiMatching": {
+        "title": "Corrispondenza campi IA",
+        "description": "Comprende le variazioni delle etichette nei portali pagatori."
+      },
+      "private": {
+        "title": "100% privato per impostazione predefinita",
+        "description": "I dati del paziente rimangono nell'archivio locale di Chrome. Mai inviati ai server Donbrico."
+      },
+      "noAutoSubmit": {
+        "title": "Controlli ogni compilazione",
+        "description": "Nessun invio automatico. Verifica ogni campo prima della trasmissione."
+      },
+      "byok": {
+        "title": "Usa la tua chiave IA",
+        "description": "OpenAI, Anthropic, Groq o OpenRouter per corrispondenza migliorata."
+      },
+      "multiProfile": {
+        "title": "Fino a 10 profili",
+        "description": "Profili separati per pazienti, fornitori o piani assicurativi diversi."
+      },
+      "noAccount": {
+        "title": "Nessun account richiesto",
+        "description": "Nessuna registrazione. Nessuna email. Installa e inizia subito."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Prezzi semplici.",
+      "free": {
+        "title": "Gratuito",
+        "price": "$0",
+        "features": {
+          "f1": "25 compilazioni al giorno",
+          "f2": "1 profilo salvato",
+          "f3": "IA locale via Gemini Nano",
+          "f4": "Usa la tua chiave IA cloud"
+        },
+        "button": "Aggiungi a Chrome"
+      },
+      "lifetime": {
+        "title": "Lifetime Pro",
+        "price": "$89,99 una tantum",
+        "tagline": "Pagamento unico · Nessun abbonamento",
+        "features": {
+          "f1": "Compilazioni illimitate",
+          "f2": "Fino a 10 profili",
+          "f3": "Cronologia risposte",
+          "f4": "Esporta & importa",
+          "f5": "Supporto prioritario",
+          "f6": "Tutti gli aggiornamenti futuri"
+        },
+        "button": "Ottieni Lifetime Pro"
+      }
+    },
+    "faq": {
+      "sectionTitle": "FAQ",
+      "q1": {
+        "question": "I dati del paziente sono archiviati in modo sicuro?",
+        "answer": "Sì. Tutti i dati del profilo sono archiviati nell'archivio locale di Chrome. Mai trasmessi ai server Donbrico."
+      },
+      "q2": {
+        "question": "Funziona sui portali pagatori?",
+        "answer": "MedAutoFill è progettato per moduli web standard, inclusi portali pagatori e piattaforme di autorizzazione preventiva."
+      },
+      "q3": {
+        "question": "Cosa succede se un modulo usa etichette insolite?",
+        "answer": "MedAutoFill usa l'IA per riconoscere le variazioni. Se non è sicuro, lascia il campo vuoto."
+      },
+      "q4": {
+        "question": "È conforme HIPAA?",
+        "answer": "MedAutoFill archivia i dati localmente. Con Gemini Nano nulla lascia il browser. Il tuo team di conformità dovrebbe valutare l'utilizzo."
+      }
     }
   }
 }

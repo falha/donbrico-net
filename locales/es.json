@@ -45,8 +45,10 @@
     "solutionsJobSeekers": "Para quienes buscan empleo",
     "solutionsEcommerceSupport": "Para comercio electrónico",
     "solutionsRealEstate": "Para bienes raíces",
+    "solutionsMedicalAdmin": "Para administración médica",
     "extensionsAll": "Todas las extensiones",
     "extensionsAutofill": "Autocompletar IA",
+    "extensionsMedAutoFill": "MedAutoFill",
     "extensionsReply": "Asistente de respuesta AI",
     "extensionsWorkdesk": "Escritorio de trabajo",
     "categories": "Categorías",
@@ -1775,11 +1777,7 @@
         "ogDescription": "Automatice las respuestas de soporte de comercio electrónico para pedidos, reembolsos y preguntas de los clientes. Reduzca la carga de tickets con respuestas impulsadas por IA."
       },
       "eyebrow": "PARA APOYO AL COMERCIO ELECTRÓNICO",
-      "breadcrumb": [
-        "Hogar",
-        "Soluciones",
-        "Soporte de comercio electrónico"
-      ],
+      "breadcrumb": ["Hogar", "Soluciones", "Soporte de comercio electrónico"],
       "title": "Equipos de soporte de comercio electrónico: responda pedidos, reembolsos y preguntas sobre envíos más rápido con IA",
       "subtitle": "AI Reply Assistant le permite crear una biblioteca de respuestas de soporte de marca y generar respuestas contextuales en segundos, sin tener que abandonar su servicio de asistencia técnica.",
       "pain": {
@@ -1923,11 +1921,7 @@
         "ogDescription": "Complete formularios de seguros más rápido con la automatización asistida por IA para reclamos, ingreso de datos de pólizas y documentación administrativa."
       },
       "eyebrow": "PARA PROFESIONALES DE SEGUROS",
-      "breadcrumb": [
-        "Hogar",
-        "Soluciones",
-        "Flujos de trabajo de seguros"
-      ],
+      "breadcrumb": ["Hogar", "Soluciones", "Flujos de trabajo de seguros"],
       "title": "Profesionales de seguros: elimine la entrada manual de formularios con el autocompletado asistido por IA",
       "subtitle": "Donbrico Autofill AI completa formularios de reclamo, pantallas de ingreso de pólizas y trámites administrativos desde un perfil de datos guardado, lo que reduce los errores de ingreso repetitivos y ahorra horas cada semana.",
       "pain": {
@@ -2043,11 +2037,7 @@
         "ogDescription": "Genere respuestas de soporte precisas al instante utilizando IA. Reduzca el tiempo de respuesta para los equipos de soporte de Shopify, SaaS y comercio electrónico."
       },
       "eyebrow": "PARA EQUIPOS DE APOYO",
-      "breadcrumb": [
-        "Hogar",
-        "Soluciones",
-        "Equipos de soporte"
-      ],
+      "breadcrumb": ["Hogar", "Soluciones", "Equipos de soporte"],
       "title": "Agentes de soporte: reduzca el tiempo de respuesta a la mitad con respuestas a tickets asistidas por IA",
       "subtitle": "AI Reply Assistant ofrece a los agentes de soporte una biblioteca de respuestas personal y un botón de borrador de IA, para que puedan responder a los tickets más rápido sin sacrificar la calidad o la voz de la marca.",
       "pain": {
@@ -2167,11 +2157,7 @@
         "ogDescription": "Guarde y organice sesiones de navegador con IA. Ideal para investigadores, desarrolladores y profesionales que gestionan flujos de trabajo complejos."
       },
       "eyebrow": "GESTIÓN DEL ESPACIO DE TRABAJO DEL NAVEGADOR",
-      "breadcrumb": [
-        "Hogar",
-        "Soluciones",
-        "Espacio de trabajo del navegador"
-      ],
+      "breadcrumb": ["Hogar", "Soluciones", "Espacio de trabajo del navegador"],
       "title": "Investigadores y desarrolladores: dejen de perder sesiones de navegador. Organice flujos de trabajo complejos con IA.",
       "subtitle": "WorkDesk guarda todo el estado de su navegador y lo restaura con un solo clic. La IA nombra, agrupa y organiza automáticamente tus pestañas para que puedas concentrarte en el trabajo, no en el navegador.",
       "pain": {
@@ -2380,11 +2366,7 @@
         "ogDescription": "Acelere el reclutamiento con IA que completa automáticamente las bolsas de trabajo, genera resúmenes de candidatos y reduce la entrada manual de datos ATS."
       },
       "eyebrow": "PARA RECLUTADORES",
-      "breadcrumb": [
-        "Hogar",
-        "Soluciones",
-        "Para reclutadores"
-      ],
+      "breadcrumb": ["Hogar", "Soluciones", "Para reclutadores"],
       "title": "Reclutadores: automatice los envíos a bolsas de trabajo y la entrada de datos ATS con IA",
       "subtitle": "Donbrico Autofill AI completa solicitudes de empleo y formularios ATS desde un único perfil guardado, lo que le permite procesar más candidatos sin la necesidad de copiar y pegar.",
       "pain": {
@@ -2715,6 +2697,137 @@
       "title": "Null Carrier: un juego de rompecabezas de señales del espacio profundo",
       "description": "Un juego de rompecabezas atmosférico minimalista que llega a Steam. Algo completamente diferente.",
       "cta": "Más información →"
+    }
+  },
+  "medAutoFill": {
+    "page": {
+      "title": "MedAutoFill — Relleno de Formularios Médicos para Chrome | Donbrico",
+      "description": "Relleno automático con IA para portales de pago, autorización previa, facturación y formularios de admisión. Los datos del paciente permanecen en tu navegador.",
+      "ogTitle": "MedAutoFill — Relleno de Formularios Médicos para Chrome | Donbrico",
+      "ogDescription": "Relleno automático con IA para portales de pago, autorización previa, facturación y formularios de admisión. Los datos del paciente permanecen en tu navegador."
+    },
+    "hero": {
+      "badge": "ADMIN MÉDICO · EXTENSIÓN DE CHROME",
+      "title": "Rellena formularios médicos.<br>En un clic.",
+      "subtitle": "MedAutoFill ayuda a recepción, facturación y autorización previa a completar portales de pago, formularios de admisión y autorizaciones más rápido — con IA local que mantiene los datos del paciente en tu dispositivo.",
+      "buttonPrimary": "Agregar a Chrome — Gratis",
+      "buttonSecondary": "Ver qué rellena ↓",
+      "disclaimer": "🔒 Los datos del paciente nunca salen de tu navegador · IA local en Chrome · Sin cuenta requerida"
+    },
+    "roles": {
+      "frontDesk": "Recepción",
+      "priorAuth": "Autorización Previa",
+      "billing": "Facturación Médica",
+      "insurance": "Verificación de Seguro",
+      "credentialing": "Credenciales"
+    },
+    "howItWorks": {
+      "sectionTitle": "Cómo Funciona",
+      "step1": {
+        "title": "1. Guarda tus perfiles",
+        "description": "Ingresa información del paciente, datos del seguro, proveedor y códigos clínicos. Todo almacenado en tu navegador."
+      },
+      "step2": {
+        "title": "2. Abre cualquier formulario",
+        "description": "Funciona en portales de pago, plataformas de autorización previa y sitios de credenciales. Detecta formularios automáticamente."
+      },
+      "step3": {
+        "title": "3. Rellena y revisa",
+        "description": "MedAutoFill combina tus datos guardados con los campos correctos. Revisa todo antes de enviar."
+      }
+    },
+    "whatItFills": {
+      "sectionTitle": "Qué rellena.",
+      "patient": {
+        "title": "Información del Paciente",
+        "items": "Nombre · Fecha de nac. · MRN · SSN últimos 4 · Teléfono · Email · Dirección"
+      },
+      "insurance": {
+        "title": "Seguro y Pagador",
+        "items": "ID de miembro · Grupo # · ID del pagador · BIN/PCN · Suscriptor"
+      },
+      "provider": {
+        "title": "Proveedor y Práctica",
+        "items": "NPI del proveedor · NPI de facturación · Tax ID/EIN · Código de taxonomía · Especialidad"
+      },
+      "clinical": {
+        "title": "Clínico y Autorización",
+        "items": "Códigos ICD-10 · CPT/HCPCS · Fecha de servicio · POS · Números de PA"
+      }
+    },
+    "features": {
+      "sectionTitle": "Diseñado para flujos de trabajo en salud.",
+      "aiMatching": {
+        "title": "Coincidencia de campos con IA",
+        "description": "Entiende variaciones de etiquetas en portales de pago — \"Información del Miembro\", \"Proveedor\"."
+      },
+      "private": {
+        "title": "100% privado por defecto",
+        "description": "Los datos permanecen en el almacenamiento local de Chrome. Nunca se envían a los servidores de Donbrico."
+      },
+      "noAutoSubmit": {
+        "title": "Tú controlas cada relleno",
+        "description": "Sin envío automático. Revisa cada campo antes de enviar."
+      },
+      "byok": {
+        "title": "Usa tu propia clave de IA",
+        "description": "Usa OpenAI, Anthropic, Groq u OpenRouter para coincidencia mejorada."
+      },
+      "multiProfile": {
+        "title": "Hasta 10 perfiles",
+        "description": "Guarda perfiles separados para diferentes pacientes, proveedores o planes de seguro."
+      },
+      "noAccount": {
+        "title": "Sin cuenta requerida",
+        "description": "Sin registro. Sin email. Instala y empieza inmediatamente."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Precios simples.",
+      "free": {
+        "title": "Gratis",
+        "price": "$0",
+        "features": {
+          "f1": "25 rellenos por día",
+          "f2": "1 perfil guardado",
+          "f3": "IA local via Gemini Nano",
+          "f4": "Usa tu propia clave de IA"
+        },
+        "button": "Agregar a Chrome"
+      },
+      "lifetime": {
+        "title": "Pro de por Vida",
+        "price": "$89.99 pago único",
+        "tagline": "Pago único · Sin suscripción",
+        "features": {
+          "f1": "Rellenos ilimitados",
+          "f2": "Hasta 10 perfiles",
+          "f3": "Historial de respuestas",
+          "f4": "Exportar e importar copias",
+          "f5": "Soporte prioritario",
+          "f6": "Todas las actualizaciones incluidas"
+        },
+        "button": "Obtener Pro de por Vida"
+      }
+    },
+    "faq": {
+      "sectionTitle": "Preguntas Frecuentes",
+      "q1": {
+        "question": "¿Los datos del paciente se almacenan de forma segura?",
+        "answer": "Sí. Todos los datos se almacenan en el almacenamiento local de Chrome. Nunca se envían a los servidores de Donbrico."
+      },
+      "q2": {
+        "question": "¿Funciona en Availity, CoverMyMeds y portales de pago?",
+        "answer": "MedAutoFill está diseñado para funcionar con formularios web estándar, incluyendo portales de pago y plataformas de autorización previa. La compatibilidad varía según el sitio."
+      },
+      "q3": {
+        "question": "¿Qué pasa si un formulario usa etiquetas inusuales?",
+        "answer": "MedAutoFill usa IA para reconocer variaciones — como \"Información del Miembro\" o \"Suscriptor\". Si no puede hacer coincidencia, deja el campo vacío."
+      },
+      "q4": {
+        "question": "¿Cumple con HIPAA?",
+        "answer": "MedAutoFill almacena datos localmente. Con Gemini Nano, ningún dato sale del navegador. Si usas un proveedor de IA en la nube, los datos van a ellos según sus políticas. Tu equipo de cumplimiento debe evaluar el uso."
+      }
     }
   }
 }

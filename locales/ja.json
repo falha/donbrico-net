@@ -36,17 +36,11 @@
     "game": "ゲーム",
     "solutionsCommunication": "書いて返信する",
     "solutionsAutomation": "充填と処理",
-    "solutionsWorkspace": "整理して集中する",
-    "solutionsRecruiters": "採用担当者向け",
-    "solutionsEcommerce": "Eコマースサポート用",
-    "solutionsInsurance": "保険用",
-    "solutionsSupportTeams": "サポートチーム向け",
-    "solutionsBrowserWorkspace": "ブラウザワークスペース",
-    "solutionsJobSeekers": "求職者向け",
-    "solutionsEcommerceSupport": "eコマース向け",
-    "solutionsRealEstate": "不動産向け",
-    "extensionsAll": "すべての拡張子",
-    "extensionsAutofill": "オートフィルAI",
+    "extensionsMedAutoFill": "MedAutoFill",
+    "extensionsReply": "AI Reply Assistant",
+    "extensionsWorkdesk": "WorkDesk",
+    "categories": "",
+    "byRole": ""
     "extensionsReply": "AI応答アシスタント",
     "extensionsWorkdesk": "ワークデスク",
     "categories": "カテゴリー",
@@ -1806,11 +1800,7 @@
         "ogDescription": "注文、返金、顧客の質問に対する e コマース サポートの返信を自動化します。 AI を活用した応答によりチケットの負荷を軽減します。"
       },
       "eyebrow": "Eコマースサポート用",
-      "breadcrumb": [
-        "家",
-        "ソリューション",
-        "eコマースサポート"
-      ],
+      "breadcrumb": ["家", "ソリューション", "eコマースサポート"],
       "title": "e コマース サポート チーム: AI を使用して、注文、返金、配送に関する質問に迅速に回答します",
       "subtitle": "AI Reply Assistant を使用すると、ヘルプデスクを離れることなく、ブランドに関するサポート応答のライブラリを構築し、コンテキストを認識した回答を数秒で生成できます。",
       "pain": {
@@ -1954,11 +1944,7 @@
         "ogDescription": "AI を活用した請求、保険契約データ入力、管理文書の自動化により、保険フォームへの記入を迅速化します。"
       },
       "eyebrow": "保険専門家向け",
-      "breadcrumb": [
-        "家",
-        "ソリューション",
-        "保険のワークフロー"
-      ],
+      "breadcrumb": ["家", "ソリューション", "保険のワークフロー"],
       "title": "保険専門家: AI 支援の自動入力により手動フォーム入力を排除",
       "subtitle": "Donbrico Autofill AI は、保存されたデータ プロファイルから請求フォーム、保険契約入力画面、管理書類に入力します。これにより、繰り返し発生する入力エラーが減り、毎週の時間が節約されます。",
       "pain": {
@@ -2074,11 +2060,7 @@
         "ogDescription": "AI を使用して正確なサポート応答を即座に生成します。 Shopify、SaaS、および e コマースのサポート チームの応答時間を短縮します。"
       },
       "eyebrow": "サポートチーム向け",
-      "breadcrumb": [
-        "家",
-        "ソリューション",
-        "サポートチーム"
-      ],
+      "breadcrumb": ["家", "ソリューション", "サポートチーム"],
       "title": "サポート エージェント: AI 支援のチケット応答により、応答時間を半分に短縮",
       "subtitle": "AI Reply Assistant は、サポート エージェントに個人用の返信ライブラリと AI ドラフト ボタンを提供するため、品質やブランドの声を犠牲にすることなく、チケットに迅速に対応できます。",
       "pain": {
@@ -2198,11 +2180,7 @@
         "ogDescription": "AI を使用してブラウザー セッションを保存および整理します。研究者、開発者、複雑なワークフローを管理する専門家に最適です。"
       },
       "eyebrow": "ブラウザワークスペース管理",
-      "breadcrumb": [
-        "家",
-        "ソリューション",
-        "ブラウザワークスペース"
-      ],
+      "breadcrumb": ["家", "ソリューション", "ブラウザワークスペース"],
       "title": "研究者と開発者: ブラウザー セッションの損失を防ぎます。 AI で複雑なワークフローを整理します。",
       "subtitle": "WorkDesk はブラウザの状態全体を保存し、ワンクリックでそれを復元します。 AI がタブに自動的に名前を付け、グループ化し、整理するので、ユーザーはブラウザではなく作業に集中できます。",
       "pain": {
@@ -2411,11 +2389,7 @@
         "ogDescription": "求人情報サイトに自動入力し、候補者の概要を生成し、手動による ATS データ入力を削減する AI を使用して採用をスピードアップします。"
       },
       "eyebrow": "採用担当者向け",
-      "breadcrumb": [
-        "家",
-        "ソリューション",
-        "採用担当者向け"
-      ],
+      "breadcrumb": ["家", "ソリューション", "採用担当者向け"],
       "title": "採用担当者: AI を使用して求人情報サイトの提出と ATS データ入力を自動化",
       "subtitle": "Donbrico Autofill AI は、単一の保存されたプロファイルから求人応募書と ATS フォームに入力します。これにより、コピー＆ペーストする手間をかけずに、より多くの候補者を処理できるようになります。",
       "pain": {
@@ -2746,6 +2720,137 @@
       "title": "Null Carrier — 深宇宙信号パズル ゲーム",
       "description": "ミニマルな雰囲気のパズル ゲームが Steam に登場します。まったく違うもの。",
       "cta": "さらに詳しく→"
+    }
+  },
+  "medAutoFill": {
+    "page": {
+      "title": "MedAutoFill — Chrome用医療フォーム自動入力 | Donbrico",
+      "description": "支払いポータル、事前承認、請求、患者受付フォームへのAI自動入力。患者データはブラウザ内に保持されます。",
+      "ogTitle": "MedAutoFill — Chrome用医療フォーム自動入力 | Donbrico",
+      "ogDescription": "支払いポータル、事前承認、請求、患者受付フォームへのAI自動入力。患者データはブラウザ内に保持されます。"
+    },
+    "hero": {
+      "badge": "医療事務 · Chrome拡張機能",
+      "title": "医療フォームを入力。<br>ワンクリックで。",
+      "subtitle": "MedAutoFillは受付、請求、事前承認チームが支払いポータル、患者受付、承認フォームをより速く入力できるよう支援します——患者データをデバイスに保持するローカルAI使用。",
+      "buttonPrimary": "Chromeに追加 — 無料",
+      "buttonSecondary": "入力内容を確認 ↓",
+      "disclaimer": "🔒 患者データはブラウザ外に送信されません · ChromeのローカルAI · アカウント不要"
+    },
+    "roles": {
+      "frontDesk": "受付",
+      "priorAuth": "事前承認",
+      "billing": "医療請求",
+      "insurance": "保険確認",
+      "credentialing": "資格認定スタッフ"
+    },
+    "howItWorks": {
+      "sectionTitle": "使い方",
+      "step1": {
+        "title": "1. プロフィールを保存",
+        "description": "患者情報、保険詳細、プロバイダーデータ、臨床コードを入力。ブラウザ内に安全に保存。"
+      },
+      "step2": {
+        "title": "2. 任意のウェブフォームを開く",
+        "description": "支払いポータル、事前承認プラットフォーム、資格認定サイトで動作。フォームを自動検出。"
+      },
+      "step3": {
+        "title": "3. 入力して確認",
+        "description": "MedAutoFillが保存データを正しいフィールドに対応。送信前にすべてを確認。"
+      }
+    },
+    "whatItFills": {
+      "sectionTitle": "入力内容。",
+      "patient": {
+        "title": "患者情報",
+        "items": "氏名 · 生年月日 · MRN · SSN下4桁 · 電話 · メール · 住所"
+      },
+      "insurance": {
+        "title": "保険・支払い者",
+        "items": "会員ID · グループ番号 · 支払い者ID · BIN/PCN · 被保険者"
+      },
+      "provider": {
+        "title": "プロバイダー・クリニック",
+        "items": "NPI · 請求NPI · 税務ID/EIN · タクソノミーコード · 専門分野"
+      },
+      "clinical": {
+        "title": "臨床・承認",
+        "items": "ICD-10 · CPT/HCPCS · サービス日 · POS · 事前承認番号"
+      }
+    },
+    "features": {
+      "sectionTitle": "医療業務フローに最適化。",
+      "aiMatching": {
+        "title": "AIフィールドマッチング",
+        "description": "支払いポータル全体のラベルのバリエーションを理解。"
+      },
+      "private": {
+        "title": "デフォルトで100%プライベート",
+        "description": "患者データはChromeのローカルストレージに保持。Donbricoサーバーに送信されない。"
+      },
+      "noAutoSubmit": {
+        "title": "全ての入力を制御",
+        "description": "自動送信なし。データ送信前に全フィールドを確認。"
+      },
+      "byok": {
+        "title": "独自AIキーを使用",
+        "description": "OpenAI、Anthropic、Groq、OpenRouterで高度なフィールドマッチング。"
+      },
+      "multiProfile": {
+        "title": "最大10プロフィール",
+        "description": "異なる患者、プロバイダー、保険プラン用に別々のプロフィール。"
+      },
+      "noAccount": {
+        "title": "アカウント不要",
+        "description": "登録不要。メール不要。インストール後すぐ使用開始。"
+      }
+    },
+    "pricing": {
+      "sectionTitle": "シンプルな料金体系。",
+      "free": {
+        "title": "無料",
+        "price": "$0",
+        "features": {
+          "f1": "1日1日25回の入力",
+          "f2": "1保存プロフィール",
+          "f3": "Gemini NanoによるローカルAI",
+          "f4": "独自クラウドAIキー"
+        },
+        "button": "Chromeに追加"
+      },
+      "lifetime": {
+        "title": "Lifetime Pro",
+        "price": "$89.99 一回払い",
+        "tagline": "一回払い · サブスクリプションなし",
+        "features": {
+          "f1": "無制限入力",
+          "f2": "最大10プロフィール",
+          "f3": "回答履歴",
+          "f4": "エクスポート＆インポート",
+          "f5": "優先サポート",
+          "f6": "将来の全アップデート含む"
+        },
+        "button": "Lifetime Proを取得"
+      }
+    },
+    "faq": {
+      "sectionTitle": "よくある質問",
+      "q1": {
+        "question": "患者データは安全に保存されますか？",
+        "answer": "はい。全データはChromeのローカルストレージに保存されます。Donbricoサーバーには送信されません。"
+      },
+      "q2": {
+        "question": "Availityや支払いポータルで動作しますか？",
+        "answer": "MedAutoFillは支払いポータルや事前承認プラットフォームを含む標準的なウェブフォームで動作するよう設計されています。"
+      },
+      "q3": {
+        "question": "フォームに珍しいラベルが使われている場合は？",
+        "answer": "MedAutoFillはAIを使用してラベルのバリエーションを認識。確信が持てない場合はフィールドを空白のままにします。"
+      },
+      "q4": {
+        "question": "HIPAA準拠ですか？",
+        "answer": "MedAutoFillはデータをローカルに保存。Gemini Nano使用時はデータがブラウザ外に出ません。コンプライアンスチームが利用を評価すべきです。"
+      }
     }
   }
 }

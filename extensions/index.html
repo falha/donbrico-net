@@ -61,7 +61,7 @@
           {
             "@type": "SoftwareApplication",
             "position": 2,
-            "name": "Donbrico AI Reply Assistant",
+            "name": "MedAutoFill",
             "applicationCategory": "BrowserApplication",
             "operatingSystem": "Chrome",
             "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
@@ -69,6 +69,14 @@
           {
             "@type": "SoftwareApplication",
             "position": 3,
+            "name": "Donbrico AI Reply Assistant",
+            "applicationCategory": "BrowserApplication",
+            "operatingSystem": "Chrome",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 4,
             "name": "Donbrico WorkDesk",
             "applicationCategory": "BrowserApplication",
             "operatingSystem": "Chrome",
@@ -116,6 +124,11 @@
                 >For Job Seekers</a
               >
               <a
+                href="/med-autofill/"
+                data-i18n="nav.solutionsMedicalAdmin"
+                >For Medical Admin</a
+              >
+              <a
                 href="/solutions/recruiters/"
                 data-i18n="nav.solutionsRecruiters"
                 >For Recruiters</a
@@ -154,6 +167,7 @@
                 >All Extensions</a
               >
               <a href="/autofill-ai/">Autofill AI</a>
+              <a href="/med-autofill/">MedAutoFill</a>
               <a href="/ai-reply-assistant/">AI Reply Assistant</a>
               <a href="/workdesk/">WorkDesk</a>
             </div>
@@ -280,6 +294,92 @@
                 >
                 <a
                   href="/autofill-ai/"
+                  class="btn-outline"
+                  data-i18n="extensions.hub.learnMore"
+                  >Learn more →</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MedAutoFill -->
+        <div
+          class="card"
+          style="margin-bottom: var(--spacing-lg); border-color: #2a2a2f"
+        >
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr auto;
+              gap: var(--spacing-lg);
+              align-items: start;
+            "
+          >
+            <div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: var(--spacing-sm);
+                  flex-wrap: wrap;
+                  margin-bottom: var(--spacing-sm);
+                "
+              >
+                <div class="badge" data-i18n="extensions.hub.fillProcess">
+                  Fill &amp; Process
+                </div>
+                <div
+                  class="badge"
+                  style="
+                    background: transparent;
+                    border: 1px solid var(--accent);
+                    color: var(--accent);
+                  "
+                  data-i18n="extensions.hub.freePro"
+                >
+                  Free / Pro
+                </div>
+              </div>
+              <h2 style="font-size: 1.75rem; margin-bottom: var(--spacing-sm)">
+                MedAutoFill
+              </h2>
+              <p
+                style="color: var(--muted); margin-bottom: var(--spacing-sm)"
+                data-i18n="medAutoFill.page.description"
+              >
+                AI autofill for insurance portals, prior auth, billing, and
+                patient intake forms. Patient data stays in your browser.
+              </p>
+              <div class="niche-chips" style="margin-bottom: var(--spacing-md)">
+                <a
+                  href="/solutions/automation/"
+                  class="niche-chip"
+                  data-i18n="medAutoFill.roles.frontDesk"
+                  >Front Desk</a
+                >
+                <a
+                  href="/solutions/insurance/"
+                  class="niche-chip"
+                  data-i18n="medAutoFill.roles.insurance"
+                  >Insurance Verification</a
+                >
+                <a
+                  href="/solutions/automation/"
+                  class="niche-chip"
+                  data-i18n="medAutoFill.roles.priorAuth"
+                  >Prior Auth</a
+                >
+              </div>
+              <div class="install-group">
+                <a
+                  href="https://chromewebstore.google.com/detail/cnpmpohneoaakpllhkaieoognepcalai"
+                  class="btn"
+                  data-i18n="extensions.hub.addToChromeFree"
+                  >Add to Chrome — Free</a
+                >
+                <a
+                  href="/med-autofill/"
                   class="btn-outline"
                   data-i18n="extensions.hub.learnMore"
                   >Learn more →</a
@@ -528,7 +628,9 @@
             </p>
           </div>
           <div class="card">
-            <h3 data-i18n="extensions.hub.comparison.title">Feature comparison</h3>
+            <h3 data-i18n="extensions.hub.comparison.title">
+              Feature comparison
+            </h3>
             <table
               style="
                 width: 100%;
@@ -586,7 +688,8 @@
                       border-bottom: 1px solid var(--border);
                     "
                   >
-                    <span data-i18n="extensions.hub.comparison.rows.formAutofill"
+                    <span
+                      data-i18n="extensions.hub.comparison.rows.formAutofill"
                       >Form autofill</span
                     >
                   </td>
@@ -614,7 +717,8 @@
                       border-bottom: 1px solid var(--border);
                     "
                   >
-                    <span data-i18n="extensions.hub.comparison.rows.replyTemplates"
+                    <span
+                      data-i18n="extensions.hub.comparison.rows.replyTemplates"
                       >Reply templates</span
                     >
                   </td>
@@ -642,7 +746,8 @@
                       border-bottom: 1px solid var(--border);
                     "
                   >
-                    <span data-i18n="extensions.hub.comparison.rows.workspaceSaving"
+                    <span
+                      data-i18n="extensions.hub.comparison.rows.workspaceSaving"
                       >Workspace saving</span
                     >
                   </td>
@@ -730,7 +835,9 @@
         <div class="footer-grid">
           <div class="footer-col">
             <h4 data-i18n="footer.solutions">Solutions</h4>
-            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication"
+            <a
+              href="/solutions/communication/"
+              data-i18n="nav.solutionsCommunication"
               >Write &amp; Respond</a
             >
             <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation"
@@ -742,7 +849,9 @@
           </div>
           <div class="footer-col">
             <h4 data-i18n="footer.workflows">Workflows</h4>
-            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams"
+            <a
+              href="/solutions/support-teams/"
+              data-i18n="nav.solutionsSupportTeams"
               >Support Teams</a
             >
             <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters"
@@ -765,6 +874,7 @@
           <div class="footer-col">
             <h4 data-i18n="footer.extensions">Extensions</h4>
             <a href="/autofill-ai/">Autofill AI</a>
+            <a href="/med-autofill/">MedAutoFill</a>
             <a href="/ai-reply-assistant/">AI Reply Assistant</a>
             <a href="/workdesk/">WorkDesk</a>
           </div>

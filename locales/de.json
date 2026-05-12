@@ -37,16 +37,18 @@
     "solutionsCommunication": "Schreiben und antworten",
     "solutionsAutomation": "Füllen und verarbeiten",
     "solutionsWorkspace": "Organisieren und fokussieren",
-    "solutionsRecruiters": "Für Personalvermittler",
-    "solutionsEcommerce": "Für E-Commerce-Support",
-    "solutionsInsurance": "Für Versicherungen",
-    "solutionsSupportTeams": "Für Support-Teams",
+    "solutionsRecruiters": "Fr Personalvermittler",
+    "solutionsEcommerce": "Fr E-Commerce-Support",
+    "solutionsInsurance": "Fr Versicherungen",
+    "solutionsSupportTeams": "Fr Support-Teams",
     "solutionsBrowserWorkspace": "Browser-Arbeitsbereich",
-    "solutionsJobSeekers": "Für Arbeitssuchende",
-    "solutionsEcommerceSupport": "Für E-Commerce",
-    "solutionsRealEstate": "Für Immobilien",
+    "solutionsJobSeekers": "Fr Arbeitssuchende",
+    "solutionsMedicalAdmin": "Fr Medizinische Administration",
+    "solutionsEcommerceSupport": "Fr E-Commerce",
+    "solutionsRealEstate": "Fr Immobilien",
     "extensionsAll": "Alle Erweiterungen",
     "extensionsAutofill": "Autofill-KI",
+    "extensionsMedAutoFill": "MedAutoFill",
     "extensionsReply": "KI-Antwortassistent",
     "extensionsWorkdesk": "Arbeitsplatz",
     "categories": "Kategorien",
@@ -1775,11 +1777,7 @@
         "ogDescription": "Automatisieren Sie E-Commerce-Support-Antworten auf Bestellungen, Rückerstattungen und Kundenfragen. Reduzieren Sie die Ticketlast mit KI-gestützten Antworten."
       },
       "eyebrow": "FÜR E-COMMERCE-UNTERSTÜTZUNG",
-      "breadcrumb": [
-        "Heim",
-        "Lösungen",
-        "E-Commerce-Unterstützung"
-      ],
+      "breadcrumb": ["Heim", "Lösungen", "E-Commerce-Unterstützung"],
       "title": "E-Commerce-Supportteams: Beantworten Sie Bestellungen, Rückerstattungen und Versandfragen schneller mit KI",
       "subtitle": "Mit AI Reply Assistant können Sie eine Bibliothek mit markenbezogenen Support-Antworten erstellen und in Sekundenschnelle kontextbezogene Antworten generieren – ohne Ihren Helpdesk zu verlassen.",
       "pain": {
@@ -1923,11 +1921,7 @@
         "ogDescription": "Füllen Sie Versicherungsformulare schneller aus mit KI-gestützter Automatisierung für Ansprüche, Policendateneingabe und Verwaltungsdokumentation."
       },
       "eyebrow": "FÜR VERSICHERUNGSPROFIS",
-      "breadcrumb": [
-        "Heim",
-        "Lösungen",
-        "Versicherungs-Workflows"
-      ],
+      "breadcrumb": ["Heim", "Lösungen", "Versicherungs-Workflows"],
       "title": "Versicherungsprofis: Eliminieren Sie die manuelle Formulareingabe durch KI-gestütztes automatisches Ausfüllen",
       "subtitle": "Donbrico Autofill AI füllt Antragsformulare, Richtlinieneingabebildschirme und Verwaltungsunterlagen aus einem gespeicherten Datenprofil aus – wodurch wiederholte Eingabefehler reduziert und jede Woche Stunden gespart werden.",
       "pain": {
@@ -2043,11 +2037,7 @@
         "ogDescription": "Generieren Sie mithilfe von KI sofort präzise Support-Antworten. Reduzieren Sie die Reaktionszeit für Shopify-, SaaS- und E-Commerce-Supportteams."
       },
       "eyebrow": "FÜR SUPPORT-TEAMS",
-      "breadcrumb": [
-        "Heim",
-        "Lösungen",
-        "Support-Teams"
-      ],
+      "breadcrumb": ["Heim", "Lösungen", "Support-Teams"],
       "title": "Supportmitarbeiter: Halbieren Sie die Antwortzeit mit KI-gestützten Ticketantworten",
       "subtitle": "AI Reply Assistant bietet Supportmitarbeitern eine persönliche Antwortbibliothek und eine KI-Entwurfsschaltfläche – so können sie schneller auf Tickets reagieren, ohne Einbußen bei der Qualität oder der Markenbotschaft hinnehmen zu müssen.",
       "pain": {
@@ -2167,11 +2157,7 @@
         "ogDescription": "Speichern und organisieren Sie Browsersitzungen mit KI. Ideal für Forscher, Entwickler und Fachleute, die komplexe Arbeitsabläufe verwalten."
       },
       "eyebrow": "BROWSER-ARBEITSBEREICHSVERWALTUNG",
-      "breadcrumb": [
-        "Heim",
-        "Lösungen",
-        "Browser-Arbeitsbereich"
-      ],
+      "breadcrumb": ["Heim", "Lösungen", "Browser-Arbeitsbereich"],
       "title": "Forscher und Entwickler: Hören Sie auf, Browsersitzungen zu verlieren. Organisieren Sie komplexe Arbeitsabläufe mit KI.",
       "subtitle": "WorkDesk speichert Ihren gesamten Browserstatus und stellt ihn mit einem Klick wieder her. KI benennt, gruppiert und organisiert Ihre Tabs automatisch, sodass Sie sich auf die Arbeit und nicht auf den Browser konzentrieren können.",
       "pain": {
@@ -2380,11 +2366,7 @@
         "ogDescription": "Beschleunigen Sie die Rekrutierung mit KI, die Jobbörsen automatisch ausfüllt, Kandidatenzusammenfassungen erstellt und die manuelle ATS-Dateneingabe reduziert."
       },
       "eyebrow": "FÜR RECRUITERS",
-      "breadcrumb": [
-        "Heim",
-        "Lösungen",
-        "Für Personalvermittler"
-      ],
+      "breadcrumb": ["Heim", "Lösungen", "Für Personalvermittler"],
       "title": "Personalvermittler: Automatisieren Sie die Einreichung von Stellenbörsen und die ATS-Dateneingabe mit KI",
       "subtitle": "Donbrico Autofill AI füllt Bewerbungen und ATS-Formulare aus einem einzigen gespeicherten Profil aus – so können Sie mehr Kandidaten bearbeiten, ohne den Aufwand des Kopierens und Einfügens.",
       "pain": {
@@ -2715,6 +2697,137 @@
       "title": "Null Carrier – Ein Deep-Space-Signal-Puzzlespiel",
       "description": "Ein minimalistisches, atmosphärisches Puzzlespiel für Steam. Etwas völlig anderes.",
       "cta": "Erfahren Sie mehr →"
+    }
+  },
+  "medAutoFill": {
+    "page": {
+      "title": "MedAutoFill — Medizinisches Formular-Autofüll für Chrome | Donbrico",
+      "description": "KI-gestütztes Ausfüllen für Zahlerportale, Vorabgenehmigung, Abrechnung und Patientenaufnahmeformulare. Patientendaten bleiben lokal im Browser.",
+      "ogTitle": "MedAutoFill — Medizinisches Formular-Autofüll für Chrome | Donbrico",
+      "ogDescription": "KI-gestütztes Ausfüllen für Zahlerportale, Vorabgenehmigung, Abrechnung und Patientenaufnahmeformulare. Patientendaten bleiben lokal im Browser."
+    },
+    "hero": {
+      "badge": "MEDIZIN-ADMIN · CHROME-ERWEITERUNG",
+      "title": "Medizinische Formulare ausfüllen.<br>Mit einem Klick.",
+      "subtitle": "MedAutoFill hilft Rezeption, Abrechnung und Vorabgenehmigungsteams, Zahlerportale, Patientenaufnahme- und Genehmigungsformulare schneller auszufüllen — mit lokaler KI, die Patientendaten auf Ihrem Gerät behält.",
+      "buttonPrimary": "Zu Chrome hinzufügen — Kostenlos",
+      "buttonSecondary": "Sehen was ausfüllt ↓",
+      "disclaimer": "🔒 Patientendaten verlassen den Browser nie · Lokale KI in Chrome · Kein Konto erforderlich"
+    },
+    "roles": {
+      "frontDesk": "Rezeption",
+      "priorAuth": "Vorabgenehmigung",
+      "billing": "Medizinische Abrechnung",
+      "insurance": "Versicherungsprüfung",
+      "credentialing": "Zulassungspersonal"
+    },
+    "howItWorks": {
+      "sectionTitle": "So funktioniert es",
+      "step1": {
+        "title": "1. Profile speichern",
+        "description": "Patientendaten, Versicherungsdetails, Anbieterdaten und klinische Codes eingeben. Alles sicher im Browser gespeichert."
+      },
+      "step2": {
+        "title": "2. Beliebiges Webformular öffnen",
+        "description": "Funktioniert in Zahlerportalen, Vorabgenehmigungsplattformen und Zulassungsseiten. Formulare werden automatisch erkannt."
+      },
+      "step3": {
+        "title": "3. Ausfüllen und prüfen",
+        "description": "MedAutoFill ordnet gespeicherte Daten den richtigen Feldern zu. Alles prüfen vor dem Absenden."
+      }
+    },
+    "whatItFills": {
+      "sectionTitle": "Was ausgefüllt wird.",
+      "patient": {
+        "title": "Patienteninformationen",
+        "items": "Name · Geburtsdatum · MRN · Letzte 4 der SSN · Telefon · E-Mail · Adresse"
+      },
+      "insurance": {
+        "title": "Versicherung & Zahler",
+        "items": "Mitglieds-ID · Gruppenummer · Zahler-ID · BIN/PCN · Versicherter"
+      },
+      "provider": {
+        "title": "Anbieter & Praxis",
+        "items": "NPI des Anbieters · Abrechnungs-NPI · Steuer-ID/EIN · Taxonomiecode · Fachgebiet"
+      },
+      "clinical": {
+        "title": "Klinisch & Genehmigung",
+        "items": "ICD-10 · CPT/HCPCS · Leistungsdatum · POS · Vorabgenehmigungsnummern"
+      }
+    },
+    "features": {
+      "sectionTitle": "Für medizinische Arbeitsabläufe gebaut.",
+      "aiMatching": {
+        "title": "KI-Feldzuordnung",
+        "description": "Versteht Bezeichnungsvariationen in Zahlerportalen."
+      },
+      "private": {
+        "title": "Standardmäßig 100% privat",
+        "description": "Patientendaten bleiben im lokalen Chrome-Speicher. Nie an Donbrico-Server gesendet."
+      },
+      "noAutoSubmit": {
+        "title": "Sie kontrollieren jeden Ausfüllvorgang",
+        "description": "Kein automatisches Absenden. Jedes Feld prüfen, bevor Daten übermittelt werden."
+      },
+      "byok": {
+        "title": "Eigenen KI-Schlüssel verwenden",
+        "description": "OpenAI, Anthropic, Groq oder OpenRouter für verbesserte Feldzuordnung nutzen."
+      },
+      "multiProfile": {
+        "title": "Bis zu 10 Profile",
+        "description": "Separate Profile für verschiedene Patienten, Anbieter oder Versicherungspläne speichern."
+      },
+      "noAccount": {
+        "title": "Kein Konto erforderlich",
+        "description": "Keine Registrierung. Keine E-Mail. Installieren und sofort loslegen."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Einfache Preisgestaltung.",
+      "free": {
+        "title": "Kostenlos",
+        "price": "$0",
+        "features": {
+          "f1": "25 Füllvorgänge pro Tag",
+          "f2": "1 gespeichertes Profil",
+          "f3": "Lokale KI via Gemini Nano",
+          "f4": "Eigenen Cloud-KI-Schlüssel"
+        },
+        "button": "Zu Chrome hinzufügen"
+      },
+      "lifetime": {
+        "title": "Lifetime Pro",
+        "price": "$89,99 einmalig",
+        "tagline": "Einmalzahlung · Kein Abonnement",
+        "features": {
+          "f1": "Unbegrenzte Füllvorgänge",
+          "f2": "Bis zu 10 Profile",
+          "f3": "Antwortverlauf",
+          "f4": "Export & Import",
+          "f5": "Prioritäts-Support",
+          "f6": "Alle zukünftigen Updates"
+        },
+        "button": "Lifetime Pro holen"
+      }
+    },
+    "faq": {
+      "sectionTitle": "Häufige Fragen",
+      "q1": {
+        "question": "Werden Patientendaten sicher gespeichert?",
+        "answer": "Ja. Alle Profildaten werden im lokalen Chrome-Speicher gespeichert. Nie an Donbrico-Server übertragen."
+      },
+      "q2": {
+        "question": "Funktioniert es auf Zahlerportalen?",
+        "answer": "MedAutoFill ist für standardmäßige Webformulare einschließlich Zahlerportale und Vorabgenehmigungsplattformen konzipiert."
+      },
+      "q3": {
+        "question": "Was wenn ein Formular ungewöhnliche Feldbezeichnungen verwendet?",
+        "answer": "MedAutoFill erkennt Bezeichnungsvariationen per KI. Wenn keine sichere Zuordnung möglich ist, bleibt das Feld leer."
+      },
+      "q4": {
+        "question": "Ist dies HIPAA-konform?",
+        "answer": "MedAutoFill speichert Daten lokal. Bei Gemini Nano verlassen keine Daten den Browser. Ihr Compliance-Team sollte die Nutzung bewerten."
+      }
     }
   }
 }
