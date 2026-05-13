@@ -463,6 +463,18 @@
         "question": "What happens if I delete a workspace?",
         "answer": "Deleted workspaces are gone forever. However, you can use the 'Archive' feature to hide workspaces without deleting them."
       }
+    },
+    "hostReply": {
+      "sectionTitle": "Donbrico HostReply AI Support",
+      "subtitle": "Common Issues",
+      "q1": {
+        "question": "The extension toolbar isn't appearing on Airbnb or Vrbo",
+        "answer": "Make sure you're on the messaging inbox page. Refresh the page if the toolbar doesn't appear."
+      },
+      "q2": {
+        "question": "Host Memory details aren't being used in replies",
+        "answer": "Check that you've saved your property details in the Host Memory tab of the extension popup."
+      }
     }
   },
   "privacyPolicy": {
@@ -531,7 +543,8 @@
       "workDesk": "WorkDesk",
       "nullCarrier": "Null Carrier Game",
       "website": "This Website",
-      "contact": "Contact"
+      "contact": "Contact",
+      "hostReplyAi": "HostReply AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico AI Reply Assistant — Chrome Extension",
@@ -577,6 +590,29 @@
       "dataDeletion": {
         "sectionTitle": "Data deletion",
         "paragraph": "Uninstalling the extension deletes all locally stored workspaces and settings. No data is retained on Donbrico servers."
+      }
+    },
+    "hostReplyAi": {
+      "sectionTitle": "Donbrico HostReply AI — Chrome Extension",
+      "whatWeCollect": {
+        "sectionTitle": "What data we collect",
+        "paragraph": "None. Your Host Memory property details and settings are stored locally in Chrome's storage on your device. No data is transmitted to Donbrico servers."
+      },
+      "howStored": {
+        "sectionTitle": "How your data is stored",
+        "paragraph": "Property details are stored in Chrome's local storage. This data never leaves your device unless you use a third-party AI provider."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Third-party AI providers (Bring Your Own Key)",
+        "paragraph": "If you configure a Bring Your Own Key provider such as OpenAI, the guest message and your Host Memory details are sent to that third-party provider to generate a response. If you use Gemini Nano (where available), all processing is on-device. Donbrico does not store or log any AI requests."
+      },
+      "permissions": {
+        "sectionTitle": "Permissions used",
+        "paragraph": "storage (for Host Memory and settings), activeTab (to detect text fields), scripting (to inject the reply toolbar)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Data deletion",
+        "paragraph": "Uninstalling the extension deletes all locally stored property details and settings. No data is retained on Donbrico servers."
       }
     }
   },
@@ -1044,7 +1080,8 @@
     "extensionsReply": "AI Reply Assistant",
     "extensionsWorkdesk": "WorkDesk",
     "categories": "Categories",
-    "byRole": "By Role"
+    "byRole": "By Role",
+    "extensionsHostReply": "HostReply AI"
   },
   "home2": {
     "page": {
@@ -1245,7 +1282,10 @@
       "niches": {
         "title": "Related workflows",
         "items": [
-          { "label": "Support Teams", "url": "/solutions/support-teams/" },
+          {
+            "label": "Support Teams",
+            "url": "/solutions/support-teams/"
+          },
           {
             "label": "Ecommerce Support",
             "url": "/solutions/ecommerce-support/"
@@ -1336,8 +1376,14 @@
       "niches": {
         "title": "Related workflows",
         "items": [
-          { "label": "Recruiters", "url": "/solutions/recruiters/" },
-          { "label": "Insurance Workflows", "url": "/solutions/insurance/" }
+          {
+            "label": "Recruiters",
+            "url": "/solutions/recruiters/"
+          },
+          {
+            "label": "Insurance Workflows",
+            "url": "/solutions/insurance/"
+          }
         ]
       }
     },
@@ -1456,7 +1502,9 @@
         "ogDescription": "Fill job applications automatically and generate personalised cover letters using AI. Save time on your job search."
       },
       "eyebrow": "FOR JOB SEEKERS",
-      "breadcrumb": { "2": "For Job Seekers" },
+      "breadcrumb": {
+        "2": "For Job Seekers"
+      },
       "title": "Stop retyping your resume on every job application",
       "subtitle": "Donbrico Autofill AI fills job application forms from your saved profile in one click — name, email, LinkedIn, work history, skills. AI writes the open-ended answers like cover letters and \"Why do you want this role?\"",
       "pain": {
@@ -1550,8 +1598,12 @@
       "related": {
         "title": "Related workflows",
         "items": {
-          "0": { "label": "Recruiters Overview" },
-          "1": { "label": "Fill & Process Overview" }
+          "0": {
+            "label": "Recruiters Overview"
+          },
+          "1": {
+            "label": "Fill & Process Overview"
+          }
         }
       }
     },
@@ -1563,7 +1615,11 @@
         "ogDescription": "Speed up recruiting with AI that autofills job boards, generates candidate summaries, and reduces manual ATS data entry."
       },
       "eyebrow": "FOR RECRUITERS",
-      "breadcrumb": ["Home", "Solutions", "For Recruiters"],
+      "breadcrumb": [
+        "Home",
+        "Solutions",
+        "For Recruiters"
+      ],
       "title": "Recruiters: automate job board submissions and ATS data entry with AI",
       "subtitle": "Donbrico Autofill AI fills job applications and ATS forms from a single saved profile — letting you process more candidates without the copy-paste grind.",
       "pain": {
@@ -1672,7 +1728,11 @@
         "ogDescription": "Automate ecommerce support replies for orders, refunds, and customer questions. Reduce ticket load with AI-powered responses."
       },
       "eyebrow": "FOR ECOMMERCE SUPPORT",
-      "breadcrumb": ["Home", "Solutions", "Ecommerce Support"],
+      "breadcrumb": [
+        "Home",
+        "Solutions",
+        "Ecommerce Support"
+      ],
       "title": "Ecommerce support teams: answer orders, refunds & shipping questions faster with AI",
       "subtitle": "AI Reply Assistant lets you build a library of on-brand support responses and generate context-aware answers in seconds — without leaving your helpdesk.",
       "pain": {
@@ -1784,7 +1844,11 @@
         "ogDescription": "Fill insurance forms faster with AI-assisted automation for claims, policy data entry, and administrative documentation."
       },
       "eyebrow": "FOR INSURANCE PROFESSIONALS",
-      "breadcrumb": ["Home", "Solutions", "Insurance Workflows"],
+      "breadcrumb": [
+        "Home",
+        "Solutions",
+        "Insurance Workflows"
+      ],
       "title": "Insurance professionals: eliminate manual form entry with AI-assisted autofill",
       "subtitle": "Donbrico Autofill AI fills claim forms, policy entry screens, and admin paperwork from a saved data profile — reducing repetitive entry errors and saving hours each week.",
       "pain": {
@@ -1872,7 +1936,10 @@
       "related": {
         "title": "Related workflows",
         "items": [
-          { "label": "Recruiters Workflow", "url": "/solutions/recruiters/" },
+          {
+            "label": "Recruiters Workflow",
+            "url": "/solutions/recruiters/"
+          },
           {
             "label": "Fill & Process Overview",
             "url": "/solutions/automation/"
@@ -1903,7 +1970,11 @@
         "ogDescription": "Generate accurate support replies instantly using AI. Reduce response time for Shopify, SaaS, and ecommerce support teams."
       },
       "eyebrow": "FOR SUPPORT TEAMS",
-      "breadcrumb": ["Home", "Solutions", "Support Teams"],
+      "breadcrumb": [
+        "Home",
+        "Solutions",
+        "Support Teams"
+      ],
       "title": "Support agents: cut reply time in half with AI-assisted ticket responses",
       "subtitle": "AI Reply Assistant gives support agents a personal reply library and an AI draft button — so they can respond to tickets faster without sacrificing quality or brand voice.",
       "pain": {
@@ -2023,7 +2094,11 @@
         "ogDescription": "Save and organize browser sessions with AI. Ideal for researchers, developers, and professionals managing complex workflows."
       },
       "eyebrow": "BROWSER WORKSPACE MANAGEMENT",
-      "breadcrumb": ["Home", "Solutions", "Browser Workspace"],
+      "breadcrumb": [
+        "Home",
+        "Solutions",
+        "Browser Workspace"
+      ],
       "title": "Researchers & developers: stop losing browser sessions. Organize complex workflows with AI.",
       "subtitle": "WorkDesk saves your entire browser state and restores it with one click. AI automatically names, groups, and organizes your tabs so you can focus on the work, not the browser.",
       "pain": {
@@ -2128,7 +2203,10 @@
             "label": "Organize & Focus Overview",
             "url": "/solutions/workspace/"
           },
-          { "label": "All Extensions", "url": "/extensions/" }
+          {
+            "label": "All Extensions",
+            "url": "/extensions/"
+          }
         ]
       }
     },
@@ -2244,16 +2322,24 @@
     }
   },
   "extensionsHub": {
-    "page": {
-      "title": "AI Browser Extensions by Donbrico | Productivity & Workflow Tools",
-      "description": "Download AI browser extensions for writing, form automation, and workspace management. Lightweight tools built for real-world productivity.",
-      "ogTitle": "AI Browser Extensions by Donbrico | Productivity & Workflow Tools",
-      "ogDescription": "Download AI browser extensions for writing, form automation, and workspace management. Lightweight tools built for real-world productivity."
+    "autofill": {
+      "title": "Donbrico Autofill AI",
+      "description": "AI-powered form filler for any website. Save your profile once — name, email, LinkedIn, skills, bio. The extension detects forms automatically and fills them in one click. AI writes context-aware answers for open-ended fields like cover letters."
     },
-    "eyebrow": "EXTENSIONS",
-    "title": "Three AI browser extensions. One focused purpose each.",
-    "subtitle": "Each extension removes a specific type of repetitive work from your browser workflow. Lightweight, privacy-first, and built for professionals.",
-    "edgeNote": "Edge versions launching soon. Note: Edge does not support on-device Gemini Nano — local AI privacy mode is Chrome-only."
+    "edge": {
+      "eyebrow": "EDGE — COMING SOON",
+      "title": "Edge versions launching soon",
+      "description": "All three extensions are being submitted to the Microsoft Edge Add-ons store. Once accepted, install links will be activated here."
+    },
+    "privacyNote": "🔒 On Chrome: local AI via Gemini Nano — data stays in your browser · Edge versions coming soon (BYOK only on Edge)",
+    "reply": {
+      "title": "Donbrico AI Reply Assistant",
+      "description": "Saves reply templates and generates AI-powered responses anywhere on the web. Works in Gmail, LinkedIn, Zendesk, Gorgias, Freshdesk, and any website with a text field. Build a library of saved replies — search and insert in one click, or let AI draft from a short prompt."
+    },
+    "workdesk": {
+      "title": "Donbrico WorkDesk",
+      "description": "Save and restore browser workspaces in one click. WorkDesk captures your entire session — tabs, windows, tab groups — and restores it exactly. AI names workspaces automatically, groups similar tabs, and lets you search sessions using natural language."
+    }
   },
   "about": {
     "page": {
@@ -2303,26 +2389,6 @@
       "title": "Solo-built",
       "description": "Donbrico is a solo operation. Every line of code, every design decision, every support reply — one person. This means the products stay lean, focused, and honest. No features added to hit metrics. No roadmap dictated by investor pressure.",
       "game": "There's also a game in development: <a href=\"/null-carrier/\">Null Carrier</a> — a deep space signal puzzle, something completely different from the extensions."
-    }
-  },
-  "extensionsHub": {
-    "autofill": {
-      "title": "Donbrico Autofill AI",
-      "description": "AI-powered form filler for any website. Save your profile once — name, email, LinkedIn, skills, bio. The extension detects forms automatically and fills them in one click. AI writes context-aware answers for open-ended fields like cover letters."
-    },
-    "edge": {
-      "eyebrow": "EDGE — COMING SOON",
-      "title": "Edge versions launching soon",
-      "description": "All three extensions are being submitted to the Microsoft Edge Add-ons store. Once accepted, install links will be activated here."
-    },
-    "privacyNote": "🔒 On Chrome: local AI via Gemini Nano — data stays in your browser · Edge versions coming soon (BYOK only on Edge)",
-    "reply": {
-      "title": "Donbrico AI Reply Assistant",
-      "description": "Saves reply templates and generates AI-powered responses anywhere on the web. Works in Gmail, LinkedIn, Zendesk, Gorgias, Freshdesk, and any website with a text field. Build a library of saved replies — search and insert in one click, or let AI draft from a short prompt."
-    },
-    "workdesk": {
-      "title": "Donbrico WorkDesk",
-      "description": "Save and restore browser workspaces in one click. WorkDesk captures your entire session — tabs, windows, tab groups — and restores it exactly. AI names workspaces automatically, groups similar tabs, and lets you search sessions using natural language."
     }
   },
   "docs": {
@@ -2776,6 +2842,115 @@
       "q4": {
         "question": "Is this HIPAA compliant?",
         "answer": "MedAutoFill stores data locally on your device. When using local AI (Gemini Nano), no data leaves your browser. If you enable a cloud AI provider, data is sent to them per their policies. Your organization's compliance team should evaluate usage for your specific requirements."
+      }
+    }
+  },
+  "hostReply": {
+    "page": {
+      "title": "Donbrico HostReply AI — Guest Message Assistant",
+      "description": "Reply to Airbnb and Vrbo guests in seconds — HostReply AI drafts professional messages directly inside your inbox, for free.",
+      "ogTitle": "Donbrico HostReply AI — Guest Message Assistant",
+      "ogDescription": "Reply to Airbnb and Vrbo guests in seconds — HostReply AI drafts professional messages directly inside your inbox, for free."
+    },
+    "hero": {
+      "eyebrow": "CHROME EXTENSION",
+      "title": "Reply to guests<br>in seconds.",
+      "subtitle": "HostReply AI drafts professional messages directly inside your Airbnb or Vrbo inbox, for free. Includes Host Memory for your house rules and check-in info.",
+      "disclaimer": "🔒 Built-in AI runs locally — data stays in your browser",
+      "buttonPrimary": "Add to Chrome — Free",
+      "buttonSecondary": "See how it works ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "How It Works",
+      "step1": {
+        "title": "1. Save your property details",
+        "description": "Store Wi-Fi details, check-in info, and house rules once in Host Memory."
+      },
+      "step2": {
+        "title": "2. Open your inbox",
+        "description": "Works directly inside your Airbnb and Vrbo messaging inbox."
+      },
+      "step3": {
+        "title": "3. AI drafts the reply",
+        "description": "HostReply reads the guest's message, pulls from Host Memory, and drafts a professional response instantly."
+      }
+    },
+    "features": {
+      "sectionTitle": "Features",
+      "feature1": {
+        "title": "Works where you work",
+        "description": "Handles Airbnb and Vrbo messaging automatically."
+      },
+      "feature2": {
+        "title": "Host Memory",
+        "description": "Save your property details once. The AI remembers Wi-Fi, check-in codes, and rules."
+      },
+      "feature3": {
+        "title": "Privacy First",
+        "description": "Your property details are stored locally. Use on-device Chrome AI to keep everything completely private."
+      },
+      "feature4": {
+        "title": "Bring Your Own AI",
+        "description": "Connect OpenAI, Claude, or Gemini using your own API key if you prefer."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Simple pricing. No hidden costs.",
+      "free": {
+        "title": "Free",
+        "price": "$0",
+        "button": "Add to Chrome",
+        "features": {
+          "f1": "5 Saved Reply templates",
+          "f2": "1 property (Host Memory)",
+          "f3": "5 core smart variables",
+          "f4": "10 AI replies/day",
+          "f5": "3 Reply Scenarios",
+          "f6": "Single BYOK provider",
+          "f7": "3 host tones"
+        }
+      },
+      "proMonthly": {
+        "title": "Pro (Monthly)",
+        "price": "$7.99/mo",
+        "button": "Subscribe monthly",
+        "features": {
+          "f1": "Unlimited AI replies",
+          "f2": "Unlimited saved replies",
+          "f3": "Unlimited properties",
+          "f4": "5 host tones",
+          "f5": "Export/import templates",
+          "f6": "20+ Smart variables",
+          "f7": "Multiple BYOK providers",
+          "f8": "Priority support"
+        }
+      },
+      "proLifetime": {
+        "title": "Pro (Lifetime)",
+        "price": "$69",
+        "tagline": "Pay once, use forever",
+        "button": "Lifetime pass",
+        "features": {
+          "f1": "Everything in Pro Monthly",
+          "f2": "No recurring fees",
+          "f3": "Future updates included",
+          "f4": "Early adopter pricing"
+        }
+      }
+    },
+    "faq": {
+      "sectionTitle": "Frequently Asked Questions",
+      "q1": {
+        "question": "Does it work with both Airbnb and Vrbo?",
+        "answer": "Yes, it works directly inside both the Airbnb and Vrbo messaging inboxes."
+      },
+      "q2": {
+        "question": "Is it really free?",
+        "answer": "Yes! The free plan gives you everything you need to start, including 1 saved property for your Host Memory."
+      },
+      "q3": {
+        "question": "What is Host Memory?",
+        "answer": "Host Memory is where you save your property's specific details like Wi-Fi passwords, house rules, and check-in instructions. The AI automatically uses this info when replying to guests."
       }
     }
   }

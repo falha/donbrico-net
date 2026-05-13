@@ -135,6 +135,7 @@
                 data-i18n="nav.solutionsBrowserWorkspace"
                 >Browser Workspace</a
               >
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
             </div>
           </li>
           <li class="dropdown">
@@ -149,6 +150,9 @@
               <a href="/med-autofill/">MedAutoFill</a>
               <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply"
                 >AI Reply Assistant</a
+              >
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply"
+                >HostReply AI</a
               >
               <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk"
                 >WorkDesk</a
@@ -268,6 +272,51 @@
         </h3>
         <p data-i18n="privacyPolicy.extension.dataDeletion.paragraph">
           Uninstalling the extension removes all stored data.
+        </p>
+      </div>
+    </section>
+
+    
+    <section style="padding: var(--spacing-xl) 0" id="host-reply-ai">
+      <div class="container">
+        <h2 data-i18n="privacyPolicy.hostReplyAi.sectionTitle">
+          Donbrico HostReply AI — Chrome Extension
+        </h2>
+        <h3
+          data-i18n="privacyPolicy.hostReplyAi.whatWeCollect.sectionTitle"
+        >
+          What data we collect
+        </h3>
+        <p data-i18n="privacyPolicy.hostReplyAi.whatWeCollect.paragraph">
+          None. Your Host Memory property details and settings are stored locally in Chrome's storage on your device. No data is transmitted to Donbrico servers.
+        </p>
+        <h3 data-i18n="privacyPolicy.hostReplyAi.howStored.sectionTitle">
+          How your data is stored
+        </h3>
+        <p data-i18n="privacyPolicy.hostReplyAi.howStored.paragraph">
+          Property details are stored in Chrome's local storage. This data never leaves your device unless you use a third-party AI provider.
+        </p>
+        <h3
+          data-i18n="privacyPolicy.hostReplyAi.thirdPartyAI.sectionTitle"
+        >
+          Third-party AI providers (Bring Your Own Key)
+        </h3>
+        <p data-i18n="privacyPolicy.hostReplyAi.thirdPartyAI.paragraph">
+          If you configure a Bring Your Own Key provider such as OpenAI, the guest message and your Host Memory details are sent to that third-party provider to generate a response. If you use Gemini Nano (where available), all processing is on-device. Donbrico does not store or log any AI requests.
+        </p>
+        <h3 data-i18n="privacyPolicy.hostReplyAi.permissions.sectionTitle">
+          Permissions used
+        </h3>
+        <p data-i18n="privacyPolicy.hostReplyAi.permissions.paragraph">
+          storage (for Host Memory and settings), activeTab (to detect text fields), scripting (to inject the reply toolbar).
+        </p>
+        <h3
+          data-i18n="privacyPolicy.hostReplyAi.dataDeletion.sectionTitle"
+        >
+          Data deletion
+        </h3>
+        <p data-i18n="privacyPolicy.hostReplyAi.dataDeletion.paragraph">
+          Uninstalling the extension deletes all locally stored property details and settings. No data is retained on Donbrico servers.
         </p>
       </div>
     </section>

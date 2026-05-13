@@ -52,7 +52,8 @@
     "extensionsReply": "KI-Antwortassistent",
     "extensionsWorkdesk": "Arbeitsplatz",
     "categories": "Kategorien",
-    "byRole": "Nach Rolle"
+    "byRole": "Nach Rolle",
+    "extensionsHostReply": "HostReply AI"
   },
   "home": {
     "page": {
@@ -447,6 +448,18 @@
         "question": "Was passiert, wenn ich einen Arbeitsbereich lösche?",
         "answer": "Gelöschte Arbeitsbereiche sind für immer verschwunden. "
       }
+    },
+    "hostReply": {
+      "sectionTitle": "Donbrico HostReply AI-Unterstützung",
+      "subtitle": "Häufige Probleme",
+      "q1": {
+        "question": "Die Erweiterungssymbolleiste wird auf Airbnb oder Vrbo nicht angezeigt",
+        "answer": "Stellen Sie sicher, dass Sie sich auf der Seite „Nachrichten-Posteingang“ befinden. Aktualisieren Sie die Seite, wenn die Symbolleiste nicht angezeigt wird."
+      },
+      "q2": {
+        "question": "Details zum Hostspeicher werden in Antworten nicht verwendet",
+        "answer": "Überprüfen Sie, ob Sie Ihre Eigentumsdetails auf der Registerkarte „Hostspeicher“ des Erweiterungs-Popups gespeichert haben."
+      }
     }
   },
   "privacyPolicy": {
@@ -515,7 +528,8 @@
       "nullCarrier": "Null-Carrier-Spiel",
       "website": "Diese Website",
       "contact": "Kontakt",
-      "workDesk": "Arbeitsplatz"
+      "workDesk": "Arbeitsplatz",
+      "hostReplyAi": "HostReply AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico AI Reply Assistant – Chrome-Erweiterung",
@@ -561,6 +575,29 @@
       "dataDeletion": {
         "sectionTitle": "Datenlöschung",
         "paragraph": "Uninstalling the extension deletes all locally stored workspaces and settings. "
+      }
+    },
+    "hostReplyAi": {
+      "sectionTitle": "Donbrico HostReply AI – Chrome-Erweiterung",
+      "whatWeCollect": {
+        "sectionTitle": "Welche Daten wir sammeln",
+        "paragraph": "Keiner. Die Details und Einstellungen Ihrer Hostspeicher-Eigenschaft werden lokal im Chrome-Speicher auf Ihrem Gerät gespeichert. Es werden keine Daten an Donbrico-Server übermittelt."
+      },
+      "howStored": {
+        "sectionTitle": "Wie Ihre Daten gespeichert werden",
+        "paragraph": "Eigenschaftsdetails werden im lokalen Speicher von Chrome gespeichert. Diese Daten verlassen niemals Ihr Gerät, es sei denn, Sie nutzen einen Drittanbieter für KI."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "KI-Drittanbieter (Bring Your Own Key)",
+        "paragraph": "Wenn Sie einen Bring Your Own Key-Anbieter wie OpenAI konfigurieren, werden die Gastnachricht und Ihre Host-Speicherdetails an diesen Drittanbieter gesendet, um eine Antwort zu generieren. Wenn Sie Gemini Nano verwenden (sofern verfügbar), erfolgt die gesamte Verarbeitung auf dem Gerät. Donbrico speichert oder protokolliert keine KI-Anfragen."
+      },
+      "permissions": {
+        "sectionTitle": "Verwendete Berechtigungen",
+        "paragraph": "storage (für Host-Speicher und Einstellungen), activeTab (zum Erkennen von Textfeldern), Scripting (zum Einfügen der Antwortsymbolleiste)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Datenlöschung",
+        "paragraph": "Durch die Deinstallation der Erweiterung werden alle lokal gespeicherten Eigenschaftsdetails und -einstellungen gelöscht. Auf den Donbrico-Servern werden keine Daten gespeichert."
       }
     }
   },
@@ -1777,7 +1814,11 @@
         "ogDescription": "Automatisieren Sie E-Commerce-Support-Antworten auf Bestellungen, Rückerstattungen und Kundenfragen. Reduzieren Sie die Ticketlast mit KI-gestützten Antworten."
       },
       "eyebrow": "FÜR E-COMMERCE-UNTERSTÜTZUNG",
-      "breadcrumb": ["Heim", "Lösungen", "E-Commerce-Unterstützung"],
+      "breadcrumb": [
+        "Heim",
+        "Lösungen",
+        "E-Commerce-Unterstützung"
+      ],
       "title": "E-Commerce-Supportteams: Beantworten Sie Bestellungen, Rückerstattungen und Versandfragen schneller mit KI",
       "subtitle": "Mit AI Reply Assistant können Sie eine Bibliothek mit markenbezogenen Support-Antworten erstellen und in Sekundenschnelle kontextbezogene Antworten generieren – ohne Ihren Helpdesk zu verlassen.",
       "pain": {
@@ -1921,7 +1962,11 @@
         "ogDescription": "Füllen Sie Versicherungsformulare schneller aus mit KI-gestützter Automatisierung für Ansprüche, Policendateneingabe und Verwaltungsdokumentation."
       },
       "eyebrow": "FÜR VERSICHERUNGSPROFIS",
-      "breadcrumb": ["Heim", "Lösungen", "Versicherungs-Workflows"],
+      "breadcrumb": [
+        "Heim",
+        "Lösungen",
+        "Versicherungs-Workflows"
+      ],
       "title": "Versicherungsprofis: Eliminieren Sie die manuelle Formulareingabe durch KI-gestütztes automatisches Ausfüllen",
       "subtitle": "Donbrico Autofill AI füllt Antragsformulare, Richtlinieneingabebildschirme und Verwaltungsunterlagen aus einem gespeicherten Datenprofil aus – wodurch wiederholte Eingabefehler reduziert und jede Woche Stunden gespart werden.",
       "pain": {
@@ -2037,7 +2082,11 @@
         "ogDescription": "Generieren Sie mithilfe von KI sofort präzise Support-Antworten. Reduzieren Sie die Reaktionszeit für Shopify-, SaaS- und E-Commerce-Supportteams."
       },
       "eyebrow": "FÜR SUPPORT-TEAMS",
-      "breadcrumb": ["Heim", "Lösungen", "Support-Teams"],
+      "breadcrumb": [
+        "Heim",
+        "Lösungen",
+        "Support-Teams"
+      ],
       "title": "Supportmitarbeiter: Halbieren Sie die Antwortzeit mit KI-gestützten Ticketantworten",
       "subtitle": "AI Reply Assistant bietet Supportmitarbeitern eine persönliche Antwortbibliothek und eine KI-Entwurfsschaltfläche – so können sie schneller auf Tickets reagieren, ohne Einbußen bei der Qualität oder der Markenbotschaft hinnehmen zu müssen.",
       "pain": {
@@ -2157,7 +2206,11 @@
         "ogDescription": "Speichern und organisieren Sie Browsersitzungen mit KI. Ideal für Forscher, Entwickler und Fachleute, die komplexe Arbeitsabläufe verwalten."
       },
       "eyebrow": "BROWSER-ARBEITSBEREICHSVERWALTUNG",
-      "breadcrumb": ["Heim", "Lösungen", "Browser-Arbeitsbereich"],
+      "breadcrumb": [
+        "Heim",
+        "Lösungen",
+        "Browser-Arbeitsbereich"
+      ],
       "title": "Forscher und Entwickler: Hören Sie auf, Browsersitzungen zu verlieren. Organisieren Sie komplexe Arbeitsabläufe mit KI.",
       "subtitle": "WorkDesk speichert Ihren gesamten Browserstatus und stellt ihn mit einem Klick wieder her. KI benennt, gruppiert und organisiert Ihre Tabs automatisch, sodass Sie sich auf die Arbeit und nicht auf den Browser konzentrieren können.",
       "pain": {
@@ -2366,7 +2419,11 @@
         "ogDescription": "Beschleunigen Sie die Rekrutierung mit KI, die Jobbörsen automatisch ausfüllt, Kandidatenzusammenfassungen erstellt und die manuelle ATS-Dateneingabe reduziert."
       },
       "eyebrow": "FÜR RECRUITERS",
-      "breadcrumb": ["Heim", "Lösungen", "Für Personalvermittler"],
+      "breadcrumb": [
+        "Heim",
+        "Lösungen",
+        "Für Personalvermittler"
+      ],
       "title": "Personalvermittler: Automatisieren Sie die Einreichung von Stellenbörsen und die ATS-Dateneingabe mit KI",
       "subtitle": "Donbrico Autofill AI füllt Bewerbungen und ATS-Formulare aus einem einzigen gespeicherten Profil aus – so können Sie mehr Kandidaten bearbeiten, ohne den Aufwand des Kopierens und Einfügens.",
       "pain": {
@@ -2827,6 +2884,115 @@
       "q4": {
         "question": "Ist dies HIPAA-konform?",
         "answer": "MedAutoFill speichert Daten lokal. Bei Gemini Nano verlassen keine Daten den Browser. Ihr Compliance-Team sollte die Nutzung bewerten."
+      }
+    }
+  },
+  "hostReply": {
+    "page": {
+      "title": "Donbrico HostReply AI – Gastnachrichtenassistent",
+      "description": "Antworten Sie Airbnb- und Vrbo-Gästen in Sekundenschnelle – HostReply AI erstellt professionelle Nachrichten direkt in Ihrem Posteingang, kostenlos.",
+      "ogTitle": "Donbrico HostReply AI – Gastnachrichtenassistent",
+      "ogDescription": "Antworten Sie Airbnb- und Vrbo-Gästen in Sekundenschnelle – HostReply AI erstellt professionelle Nachrichten direkt in Ihrem Posteingang, kostenlos."
+    },
+    "hero": {
+      "eyebrow": "CHROM-VERLÄNGERUNG",
+      "title": "Reply to guests<br>in seconds.",
+      "subtitle": "HostReply AI erstellt professionelle Nachrichten kostenlos direkt in Ihrem Airbnb- oder Vrbo-Posteingang. Beinhaltet einen Host-Speicher für Ihre Hausregeln und Check-in-Informationen.",
+      "disclaimer": "🔒 Integrierte KI läuft lokal – die Daten bleiben in Ihrem Browser",
+      "buttonPrimary": "Zu Chrome hinzufügen – kostenlos",
+      "buttonSecondary": "Sehen Sie, wie es funktioniert ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "Wie es funktioniert",
+      "step1": {
+        "title": "1. Speichern Sie Ihre Immobiliendaten",
+        "description": "Speichern Sie WLAN-Details, Check-in-Informationen und Hausregeln einmal im Host-Speicher."
+      },
+      "step2": {
+        "title": "2. Öffnen Sie Ihren Posteingang",
+        "description": "Funktioniert direkt in Ihrem Airbnb- und Vrbo-Nachrichten-Posteingang."
+      },
+      "step3": {
+        "title": "3. AI entwirft die Antwort",
+        "description": "HostReply liest die Nachricht des Gastes, ruft sie aus dem Host-Speicher ab und verfasst sofort eine professionelle Antwort."
+      }
+    },
+    "features": {
+      "sectionTitle": "Merkmale",
+      "feature1": {
+        "title": "Funktioniert dort, wo Sie arbeiten",
+        "description": "Verarbeitet Airbnb- und Vrbo-Nachrichten automatisch."
+      },
+      "feature2": {
+        "title": "Host-Speicher",
+        "description": "Speichern Sie einmalig Ihre Objektdaten. Die KI merkt sich WLAN, Check-in-Codes und Regeln."
+      },
+      "feature3": {
+        "title": "Datenschutz zuerst",
+        "description": "Ihre Immobiliendaten werden lokal gespeichert. Verwenden Sie Chrome AI auf dem Gerät, um alles vollständig privat zu halten."
+      },
+      "feature4": {
+        "title": "Bringen Sie Ihre eigene KI mit",
+        "description": "Wenn Sie möchten, können Sie OpenAI, Claude oder Gemini mit Ihrem eigenen API-Schlüssel verbinden."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Einfache Preisgestaltung. Keine versteckten Kosten.",
+      "free": {
+        "title": "Frei",
+        "price": "0 $",
+        "button": "Zu Chrome hinzufügen",
+        "features": {
+          "f1": "5 gespeicherte Antwortvorlagen",
+          "f2": "1 Eigenschaft (Hostspeicher)",
+          "f3": "5 intelligente Kernvariablen",
+          "f4": "10 KI-Antworten/Tag",
+          "f5": "3 Antwortszenarien",
+          "f6": "Einzelner BYOK-Anbieter",
+          "f7": "3 Host-Töne"
+        }
+      },
+      "proMonthly": {
+        "title": "Pro (monatlich)",
+        "price": "7,99 $/Monat",
+        "button": "Monatlich abonnieren",
+        "features": {
+          "f1": "Unbegrenzte KI-Antworten",
+          "f2": "Unbegrenzt gespeicherte Antworten",
+          "f3": "Unbegrenzte Eigenschaften",
+          "f4": "5 Host-Töne",
+          "f5": "Vorlagen exportieren/importieren",
+          "f6": "Über 20 intelligente Variablen",
+          "f7": "Mehrere BYOK-Anbieter",
+          "f8": "Vorrangiger Support"
+        }
+      },
+      "proLifetime": {
+        "title": "Pro (lebenslang)",
+        "price": "69 $",
+        "tagline": "Einmal bezahlen, für immer nutzen",
+        "button": "Lebenslanger Pass",
+        "features": {
+          "f1": "Alles in Pro Monthly",
+          "f2": "Keine wiederkehrenden Gebühren",
+          "f3": "Zukünftige Updates enthalten",
+          "f4": "Preise für Erstanwender"
+        }
+      }
+    },
+    "faq": {
+      "sectionTitle": "Häufig gestellte Fragen",
+      "q1": {
+        "question": "Funktioniert es sowohl mit Airbnb als auch mit Vrbo?",
+        "answer": "Ja, es funktioniert direkt in den Nachrichten-Posteingängen von Airbnb und Vrbo."
+      },
+      "q2": {
+        "question": "Ist es wirklich kostenlos?",
+        "answer": "Ja! Der kostenlose Plan bietet Ihnen alles, was Sie für den Start benötigen, einschließlich einer gespeicherten Eigenschaft für Ihren Host-Speicher."
+      },
+      "q3": {
+        "question": "Was ist Host-Speicher?",
+        "answer": "Im Host-Speicher speichern Sie die spezifischen Details Ihrer Unterkunft wie WLAN-Passwörter, Hausregeln und Check-in-Anweisungen. Die KI verwendet diese Informationen automatisch, wenn sie Gästen antwortet."
       }
     }
   }

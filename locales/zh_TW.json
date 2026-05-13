@@ -1797,7 +1797,11 @@
         "ogDescription": "自動回覆訂單、退款和客戶問題的電子商務支援。透過人工智慧驅動的回應減少工單負載。"
       },
       "eyebrow": "電子商務支持",
-      "breadcrumb": ["家", "解決方案", "電子商務支持"],
+      "breadcrumb": [
+        "家",
+        "解決方案",
+        "電子商務支持"
+      ],
       "title": "電子商務支援團隊：利用人工智慧更快回答訂單、退款和運輸問題",
       "subtitle": "AI Reply Assistant 可讓您建立品牌支援回應庫，並在幾秒鐘內產生上下文感知答案 - 無需離開幫助台。",
       "pain": {
@@ -1941,7 +1945,11 @@
         "ogDescription": "透過人工智慧輔助的索賠、保單資料輸入和管理文件自動化，更快地填寫保險表格。"
       },
       "eyebrow": "對於保險專業人士",
-      "breadcrumb": ["家", "解決方案", "保險工作流程"],
+      "breadcrumb": [
+        "家",
+        "解決方案",
+        "保險工作流程"
+      ],
       "title": "保險專業人士：透過人工智慧輔助自動填入消除手動表單輸入",
       "subtitle": "Donbrico Autofill AI 透過已儲存的資料設定檔填寫索賠表、保單輸入畫面和管理文書工作 - 減少重複輸入錯誤並每週節省時間。",
       "pain": {
@@ -2057,7 +2065,11 @@
         "ogDescription": "使用 AI 立即產生準確的支援回應。縮短 Shopify、SaaS 和電子商務支援團隊的回應時間。"
       },
       "eyebrow": "對於支援團隊",
-      "breadcrumb": ["家", "解決方案", "支援團隊"],
+      "breadcrumb": [
+        "家",
+        "解決方案",
+        "支援團隊"
+      ],
       "title": "支援代理：透過人工智慧輔助工單回應將回覆時間縮短一半",
       "subtitle": "AI 回覆助理為支援代理提供了個人回覆庫和 AI 草稿按鈕，讓他們可以更快地回覆請求，而不會犧牲品質或品牌形象。",
       "pain": {
@@ -2177,7 +2189,11 @@
         "ogDescription": "使用 AI 儲存和組織瀏覽器會話。非常適合管理複雜工作流程的研究人員、開發人員和專業人員。"
       },
       "eyebrow": "瀏覽器工作區管理",
-      "breadcrumb": ["家", "解決方案", "瀏覽器工作區"],
+      "breadcrumb": [
+        "家",
+        "解決方案",
+        "瀏覽器工作區"
+      ],
       "title": "研究人員和開發人員：停止遺失瀏覽器會話。使用人工智慧組織複雜的工作流程。",
       "subtitle": "WorkDesk 會儲存您的整個瀏覽器狀態並一鍵恢復。 AI 會自動命名、分組和組織您的選項卡，以便您可以專注於工作，而不是瀏覽器。",
       "pain": {
@@ -2386,7 +2402,11 @@
         "ogDescription": "利用人工智慧自動填入職位委員會、產生候選人摘要並減少手動 ATS 資料輸入，加快招募速度。"
       },
       "eyebrow": "對於招募人員",
-      "breadcrumb": ["家", "解決方案", "對於招募人員"],
+      "breadcrumb": [
+        "家",
+        "解決方案",
+        "對於招募人員"
+      ],
       "title": "Recruiters: automate job board submissions and ATS data entry with AI",
       "subtitle": "Donbrico Autofill AI 從單一已儲存的個人資料中填寫工作申請和 ATS 表格，讓您無需複製貼上即可處理更多候選人。",
       "pain": {
@@ -2847,6 +2867,52 @@
       "q4": {
         "question": "是否符合HIPAA要求？",
         "answer": "MedAutoFill在本地儲存資料。使用Gemini Nano時，資料不會離開瀏覽器。您的合規團隊應評估使用情況。"
+      }
+    }
+  },
+  "hostReply": {
+    "pricing": {
+      "sectionTitle": "Simple pricing. No hidden costs.",
+      "free": {
+        "title": "Free",
+        "price": "$0",
+        "button": "Add to Chrome",
+        "features": {
+          "f1": "5 Saved Reply templates",
+          "f2": "1 property (Host Memory)",
+          "f3": "5 core smart variables",
+          "f4": "10 AI replies/day",
+          "f5": "3 Reply Scenarios",
+          "f6": "Single BYOK provider",
+          "f7": "3 host tones"
+        }
+      },
+      "proMonthly": {
+        "title": "Pro (Monthly)",
+        "price": "$7.99/mo",
+        "button": "Subscribe monthly",
+        "features": {
+          "f1": "Unlimited AI replies",
+          "f2": "Unlimited saved replies",
+          "f3": "Unlimited properties",
+          "f4": "5 host tones",
+          "f5": "Export/import templates",
+          "f6": "20+ Smart variables",
+          "f7": "Multiple BYOK providers",
+          "f8": "Priority support"
+        }
+      },
+      "proLifetime": {
+        "title": "Pro (Lifetime)",
+        "price": "$69",
+        "tagline": "Pay once, use forever",
+        "button": "Lifetime pass",
+        "features": {
+          "f1": "Everything in Pro Monthly",
+          "f2": "No recurring fees",
+          "f3": "Future updates included",
+          "f4": "Early adopter pricing"
+        }
       }
     }
   }

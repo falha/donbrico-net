@@ -37,10 +37,6 @@
     "solutionsCommunication": "写信并回复",
     "solutionsAutomation": "填充和处理",
     "extensionsMedAutoFill": "MedAutoFill",
-    "extensionsReply": "",
-    "extensionsWorkdesk": "",
-    "categories": "",
-    "byRole": ""
     "extensionsReply": "人工智能回复助手",
     "extensionsWorkdesk": "办公桌",
     "categories": "类别",
@@ -1800,7 +1796,11 @@
         "ogDescription": "自动回复订单、退款和客户问题的电子商务支持。通过人工智能驱动的响应减少工单负载。"
       },
       "eyebrow": "电子商务支持",
-      "breadcrumb": ["家", "解决方案", "电子商务支持"],
+      "breadcrumb": [
+        "家",
+        "解决方案",
+        "电子商务支持"
+      ],
       "title": "电子商务支持团队：利用人工智能更快地回答订单、退款和运输问题",
       "subtitle": "AI Reply Assistant 可让您构建品牌支持响应库，并在几秒钟内生成上下文感知答案 - 无需离开帮助台。",
       "pain": {
@@ -1944,7 +1944,11 @@
         "ogDescription": "通过人工智能辅助的索赔、保单数据输入和管理文档自动化，更快地填写保险表格。"
       },
       "eyebrow": "对于保险专业人士",
-      "breadcrumb": ["家", "解决方案", "保险工作流程"],
+      "breadcrumb": [
+        "家",
+        "解决方案",
+        "保险工作流程"
+      ],
       "title": "保险专业人士：通过人工智能辅助自动填充消除手动表格输入",
       "subtitle": "Donbrico Autofill AI 通过保存的数据配置文件填写索赔表、保单输入屏幕和管理文书工作 - 减少重复输入错误并每周节省时间。",
       "pain": {
@@ -2060,7 +2064,11 @@
         "ogDescription": "使用 AI 立即生成准确的支持回复。缩短 Shopify、SaaS 和电子商务支持团队的响应时间。"
       },
       "eyebrow": "对于支持团队",
-      "breadcrumb": ["家", "解决方案", "支持团队"],
+      "breadcrumb": [
+        "家",
+        "解决方案",
+        "支持团队"
+      ],
       "title": "支持代理：通过人工智能辅助工单响应将回复时间缩短一半",
       "subtitle": "AI 回复助手为支持代理提供了个人回复库和 AI 草稿按钮，这样他们就可以更快地回复请求，而不会牺牲质量或品牌形象。",
       "pain": {
@@ -2180,7 +2188,11 @@
         "ogDescription": "使用 AI 保存和组织浏览器会话。非常适合管理复杂工作流程的研究人员、开发人员和专业人员。"
       },
       "eyebrow": "浏览器工作区管理",
-      "breadcrumb": ["家", "解决方案", "浏览器工作区"],
+      "breadcrumb": [
+        "家",
+        "解决方案",
+        "浏览器工作区"
+      ],
       "title": "研究人员和开发人员：停止丢失浏览器会话。使用人工智能组织复杂的工作流程。",
       "subtitle": "WorkDesk 会保存您的整个浏览器状态并一键恢复。 AI 会自动命名、分组和组织您的选项卡，以便您可以专注于工作，而不是浏览器。",
       "pain": {
@@ -2389,7 +2401,11 @@
         "ogDescription": "利用人工智能自动填充职位委员会、生成候选人摘要并减少手动 ATS 数据输入，加快招聘速度。"
       },
       "eyebrow": "对于招聘人员",
-      "breadcrumb": ["家", "解决方案", "对于招聘人员"],
+      "breadcrumb": [
+        "家",
+        "解决方案",
+        "对于招聘人员"
+      ],
       "title": "招聘人员：利用 AI 自动提交求职板和 ATS 数据输入",
       "subtitle": "Donbrico Autofill AI 从单个保存的个人资料中填写工作申请和 ATS 表格，让您无需复制粘贴即可处理更多候选人。",
       "pain": {
@@ -2850,6 +2866,52 @@
       "q4": {
         "question": "是否符合HIPAA要求？",
         "answer": "MedAutoFill在本地存储数据。使用Gemini Nano时，数据不会离开浏览器。您的合规团队应评估使用情况。"
+      }
+    }
+  },
+  "hostReply": {
+    "pricing": {
+      "sectionTitle": "Simple pricing. No hidden costs.",
+      "free": {
+        "title": "Free",
+        "price": "$0",
+        "button": "Add to Chrome",
+        "features": {
+          "f1": "5 Saved Reply templates",
+          "f2": "1 property (Host Memory)",
+          "f3": "5 core smart variables",
+          "f4": "10 AI replies/day",
+          "f5": "3 Reply Scenarios",
+          "f6": "Single BYOK provider",
+          "f7": "3 host tones"
+        }
+      },
+      "proMonthly": {
+        "title": "Pro (Monthly)",
+        "price": "$7.99/mo",
+        "button": "Subscribe monthly",
+        "features": {
+          "f1": "Unlimited AI replies",
+          "f2": "Unlimited saved replies",
+          "f3": "Unlimited properties",
+          "f4": "5 host tones",
+          "f5": "Export/import templates",
+          "f6": "20+ Smart variables",
+          "f7": "Multiple BYOK providers",
+          "f8": "Priority support"
+        }
+      },
+      "proLifetime": {
+        "title": "Pro (Lifetime)",
+        "price": "$69",
+        "tagline": "Pay once, use forever",
+        "button": "Lifetime pass",
+        "features": {
+          "f1": "Everything in Pro Monthly",
+          "f2": "No recurring fees",
+          "f3": "Future updates included",
+          "f4": "Early adopter pricing"
+        }
       }
     }
   }

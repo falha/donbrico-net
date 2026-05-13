@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="hostReply.page.title">
+      Donbrico HostReply AI — Guest Message Assistant
+    </title>
+    <meta
+      name="description"
+      data-i18n="hostReply.page.description"
+      content="Reply to Airbnb and Vrbo guests in seconds — HostReply AI drafts professional messages directly inside your inbox, for free."
+    />
+    <meta
+      property="og:title"
+      data-i18n="hostReply.page.ogTitle"
+      content="Donbrico HostReply AI — Guest Message Assistant"
+    />
+    <meta
+      property="og:description"
+      data-i18n="hostReply.page.ogDescription"
+      content="Reply to Airbnb and Vrbo guests in seconds — HostReply AI drafts professional messages directly inside your inbox, for free."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://donbrico.net/host-reply/"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+
+    <link rel="canonical" href="https://donbrico.net/host-reply/" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"
+          ><span></span><span></span><span></span
+        ></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a
+                href="/solutions/communication/"
+                data-i18n="nav.solutionsCommunication"
+                >Write &amp; Respond</a
+              >
+              <a
+                href="/solutions/automation/"
+                data-i18n="nav.solutionsAutomation"
+                >Fill &amp; Process</a
+              >
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace"
+                >Organize &amp; Focus</a
+              >
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a
+                href="/solutions/job-seekers/"
+                data-i18n="nav.solutionsJobSeekers"
+                >For Job Seekers</a
+              >
+              <a
+                href="/med-autofill/"
+                data-i18n="nav.solutionsMedicalAdmin"
+                >For Medical Admin</a
+              >
+              <a
+                href="/solutions/recruiters/"
+                data-i18n="nav.solutionsRecruiters"
+                >For Recruiters</a
+              >
+              <a
+                href="/solutions/support-teams/"
+                data-i18n="nav.solutionsSupportTeams"
+                >For Support Teams</a
+              >
+              <a
+                href="/solutions/ecommerce-support/"
+                data-i18n="nav.solutionsEcommerceSupport"
+                >For Ecommerce</a
+              >
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance"
+                >For Insurance</a
+              >
+              <a
+                href="/solutions/real-estate/"
+                data-i18n="nav.solutionsRealEstate"
+                >For Real Estate</a
+              >
+              <a
+                href="/solutions/browser-workspace/"
+                data-i18n="nav.solutionsBrowserWorkspace"
+                >Browser Workspace</a
+              >
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" class="active" data-i18n="nav.extensions"
+              >Extensions</a
+            >
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll"
+                >All Extensions</a
+              >
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill"
+                >Autofill AI</a
+              >
+              <a href="/med-autofill/">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply"
+                >AI Reply Assistant</a
+              >
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply"
+                >HostReply AI</a
+              >
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk"
+                >WorkDesk</a
+              >
+            </div>
+          </li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow" data-i18n="hostReply.hero.eyebrow">
+          CHROME EXTENSION
+        </p>
+        <h1 data-i18n="hostReply.hero.title">
+          Reply to guests<br />in seconds.
+        </h1>
+        <p class="subtitle" data-i18n="hostReply.hero.subtitle">
+          HostReply AI drafts professional messages directly inside your Airbnb or Vrbo inbox, for free. Includes Host Memory for your house rules and check-in info.
+        </p>
+        <div class="install-group">
+          <a
+            href="https://chromewebstore.google.com/detail/habaanjfebpomgkglicmnkofhiikekol"
+            class="btn"
+            data-i18n="hostReply.hero.buttonPrimary"
+            >Add to Chrome — Free</a
+          >
+          <a
+            href="#how-it-works"
+            class="btn-outline"
+            data-i18n="hostReply.hero.buttonSecondary"
+            >See how it works ↓</a
+          >
+        </div>
+        <p
+          class="text-muted"
+          style="margin-top: var(--spacing-md)"
+          data-i18n="hostReply.hero.disclaimer"
+        >
+          🔒 Built-in AI runs locally — data stays in your browser
+        </p>
+      </div>
+    </section>
+
+    <section id="how-it-works" style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2
+          class="section-title"
+          data-i18n="hostReply.howItWorks.sectionTitle"
+        >
+          How It Works
+        </h2>
+        <div
+          style="
+            display: flex;
+            gap: var(--spacing-lg);
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <div class="card" style="flex: 1; min-width: 250px">
+            <h3 data-i18n="hostReply.howItWorks.step1.title">
+              1. Save your property details
+            </h3>
+            <p data-i18n="hostReply.howItWorks.step1.description">
+              Store Wi-Fi details, check-in info, and house rules once in Host Memory.
+            </p>
+          </div>
+          <div class="card" style="flex: 1; min-width: 250px">
+            <h3 data-i18n="hostReply.howItWorks.step2.title">
+              2. Open your inbox
+            </h3>
+            <p data-i18n="hostReply.howItWorks.step2.description">
+              Works directly inside your Airbnb and Vrbo messaging inbox.
+            </p>
+          </div>
+          <div class="card" style="flex: 1; min-width: 250px">
+            <h3 data-i18n="hostReply.howItWorks.step3.title">
+              3. AI drafts the reply
+            </h3>
+            <p data-i18n="hostReply.howItWorks.step3.description">
+              HostReply reads the guest's message, pulls from Host Memory, and drafts a professional response instantly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2
+          class="section-title"
+          data-i18n="hostReply.features.sectionTitle"
+        >
+          Features
+        </h2>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+          "
+        >
+          <div class="card">
+            <h4 data-i18n="hostReply.features.feature1.title">
+              Works where you work
+            </h4>
+            <p data-i18n="hostReply.features.feature1.description">
+              Handles Airbnb and Vrbo messaging automatically.
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="hostReply.features.feature2.title">
+              Host Memory
+            </h4>
+            <p data-i18n="hostReply.features.feature2.description">
+              Save your property details once. The AI remembers Wi-Fi, check-in codes, and rules.
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="hostReply.features.feature3.title">
+              Privacy First
+            </h4>
+            <p data-i18n="hostReply.features.feature3.description">
+              Your property details are stored locally. Use on-device Chrome AI to keep everything completely private.
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="hostReply.features.feature4.title">
+              Bring Your Own AI
+            </h4>
+            <p data-i18n="hostReply.features.feature4.description">
+              Connect OpenAI, Claude, or Gemini using your own API key if you prefer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2
+          class="section-title"
+          data-i18n="hostReply.pricing.sectionTitle"
+        >
+          Simple pricing. No hidden costs.
+        </h2>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-lg);
+            justify-content: center;
+          "
+        >
+          <div class="card" style="border: 2px solid var(--accent)">
+            <h3 data-i18n="hostReply.pricing.free.title">Free</h3>
+            <p
+              style="font-size: 2rem; font-weight: 700; color: var(--accent)"
+              data-i18n="hostReply.pricing.free.price"
+            >
+              $0
+            </p>
+            <ul>
+              <li data-i18n="hostReply.pricing.free.features.f1">5 Saved Reply templates</li>
+              <li data-i18n="hostReply.pricing.free.features.f2">1 property (Host Memory)</li>
+              <li data-i18n="hostReply.pricing.free.features.f3">5 core smart variables</li>
+              <li data-i18n="hostReply.pricing.free.features.f4">10 AI replies/day</li>
+              <li data-i18n="hostReply.pricing.free.features.f5">3 Reply Scenarios</li>
+              <li data-i18n="hostReply.pricing.free.features.f6">Single BYOK provider</li>
+              <li data-i18n="hostReply.pricing.free.features.f7">3 host tones</li>
+            </ul>
+            <a
+              href="https://chromewebstore.google.com/detail/habaanjfebpomgkglicmnkofhiikekol"
+              class="btn"
+              data-i18n="hostReply.pricing.free.button"
+              >Add to Chrome</a
+            >
+          </div>
+
+          <div class="card" style="border: 2px solid var(--accent)">
+            <h3 data-i18n="hostReply.pricing.proMonthly.title">Pro (Monthly)</h3>
+            <p
+              style="font-size: 2rem; font-weight: 700; color: var(--accent)"
+              data-i18n="hostReply.pricing.proMonthly.price"
+            >
+              $7.99/mo
+            </p>
+            <ul>
+              <li data-i18n="hostReply.pricing.proMonthly.features.f1">Unlimited AI replies</li>
+              <li data-i18n="hostReply.pricing.proMonthly.features.f2">Unlimited saved replies</li>
+              <li data-i18n="hostReply.pricing.proMonthly.features.f3">Unlimited properties</li>
+              <li data-i18n="hostReply.pricing.proMonthly.features.f4">5 host tones</li>
+              <li data-i18n="hostReply.pricing.proMonthly.features.f5">Export/import templates</li>
+              <li data-i18n="hostReply.pricing.proMonthly.features.f6">20+ Smart variables</li>
+              <li data-i18n="hostReply.pricing.proMonthly.features.f7">Multiple BYOK providers</li>
+              <li data-i18n="hostReply.pricing.proMonthly.features.f8">Priority support</li>
+            </ul>
+            <a
+              href="https://checkout.dodopayments.com/buy/pdt_0Neiemm14aVfIDOMub6sP?quantity=1&redirect_url=https%3A%2F%2Fdonbrico.net%2Factivate%3Fproduct%3Dhost-reply"
+              class="btn"
+              data-i18n="hostReply.pricing.proMonthly.button"
+              >Subscribe monthly</a
+            >
+          </div>
+
+          <div class="card" style="background: linear-gradient(135deg, var(--card-bg), rgba(99, 102, 241, 0.15)); border: 2px solid var(--accent); position: relative; overflow: hidden;">
+            <div style="position: absolute; top: 12px; right: -30px; background: var(--accent); color: white; padding: 4px 30px; transform: rotate(45deg); font-size: 0.8rem; font-weight: bold;">LAUNCH</div>
+            <h3 data-i18n="hostReply.pricing.proLifetime.title">Pro (Lifetime)</h3>
+            <p
+              style="font-size: 2rem; font-weight: 700; color: var(--accent)"
+              data-i18n="hostReply.pricing.proLifetime.price"
+            >
+              $69
+            </p>
+            <p style="font-size: 0.9rem; margin-top: -10px; margin-bottom: 20px; color: var(--muted);" data-i18n="hostReply.pricing.proLifetime.tagline">Pay once, use forever</p>
+            <ul>
+              <li data-i18n="hostReply.pricing.proLifetime.features.f1">Everything in Pro Monthly</li>
+              <li data-i18n="hostReply.pricing.proLifetime.features.f2">No recurring fees</li>
+              <li data-i18n="hostReply.pricing.proLifetime.features.f3">Future updates included</li>
+              <li data-i18n="hostReply.pricing.proLifetime.features.f4">Early adopter pricing</li>
+            </ul>
+            <a
+              href="https://checkout.dodopayments.com/buy/pdt_0NeiemCI20dLNrN5eodgH?quantity=1&redirect_url=https%3A%2F%2Fdonbrico.net%2Factivate%3Fproduct%3Dhost-reply"
+              class="btn"
+              style="background: linear-gradient(135deg, var(--accent), #8b5cf6);"
+              data-i18n="hostReply.pricing.proLifetime.button"
+              >Lifetime pass</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2 class="section-title" data-i18n="hostReply.faq.sectionTitle">
+          Frequently Asked Questions
+        </h2>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary
+            style="cursor: pointer; font-weight: 600"
+            data-i18n="hostReply.faq.q1.question"
+          >
+            Does it work with both Airbnb and Vrbo?
+          </summary>
+          <p data-i18n="hostReply.faq.q1.answer">
+            Yes, it works directly inside both the Airbnb and Vrbo messaging inboxes.
+          </p>
+        </details>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary
+            style="cursor: pointer; font-weight: 600"
+            data-i18n="hostReply.faq.q2.question"
+          >
+            Is it really free?
+          </summary>
+          <p data-i18n="hostReply.faq.q2.answer">
+            Yes! The free plan gives you everything you need to start, including 1 saved property for your Host Memory.
+          </p>
+        </details>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary
+            style="cursor: pointer; font-weight: 600"
+            data-i18n="hostReply.faq.q3.question"
+          >
+            What is Host Memory?
+          </summary>
+          <p data-i18n="hostReply.faq.q3.answer">
+            Host Memory is where you save your property's specific details like Wi-Fi passwords, house rules, and check-in instructions. The AI automatically uses this info when replying to guests.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>Solutions</h4>
+            <a href="/solutions/communication/">Write &amp; Respond</a>
+            <a href="/solutions/automation/">Fill &amp; Process</a>
+            <a href="/solutions/workspace/">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4>Workflows</h4>
+            <a href="/solutions/job-seekers/">Job Seekers</a>
+            <a href="/solutions/recruiters/">Recruiters</a>
+            <a href="/solutions/support-teams/">Support Teams</a>
+            <a href="/solutions/real-estate/">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4>Extensions</h4>
+            <a href="/autofill-ai/">Autofill AI</a>
+            <a href="/med-autofill/">MedAutoFill</a>
+            <a href="/ai-reply-assistant/">AI Reply Assistant</a>
+            <a href="/host-reply/">HostReply AI</a>
+            <a href="/workdesk/">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="/about/">About</a>
+            <a href="/support/">Support</a>
+            <a href="/privacy-policy/">Privacy Policy</a>
+            <a href="/terms/">Terms</a>
+          </div>
+        </div>
+        <p>© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="../js/i18n.js" defer></script>
+    <script src="../js/chatwoot.js" defer></script>
+  </body>
+</html>
