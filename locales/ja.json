@@ -40,7 +40,20 @@
     "extensionsReply": "AI応答アシスタント",
     "extensionsWorkdesk": "ワークデスク",
     "categories": "カテゴリー",
-    "byRole": "役割別"
+    "byRole": "役割別",
+    "solutionsWorkspace": "整理して集中する",
+    "solutionsRecruiters": "採用担当者向け",
+    "solutionsEcommerce": "Eコマースサポート用",
+    "solutionsInsurance": "保険用",
+    "solutionsSupportTeams": "サポートチーム向け",
+    "solutionsBrowserWorkspace": "ブラウザワークスペース",
+    "solutionsJobSeekers": "求職者向け",
+    "solutionsMedicalAdmin": "医療事務向け",
+    "solutionsEcommerceSupport": "eコマース向け",
+    "solutionsRealEstate": "不動産向け",
+    "extensionsAll": "すべての拡張子",
+    "extensionsAutofill": "オートフィルAI",
+    "extensionsHostReply": "ホストリプライAI"
   },
   "home": {
     "page": {
@@ -435,6 +448,18 @@
         "question": "ワークスペースを削除するとどうなりますか?",
         "answer": "削除されたワークスペースは永久に失われます。"
       }
+    },
+    "hostReply": {
+      "sectionTitle": "ドンブリコ HostReply AI サポート",
+      "subtitle": "よくある問題",
+      "q1": {
+        "question": "拡張機能ツールバーが Airbnb または Vrbo に表示されない",
+        "answer": "メッセージ受信トレイ ページにいることを確認してください。ツールバーが表示されない場合は、ページを更新してください。"
+      },
+      "q2": {
+        "question": "ホスト メモリの詳細は応答では使用されません",
+        "answer": "拡張機能ポップアップの [ホスト メモリ] タブにプロパティの詳細が保存されていることを確認してください。"
+      }
     }
   },
   "privacyPolicy": {
@@ -503,7 +528,8 @@
       "nullCarrier": "ヌルキャリアゲーム",
       "website": "このウェブサイト",
       "contact": "接触",
-      "workDesk": "ワークデスク"
+      "workDesk": "ワークデスク",
+      "hostReplyAi": "ホストリプライAI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico AI 返信アシスタント — Chrome 拡張機能",
@@ -549,6 +575,29 @@
       "dataDeletion": {
         "sectionTitle": "データの削除",
         "paragraph": "Uninstalling the extension deletes all locally stored workspaces and settings. "
+      }
+    },
+    "hostReplyAi": {
+      "sectionTitle": "Donbrico HostReply AI — Chrome 拡張機能",
+      "whatWeCollect": {
+        "sectionTitle": "私たちが収集するデータ",
+        "paragraph": "なし。ホスト メモリのプロパティの詳細と設定は、デバイス上の Chrome ストレージにローカルに保存されます。 Donbrico サーバーにはデータは送信されません。"
+      },
+      "howStored": {
+        "sectionTitle": "データの保存方法",
+        "paragraph": "プロパティの詳細は Chrome のローカル ストレージに保存されます。サードパーティの AI プロバイダーを使用しない限り、このデータがデバイスから流出することはありません。"
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "サードパーティ AI プロバイダー (Bring Your Own Key)",
+        "paragraph": "OpenAI などの Bring Your Own Key プロバイダーを構成すると、ゲスト メッセージとホスト メモリの詳細がそのサードパーティ プロバイダーに送信され、応答が生成されます。 Gemini Nano (利用可能な場合) を使用する場合、すべての処理はデバイス上で行われます。 Donbrico は AI リクエストを保存または記録しません。"
+      },
+      "permissions": {
+        "sectionTitle": "使用される権限",
+        "paragraph": "ストレージ (ホスト メモリと設定用)、activeTab (テキスト フィールドの検出用)、スクリプト作成 (応答ツールバーの挿入用)。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "データの削除",
+        "paragraph": "拡張機能をアンインストールすると、ローカルに保存されているプロパティの詳細と設定がすべて削除されます。 Donbrico サーバーにはデータは保持されません。"
       }
     }
   },
@@ -2870,6 +2919,54 @@
     }
   },
   "hostReply": {
+    "page": {
+      "title": "Donbrico HostReply AI — ゲスト メッセージ アシスタント",
+      "description": "Airbnb や Vrbo のゲストに数秒で返信 — HostReply AI は、無料でプロフェッショナルなメッセージを受信箱内に直接作成します。",
+      "ogTitle": "Donbrico HostReply AI — ゲスト メッセージ アシスタント",
+      "ogDescription": "Airbnb や Vrbo のゲストに数秒で返信 — HostReply AI は、無料でプロフェッショナルなメッセージを受信箱内に直接作成します。"
+    },
+    "hero": {
+      "eyebrow": "クローム拡張機能",
+      "title": "ゲスト <br> に数秒で返信します。",
+      "subtitle": "HostReply AI は、Airbnb または Vrbo の受信箱内でプロフェッショナルなメッセージを無料で直接作成します。ハウスルールやチェックイン情報を保存するホストメモリーが含まれています。",
+      "disclaimer": "🔒 内蔵 AI はローカルで実行されます – データはブラウザーに残ります",
+      "buttonPrimary": "Chrome に追加 - 無料",
+      "buttonSecondary": "仕組みを見てみる↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "仕組み",
+      "step1": {
+        "title": "1. 物件の詳細を保存します",
+        "description": "Wi-Fi の詳細、チェックイン情報、ハウス ルールをホスト メモリに保存します。"
+      },
+      "step2": {
+        "title": "2. 受信箱を開きます",
+        "description": "Airbnb や Vrbo のメッセージ受信箱内で直接動作します。"
+      },
+      "step3": {
+        "title": "3.AIが返信文を作成",
+        "description": "HostReply はゲストのメッセージを読み取り、ホスト メモリから取得して、専門的な応答の草案を即座に作成します。"
+      }
+    },
+    "features": {
+      "sectionTitle": "特徴",
+      "feature1": {
+        "title": "あなたが働く場所で働きます",
+        "description": "Airbnb と Vrbo のメッセージングを自動的に処理します。"
+      },
+      "feature2": {
+        "title": "ホストメモリ",
+        "description": "物件の詳細を一度保存​​してください。 AI は Wi-Fi、チェックイン コード、ルールを記憶します。"
+      },
+      "feature3": {
+        "title": "プライバシー第一",
+        "description": "物件の詳細はローカルに保存されます。デバイス上の Chrome AI を使用して、すべてを完全にプライベートに保ちます。"
+      },
+      "feature4": {
+        "title": "独自の AI を持ち込む",
+        "description": "必要に応じて、独自の API キーを使用して OpenAI、Claude、または Gemini に接続します。"
+      }
+    },
     "pricing": {
       "sectionTitle": "シンプルな料金設定。隠れたコストはありません。",
       "free": {
@@ -2912,6 +3009,21 @@
           "f3": "将来のアップデートも含まれます",
           "f4": "早期導入者の価格設定"
         }
+      }
+    },
+    "faq": {
+      "sectionTitle": "よくある質問",
+      "q1": {
+        "question": "AirbnbとVrboの両方で動作しますか?",
+        "answer": "はい、Airbnb と Vrbo の両方のメッセージ受信箱内で直接動作します。"
+      },
+      "q2": {
+        "question": "本当に無料ですか?",
+        "answer": "はい！無料プランでは、ホスト メモリ用の 1 つの保存済みプロパティを含む、開始するために必要なものがすべて提供されます。"
+      },
+      "q3": {
+        "question": "ホストメモリとは何ですか?",
+        "answer": "ホスト メモリには、Wi-Fi パスワード、ハウス ルール、チェックイン手順など、宿泊施設の特定の詳細が保存されます。 AI はゲストに返信するときにこの情報を自動的に使用します。"
       }
     }
   }

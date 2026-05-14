@@ -438,6 +438,18 @@
         "question": "Que se passe-t-il si je supprime un espace de travail ?",
         "answer": "Les espaces de travail supprimés disparaissent à jamais. "
       }
+    },
+    "hostReply": {
+      "sectionTitle": "Prise en charge de l'IA Donbrico HostReply",
+      "subtitle": "Problèmes courants",
+      "q1": {
+        "question": "La barre d'outils d'extension n'apparaît pas sur Airbnb ou Vrbo",
+        "answer": "Assurez-vous que vous êtes sur la page de la boîte de réception de messagerie. Actualisez la page si la barre d'outils n'apparaît pas."
+      },
+      "q2": {
+        "question": "Les détails de la mémoire hôte ne sont pas utilisés dans les réponses",
+        "answer": "Vérifiez que vous avez enregistré les détails de votre propriété dans l'onglet Mémoire hôte de la fenêtre contextuelle de l'extension."
+      }
     }
   },
   "privacyPolicy": {
@@ -1640,7 +1652,11 @@
         "ogDescription": "Gagnez du temps sur la prospection de candidats. Créez une bibliothèque de réponses pour le sourcing, les suivis, les offres et les refus — puis laissez l'IA personnaliser chaque message en quelques secondes."
       },
       "eyebrow": "POUR LES RECRUTEURS",
-      "breadcrumb": ["Accueil", "Solutions", "Pour les recruteurs"],
+      "breadcrumb": [
+        "Accueil",
+        "Solutions",
+        "Pour les recruteurs"
+      ],
       "title": "Recruteurs : rédiger des messages de prospection à grande échelle avec l'IA",
       "subtitle": "Construisez une bibliothèque personnelle de messages de sourcing, suivis, offres et refus — puis laissez l'IA personnaliser chaque message pour le candidat spécifique en quelques secondes, directement dans votre navigateur.",
       "pain": {
@@ -1759,7 +1775,11 @@
         "ogDescription": "Automatisez les réponses de support e-commerce pour les commandes, remboursements et questions des clients. Réduisez la charge de tickets avec des réponses alimentées par l'IA."
       },
       "eyebrow": "POUR LE SUPPORT E-COMMERCE",
-      "breadcrumb": ["Accueil", "Solutions", "Support E-commerce"],
+      "breadcrumb": [
+        "Accueil",
+        "Solutions",
+        "Support E-commerce"
+      ],
       "title": "Équipes de support e-commerce : répondez aux commandes, remboursements et questions d'expédition plus rapidement avec l'IA",
       "subtitle": "AI Reply Assistant vous permet de créer une bibliothèque de réponses de support cohérentes avec la marque et de générer des réponses contextuelles en quelques secondes — sans quitter votre helpdesk.",
       "pain": {
@@ -2695,6 +2715,115 @@
       "q4": {
         "question": "Est-ce conforme HIPAA ?",
         "answer": "MedAutoFill stocke les données localement. Avec Gemini Nano, rien ne quitte le navigateur. Votre équipe de conformité doit évaluer l'utilisation."
+      }
+    }
+  },
+  "hostReply": {
+    "page": {
+      "title": "Donbrico HostReply AI — Assistant de message invité",
+      "description": "Répondez aux invités Airbnb et Vrbo en quelques secondes : HostReply AI rédige des messages professionnels directement dans votre boîte de réception, gratuitement.",
+      "ogTitle": "Donbrico HostReply AI — Assistant de message invité",
+      "ogDescription": "Répondez aux invités Airbnb et Vrbo en quelques secondes : HostReply AI rédige des messages professionnels directement dans votre boîte de réception, gratuitement."
+    },
+    "hero": {
+      "eyebrow": "EXTENSION CHROMÉE",
+      "title": "Répondez aux invités <br> en quelques secondes.",
+      "subtitle": "HostReply AI rédige gratuitement des messages professionnels directement dans votre boîte de réception Airbnb ou Vrbo. Comprend la mémoire hôte pour les règles de votre maison et les informations d'enregistrement.",
+      "disclaimer": "🔒 L'IA intégrée s'exécute localement : les données restent dans votre navigateur",
+      "buttonPrimary": "Ajouter à Chrome – Gratuit",
+      "buttonSecondary": "Voyez comment ça marche ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "Comment ça marche",
+      "step1": {
+        "title": "1. Enregistrez les détails de votre propriété",
+        "description": "Stockez les détails du Wi-Fi, les informations d'enregistrement et les règles de la maison une fois dans la mémoire de l'hôte."
+      },
+      "step2": {
+        "title": "2. Ouvrez votre boîte de réception",
+        "description": "Fonctionne directement dans votre boîte de réception de messagerie Airbnb et Vrbo."
+      },
+      "step3": {
+        "title": "3. AI rédige la réponse",
+        "description": "HostReply lit le message de l'invité, extrait de la mémoire de l'hôte et rédige instantanément une réponse professionnelle."
+      }
+    },
+    "features": {
+      "sectionTitle": "Caractéristiques",
+      "feature1": {
+        "title": "Fonctionne là où vous travaillez",
+        "description": "Gère automatiquement la messagerie Airbnb et Vrbo."
+      },
+      "feature2": {
+        "title": "Mémoire hôte",
+        "description": "Enregistrez les détails de votre propriété une fois. L'IA mémorise le Wi-Fi, les codes d'enregistrement et les règles."
+      },
+      "feature3": {
+        "title": "La confidentialité d'abord",
+        "description": "Les détails de votre propriété sont stockés localement. Utilisez Chrome AI sur l'appareil pour que tout reste complètement privé."
+      },
+      "feature4": {
+        "title": "Apportez votre propre IA",
+        "description": "Connectez OpenAI, Claude ou Gemini en utilisant votre propre clé API si vous préférez."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Tarification simple. Pas de frais cachés.",
+      "free": {
+        "title": "Gratuit",
+        "price": "0 $",
+        "button": "Ajouter à Chrome",
+        "features": {
+          "f1": "5 modèles de réponses enregistrés",
+          "f2": "1 propriété (Mémoire hôte)",
+          "f3": "5 variables intelligentes de base",
+          "f4": "10 réponses IA/jour",
+          "f5": "3 scénarios de réponse",
+          "f6": "Fournisseur BYOK unique",
+          "f7": "3 tonalités hôtes"
+        }
+      },
+      "proMonthly": {
+        "title": "Pro (mensuel)",
+        "price": "7,99 $/mois",
+        "button": "Abonnez-vous mensuellement",
+        "features": {
+          "f1": "Réponses IA illimitées",
+          "f2": "Réponses enregistrées illimitées",
+          "f3": "Propriétés illimitées",
+          "f4": "5 tonalités hôtes",
+          "f5": "Modèles d'exportation/importation",
+          "f6": "Plus de 20 variables intelligentes",
+          "f7": "Plusieurs fournisseurs BYOK",
+          "f8": "Assistance prioritaire"
+        }
+      },
+      "proLifetime": {
+        "title": "Pro (à vie)",
+        "price": "69 $",
+        "tagline": "Payez une fois, utilisez pour toujours",
+        "button": "Pass à vie",
+        "features": {
+          "f1": "Tout dans Pro mensuel",
+          "f2": "Pas de frais récurrents",
+          "f3": "Futures mises à jour incluses",
+          "f4": "Tarifs pour les utilisateurs précoces"
+        }
+      }
+    },
+    "faq": {
+      "sectionTitle": "Foire aux questions",
+      "q1": {
+        "question": "Est-ce que ça marche avec Airbnb et Vrbo ?",
+        "answer": "Oui, cela fonctionne directement dans les boîtes de réception Airbnb et Vrbo."
+      },
+      "q2": {
+        "question": "Est-ce vraiment gratuit ?",
+        "answer": "Oui! Le plan gratuit vous offre tout ce dont vous avez besoin pour démarrer, y compris 1 propriété enregistrée pour votre mémoire hôte."
+      },
+      "q3": {
+        "question": "Qu'est-ce que la mémoire hôte ?",
+        "answer": "La mémoire hôte est l'endroit où vous enregistrez les détails spécifiques de votre propriété tels que les mots de passe Wi-Fi, les règles de la maison et les instructions d'enregistrement. L'IA utilise automatiquement ces informations lorsqu'elle répond aux invités."
       }
     }
   }

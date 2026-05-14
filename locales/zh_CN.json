@@ -435,6 +435,18 @@
         "question": "如果我删除工作区会发生什么？",
         "answer": "删除的工作区将永远消失。"
       }
+    },
+    "hostReply": {
+      "sectionTitle": "Donbrico HostReply AI 支持",
+      "subtitle": "常见问题",
+      "q1": {
+        "question": "扩展工具栏未出现在 Airbnb 或 Vrbo 上",
+        "answer": "确保您位于消息收件箱页面。如果工具栏未出现，请刷新页面。"
+      },
+      "q2": {
+        "question": "回复中未使用主机内存详细信息",
+        "answer": "检查您是否已将属性详细信息保存在扩展弹出窗口的“主机内存”选项卡中。"
+      }
     }
   },
   "privacyPolicy": {
@@ -2870,48 +2882,111 @@
     }
   },
   "hostReply": {
+    "page": {
+      "title": "Donbrico HostReply AI — 访客留言助手",
+      "description": "在几秒钟内回复 Airbnb 和 Vrbo 客人 — HostReply AI 直接在您的收件箱中免费起草专业消息。",
+      "ogTitle": "Donbrico HostReply AI — 访客留言助手",
+      "ogDescription": "在几秒钟内回复 Airbnb 和 Vrbo 客人 — HostReply AI 直接在您的收件箱中免费起草专业消息。"
+    },
+    "hero": {
+      "eyebrow": "镀铬扩展",
+      "title": "在几秒钟内回复客人<br>。",
+      "subtitle": "HostReply AI 直接在您的 Airbnb 或 Vrbo 收件箱中免费起草专业消息。包括用于您的房屋规则和入住信息的主机内存。",
+      "disclaimer": "🔒 内置人工智能在本地运行——数据保留在您的浏览器中",
+      "buttonPrimary": "添加到 Chrome — 免费",
+      "buttonSecondary": "看看效果如何↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "它是如何运作的",
+      "step1": {
+        "title": "1. 保存您的房产详细信息",
+        "description": "将 Wi-Fi 详细信息、签入信息和房屋规则存储在主机内存中。"
+      },
+      "step2": {
+        "title": "2. 打开收件箱",
+        "description": "直接在您的 Airbnb 和 Vrbo 消息收件箱内工作。"
+      },
+      "step3": {
+        "title": "3. AI起草回复",
+        "description": "HostReply 读取客人的消息，从主机内存中提取，并立即起草专业的回复。"
+      }
+    },
+    "features": {
+      "sectionTitle": "特征",
+      "feature1": {
+        "title": "在您工作的地方工作",
+        "description": "自动处理 Airbnb 和 Vrbo 消息传递。"
+      },
+      "feature2": {
+        "title": "主机内存",
+        "description": "保存您的房产详细信息一次。人工智能会记住 Wi-Fi、入住代码和规则。"
+      },
+      "feature3": {
+        "title": "隐私第一",
+        "description": "您的财产详细信息存储在本地。使用设备上的 Chrome AI 让一切完全保密。"
+      },
+      "feature4": {
+        "title": "带来你自己的人工智能",
+        "description": "如果您愿意，可以使用您自己的 API 密钥连接 OpenAI、Claude 或 Gemini。"
+      }
+    },
     "pricing": {
-      "sectionTitle": "Simple pricing. No hidden costs.",
+      "sectionTitle": "简单的定价。无隐藏费用。",
       "free": {
-        "title": "Free",
+        "title": "自由的",
         "price": "$0",
-        "button": "Add to Chrome",
+        "button": "添加到 Chrome",
         "features": {
-          "f1": "5 Saved Reply templates",
-          "f2": "1 property (Host Memory)",
-          "f3": "5 core smart variables",
-          "f4": "10 AI replies/day",
-          "f5": "3 Reply Scenarios",
-          "f6": "Single BYOK provider",
-          "f7": "3 host tones"
+          "f1": "5 个已保存的回复模板",
+          "f2": "1 个属性（主机内存）",
+          "f3": "5个核心智能变量",
+          "f4": "每天 10 条 AI 回复",
+          "f5": "3 回复场景",
+          "f6": "单一 BYOK 提供商",
+          "f7": "3种主机音"
         }
       },
       "proMonthly": {
-        "title": "Pro (Monthly)",
-        "price": "$7.99/mo",
-        "button": "Subscribe monthly",
+        "title": "专业版（每月）",
+        "price": "$7.99/月",
+        "button": "每月订阅",
         "features": {
-          "f1": "Unlimited AI replies",
-          "f2": "Unlimited saved replies",
-          "f3": "Unlimited properties",
-          "f4": "5 host tones",
-          "f5": "Export/import templates",
-          "f6": "20+ Smart variables",
-          "f7": "Multiple BYOK providers",
-          "f8": "Priority support"
+          "f1": "无限AI回复",
+          "f2": "无限保存回复",
+          "f3": "无限属性",
+          "f4": "5种主机音",
+          "f5": "导出/导入模板",
+          "f6": "20+ 智能变量",
+          "f7": "多个 BYOK 提供商",
+          "f8": "优先支持"
         }
       },
       "proLifetime": {
-        "title": "Pro (Lifetime)",
-        "price": "$69",
-        "tagline": "Pay once, use forever",
-        "button": "Lifetime pass",
+        "title": "专业版（终身）",
+        "price": "69 美元",
+        "tagline": "一次付费，永久使用",
+        "button": "终身通行证",
         "features": {
-          "f1": "Everything in Pro Monthly",
-          "f2": "No recurring fees",
-          "f3": "Future updates included",
-          "f4": "Early adopter pricing"
+          "f1": "一切尽在专业月刊",
+          "f2": "无经常性费用",
+          "f3": "包括未来的更新",
+          "f4": "早期采用者定价"
         }
+      }
+    },
+    "faq": {
+      "sectionTitle": "常见问题解答",
+      "q1": {
+        "question": "它适用于 Airbnb 和 Vrbo 吗？",
+        "answer": "是的，它可以直接在 Airbnb 和 Vrbo 消息收件箱内运行。"
+      },
+      "q2": {
+        "question": "真的免费吗？",
+        "answer": "是的！免费计划为您提供启动所需的一切，包括为您的主机内存保存的 1 个属性。"
+      },
+      "q3": {
+        "question": "什么是主机内存？",
+        "answer": "主机内存是您保存住宿具体详细信息的地方，例如 Wi-Fi 密码、入住须知和入住说明。人工智能在回复客人时会自动使用此信息。"
       }
     }
   }

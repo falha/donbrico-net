@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "Donbrico Studio",
+    "name": "Estudio Donbrico",
     "copyright": "© 2026 Donbrico Studio. Todos los derechos reservados.",
     "builtBy": "Creado por un desarrollador solitario.",
     "languages": {
@@ -20,15 +20,15 @@
   },
   "nav": {
     "home": "Inicio",
-    "autofillAi": "Autofill AI",
-    "nullCarrier": "Null Carrier",
+    "autofillAi": "Autocompletar IA",
+    "nullCarrier": "Portador nulo",
     "privacyPolicy": "Política de privacidad",
     "support": "Soporte",
-    "aiReplyAssistant": "AI Reply Assistant",
+    "aiReplyAssistant": "Asistente de respuesta AI",
     "workDesk": "Escritorio de trabajo",
     "product": "Producto",
     "termsOfService": "Términos de servicio",
-    "geminiNano": "Gemini Nano",
+    "geminiNano": "Géminis Nano",
     "solutions": "Soluciones",
     "extensions": "Extensiones",
     "extensionsHub": "Todas las extensiones",
@@ -240,7 +240,7 @@
           "button": "Obtener Anual"
         },
         "lifetime": {
-          "title": "Lifetime",
+          "title": "Vida",
           "price": "$59.99 único pago",
           "earlyAdopter": "(oferta para adoptantes tempranos, limitada a los primeros 100 usuarios)",
           "features": {
@@ -256,7 +256,7 @@
       "sectionTitle": "Guías de Configuración",
       "subtitle": "Elige cómo quieres alimentar la IA. Ambas opciones son gratuitas para empezar.",
       "geminiNano": {
-        "title": "Gemini Nano",
+        "title": "Géminis Nano",
         "description": "Se ejecuta completamente en tu navegador. No se necesita clave API. 100% privado. Requiere Chrome 127+ con 22GB de almacenamiento libre.",
         "button": "Ver guía de configuración →"
       },
@@ -359,7 +359,7 @@
     "contact": {
       "sectionTitle": "Contacto",
       "fastestWay": "La forma más rápida de contactarnos:",
-      "email": "support@donbrico.net",
+      "email": "soporte@donbrico.net",
       "responseTime": "Normalmente respondemos en 1–2 días laborables."
     },
     "autofill": {
@@ -602,7 +602,7 @@
     }
   },
   "emails": {
-    "support": "support@donbrico.net"
+    "support": "soporte@donbrico.net"
   },
   "badges": {
     "chromeExtension": "EXTENSIÓN DE CHROME",
@@ -644,15 +644,15 @@
       "edgeComingSoon": "Edge Próximamente",
       "learnMore": "Más información",
       "autofill": {
-        "title": "Donbrico Autofill AI",
+        "title": "Donbrico Autocompletar IA",
         "description": "Rellenador de formularios con IA para cualquier sitio web. Guarda tu perfil una vez — nombre, correo, LinkedIn, habilidades, biografía. La extensión detecta formularios automáticamente y los rellena en un clic. La IA escribe respuestas contextuales para campos abiertos como cartas de presentación."
       },
       "reply": {
-        "title": "Donbrico AI Reply Assistant",
+        "title": "Asistente de respuesta de IA de Donbrico",
         "description": "Guarda plantillas de respuesta y genera respuestas impulsadas por IA en cualquier lugar de la web. Funciona en Gmail, LinkedIn, Zendesk, Gorgias, Freshdesk y cualquier sitio web con un campo de texto. Crea una biblioteca de respuestas guardadas — busca e inserta en un clic, o deja que la IA redacte desde un breve mensaje."
       },
       "workdesk": {
-        "title": "Donbrico WorkDesk",
+        "title": "Escritorio Donbrico",
         "description": "Guarda y restaura espacios de trabajo del navegador en un clic. WorkDesk captura tu sesión completa — pestañas, ventanas, grupos de pestañas — y la restaura exactamente. La IA nombra los espacios de trabajo automáticamente, agrupa pestañas similares y te permite buscar sesiones usando lenguaje natural."
       },
       "tags": {
@@ -674,8 +674,8 @@
       "comparison": {
         "title": "Comparación de funciones",
         "feature": "Función",
-        "chrome": "Chrome",
-        "edge": "Edge",
+        "chrome": "Cromo",
+        "edge": "Borde",
         "rows": {
           "formAutofill": "Relleno automático de formularios",
           "replyTemplates": "Plantillas de respuesta",
@@ -707,14 +707,14 @@
     "lastUpdated": "Enero de 2026"
   },
   "tech": {
-    "chromeVersion": "Chrome 127+",
+    "chromeVersion": "Cromo 127+",
     "ramRequirement": "22 GB de espacio libre"
   },
   "aiReplyAssistant": {
     "page": {
-      "title": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
+      "title": "Asistente de respuesta de IA de Donbrico: respuestas inteligentes y respuestas impulsadas por IA",
       "description": "Cree una biblioteca de respuestas personal y genere respuestas impulsadas por IA al instante. ",
-      "ogTitle": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
+      "ogTitle": "Asistente de respuesta de IA de Donbrico: respuestas inteligentes y respuestas impulsadas por IA",
       "ogDescription": "Cree una biblioteca de respuestas personal y genere respuestas impulsadas por IA al instante. "
     },
     "hero": {
@@ -2889,14 +2889,14 @@
   },
   "hostReply": {
     "page": {
-      "title": "Donbrico HostReply AI: Asistente de mensajes para invitados",
+      "title": "Donbrico HostReply AI - Asistente de mensajes para invitados",
       "description": "Responda a los huéspedes de Airbnb y Vrbo en segundos: HostReply AI redacta mensajes profesionales directamente en su bandeja de entrada, de forma gratuita.",
       "ogTitle": "Donbrico HostReply AI - Asistente de mensajes para invitados",
       "ogDescription": "Responda a los huéspedes de Airbnb y Vrbo en segundos: HostReply AI redacta mensajes profesionales directamente en su bandeja de entrada, de forma gratuita."
     },
     "hero": {
       "eyebrow": "EXTENSIÓN CROMADA",
-      "title": "Reply to guests<br>in seconds.",
+      "title": "Responde a los invitados <br> en segundos.",
       "subtitle": "HostReply AI redacta mensajes profesionales directamente dentro de su bandeja de entrada de Airbnb o Vrbo, de forma gratuita. Incluye Host Memory para las reglas de tu casa e información de check-in.",
       "disclaimer": "🔒 La IA integrada se ejecuta localmente: los datos permanecen en su navegador",
       "buttonPrimary": "Agregar a Chrome - Gratis",

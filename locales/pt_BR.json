@@ -447,6 +447,18 @@
         "question": "O que acontece se eu excluir um espaço de trabalho?",
         "answer": "Os espaços de trabalho excluídos desapareceram para sempre. "
       }
+    },
+    "hostReply": {
+      "sectionTitle": "Suporte Donbrico HostReply AI",
+      "subtitle": "Problemas comuns",
+      "q1": {
+        "question": "A barra de ferramentas da extensão não aparece no Airbnb ou no Vrbo",
+        "answer": "Certifique-se de estar na página da caixa de entrada de mensagens. Atualize a página se a barra de ferramentas não aparecer."
+      },
+      "q2": {
+        "question": "Os detalhes da memória do host não estão sendo usados ​​nas respostas",
+        "answer": "Verifique se você salvou os detalhes da sua propriedade na guia Host Memory do pop-up da extensão."
+      }
     }
   },
   "privacyPolicy": {
@@ -1777,7 +1789,11 @@
         "ogDescription": "Automatize as respostas do suporte de comércio eletrônico para pedidos, reembolsos e perguntas dos clientes. Reduza a carga de tickets com respostas baseadas em IA."
       },
       "eyebrow": "PARA SUPORTE AO COMÉRCIO ELETRÔNICO",
-      "breadcrumb": ["Lar", "Soluções", "Suporte para comércio eletrônico"],
+      "breadcrumb": [
+        "Lar",
+        "Soluções",
+        "Suporte para comércio eletrônico"
+      ],
       "title": "Equipes de suporte de comércio eletrônico: respondam a pedidos, reembolsos e perguntas sobre envio mais rapidamente com IA",
       "subtitle": "O AI Reply Assistant permite criar uma biblioteca de respostas de suporte da marca e gerar respostas baseadas no contexto em segundos, sem sair do suporte técnico.",
       "pain": {
@@ -1921,7 +1937,11 @@
         "ogDescription": "Preencha formulários de seguro mais rapidamente com automação assistida por IA para sinistros, entrada de dados de apólices e documentação administrativa."
       },
       "eyebrow": "PARA PROFISSIONAIS DE SEGUROS",
-      "breadcrumb": ["Lar", "Soluções", "Fluxos de trabalho de seguros"],
+      "breadcrumb": [
+        "Lar",
+        "Soluções",
+        "Fluxos de trabalho de seguros"
+      ],
       "title": "Profissionais de seguros: eliminem a entrada manual de formulários com preenchimento automático assistido por IA",
       "subtitle": "Donbrico Autofill AI preenche formulários de solicitação, telas de entrada de apólices e documentação administrativa a partir de um perfil de dados salvo – reduzindo erros de entrada repetitivos e economizando horas a cada semana.",
       "pain": {
@@ -2037,7 +2057,11 @@
         "ogDescription": "Gere respostas de suporte precisas instantaneamente usando IA. Reduza o tempo de resposta das equipes de suporte do Shopify, SaaS e comércio eletrônico."
       },
       "eyebrow": "PARA EQUIPES DE APOIO",
-      "breadcrumb": ["Lar", "Soluções", "Equipes de suporte"],
+      "breadcrumb": [
+        "Lar",
+        "Soluções",
+        "Equipes de suporte"
+      ],
       "title": "Agentes de suporte: reduzam o tempo de resposta pela metade com respostas de tickets assistidas por IA",
       "subtitle": "O AI Reply Assistant oferece aos agentes de suporte uma biblioteca de respostas pessoal e um botão de rascunho de IA, para que possam responder aos tickets mais rapidamente, sem sacrificar a qualidade ou a voz da marca.",
       "pain": {
@@ -2157,7 +2181,11 @@
         "ogDescription": "Salve e organize sessões do navegador com IA. Ideal para pesquisadores, desenvolvedores e profissionais que gerenciam fluxos de trabalho complexos."
       },
       "eyebrow": "GERENCIAMENTO DO ESPAÇO DE TRABALHO DO NAVEGADOR",
-      "breadcrumb": ["Lar", "Soluções", "Espaço de trabalho do navegador"],
+      "breadcrumb": [
+        "Lar",
+        "Soluções",
+        "Espaço de trabalho do navegador"
+      ],
       "title": "Pesquisadores e desenvolvedores: parem de perder sessões do navegador. Organize fluxos de trabalho complexos com IA.",
       "subtitle": "WorkDesk salva todo o estado do seu navegador e o restaura com um clique. A IA nomeia, agrupa e organiza automaticamente suas guias para que você possa se concentrar no trabalho, não no navegador.",
       "pain": {
@@ -2366,7 +2394,11 @@
         "ogDescription": "Acelere o recrutamento com IA que preenche automaticamente os painéis de empregos, gera resumos de candidatos e reduz a entrada manual de dados ATS."
       },
       "eyebrow": "PARA RECRUTADORES",
-      "breadcrumb": ["Lar", "Soluções", "Para recrutadores"],
+      "breadcrumb": [
+        "Lar",
+        "Soluções",
+        "Para recrutadores"
+      ],
       "title": "Recrutadores: automatizem envios de quadros de empregos e entrada de dados ATS com IA",
       "subtitle": "Donbrico Autofill AI preenche formulários de emprego e formulários ATS a partir de um único perfil salvo – permitindo que você processe mais candidatos sem a necessidade de copiar e colar.",
       "pain": {
@@ -2827,6 +2859,115 @@
       "q4": {
         "question": "Está em conformidade com a HIPAA?",
         "answer": "MedAutoFill armazena dados localmente. Com Gemini Nano, nenhum dado sai do navegador. Sua equipe de conformidade deve avaliar o uso."
+      }
+    }
+  },
+  "hostReply": {
+    "page": {
+      "title": "Donbrico HostReply AI – Assistente de mensagens para convidados",
+      "description": "Responda aos hóspedes do Airbnb e Vrbo em segundos – HostReply AI rascunha mensagens profissionais diretamente na sua caixa de entrada, gratuitamente.",
+      "ogTitle": "Donbrico HostReply AI – Assistente de mensagens para convidados",
+      "ogDescription": "Responda aos hóspedes do Airbnb e Vrbo em segundos – HostReply AI rascunha mensagens profissionais diretamente na sua caixa de entrada, gratuitamente."
+    },
+    "hero": {
+      "eyebrow": "EXTENSÃO CROMADA",
+      "title": "Responda aos convidados <br> em segundos.",
+      "subtitle": "HostReply AI rascunha mensagens profissionais diretamente na sua caixa de entrada do Airbnb ou Vrbo, gratuitamente. Inclui memória de host para as regras da sua casa e informações de check-in.",
+      "disclaimer": "🔒 A IA integrada é executada localmente – os dados permanecem no seu navegador",
+      "buttonPrimary": "Adicionar ao Chrome – grátis",
+      "buttonSecondary": "Veja como funciona ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "Como funciona",
+      "step1": {
+        "title": "1. Salve os dados da sua propriedade",
+        "description": "Armazene detalhes de Wi-Fi, informações de check-in e regras da casa uma vez na memória do host."
+      },
+      "step2": {
+        "title": "2. Abra sua caixa de entrada",
+        "description": "Funciona diretamente na sua caixa de entrada de mensagens do Airbnb e Vrbo."
+      },
+      "step3": {
+        "title": "3. AI redige a resposta",
+        "description": "HostReply lê a mensagem do convidado, extrai da memória do host e elabora uma resposta profissional instantaneamente."
+      }
+    },
+    "features": {
+      "sectionTitle": "Características",
+      "feature1": {
+        "title": "Funciona onde você trabalha",
+        "description": "Lida com mensagens Airbnb e Vrbo automaticamente."
+      },
+      "feature2": {
+        "title": "Memória hospedeira",
+        "description": "Salve os detalhes da sua propriedade uma vez. A IA lembra o Wi-Fi, os códigos de check-in e as regras."
+      },
+      "feature3": {
+        "title": "Privacidade em primeiro lugar",
+        "description": "Os detalhes da sua propriedade são armazenados localmente. Use a IA do Chrome no dispositivo para manter tudo totalmente privado."
+      },
+      "feature4": {
+        "title": "Traga sua própria IA",
+        "description": "Conecte OpenAI, Claude ou Gemini usando sua própria chave de API, se preferir."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Preços simples. Sem custos ocultos.",
+      "free": {
+        "title": "Livre",
+        "price": "US$ 0",
+        "button": "Adicionar ao Chrome",
+        "features": {
+          "f1": "5 modelos de resposta salvos",
+          "f2": "1 propriedade (memória do host)",
+          "f3": "5 variáveis ​​inteligentes principais",
+          "f4": "10 respostas de IA/dia",
+          "f5": "3 cenários de resposta",
+          "f6": "Provedor único de BYOK",
+          "f7": "3 tons de host"
+        }
+      },
+      "proMonthly": {
+        "title": "Pró (mensal)",
+        "price": "US$ 7,99/mês",
+        "button": "Assine mensalmente",
+        "features": {
+          "f1": "Respostas de IA ilimitadas",
+          "f2": "Respostas salvas ilimitadas",
+          "f3": "Propriedades ilimitadas",
+          "f4": "5 tons de host",
+          "f5": "Exportar/importar modelos",
+          "f6": "Mais de 20 variáveis ​​inteligentes",
+          "f7": "Vários provedores de BYOK",
+          "f8": "Suporte prioritário"
+        }
+      },
+      "proLifetime": {
+        "title": "Pró (vitalício)",
+        "price": "US$ 69",
+        "tagline": "Pague uma vez, use para sempre",
+        "button": "Passe vitalício",
+        "features": {
+          "f1": "Tudo no Pro Mensal",
+          "f2": "Sem taxas recorrentes",
+          "f3": "Atualizações futuras incluídas",
+          "f4": "Preços para primeiros usuários"
+        }
+      }
+    },
+    "faq": {
+      "sectionTitle": "Perguntas frequentes",
+      "q1": {
+        "question": "Funciona tanto com Airbnb quanto com Vrbo?",
+        "answer": "Sim, funciona diretamente nas caixas de entrada de mensagens do Airbnb e do Vrbo."
+      },
+      "q2": {
+        "question": "É realmente grátis?",
+        "answer": "Sim! O plano gratuito oferece tudo que você precisa para começar, incluindo 1 propriedade salva para sua memória de host."
+      },
+      "q3": {
+        "question": "O que é memória de host?",
+        "answer": "Host Memory é onde você salva detalhes específicos da sua propriedade, como senhas de Wi-Fi, regras da casa e instruções de check-in. A IA usa essas informações automaticamente ao responder aos convidados."
       }
     }
   }

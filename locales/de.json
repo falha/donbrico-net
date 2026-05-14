@@ -20,15 +20,15 @@
   },
   "nav": {
     "home": "Startseite",
-    "autofillAi": "Autofill AI",
-    "nullCarrier": "Null Carrier",
+    "autofillAi": "Autofill-KI",
+    "nullCarrier": "Null-Carrier",
     "privacyPolicy": "Datenschutzerklärung",
-    "support": "Support",
-    "aiReplyAssistant": "AI Reply Assistant",
+    "support": "Unterstützung",
+    "aiReplyAssistant": "KI-Antwortassistent",
     "workDesk": "Arbeitsplatz",
     "product": "Produkt",
     "termsOfService": "Nutzungsbedingungen",
-    "geminiNano": "Gemini Nano",
+    "geminiNano": "Zwillinge Nano",
     "solutions": "Lösungen",
     "extensions": "Erweiterungen",
     "extensionsHub": "Alle Erweiterungen",
@@ -240,7 +240,7 @@
           "button": "Jährlich sichern"
         },
         "lifetime": {
-          "title": "Lifetime",
+          "title": "Lebensdauer",
           "price": "$59.99 einmalig",
           "earlyAdopter": "(Early-Adopter-Angebot, begrenzt auf die ersten 100 Nutzer)",
           "features": {
@@ -256,7 +256,7 @@
       "sectionTitle": "Setup-Anleitungen",
       "subtitle": "Wähle, wie du die KI betreiben möchtest. Beide Optionen sind kostenlos zum Starten.",
       "geminiNano": {
-        "title": "Gemini Nano",
+        "title": "Zwillinge Nano",
         "description": "Läuft komplett in deinem Browser. Kein API-Schlüssel benötigt. 100% privat. Benötigt Chrome 127+ mit 22 GB freiem Speicherplatz.",
         "button": "Setup-Anleitung ansehen →"
       },
@@ -349,12 +349,12 @@
   },
   "support": {
     "page": {
-      "title": "Support — Donbrico",
+      "title": "Unterstützung – Donbrico",
       "description": "Erhalten Sie Unterstützung für Donbrico Autofill AI, AI Reply Assistant und Null Carrier. ",
-      "ogTitle": "Support — Donbrico",
+      "ogTitle": "Unterstützung – Donbrico",
       "ogDescription": "Erhalten Sie Unterstützung für Donbrico Autofill AI, AI Reply Assistant und Null Carrier. "
     },
-    "sectionTitle": "Support",
+    "sectionTitle": "Unterstützung",
     "subtitle": "Wir sind ein Solo-Betrieb. Wir lesen jede Nachricht.",
     "contact": {
       "sectionTitle": "Kontakt",
@@ -363,7 +363,7 @@
       "responseTime": "Wir antworten normalerweise innerhalb von 1–2 Werktagen."
     },
     "autofill": {
-      "sectionTitle": "Donbrico Autofill AI Support",
+      "sectionTitle": "Donbrico Autofill AI-Unterstützung",
       "subtitle": "Häufige Probleme",
       "q1": {
         "question": "Der Erweiterungs-Button erscheint nicht auf einem Formular",
@@ -391,7 +391,7 @@
       }
     },
     "nullCarrier": {
-      "sectionTitle": "Null Carrier Support",
+      "sectionTitle": "Null-Carrier-Unterstützung",
       "paragraph": "Für Probleme mit Null Carrier auf Steam kannst du uns über das Steam-Support-System oder direkt unter support@donbrico.net erreichen.",
       "steamNote": "Bitte füge deinen Steam-Benutzernamen und eine Problembeschreibung hinzu."
     },
@@ -403,7 +403,7 @@
       "links": "Datenschutzerklärung | Support"
     },
     "hero": {
-      "eyebrow": "SUPPORT"
+      "eyebrow": "UNTERSTÜTZUNG"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico AI Reply Assistant-Unterstützung",
@@ -648,11 +648,11 @@
         "description": "KI-gestützter Formularfüller für jede Website. Speichern Sie Ihr Profil einmal — Name, E-Mail, LinkedIn, Fähigkeiten, Bio. Die Erweiterung erkennt Formulare automatisch und füllt sie mit einem Klick aus. Die KI schreibt kontextbewusste Antworten für offene Felder wie Anschreiben."
       },
       "reply": {
-        "title": "Donbrico AI Reply Assistant",
+        "title": "Donbrico AI-Antwortassistent",
         "description": "Speichert Antwortvorlagen und generiert KI-gestützte Antworten überall im Web. Funktioniert in Gmail, LinkedIn, Zendesk, Gorgias, Freshdesk und jeder Website mit einem Textfeld. Erstellen Sie eine Bibliothek gespeicherter Antworten — suchen und fügen Sie mit einem Klick ein, oder lassen Sie die KI aus einer kurzen Eingabe entwerfen."
       },
       "workdesk": {
-        "title": "Donbrico WorkDesk",
+        "title": "Donbrico Schreibtisch",
         "description": "Speichern und stellen Sie Browser-Arbeitsbereiche mit einem Klick wieder her. WorkDesk erfasst Ihre gesamte Sitzung — Tabs, Fenster, Tab-Gruppen — und stellt sie exakt wieder her. Die KI benennt Arbeitsbereiche automatisch, gruppiert ähnliche Tabs und ermöglicht es Ihnen, Sitzungen mit natürlicher Sprache zu durchsuchen."
       },
       "tags": {
@@ -674,14 +674,14 @@
       "comparison": {
         "title": "Funktionsvergleich",
         "feature": "Funktion",
-        "chrome": "Chrome",
-        "edge": "Edge",
+        "chrome": "Chrom",
+        "edge": "Rand",
         "rows": {
           "formAutofill": "Formular-Autofill",
           "replyTemplates": "Antwortvorlagen",
           "workspaceSaving": "Arbeitsbereich-Speicherung",
           "onDeviceAi": "On-Device-KI (Gemini Nano)",
-          "byok": "BYOK (OpenAI, Groq, etc.)"
+          "byok": "BYOK (OpenAI, Groq usw.)"
         }
       },
       "cta": {
@@ -707,14 +707,14 @@
     "lastUpdated": "Januar 2026"
   },
   "tech": {
-    "chromeVersion": "Chrome 127+",
+    "chromeVersion": "Chrom 127+",
     "ramRequirement": "22 GB freier Speicherplatz"
   },
   "aiReplyAssistant": {
     "page": {
-      "title": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
+      "title": "Donbrico AI Reply Assistant – Intelligente Antworten und KI-gestützte Antworten",
       "description": "Erstellen Sie eine persönliche Antwortbibliothek und generieren Sie sofort KI-gestützte Antworten. ",
-      "ogTitle": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
+      "ogTitle": "Donbrico AI Reply Assistant – Intelligente Antworten und KI-gestützte Antworten",
       "ogDescription": "Erstellen Sie eine persönliche Antwortbibliothek und generieren Sie sofort KI-gestützte Antworten. "
     },
     "hero": {
@@ -841,7 +841,7 @@
         "button": "Setup-Anleitung anzeigen →"
       },
       "bringYourOwnKey": {
-        "title": "Bring Your Own API Key",
+        "title": "Bringen Sie Ihren eigenen API-Schlüssel mit",
         "description": "Verbinden Sie Ihren eigenen Schlüssel von OpenAI, Anthropic (Claude), Groq oder OpenRouter. ",
         "button": "Setup-Anleitung anzeigen →"
       }
@@ -962,7 +962,7 @@
         "price": "4,99 $/Monat",
         "features": {
           "f1": "Unbegrenzte Arbeitsbereiche",
-          "f2": "Save all windows at once",
+          "f2": "Speichern Sie alle Fenster auf einmal",
           "f3": "Export und Import: JSON, CSV, HTML",
           "f4": "Wenden Sie die Bereinigung des KI-Arbeitsbereichs an",
           "f5": "Semantische KI-Suche",
@@ -1021,7 +1021,7 @@
         "button": "Setup-Anleitung anzeigen →"
       },
       "bringYourOwnKey": {
-        "title": "Bring Your Own API Key",
+        "title": "Bringen Sie Ihren eigenen API-Schlüssel mit",
         "description": "Verbinden Sie Ihren eigenen Schlüssel von OpenAI, Anthropic (Claude), Groq oder OpenRouter. ",
         "button": "Setup-Anleitung anzeigen →"
       }
@@ -2896,7 +2896,7 @@
     },
     "hero": {
       "eyebrow": "CHROM-VERLÄNGERUNG",
-      "title": "Reply to guests<br>in seconds.",
+      "title": "Antworten Sie Gästen <br> in Sekundenschnelle.",
       "subtitle": "HostReply AI erstellt professionelle Nachrichten kostenlos direkt in Ihrem Airbnb- oder Vrbo-Posteingang. Beinhaltet einen Host-Speicher für Ihre Hausregeln und Check-in-Informationen.",
       "disclaimer": "🔒 Integrierte KI läuft lokal – die Daten bleiben in Ihrem Browser",
       "buttonPrimary": "Zu Chrome hinzufügen – kostenlos",

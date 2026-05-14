@@ -197,6 +197,7 @@
           >AI Reply Assistant</a
         >
         <a href="#workdesk" data-i18n="privacyPolicy.nav.workDesk">WorkDesk</a>
+        <a href="#host-reply" data-i18n="nav.extensionsHostReply">HostReply AI</a>
         <a href="#null-carrier" data-i18n="privacyPolicy.nav.nullCarrier"
           >Null Carrier</a
         >
@@ -419,6 +420,35 @@
         <p data-i18n="privacyPolicy.workDesk.dataDeletion.paragraph">
           Uninstalling the extension deletes all locally stored workspaces and
           settings. No data is retained on Donbrico servers.
+        </p>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0" id="host-reply">
+      <div class="container">
+        <h2 data-i18n="nav.extensionsHostReply">HostReply AI</h2>
+        <h3 data-i18n="privacyPolicy.extension.whatWeCollect.sectionTitle">
+          What data we collect
+        </h3>
+        <p data-i18n="hostReply.features.feature3.description">
+          Your property details are stored locally. Use Chrome AI on-device to keep everything completely private.
+        </p>
+        <h3 data-i18n="privacyPolicy.extension.howStored.sectionTitle">
+          How data is stored
+        </h3>
+        <p data-i18n="privacyPolicy.extension.howStored.paragraph">
+          Chrome's storage.local API, never chrome.storage.sync for sensitive
+          data. Data remains on the device and is never uploaded.
+        </p>
+        <h3 data-i18n="privacyPolicy.extension.thirdPartyAI.sectionTitle">
+          Third-party AI providers (BYOK)
+        </h3>
+        <p data-i18n="privacyPolicy.extension.thirdPartyAI.paragraph">
+          If the user configures a Bring Your Own Key provider like OpenAI,
+          Anthropic, Groq, or OpenRouter, the message context and relevant
+          property data are sent to that third-party provider. Donbrico is not
+          responsible for the privacy practices of these providers. Gemini Nano
+          (default AI) runs entirely on-device.
         </p>
       </div>
     </section>

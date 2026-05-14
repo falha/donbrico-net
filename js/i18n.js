@@ -20,7 +20,7 @@ const i18next = {
   },
 
   translations: {},
-  translationsVersion: "2026-05-09-2",
+  translationsVersion: "2026-05-13-1",
 
   currentLang: "en",
 
