@@ -40,7 +40,8 @@
     "extensionsReply": "人工智能回复助手",
     "extensionsWorkdesk": "办公桌",
     "categories": "类别",
-    "byRole": "按角色"
+    "byRole": "按角色",
+    "blog": "Blog"
   },
   "home": {
     "page": {
@@ -2989,5 +2990,23 @@
         "answer": "主机内存是您保存住宿具体详细信息的地方，例如 Wi-Fi 密码、入住须知和入住说明。人工智能在回复客人时会自动使用此信息。"
       }
     }
+  },
+  "blog": {
+    "nav": "Blog",
+    "page": {
+      "title": "Blog — Donbrico",
+      "description": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals.",
+      "ogTitle": "Blog — Donbrico",
+      "ogDescription": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals."
+    },
+    "hero": {
+      "eyebrow": "BLOG",
+      "title": "Guides & resources",
+      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+    },
+    "allPosts": "All Posts",
+    "readMore": "Read more →",
+    "byProduct": "By product:",
+    "minRead": "min read"
   }
 }

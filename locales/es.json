@@ -53,7 +53,8 @@
     "extensionsWorkdesk": "Escritorio de trabajo",
     "categories": "Categorías",
     "byRole": "Por rol",
-    "extensionsHostReply": "HostRespuesta AI"
+    "extensionsHostReply": "HostRespuesta AI",
+    "blog": "Blog"
   },
   "home": {
     "page": {
@@ -2995,5 +2996,23 @@
         "answer": "Host Memory es donde guarda los detalles específicos de su propiedad, como contraseñas de Wi-Fi, reglas de la casa e instrucciones de check-in. La IA utiliza automáticamente esta información cuando responde a los invitados."
       }
     }
+  },
+  "blog": {
+    "nav": "Blog",
+    "page": {
+      "title": "Blog — Donbrico",
+      "description": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals.",
+      "ogTitle": "Blog — Donbrico",
+      "ogDescription": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals."
+    },
+    "hero": {
+      "eyebrow": "BLOG",
+      "title": "Guides & resources",
+      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+    },
+    "allPosts": "All Posts",
+    "readMore": "Read more →",
+    "byProduct": "By product:",
+    "minRead": "min read"
   }
 }

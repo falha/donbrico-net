@@ -41,7 +41,8 @@
     "extensionsReply": "AI Reply Assistant",
     "extensionsWorkdesk": "辦公桌",
     "categories": "類別",
-    "byRole": "按角色"
+    "byRole": "按角色",
+    "blog": "Blog"
   },
   "home": {
     "page": {
@@ -2990,5 +2991,23 @@
         "answer": "主機記憶體是您保存住宿具體詳細資訊的地方，例如 Wi-Fi 密碼、入住須知和入住說明。人工智慧在回覆客人時會自動使用此資訊。"
       }
     }
+  },
+  "blog": {
+    "nav": "Blog",
+    "page": {
+      "title": "Blog — Donbrico",
+      "description": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals.",
+      "ogTitle": "Blog — Donbrico",
+      "ogDescription": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals."
+    },
+    "hero": {
+      "eyebrow": "BLOG",
+      "title": "Guides & resources",
+      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+    },
+    "allPosts": "All Posts",
+    "readMore": "Read more →",
+    "byProduct": "By product:",
+    "minRead": "min read"
   }
 }

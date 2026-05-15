@@ -53,7 +53,8 @@
     "extensionsWorkdesk": "Scrivania",
     "categories": "Categorie",
     "byRole": "Per ruolo",
-    "extensionsHostReply": "HostReply AI"
+    "extensionsHostReply": "HostReply AI",
+    "blog": "Blog"
   },
   "home": {
     "page": {
@@ -3026,5 +3027,23 @@
         "answer": "La Memoria dell'host è il luogo in cui salvi i dettagli specifici della tua struttura, come password Wi-Fi, regole della casa e istruzioni per il check-in. L'intelligenza artificiale utilizza automaticamente queste informazioni quando risponde agli ospiti."
       }
     }
+  },
+  "blog": {
+    "nav": "Blog",
+    "page": {
+      "title": "Blog — Donbrico",
+      "description": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals.",
+      "ogTitle": "Blog — Donbrico",
+      "ogDescription": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals."
+    },
+    "hero": {
+      "eyebrow": "BLOG",
+      "title": "Guides & resources",
+      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+    },
+    "allPosts": "All Posts",
+    "readMore": "Read more →",
+    "byProduct": "By product:",
+    "minRead": "min read"
   }
 }

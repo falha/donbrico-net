@@ -52,7 +52,8 @@
     "extensionsReply": "Assistente de resposta de IA",
     "extensionsWorkdesk": "Mesa de trabalho",
     "categories": "Categorias",
-    "byRole": "Por função"
+    "byRole": "Por função",
+    "blog": "Blog"
   },
   "home": {
     "page": {
@@ -2970,5 +2971,23 @@
         "answer": "Host Memory é onde você salva detalhes específicos da sua propriedade, como senhas de Wi-Fi, regras da casa e instruções de check-in. A IA usa essas informações automaticamente ao responder aos convidados."
       }
     }
+  },
+  "blog": {
+    "nav": "Blog",
+    "page": {
+      "title": "Blog — Donbrico",
+      "description": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals.",
+      "ogTitle": "Blog — Donbrico",
+      "ogDescription": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals."
+    },
+    "hero": {
+      "eyebrow": "BLOG",
+      "title": "Guides & resources",
+      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+    },
+    "allPosts": "All Posts",
+    "readMore": "Read more →",
+    "byProduct": "By product:",
+    "minRead": "min read"
   }
 }

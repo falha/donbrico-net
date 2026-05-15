@@ -53,7 +53,8 @@
     "extensionsWorkdesk": "업무용 책상",
     "categories": "카테고리",
     "byRole": "역할별",
-    "extensionsHostReply": "호스트응답 AI"
+    "extensionsHostReply": "호스트응답 AI",
+    "blog": "Blog"
   },
   "home": {
     "page": {
@@ -2995,5 +2996,23 @@
         "answer": "호스트 메모리는 Wi-Fi 비밀번호, 숙소 규칙, 체크인 지침과 같은 숙소의 특정 세부정보를 저장하는 곳입니다. AI는 손님에게 응답할 때 자동으로 이 정보를 사용합니다."
       }
     }
+  },
+  "blog": {
+    "nav": "Blog",
+    "page": {
+      "title": "Blog — Donbrico",
+      "description": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals.",
+      "ogTitle": "Blog — Donbrico",
+      "ogDescription": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals."
+    },
+    "hero": {
+      "eyebrow": "BLOG",
+      "title": "Guides & resources",
+      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+    },
+    "allPosts": "All Posts",
+    "readMore": "Read more →",
+    "byProduct": "By product:",
+    "minRead": "min read"
   }
 }

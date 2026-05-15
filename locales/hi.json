@@ -52,7 +52,8 @@
     "extensionsReply": "एआई उत्तर सहायक",
     "extensionsWorkdesk": "वर्कडेस्क",
     "categories": "श्रेणियाँ",
-    "byRole": "भूमिका द्वारा"
+    "byRole": "भूमिका द्वारा",
+    "blog": "Blog"
   },
   "home": {
     "page": {
@@ -3001,5 +3002,23 @@
         "answer": "होस्ट मेमोरी वह जगह है जहां आप अपनी संपत्ति के विशिष्ट विवरण जैसे वाई-फाई पासवर्ड, घर के नियम और चेक-इन निर्देश सहेजते हैं। मेहमानों को जवाब देते समय एआई स्वचालित रूप से इस जानकारी का उपयोग करता है।"
       }
     }
+  },
+  "blog": {
+    "nav": "Blog",
+    "page": {
+      "title": "Blog — Donbrico",
+      "description": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals.",
+      "ogTitle": "Blog — Donbrico",
+      "ogDescription": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals."
+    },
+    "hero": {
+      "eyebrow": "BLOG",
+      "title": "Guides & resources",
+      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+    },
+    "allPosts": "All Posts",
+    "readMore": "Read more →",
+    "byProduct": "By product:",
+    "minRead": "min read"
   }
 }

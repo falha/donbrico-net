@@ -53,7 +53,8 @@
     "solutionsRealEstate": "不動産向け",
     "extensionsAll": "すべての拡張子",
     "extensionsAutofill": "オートフィルAI",
-    "extensionsHostReply": "ホストリプライAI"
+    "extensionsHostReply": "ホストリプライAI",
+    "blog": "Blog"
   },
   "home": {
     "page": {
@@ -3026,5 +3027,23 @@
         "answer": "ホスト メモリには、Wi-Fi パスワード、ハウス ルール、チェックイン手順など、宿泊施設の特定の詳細が保存されます。 AI はゲストに返信するときにこの情報を自動的に使用します。"
       }
     }
+  },
+  "blog": {
+    "nav": "Blog",
+    "page": {
+      "title": "Blog — Donbrico",
+      "description": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals.",
+      "ogTitle": "Blog — Donbrico",
+      "ogDescription": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals."
+    },
+    "hero": {
+      "eyebrow": "BLOG",
+      "title": "Guides & resources",
+      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+    },
+    "allPosts": "All Posts",
+    "readMore": "Read more →",
+    "byProduct": "By product:",
+    "minRead": "min read"
   }
 }

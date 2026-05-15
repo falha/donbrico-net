@@ -53,7 +53,8 @@
     "extensionsWorkdesk": "Arbeitsplatz",
     "categories": "Kategorien",
     "byRole": "Nach Rolle",
-    "extensionsHostReply": "HostReply AI"
+    "extensionsHostReply": "HostReply AI",
+    "blog": "Blog"
   },
   "home": {
     "page": {
@@ -2995,5 +2996,23 @@
         "answer": "Im Host-Speicher speichern Sie die spezifischen Details Ihrer Unterkunft wie WLAN-Passwörter, Hausregeln und Check-in-Anweisungen. Die KI verwendet diese Informationen automatisch, wenn sie Gästen antwortet."
       }
     }
+  },
+  "blog": {
+    "nav": "Blog",
+    "page": {
+      "title": "Blog — Donbrico",
+      "description": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals.",
+      "ogTitle": "Blog — Donbrico",
+      "ogDescription": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals."
+    },
+    "hero": {
+      "eyebrow": "BLOG",
+      "title": "Guides & resources",
+      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+    },
+    "allPosts": "All Posts",
+    "readMore": "Read more →",
+    "byProduct": "By product:",
+    "minRead": "min read"
   }
 }

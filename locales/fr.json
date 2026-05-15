@@ -85,7 +85,8 @@
     "extensionsReply": "AI Reply Assistant",
     "extensionsWorkdesk": "WorkDesk",
     "categories": "Catégories",
-    "byRole": "Par rôle"
+    "byRole": "Par rôle",
+    "blog": "Blog"
   },
   "home": {
     "page": {
@@ -2826,5 +2827,23 @@
         "answer": "La mémoire hôte est l'endroit où vous enregistrez les détails spécifiques de votre propriété tels que les mots de passe Wi-Fi, les règles de la maison et les instructions d'enregistrement. L'IA utilise automatiquement ces informations lorsqu'elle répond aux invités."
       }
     }
+  },
+  "blog": {
+    "nav": "Blog",
+    "page": {
+      "title": "Blog — Donbrico",
+      "description": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals.",
+      "ogTitle": "Blog — Donbrico",
+      "ogDescription": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals."
+    },
+    "hero": {
+      "eyebrow": "BLOG",
+      "title": "Guides & resources",
+      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+    },
+    "allPosts": "All Posts",
+    "readMore": "Read more →",
+    "byProduct": "By product:",
+    "minRead": "min read"
   }
 }

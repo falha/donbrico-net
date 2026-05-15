@@ -40,7 +40,8 @@
     "extensionsReply": "AI-помощник по ответам",
     "extensionsWorkdesk": "Рабочий стол",
     "categories": "Категории",
-    "byRole": "По роли"
+    "byRole": "По роли",
+    "blog": "Blog"
   },
   "home": {
     "page": {
@@ -2977,5 +2978,23 @@
         "answer": "В памяти хоста вы сохраняете конкретные данные о вашем объекте, такие как пароли Wi-Fi, правила дома и инструкции по регистрации заезда. ИИ автоматически использует эту информацию при ответе гостям."
       }
     }
+  },
+  "blog": {
+    "nav": "Blog",
+    "page": {
+      "title": "Blog — Donbrico",
+      "description": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals.",
+      "ogTitle": "Blog — Donbrico",
+      "ogDescription": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals."
+    },
+    "hero": {
+      "eyebrow": "BLOG",
+      "title": "Guides & resources",
+      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+    },
+    "allPosts": "All Posts",
+    "readMore": "Read more →",
+    "byProduct": "By product:",
+    "minRead": "min read"
   }
 }
