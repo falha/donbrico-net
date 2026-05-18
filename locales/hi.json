@@ -3004,21 +3004,22 @@
     }
   },
   "blog": {
-    "nav": "Blog",
+    "nav": "ब्लॉग",
     "page": {
-      "title": "Blog — Donbrico",
-      "description": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals.",
-      "ogTitle": "Blog — Donbrico",
-      "ogDescription": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals."
+      "title": "ब्लॉग — Donbrico",
+      "description": "पेशेवरों के लिए ब्राउज़र ऑटोमेशन, एआई राइटिंग टूल्स, और टैब प्रबंधन पर गाइड, टिप्स और ट्यूटोरियल।",
+      "ogTitle": "ब्लॉग — Donbrico",
+      "ogDescription": "पेशेवरों के लिए ब्राउज़र ऑटोमेशन, एआई राइटिंग टूल्स, और टैब प्रबंधन पर गाइड, टिप्स और ट्यूटोरियल।"
     },
     "hero": {
-      "eyebrow": "BLOG",
-      "title": "Guides & resources",
-      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+      "eyebrow": "ब्लॉग",
+      "title": "गाइड और संसाधन",
+      "subtitle": "ब्राउज़र ऑटोमेशन, एआई राइटिंग टूल्स और वर्कस्पेस प्रबंधन पर व्यावहारिक टिप्स।",
+      "articlesCount": "1 लेख"
     },
-    "allPosts": "All Posts",
-    "readMore": "Read more →",
-    "byProduct": "By product:",
-    "minRead": "min read"
+    "allPosts": "सभी पोस्ट",
+    "readMore": "और पढ़ें →",
+    "byProduct": "उत्पाद के अनुसार:",
+    "minRead": "मिनट पढ़ने का समय"
   }
 }

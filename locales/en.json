@@ -2966,7 +2966,8 @@
     "hero": {
       "eyebrow": "BLOG",
       "title": "Guides & resources",
-      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management.",
+      "articlesCount": "1 article"
     },
     "allPosts": "All Posts",
     "readMore": "Read more →",

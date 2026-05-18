@@ -32,7 +32,7 @@
     "solutions": "Lösungen",
     "extensions": "Erweiterungen",
     "extensionsHub": "Alle Erweiterungen",
-    "about": "Um",
+    "about": "Über uns",
     "game": "Spiel",
     "solutionsCommunication": "Schreiben und antworten",
     "solutionsAutomation": "Füllen und verarbeiten",
@@ -3001,18 +3001,19 @@
     "nav": "Blog",
     "page": {
       "title": "Blog — Donbrico",
-      "description": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals.",
+      "description": "Anleitungen, Tipps und Tutorials zu Browser-Automatisierung, KI-Schreibwerkzeugen und Tab-Verwaltung für Profis.",
       "ogTitle": "Blog — Donbrico",
-      "ogDescription": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals."
+      "ogDescription": "Anleitungen, Tipps und Tutorials zu Browser-Automatisierung, KI-Schreibwerkzeugen und Tab-Verwaltung für Profis."
     },
     "hero": {
       "eyebrow": "BLOG",
-      "title": "Guides & resources",
-      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+      "title": "Anleitungen & Ressourcen",
+      "subtitle": "Praktische Tipps zu Browser-Automatisierung, KI-Schreibwerkzeugen und Arbeitsbereichsverwaltung.",
+      "articlesCount": "1 Artikel"
     },
-    "allPosts": "All Posts",
-    "readMore": "Read more →",
-    "byProduct": "By product:",
-    "minRead": "min read"
+    "allPosts": "Alle Beiträge",
+    "readMore": "Mehr lesen →",
+    "byProduct": "Nach Produkt:",
+    "minRead": "Min. Lesedauer"
   }
 }

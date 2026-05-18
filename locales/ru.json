@@ -2980,21 +2980,22 @@
     }
   },
   "blog": {
-    "nav": "Blog",
+    "nav": "Блог",
     "page": {
-      "title": "Blog — Donbrico",
-      "description": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals.",
-      "ogTitle": "Blog — Donbrico",
-      "ogDescription": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals."
+      "title": "Блог — Donbrico",
+      "description": "Руководства, советы и учебные материалы по автоматизации браузера, инструментам для написания текстов с ИИ и управлению вкладками для профессионалов.",
+      "ogTitle": "Блог — Donbrico",
+      "ogDescription": "Руководства, советы и учебные материалы по автоматизации браузера, инструментам для написания текстов с ИИ и управлению вкладками для профессионалов."
     },
     "hero": {
-      "eyebrow": "BLOG",
-      "title": "Guides & resources",
-      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+      "eyebrow": "БЛОГ",
+      "title": "Руководства и ресурсы",
+      "subtitle": "Практические советы по автоматизации браузера, инструментам для написания текстов с ИИ и управлению рабочим пространством.",
+      "articlesCount": "1 статья"
     },
-    "allPosts": "All Posts",
-    "readMore": "Read more →",
-    "byProduct": "By product:",
-    "minRead": "min read"
+    "allPosts": "Все статьи",
+    "readMore": "Читать далее →",
+    "byProduct": "По продукту:",
+    "minRead": "мин чтения"
   }
 }

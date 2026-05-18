@@ -3001,18 +3001,19 @@
     "nav": "Blog",
     "page": {
       "title": "Blog — Donbrico",
-      "description": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals.",
+      "description": "Guías, consejos y tutoriales sobre automatización de navegadores, herramientas de escritura de IA y gestión de pestañas para profesionales.",
       "ogTitle": "Blog — Donbrico",
-      "ogDescription": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals."
+      "ogDescription": "Guías, consejos y tutoriales sobre automatización de navegadores, herramientas de escritura de IA y gestión de pestañas para profesionales."
     },
     "hero": {
       "eyebrow": "BLOG",
-      "title": "Guides & resources",
-      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+      "title": "Guías y recursos",
+      "subtitle": "Consejos prácticos sobre automatización de navegadores, herramientas de escritura de IA y gestión de espacios de trabajo.",
+      "articlesCount": "1 artículo"
     },
-    "allPosts": "All Posts",
-    "readMore": "Read more →",
-    "byProduct": "By product:",
-    "minRead": "min read"
+    "allPosts": "Todas las publicaciones",
+    "readMore": "Leer más →",
+    "byProduct": "Por producto:",
+    "minRead": "min de lectura"
   }
 }

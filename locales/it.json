@@ -32,7 +32,7 @@
     "solutions": "Soluzioni",
     "extensions": "Estensioni",
     "extensionsHub": "Tutte le estensioni",
-    "about": "Di",
+    "about": "Chi siamo",
     "game": "Gioco",
     "solutionsCommunication": "Scrivi e rispondi",
     "solutionsAutomation": "Compila ed elabora",
@@ -3032,18 +3032,19 @@
     "nav": "Blog",
     "page": {
       "title": "Blog — Donbrico",
-      "description": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals.",
+      "description": "Guide, consigli e tutorial su automazione del browser, strumenti di scrittura IA e gestione delle schede per professionisti.",
       "ogTitle": "Blog — Donbrico",
-      "ogDescription": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals."
+      "ogDescription": "Guide, consigli e tutorial su automazione del browser, strumenti di scrittura IA e gestione delle schede per professionisti."
     },
     "hero": {
       "eyebrow": "BLOG",
-      "title": "Guides & resources",
-      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+      "title": "Guide e risorse",
+      "subtitle": "Consigli pratici su automazione del browser, strumenti di scrittura IA e gestione dell'area di lavoro.",
+      "articlesCount": "1 articolo"
     },
-    "allPosts": "All Posts",
-    "readMore": "Read more →",
-    "byProduct": "By product:",
-    "minRead": "min read"
+    "allPosts": "Tutti i post",
+    "readMore": "Leggi di più →",
+    "byProduct": "Per prodotto:",
+    "minRead": "minuti di lettura"
   }
 }

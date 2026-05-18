@@ -2993,21 +2993,22 @@
     }
   },
   "blog": {
-    "nav": "Blog",
+    "nav": "部落格",
     "page": {
-      "title": "Blog — Donbrico",
-      "description": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals.",
-      "ogTitle": "Blog — Donbrico",
-      "ogDescription": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals."
+      "title": "部落格 — Donbrico",
+      "description": "針對專業人士的瀏覽器自動化、AI 寫作工具和分頁管理指南、技巧及教學。",
+      "ogTitle": "部落格 — Donbrico",
+      "ogDescription": "針對專業人士的瀏覽器自動化、AI 寫作工具和分頁管理指南、技巧及教學。"
     },
     "hero": {
-      "eyebrow": "BLOG",
-      "title": "Guides & resources",
-      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+      "eyebrow": "部落格",
+      "title": "指南與資源",
+      "subtitle": "關於瀏覽器自動化、AI 寫作工具和工作區管理的實用技巧。",
+      "articlesCount": "1 篇文章"
     },
-    "allPosts": "All Posts",
-    "readMore": "Read more →",
-    "byProduct": "By product:",
-    "minRead": "min read"
+    "allPosts": "所有文章",
+    "readMore": "閱讀更多 →",
+    "byProduct": "依產品分類:",
+    "minRead": "分鐘閱讀"
   }
 }

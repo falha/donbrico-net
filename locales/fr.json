@@ -2832,18 +2832,19 @@
     "nav": "Blog",
     "page": {
       "title": "Blog — Donbrico",
-      "description": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals.",
+      "description": "Guides, conseils et tutoriels sur l'automatisation du navigateur, les outils d'écriture IA et la gestion des onglets pour les professionnels.",
       "ogTitle": "Blog — Donbrico",
-      "ogDescription": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals."
+      "ogDescription": "Guides, conseils et tutoriels sur l'automatisation du navigateur, les outils d'écriture IA et la gestion des onglets pour les professionnels."
     },
     "hero": {
       "eyebrow": "BLOG",
-      "title": "Guides & resources",
-      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+      "title": "Guides & ressources",
+      "subtitle": "Conseils pratiques sur l'automatisation du navigateur, les outils d'écriture IA et la gestion de l'espace de travail.",
+      "articlesCount": "1 article"
     },
-    "allPosts": "All Posts",
-    "readMore": "Read more →",
-    "byProduct": "By product:",
-    "minRead": "min read"
+    "allPosts": "Tous les articles",
+    "readMore": "Lire la suite →",
+    "byProduct": "Par produit :",
+    "minRead": "min de lecture"
   }
 }

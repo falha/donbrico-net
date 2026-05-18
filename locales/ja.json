@@ -32,7 +32,7 @@
     "solutions": "ソリューション",
     "extensions": "拡張機能",
     "extensionsHub": "すべての拡張子",
-    "about": "について",
+    "about": "私たちについて",
     "game": "ゲーム",
     "solutionsCommunication": "書いて返信する",
     "solutionsAutomation": "充填と処理",
@@ -3029,21 +3029,22 @@
     }
   },
   "blog": {
-    "nav": "Blog",
+    "nav": "ブログ",
     "page": {
-      "title": "Blog — Donbrico",
-      "description": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals.",
-      "ogTitle": "Blog — Donbrico",
-      "ogDescription": "Guides, tips, and tutorials on browser automation, AI writing tools, and tab management for professionals."
+      "title": "ブログ — Donbrico",
+      "description": "プロフェッショナル向けのブラウザ自動化、AI執筆ツール、タブ管理に関するガイド、ヒント、チュートリアル。",
+      "ogTitle": "ブログ — Donbrico",
+      "ogDescription": "プロフェッショナル向けのブラウザ自動化、AI執筆ツール、タブ管理に関するガイド、ヒント、チュートリアル。"
     },
     "hero": {
-      "eyebrow": "BLOG",
-      "title": "Guides & resources",
-      "subtitle": "Practical tips on browser automation, AI writing tools, and workspace management."
+      "eyebrow": "ブログ",
+      "title": "ガイド＆リソース",
+      "subtitle": "ブラウザ自動化、AI執筆ツール、ワークスペース管理に関する実践的なヒント。",
+      "articlesCount": "1件の記事"
     },
-    "allPosts": "All Posts",
-    "readMore": "Read more →",
-    "byProduct": "By product:",
-    "minRead": "min read"
+    "allPosts": "すべての記事",
+    "readMore": "続きを読む →",
+    "byProduct": "製品別:",
+    "minRead": "分で読めます"
   }
 }
