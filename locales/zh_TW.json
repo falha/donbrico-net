@@ -42,7 +42,19 @@
     "extensionsWorkdesk": "辦公桌",
     "categories": "類別",
     "byRole": "按角色",
-    "blog": "Blog"
+    "blog": "Blog",
+    "extensionsHostReply": "主機回覆AI",
+    "solutionsInsurance": "對於保險",
+    "solutionsSupportTeams": "對於支援團隊",
+    "solutionsRecruiters": "對於招募人員",
+    "solutionsEcommerce": "電子商務支持",
+    "solutionsEcommerceSupport": "對於電子商務",
+    "solutionsRealEstate": "對於房地產",
+    "solutionsBrowserWorkspace": "瀏覽器工作區",
+    "solutionsWorkspace": "Organize & Focus",
+    "extensionsAll": "所有擴充",
+    "solutionsJobSeekers": "對於求職者",
+    "solutionsMedicalAdmin": "對於醫療管理人員"
   },
   "home": {
     "page": {
@@ -517,7 +529,8 @@
       "nullCarrier": "空載體遊戲",
       "website": "本網站",
       "contact": "接觸",
-      "workDesk": "辦公桌"
+      "workDesk": "辦公桌",
+      "hostReplyAi": "主機回覆AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico AI 回覆助理 — Chrome 擴充功能",
@@ -564,6 +577,29 @@
         "sectionTitle": "資料刪除",
         "paragraph": "卸載擴充功能會刪除所有本機儲存的工作區和設定。 Donbrico 伺服器上不會保留任何資料。"
       }
+    },
+    "hostReplyAi": {
+      "whatWeCollect": {
+        "sectionTitle": "我們收集哪些數據",
+        "paragraph": "沒有任何。您的主机内存属性详细信息和设置本地存储在您设备上的 Chrome 存储空间中。沒有資料傳輸到 Donbrico 伺服器。"
+      },
+      "permissions": {
+        "sectionTitle": "使用的權限",
+        "paragraph": "儲存（用於主機記憶體和設定）、activeTab（用於偵測文字欄位）、腳本（用於插入回覆工具列）。"
+      },
+      "thirdPartyAI": {
+        "paragraph": "如果您配置「自帶金鑰」提供者（例如 OpenAI），訪客訊息和您的主機記憶體詳細資料將發送至該第三方提供者以產生回應。如果您使用 Gemini Nano（如果可用），則所有處理都在設備上進行。 Donbrico 不會儲存或記錄任何 AI 請求。",
+        "sectionTitle": "第三方人工智慧提供者（自備金鑰）"
+      },
+      "dataDeletion": {
+        "paragraph": "卸載擴充功能會刪除所有本機儲存的屬性詳細資訊和設定。 Donbrico 伺服器上不會保留任何資料。",
+        "sectionTitle": "資料刪除"
+      },
+      "howStored": {
+        "sectionTitle": "您的資料如何存儲",
+        "paragraph": "屬性詳細資訊儲存在 Chrome 的本機儲存中。除非您使用第三方人工智慧供應商，否則這些資料永遠不會離開您的裝置。"
+      },
+      "sectionTitle": "Donbrico HostReply AI — Chrome 擴充功能"
     }
   },
   "emails": {

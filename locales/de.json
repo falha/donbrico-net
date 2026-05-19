@@ -32,20 +32,20 @@
     "solutions": "Lösungen",
     "extensions": "Erweiterungen",
     "extensionsHub": "Alle Erweiterungen",
-    "about": "Über uns",
+    "about": "Um",
     "game": "Spiel",
     "solutionsCommunication": "Schreiben und antworten",
     "solutionsAutomation": "Füllen und verarbeiten",
     "solutionsWorkspace": "Organisieren und fokussieren",
-    "solutionsRecruiters": "Fr Personalvermittler",
-    "solutionsEcommerce": "Fr E-Commerce-Support",
-    "solutionsInsurance": "Fr Versicherungen",
-    "solutionsSupportTeams": "Fr Support-Teams",
+    "solutionsRecruiters": "Für Personalvermittler",
+    "solutionsEcommerce": "Für E-Commerce-Support",
+    "solutionsInsurance": "Für Versicherungen",
+    "solutionsSupportTeams": "Für Support-Teams",
     "solutionsBrowserWorkspace": "Browser-Arbeitsbereich",
-    "solutionsJobSeekers": "Fr Arbeitssuchende",
+    "solutionsJobSeekers": "Für Arbeitssuchende",
     "solutionsMedicalAdmin": "Fr Medizinische Administration",
-    "solutionsEcommerceSupport": "Fr E-Commerce",
-    "solutionsRealEstate": "Fr Immobilien",
+    "solutionsEcommerceSupport": "Für E-Commerce",
+    "solutionsRealEstate": "Für Immobilien",
     "extensionsAll": "Alle Erweiterungen",
     "extensionsAutofill": "Autofill-KI",
     "extensionsMedAutoFill": "MedAutoFill",
@@ -140,7 +140,7 @@
     "steamGame": "STEAM-SPIEL",
     "comingSoon": "KOMMT BALD",
     "nullCarrierTitle": "Null-Carrier",
-    "nullCarrierDescription": "Ein Puzzlespiel zur Signalrekonstruktion. Sie betreiben ein Deep-Space-Listening-Array. Stimmen Sie Frequenzen ab, dekodieren Sie Übertragungen und hinterfragen Sie, was Ihnen das Kommando sagt.",
+    "nullCarrierDescription": "Ein Puzzlespiel zur Signalrekonstruktion. Sie betreiben ein Deep-Space-Listening-Array. Stimmen Sie Frequenzen ab, dekodieren Sie Übertragungen und hinterfragen Sie, was Command Ihnen sagt.",
     "learnMore": "Erfahren Sie mehr →"
   },
   "autofillAi": {
@@ -1575,7 +1575,7 @@
           },
           {
             "icon": null,
-            "text": "Wechseln zwischen Registerkarten, um Daten in Jobbörsen und ATS-Systeme zu kopieren und einzufügen"
+            "text": "Wechseln zwischen Registerkarten zum Kopieren und Einfügen von Daten in Jobbörsen und ATS-Systeme"
           },
           {
             "icon": null,
@@ -1642,9 +1642,9 @@
       },
       "page": {
         "title": "KI-Kommunikations-Copilot für E-Mails, Support und Messaging | Donbrico",
-        "description": "Automatisieren Sie Antworten, E-Mails und Nachrichten mithilfe von KI. Entwickelt für Supportteams, Vertriebsmitarbeiter und Fachleute, die umfangreiche Kommunikation verwalten.",
+        "description": "Automatisieren Sie Antworten, E-Mails und Nachrichten mithilfe von KI. Entwickelt für Support-Teams, Vertriebsmitarbeiter und Fachleute, die umfangreiche Kommunikation verwalten.",
         "ogTitle": "KI-Kommunikations-Copilot für E-Mails, Support und Messaging | Donbrico",
-        "ogDescription": "Automatisieren Sie Antworten, E-Mails und Nachrichten mithilfe von KI. Entwickelt für Supportteams, Vertriebsmitarbeiter und Fachleute, die umfangreiche Kommunikation verwalten."
+        "ogDescription": "Automatisieren Sie Antworten, E-Mails und Nachrichten mithilfe von KI. Entwickelt für Support-Teams, Vertriebsmitarbeiter und Fachleute, die umfangreiche Kommunikation verwalten."
       },
       "eyebrow": "SCHREIBEN & ANTWORTEN",
       "title": "Hören Sie auf, immer wieder dieselben Nachrichten zu schreiben. Nutzen Sie KI für die Abwicklung hochvolumiger Kommunikation.",
@@ -1844,7 +1844,7 @@
         "primary": {
           "label": "Primäres Werkzeug",
           "name": "KI-Antwortassistent",
-          "description": "Erstellen Sie eine Bibliothek mit Support-Antwortvorlagen für Ihre gängigsten Tickettypen. Generieren Sie für Grenzfälle eine benutzerdefinierte Antwort mit einer schnellen Eingabeaufforderung – die KI erstellt sie in Sekundenschnelle, Sie überprüfen und senden sie.",
+          "description": "Erstellen Sie eine Bibliothek mit Support-Antwortvorlagen für Ihre gängigsten Ticketarten. Generieren Sie für Grenzfälle eine benutzerdefinierte Antwort mit einer schnellen Eingabeaufforderung – die KI erstellt sie in Sekundenschnelle, Sie prüfen sie und senden sie.",
           "points": [
             "Vorlagenbibliothek für Bestell-, Rückerstattungs-, Versand- und Produktanfragen",
             "Funktioniert in Gorgias, Zendesk, Freshdesk, Shopify-Posteingang, Gmail und jedem Textfeld",
@@ -1907,7 +1907,7 @@
         "title": "Verwandte Arbeitsabläufe",
         "items": [
           {
-            "label": "Übersicht über die Support-Teams",
+            "label": "Übersicht über Supportteams",
             "url": "/solutions/support-teams/"
           },
           {
@@ -1941,7 +1941,7 @@
         },
         "q2": {
           "q": "Sind sensible Daten von Versicherungsnehmern sicher?",
-          "a": "Bei Verwendung von Gemini Nano (Chrome integrierte KI) bleiben alle Daten auf Ihrem Gerät. Es werden niemals Daten an Donbrico gesendet. Wenn Sie einen API-Schlüssel eines Drittanbieters verwenden, gehen die Daten gemäß dessen Datenschutzrichtlinie an diesen Anbieter."
+          "a": "Bei Verwendung von Gemini Nano (In Chrome integrierte KI) bleiben alle Daten auf Ihrem Gerät. Es werden niemals Daten an Donbrico gesendet. Wenn Sie einen API-Schlüssel eines Drittanbieters verwenden, gehen die Daten gemäß dessen Datenschutzrichtlinie an diesen Anbieter."
         },
         "q3": {
           "q": "Kann ich mehrere Kundenprofile speichern?",
@@ -1969,7 +1969,7 @@
         "Versicherungs-Workflows"
       ],
       "title": "Versicherungsprofis: Eliminieren Sie die manuelle Formulareingabe durch KI-gestütztes automatisches Ausfüllen",
-      "subtitle": "Donbrico Autofill AI füllt Antragsformulare, Richtlinieneingabebildschirme und Verwaltungsunterlagen aus einem gespeicherten Datenprofil aus – wodurch wiederholte Eingabefehler reduziert und jede Woche Stunden gespart werden.",
+      "subtitle": "Donbrico Autofill AI füllt Anspruchsformulare, Richtlinieneingabebildschirme und Verwaltungsunterlagen aus einem gespeicherten Datenprofil aus – wodurch wiederholte Eingabefehler reduziert und jede Woche Stunden gespart werden.",
       "pain": {
         "title": "Was bremst dich aus?",
         "items": [
@@ -2095,7 +2095,7 @@
         "items": [
           {
             "icon": null,
-            "text": "Ein hohes Ticketvolumen bedeutet, dass Agenten den größten Teil ihres Tages damit verbringen, nahezu identische Antworten zu kopieren oder neu zu schreiben"
+            "text": "Ein hohes Ticketaufkommen bedeutet, dass Agenten den größten Teil ihres Tages damit verbringen, nahezu identische Antworten zu kopieren oder neu zu schreiben"
           },
           {
             "icon": null,
@@ -2309,7 +2309,7 @@
         "secondary": {
           "label": "Auch nützlich",
           "name": "KI-Antwortassistent",
-          "description": "Erstellen Sie eine Bibliothek mit Follow-up-E-Mail-Vorlagen – Dankesbriefe, E-Mails zur Statusüberprüfung, Starter für Gehaltsverhandlungen. KI erstellt in Sekundenschnelle personalisierte Versionen für jede Anwendung.",
+          "description": "Erstellen Sie eine Bibliothek mit Vorlagen für Folge-E-Mails – Dankesschreiben, E-Mails zur Statusüberprüfung, Einstiegshilfen für Gehaltsverhandlungen. KI erstellt in Sekundenschnelle personalisierte Versionen für jede Anwendung.",
           "points": [
             "Gespeicherte Vorlagen für jede Phase des Einstellungsprozesses",
             "KI entwirft anhand einer kurzen Eingabeaufforderung personalisierte Folgemaßnahmen"
@@ -2537,57 +2537,47 @@
         "subtitle": "Der Start aller drei Erweiterungen ist kostenlos. Vorerst nur Chrome – Edge kommt bald.",
         "button": "Alle Erweiterungen anzeigen →"
       },
-      "categories": {
-        "communication": {
-          "title": "Schreiben und antworten",
-          "description": "Automatisieren Sie E-Mail-Antworten, Support-Antworten und Outreach-Nachrichten. Entwickelt für hochvolumige Kommunikationsaufgaben.",
-          "cta": "Workflow anzeigen →"
-        },
-        "automation": {
-          "title": "Füllen und verarbeiten",
-          "description": "Automatisieren Sie das wiederholte Ausfüllen von Formularen und die strukturierte Dateneingabe. Entwickelt für Personalvermittler, Administratoren und Betriebsteams.",
-          "cta": "Workflow anzeigen →"
-        },
-        "workspace": {
-          "title": "Organisieren und fokussieren",
-          "description": "Browser-Arbeitsbereiche speichern und wiederherstellen. Entwickelt für Forscher, Entwickler und komplexe Projektabläufe.",
-          "cta": "Workflow anzeigen →"
-        }
+      "categories": "Kategorien",
+      "workflows": "Arbeitsabläufe",
+      "automation": {
+        "title": "Füllen und verarbeiten",
+        "description": "Automatisieren Sie das wiederholte Ausfüllen von Formularen und die strukturierte Dateneingabe. Entwickelt für Personalvermittler, Administratoren und Betriebsteams.",
+        "cta": "Workflow anzeigen →"
       },
-      "workflows": {
-        "title": "SPEZIFISCHE ABLÄUFE",
-        "subtitle": "Jede Nischenseite zeigt genau, wie Donbrico-Erweiterungen diesen Arbeitsablauf lösen.",
-        "cta": "Workflow anzeigen →",
-        "supportTeams": {
-          "title": "Support-Teams",
-          "description": "KI-gestützte Antwortbibliothek für Supportmitarbeiter. Generieren Sie schneller präzise Antworten.",
-          "cta": "Workflow anzeigen →"
-        },
-        "ecommerceSupport": {
-          "title": "E-Commerce-Unterstützung",
-          "description": "Automatisieren Sie Support-Antworten auf Bestellungen, Rückerstattungen und Kundenfragen. Reduzieren Sie die Ticketlast.",
-          "cta": "Workflow anzeigen →"
-        },
-        "recruiters": {
-          "title": "Personalvermittler",
-          "description": "Beschleunigen Sie die Rekrutierung mit KI, die Jobbörsen automatisch ausfüllt, Kandidatenzusammenfassungen erstellt und die manuelle ATS-Dateneingabe reduziert.",
-          "cta": "Workflow anzeigen →"
-        },
-        "insurance": {
-          "title": "Versicherung",
-          "description": "Füllen Sie Anspruchsformulare und Versicherungsdaten mit KI-gestütztem Ausfüllen aus. Weniger Fehler, weniger Zeit.",
-          "cta": "Workflow anzeigen →"
-        },
-        "browserWorkspace": {
-          "title": "Forscher und Entwickler",
-          "description": "Organisieren Sie komplexe Browsersitzungen. Speichern Sie Arbeitsbereiche, stellen Sie sie sofort wieder her und suchen Sie mit KI.",
-          "cta": "Workflow anzeigen →"
-        },
-        "jobSeekers": {
-          "title": "Arbeitssuchende",
-          "description": "Füllen Sie Bewerbungen automatisch mit KI-generierten Anschreiben aus. Bewerben Sie sich schneller.",
-          "cta": "Workflow anzeigen →"
-        }
+      "communication": {
+        "title": "Schreiben und antworten",
+        "description": "Automatisieren Sie E-Mail-Antworten, Support-Antworten und Outreach-Nachrichten. Entwickelt für hochvolumige Kommunikationsaufgaben.",
+        "cta": "Workflow anzeigen →"
+      },
+      "workspace": {
+        "title": "Organisieren und fokussieren",
+        "description": "Browser-Arbeitsbereiche speichern und wiederherstellen. Entwickelt für Forscher, Entwickler und komplexe Projektabläufe.",
+        "cta": "Workflow anzeigen →"
+      },
+      "insurance": {
+        "title": "Versicherung",
+        "description": "Füllen Sie Anspruchsformulare und Versicherungsdaten mit KI-gestütztem Ausfüllen aus. Weniger Fehler, weniger Zeit.",
+        "cta": "Workflow anzeigen →"
+      },
+      "browserWorkspace": {
+        "title": "Forscher und Entwickler",
+        "description": "Organisieren Sie komplexe Browsersitzungen. Speichern Sie Arbeitsbereiche, stellen Sie sie sofort wieder her und suchen Sie mit KI.",
+        "cta": "Workflow anzeigen →"
+      },
+      "ecommerceSupport": {
+        "title": "E-Commerce-Unterstützung",
+        "description": "Automatisieren Sie Support-Antworten auf Bestellungen, Rückerstattungen und Kundenfragen. Reduzieren Sie die Ticketlast.",
+        "cta": "Workflow anzeigen →"
+      },
+      "supportTeams": {
+        "title": "Support-Teams",
+        "description": "KI-gestützte Antwortbibliothek für Supportmitarbeiter. Generieren Sie schneller präzise Antworten.",
+        "cta": "Workflow anzeigen →"
+      },
+      "jobSeekers": {
+        "title": "Arbeitssuchende",
+        "description": "Füllen Sie Bewerbungen automatisch mit KI-generierten Anschreiben aus. Bewerben Sie sich schneller.",
+        "cta": "Workflow anzeigen →"
       }
     },
     "realEstate": {
@@ -2599,7 +2589,7 @@
       },
       "eyebrow": "FÜR IMMOBILIENMAKLER",
       "title": "Hören Sie auf, Einträge erneut einzugeben, E-Mails neu zu schreiben und Tabs zu verlieren",
-      "subtitle": "Immobilienmakler jonglieren täglich mit Kunden, Angeboten, Portalen und Papierkram über Dutzende von Browser-Registerkarten. Die drei Erweiterungen von Donbrico reduzieren die Wiederholung: Füllen Sie jedes Formular mit einem Klick aus, antworten Sie Kunden in Sekundenschnelle und sorgen Sie für die Organisation jeder Immobilienrecherchesitzung.",
+      "subtitle": "Immobilienmakler jonglieren täglich mit Kunden, Angeboten, Portalen und Papierkram über Dutzende von Browser-Registerkarten. Die drei Erweiterungen von Donbrico reduzieren die Wiederholung: Füllen Sie jedes Formular mit einem Klick aus, antworten Sie Kunden in Sekundenschnelle und sorgen Sie dafür, dass jede Immobilienrecherchesitzung organisiert bleibt.",
       "pain": {
         "title": "Wo Agenten jede Woche Stunden verlieren",
         "items": [
@@ -2657,7 +2647,7 @@
         "badge": "Registerkarte Organisation",
         "title": "Arbeitsplatz",
         "fullDetails": "Alle Details →",
-        "description": "Jeder aktive Eintrag verdient seinen eigenen Browser-Arbeitsbereich – MLS-Details, Straßenansicht, Nachbarschaftsdaten, Schulbewertungen, Hypothekenrechner, konkurrierende Einträge. WorkDesk speichert Ihre aktuellen Tabs mit einem Klick als benannten Arbeitsbereich und stellt die gesamte Sitzung sofort wieder her. Kein Tab-Chaos mehr, wenn Sie 6 aktive Kunden haben.",
+        "description": "Jeder aktive Eintrag verdient seinen eigenen Browser-Arbeitsbereich – MLS-Details, Straßenansicht, Nachbarschaftsdaten, Schulbewertungen, Hypothekenrechner, konkurrierende Einträge. WorkDesk speichert Ihre aktuellen Registerkarten mit einem Klick als benannten Arbeitsbereich und stellt die gesamte Sitzung sofort wieder her. Kein Tab-Chaos mehr, wenn Sie 6 aktive Kunden haben.",
         "workspacesTitle": "Workspaces-Agenten erstellen:",
         "workspaces": [
           "→ „Familie Smith – Käufer“ (12 Registerkarten)",
@@ -2692,7 +2682,7 @@
         },
         "q5": {
           "q": "Sind alle drei Erweiterungen kostenlos?",
-          "a": "Alle drei verfügen über ein großzügiges kostenloses Kontingent. AI Reply Assistant und Autofill AI schalten erweiterte Funktionen (mehrere Profile, intelligente Variablen, KI-Generierung) in Pro-Plänen ab jeweils 5,99 $/Monat frei. WorkDesk Pro hebt Arbeitsbereichsbeschränkungen auf."
+          "a": "Alle drei haben ein großzügiges kostenloses Kontingent. AI Reply Assistant und Autofill AI schalten erweiterte Funktionen (mehrere Profile, intelligente Variablen, KI-Generierung) in Pro-Plänen ab jeweils 5,99 $/Monat frei. WorkDesk Pro hebt Arbeitsbereichsbeschränkungen auf."
         }
       },
       "cta": {
@@ -2724,7 +2714,7 @@
     "hero": {
       "eyebrow": "KI-BROWSER-ERWEITERUNGEN",
       "title": "KI-Browsertools, die sich wiederholende Arbeiten aus Ihren täglichen Arbeitsabläufen entfernen",
-      "subtitle": "Browser-Erweiterungen, die das Schreiben, Ausfüllen von Formularen und die Sitzungsverwaltung automatisieren – entwickelt für Profis, die schneller vorankommen müssen, ohne auf Qualität zu verzichten.",
+      "subtitle": "Browser-Erweiterungen, die das Schreiben, Ausfüllen von Formularen und die Sitzungsverwaltung automatisieren – entwickelt für Profis, die schneller vorankommen müssen, ohne Abstriche bei der Qualität machen zu müssen.",
       "btnInstall": "Installieren Sie Erweiterungen",
       "btnSolutions": "Entdecken Sie Lösungen"
     },

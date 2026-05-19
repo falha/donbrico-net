@@ -53,7 +53,8 @@
     "extensionsWorkdesk": "Mesa de trabalho",
     "categories": "Categorias",
     "byRole": "Por função",
-    "blog": "Blog"
+    "blog": "Blog",
+    "extensionsHostReply": "HostReply AI"
   },
   "home": {
     "page": {
@@ -528,7 +529,8 @@
       "workDesk": "Mesa de trabalho",
       "nullCarrier": "Jogo de operadora nula",
       "website": "Este site",
-      "contact": "Contato"
+      "contact": "Contato",
+      "hostReplyAi": "HostReply AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Assistente de resposta Donbrico AI – extensão do Chrome",
@@ -575,6 +577,29 @@
         "sectionTitle": "Exclusão de dados",
         "paragraph": "A desinstalação da extensão exclui todos os espaços de trabalho e configurações armazenados localmente. "
       }
+    },
+    "hostReplyAi": {
+      "permissions": {
+        "paragraph": "armazenamento (para memória do host e configurações), activeTab (para detectar campos de texto), script (para injetar a barra de ferramentas de resposta).",
+        "sectionTitle": "Permissões usadas"
+      },
+      "howStored": {
+        "sectionTitle": "Como seus dados são armazenados",
+        "paragraph": "Os detalhes da propriedade são armazenados no armazenamento local do Chrome. Esses dados nunca saem do seu dispositivo, a menos que você use um provedor de IA terceirizado."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Provedores terceirizados de IA (traga sua própria chave)",
+        "paragraph": "Se você configurar um provedor Traga sua própria chave, como OpenAI, a mensagem do convidado e os detalhes da memória do host serão enviados a esse provedor terceirizado para gerar uma resposta. Se você usar o Gemini Nano (quando disponível), todo o processamento será feito no dispositivo. Donbrico não armazena nem registra nenhuma solicitação de IA."
+      },
+      "dataDeletion": {
+        "paragraph": "A desinstalação da extensão exclui todos os detalhes e configurações de propriedade armazenados localmente. Nenhum dado é retido nos servidores Donbrico.",
+        "sectionTitle": "Exclusão de dados"
+      },
+      "whatWeCollect": {
+        "paragraph": "Nenhum. Os detalhes e configurações da propriedade da memória do host são armazenados localmente no armazenamento do Chrome no seu dispositivo. Nenhum dado é transmitido aos servidores Donbrico.",
+        "sectionTitle": "Quais dados coletamos"
+      },
+      "sectionTitle": "Donbrico HostReply AI — Extensão do Chrome"
     }
   },
   "emails": {

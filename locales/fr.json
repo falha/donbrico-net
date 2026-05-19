@@ -86,7 +86,8 @@
     "extensionsWorkdesk": "WorkDesk",
     "categories": "Catégories",
     "byRole": "Par rôle",
-    "blog": "Blog"
+    "blog": "Blog",
+    "extensionsHostReply": "IA HostReply"
   },
   "home": {
     "page": {
@@ -519,7 +520,8 @@
       "nullCarrier": "Jeu de transporteur nul",
       "website": "Ce site Web",
       "contact": "Contact",
-      "workDesk": "Bureau de travail"
+      "workDesk": "Bureau de travail",
+      "hostReplyAi": "IA HostReply"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Assistant de réponse Donbrico AI – Extension Chrome",
@@ -566,6 +568,29 @@
         "sectionTitle": "Suppression des données",
         "paragraph": "La désinstallation de l'extension supprime tous les espaces de travail et paramètres stockés localement. "
       }
+    },
+    "hostReplyAi": {
+      "whatWeCollect": {
+        "sectionTitle": "Quelles données nous collectons",
+        "paragraph": "Aucun. Les détails et paramètres de votre propriété de mémoire hôte sont stockés localement dans le stockage de Chrome sur votre appareil. Aucune donnée n'est transmise aux serveurs de Donbrico."
+      },
+      "permissions": {
+        "sectionTitle": "Autorisations utilisées",
+        "paragraph": "stockage (pour la mémoire hôte et les paramètres), activeTab (pour détecter les champs de texte), script (pour injecter la barre d'outils de réponse)."
+      },
+      "thirdPartyAI": {
+        "paragraph": "Si vous configurez un fournisseur Bring Your Own Key tel qu'OpenAI, le message d'invité et les détails de votre mémoire hôte sont envoyés à ce fournisseur tiers pour générer une réponse. Si vous utilisez Gemini Nano (le cas échéant), tous les traitements sont effectués sur l'appareil. Donbrico ne stocke ni n'enregistre aucune demande d'IA.",
+        "sectionTitle": "Fournisseurs d'IA tiers (apportez votre propre clé)"
+      },
+      "dataDeletion": {
+        "paragraph": "La désinstallation de l'extension supprime tous les détails et paramètres de propriété stockés localement. Aucune donnée n'est conservée sur les serveurs Donbrico.",
+        "sectionTitle": "Suppression des données"
+      },
+      "howStored": {
+        "sectionTitle": "Comment vos données sont stockées",
+        "paragraph": "Les détails de la propriété sont stockés dans le stockage local de Chrome. Ces données ne quittent jamais votre appareil, sauf si vous utilisez un fournisseur d'IA tiers."
+      },
+      "sectionTitle": "Donbrico HostReply AI — Extension Chrome"
     }
   },
   "emails": {
@@ -1463,17 +1488,20 @@
       },
       "pain": {
         "title": "Le problème",
-        "items": {
-          "0": {
-            "text": "Réécrire les mêmes réponses pour les questions courantes encore et encore"
+        "items": [
+          {
+            "icon": "⏱️",
+            "text": "Spending 2–3 hours per day writing replies to similar questions"
           },
-          "1": {
-            "text": "Chercher dans des notes ou feuilles de calcul pour trouver la bonne réponse précédente"
+          {
+            "icon": "📋",
+            "text": "Maintaining tone consistency across a high-volume inbox"
           },
-          "2": {
-            "text": "Maintenir un ton de marque cohérent entre tous les membres de l'équipe"
+          {
+            "icon": "🔄",
+            "text": "Rebuilding the same message from scratch every time"
           }
-        }
+        ]
       },
       "solution": {
         "title": "Comment Donbrico résout le problème",
@@ -1504,6 +1532,29 @@
             "label": "Aperçu Écrire et répondre"
           }
         }
+      },
+      "niches": {
+        "items": [
+          {
+            "label": "Support Teams",
+            "url": "/solutions/support-teams/"
+          },
+          {
+            "label": "Ecommerce Support",
+            "url": "/solutions/ecommerce-support/"
+          }
+        ],
+        "title": "Flux de travail associés"
+      },
+      "who": {
+        "chips": [
+          "Customer support teams",
+          "Sales & SDRs",
+          "Recruiters doing outreach",
+          "Community managers",
+          "Ecommerce support"
+        ],
+        "title": "Conçu pour les personnes qui écrivent beaucoup"
       }
     },
     "automation": {
@@ -1531,17 +1582,20 @@
       },
       "pain": {
         "title": "Le problème",
-        "items": {
-          "0": {
-            "text": "Saisir manuellement les mêmes informations sur chaque formulaire de candidature"
+        "items": [
+          {
+            "icon": "📝",
+            "text": "Filling the same information into dozens of different forms every week"
           },
-          "1": {
-            "text": "Rechercher dans des dossiers précédents pour trouver les détails du candidat"
+          {
+            "icon": "🕐",
+            "text": "Switching between tabs to copy-paste data into job boards and ATS systems"
           },
-          "2": {
-            "text": "Basculer entre plusieurs systèmes de gestion de formulaires"
+          {
+            "icon": "😤",
+            "text": "Writing cover letters and open-ended answers from scratch each time"
           }
-        }
+        ]
       },
       "solution": {
         "title": "Comment Donbrico résout le problème",
@@ -1572,6 +1626,29 @@
             "label": "Aperçu Pour les chercheurs d'emploi"
           }
         }
+      },
+      "niches": {
+        "title": "Flux de travail associés",
+        "items": [
+          {
+            "label": "Recruiters",
+            "url": "/solutions/recruiters/"
+          },
+          {
+            "label": "Insurance Workflows",
+            "url": "/solutions/insurance/"
+          }
+        ]
+      },
+      "who": {
+        "title": "Conçu pour les rôles gourmands en données",
+        "chips": [
+          "Recruiters & sourcers",
+          "Insurance agents",
+          "Operations & admin teams",
+          "HR professionals",
+          "Sales reps entering CRM data"
+        ]
       }
     },
     "workspace": {
@@ -1599,17 +1676,20 @@
       },
       "pain": {
         "title": "Le problème",
-        "items": {
-          "0": {
-            "text": "Perdre des sessions d'onglets lorsque le navigateur plante ou que vous fermez la mauvaise fenêtre"
+        "items": [
+          {
+            "icon": "🗃️",
+            "text": "Losing tab sessions when the browser crashes or you close the wrong window"
           },
-          "1": {
-            "text": "Gérer 30+ onglets sur plusieurs projets sans structure ni mémoire de ce qui est quoi"
+          {
+            "icon": "🔀",
+            "text": "Juggling 30+ tabs across multiple projects with no structure"
           },
-          "2": {
-            "text": "Passer 10 minutes à chercher un onglet que vous avez ouvert la semaine dernière mais dont vous ne vous souvenez plus de l'URL"
+          {
+            "icon": "⏳",
+            "text": "Spending time rebuilding research sessions you've built before"
           }
-        }
+        ]
       },
       "solution": {
         "title": "Comment Donbrico résout le problème",
@@ -1643,6 +1723,39 @@
             "label": "Toutes les extensions"
           }
         }
+      },
+      "features": {
+        "f3": {
+          "text": "Exporter sous forme de signets JSON, CSV ou HTML"
+        },
+        "f2": {
+          "text": "Recherche sémantique basée sur l'IA dans toutes les sessions enregistrées"
+        },
+        "f1": {
+          "text": "Enregistre les onglets, les fenêtres et les groupes d'onglets Chrome"
+        },
+        "f4": {
+          "text": "Toutes les données de l'espace de travail stockées localement — aucun compte requis"
+        }
+      },
+      "niches": {
+        "items": [
+          {
+            "label": "Browser Workspace Management",
+            "url": "/solutions/browser-workspace/"
+          }
+        ],
+        "title": "Flux de travail associés"
+      },
+      "who": {
+        "chips": [
+          "Researchers & analysts",
+          "Developers",
+          "Consultants managing multiple clients",
+          "Project managers",
+          "Content creators"
+        ],
+        "title": "Conçu pour les rôles à changement de contexte"
       }
     },
     "recruiters": {
@@ -1722,7 +1835,8 @@
         "interview": {
           "title": "Planification d'entretien",
           "description": "Modèles de confirmation, rappel et reprogrammation. Insérez directement dans Gmail, Outlook ou le composeur d'e-mail de votre ATS en un clic."
-        }
+        },
+        "description": "Créez une bibliothèque de modèles de sensibilisation pour la communication avec les candidats. AI rédige des versions personnalisées pour chaque candidat."
       },
       "faq": {
         "q1": {
@@ -1740,6 +1854,10 @@
         "q4": {
           "q": "Les données des candidats sont-elles en sécurité ?",
           "a": "Oui. Tout le traitement reste sur l'appareil avec Gemini Nano (Chrome). Si vous utilisez votre propre clé API, les données vont uniquement à ce fournisseur. Donbrico ne voit jamais vos messages ou données de candidats."
+        },
+        "q5": {
+          "q": "Est-ce gratuit ?",
+          "a": "Le forfait gratuit comprend le remplissage illimité de formulaires avec un seul profil et une IA locale via Gemini Nano. Pro (5,99 $/mois) ajoute plusieurs profils et fonctionnalités avancées."
         }
       },
       "cta": {
@@ -1766,6 +1884,21 @@
             "url": "/solutions/"
           }
         ]
+      },
+      "steps": {
+        "s3": {
+          "text": "Appuyez sur le bouton ⚡. Les champs standards se remplissent instantanément. Les questions ouvertes obtiennent des réponses générées par l’IA et adaptées au rôle.",
+          "title": "Un clic pour remplir"
+        },
+        "s1": {
+          "title": "Enregistrez votre profil (ou vos profils de candidats)",
+          "text": "Saisissez une fois les informations clés : nom, contact, détails du rôle, compétences. L'extension gère le reste."
+        },
+        "s2": {
+          "title": "Visitez n’importe quel site d’emploi ou ATS",
+          "text": "Accédez à LinkedIn Jobs, Indeed, Greenhouse ou tout autre système basé sur des formulaires. L'extension s'active automatiquement."
+        },
+        "title": "Comment ça marche pour les recruteurs"
       }
     },
     "ecommerceSupport": {
@@ -1866,7 +1999,9 @@
       },
       "cta": {
         "title": "Commencez à répondre plus rapidement aujourd'hui",
-        "subtitle": "Gratuit à installer. Aucun compte requis. Fonctionne dans votre helpdesk existant."
+        "subtitle": "Gratuit à installer. Aucun compte requis. Fonctionne dans votre helpdesk existant.",
+        "buttonPrimary": "Ajouter à Chrome – Gratuit",
+        "buttonSecondary": "Voyez comment ça marche ↓"
       },
       "related": {
         "title": "Flux de travail connexes",
@@ -1890,9 +2025,11 @@
         "ogDescription": "Remplissez les formulaires d'assurance plus rapidement avec une automatisation assistée par l'IA pour les réclamations, la saisie de données de police et la documentation administrative."
       },
       "eyebrow": "POUR LES PROFESSIONNELS DE L'ASSURANCE",
-      "breadcrumb": {
-        "2": "Flux de travail assurance"
-      },
+      "breadcrumb": [
+        "Home",
+        "Solutions",
+        "Insurance Workflows"
+      ],
       "title": "Professionnels de l'assurance : éliminez la saisie manuelle des formulaires avec le remplissage assisté par l'IA",
       "subtitle": "Remplissez les formulaires de réclamation, les données de polices et les entrées CRM à partir d'un seul profil enregistré. L'IA génère des réponses pour les questions ouvertes.",
       "target": {
@@ -1906,17 +2043,20 @@
       },
       "pain": {
         "title": "Ce qui vous coûte du temps",
-        "items": {
-          "0": {
-            "text": "Saisir manuellement les mêmes informations client sur chaque formulaire de réclamation"
+        "items": [
+          {
+            "icon": "📋",
+            "text": "Re-entering policyholder details across multiple forms and internal systems every day"
           },
-          "1": {
-            "text": "Rechercher dans des dossiers précédents pour trouver les détails de la police"
+          {
+            "icon": "⚠️",
+            "text": "Risk of data entry errors on claims forms that require exact accuracy"
           },
-          "2": {
-            "text": "Basculer entre plusieurs systèmes de gestion de formulaires"
+          {
+            "icon": "🕐",
+            "text": "Hours of administrative paperwork that pull time away from client-facing work"
           }
-        }
+        ]
       },
       "solution": {
         "title": "Comment Donbrico le résout",
@@ -1937,7 +2077,12 @@
               "title": "IA sur appareil (Chrome)",
               "text": "Les données sensibles des clients ne quittent jamais votre machine avec Gemini Nano"
             }
-          }
+          },
+          "points": [
+            "Works on web-based insurance portals and internal admin systems",
+            "Reduces keystroke errors on critical data fields",
+            "On-device AI keeps sensitive client data off external servers (Chrome)"
+          ]
         }
       },
       "steps": {
@@ -1980,18 +2125,22 @@
       },
       "cta": {
         "title": "Réduisez la saisie manuelle dès aujourd'hui",
-        "subtitle": "Gratuit à installer. Aucun compte requis. Chrome uniquement pour l'instant — Edge à venir."
+        "subtitle": "Gratuit à installer. Aucun compte requis. Chrome uniquement pour l'instant — Edge à venir.",
+        "buttonSecondary": "Voyez comment ça marche ↓",
+        "buttonPrimary": "Ajouter à Chrome – Gratuit"
       },
       "related": {
         "title": "Flux de travail associés",
-        "items": {
-          "0": {
-            "label": "Aperçu Recruteurs"
+        "items": [
+          {
+            "label": "Recruiters Workflow",
+            "url": "/solutions/recruiters/"
           },
-          "1": {
-            "label": "Aperçu Pour les chercheurs d'emploi"
+          {
+            "label": "Fill & Process Overview",
+            "url": "/solutions/automation/"
           }
-        }
+        ]
       }
     },
     "supportTeams": {
@@ -2002,9 +2151,11 @@
         "ogDescription": "Générez des réponses de support précises instantanément à l'aide de l'IA. Réduisez le temps de réponse pour les équipes de support Shopify, SaaS et e-commerce."
       },
       "eyebrow": "POUR LES ÉQUIPES DE SUPPORT",
-      "breadcrumb": {
-        "2": "Équipes de support"
-      },
+      "breadcrumb": [
+        "Home",
+        "Solutions",
+        "Support Teams"
+      ],
       "title": "Agents de support : réduisez de moitié le temps de réponse avec des réponses de tickets assistées par l'IA",
       "subtitle": "AI Reply Assistant donne aux agents de support une bibliothèque de réponses personnelle et un bouton de brouillon IA — afin qu'ils puissent répondre aux tickets plus rapidement sans sacrifier la qualité ou la voix de la marque.",
       "target": {
@@ -2018,17 +2169,20 @@
       },
       "pain": {
         "title": "Ce qui vous coûte du temps",
-        "items": {
-          "0": {
-            "text": "Réécrire les mêmes réponses pour les questions courantes encore et encore"
+        "items": [
+          {
+            "icon": "⏰",
+            "text": "High ticket volume means agents spend most of their day copy-pasting or rewriting near-identical answers"
           },
-          "1": {
-            "text": "Chercher dans des feuilles de calcul ou notes pour trouver la bonne réponse précédente"
+          {
+            "icon": "📉",
+            "text": "Inconsistent tone and accuracy across replies when agents work at speed"
           },
-          "2": {
-            "text": "Maintenir un ton de marque cohérent entre tous les agents"
+          {
+            "icon": "🧠",
+            "text": "New agents need weeks to learn standard answers — there's no structured knowledge base in the ticketing tool"
           }
-        }
+        ]
       },
       "solution": {
         "title": "Comment Donbrico le résout",
@@ -2049,7 +2203,12 @@
               "title": "Brouillons contextuels IA",
               "text": "L'IA lit le contexte du ticket et rédige une réponse pertinente — l'agent révise et envoie"
             }
-          }
+          },
+          "points": [
+            "Saved reply library searchable by keyword or tag",
+            "Works in Zendesk, Gorgias, Freshdesk, Intercom, Front, and any helpdesk with a text field",
+            "AI generates context-aware drafts — agent reviews and sends"
+          ]
         }
       },
       "steps": {
@@ -2116,9 +2275,11 @@
         "ogDescription": "Enregistrez et organisez les sessions de navigateur avec l'IA. Idéal pour les chercheurs, développeurs et professionnels gérant des flux de travail complexes."
       },
       "eyebrow": "GESTION DE L'ESPACE DE TRAVAIL NAVIGATEUR",
-      "breadcrumb": {
-        "2": "Gestion de l'espace de travail navigateur"
-      },
+      "breadcrumb": [
+        "Home",
+        "Solutions",
+        "Browser Workspace"
+      ],
       "title": "Chercheurs et développeurs : arrêtez de perdre vos sessions navigateur.<br>Organisez les flux de travail complexes avec l'IA.",
       "subtitle": "WorkDesk enregistre votre état navigateur entier et le restaure en un clic. L'IA nomme, groupe et organise automatiquement vos onglets pour que vous puissiez vous concentrer sur le travail, pas sur le navigateur.",
       "target": {
@@ -2133,17 +2294,20 @@
       },
       "pain": {
         "title": "Ce qui vous coûte du temps",
-        "items": {
-          "0": {
-            "text": "Perdre des heures de contexte de recherche lorsque votre navigateur plante, redémarre, ou vous fermez accidentellement la mauvaise fenêtre"
+        "items": [
+          {
+            "icon": "💥",
+            "text": "Losing hours of research context when your browser crashes, restarts, or you accidentally close the wrong window"
           },
-          "1": {
-            "text": "Gérer 5 projets différents sur 40+ onglets sans structure ni mémoire de ce qui est quoi"
+          {
+            "icon": "🌀",
+            "text": "Managing 5 different projects across 40+ tabs with no structure or memory of what's what"
           },
-          "2": {
-            "text": "Passer 10 minutes à chercher un onglet que vous avez ouvert la semaine dernière mais dont vous ne vous souvenez plus de l'URL"
+          {
+            "icon": "🔍",
+            "text": "Spending 10 minutes finding a tab you opened last week but can't remember the URL for"
           }
-        }
+        ]
       },
       "solution": {
         "title": "Comment Donbrico le résout",
@@ -2164,7 +2328,12 @@
               "title": "Export et portabilité",
               "text": "Exportez les espaces de travail en JSON, CSV ou favoris HTML pour sauvegarde ou transfert"
             }
-          }
+          },
+          "points": [
+            "Saves tabs, windows, and tab groups",
+            "AI-powered semantic search finds any saved tab by description",
+            "Export workspaces as JSON, CSV, or HTML bookmarks"
+          ]
         }
       },
       "steps": {
@@ -2211,17 +2380,16 @@
       },
       "related": {
         "title": "Flux de travail associés",
-        "items": {
-          "0": {
-            "label": "Aperçu Organiser et se concentrer"
+        "items": [
+          {
+            "label": "Organize & Focus Overview",
+            "url": "/solutions/workspace/"
           },
-          "1": {
-            "label": "Toutes les solutions"
-          },
-          "2": {
-            "label": "Toutes les extensions"
+          {
+            "label": "All Extensions",
+            "url": "/extensions/"
           }
-        }
+        ]
       }
     },
     "jobSeekers": {
@@ -2585,7 +2753,8 @@
     "contact": {
       "title": "Contactez-nous",
       "description": "Questions, commentaires ou demandes de partenariat :",
-      "responseTime": "Réponse sous 1–2 jours ouvrables. Opération solo — chaque message est lu."
+      "responseTime": "Réponse sous 1–2 jours ouvrables. Opération solo — chaque message est lu.",
+      "email": "support@donbrico.net"
     }
   },
   "medAutoFill": {

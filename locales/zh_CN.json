@@ -41,7 +41,20 @@
     "extensionsWorkdesk": "办公桌",
     "categories": "类别",
     "byRole": "按角色",
-    "blog": "Blog"
+    "blog": "Blog",
+    "extensionsHostReply": "主机回复AI",
+    "solutionsInsurance": "对于保险",
+    "solutionsSupportTeams": "对于支持团队",
+    "solutionsRecruiters": "对于招聘人员",
+    "solutionsEcommerce": "电子商务支持",
+    "solutionsEcommerceSupport": "对于电子商务",
+    "extensionsAutofill": "自动填充人工智能",
+    "solutionsRealEstate": "对于房地产",
+    "solutionsBrowserWorkspace": "浏览器工作区",
+    "solutionsWorkspace": "组织和聚焦",
+    "extensionsAll": "所有扩展",
+    "solutionsJobSeekers": "对于求职者",
+    "solutionsMedicalAdmin": "对于医疗管理人员"
   },
   "home": {
     "page": {
@@ -516,7 +529,8 @@
       "nullCarrier": "空载体游戏",
       "website": "本网站",
       "contact": "接触",
-      "workDesk": "办公桌"
+      "workDesk": "办公桌",
+      "hostReplyAi": "主机回复AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico AI 回复助手 — Chrome 扩展",
@@ -563,6 +577,29 @@
         "sectionTitle": "数据删除",
         "paragraph": "卸载扩展会删除所有本地存储的工作区和设置。 "
       }
+    },
+    "hostReplyAi": {
+      "whatWeCollect": {
+        "sectionTitle": "我们收集哪些数据",
+        "paragraph": "没有任何。您的主机内存属性详细信息和设置本地存储在您设备上的 Chrome 存储空间中。没有数据传输到 Donbrico 服务器。"
+      },
+      "permissions": {
+        "sectionTitle": "使用的权限",
+        "paragraph": "存储（用于主机内存和设置）、activeTab（用于检测文本字段）、脚本（用于插入回复工具栏）。"
+      },
+      "thirdPartyAI": {
+        "paragraph": "如果您配置“自带密钥”提供商（例如 OpenAI），访客消息和您的主机内存详细信息将发送到该第三方提供商以生成响应。如果您使用 Gemini Nano（如果可用），则所有处理都在设备上进行。 Donbrico 不会存储或记录任何 AI 请求。",
+        "sectionTitle": "第三方人工智能提供商（自带密钥）"
+      },
+      "dataDeletion": {
+        "paragraph": "卸载扩展会删除所有本地存储的属性详细信息和设置。 Donbrico 服务器上不会保留任何数据。",
+        "sectionTitle": "数据删除"
+      },
+      "howStored": {
+        "sectionTitle": "您的数据如何存储",
+        "paragraph": "属性详细信息存储在 Chrome 的本地存储中。除非您使用第三方人工智能提供商，否则这些数据永远不会离开您的设备。"
+      },
+      "sectionTitle": "Donbrico HostReply AI — Chrome 扩展"
     }
   },
   "emails": {
