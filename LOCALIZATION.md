@@ -115,6 +115,18 @@ CSS includes accommodations for languages that expand (e.g., German/Spanish +20-
 }
 ```
 
+## SEO fallback text (crawlers without JavaScript)
+
+Every `data-i18n` element should include **English fallback text** inside the HTML tag (not empty). This matches what `js/i18n.js` injects at runtime so search engines and audit tools see full content.
+
+After editing `locales/en.json`, run:
+
+```bash
+node scripts/sync-locale-fallbacks.js
+```
+
+This fills only empty or whitespace-only `data-i18n` elements from nested keys in `en.json`.
+
 ## Adding a New Language
 
 1. Copy `locales/en.json` to `locales/xx.json` (where `xx` is the language code)

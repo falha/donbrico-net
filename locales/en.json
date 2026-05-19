@@ -88,6 +88,12 @@
         "subtitle": "Browse solutions by workflow to find the right fit for your role.",
         "button": "Explore Solutions →"
       }
+    },
+    "page": {
+      "title": "AI Browser Extensions for Productivity | Donbrico",
+      "ogTitle": "AI Browser Extensions for Productivity | Donbrico",
+      "description": "Download free AI browser extensions for writing, form autofill, and workflow automation. Privacy-first tools that boost your browser productivity.",
+      "ogDescription": "Download free AI browser extensions for writing, form autofill, and workflow automation. Privacy-first tools that boost your browser productivity."
     }
   },
   "faq": {
@@ -114,10 +120,10 @@
   },
   "home": {
     "page": {
-      "title": "AI Browser Tools for Automation, Writing & Workflow Efficiency | Donbrico",
-      "description": "AI browser extensions that automate writing, form filling, and tab management. Save time on repetitive work with tools built for real workflows.",
-      "ogTitle": "AI Browser Tools for Automation, Writing & Workflow Efficiency | Donbrico",
-      "ogDescription": "AI browser extensions that automate writing, form filling, and tab management. Save time on repetitive work with tools built for real workflows."
+      "title": "AI Browser Extensions for Automation & Writing | Donbrico",
+      "description": "Automate writing, form filling, and tab management with AI browser extensions. Save time on repetitive work—data stays local. Try Donbrico free.",
+      "ogTitle": "AI Browser Extensions for Automation & Writing | Donbrico",
+      "ogDescription": "Automate writing, form filling, and tab management with AI browser extensions. Save time on repetitive work—data stays local. Try Donbrico free."
     },
     "hero": {
       "eyebrow": "AI BROWSER EXTENSIONS",
@@ -126,6 +132,20 @@
       "buttonPrimary": "Install Extensions",
       "buttonSecondary": "Explore Solutions →",
       "disclaimer": "🔒 On Chrome: local AI via Gemini Nano — data stays in your browser · Edge versions coming soon"
+    },
+    "seoSections": {
+      "writing": {
+        "title": "AI Writing Automation",
+        "text": "Build a personal reply library and generate AI-powered responses on Gmail, LinkedIn, support desks, and any website. Stop rewriting the same emails and tickets."
+      },
+      "forms": {
+        "title": "Smart Form Filling",
+        "text": "Autofill job applications, medical forms, insurance claims, and CRM entries from one saved profile. AI writes open-ended answers while your data stays local in Chrome."
+      },
+      "tabs": {
+        "title": "Tab & Session Management",
+        "text": "Save and restore full browser workspaces in one click. AI names sessions and groups tabs so researchers and multitaskers can switch projects without losing context."
+      }
     },
     "solutions": {
       "sectionTitle": "THREE WAYS TO WORK FASTER",
@@ -159,14 +179,14 @@
   },
   "autofillAi": {
     "page": {
-      "title": "Donbrico Autofill AI — AI-Powered Form Filler for Chrome",
-      "description": "Fill any web form instantly with AI. Works on job applications, contact forms, and more. Uses Gemini Nano — your data never leaves your browser. Free Chrome extension.",
-      "ogTitle": "Donbrico Autofill AI — AI-Powered Form Filler for Chrome",
-      "ogDescription": "Fill any web form instantly with AI. Works on job applications, contact forms, and more. Uses Gemini Nano — your data never leaves your browser. Free Chrome extension."
+      "title": "Autofill AI — Best AI Form Filler for Job Applications & Chrome",
+      "description": "Best AI form filler for job applications & medical forms. Private autofill for Chrome — no data collection. Fill any form in one click. Free extension.",
+      "ogTitle": "Autofill AI — Best AI Form Filler for Job Applications & Chrome",
+      "ogDescription": "Best AI form filler for job applications & medical forms. Private autofill for Chrome — no data collection. Fill any form in one click. Free extension."
     },
     "hero": {
       "eyebrow": "CHROME EXTENSION",
-      "title": "Fill any form.<br>In one click.",
+      "title": "Fill any form. In one click.",
       "subtitle": "Donbrico Autofill AI detects forms on any website, fills your info instantly, and generates AI-powered answers for open-ended fields — entirely inside your browser.",
       "disclaimer": "🔒 Your data never leaves your browser · Powered by Gemini Nano · No account required",
       "buttonPrimary": "Add to Chrome — Free",
@@ -306,10 +326,10 @@
   },
   "nullCarrier": {
     "page": {
-      "title": "Null Carrier — Deep-Space Signal Puzzle Game | Steam",
-      "description": "Operate a deep-space listening array. Tune frequencies, reconstruct signals, question your orders. A minimalist atmospheric puzzle game coming to Steam.",
-      "ogTitle": "Null Carrier — Deep-Space Signal Puzzle Game | Steam",
-      "ogDescription": "Operate a deep-space listening array. Tune frequencies, reconstruct signals, question your orders. A minimalist atmospheric puzzle game coming to Steam."
+      "title": "Donbrico: Null Carrier — Atmospheric Puzzle Game | Steam",
+      "description": "Donbrico: Null Carrier — Operate a deep-space listening array. Tune frequencies, reconstruct signals. Wishlist now on Steam. Coming soon.",
+      "ogTitle": "Donbrico: Null Carrier — Atmospheric Puzzle Game | Steam",
+      "ogDescription": "Donbrico: Null Carrier — Operate a deep-space listening array. Tune frequencies, reconstruct signals. Wishlist now on Steam. Coming soon."
     },
     "hero": {
       "title": "Signal received.<br>Source unknown.",
@@ -364,16 +384,17 @@
   },
   "support": {
     "page": {
-      "title": "Support — Donbrico",
-      "description": "Get support for Donbrico Autofill AI, AI Reply Assistant, and Null Carrier. Contact us at support@donbrico.net.",
-      "ogTitle": "Support — Donbrico",
-      "ogDescription": "Get support for Donbrico Autofill AI, AI Reply Assistant, and Null Carrier. Contact us at support@donbrico.net."
+      "title": "Support & Help Center — Donbrico Autofill AI & AI Reply Assistant",
+      "description": "Get fast support for Donbrico Autofill AI, AI Reply Assistant, and Null Carrier. Our solo team reads every message. Contact us today.",
+      "ogTitle": "Support & Help Center — Donbrico Autofill AI & AI Reply Assistant",
+      "ogDescription": "Get fast support for Donbrico Autofill AI, AI Reply Assistant, and Null Carrier. Our solo team reads every message. Contact us today."
     },
     "hero": {
       "eyebrow": "SUPPORT"
     },
-    "sectionTitle": "Support",
-    "subtitle": "We're a solo operation. We read every message.",
+    "sectionTitle": "Donbrico Support Center — Get Help with AI Tools",
+    "subtitle": "We're a solo team that reads every message. Reach out for help with Donbrico Autofill AI, AI Reply Assistant, WorkDesk, and more.",
+    "heroCta": "Email Us Now",
     "contact": {
       "sectionTitle": "Contact",
       "fastestWay": "Fastest way to reach us:",
@@ -479,10 +500,10 @@
   },
   "privacyPolicy": {
     "page": {
-      "title": "Privacy Policy — Donbrico",
-      "description": "Privacy Policy for donbrico.net, Donbrico Autofill AI, AI Reply Assistant Chrome extensions, and Null Carrier.",
-      "ogTitle": "Privacy Policy — Donbrico",
-      "ogDescription": "Privacy Policy for donbrico.net, Donbrico Autofill AI, AI Reply Assistant Chrome extensions, and Null Carrier."
+      "title": "Privacy Policy – Donbrico AI Autofill & Reply Assistant",
+      "description": "Learn how Donbrico protects your data across Autofill AI, Reply Assistant, and Null Carrier. Transparent privacy for your peace of mind.",
+      "ogTitle": "Privacy Policy – Donbrico AI Autofill & Reply Assistant",
+      "ogDescription": "Learn how Donbrico protects your data across Autofill AI, Reply Assistant, and Null Carrier. Transparent privacy for your peace of mind."
     },
     "hero": {
       "eyebrow": "PRIVACY POLICY",
@@ -694,10 +715,10 @@
   },
   "aiReplyAssistant": {
     "page": {
-      "title": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
-      "description": "Build a personal reply library and generate AI-powered responses instantly. Works on Gmail, LinkedIn, Twitter, and any website. Powered by Gemini Nano or your own API key.",
-      "ogTitle": "Donbrico AI Reply Assistant — Smart Replies & AI-Powered Responses",
-      "ogDescription": "Build a personal reply library and generate AI-powered responses instantly. Works on Gmail, LinkedIn, Twitter, and any website. Powered by Gemini Nano or your own API key."
+      "title": "AI Reply Generator for Gmail & Outlook – Chrome Extension",
+      "description": "Best AI tool for customer support responses. Automate email replies without templates on Gmail, Outlook & any website. Add to Chrome free.",
+      "ogTitle": "AI Reply Generator for Gmail & Outlook – Chrome Extension",
+      "ogDescription": "Best AI tool for customer support responses. Automate email replies without templates on Gmail, Outlook & any website. Add to Chrome free."
     },
     "hero": {
       "eyebrow": "CHROME EXTENSION",
@@ -861,14 +882,14 @@
   },
   "workDesk": {
     "page": {
-      "title": "Donbrico WorkDesk — Smart Browser Workspaces & Session Manager",
-      "description": "Save and restore your browser workspaces in one click. Smart session manager with AI naming and tab groups. Powered by Gemini Nano or your own API key.",
-      "ogTitle": "Donbrico WorkDesk — Smart Browser Workspaces & Session Manager",
-      "ogDescription": "Save and restore your browser workspaces in one click. Smart session manager with AI naming and tab groups. Powered by Gemini Nano or your own API key."
+      "title": "Save & Restore Browser Tabs | AI Workspace Manager for Chrome",
+      "description": "Save and restore browser workspaces instantly. AI organizes tabs by project. No account needed. Free Chrome extension to manage sessions.",
+      "ogTitle": "Save & Restore Browser Tabs | AI Workspace Manager for Chrome",
+      "ogDescription": "Save and restore browser workspaces instantly. AI organizes tabs by project. No account needed. Free Chrome extension to manage sessions."
     },
     "hero": {
       "eyebrow": "CHROME EXTENSION",
-      "title": "Your browser workspaces,<br>organized by AI.",
+      "title": "Save and organize browser workspaces with AI.",
       "subtitle": "Save your current tabs as a workspace in one click. Restore them instantly later. AI-powered naming and smart cleanup keep your research organized.",
       "disclaimer": "🔒 Your data never leaves your browser · On-device Gemini Nano or your own API key · No account required",
       "buttonPrimary": "Add to Chrome — Free",
@@ -1042,10 +1063,10 @@
   },
   "terms": {
     "page": {
-      "title": "Terms of Service — Donbrico Studio",
-      "description": "Terms of Service for donbrico.net, our browser extensions, and our games.",
-      "ogTitle": "Terms of Service — Donbrico Studio",
-      "ogDescription": "Terms of Service for donbrico.net, our browser extensions, and our games."
+      "title": "Terms of Service — Donbrico Studio | Browser Extensions & Games",
+      "description": "Read Donbrico Studio's Terms of Service for browser extensions, AI tools, and games. Learn your rights, payment terms, and AI usage policies.",
+      "ogTitle": "Terms of Service — Donbrico Studio | Browser Extensions & Games",
+      "ogDescription": "Read Donbrico Studio's Terms of Service for browser extensions, AI tools, and games. Learn your rights, payment terms, and AI usage policies."
     },
     "hero": {
       "title": "Terms of Service",
@@ -1252,10 +1273,10 @@
     },
     "communication": {
       "page": {
-        "title": "AI Communication Copilot for Emails, Support & Messaging | Donbrico",
-        "description": "Automate replies, emails, and messages using AI. Built for support teams, sales, and professionals managing high-volume communication.",
-        "ogTitle": "AI Communication Copilot for Emails, Support & Messaging | Donbrico",
-        "ogDescription": "Automate replies, emails, and messages using AI. Built for support teams, sales, and professionals managing high-volume communication."
+        "title": "AI Reply Assistant: Automate Emails & Messages | Donbrico",
+        "description": "Automate replies, emails, and messages with AI. Built for support teams and sales pros. Works in Gmail, LinkedIn, and more. Free Chrome extension.",
+        "ogTitle": "AI Reply Assistant: Automate Emails & Messages | Donbrico",
+        "ogDescription": "Automate replies, emails, and messages with AI. Built for support teams and sales pros. Works in Gmail, LinkedIn, and more. Free Chrome extension."
       },
       "eyebrow": "WRITE & RESPOND",
       "breadcrumb": {
@@ -1345,10 +1366,10 @@
     },
     "automation": {
       "page": {
-        "title": "AI Workflow Automation for Forms, Data Entry & Admin Tasks | Donbrico",
-        "description": "Automate repetitive form filling and structured data entry with AI browser tools. Built for recruiters, admins, and operations teams.",
-        "ogTitle": "AI Workflow Automation for Forms, Data Entry & Admin Tasks | Donbrico",
-        "ogDescription": "Automate repetitive form filling and structured data entry with AI browser tools. Built for recruiters, admins, and operations teams."
+        "title": "Donbrico: AI Form Filling & Workflow Automation",
+        "description": "Automate repetitive form filling and data entry across any website. Donbrico AI saves hours for recruiters, admins, and ops teams. Try free.",
+        "ogTitle": "Donbrico: AI Form Filling & Workflow Automation",
+        "ogDescription": "Automate repetitive form filling and data entry across any website. Donbrico AI saves hours for recruiters, admins, and ops teams. Try free."
       },
       "eyebrow": "FILL & PROCESS",
       "breadcrumb": {
@@ -1439,10 +1460,10 @@
     },
     "workspace": {
       "page": {
-        "title": "AI Browser Workspace Manager for Research & Productivity | Donbrico",
-        "description": "Organize tabs, research sessions, and workflows with AI-powered browser workspace tools. Stay focused across complex tasks.",
-        "ogTitle": "AI Browser Workspace Manager for Research & Productivity | Donbrico",
-        "ogDescription": "Organize tabs, research sessions, and workflows with AI-powered browser workspace tools. Stay focused across complex tasks."
+        "title": "AI Browser Workspace Manager – Save Tabs & Sessions | Donbrico",
+        "description": "Organize tabs, save browser sessions, and boost productivity with Donbrico's AI workspace manager. Restore your research instantly. Free Chrome extension.",
+        "ogTitle": "AI Browser Workspace Manager – Save Tabs & Sessions | Donbrico",
+        "ogDescription": "Organize tabs, save browser sessions, and boost productivity with Donbrico's AI workspace manager. Restore your research instantly. Free Chrome extension."
       },
       "eyebrow": "ORGANIZE & FOCUS",
       "breadcrumb": {
@@ -1546,10 +1567,10 @@
     },
     "jobSeekers": {
       "page": {
-        "title": "AI Tools for Job Seekers: Autofill Applications & Cover Letters | Donbrico",
-        "description": "Fill job applications automatically and generate personalised cover letters using AI. Save time on your job search.",
-        "ogTitle": "AI Tools for Job Seekers: Autofill Applications & Cover Letters | Donbrico",
-        "ogDescription": "Fill job applications automatically and generate personalised cover letters using AI. Save time on your job search."
+        "title": "Autofill Job Applications with AI — Donbrico",
+        "description": "Stop retyping your resume. Donbrico AI autofills job forms, writes cover letters, and handles ATS data entry. Apply 10x faster — free Chrome extension.",
+        "ogTitle": "Autofill Job Applications with AI — Donbrico",
+        "ogDescription": "Stop retyping your resume. Donbrico AI autofills job forms, writes cover letters, and handles ATS data entry. Apply 10x faster — free Chrome extension."
       },
       "eyebrow": "FOR JOB SEEKERS",
       "breadcrumb": {
@@ -1659,10 +1680,10 @@
     },
     "recruiters": {
       "page": {
-        "title": "AI Tools for Recruiters: Automate Job Applications & ATS Workflows | Donbrico",
-        "description": "Speed up recruiting with AI that autofills job boards, generates candidate summaries, and reduces manual ATS data entry.",
-        "ogTitle": "AI Tools for Recruiters: Automate Job Applications & ATS Workflows | Donbrico",
-        "ogDescription": "Speed up recruiting with AI that autofills job boards, generates candidate summaries, and reduces manual ATS data entry."
+        "title": "AI Tools for Recruiters: Candidate Outreach at Scale | Donbrico",
+        "description": "Save time on candidate outreach. Build a reply library for sourcing, follow-ups, offers, and rejections — then let AI personalize each message in seconds.",
+        "ogTitle": "AI Tools for Recruiters: Candidate Outreach at Scale | Donbrico",
+        "ogDescription": "Save time on candidate outreach. Build a reply library for sourcing, follow-ups, offers, and rejections — then let AI personalize each message in seconds."
       },
       "eyebrow": "FOR RECRUITERS",
       "breadcrumb": [
@@ -1670,112 +1691,115 @@
         "Solutions",
         "For Recruiters"
       ],
-      "title": "Recruiters: automate job board submissions and ATS data entry with AI",
-      "subtitle": "Donbrico Autofill AI fills job applications and ATS forms from a single saved profile — letting you process more candidates without the copy-paste grind.",
+      "title": "Write candidate outreach at scale — without rewriting every message",
+      "subtitle": "AI Reply Assistant saves your sourcing, follow-up, offer, and rejection templates — then personalises each one for the candidate in seconds. Autofill AI handles ATS data entry when you need it.",
       "pain": {
         "title": "What's slowing you down",
         "items": [
           {
+            "icon": "✍️",
+            "text": "Personalising the same outreach message for each candidate from scratch — LinkedIn InMails, email sequences, and sourcing notes"
+          },
+          {
             "icon": "🔁",
-            "text": "Re-entering the same candidate data into LinkedIn, Indeed, Greenhouse, Lever, and Workday — every single day"
+            "text": "Rewriting follow-up and status-update emails multiple times a day with only minor variations per candidate"
           },
           {
-            "icon": "⌨️",
-            "text": "Manually writing outreach messages for each candidate from scratch"
+            "icon": "🎯",
+            "text": "Crafting rejection and offer letters that feel human, not copy-pasted from a generic HR template"
           },
           {
-            "icon": "📂",
-            "text": "Switching between 10 tabs to copy-paste the same information across job boards and ATS systems"
+            "icon": "⏱️",
+            "text": "Toggling between notes, ATS, LinkedIn, and email to piece together context before writing each message"
           }
         ]
       },
       "solution": {
         "title": "How Donbrico solves it",
         "primary": {
-          "label": "Primary tool",
-          "name": "Donbrico Autofill AI",
-          "description": "Detects forms on any job board or ATS. Fills standard fields (name, email, LinkedIn, experience) from your saved profile in one click. AI writes custom answers for open-ended fields like \"Why are you a good fit?\"",
+          "label": "Primary Tool",
+          "name": "AI Reply Assistant",
+          "description": "Save every message template you write once — initial sourcing, first follow-up, second follow-up, offer, decline, counter-offer. When you need one, AI rewrites it for the specific candidate using context you provide: role, company, candidate name.",
           "points": [
-            "Works on LinkedIn, Indeed, Greenhouse, Lever, Workday, and more",
-            "Fills multiple candidate profiles with one extension",
-            "On-device AI (Chrome) — candidate data never hits external servers"
+            "Saved template library with unlimited entries",
+            "AI personalises any template in one click — on any page",
+            "Smart variables: {{name}}, {{role}}, {{company}} auto-replaced (Pro)",
+            "Works in Gmail, LinkedIn, your ATS's email composer"
           ]
         },
         "secondary": {
-          "label": "Also useful",
-          "name": "AI Reply Assistant",
-          "description": "Build a library of outreach message templates. Generate personalised candidate messages with one prompt.",
+          "label": "Also Useful",
+          "name": "Autofill AI",
+          "description": "When you need to submit candidate profiles into job boards or fill ATS intake forms on a candidate's behalf, Autofill AI fills those forms from a saved profile in one click — eliminating repetitive data entry.",
           "points": [
-            "Saved reply templates for common outreach scenarios",
-            "AI drafts context-aware responses to candidate inquiries"
+            "Works on Greenhouse, Lever, Workday, LinkedIn, Indeed",
+            "Save multiple candidate profiles and switch instantly (Pro)"
           ]
-        }
-      },
-      "steps": {
-        "title": "How it works for recruiters",
-        "s1": {
-          "title": "Save your profile (or candidate profiles)",
-          "text": "Enter the key information once: name, contact, role details, skills. The extension handles the rest."
-        },
-        "s2": {
-          "title": "Visit any job board or ATS",
-          "text": "Navigate to LinkedIn Jobs, Indeed, Greenhouse, or any form-based system. The extension activates automatically."
-        },
-        "s3": {
-          "title": "One click to fill",
-          "text": "Hit the ⚡ button. Standard fields fill instantly. Open-ended questions get AI-generated answers tailored to the role."
         }
       },
       "faq": {
         "q1": {
-          "q": "Does it work on LinkedIn, Greenhouse, Lever, and Workday?",
-          "a": "Yes. Autofill AI detects forms on any website, including major ATS platforms and job boards. It works wherever there are HTML input fields."
+          "q": "Does it work in LinkedIn, Gmail, and our ATS?",
+          "a": "Yes. AI Reply Assistant works on any website with a text field, including Gmail, LinkedIn, Outlook Web, and most ATS email composers (Greenhouse, Lever, Workday)."
         },
         "q2": {
-          "q": "Can I save multiple candidate profiles?",
-          "a": "Pro users can save up to 10 profiles. Each profile can represent a different candidate or role type, making it easy to switch between submissions."
+          "q": "How does AI personalise my templates?",
+          "a": "When you trigger AI on a saved template, it rewrites the message using context it finds on the current page (candidate name, role title, company) plus any prompt you add. You review and edit before sending."
         },
         "q3": {
-          "q": "Is candidate data sent to any server?",
-          "a": "No. When using Gemini Nano (Chrome's built-in AI), all data stays on your device. If you use a third-party API key, data goes to that provider only — never to Donbrico."
+          "q": "Can I share templates with my team?",
+          "a": "The extension stores templates locally per browser. Export/import as JSON (Pro) lets you back up and share templates with colleagues."
         },
         "q4": {
-          "q": "How does it handle cover letter fields?",
-          "a": "AI Reply Assistant generates cover letters and open-ended responses from your profile. You review and edit before submitting — it's always your call."
-        },
-        "q5": {
-          "q": "Is it free?",
-          "a": "The free plan includes unlimited form filling with one profile and local AI via Gemini Nano. Pro ($5.99/month) adds multiple profiles and advanced features."
+          "q": "Is candidate data safe?",
+          "a": "Yes. All processing stays on-device with Gemini Nano (Chrome). If you use your own API key, data goes only to that provider. Donbrico never sees your messages or candidate data."
         }
       },
       "related": {
         "title": "Related workflows",
         "items": [
           {
-            "label": "AI Communication for Support Teams",
-            "url": "/solutions/support-teams/"
+            "label": "Write & Respond Overview"
           },
           {
-            "label": "Fill & Process Overview",
-            "url": "/solutions/automation/"
+            "label": "For Job Seekers"
+          },
+          {
+            "label": "For Support Teams"
           }
         ]
       },
       "cta": {
-        "title": "Start recruiting faster today",
-        "subtitle": "Free to install. Works on LinkedIn, Indeed, Greenhouse, Lever, and any ATS platform."
+        "title": "Build your outreach library today",
+        "subtitle": "Free to install. No account required. Works on LinkedIn, Gmail, and any ATS."
       },
       "messageLibrary": {
-        "title": "Message Library",
-        "description": "Build a library of outreach templates for candidate communication. AI drafts personalised versions for each candidate."
+        "title": "Your recruiting message library",
+        "subtitle": "Save once, personalise always",
+        "sourcing": {
+          "title": "Sourcing outreach",
+          "description": "LinkedIn InMail and email templates for passive candidates. AI rewrites them with the candidate's name, role, and what makes the opportunity relevant to them."
+        },
+        "followup": {
+          "title": "Follow-up sequences",
+          "description": "Day-3, day-7, and day-14 follow-ups. AI adjusts the tone and context based on where the candidate is in the pipeline."
+        },
+        "offerRejection": {
+          "title": "Offer & rejection letters",
+          "description": "Warm, professional templates that don't feel generic. Smart variables inject candidate name, role title, and package details automatically."
+        },
+        "interview": {
+          "title": "Interview scheduling",
+          "description": "Confirmation, reminder, and reschedule templates. Insert directly into Gmail, Outlook, or your ATS email composer with one click."
+        }
       }
     },
     "ecommerceSupport": {
       "page": {
-        "title": "AI Customer Support Tool for Shopify & Ecommerce Teams | Donbrico",
-        "description": "Automate ecommerce support replies for orders, refunds, and customer questions. Reduce ticket load with AI-powered responses.",
-        "ogTitle": "AI Customer Support Tool for Shopify & Ecommerce Teams | Donbrico",
-        "ogDescription": "Automate ecommerce support replies for orders, refunds, and customer questions. Reduce ticket load with AI-powered responses."
+        "title": "AI Customer Support for Shopify & Ecommerce Teams | Donbrico",
+        "description": "Automate order, refund & shipping replies with AI. Reduce ticket load by 50%. Free Chrome extension for Shopify ecommerce teams.",
+        "ogTitle": "AI Customer Support for Shopify & Ecommerce Teams | Donbrico",
+        "ogDescription": "Automate order, refund & shipping replies with AI. Reduce ticket load by 50%. Free Chrome extension for Shopify ecommerce teams."
       },
       "eyebrow": "FOR ECOMMERCE SUPPORT",
       "breadcrumb": [
@@ -1888,10 +1912,10 @@
     },
     "insurance": {
       "page": {
-        "title": "AI Form Automation for Insurance Workflows & Data Entry | Donbrico",
-        "description": "Fill insurance forms faster with AI-assisted automation for claims, policy data entry, and administrative documentation.",
-        "ogTitle": "AI Form Automation for Insurance Workflows & Data Entry | Donbrico",
-        "ogDescription": "Fill insurance forms faster with AI-assisted automation for claims, policy data entry, and administrative documentation."
+        "title": "AI Form Automation for Insurance Workflows | Donbrico",
+        "description": "Donbrico Autofill AI fills claims, policy entry, and admin forms from a saved profile — reducing errors and saving hours each week. Try it free.",
+        "ogTitle": "AI Form Automation for Insurance Workflows | Donbrico",
+        "ogDescription": "Donbrico Autofill AI fills claims, policy entry, and admin forms from a saved profile — reducing errors and saving hours each week. Try it free."
       },
       "eyebrow": "FOR INSURANCE PROFESSIONALS",
       "breadcrumb": [
@@ -2014,10 +2038,10 @@
     },
     "supportTeams": {
       "page": {
-        "title": "AI Customer Support Assistant for Faster Ticket Replies | Donbrico",
-        "description": "Generate accurate support replies instantly using AI. Reduce response time for Shopify, SaaS, and ecommerce support teams.",
-        "ogTitle": "AI Customer Support Assistant for Faster Ticket Replies | Donbrico",
-        "ogDescription": "Generate accurate support replies instantly using AI. Reduce response time for Shopify, SaaS, and ecommerce support teams."
+        "title": "AI Customer Support Assistant for Shopify & eCommerce | Donbrico",
+        "description": "Cut reply time in half with AI-assisted ticket responses for Shopify, SaaS, and ecommerce support teams. Generate accurate, on-brand replies instantly.",
+        "ogTitle": "AI Customer Support Assistant for Shopify & eCommerce | Donbrico",
+        "ogDescription": "Cut reply time in half with AI-assisted ticket responses for Shopify, SaaS, and ecommerce support teams. Generate accurate, on-brand replies instantly."
       },
       "eyebrow": "FOR SUPPORT TEAMS",
       "breadcrumb": [
@@ -2138,10 +2162,10 @@
     },
     "browserWorkspace": {
       "page": {
-        "title": "AI Tab & Workspace Manager for Structured Browser Workflows | Donbrico",
-        "description": "Save and organize browser sessions with AI. Ideal for researchers, developers, and professionals managing complex workflows.",
-        "ogTitle": "AI Tab & Workspace Manager for Structured Browser Workflows | Donbrico",
-        "ogDescription": "Save and organize browser sessions with AI. Ideal for researchers, developers, and professionals managing complex workflows."
+        "title": "AI Browser Workspace Manager for Structured Workflows | Donbrico",
+        "description": "Save and organize browser sessions with AI. Ideal for researchers and developers managing complex workflows. Try Donbrico WorkDesk free.",
+        "ogTitle": "AI Browser Workspace Manager for Structured Workflows | Donbrico",
+        "ogDescription": "Save and organize browser sessions with AI. Ideal for researchers and developers managing complex workflows. Try Donbrico WorkDesk free."
       },
       "eyebrow": "BROWSER WORKSPACE MANAGEMENT",
       "breadcrumb": [
@@ -2262,10 +2286,10 @@
     },
     "realEstate": {
       "page": {
-        "title": "AI Browser Tools for Real Estate Agents: Listings, Clients & Communication | Donbrico",
-        "description": "Real estate agents save hours daily with AI that fills listing forms, writes client follow-ups, and organises browser workspaces per property — all in Chrome.",
-        "ogTitle": "AI Browser Tools for Real Estate Agents | Donbrico",
-        "ogDescription": "Real estate agents save hours daily with AI that fills listing forms, writes client follow-ups, and organises browser workspaces per property — all in Chrome."
+        "title": "AI Browser Tools for Real Estate Agents: Listings & Workflows | Donbrico",
+        "description": "Real estate agents save hours daily with AI that auto-fills listing forms, writes client follow-ups, and organizes browser workspaces per property — all in Chrome.",
+        "ogTitle": "AI Browser Tools for Real Estate Agents: Listings & Workflows | Donbrico",
+        "ogDescription": "Real estate agents save hours daily with AI that auto-fills listing forms, writes client follow-ups, and organizes browser workspaces per property — all in Chrome."
       },
       "eyebrow": "FOR REAL ESTATE AGENTS",
       "title": "Stop retyping listings, re-writing emails, and losing tabs",
@@ -2280,6 +2304,21 @@
         ]
       },
       "howEachHelpsTitle": "How each Donbrico extension helps",
+      "howEachHelps": "How each extension helps ↓",
+      "related": {
+        "title": "Related workflows",
+        "items": [
+          {
+            "label": "Write & Respond Overview"
+          },
+          {
+            "label": "For Job Seekers"
+          },
+          {
+            "label": "Browser Workspace"
+          }
+        ]
+      },
       "aiReply": {
         "badge": "Client Communication",
         "title": "AI Reply Assistant",
@@ -2369,6 +2408,12 @@
         "title": "Three extensions. One less stressful workday.",
         "subtitle": "All free to install. No account required. Chrome only for now — Edge rolling out soon."
       }
+    },
+    "page": {
+      "title": "Browser Workflow Automation & AI Tools | Donbrico",
+      "ogTitle": "Browser Workflow Automation & AI Tools | Donbrico",
+      "description": "Automate repetitive browser tasks with Donbrico's AI workflow tools. Save time on forms, data entry & communication. Install free extensions.",
+      "ogDescription": "Automate repetitive browser tasks with Donbrico's AI workflow tools. Save time on forms, data entry & communication. Install free extensions."
     }
   },
   "extensionsHub": {
@@ -2393,14 +2438,16 @@
   },
   "about": {
     "page": {
-      "title": "About Donbrico | AI Browser Tools for Real Workflows",
-      "description": "Donbrico builds AI browser extensions focused on automation, productivity, and workflow efficiency for professionals and teams.",
-      "ogTitle": "About Donbrico | AI Browser Tools for Real Workflows",
-      "ogDescription": "Donbrico builds AI browser extensions focused on automation, productivity, and workflow efficiency for professionals and teams."
+      "title": "AI Browser Extension for Workflow Automation | Donbrico",
+      "description": "Donbrico builds AI browser extensions that automate repetitive tasks, boost productivity, and streamline workflows for professionals and teams. Try it free.",
+      "ogTitle": "AI Browser Extension for Workflow Automation | Donbrico",
+      "ogDescription": "Donbrico builds AI browser extensions that automate repetitive tasks, boost productivity, and streamline workflows for professionals and teams. Try it free."
     },
     "eyebrow": "ABOUT DONBRICO",
-    "title": "Built to remove the repetitive parts of professional work",
-    "subtitle": "Donbrico builds AI browser extensions for professionals who want to move faster without sacrificing quality.",
+    "title": "Automate repetitive tasks with Donbrico AI",
+    "subtitle": "Donbrico builds AI browser extensions that eliminate busywork so professionals can focus on what matters — workflow automation for forms, replies, and browser sessions.",
+    "heroCtaPrimary": "Try Donbrico Free",
+    "heroCtaSecondary": "Explore Our Tools",
     "mission": {
       "title": "Mission",
       "text": "Every professional has workflows that are mostly repetitive. Filling the same forms. Writing near-identical replies. Rebuilding the same research session. These tasks aren't the job — they're the overhead of the job. Donbrico builds browser extensions that automate the overhead, so the work that actually matters gets more of your attention."
@@ -2766,14 +2813,14 @@
   },
   "medAutoFill": {
     "page": {
-      "title": "MedAutoFill — Medical Form Autofill for Chrome | Donbrico",
-      "description": "AI-powered autofill for payer portals, prior auth, billing, and patient intake forms. Patient data stays local in your browser. Free Chrome extension for medical admins.",
-      "ogTitle": "MedAutoFill — Medical Form Autofill for Chrome | Donbrico",
-      "ogDescription": "AI-powered autofill for payer portals, prior auth, billing, and patient intake forms. Patient data stays local in your browser. Free Chrome extension for medical admins."
+      "title": "MedAutoFill — Best Chrome Extension for Medical Forms",
+      "description": "Best Chrome extension for medical forms. Autofill prior authorization, insurance claim, and patient intake forms. Local AI keeps data in your browser.",
+      "ogTitle": "MedAutoFill — Best Chrome Extension for Medical Forms",
+      "ogDescription": "Best Chrome extension for medical forms. Autofill prior authorization, insurance claim, and patient intake forms. Local AI keeps data in your browser."
     },
     "hero": {
       "badge": "MEDICAL ADMIN · CHROME EXTENSION",
-      "title": "Fill medical forms.<br>In one click.",
+      "title": "Fill medical forms. In one click.",
       "subtitle": "MedAutoFill helps front desk, billing, and prior auth teams fill payer portals, patient intake, and authorization forms faster — with local AI that keeps patient data on your device.",
       "buttonPrimary": "Add to Chrome — Free",
       "buttonSecondary": "See what it fills ↓",
@@ -2897,14 +2944,14 @@
   },
   "hostReply": {
     "page": {
-      "title": "Donbrico HostReply AI — Guest Message Assistant",
-      "description": "Reply to Airbnb and Vrbo guests in seconds — HostReply AI drafts professional messages directly inside your inbox, for free.",
-      "ogTitle": "Donbrico HostReply AI — Guest Message Assistant",
-      "ogDescription": "Reply to Airbnb and Vrbo guests in seconds — HostReply AI drafts professional messages directly inside your inbox, for free."
+      "title": "HostReply AI – Reply to Airbnb Guests in Seconds (Free Chrome Extension)",
+      "description": "Reply to Airbnb and Vrbo guests in seconds. HostReply AI drafts professional messages inside your inbox. Free Chrome extension with Host Memory.",
+      "ogTitle": "HostReply AI – Reply to Airbnb Guests in Seconds (Free Chrome Extension)",
+      "ogDescription": "Reply to Airbnb and Vrbo guests in seconds. HostReply AI drafts professional messages inside your inbox. Free Chrome extension with Host Memory."
     },
     "hero": {
       "eyebrow": "CHROME EXTENSION",
-      "title": "Reply to guests<br>in seconds.",
+      "title": "Reply to guests in seconds.",
       "subtitle": "HostReply AI drafts professional messages directly inside your Airbnb or Vrbo inbox, for free. Includes Host Memory for your house rules and check-in info.",
       "disclaimer": "🔒 Built-in AI runs locally — data stays in your browser",
       "buttonPrimary": "Add to Chrome — Free",
@@ -3006,14 +3053,14 @@
   },
   "tradeDesk": {
     "page": {
-      "title": "Donbrico TradeDesk AI — Contractor Reply & Estimate Assistant",
-      "description": "Turn rough notes into professional quotes, estimates, and email replies in seconds. TradeDesk AI is the ultimate browser assistant for HVAC, plumbing, electrical, and other trades.",
-      "ogTitle": "Donbrico TradeDesk AI — Contractor Reply & Estimate Assistant",
-      "ogDescription": "Turn rough notes into professional quotes, estimates, and email replies in seconds. TradeDesk AI is the ultimate browser assistant for HVAC, plumbing, electrical, and other trades."
+      "title": "AI Reply Assistant for Contractors — Draft Quotes & Estimates",
+      "description": "AI reply assistant for contractors. Draft professional quotes for HVAC jobs and estimates from notes instantly. Free Chrome extension for trades.",
+      "ogTitle": "AI Reply Assistant for Contractors — Draft Quotes & Estimates",
+      "ogDescription": "AI reply assistant for contractors. Draft professional quotes for HVAC jobs and estimates from notes instantly. Free Chrome extension for trades."
     },
     "hero": {
       "eyebrow": "CHROME EXTENSION",
-      "title": "Write quotes & replies<br>in seconds.",
+      "title": "Write quotes & replies in seconds.",
       "subtitle": "TradeDesk AI turns rough job-site notes into professional email replies, estimates, and formal quotes instantly, for free. Built for contractors and tradespeople.",
       "disclaimer": "🔒 Client data stays local — runs entirely in your browser",
       "buttonPrimary": "Add to Chrome — Free",
@@ -3134,86 +3181,10 @@
     "byProduct": "By product:",
     "minRead": "min read"
   },
-  "solutions.realEstate.page.title": "AI Browser Tools for Real Estate Agents | Donbrico",
-  "solutions.realEstate.page.description": "Save hours daily with AI that fills listing forms, writes client follow-ups, and organizes browser workspaces — all in Chrome. Free for real estate agents.",
-  "solutions.realEstate.page.ogTitle": "AI Browser Tools for Real Estate Agents | Donbrico",
-  "solutions.realEstate.page.ogDescription": "Save hours daily with AI that fills listing forms, writes client follow-ups, and organizes browser workspaces — all in Chrome. Free for real estate agents.",
-  "terms.page.title": "Terms of Service – Donbrico Browser Extensions & Games",
-  "terms.page.description": "Review the Terms of Service for Donbrico.net, including usage rules, AI functionality, payments, licenses, and disclaimers for our browser extensions and games.",
-  "terms.page.ogTitle": "Terms of Service – Donbrico Browser Extensions & Games",
-  "terms.page.ogDescription": "Review the Terms of Service for Donbrico.net, including usage rules, AI functionality, payments, licenses, and disclaimers for our browser extensions and games.",
-  "solutions.workspace.page.title": "AI Browser Workspace Manager | Donbrico",
-  "solutions.workspace.page.description": "Save, restore, and organize browser sessions with AI. Stay focused across complex research and workflows.",
-  "solutions.workspace.page.ogTitle": "AI Browser Workspace Manager | Donbrico",
-  "solutions.workspace.page.ogDescription": "Save, restore, and organize browser sessions with AI. Stay focused across complex research and workflows.",
-  "solutions.insurance.page.title": "AI Form Automation for Insurance: Claims & Data Entry | Donbrico",
-  "solutions.insurance.page.description": "Automate insurance form filling with AI. Reduce errors, save hours on claims, policy entry & admin paperwork. Free Chrome extension.",
-  "solutions.insurance.page.ogTitle": "AI Form Automation for Insurance: Claims & Data Entry | Donbrico",
-  "solutions.insurance.page.ogDescription": "Automate insurance form filling with AI. Reduce errors, save hours on claims, policy entry & admin paperwork. Free Chrome extension.",
-  "support.page.title": "Donbrico Support – Help for Autofill AI & Reply Assistant",
-  "support.page.description": "Get Donbrico support for Autofill AI, HostReply, AI Reply Assistant & more. Browse common issues or email us – we respond in 1-2 days.",
-  "support.page.ogTitle": "Donbrico Support – Help for Autofill AI & Reply Assistant",
-  "support.page.ogDescription": "Get Donbrico support for Autofill AI, HostReply, AI Reply Assistant & more. Browse common issues or email us – we respond in 1-2 days.",
-  "solutions.communication.page.title": "AI Reply Assistant: Automate Emails, Support & Messages | Donbrico",
-  "solutions.communication.page.description": "Save time with AI reply assistant for Gmail, LinkedIn, Zendesk. Automate replies, emails & messages — on-device, private, free.",
-  "solutions.communication.page.ogTitle": "AI Reply Assistant: Automate Emails, Support & Messages | Donbrico",
-  "solutions.communication.page.ogDescription": "Save time with AI reply assistant for Gmail, LinkedIn, Zendesk. Automate replies, emails & messages — on-device, private, free.",
-  "solutions.recruiters.page.title": "AI Tools for Recruiters: Personalize Candidate Outreach at Scale",
-  "solutions.recruiters.page.description": "Save hours on candidate outreach. Build a message library for sourcing, follow-ups, offers & rejections. AI personalizes each one in seconds. Free Chrome extension.",
-  "solutions.recruiters.page.ogTitle": "AI Tools for Recruiters: Personalize Candidate Outreach at Scale",
-  "solutions.recruiters.page.ogDescription": "Save hours on candidate outreach. Build a message library for sourcing, follow-ups, offers & rejections. AI personalizes each one in seconds. Free Chrome extension.",
-  "solutions.automation.page.title": "AI Form Filler: Auto-Fill Any Form in One Click | Donbrico",
-  "solutions.automation.page.description": "Automate form filling and data entry with Donbrico's AI browser tool. Save time on repetitive tasks. Works on any website. Free Chrome extension.",
-  "solutions.automation.page.ogTitle": "AI Form Filler: Auto-Fill Any Form in One Click | Donbrico",
-  "solutions.automation.page.ogDescription": "Automate form filling and data entry with Donbrico's AI browser tool. Save time on repetitive tasks. Works on any website. Free Chrome extension.",
-  "solutions.browserWorkspace.page.title": "AI Tab Manager & Browser Workspace Organizer | Donbrico",
-  "solutions.browserWorkspace.page.description": "Save, organize, and restore browser sessions with AI. Ideal for researchers and developers managing complex workflows. Free to install.",
-  "solutions.browserWorkspace.page.ogTitle": "AI Tab Manager & Browser Workspace Organizer | Donbrico",
-  "solutions.browserWorkspace.page.ogDescription": "Save, organize, and restore browser sessions with AI. Ideal for researchers and developers managing complex workflows. Free to install.",
-  "solutions.ecommerceSupport.page.title": "AI Customer Support Tool for Shopify & Ecommerce Teams | Donbrico",
-  "solutions.ecommerceSupport.page.description": "Automate ecommerce support replies for orders, refunds, and shipping. Donbrico's AI tool reduces ticket load by 40% — try it free.",
-  "solutions.ecommerceSupport.page.ogTitle": "AI Customer Support Tool for Shopify & Ecommerce Teams | Donbrico",
-  "solutions.ecommerceSupport.page.ogDescription": "Automate ecommerce support replies for orders, refunds, and shipping. Donbrico's AI tool reduces ticket load by 40% — try it free.",
   "solutions.hub.page.title": "AI Browser Automation & Workflow Tools | Donbrico",
   "solutions.hub.page.description": "Automate repetitive browser tasks with Donbrico's AI workflow tools. Save time on forms, responses, and organization. Try it free.",
   "solutions.hub.page.ogTitle": "AI Browser Automation & Workflow Tools | Donbrico",
   "solutions.hub.page.ogDescription": "Automate repetitive browser tasks with Donbrico's AI workflow tools. Save time on forms, responses, and organization. Try it free.",
-  "nullCarrier.page.title": "Null Carrier — Deep-Space Atmospheric Puzzle Game | Steam",
-  "nullCarrier.page.description": "Operate a deep-space listening array. Tune frequencies, reconstruct signals, question your orders. Wishlist this minimalist puzzle game on Steam now.",
-  "nullCarrier.page.ogTitle": "Null Carrier — Deep-Space Atmospheric Puzzle Game | Steam",
-  "nullCarrier.page.ogDescription": "Operate a deep-space listening array. Tune frequencies, reconstruct signals, question your orders. Wishlist this minimalist puzzle game on Steam now.",
-  "solutions.supportTeams.page.title": "AI Customer Support Assistant | Donbrico",
-  "solutions.supportTeams.page.description": "Donbrico helps support teams cut reply time in half with AI-assisted replies. Try free for Shopify, SaaS & ecommerce.",
-  "solutions.supportTeams.page.ogTitle": "AI Customer Support Assistant | Donbrico",
-  "solutions.supportTeams.page.ogDescription": "Donbrico helps support teams cut reply time in half with AI-assisted replies. Try free for Shopify, SaaS & ecommerce.",
-  "workDesk.page.title": "WorkDesk: AI Chrome Extension for Managing Browser Workspaces",
-  "workDesk.page.description": "Save and restore browser tabs with AI. Best Chrome extension for managing workspaces. Organize tabs by project. Free, private, no account needed.",
-  "workDesk.page.ogTitle": "WorkDesk: AI Chrome Extension for Managing Browser Workspaces",
-  "workDesk.page.ogDescription": "Save and restore browser tabs with AI. Best Chrome extension for managing workspaces. Organize tabs by project. Free, private, no account needed.",
-  "aiReplyAssistant.page.title": "AI Reply Assistant – Chrome Extension for Email Replies & Support",
-  "aiReplyAssistant.page.description": "AI reply generator for Gmail & Outlook. Automate email replies without templates. Private, on-device AI for professional responses.",
-  "aiReplyAssistant.page.ogTitle": "AI Reply Assistant – Chrome Extension for Email Replies & Support",
-  "aiReplyAssistant.page.ogDescription": "AI reply generator for Gmail & Outlook. Automate email replies without templates. Private, on-device AI for professional responses.",
-  "autofillAi.page.title": "Autofill AI: Best AI Form Filler for Job Applications – Chrome",
-  "autofillAi.page.description": "Autofill job applications, medical forms, and more with this private AI form filler for Chrome. No data collection. Free extension.",
-  "autofillAi.page.ogTitle": "Autofill AI: Best AI Form Filler for Job Applications – Chrome",
-  "autofillAi.page.ogDescription": "Autofill job applications, medical forms, and more with this private AI form filler for Chrome. No data collection. Free extension.",
-  "hostReply.page.title": "Donbrico HostReply AI — Free Guest Message Assistant for Airbnb & Vrbo",
-  "hostReply.page.description": "Reply to Airbnb & Vrbo guests in seconds with AI. Donbrico HostReply drafts professional messages inside your inbox, for free. Includes Host Memory.",
-  "hostReply.page.ogTitle": "Donbrico HostReply AI — Free Guest Message Assistant for Airbnb & Vrbo",
-  "hostReply.page.ogDescription": "Reply to Airbnb & Vrbo guests in seconds with AI. Donbrico HostReply drafts professional messages inside your inbox, for free. Includes Host Memory.",
-  "medAutoFill.page.title": "MedAutoFill: Autofill Patient Demographic & Insurance Claim Forms",
-  "medAutoFill.page.description": "AI-powered Chrome extension for healthcare data entry. Autofill prior authorization, insurance claim, and patient intake forms. Patient data stays local. Free.",
-  "medAutoFill.page.ogTitle": "MedAutoFill: Autofill Patient Demographic & Insurance Claim Forms",
-  "medAutoFill.page.ogDescription": "AI-powered Chrome extension for healthcare data entry. Autofill prior authorization, insurance claim, and patient intake forms. Patient data stays local. Free.",
-  "privacyPolicy.page.title": "Privacy Policy for Donbrico Autofill AI, Reply Assistant & Null Carrier",
-  "privacyPolicy.page.description": "Learn how Donbrico handles your data across Autofill AI, Reply Assistant, HostReply, and Null Carrier. Transparent privacy practices for all products.",
-  "privacyPolicy.page.ogTitle": "Privacy Policy for Donbrico Autofill AI, Reply Assistant & Null Carrier",
-  "privacyPolicy.page.ogDescription": "Learn how Donbrico handles your data across Autofill AI, Reply Assistant, HostReply, and Null Carrier. Transparent privacy practices for all products.",
-  "solutions.jobSeekers.page.title": "AI Autofill for Job Applications – Donbrico Chrome Extension",
-  "solutions.jobSeekers.page.description": "Autofill job applications with AI. One click fills forms on LinkedIn, Indeed & more. AI writes cover letters. Free Chrome extension for job seekers.",
-  "solutions.jobSeekers.page.ogTitle": "AI Autofill for Job Applications – Donbrico Chrome Extension",
-  "solutions.jobSeekers.page.ogDescription": "Autofill job applications with AI. One click fills forms on LinkedIn, Indeed & more. AI writes cover letters. Free Chrome extension for job seekers.",
   "solutions.realEstate.eyebrow": "FOR REAL ESTATE AGENTS",
   "solutions.realEstate.title": "AI Browser Tools for Real Estate Agents",
   "solutions.realEstate.subtitle": "Donbrico builds AI browser extensions for real estate professionals who want to move faster. Automate listing forms, follow-ups, and organization.",
