@@ -54,7 +54,8 @@
     "solutionsWorkspace": "组织和聚焦",
     "extensionsAll": "所有扩展",
     "solutionsJobSeekers": "对于求职者",
-    "solutionsMedicalAdmin": "对于医疗管理人员"
+    "solutionsMedicalAdmin": "对于医疗管理人员",
+    "extensionsTradeDesk": "贸易台人工智能"
   },
   "home": {
     "page": {
@@ -127,7 +128,7 @@
         "cta": "探索自动填充人工智能 →"
       },
       "workspace": {
-        "title": "组织和重点",
+        "title": "组织和聚焦",
         "description": "保存和恢复浏览器工作区。让复杂的研究会议井井有条，并可跨项目即时访问。",
         "cta": "探索 WorkDesk →"
       }
@@ -477,7 +478,7 @@
       "paragraph": "Donbrico 致力于保护您的隐私。"
     },
     "extension": {
-      "sectionTitle": "Donbrico Autofill AI — Chrome 扩展",
+      "sectionTitle": "Donbrico 自动填充 AI",
       "whatWeCollect": {
         "sectionTitle": "我们收集什么数据",
         "paragraph": "没有。所有个人资料数据都存储在用户设备的 Chrome 存储中本地。没有数据被传输到 Donbrico 拥有或运营的任何服务器。"
@@ -524,16 +525,18 @@
     },
     "nav": {
       "overview": "概述",
-      "autofillAi": "自动填充人工智能扩展",
+      "autofillAi": "自动填充人工智能",
       "aiReplyAssistant": "人工智能回复助手",
       "nullCarrier": "空载体游戏",
       "website": "本网站",
       "contact": "接触",
       "workDesk": "办公桌",
-      "hostReplyAi": "主机回复AI"
+      "hostReplyAi": "主机回复AI",
+      "medAutoFillAi": "医疗自动填写人工智能",
+      "tradeDesk": "贸易台人工智能"
     },
     "aiReplyAssistant": {
-      "sectionTitle": "Donbrico AI 回复助手 — Chrome 扩展",
+      "sectionTitle": "Donbrico AI回复助手",
       "whatWeCollect": {
         "sectionTitle": "我们收集哪些数据",
         "paragraph": "没有任何。"
@@ -556,7 +559,7 @@
       }
     },
     "workDesk": {
-      "sectionTitle": "Donbrico WorkDesk — Chrome 扩展",
+      "sectionTitle": "Donbrico 办公桌",
       "whatWeCollect": {
         "sectionTitle": "我们收集哪些数据",
         "paragraph": "没有任何。"
@@ -599,7 +602,53 @@
         "sectionTitle": "您的数据如何存储",
         "paragraph": "属性详细信息存储在 Chrome 的本地存储中。除非您使用第三方人工智能提供商，否则这些数据永远不会离开您的设备。"
       },
-      "sectionTitle": "Donbrico HostReply AI — Chrome 扩展"
+      "sectionTitle": "Donbrico Host回复 AI"
+    },
+    "medAutoFillAi": {
+      "sectionTitle": "Donbrico MedAutoFill AI",
+      "whatWeCollect": {
+        "sectionTitle": "我们收集哪些数据",
+        "paragraph": "没有任何。"
+      },
+      "howStored": {
+        "sectionTitle": "配置文件数据的存储方式",
+        "paragraph": "Chrome 的 storage.local API，绝不使用 chrome.storage.sync 来处理敏感数据。"
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "第三方人工智能提供商（自带密钥）",
+        "paragraph": "如果用户配置了“自带密钥”提供程序（例如 OpenAI、Anthropic、Groq 或 OpenRouter），则其表单上下文和相关配置文件数据将发送到该第三方提供程序。 "
+      },
+      "permissions": {
+        "sectionTitle": "使用的权限",
+        "paragraph": "存储（本地配置文件）、activeTab（检测当前选项卡上的表单）、脚本（注入自动填充按钮）、host_permissions（在用户访问的任何网站上工作）。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "数据删除",
+        "paragraph": "卸载扩展会删除所有存储的数据。"
+      }
+    },
+    "tradeDesk": {
+      "sectionTitle": "贸易台人工智能",
+      "whatWeCollect": {
+        "sectionTitle": "我们收集哪些数据",
+        "paragraph": "没有任何。"
+      },
+      "howStored": {
+        "sectionTitle": "您的数据如何存储",
+        "paragraph": "商家资料和模板存储在 Chrome 的本地存储中。"
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "第三方人工智能提供商（自带密钥）",
+        "paragraph": "如果您配置“自带密钥”提供商（例如 OpenAI），则客户消息和您的业务资料详细信息将发送到该第三方提供商以生成响应或报价。"
+      },
+      "permissions": {
+        "sectionTitle": "使用的权限",
+        "paragraph": "存储（用于业务配置文件和设置）、activeTab（用于检测文本字段）、脚本（用于注入回复工具栏）。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "数据删除",
+        "paragraph": "卸载扩展程序会删除所有本地存储的业务详细信息和设置。 "
+      }
     }
   },
   "emails": {
@@ -1580,9 +1629,9 @@
       },
       "page": {
         "title": "用于表单、数据输入和管理任务的 AI 工作流程自动化 |东布里科",
-        "description": "使用 AI 浏览器工具自动执行重复的表单填写和结构化数据输入。专为招聘人员、管理员和运营团队而设计。",
+        "description": "使用 AI 浏览器工具自动执行重复的表单填写和结构化数据输入。专为招聘人员、管理员和运营团队而构建。",
         "ogTitle": "用于表单、数据输入和管理任务的 AI 工作流程自动化 |东布里科",
-        "ogDescription": "使用 AI 浏览器工具自动执行重复的表单填写和结构化数据输入。专为招聘人员、管理员和运营团队而设计。"
+        "ogDescription": "使用 AI 浏览器工具自动执行重复的表单填写和结构化数据输入。专为招聘人员、管理员和运营团队而构建。"
       },
       "eyebrow": "填充和加工",
       "title": "一键填写任何表格。停止在每个网站上手动输入数据。",
@@ -1709,7 +1758,7 @@
       },
       "solution": {
         "title": "AI回复助手如何解决",
-        "description": "建立个人回复库。通过单一提示生成品牌响应。一键将它们插入任意位置。"
+        "description": "建立个人回复库。通过单一提示生成品牌响应。一键将它们插入到任意位置。"
       },
       "niches": {
         "title": "相关工作流程",
@@ -1984,7 +2033,7 @@
         },
         "q5": {
           "q": "是否符合数据隐私法规？",
-          "a": "该扩展程序将数据本地存储在您的设备上，并且不会将数据传输到 Donbrico。为了满足法规合规性要求，请在使用前查看您组织的浏览器扩展政策。"
+          "a": "该扩展程序将数据本地存储在您的设备上，并且不会将数据传输到 Donbrico。为了满足法规遵从性要求，请在使用前查看您组织的浏览器扩展政策。"
         }
       },
       "page": {
@@ -2040,7 +2089,7 @@
             },
             "f3": {
               "title": "设备端人工智能 (Chrome)",
-              "text": "使用 Gemini Nano，敏感的客户数据永远不会离开您的机器"
+              "text": "使用 Gemini Nano，敏感的客户端数据永远不会离开您的机器"
             }
           }
         }
@@ -2049,7 +2098,7 @@
         "title": "保险工作流程如何运作",
         "s1": {
           "title": "保存您的数据配置文件",
-          "text": "输入保单持有人信息、代理人详细信息和公共字段值一次。专业用户可以为不同的客户端或策略类型保存多个配置文件。"
+          "text": "输入保单持有人信息、代理详细信息和公共字段值一次。专业用户可以为不同的客户端或策略类型保存多个配置文件。"
         },
         "s2": {
           "title": "打开任何保险表格",
@@ -2172,7 +2221,7 @@
           "text": "每个客服人员都会保存他们最常用的答案。按类别进行组织，使用标签进行快速搜索，使用 {{variables}} 进行个性化设置。"
         },
         "s2": {
-          "title": "开任意一张票",
+          "title": "开任何票",
           "text": "单击 Zendesk、Gorgias 或任何帮助台中的回复字段。 AI 工具栏会自动出现。"
         },
         "s3": {
@@ -2375,7 +2424,7 @@
             "text": "在每份申请表中重新输入您的姓名、电子邮件、电话、LinkedIn URL 和工作经历 - 即使您的简历就在那里"
           },
           "1": {
-            "text": "为每个“你为什么想在这里工作？”写一封新的求职信答案。或“描述您对 X 的体验”字段"
+            "text": "为每个“你为什么想在这里工作？”写一份新的求职信答案。或“描述您对 X 的体验”字段"
           },
           "2": {
             "text": "每个申请花费 20-30 分钟进行数据输入，而不是实际定制您的推介"
@@ -2498,7 +2547,7 @@
         }
       },
       "steps": {
-        "title": "招聘人员如何运作",
+        "title": "How it works for recruiters",
         "s1": {
           "title": "保存您的个人资料（或候选人个人资料）",
           "text": "输入一次关键信息：姓名、联系人、角色详细信息、技能。扩展程序处理其余的事情。"
@@ -2568,57 +2617,47 @@
         "subtitle": "所有三个扩展均可免费启动。目前仅限 Chrome - Edge 即将推出。",
         "button": "查看所有扩展 →"
       },
-      "categories": {
-        "communication": {
-          "title": "写信并回复",
-          "description": "自动回复电子邮件、支持响应和外展消息。专为高容量通信角色而设计。",
-          "cta": "查看工作流程 →"
-        },
-        "automation": {
-          "title": "填充和处理",
-          "description": "自动执行重复的表单填写和结构化数据输入。专为招聘人员、管理员和运营团队而设计。",
-          "cta": "查看工作流程 →"
-        },
-        "workspace": {
-          "title": "组织和重点",
-          "description": "保存和恢复浏览器工作区。专为研究人员、开发人员和复杂的项目工作流程而构建。",
-          "cta": "查看工作流程 →"
-        }
+      "categories": "类别",
+      "workflows": "工作流程",
+      "automation": {
+        "title": "填充和处理",
+        "description": "自动执行重复的表单填写和结构化数据输入。专为招聘人员、管理员和运营团队而构建。",
+        "cta": "查看工作流程 →"
       },
-      "workflows": {
-        "title": "具体工作流程",
-        "subtitle": "每个利基页面都准确显示了 Donbrico 扩展如何解决该工作流程。",
-        "cta": "查看工作流程 →",
-        "supportTeams": {
-          "title": "支持团队",
-          "description": "支持代理的人工智能回复库。更快地生成准确的响应。",
-          "cta": "查看工作流程 →"
-        },
-        "ecommerceSupport": {
-          "title": "电子商务支持",
-          "description": "自动支持回复订单、退款和客户问题。减少票务负担。",
-          "cta": "查看工作流程 →"
-        },
-        "recruiters": {
-          "title": "招聘人员：利用 AI 自动提交求职板和 ATS 数据输入",
-          "description": "利用人工智能自动填充职位委员会、生成候选人摘要并减少手动 ATS 数据输入，加快招聘速度。",
-          "cta": "查看工作流程 →"
-        },
-        "insurance": {
-          "title": "保险",
-          "description": "使用人工智能辅助填写来填写索赔表和保单数据。错误更少，时间更少。",
-          "cta": "查看工作流程 →"
-        },
-        "browserWorkspace": {
-          "title": "研究人员和开发人员",
-          "description": "组织复杂的浏览器会话。保存工作空间、立即恢复、使用 AI 进行搜索。",
-          "cta": "查看工作流程 →"
-        },
-        "jobSeekers": {
-          "title": "求职者",
-          "description": "使用人工智能生成的求职信自动填写工作申请。申请更快。",
-          "cta": "查看工作流程 →"
-        }
+      "communication": {
+        "title": "写信并回复",
+        "description": "自动回复电子邮件、支持响应和外展消息。专为高容量通信角色而设计。",
+        "cta": "查看工作流程 →"
+      },
+      "workspace": {
+        "title": "组织和聚焦",
+        "description": "保存和恢复浏览器工作区。专为研究人员、开发人员和复杂的项目工作流程而构建。",
+        "cta": "查看工作流程 →"
+      },
+      "insurance": {
+        "title": "保险",
+        "description": "使用人工智能辅助填写来填写索赔表和保单数据。错误更少，时间更少。",
+        "cta": "查看工作流程 →"
+      },
+      "browserWorkspace": {
+        "title": "研究人员和开发人员",
+        "description": "组织复杂的浏览器会话。保存工作空间、立即恢复、使用 AI 进行搜索。",
+        "cta": "查看工作流程 →"
+      },
+      "ecommerceSupport": {
+        "title": "电子商务支持",
+        "description": "自动支持回复订单、退款和客户问题。减少票务负担。",
+        "cta": "查看工作流程 →"
+      },
+      "supportTeams": {
+        "title": "支持团队",
+        "description": "支持代理的人工智能回复库。更快地生成准确的响应。",
+        "cta": "查看工作流程 →"
+      },
+      "jobSeekers": {
+        "title": "求职者",
+        "description": "使用人工智能生成的求职信自动填写工作申请。申请更快。",
+        "cta": "查看工作流程 →"
       }
     },
     "realEstate": {
@@ -2688,7 +2727,7 @@
         "badge": "选项卡组织",
         "title": "办公桌",
         "fullDetails": "完整详情 →",
-        "description": "每个活跃列表都应该有自己的浏览器工作区 - MLS 详细信息、街景、社区数据、学校评级、抵押贷款计算器、竞争列表。 WorkDesk 一键将您当前的选项卡保存为命名工作区，并立即恢复整个会话。当您有 6 个活跃客户时，标签不再混乱。",
+        "description": "每个活动列表都应该有自己的浏览器工作区 - MLS 详细信息、街景、社区数据、学校评级、抵押贷款计算器、竞争列表。 WorkDesk 一键将您当前的选项卡保存为命名工作区，并立即恢复整个会话。当您有 6 个活跃客户时，标签不再混乱。",
         "workspacesTitle": "工作空间代理创建：",
         "workspaces": [
           "→“史密斯家族 — 买家”（12 个标签）",
@@ -2776,7 +2815,7 @@
       },
       "workspace": {
         "icon": null,
-        "title": "组织和重点",
+        "title": "组织和聚焦",
         "description": "保存和恢复浏览器工作区。在复杂的项目中组织研究会议。",
         "cta": "探索 →"
       }
@@ -3046,5 +3085,114 @@
     "readMore": "阅读更多 →",
     "byProduct": "按产品分类:",
     "minRead": "分钟阅读"
+  },
+  "tradeDesk": {
+    "page": {
+      "title": "Donbrico TradeDesk AI — 承包商回复和估算助理",
+      "description": "在几秒钟内将粗略的笔记转化为专业的报价、估算和电子邮件回复。 ",
+      "ogTitle": "Donbrico TradeDesk AI — 承包商回复和估算助理",
+      "ogDescription": "在几秒钟内将粗略的笔记转化为专业的报价、估算和电子邮件回复。 "
+    },
+    "hero": {
+      "eyebrow": "镀铬扩展",
+      "title": "在几秒钟内写出报价和回复<br>。",
+      "subtitle": "TradeDesk AI 将粗略的工作现场笔记立即免费转化为专业的电子邮件回复、估算和正式报价。",
+      "disclaimer": "🔒 客户端数据保留在本地 — 完全在您的浏览器中运行",
+      "buttonPrimary": "添加到 Chrome — 免费",
+      "buttonSecondary": "看看效果如何↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "它是如何运作的",
+      "step1": {
+        "title": "1.保存业务详细信息",
+        "description": "将您的公司名称、许可证号和典型定价存储在您的企业资料中。"
+      },
+      "step2": {
+        "title": "2. 打开收件箱",
+        "description": "直接在您的消息收件箱内工作。"
+      },
+      "step3": {
+        "title": "3. AI起草回复",
+        "description": "TradeDesk 读取客户的消息，从您的业务数据中提取信息并立即起草专业的回复。"
+      }
+    },
+    "features": {
+      "sectionTitle": "特征",
+      "feature1": {
+        "title": "在您工作的地方工作",
+        "description": "适用于 Gmail、Outlook、Yahoo Mail 或您已使用的任何网络表单。"
+      },
+      "feature2": {
+        "title": "根据您的交易量身定制",
+        "description": "暖通空调、管道、电气、屋顶、景观美化、油漆、勤杂工和总承包的专业术语。"
+      },
+      "feature3": {
+        "title": "隐私第一",
+        "description": "您的报价、客户信息和定价保留在 Chrome 的本地存储中。"
+      },
+      "feature4": {
+        "title": "带来你自己的人工智能",
+        "description": "使用设备上的 Chrome AI 实现完全隐私，或使用您自己的 API 密钥连接 OpenAI、Claude 或 Groq 以获得最大速度。"
+      }
+    },
+    "pricing": {
+      "sectionTitle": "简单的定价。",
+      "free": {
+        "title": "自由的",
+        "price": "$0",
+        "button": "添加到 Chrome",
+        "features": {
+          "f1": "5 个 AI 回复/天",
+          "f2": "5 个保存的模板",
+          "f3": "1 企业简介",
+          "f4": "3 回复场景",
+          "f5": "设备上的 Chrome AI",
+          "f6": "单一 BYOK 提供商",
+          "f7": "3种书写声调"
+        }
+      },
+      "proMonthly": {
+        "title": "专业版（每月）",
+        "price": "$9.99/月",
+        "button": "每月订阅",
+        "features": {
+          "f1": "无限的人工智能回复和报价",
+          "f2": "无限保存模板",
+          "f3": "无限的业务简介",
+          "f4": "所有 23+ 回复场景",
+          "f5": "所有 7 种承包商音",
+          "f6": "导出和导入备份",
+          "f7": "多个 BYOK 提供商",
+          "f8": "优先支持"
+        }
+      },
+      "proLifetime": {
+        "title": "专业版（终身）",
+        "price": "149 美元",
+        "tagline": "一次付费，永久使用",
+        "button": "终身通行证",
+        "features": {
+          "f1": "一切尽在专业月刊",
+          "f2": "无经常性费用",
+          "f3": "包括未来的更新",
+          "f4": "早期采用者定价"
+        }
+      }
+    },
+    "faq": {
+      "sectionTitle": "常见问题解答",
+      "q1": {
+        "question": "使用 TradeDesk AI，我的客户数据安全吗？",
+        "answer": "是的。"
+      },
+      "q2": {
+        "question": "它支持我的特定交易吗？",
+        "answer": "是的。 "
+      },
+      "q3": {
+        "question": "“自带密钥”(BYOK) 如何运作？",
+        "answer": "您可以在设置中从 OpenAI、Anthropic、Groq 或 OpenRouter 连接您自己的 API 密钥。"
+      }
+    }
   }
 }

@@ -54,7 +54,8 @@
     "categories": "Categorías",
     "byRole": "Por rol",
     "extensionsHostReply": "HostRespuesta AI",
-    "blog": "Blog"
+    "blog": "Blog",
+    "extensionsTradeDesk": "IA de TradeDesk"
   },
   "home": {
     "page": {
@@ -477,7 +478,7 @@
       "paragraph": "Donbrico se compromete a proteger su privacidad. "
     },
     "extension": {
-      "sectionTitle": "Donbrico Autofill AI — Extensión Chrome",
+      "sectionTitle": "Donbrico Autocompletar IA",
       "whatWeCollect": {
         "sectionTitle": "Qué datos recopilamos",
         "paragraph": "Ninguno. Todos los datos del perfil se almacenan localmente en el almacenamiento de Chrome en el dispositivo del usuario. No se transmite ningún dato a ningún servidor propiedad u operado por Donbrico."
@@ -524,16 +525,18 @@
     },
     "nav": {
       "overview": "Descripción general",
-      "autofillAi": "Extensión de IA de autocompletar",
+      "autofillAi": "Autocompletar IA",
       "aiReplyAssistant": "Asistente de respuesta AI",
       "nullCarrier": "Juego de portador nulo",
       "website": "Este sitio web",
       "contact": "Contacto",
       "workDesk": "Escritorio de trabajo",
-      "hostReplyAi": "HostRespuesta AI"
+      "hostReplyAi": "HostRespuesta AI",
+      "medAutoFillAi": "MedAutoFill IA",
+      "tradeDesk": "IA de TradeDesk"
     },
     "aiReplyAssistant": {
-      "sectionTitle": "Asistente de respuesta Donbrico AI - Extensión de Chrome",
+      "sectionTitle": "Asistente de respuesta de IA de Donbrico",
       "whatWeCollect": {
         "sectionTitle": "Qué datos recopilamos",
         "paragraph": "Ninguno. "
@@ -556,7 +559,7 @@
       }
     },
     "workDesk": {
-      "sectionTitle": "Donbrico WorkDesk — Extensión de Chrome",
+      "sectionTitle": "Escritorio Donbrico",
       "whatWeCollect": {
         "sectionTitle": "Qué datos recopilamos",
         "paragraph": "Ninguno. "
@@ -579,7 +582,7 @@
       }
     },
     "hostReplyAi": {
-      "sectionTitle": "Donbrico HostReply AI - Extensión de Chrome",
+      "sectionTitle": "Donbrico HostRespuesta AI",
       "whatWeCollect": {
         "sectionTitle": "Qué datos recopilamos",
         "paragraph": "Ninguno. Los detalles y la configuración de la propiedad Host Memory se almacenan localmente en el almacenamiento de Chrome en su dispositivo. No se transmiten datos a los servidores de Donbrico."
@@ -599,6 +602,52 @@
       "dataDeletion": {
         "sectionTitle": "Eliminación de datos",
         "paragraph": "La desinstalación de la extensión elimina todos los detalles y configuraciones de propiedades almacenados localmente. No se retienen datos en los servidores de Donbrico."
+      }
+    },
+    "medAutoFillAi": {
+      "sectionTitle": "Donbrico MedAutoFill AI",
+      "whatWeCollect": {
+        "sectionTitle": "Qué datos recopilamos",
+        "paragraph": "Ninguno. "
+      },
+      "howStored": {
+        "sectionTitle": "Cómo se almacenan los datos del perfil",
+        "paragraph": "API Storage.local de Chrome, nunca chrome.storage.sync para datos confidenciales. "
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Proveedores de IA de terceros (traiga su propia clave)",
+        "paragraph": "Si el usuario configura un proveedor Traiga su propia clave, como OpenAI, Anthropic, Groq u OpenRouter, el contexto de su formulario y los datos de perfil relevantes se envían a ese proveedor externo. "
+      },
+      "permissions": {
+        "sectionTitle": "Permisos utilizados",
+        "paragraph": "almacenamiento (perfil local), activeTab (detectar formularios en la pestaña actual), scripting (inyectar botón de autocompletar), host_permissions (funciona en cualquier sitio web que visite el usuario)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Eliminación de datos",
+        "paragraph": "La desinstalación de la extensión elimina todos los datos almacenados."
+      }
+    },
+    "tradeDesk": {
+      "sectionTitle": "IA de TradeDesk",
+      "whatWeCollect": {
+        "sectionTitle": "Qué datos recopilamos",
+        "paragraph": "Ninguno. "
+      },
+      "howStored": {
+        "sectionTitle": "Cómo se almacenan tus datos",
+        "paragraph": "Los perfiles y plantillas comerciales se almacenan en el almacenamiento local de Chrome. "
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Proveedores de IA de terceros (traiga su propia clave)",
+        "paragraph": "Si configura un proveedor Traiga su propia clave, como OpenAI, el mensaje del cliente y los detalles de su perfil comercial se envían a ese proveedor externo para generar una respuesta o cotización. "
+      },
+      "permissions": {
+        "sectionTitle": "Permisos utilizados",
+        "paragraph": "almacenamiento (para perfiles y configuraciones comerciales), activeTab (para detectar campos de texto), secuencias de comandos (para inyectar la barra de herramientas de respuesta)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Eliminación de datos",
+        "paragraph": "La desinstalación de la extensión elimina todos los detalles y configuraciones comerciales almacenados localmente. "
       }
     }
   },
@@ -3015,5 +3064,114 @@
     "readMore": "Leer más →",
     "byProduct": "Por producto:",
     "minRead": "min de lectura"
+  },
+  "tradeDesk": {
+    "page": {
+      "title": "Donbrico TradeDesk AI: Asistente de estimación y respuesta de contratistas",
+      "description": "Convierta notas preliminares en cotizaciones, estimaciones y respuestas por correo electrónico profesionales en segundos. ",
+      "ogTitle": "Donbrico TradeDesk AI: Asistente de estimación y respuesta de contratistas",
+      "ogDescription": "Convierta notas preliminares en cotizaciones, estimaciones y respuestas por correo electrónico profesionales en segundos. "
+    },
+    "hero": {
+      "eyebrow": "EXTENSIÓN CROMADA",
+      "title": "Escriba citas y respuestas<br>en segundos.",
+      "subtitle": "TradeDesk AI convierte notas preliminares sobre el lugar de trabajo en respuestas profesionales por correo electrónico, estimaciones y cotizaciones formales al instante y de forma gratuita. ",
+      "disclaimer": "🔒 Los datos del cliente permanecen locales: se ejecutan completamente en su navegador",
+      "buttonPrimary": "Agregar a Chrome - Gratis",
+      "buttonSecondary": "Mira cómo funciona ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "Cómo funciona",
+      "step1": {
+        "title": "1. Guarde los detalles comerciales",
+        "description": "Guarde el nombre de su empresa, el número de licencia y el precio típico una vez en su perfil comercial."
+      },
+      "step2": {
+        "title": "2. Abre tu bandeja de entrada",
+        "description": "Funciona directamente dentro de su bandeja de entrada de mensajes."
+      },
+      "step3": {
+        "title": "3. La IA redacta la respuesta",
+        "description": "TradeDesk lee el mensaje del cliente, extrae información de los datos de su empresa y redacta una respuesta profesional al instante."
+      }
+    },
+    "features": {
+      "sectionTitle": "Características",
+      "feature1": {
+        "title": "Trabaja donde trabajas",
+        "description": "Funciona dentro de Gmail, Outlook, Yahoo Mail o cualquier formulario web que ya utilice. "
+      },
+      "feature2": {
+        "title": "A la medida de su comercio",
+        "description": "Terminología especializada para HVAC, plomería, electricidad, techado, paisajismo, pintura, mantenimiento y contratación general."
+      },
+      "feature3": {
+        "title": "Privacidad primero",
+        "description": "Tus cotizaciones, información de clientes y precios permanecen locales en el almacenamiento de Chrome. "
+      },
+      "feature4": {
+        "title": "Trae tu propia IA",
+        "description": "Utilice Chrome AI en el dispositivo para obtener total privacidad, o conecte OpenAI, Claude o Groq usando su propia clave API para obtener la máxima velocidad."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Precios sencillos. ",
+      "free": {
+        "title": "Gratis",
+        "price": "$0",
+        "button": "Agregar a Chrome",
+        "features": {
+          "f1": "5 respuestas de IA/día",
+          "f2": "5 plantillas guardadas",
+          "f3": "1 perfil de empresa",
+          "f4": "3 escenarios de respuesta",
+          "f5": "Chrome AI en el dispositivo",
+          "f6": "Proveedor único de BYOK",
+          "f7": "3 tonos de escritura"
+        }
+      },
+      "proMonthly": {
+        "title": "Pro (mensual)",
+        "price": "$9.99/mes",
+        "button": "Suscríbete mensualmente",
+        "features": {
+          "f1": "Respuestas y cotizaciones ilimitadas de IA",
+          "f2": "Plantillas guardadas ilimitadas",
+          "f3": "Perfiles comerciales ilimitados",
+          "f4": "Los más de 23 escenarios de respuesta",
+          "f5": "Los 7 tonos de contratista.",
+          "f6": "Exportar e importar copias de seguridad",
+          "f7": "Múltiples proveedores BYOK",
+          "f8": "Apoyo prioritario"
+        }
+      },
+      "proLifetime": {
+        "title": "Pro (de por vida)",
+        "price": "$149",
+        "tagline": "Paga una vez, úsalo para siempre",
+        "button": "Pase de por vida",
+        "features": {
+          "f1": "Todo en Pro Mensual",
+          "f2": "Sin tarifas recurrentes",
+          "f3": "Actualizaciones futuras incluidas",
+          "f4": "Precios para los primeros usuarios"
+        }
+      }
+    },
+    "faq": {
+      "sectionTitle": "Preguntas frecuentes",
+      "q1": {
+        "question": "¿Están seguros los datos de mis clientes con TradeDesk AI?",
+        "answer": "Sí. "
+      },
+      "q2": {
+        "question": "¿Apoya mi comercio específico?",
+        "answer": "Sí. "
+      },
+      "q3": {
+        "question": "¿Cómo funciona 'Trae tu propia llave' (BYOK)?",
+        "answer": "Puede conectar su propia clave API de OpenAI, Anthropic, Groq u OpenRouter en la configuración. "
+      }
+    }
   }
 }

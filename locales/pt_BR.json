@@ -54,7 +54,8 @@
     "categories": "Categorias",
     "byRole": "Por função",
     "blog": "Blog",
-    "extensionsHostReply": "HostReply AI"
+    "extensionsHostReply": "HostReply AI",
+    "extensionsTradeDesk": "IA TradeDesk"
   },
   "home": {
     "page": {
@@ -477,7 +478,7 @@
       "paragraph": "Donbrico está empenhado em proteger a sua privacidade. "
     },
     "extension": {
-      "sectionTitle": "Donbrico Autofill AI — Extensão Chrome",
+      "sectionTitle": "Donbrico Preenchimento automático AI",
       "whatWeCollect": {
         "sectionTitle": "Quais dados coletamos",
         "paragraph": "Nenhum. Todos os dados do perfil são armazenados localmente no armazenamento do Chrome no dispositivo do usuário. Nenhum dado é transmitido para qualquer servidor de propriedade ou operado pela Donbrico."
@@ -524,16 +525,18 @@
     },
     "nav": {
       "overview": "Visão geral",
-      "autofillAi": "Extensão AI de preenchimento automático",
+      "autofillAi": "IA de preenchimento automático",
       "aiReplyAssistant": "Assistente de resposta de IA",
       "workDesk": "Mesa de trabalho",
       "nullCarrier": "Jogo de operadora nula",
       "website": "Este site",
       "contact": "Contato",
-      "hostReplyAi": "HostReply AI"
+      "hostReplyAi": "HostReply AI",
+      "medAutoFillAi": "MedAutoFill AI",
+      "tradeDesk": "IA TradeDesk"
     },
     "aiReplyAssistant": {
-      "sectionTitle": "Assistente de resposta Donbrico AI – extensão do Chrome",
+      "sectionTitle": "Assistente de resposta Donbrico AI",
       "whatWeCollect": {
         "sectionTitle": "Quais dados coletamos",
         "paragraph": "Nenhum. "
@@ -556,7 +559,7 @@
       }
     },
     "workDesk": {
-      "sectionTitle": "Donbrico WorkDesk — Extensão do Chrome",
+      "sectionTitle": "Donbrico WorkDesk",
       "whatWeCollect": {
         "sectionTitle": "Quais dados coletamos",
         "paragraph": "Nenhum. "
@@ -599,7 +602,53 @@
         "paragraph": "Nenhum. Os detalhes e configurações da propriedade da memória do host são armazenados localmente no armazenamento do Chrome no seu dispositivo. Nenhum dado é transmitido aos servidores Donbrico.",
         "sectionTitle": "Quais dados coletamos"
       },
-      "sectionTitle": "Donbrico HostReply AI — Extensão do Chrome"
+      "sectionTitle": "Donbrico HostReply AI"
+    },
+    "medAutoFillAi": {
+      "sectionTitle": "Donbrico MedAutoFill AI",
+      "whatWeCollect": {
+        "sectionTitle": "Quais dados coletamos",
+        "paragraph": "Nenhum. "
+      },
+      "howStored": {
+        "sectionTitle": "Como os dados do perfil são armazenados",
+        "paragraph": "API storage.local do Chrome, nunca chrome.storage.sync para dados confidenciais. "
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Provedores terceirizados de IA (traga sua própria chave)",
+        "paragraph": "Se o usuário configurar um provedor Traga sua própria chave, como OpenAI, Anthropic, Groq ou OpenRouter, o contexto do formulário e os dados de perfil relevantes serão enviados para esse provedor terceirizado. "
+      },
+      "permissions": {
+        "sectionTitle": "Permissões usadas",
+        "paragraph": "armazenamento (perfil local), activeTab (detectar formulários na guia atual), script (injetar botão de preenchimento automático), host_permissions (trabalhar em qualquer site que o usuário visitar)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Exclusão de dados",
+        "paragraph": "A desinstalação da extensão remove todos os dados armazenados."
+      }
+    },
+    "tradeDesk": {
+      "sectionTitle": "IA TradeDesk",
+      "whatWeCollect": {
+        "sectionTitle": "Quais dados coletamos",
+        "paragraph": "Nenhum. "
+      },
+      "howStored": {
+        "sectionTitle": "Como seus dados são armazenados",
+        "paragraph": "Perfis e modelos comerciais são armazenados no armazenamento local do Chrome. "
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Provedores terceirizados de IA (traga sua própria chave)",
+        "paragraph": "Se você configurar um provedor Traga sua própria chave, como OpenAI, a mensagem do cliente e os detalhes do seu perfil comercial serão enviados a esse provedor terceirizado para gerar uma resposta ou cotação. "
+      },
+      "permissions": {
+        "sectionTitle": "Permissões usadas",
+        "paragraph": "armazenamento (para perfis e configurações de negócios), activeTab (para detectar campos de texto), script (para injetar a barra de ferramentas de resposta)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Exclusão de dados",
+        "paragraph": "A desinstalação da extensão exclui todos os detalhes e configurações comerciais armazenados localmente. "
+      }
     }
   },
   "emails": {
@@ -1765,7 +1814,7 @@
           },
           {
             "icon": null,
-            "text": "Fazendo malabarismos com mais de 30 guias em vários projetos sem estrutura"
+            "text": "Malabarismo com mais de 30 guias em vários projetos sem estrutura"
           },
           {
             "icon": null,
@@ -1814,7 +1863,7 @@
         "ogTitle": "Ferramenta de suporte ao cliente de IA para equipes do Shopify e de comércio eletrônico | Donbrico",
         "ogDescription": "Automatize as respostas do suporte de comércio eletrônico para pedidos, reembolsos e perguntas dos clientes. Reduza a carga de tickets com respostas baseadas em IA."
       },
-      "eyebrow": "PARA SUPORTE AO COMÉRCIO ELETRÔNICO",
+      "eyebrow": "PARA SUPORTE DE COMÉRCIO ELETRÔNICO",
       "breadcrumb": [
         "Lar",
         "Soluções",
@@ -1844,7 +1893,7 @@
         "primary": {
           "label": "Ferramenta principal",
           "name": "Assistente de resposta de IA",
-          "description": "Crie uma biblioteca de modelos de resposta de suporte para os tipos de ticket mais comuns. Para casos extremos, gere uma resposta personalizada com um prompt rápido – a IA redige em segundos, você analisa e envia.",
+          "description": "Crie uma biblioteca de modelos de resposta de suporte para os tipos de tickets mais comuns. Para casos extremos, gere uma resposta personalizada com um prompt rápido – a IA redige em segundos, você analisa e envia.",
           "points": [
             "Biblioteca de modelos para consultas de pedidos, reembolsos, remessas e produtos",
             "Funciona em Gorgias, Zendesk, Freshdesk, caixa de entrada do Shopify, Gmail e qualquer campo de texto",
@@ -2112,7 +2161,7 @@
         "primary": {
           "label": "Ferramenta principal",
           "name": "Assistente de resposta de IA",
-          "description": "Cada agente constrói sua própria biblioteca de respostas estruturadas. Para novos tipos de ticket, a IA elabora uma resposta em segundos com base no contexto do ticket e nas configurações de tom do agente. Chega de momentos de páginas em branco.",
+          "description": "Cada agente constrói sua própria biblioteca de respostas estruturadas. Para novos tipos de ticket, a IA elabora uma resposta em segundos com base no contexto do ticket e nas configurações de tom do agente. Chega de momentos de página em branco.",
           "points": [
             "Biblioteca de respostas salvas pesquisáveis ​​por palavra-chave ou tag",
             "Funciona em Zendesk, Gorgias, Freshdesk, Intercom, Front e qualquer helpdesk com campo de texto",
@@ -2312,7 +2361,7 @@
           "description": "Crie uma biblioteca de modelos de e-mail de acompanhamento – notas de agradecimento, e-mails de verificação de status, iniciadores de negociação salarial. A IA elabora versões personalizadas em segundos para cada aplicativo.",
           "points": [
             "Modelos salvos para cada etapa do processo de contratação",
-            "A IA elabora acompanhamentos personalizados a partir de um breve prompt"
+            "A IA elabora acompanhamentos personalizados a partir de um breve aviso"
           ]
         }
       },
@@ -2537,57 +2586,47 @@
         "subtitle": "Todas as três extensões são gratuitas para iniciar. Chrome apenas por enquanto – Edge em breve.",
         "button": "Veja todas as extensões →"
       },
-      "categories": {
-        "communication": {
-          "title": "Escreva e responda",
-          "description": "Automatize respostas de e-mail, respostas de suporte e mensagens de divulgação. Construído para funções de comunicação de alto volume.",
-          "cta": "Ver fluxo de trabalho →"
-        },
-        "automation": {
-          "title": "Preencher e processar",
-          "description": "Automatize o preenchimento repetitivo de formulários e a entrada de dados estruturados. Criado para recrutadores, administradores e equipes de operações.",
-          "cta": "Ver fluxo de trabalho →"
-        },
-        "workspace": {
-          "title": "Organizar e focar",
-          "description": "Salve e restaure áreas de trabalho do navegador. Criado para pesquisadores, desenvolvedores e fluxos de trabalho de projetos complexos.",
-          "cta": "Ver fluxo de trabalho →"
-        }
+      "categories": "Categorias",
+      "workflows": "Fluxos de trabalho",
+      "automation": {
+        "title": "Preencher e processar",
+        "description": "Automatize o preenchimento repetitivo de formulários e a entrada de dados estruturados. Criado para recrutadores, administradores e equipes de operações.",
+        "cta": "Ver fluxo de trabalho →"
       },
-      "workflows": {
-        "title": "FLUXOS DE TRABALHO ESPECÍFICOS",
-        "subtitle": "Cada página de nicho mostra exatamente como as extensões Donbrico resolvem esse fluxo de trabalho.",
-        "cta": "Ver fluxo de trabalho →",
-        "supportTeams": {
-          "title": "Equipes de suporte",
-          "description": "Biblioteca de respostas com tecnologia de IA para agentes de suporte. Gere respostas precisas com mais rapidez.",
-          "cta": "Ver fluxo de trabalho →"
-        },
-        "ecommerceSupport": {
-          "title": "Suporte para comércio eletrônico",
-          "description": "Automatize respostas de suporte para pedidos, reembolsos e perguntas de clientes. Reduza a carga de tickets.",
-          "cta": "Ver fluxo de trabalho →"
-        },
-        "recruiters": {
-          "title": "Recrutadores",
-          "description": "Acelere o recrutamento com IA que preenche automaticamente os painéis de empregos, gera resumos de candidatos e reduz a entrada manual de dados ATS.",
-          "cta": "Ver fluxo de trabalho →"
-        },
-        "insurance": {
-          "title": "Seguro",
-          "description": "Preencha formulários de reclamação e dados de apólices com preenchimento assistido por IA. Menos erros, menos tempo.",
-          "cta": "Ver fluxo de trabalho →"
-        },
-        "browserWorkspace": {
-          "title": "Pesquisadores e desenvolvedores",
-          "description": "Organize sessões complexas do navegador. Salve espaços de trabalho, restaure instantaneamente e pesquise com IA.",
-          "cta": "Ver fluxo de trabalho →"
-        },
-        "jobSeekers": {
-          "title": "Candidatos a emprego",
-          "description": "Preencher automaticamente formulários de emprego com cartas de apresentação geradas por IA. Aplique mais rápido.",
-          "cta": "Ver fluxo de trabalho →"
-        }
+      "communication": {
+        "title": "Escreva e responda",
+        "description": "Automatize respostas de e-mail, respostas de suporte e mensagens de divulgação. Construído para funções de comunicação de alto volume.",
+        "cta": "Ver fluxo de trabalho →"
+      },
+      "workspace": {
+        "title": "Organizar e focar",
+        "description": "Salve e restaure áreas de trabalho do navegador. Criado para pesquisadores, desenvolvedores e fluxos de trabalho de projetos complexos.",
+        "cta": "Ver fluxo de trabalho →"
+      },
+      "insurance": {
+        "title": "Seguro",
+        "description": "Preencha formulários de reclamação e dados de apólices com preenchimento assistido por IA. Menos erros, menos tempo.",
+        "cta": "Ver fluxo de trabalho →"
+      },
+      "browserWorkspace": {
+        "title": "Pesquisadores e desenvolvedores",
+        "description": "Organize sessões complexas do navegador. Salve espaços de trabalho, restaure instantaneamente e pesquise com IA.",
+        "cta": "Ver fluxo de trabalho →"
+      },
+      "ecommerceSupport": {
+        "title": "Suporte para comércio eletrônico",
+        "description": "Automatize respostas de suporte para pedidos, reembolsos e perguntas de clientes. Reduza a carga de tickets.",
+        "cta": "Ver fluxo de trabalho →"
+      },
+      "supportTeams": {
+        "title": "Equipes de suporte",
+        "description": "Biblioteca de respostas com tecnologia de IA para agentes de suporte. Gere respostas precisas com mais rapidez.",
+        "cta": "Ver fluxo de trabalho →"
+      },
+      "jobSeekers": {
+        "title": "Candidatos a emprego",
+        "description": "Preencher automaticamente formulários de emprego com cartas de apresentação geradas por IA. Aplique mais rápido.",
+        "cta": "Ver fluxo de trabalho →"
       }
     },
     "realEstate": {
@@ -2753,7 +2792,7 @@
     "nullCarrierStrip": {
       "label": "TAMBÉM DE DONBRICO",
       "title": "Null Carrier – um jogo de quebra-cabeça de sinais do espaço profundo",
-      "description": "Um jogo de quebra-cabeça atmosférico minimalista chegando ao Steam. Algo completamente diferente.",
+      "description": "Um jogo de quebra-cabeça minimalista e atmosférico chegando ao Steam. Algo completamente diferente.",
       "cta": "Saiba mais →"
     }
   },
@@ -3015,5 +3054,114 @@
     "readMore": "Ler mais →",
     "byProduct": "Por produto:",
     "minRead": "min de leitura"
+  },
+  "tradeDesk": {
+    "page": {
+      "title": "Donbrico TradeDesk AI - Assistente de estimativa e resposta do empreiteiro",
+      "description": "Transforme notas aproximadas em citações profissionais, estimativas e respostas por e-mail em segundos. ",
+      "ogTitle": "Donbrico TradeDesk AI - Assistente de estimativa e resposta do empreiteiro",
+      "ogDescription": "Transforme notas aproximadas em citações profissionais, estimativas e respostas por e-mail em segundos. "
+    },
+    "hero": {
+      "eyebrow": "EXTENSÃO CROMADA",
+      "title": "Escreva citações e respostas<br>em segundos.",
+      "subtitle": "TradeDesk AI transforma notas aproximadas do local de trabalho em respostas profissionais por e-mail, estimativas e orçamentos formais instantaneamente e gratuitamente. ",
+      "disclaimer": "🔒 Os dados do cliente permanecem locais – são executados inteiramente no seu navegador",
+      "buttonPrimary": "Adicionar ao Chrome – grátis",
+      "buttonSecondary": "Veja como funciona ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "Como funciona",
+      "step1": {
+        "title": "1. Salve os detalhes da empresa",
+        "description": "Armazene o nome da sua empresa, o número de licença e os preços típicos uma vez no perfil da sua empresa."
+      },
+      "step2": {
+        "title": "2. Abra sua caixa de entrada",
+        "description": "Funciona diretamente na sua caixa de entrada de mensagens."
+      },
+      "step3": {
+        "title": "3. AI redige a resposta",
+        "description": "TradeDesk lê a mensagem do cliente, extrai informações dos dados de seu negócio e elabora uma resposta profissional instantaneamente."
+      }
+    },
+    "features": {
+      "sectionTitle": "Características",
+      "feature1": {
+        "title": "Funciona onde você trabalha",
+        "description": "Funciona no Gmail, Outlook, Yahoo Mail ou qualquer formulário da web que você já usa. "
+      },
+      "feature2": {
+        "title": "Sob medida para o seu comércio",
+        "description": "Terminologia especializada para HVAC, encanamento, eletricidade, telhados, paisagismo, pintura, faz-tudo e contratação em geral."
+      },
+      "feature3": {
+        "title": "Privacidade em primeiro lugar",
+        "description": "Suas cotações, informações de clientes e preços permanecem locais no armazenamento do Chrome. "
+      },
+      "feature4": {
+        "title": "Traga sua própria IA",
+        "description": "Use o Chrome AI no dispositivo para obter privacidade total ou conecte OpenAI, Claude ou Groq usando sua própria chave de API para obter velocidade máxima."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Preços simples. ",
+      "free": {
+        "title": "Livre",
+        "price": "US$ 0",
+        "button": "Adicionar ao Chrome",
+        "features": {
+          "f1": "5 respostas de IA/dia",
+          "f2": "5 modelos salvos",
+          "f3": "1 perfil de empresa",
+          "f4": "3 cenários de resposta",
+          "f5": "IA do Chrome no dispositivo",
+          "f6": "Provedor único de BYOK",
+          "f7": "3 tons de escrita"
+        }
+      },
+      "proMonthly": {
+        "title": "Pró (mensal)",
+        "price": "US$ 9,99/mês",
+        "button": "Assine mensalmente",
+        "features": {
+          "f1": "Respostas e cotações ilimitadas de IA",
+          "f2": "Modelos salvos ilimitados",
+          "f3": "Perfis de negócios ilimitados",
+          "f4": "Todos os mais de 23 cenários de resposta",
+          "f5": "Todos os 7 tons de contratante",
+          "f6": "Exportar e importar backups",
+          "f7": "Vários provedores de BYOK",
+          "f8": "Suporte prioritário"
+        }
+      },
+      "proLifetime": {
+        "title": "Pró (vitalício)",
+        "price": "US$ 149",
+        "tagline": "Pague uma vez, use para sempre",
+        "button": "Passe vitalício",
+        "features": {
+          "f1": "Tudo no Pro Mensal",
+          "f2": "Sem taxas recorrentes",
+          "f3": "Atualizações futuras incluídas",
+          "f4": "Preços para primeiros usuários"
+        }
+      }
+    },
+    "faq": {
+      "sectionTitle": "Perguntas frequentes",
+      "q1": {
+        "question": "Os dados dos meus clientes estão seguros com TradeDesk AI?",
+        "answer": "Sim. "
+      },
+      "q2": {
+        "question": "Suporta meu comércio específico?",
+        "answer": "Sim. "
+      },
+      "q3": {
+        "question": "Como funciona o 'Traga sua própria chave' (BYOK)?",
+        "answer": "Você pode conectar sua própria chave de API do OpenAI, Anthropic, Groq ou OpenRouter nas configurações. "
+      }
+    }
   }
 }

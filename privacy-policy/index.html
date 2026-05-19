@@ -124,6 +124,7 @@
                 data-i18n="nav.solutionsBrowserWorkspace"
                 >Browser Workspace</a>
               <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/trade-desk/" data-i18n="nav.extensionsTradeDesk">TradeDesk AI</a>
             </div>
           </li>
           <li class="dropdown">
@@ -138,6 +139,7 @@
                 >AI Reply Assistant</a>
               <a href="/host-reply/" data-i18n="nav.extensionsHostReply"
                 >HostReply AI</a>
+              <a href="/trade-desk/" data-i18n="nav.extensionsTradeDesk">TradeDesk AI</a>
               <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk"
                 >WorkDesk</a>
             </div>
@@ -174,12 +176,17 @@
         <a href="#overview" data-i18n="privacyPolicy.nav.overview">Overview</a>
         <a href="#autofill-ai" data-i18n="privacyPolicy.nav.autofillAi"
           >Autofill AI</a>
+        <a href="#med-autofill-ai" data-i18n="privacyPolicy.nav.medAutoFillAi"
+          >MedAutoFill AI</a>
+        <a href="#host-reply" data-i18n="privacyPolicy.nav.hostReplyAi"
+          >HostReply AI</a>
+        <a href="#trade-desk" data-i18n="privacyPolicy.nav.tradeDesk"
+          >TradeDesk AI</a>
         <a
           href="#ai-reply-assistant"
           data-i18n="privacyPolicy.nav.aiReplyAssistant"
           >AI Reply Assistant</a>
         <a href="#workdesk" data-i18n="privacyPolicy.nav.workDesk">WorkDesk</a>
-        <a href="#host-reply" data-i18n="nav.extensionsHostReply">HostReply AI</a>
         <a href="#null-carrier" data-i18n="privacyPolicy.nav.nullCarrier"
           >Null Carrier</a>
         <a href="#website" data-i18n="privacyPolicy.nav.website"
@@ -204,7 +211,7 @@
         </p>
         <p data-i18n="privacyPolicy.overview.paragraph">
           Donbrico is committed to protecting your privacy. All Donbrico Chrome
-          extensions store data locally on your device. This website does not
+          and Edge extensions store data locally on your device. This website does not
           use analytics, cookies, or any tracking scripts.
         </p>
       </div>
@@ -213,7 +220,7 @@
     <section style="padding: var(--spacing-xl) 0" id="autofill-ai">
       <div class="container">
         <h2 data-i18n="privacyPolicy.extension.sectionTitle">
-          Donbrico Autofill AI — Chrome Extension
+          Donbrico Autofill AI
         </h2>
         <h3 data-i18n="privacyPolicy.extension.whatWeCollect.sectionTitle">
           What data we collect
@@ -257,11 +264,57 @@
       </div>
     </section>
 
-    
-    <section style="padding: var(--spacing-xl) 0" id="host-reply-ai">
+    <section style="padding: var(--spacing-xl) 0" id="med-autofill-ai">
+      <div class="container">
+        <h2 data-i18n="privacyPolicy.medAutoFillAi.sectionTitle">
+          Donbrico MedAutoFill AI
+        </h2>
+        <h3 data-i18n="privacyPolicy.medAutoFillAi.whatWeCollect.sectionTitle">
+          What data we collect
+        </h3>
+        <p data-i18n="privacyPolicy.medAutoFillAi.whatWeCollect.paragraph">
+          None. All profile data is stored locally in Chrome's storage on the
+          user's device. No data is transmitted to any server owned or operated
+          by Donbrico.
+        </p>
+        <h3 data-i18n="privacyPolicy.medAutoFillAi.howStored.sectionTitle">
+          How profile data is stored
+        </h3>
+        <p data-i18n="privacyPolicy.medAutoFillAi.howStored.paragraph">
+          Chrome's storage.local API, never chrome.storage.sync for sensitive
+          data. Data remains on the device and is never uploaded.
+        </p>
+        <h3 data-i18n="privacyPolicy.medAutoFillAi.thirdPartyAI.sectionTitle">
+          Third-party AI providers (Bring Your Own Key)
+        </h3>
+        <p data-i18n="privacyPolicy.medAutoFillAi.thirdPartyAI.paragraph">
+          If the user configures a Bring Your Own Key provider such as OpenAI,
+          Anthropic, Groq, or OpenRouter, their form context and relevant
+          profile data is sent to that third-party provider. Donbrico is not
+          responsible for the privacy practices of those providers. Gemini Nano
+          (the default AI) runs entirely on-device.
+        </p>
+        <h3 data-i18n="privacyPolicy.medAutoFillAi.permissions.sectionTitle">
+          Permissions used
+        </h3>
+        <p data-i18n="privacyPolicy.medAutoFillAi.permissions.paragraph">
+          storage (local profile), activeTab (detect forms on current tab),
+          scripting (inject autofill button), host_permissions (work on any
+          website the user visits).
+        </p>
+        <h3 data-i18n="privacyPolicy.medAutoFillAi.dataDeletion.sectionTitle">
+          Data deletion
+        </h3>
+        <p data-i18n="privacyPolicy.medAutoFillAi.dataDeletion.paragraph">
+          Uninstalling the extension removes all stored data.
+        </p>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0" id="host-reply">
       <div class="container">
         <h2 data-i18n="privacyPolicy.hostReplyAi.sectionTitle">
-          Donbrico HostReply AI — Chrome Extension
+          Donbrico HostReply AI
         </h2>
         <h3
           data-i18n="privacyPolicy.hostReplyAi.whatWeCollect.sectionTitle"
@@ -302,10 +355,54 @@
       </div>
     </section>
 
+    <section style="padding: var(--spacing-xl) 0" id="trade-desk">
+      <div class="container">
+        <h2 data-i18n="privacyPolicy.tradeDesk.sectionTitle">
+          TradeDesk AI
+        </h2>
+        <h3
+          data-i18n="privacyPolicy.tradeDesk.whatWeCollect.sectionTitle"
+        >
+          What data we collect
+        </h3>
+        <p data-i18n="privacyPolicy.tradeDesk.whatWeCollect.paragraph">
+          None. Your business profiles, pricing templates, and settings are stored locally in Chrome's storage on your device. No data is transmitted to Donbrico servers.
+        </p>
+        <h3 data-i18n="privacyPolicy.tradeDesk.howStored.sectionTitle">
+          How your data is stored
+        </h3>
+        <p data-i18n="privacyPolicy.tradeDesk.howStored.paragraph">
+          Business profiles and templates are stored in Chrome's local storage. This data never leaves your device unless you use a third-party AI provider.
+        </p>
+        <h3
+          data-i18n="privacyPolicy.tradeDesk.thirdPartyAI.sectionTitle"
+        >
+          Third-party AI providers (Bring Your Own Key)
+        </h3>
+        <p data-i18n="privacyPolicy.tradeDesk.thirdPartyAI.paragraph">
+          If you configure a Bring Your Own Key provider such as OpenAI, the customer message and your business profile details are sent to that third-party provider to generate a response or quote. If you use Gemini Nano (where available), all processing is on-device. Donbrico does not store or log any AI requests.
+        </p>
+        <h3 data-i18n="privacyPolicy.tradeDesk.permissions.sectionTitle">
+          Permissions used
+        </h3>
+        <p data-i18n="privacyPolicy.tradeDesk.permissions.paragraph">
+          storage (for business profiles and settings), activeTab (to detect text fields), scripting (to inject the reply toolbar).
+        </p>
+        <h3
+          data-i18n="privacyPolicy.tradeDesk.dataDeletion.sectionTitle"
+        >
+          Data deletion
+        </h3>
+        <p data-i18n="privacyPolicy.tradeDesk.dataDeletion.paragraph">
+          Uninstalling the extension deletes all locally stored business details and settings. No data is retained on Donbrico servers.
+        </p>
+      </div>
+    </section>
+
     <section style="padding: var(--spacing-xl) 0" id="ai-reply-assistant">
       <div class="container">
         <h2 data-i18n="privacyPolicy.aiReplyAssistant.sectionTitle">
-          Donbrico AI Reply Assistant — Chrome Extension
+          Donbrico AI Reply Assistant
         </h2>
         <h3
           data-i18n="privacyPolicy.aiReplyAssistant.whatWeCollect.sectionTitle"
@@ -361,7 +458,7 @@
     <section style="padding: var(--spacing-xl) 0" id="workdesk">
       <div class="container">
         <h2 data-i18n="privacyPolicy.workDesk.sectionTitle">
-          Donbrico WorkDesk — Chrome Extension
+          Donbrico WorkDesk
         </h2>
         <h3 data-i18n="privacyPolicy.workDesk.whatWeCollect.sectionTitle">
           What data we collect
@@ -400,35 +497,6 @@
         <p data-i18n="privacyPolicy.workDesk.dataDeletion.paragraph">
           Uninstalling the extension deletes all locally stored workspaces and
           settings. No data is retained on Donbrico servers.
-        </p>
-      </div>
-    </section>
-
-    <section style="padding: var(--spacing-xl) 0" id="host-reply">
-      <div class="container">
-        <h2 data-i18n="nav.extensionsHostReply">HostReply AI</h2>
-        <h3 data-i18n="privacyPolicy.extension.whatWeCollect.sectionTitle">
-          What data we collect
-        </h3>
-        <p data-i18n="hostReply.features.feature3.description">
-          Your property details are stored locally. Use Chrome AI on-device to keep everything completely private.
-        </p>
-        <h3 data-i18n="privacyPolicy.extension.howStored.sectionTitle">
-          How data is stored
-        </h3>
-        <p data-i18n="privacyPolicy.extension.howStored.paragraph">
-          Chrome's storage.local API, never chrome.storage.sync for sensitive
-          data. Data remains on the device and is never uploaded.
-        </p>
-        <h3 data-i18n="privacyPolicy.extension.thirdPartyAI.sectionTitle">
-          Third-party AI providers (BYOK)
-        </h3>
-        <p data-i18n="privacyPolicy.extension.thirdPartyAI.paragraph">
-          If the user configures a Bring Your Own Key provider like OpenAI,
-          Anthropic, Groq, or OpenRouter, the message context and relevant
-          property data are sent to that third-party provider. Donbrico is not
-          responsible for the privacy practices of these providers. Gemini Nano
-          (default AI) runs entirely on-device.
         </p>
       </div>
     </section>

@@ -32,7 +32,7 @@
     "solutions": "Soluzioni",
     "extensions": "Estensioni",
     "extensionsHub": "Tutte le estensioni",
-    "about": "Chi siamo",
+    "about": "Di",
     "game": "Gioco",
     "solutionsCommunication": "Scrivi e rispondi",
     "solutionsAutomation": "Compila ed elabora",
@@ -54,7 +54,8 @@
     "categories": "Categorie",
     "byRole": "Per ruolo",
     "extensionsHostReply": "HostReply AI",
-    "blog": "Blog"
+    "blog": "Blog",
+    "extensionsTradeDesk": "IA di TradeDesk"
   },
   "home": {
     "page": {
@@ -123,7 +124,7 @@
       },
       "automation": {
         "title": "Compila ed elabora",
-        "description": "Compila automaticamente domande di lavoro, voci CRM, moduli assicurativi e dati amministrativi: da un unico profilo salvato, in un clic.",
+        "description": "Compila automaticamente domande di lavoro, voci CRM, moduli assicurativi e dati amministrativi: da un unico profilo salvato, con un clic.",
         "cta": "Esplora l'IA di riempimento automatico →"
       },
       "workspace": {
@@ -477,7 +478,7 @@
       "paragraph": "Donbrico si impegna a proteggere la tua privacy. "
     },
     "extension": {
-      "sectionTitle": "Donbrico Autofill AI — Estensione Chrome",
+      "sectionTitle": "Donbrico Compilazione automatica AI",
       "whatWeCollect": {
         "sectionTitle": "Quali dati raccogliamo",
         "paragraph": "Nessuno. Tutti i dati del profilo sono memorizzati localmente nell'archiviazione di Chrome sul dispositivo dell'utente. Nessun dato viene trasmesso a server di proprietà o operati da Donbrico."
@@ -524,16 +525,18 @@
     },
     "nav": {
       "overview": "Panoramica",
-      "autofillAi": "Compilazione automatica estensione AI",
+      "autofillAi": "Compilazione automatica dell'IA",
       "aiReplyAssistant": "Assistente di risposta AI",
       "nullCarrier": "Gioco del portatore nullo",
       "website": "Questo sito web",
       "contact": "Contatto",
       "workDesk": "Scrivania",
-      "hostReplyAi": "HostReply AI"
+      "hostReplyAi": "HostReply AI",
+      "medAutoFillAi": "MedAutoFill AI",
+      "tradeDesk": "IA di TradeDesk"
     },
     "aiReplyAssistant": {
-      "sectionTitle": "Donbrico AI Reply Assistant: estensione Chrome",
+      "sectionTitle": "Donbrico Assistente di risposta AI",
       "whatWeCollect": {
         "sectionTitle": "Quali dati raccogliamo",
         "paragraph": "Nessuno. "
@@ -556,7 +559,7 @@
       }
     },
     "workDesk": {
-      "sectionTitle": "Donbrico WorkDesk: estensione per Chrome",
+      "sectionTitle": "Scrivania Donbrico",
       "whatWeCollect": {
         "sectionTitle": "Quali dati raccogliamo",
         "paragraph": "Nessuno. "
@@ -579,7 +582,7 @@
       }
     },
     "hostReplyAi": {
-      "sectionTitle": "Donbrico HostReply AI: estensione Chrome",
+      "sectionTitle": "Donbrico HostReply AI",
       "whatWeCollect": {
         "sectionTitle": "Quali dati raccogliamo",
         "paragraph": "Nessuno. I dettagli e le impostazioni delle proprietà della memoria host vengono archiviati localmente nello spazio di archiviazione di Chrome sul tuo dispositivo. Nessun dato viene trasmesso ai server Donbrico."
@@ -599,6 +602,52 @@
       "dataDeletion": {
         "sectionTitle": "Cancellazione dei dati",
         "paragraph": "La disinstallazione dell'estensione elimina tutti i dettagli e le impostazioni delle proprietà archiviate localmente. Nessun dato viene conservato sui server Donbrico."
+      }
+    },
+    "medAutoFillAi": {
+      "sectionTitle": "Donbrico MedAutoFill AI",
+      "whatWeCollect": {
+        "sectionTitle": "Quali dati raccogliamo",
+        "paragraph": "Nessuno. "
+      },
+      "howStored": {
+        "sectionTitle": "Come vengono archiviati i dati del profilo",
+        "paragraph": "API storage.local di Chrome, mai chrome.storage.sync per i dati sensibili. "
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Fornitori di IA di terze parti (Bring Your Own Key)",
+        "paragraph": "Se l'utente configura un provider Bring Your Own Key come OpenAI, Anthropic, Groq o OpenRouter, il contesto del modulo e i dati del profilo pertinenti vengono inviati a quel provider di terze parti. "
+      },
+      "permissions": {
+        "sectionTitle": "Autorizzazioni utilizzate",
+        "paragraph": "archiviazione (profilo locale), activeTab (rileva moduli nella scheda corrente), scripting (inserisci pulsante di compilazione automatica), host_permissions (funziona su qualsiasi sito Web visitato dall'utente)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Cancellazione dei dati",
+        "paragraph": "La disinstallazione dell'estensione rimuove tutti i dati memorizzati."
+      }
+    },
+    "tradeDesk": {
+      "sectionTitle": "IA di TradeDesk",
+      "whatWeCollect": {
+        "sectionTitle": "Quali dati raccogliamo",
+        "paragraph": "Nessuno. "
+      },
+      "howStored": {
+        "sectionTitle": "Come vengono archiviati i tuoi dati",
+        "paragraph": "I profili e i modelli aziendali vengono archiviati nella memoria locale di Chrome. "
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Fornitori di IA di terze parti (Bring Your Own Key)",
+        "paragraph": "Se configuri un fornitore Bring Your Own Key come OpenAI, il messaggio del cliente e i dettagli del tuo profilo aziendale vengono inviati a quel fornitore di terze parti per generare una risposta o un preventivo. "
+      },
+      "permissions": {
+        "sectionTitle": "Autorizzazioni utilizzate",
+        "paragraph": "archiviazione (per profili e impostazioni aziendali), activeTab (per rilevare campi di testo), scripting (per inserire la barra degli strumenti di risposta)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Cancellazione dei dati",
+        "paragraph": "La disinstallazione dell'estensione elimina tutti i dettagli e le impostazioni aziendali archiviati localmente. "
       }
     }
   },
@@ -1610,7 +1659,7 @@
           },
           {
             "icon": null,
-            "text": "Scrivere lettere di presentazione e risposte aperte ogni volta da zero"
+            "text": "Scrivere lettere di accompagnamento e risposte aperte ogni volta da zero"
           }
         ]
       },
@@ -1819,7 +1868,7 @@
           "text": "Esporta come segnalibri JSON, CSV o HTML"
         },
         "f4": {
-          "text": "Tutti i dati dello spazio di lavoro archiviati localmente: nessun account richiesto"
+          "text": "Tutti i dati dello spazio di lavoro archiviati localmente: non è richiesto alcun account"
         }
       },
       "niches": {
@@ -2000,7 +2049,7 @@
         "Flussi di lavoro assicurativi"
       ],
       "title": "Professionisti del settore assicurativo: elimina l'immissione manuale dei moduli con la compilazione automatica assistita dall'intelligenza artificiale",
-      "subtitle": "Donbrico Autofill AI compila moduli di richiesta, schermate di immissione delle polizze e documenti amministrativi da un profilo di dati salvato, riducendo gli errori di immissione ripetitivi e risparmiando ore ogni settimana.",
+      "subtitle": "Donbrico Autofill AI compila moduli di richiesta, schermate di immissione di polizze e documenti amministrativi da un profilo di dati salvato, riducendo gli errori di immissione ripetitivi e risparmiando ore ogni settimana.",
       "pain": {
         "title": "Cosa ti sta rallentando",
         "items": [
@@ -2057,7 +2106,7 @@
         },
         "s3": {
           "title": "Compila con un clic",
-          "text": "Premi ⚡ per riempire istantaneamente i campi standard. Per i campi narrativi (descrizioni, riepiloghi), l'intelligenza artificiale elabora una risposta dal contesto del tuo profilo."
+          "text": "Premi ⚡ per compilare immediatamente i campi standard. Per i campi narrativi (descrizioni, riepiloghi), l'intelligenza artificiale elabora una risposta dal contesto del tuo profilo."
         }
       },
       "related": {
@@ -2266,7 +2315,7 @@
         "title": "Come WorkDesk lo risolve",
         "primary": {
           "label": "Strumento primario",
-          "name": "Donbrico WorkDesk",
+          "name": "Scrivania Donbrico",
           "description": "Un clic salva l'intero stato corrente del browser come area di lavoro con nome. Ripristinalo esattamente com'era. L'intelligenza artificiale suggerisce nomi, raggruppa schede simili ed elimina i duplicati.",
           "points": [
             "Salva schede, finestre e gruppi di schede",
@@ -2394,7 +2443,7 @@
         },
         "s3": {
           "title": "3. Un clic e poi rivedi",
-          "text": "Premi ⚡ per riempire istantaneamente i campi standard. L'intelligenza artificiale elabora le risposte alle domande aperte in base al tuo profilo. Rivedi tutto prima di inviarlo: la decisione è sempre tua."
+          "text": "Premi ⚡ per compilare immediatamente i campi standard. L'intelligenza artificiale elabora le risposte alle domande aperte in base al tuo profilo. Rivedi tutto prima di inviarlo: la decisione è sempre tua."
         }
       },
       "faq": {
@@ -2509,7 +2558,7 @@
         },
         "s3": {
           "title": "Un clic per riempire",
-          "text": "Premi il pulsante ⚡. I campi standard si riempiono immediatamente. Le domande aperte ricevono risposte generate dall'intelligenza artificiale su misura per il ruolo."
+          "text": "Premi il pulsante ⚡. I campi standard si riempiono immediatamente. Le domande a risposta aperta ricevono risposte generate dall'intelligenza artificiale su misura per il ruolo."
         }
       },
       "faq": {
@@ -2527,7 +2576,7 @@
         },
         "q4": {
           "q": "Come gestisce i campi delle lettere di accompagnamento?",
-          "a": "AI Reply Assistant genera lettere di accompagnamento e risposte aperte dal tuo profilo. Puoi rivederlo e modificarlo prima di inviarlo: la decisione è sempre tua."
+          "a": "AI Reply Assistant genera lettere di accompagnamento e risposte aperte dal tuo profilo. Puoi rivederlo e modificarlo prima di inviarlo: la scelta è sempre tua."
         },
         "q5": {
           "q": "È gratuito?",
@@ -2568,57 +2617,47 @@
         "subtitle": "Tutte e tre le estensioni possono essere avviate gratuitamente. Solo Chrome per ora: Edge in arrivo.",
         "button": "Vedi tutte le estensioni →"
       },
-      "categories": {
-        "communication": {
-          "title": "Scrivi e rispondi",
-          "description": "Automatizza le risposte via email, le risposte al supporto e i messaggi di sensibilizzazione. Costruito per ruoli di comunicazione ad alto volume.",
-          "cta": "Visualizza flusso di lavoro →"
-        },
-        "automation": {
-          "title": "Compila ed elabora",
-          "description": "Automatizza la compilazione ripetitiva dei moduli e l'immissione di dati strutturati. Progettato per reclutatori, amministratori e team operativi.",
-          "cta": "Visualizza flusso di lavoro →"
-        },
-        "workspace": {
-          "title": "Organizza e concentrati",
-          "description": "Salva e ripristina le aree di lavoro del browser. Progettato per ricercatori, sviluppatori e flussi di lavoro di progetti complessi.",
-          "cta": "Visualizza flusso di lavoro →"
-        }
+      "categories": "Categorie",
+      "workflows": "Flussi di lavoro",
+      "automation": {
+        "title": "Compila ed elabora",
+        "description": "Automatizza la compilazione ripetitiva dei moduli e l'immissione di dati strutturati. Progettato per reclutatori, amministratori e team operativi.",
+        "cta": "Visualizza flusso di lavoro →"
       },
-      "workflows": {
-        "title": "FLUSSI DI LAVORO SPECIFICI",
-        "subtitle": "Ogni pagina di nicchia mostra esattamente come le estensioni Donbrico risolvono quel flusso di lavoro.",
-        "cta": "Visualizza flusso di lavoro →",
-        "supportTeams": {
-          "title": "Squadre di supporto",
-          "description": "Libreria di risposte basata sull'intelligenza artificiale per gli agenti dell'assistenza. Genera risposte precise più velocemente.",
-          "cta": "Visualizza flusso di lavoro →"
-        },
-        "ecommerceSupport": {
-          "title": "Supporto per l'e-commerce",
-          "description": "Automatizza le risposte di supporto per ordini, rimborsi e domande dei clienti. Ridurre il carico dei biglietti.",
-          "cta": "Visualizza flusso di lavoro →"
-        },
-        "recruiters": {
-          "title": "Reclutatori",
-          "description": "Velocizza il reclutamento con l'intelligenza artificiale che compila automaticamente le bacheche di lavoro, genera riepiloghi dei candidati e riduce l'immissione manuale dei dati ATS.",
-          "cta": "Visualizza flusso di lavoro →"
-        },
-        "insurance": {
-          "title": "Assicurazione",
-          "description": "Compila moduli di richiesta e dati relativi alle polizze con la compilazione assistita dall'intelligenza artificiale. Meno errori, meno tempo.",
-          "cta": "Visualizza flusso di lavoro →"
-        },
-        "browserWorkspace": {
-          "title": "Ricercatori e sviluppatori",
-          "description": "Organizza sessioni browser complesse. Salva spazi di lavoro, ripristina istantaneamente, cerca con l'intelligenza artificiale.",
-          "cta": "Visualizza flusso di lavoro →"
-        },
-        "jobSeekers": {
-          "title": "Persone in cerca di lavoro",
-          "description": "Compila automaticamente le domande di lavoro con lettere di accompagnamento generate dall'intelligenza artificiale. Applicare più velocemente.",
-          "cta": "Visualizza flusso di lavoro →"
-        }
+      "communication": {
+        "title": "Scrivi e rispondi",
+        "description": "Automatizza le risposte via email, le risposte al supporto e i messaggi di sensibilizzazione. Costruito per ruoli di comunicazione ad alto volume.",
+        "cta": "Visualizza flusso di lavoro →"
+      },
+      "workspace": {
+        "title": "Organizza e concentrati",
+        "description": "Salva e ripristina le aree di lavoro del browser. Progettato per ricercatori, sviluppatori e flussi di lavoro di progetti complessi.",
+        "cta": "Visualizza flusso di lavoro →"
+      },
+      "insurance": {
+        "title": "Assicurazione",
+        "description": "Compila moduli di richiesta e dati relativi alle polizze con la compilazione assistita dall'intelligenza artificiale. Meno errori, meno tempo.",
+        "cta": "Visualizza flusso di lavoro →"
+      },
+      "browserWorkspace": {
+        "title": "Ricercatori e sviluppatori",
+        "description": "Organizza sessioni complesse del browser. Salva spazi di lavoro, ripristina istantaneamente, cerca con l'intelligenza artificiale.",
+        "cta": "Visualizza flusso di lavoro →"
+      },
+      "ecommerceSupport": {
+        "title": "Supporto per l'e-commerce",
+        "description": "Automatizza le risposte di supporto per ordini, rimborsi e domande dei clienti. Ridurre il carico dei biglietti.",
+        "cta": "Visualizza flusso di lavoro →"
+      },
+      "supportTeams": {
+        "title": "Squadre di supporto",
+        "description": "Libreria di risposte basata sull'intelligenza artificiale per gli agenti dell'assistenza. Genera risposte precise più velocemente.",
+        "cta": "Visualizza flusso di lavoro →"
+      },
+      "jobSeekers": {
+        "title": "Persone in cerca di lavoro",
+        "description": "Compila automaticamente le domande di lavoro con lettere di accompagnamento generate dall'intelligenza artificiale. Applicare più velocemente.",
+        "cta": "Visualizza flusso di lavoro →"
       }
     },
     "realEstate": {
@@ -2635,7 +2674,7 @@
         "title": "Dove gli agenti perdono ore ogni settimana",
         "items": [
           "Reinserimento degli stessi dettagli della proprietà (indirizzo, letti, bagni, prezzo, descrizione) in Zillow, Redfin, Realtor.com e MLS - ogni nuovo annuncio, ogni aggiornamento",
-          "Scrivere da zero le stesse email \"dare seguito alla tua richiesta\" e \"ecco tre proprietà\", 15 volte al giorno, personalizzate per ciascun cliente",
+          "Scrivere da zero le stesse email \"dare seguito alla tua richiesta\" e \"ecco tre proprietà\", 15 volte al giorno, personalizzate per ogni cliente",
           "Perdere traccia di quali schede appartengono a quale cliente o elenco: 40 schede aperte senza alcun modo per ripristinare una sessione di ricerca della settimana precedente",
           "Compilazione manuale dei questionari di assunzione dell'acquirente/venditore e dei moduli di contatto CRM per ogni nuovo lead"
         ]
@@ -2688,7 +2727,7 @@
         "badge": "Organizzazione delle schede",
         "title": "Scrivania",
         "fullDetails": "Dettagli completi →",
-        "description": "Ogni annuncio attivo merita il proprio spazio di lavoro nel browser: dettagli MLS, vista stradale, dati sui quartieri, valutazioni delle scuole, calcolatore del mutuo, elenchi della concorrenza. WorkDesk salva le schede correnti come area di lavoro denominata con un clic e ripristina immediatamente l'intera sessione. Niente più caos di schede quando hai 6 clienti attivi.",
+        "description": "Ogni annuncio attivo merita il proprio spazio di lavoro nel browser: dettagli MLS, vista stradale, dati sui quartieri, valutazioni delle scuole, calcolatore del mutuo, elenchi della concorrenza. WorkDesk salva le schede correnti come area di lavoro denominata con un clic e ripristina immediatamente l'intera sessione. Niente più caos di schede quando hai 6 client attivi.",
         "workspacesTitle": "Gli agenti di Workspaces creano:",
         "workspaces": [
           "→ \"Famiglia Smith - Acquirenti\" (12 schede)",
@@ -2698,7 +2737,7 @@
         ],
         "keyFeaturesTitle": "Caratteristiche principali:",
         "keyFeatures": [
-          "✓ L'intelligenza artificiale assegna automaticamente un nome agli spazi di lavoro",
+          "✓ L'intelligenza artificiale nomina automaticamente gli spazi di lavoro",
           "✓ Ripristina qualsiasi sessione da qualsiasi dispositivo",
           "✓ Archivia le offerte chiuse, ripristina se necessario",
           "✓ Ricerca semantica in tutti gli spazi di lavoro (Pro)"
@@ -3046,5 +3085,114 @@
     "readMore": "Leggi di più →",
     "byProduct": "Per prodotto:",
     "minRead": "minuti di lettura"
+  },
+  "tradeDesk": {
+    "page": {
+      "title": "Donbrico TradeDesk AI: assistente per le risposte e le stime degli appaltatori",
+      "description": "Trasforma appunti approssimativi in ​​preventivi professionali, stime e risposte via email in pochi secondi. ",
+      "ogTitle": "Donbrico TradeDesk AI: assistente per le risposte e le stime degli appaltatori",
+      "ogDescription": "Trasforma appunti approssimativi in ​​preventivi professionali, stime e risposte via email in pochi secondi. "
+    },
+    "hero": {
+      "eyebrow": "ESTENSIONE CROMATA",
+      "title": "Scrivi citazioni e risposte<br>in pochi secondi.",
+      "subtitle": "TradeDesk AI trasforma istantaneamente e gratuitamente appunti approssimativi sul cantiere in risposte e-mail professionali, preventivi e preventivi formali. ",
+      "disclaimer": "🔒 I dati dei clienti rimangono locali: vengono eseguiti interamente nel tuo browser",
+      "buttonPrimary": "Aggiungi a Chrome: gratuito",
+      "buttonSecondary": "Guarda come funziona ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "Come funziona",
+      "step1": {
+        "title": "1. Salva i dettagli dell'attività",
+        "description": "Memorizza il nome della tua azienda, il numero di licenza e i prezzi tipici una volta nel tuo profilo aziendale."
+      },
+      "step2": {
+        "title": "2. Apri la tua casella di posta",
+        "description": "Funziona direttamente nella tua casella di posta."
+      },
+      "step3": {
+        "title": "3. AI redige la risposta",
+        "description": "TradeDesk legge il messaggio del cliente, estrae informazioni dai dati aziendali e redige immediatamente una risposta professionale."
+      }
+    },
+    "features": {
+      "sectionTitle": "Caratteristiche",
+      "feature1": {
+        "title": "Funziona dove lavori tu",
+        "description": "Funziona all'interno di Gmail, Outlook, Yahoo Mail o qualsiasi modulo Web che già utilizzi. "
+      },
+      "feature2": {
+        "title": "Su misura per il tuo mestiere",
+        "description": "Terminologia specializzata per HVAC, impianti idraulici, elettrici, coperture, paesaggistica, verniciatura, tuttofare e appalti generali."
+      },
+      "feature3": {
+        "title": "La privacy prima di tutto",
+        "description": "I preventivi, le informazioni sui clienti e i prezzi rimangono locali nello spazio di archiviazione di Chrome. "
+      },
+      "feature4": {
+        "title": "Porta la tua IA",
+        "description": "Utilizza Chrome AI sul dispositivo per una privacy completa oppure connetti OpenAI, Claude o Groq utilizzando la tua chiave API per la massima velocità."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Prezzi semplici. ",
+      "free": {
+        "title": "Gratuito",
+        "price": "$ 0",
+        "button": "Aggiungi a Chrome",
+        "features": {
+          "f1": "5 risposte AI al giorno",
+          "f2": "5 modelli salvati",
+          "f3": "1 profilo aziendale",
+          "f4": "3 scenari di risposta",
+          "f5": "Chrome AI sul dispositivo",
+          "f6": "Unico fornitore BYOK",
+          "f7": "3 toni di scrittura"
+        }
+      },
+      "proMonthly": {
+        "title": "Pro (mensile)",
+        "price": "$ 9,99/mese",
+        "button": "Abbonarsi mensilmente",
+        "features": {
+          "f1": "Risposte e citazioni AI illimitate",
+          "f2": "Modelli salvati illimitati",
+          "f3": "Profili aziendali illimitati",
+          "f4": "Tutti gli oltre 23 scenari di risposta",
+          "f5": "Tutti e 7 i toni dell'appaltatore",
+          "f6": "Esporta e importa backup",
+          "f7": "Più fornitori BYOK",
+          "f8": "Supporto prioritario"
+        }
+      },
+      "proLifetime": {
+        "title": "Pro (a vita)",
+        "price": "$ 149",
+        "tagline": "Paga una volta, usa per sempre",
+        "button": "Passaggio a vita",
+        "features": {
+          "f1": "Tutto in Pro mensile",
+          "f2": "Nessuna commissione ricorrente",
+          "f3": "Futuri aggiornamenti inclusi",
+          "f4": "Prezzi per i primi utilizzatori"
+        }
+      }
+    },
+    "faq": {
+      "sectionTitle": "Domande frequenti",
+      "q1": {
+        "question": "I dati dei miei clienti sono al sicuro con TradeDesk AI?",
+        "answer": "SÌ. "
+      },
+      "q2": {
+        "question": "Supporta la mia attività specifica?",
+        "answer": "SÌ. "
+      },
+      "q3": {
+        "question": "Come funziona il servizio \"Bring Your Own Key\" (BYOK)?",
+        "answer": "Puoi connettere la tua chiave API da OpenAI, Anthropic, Groq o OpenRouter nelle impostazioni. "
+      }
+    }
   }
 }
