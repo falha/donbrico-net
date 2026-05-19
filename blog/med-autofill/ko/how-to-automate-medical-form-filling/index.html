@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>의료 양식 자동 작성 방법: 의료진을 위한 실용 가이드 | Donbrico Blog</title>
+    <meta name="description" content="모든 의료 사무실이 겪는 고충이 있습니다. 환자 이름, 생년월일, 보험 ID를 양식마다 반복해서 입력하는 일입니다. EHR에 입력하고, 사전 승인 포털에 입력하고, 종이 의뢰서에도 입력합니다. 반복적이고, 오류가 발생하기 쉬우며, 환자 진료에 쓸 시간을 빼앗아갑니다." />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/blog/med-autofill/en/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/blog/med-autofill/es/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/blog/med-autofill/ja/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/blog/med-autofill/pt_BR/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/blog/med-autofill/fr/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/blog/med-autofill/de/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/blog/med-autofill/it/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/blog/med-autofill/zh_CN/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/blog/med-autofill/zh_TW/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/blog/med-autofill/hi/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/blog/med-autofill/ru/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/blog/med-autofill/ko/how-to-automate-medical-form-filling/" />
+    <meta property="og:title" content="의료 양식 자동 작성 방법: 의료진을 위한 실용 가이드 | Donbrico Blog" />
+    <meta property="og:description" content="모든 의료 사무실이 겪는 고충이 있습니다. 환자 이름, 생년월일, 보험 ID를 양식마다 반복해서 입력하는 일입니다. EHR에 입력하고, 사전 승인 포털에 입력하고, 종이 의뢰서에도 입력합니다. 반복적이고, 오류가 발생하기 쉬우며, 환자 진료에 쓸 시간을 빼앗아갑니다." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/blog/med-autofill/ko/how-to-automate-medical-form-filling/" />
+    <meta property="og:image" content="https://donbrico.net/blog/med-autofill/how-to-automate-medical-form-filling/hero.png" />
+    <link rel="stylesheet" href="../../../../css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../../../../assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/blog/med-autofill/ko/how-to-automate-medical-form-filling/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+            </div>
+          </li>
+          <li><a href="/blog/" class="active" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        <a href="../../../../blog/" class="blog-back">← 블로그로 돌아가기</a>
+        <img src="hero.png" alt="의료 양식 자동 작성 방법: 의료진을 위한 실용 가이드" style="width:100%;max-height:420px;object-fit:cover;border-radius:8px;margin-bottom:var(--spacing-lg);" loading="lazy" />
+        <div class="blog-meta">
+          <span>📅 2026년 5월 18일</span>
+          <span>🏷️ med-autofill</span>
+        </div>
+        <h1>의료 양식 자동 작성 방법: 의료진을 위한 실용 가이드</h1>
+<p>모든 의료 사무실이 겪는 고충이 있습니다. 환자 이름, 생년월일, 보험 ID를 양식마다 반복해서 입력하는 일입니다. EHR에 입력하고, 사전 승인 포털에 입력하고, 종이 의뢰서에도 입력합니다. 반복적이고, 오류가 발생하기 쉬우며, 환자 진료에 쓸 시간을 빼앗아갑니다.</p>
+<p><strong>의료 양식 자동 작성 방법</strong>을 익히는 것은 의료 사무실이 할 수 있는 가장 ROI가 높은 변화 중 하나입니다. 완전한 소프트웨어 교체나 대규모 IT 프로젝트가 필요하지 않습니다. 적절한 도구와 몇 가지 워크플로 조정만으로도 양식 작성 시간을 50-70% 줄일 수 있습니다.</p>
+<p>이 가이드는 모든 의료 전문가가 오늘부터 바로 실행할 수 있는 실용적인 단계를 다룹니다.</p>
+<hr>
+<h2>수동 양식 작성이 사무실에 손해를 끼치는 이유</h2>
+<p>숫자를 살펴보겠습니다. 일반적인 프런트 데스크 직원은 하루에 20-40개의 환자 양식을 작성합니다. 각 양식의 인구통계 정보만 입력하는 데 3-5분이 소요됩니다. 즉, 하루에 1-3시간을 자동화되어야 할 데이터 입력에 소비하는 셈입니다.</p>
+<p>실제 비용은 시간뿐만 아니라 정확성에도 있습니다. 수동으로 입력하면 오류가 발생하기 쉽습니다:</p>
+<ul>
+<li>보험 회원 ID의 숫자 전위</li>
+<li>환자 이름 철자 오류</li>
+<li>청구 양식의 잘못된 생년월일</li>
+<li>누락된 제공자 NPI 번호</li>
+</ul>
+<p>각 오류는 하위 문제를 연쇄적으로 발생시킵니다: 거부된 청구, 지연된 사전 승인, 불만족스러운 환자, 실수 수정을 위한 추가 전화 통화.</p>
+<p>의료 양식 자동화는 이러한 문제점을 직접 해결합니다. 인간의 판단을 대체하는 것이 아니라 데이터 입력의 기계적이고 반복적인 부분을 제거하여 예외 상황과 환자 대면 업무에 집중할 수 있게 해줍니다.</p>
+<hr>
+<h2>의료 양식 자동 작성에 필요한 것</h2>
+<p>솔루션을 선택하기 전에 좋은 자동화 워크플로가 어떤 모습인지 이해하세요. 목표는 이미 보유한 데이터를 사용하여 다시 입력하지 않고 양식을 작성하는 것입니다.</p>
+<p>필요한 것은 다음과 같습니다:</p>
+<h3>1. 중앙 데이터 소스</h3>
+<p>환자 인구통계, 보험 세부 정보, 제공자 정보는 접근 가능한 곳에 있어야 합니다. 여기에는 다음이 포함될 수 있습니다:</p>
+<ul>
+<li>진료 관리 시스템</li>
+<li>안전한 스프레드시트 (소규모 사무실의 경우)</li>
+<li>전용 환자 접수 포털</li>
+</ul>
+<p>데이터가 완벽할 필요는 없지만 체계적으로 정리되어야 합니다. 가장 일반적인 필드부터 정리하세요: 환자 이름, 생년월일, 주소, 보험사 및 ID, 주치의 이름 및 NPI.</p>
+<h3>2. 데이터를 양식에 삽입하는 방법</h3>
+<p>여기서 <strong>의료 양식 작성 도구</strong>가 필요합니다. 가장 좋은 솔루션은 양식 필드를 인식하고 자동으로 채워주는 브라우저 확장 프로그램으로 작동합니다. EHR이나 특수 API와의 통합이 필요하지 않습니다.</p>
+<p>다음 기능을 갖춘 도구를 찾으세요:</p>
+<ul>
+<li>여러 웹사이트와 포털에서 작동 (하나의 EHR에 국한되지 않음)</li>
+<li>데이터를 로컬에 보관 (프라이버시 우선 접근법)</li>
+<li>어떤 필드를 어떤 데이터 포인트에 매핑할지 사용자 지정 가능</li>
+<li>텍스트 필드와 드롭다운 메뉴 모두 지원</li>
+</ul>
+<h3>3. 반복 양식용 템플릿</h3>
+<p>동일한 의뢰서나 사전 승인 요청을 반복적으로 작성하는 경우 템플릿을 만드세요. 일반적인 필드(진료소 주소, 일반 진단 코드, 자주 사용하는 제공자 세부 정보)를 저장하여 매번 환자별 정보만 입력하면 됩니다.</p>
+<hr>
+<h2>단계별 가이드: 첫 번째 양식 유형 자동화하기</h2>
+<p>실제 예시를 살펴보겠습니다. 영상 검사에 대한 사전 승인 요청을 처리한다고 가정해 보겠습니다. 각 요청에는 다음이 필요합니다:</p>
+<ul>
+<li>환자 인구통계</li>
+<li>보험 정보</li>
+<li>의뢰 제공자 세부 정보</li>
+<li>임상 적응증</li>
+</ul>
+<p>자동화 방법은 다음과 같습니다:</p>
+<p><strong>1단계: 양식 필드 식별</strong>
+사전 승인 포털을 열고 모든 필드를 기록하세요. 환자 정보, 보험 정보, 제공자 정보, 임상 정보로 그룹화하세요.</p>
+<p><strong>2단계: 데이터 준비</strong>
+진료소의 표준 정보(NPI, 세금 ID, 사무실 주소, 일반적인 ICD-10 코드)가 포함된 간단한 참조 문서를 만드세요. 환자 데이터는 예약 시스템에서 가져옵니다.</p>
+<p><strong>3단계: 의료 자동 입력 확장 프로그램 사용</strong>
+<strong>EHR 양식 작성 도구</strong>를 설치하세요. 사전 승인 포털의 필드를 인식하도록 구성하세요. 환자 이름 필드를 환자 이름 데이터 소스에, 보험 ID를 올바른 열에 매핑하는 식으로 설정하세요.</p>
+<p><strong>4단계: 테스트 및 개선</strong>
+알려진 환자로 테스트를 실행하세요. 모든 필드의 정확성을 확인하세요. 도구가 필드를 잘못 해석하면 매핑을 조정하세요. 대부분의 도구는 수정 사항을 학습합니다.</p>
+<p><strong>5단계: 팀 교육</strong>
+직원에게 자동 입력을 실행하는 방법과 수동으로 확인해야 할 사항을 알려주세요. 자동화가 &quot;설정하고 잊어버리는 것&quot;이 아니라 &quot;3분 대신 10초 만에 양식을 작성한 후 확인하는 것&quot;을 의미합니다.</p>
+<hr>
+<h2>의료 양식 자동화 시 흔한 실수</h2>
+<p>자동화를 시도했다가 이러한 함정에 빠져 포기하는 사무실을 보았습니다. 피하세요:</p>
+<p><strong>실수 1: 모든 것을 한 번에 자동화</strong>
+가장 자주 작성하는 하나의 양식 유형부터 시작하세요. 완벽하게 작동하게 만든 후 다음으로 넘어가세요. 20개의 양식을 동시에 자동화하려고 하면 혼란과 오류만 발생합니다.</p>
+<p><strong>실수 2: 데이터 품질 무시</strong>
+환자 주소가 일관되지 않으면(때로는 &quot;Street&quot;, 때로는 &quot;St.&quot;) 자동 입력도 일관되지 않습니다. 먼저 데이터를 정리하는 데 한 시간을 투자하세요. 즉각적인 효과를 볼 수 있습니다.</p>
+<p><strong>실수 3: 템플릿을 정기적으로 업데이트하지 않음</strong>
+보험 플랜이 변경됩니다. 제공자 NPI 번호가 변경됩니다. 월별 알림을 설정하여 자동화 템플릿을 검토하고 오래된 정보를 업데이트하세요.</p>
+<p><strong>실수 4: 도구가 모든 것을 처리한다고 가정</strong>
+어떤 자동화도 100% 정확하지 않습니다. 제출 전에 최종 양식을 항상 확인하세요. 목표는 데이터 입력 시간을 절약하는 것이지 인간의 검토를 없애는 것이 아닙니다.</p>
+<hr>
+<h2>의료 양식 자동화를 위한 프라이버시 고려 사항</h2>
+<p>의료 데이터는 민감합니다. <strong>의료 사무실 자동화</strong> 솔루션을 탐색할 때 프라이버시가 최우선 순위여야 합니다.</p>
+<p>다음 사항을 확인하세요:</p>
+<ul>
+<li><strong>로컬 데이터 저장.</strong> 도구는 환자 데이터를 클라우드 서버가 아닌 사용자 컴퓨터에 저장해야 합니다. 이렇게 하면 추가 서류 작업 없이 HIPAA를 준수할 수 있습니다.</li>
+<li><strong>데이터 전송 없음.</strong> 자동 입력 도구는 데이터를 제3자에게 절대 전송해서는 안 됩니다. 로컬 데이터를 읽어 양식 필드에 삽입하기만 하면 됩니다.</li>
+<li><strong>읽기 전용 액세스.</strong> 도구는 양식 필드를 읽을 수 있어야 하지만 웹사이트나 시스템의 다른 부분을 수정해서는 안 됩니다.</li>
+</ul>
+<p>대규모 의료 기관에 속해 있다면 새 소프트웨어를 설치하기 전에 IT 부서에 확인하세요. 대부분의 최신 자동 입력 도구는 관리자 권한이 필요 없는 가벼운 브라우저 확장 프로그램이지만, 확인하는 것이 항상 좋습니다.</p>
+<hr>
+<h2>인구통계 그 이상: 임상 필드 자동화</h2>
+<p>대부분의 의료 양식 작성 도구는 환자 인구통계를 잘 처리합니다. 하지만 실제 시간 절약은 임상 필드(증상, 진단, 병력 입력이 필요한 부분)를 자동화할 때 발생합니다.</p>
+<p>임상 필드는 다음과 같이 자동화할 수 있습니다:</p>
+<ul>
+<li>일반적인 문구 라이브러리 생성 (예: &quot;환자가 왼쪽 다리로 방사되는 요통을 호소함&quot;)</li>
+<li><strong>환자 양식 자동 입력</strong> 도구와 함께 매크로 또는 텍스트 확장기 사용</li>
+<li>드롭다운 목록에서 ICD-10 코드와 같은 구조화된 필드 미리 채우기</li>
+</ul>
+<p>이는 다음과 같은 경우에 특히 유용합니다:</p>
+<ul>
+<li>의뢰서</li>
+<li>사전 승인 임상 요약</li>
+<li>경과 기록 템플릿</li>
+<li>보험 이의 신청서</li>
+</ul>
+<p>핵심은 표준 내용을 자동화하고 사용자 지정을 위한 여지를 남기는 것입니다. 모든 환자는 고유하지만 일반적인 상태를 설명하는 방식은 매번 다시 입력할 필요가 없습니다.</p>
+<hr>
+<h2>자동화 효과 측정</h2>
+<p>의료 양식 자동화를 구현한 후 결과를 추적하세요. 측정할 항목은 다음과 같습니다:</p>
+<ul>
+<li><strong>양식당 시간.</strong> 자동화 전에 특정 양식을 작성하는 데 걸리는 시간을 측정하세요. 자동화 후 다시 측정하세요. 차이가 절약된 시간입니다.</li>
+<li><strong>오류율.</strong> 수정이나 재제출이 필요한 양식 수를 계산하세요. 자동화는 이 숫자를 크게 줄여야 합니다.</li>
+<li><strong>직원 만족도.</strong> 프런트 데스크 팀에게 스트레스가 줄었는지 물어보세요. 데이터 입력 피로 감소는 실제 이점입니다.</li>
+</ul>
+<p>대부분의 사무실은 첫 주 내에 양식 작성 시간이 60-70% 감소합니다. 이는 하루에 몇 시간을 환자 상호 작용이나 다른 업무에 돌려줄 수 있음을 의미합니다.</p>
+<hr>
+<h2>전용 의료 양식 작성 도구 vs. 일반 자동화 도구 사용 시기</h2>
+<p>일반 자동 입력 도구나 비밀번호 관리자를 사용하면 안 될까요? 짧은 대답은 &#39;아니요&#39;입니다. 일반 도구는 의료 양식 구조를 이해하지 못합니다.</p>
+<p>목적에 맞게 제작된 <strong>의료 자동 입력 확장 프로그램</strong>은 다음을 이해합니다:</p>
+<ul>
+<li>의료 필드 레이블 (예: &quot;환자 생년월일&quot; vs. &quot;Date of Birth&quot;)</li>
+<li>보험 플랜용 드롭다운 메뉴</li>
+<li>여러 필드로 구성된 주소 블록</li>
+<li>임상 용어</li>
+</ul>
+<p>일반 도구는 모든 필드를 일반 텍스트 상자로 취급합니다. 동일한 양식에서 환자의 성과 제공자의 성을 구분할 수 없습니다. 이것이 의료 전용 도구에 투자할 가치가 있는 이유입니다.</p>
+<p>고려해볼 만한 옵션 중 하나는 <strong>MedAutoFill</strong>입니다. 의료 양식을 위해 특별히 설계된 Chrome 확장 프로그램으로, 여러 시스템에서 인구통계, 보험, 제공자 세부 정보, 임상 필드를 처리하며 모든 데이터를 프라이버시를 위해 로컬에 보관합니다.</p>
+<hr>
+<h2>내일부터 시작하기</h2>
+<p>6개월 구현 계획이 필요하지 않습니다. 이번 주에 할 일은 다음과 같습니다:</p>
+<ol>
+<li><strong>하나의 양식을 선택하세요.</strong> 사무실에서 가장 자주 작성하는 양식을 고르세요.</li>
+<li><strong>필드를 나열하세요.</strong> 해당 양식의 모든 필드를 기록하세요.</li>
+<li><strong>데이터를 수집하세요.</strong> 필요한 정보를 하나의 문서나 스프레드시트에 모으세요.</li>
+<li><strong>의료 양식 작성 도구를 설치하세요.</strong> 해당 양식 하나에 맞게 설정하세요.</li>
+<li><strong>5명의 환자로 테스트하세요.</strong> 정확성을 확인하고 조정하세요.</li>
+<li><strong>한 명의 직원을 교육하세요.</strong> 하루 동안 사용하게 하세요.</li>
+<li><strong>다음 양식으로 확장하세요.</strong></li>
+</ol>
+<p>그게 전부입니다. 작게 시작하고 가치를 입증한 후 확장하세요.</p>
+<hr>
+<h2>결론</h2>
+<p><strong>의료 양식 자동 작성 방법</strong>을 배우는 것은 화려한 기술을 도입하는 것이 아닙니다. 일상적인 워크플로에서 마찰을 제거하여 환자 진료, 정확한 청구, 효율적인 운영에 집중할 수 있게 하는 것입니다.</p>
+<p>필요한 도구는 이미 존재합니다. 워크플로는 간단합니다. ROI는 즉각적입니다.</p>
+<p>사무실에서 전용 솔루션을 시도할 준비가 되었다면, <strong>MedAutoFill</strong>은 프라이버시나 정확성을 희생하지 않고 양식을 더 빠르게 작성해야 하는 의료 전문가를 위해 특별히 제작되었습니다. EHR 시스템, 보험 포털, 의료 사무실 소프트웨어 전반에서 작동하며 데이터를 사용자 기기에 안전하게 보관합니다.</p>
+<p><a href="https://donbrico.net/med-autofill">Donbrico에서 MedAutoFill 방문하기</a> 워크플로에 적합한지 확인해보세요. 부담 없이 — 양식을 더 빠르게 작성하는 데 도움이 되는 도구일 뿐입니다.</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="../../../../js/i18n.js" defer></script>
+    <script src="../../../../js/chatwoot.js" defer></script>
+  </body>
+</html>

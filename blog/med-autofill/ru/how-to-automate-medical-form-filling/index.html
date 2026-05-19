@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Как автоматизировать заполнение медицинских форм: практическое руководство для медицинских команд | Donbrico Blog</title>
+    <meta name="description" content="Каждый медицинский офис знает эту боль: снова и снова вводить одно и то же имя пациента, дату рождения и номер страхового полиса в форму за формой. Вы печатаете" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/blog/med-autofill/en/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/blog/med-autofill/es/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/blog/med-autofill/ja/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/blog/med-autofill/pt_BR/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/blog/med-autofill/fr/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/blog/med-autofill/de/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/blog/med-autofill/it/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/blog/med-autofill/zh_CN/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/blog/med-autofill/zh_TW/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/blog/med-autofill/hi/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/blog/med-autofill/ru/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/blog/med-autofill/ko/how-to-automate-medical-form-filling/" />
+    <meta property="og:title" content="Как автоматизировать заполнение медицинских форм: практическое руководство для медицинских команд | Donbrico Blog" />
+    <meta property="og:description" content="Каждый медицинский офис знает эту боль: снова и снова вводить одно и то же имя пациента, дату рождения и номер страхового полиса в форму за формой. Вы печатаете" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/blog/med-autofill/ru/how-to-automate-medical-form-filling/" />
+    <meta property="og:image" content="https://donbrico.net/blog/med-autofill/how-to-automate-medical-form-filling/hero.png" />
+    <link rel="stylesheet" href="../../../../css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../../../../assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/blog/med-autofill/ru/how-to-automate-medical-form-filling/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+            </div>
+          </li>
+          <li><a href="/blog/" class="active" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        <a href="../../../../blog/" class="blog-back">← Вернуться в блог</a>
+        <img src="hero.png" alt="Как автоматизировать заполнение медицинских форм: практическое руководство для медицинских команд" style="width:100%;max-height:420px;object-fit:cover;border-radius:8px;margin-bottom:var(--spacing-lg);" loading="lazy" />
+        <div class="blog-meta">
+          <span>📅 18 мая 2026 г.</span>
+          <span>🏷️ med-autofill</span>
+        </div>
+        <h1>Как автоматизировать заполнение медицинских форм: практическое руководство для медицинских команд</h1>
+<p>Каждый медицинский офис знает эту боль: снова и снова вводить одно и то же имя пациента, дату рождения и номер страхового полиса в форму за формой. Вы печатаете это в EHR, затем на портале предварительного разрешения, затем на бумажном бланке направления. Это повторяющаяся, чреватая ошибками работа, которая съедает время, которое можно было бы потратить на уход за пациентами.</p>
+<p>Освоение <strong>автоматизации заполнения медицинских форм</strong> — одно из самых выгодных изменений, которое может сделать медицинский офис. Для этого не нужен полный пересмотр программного обеспечения или масштабный IT-проект. С правильными инструментами и несколькими корректировками рабочих процессов вы можете сократить время заполнения форм на 50–70%.</p>
+<p>В этом руководстве описаны практические шаги, которые любой медицинский работник может предпринять уже сегодня.</p>
+<hr>
+<h2>Почему ручное заполнение форм обходится вашему офису дорого</h2>
+<p>Давайте посмотрим на цифры. Типичный сотрудник регистратуры заполняет 20–40 форм пациентов в день. Каждая форма занимает 3–5 минут только на ввод демографических данных. Это 1–3 часа в день, потраченных на ввод данных, который, казалось бы, должен быть автоматическим.</p>
+<p>Настоящая цена — не только время, но и точность. При ручном вводе вы провоцируете ошибки:</p>
+<ul>
+<li>Перепутанные цифры в идентификаторах страховых участников</li>
+<li>Неправильно написанные имена пациентов</li>
+<li>Неверная дата рождения в страховой форме</li>
+<li>Отсутствующие NPI-номера врачей</li>
+</ul>
+<p>Каждая ошибка создаёт каскад проблем: отклонённые страховые требования, задержки предварительных разрешений, недовольные пациенты и дополнительные телефонные звонки для исправления ошибок.</p>
+<p>Автоматизация медицинских форм напрямую решает эти проблемы. Она не заменяет человеческое суждение — она устраняет механическую, повторяющуюся часть ввода данных, чтобы вы могли сосредоточиться на исключительных случаях и работе с пациентами.</p>
+<hr>
+<h2>Что нужно для автоматизации заполнения медицинских форм</h2>
+<p>Прежде чем выбирать решение, поймите, как выглядит хороший рабочий процесс автоматизации. Цель — заполнять формы данными, которые у вас уже есть, без повторного ввода.</p>
+<p>Вот что вам нужно:</p>
+<h3>1. Центральный источник данных</h3>
+<p>Демографические данные пациентов, информация о страховке и данные врачей должны храниться в доступном месте. Это может быть:</p>
+<ul>
+<li>Ваша система управления практикой</li>
+<li>Защищённая электронная таблица (для небольших офисов)</li>
+<li>Выделенный портал для приёма пациентов</li>
+</ul>
+<p>Данные не обязаны быть идеальными — но они должны быть организованы. Сначала приведите в порядок самые распространённые поля: имя пациента, дата рождения, адрес, страховая компания и ID, имя и NPI лечащего врача.</p>
+<h3>2. Способ вставки этих данных в формы</h3>
+<p>Здесь на помощь приходит инструмент <strong>для заполнения медицинских форм</strong>. Лучшие решения работают как расширения браузера, которые распознают поля форм и заполняют их автоматически. Они не требуют интеграции с вашей EHR или специальных API.</p>
+<p>Ищите инструмент, который:</p>
+<ul>
+<li>Работает на разных сайтах и порталах (а не только в одной EHR)</li>
+<li>Хранит данные локально (подход, ориентированный на конфиденциальность)</li>
+<li>Позволяет настраивать, какие поля сопоставляются с какими данными</li>
+<li>Поддерживает как текстовые поля, так и выпадающие меню</li>
+</ul>
+<h3>3. Шаблоны для повторяющихся форм</h3>
+<p>Если ваш офис снова и снова заполняет одну и ту же форму направления или запрос на предварительное разрешение, создайте шаблон. Сохраните общие поля — адрес вашей практики, распространённые коды диагнозов, часто используемые данные врачей — чтобы каждый раз заполнять только информацию, специфичную для пациента.</p>
+<hr>
+<h2>Пошаговая инструкция: автоматизация первого типа форм</h2>
+<p>Давайте разберём реальный пример. Допустим, вы обрабатываете запросы на предварительное разрешение для инструментальных исследований. Каждый запрос требует:</p>
+<ul>
+<li>Демографические данные пациента</li>
+<li>Информацию о страховке</li>
+<li>Данные направившего врача</li>
+<li>Клинические показания</li>
+</ul>
+<p>Вот как это автоматизировать:</p>
+<p><strong>Шаг 1: Определите поля формы.</strong>
+Откройте портал предварительного разрешения и запишите каждое поле. Сгруппируйте их по категориям: информация о пациенте, страховке, враче, клиническая информация.</p>
+<p><strong>Шаг 2: Подготовьте свои данные.</strong>
+Создайте простой справочный документ со стандартной информацией вашей практики — ваш NPI, налоговый ID, адрес офиса, распространённые коды МКБ-10. Для данных пациента используйте информацию из вашей системы записи.</p>
+<p><strong>Шаг 3: Используйте расширение для автозаполнения в здравоохранении.</strong>
+Установите инструмент <strong>для заполнения форм EHR</strong>. Настройте его на распознавание полей в вашем портале предварительного разрешения. Сопоставьте поле имени пациента с вашим источником данных имени пациента, ID страховки с правильным столбцом и так далее.</p>
+<p><strong>Шаг 4: Протестируйте и доработайте.</strong>
+Проведите тест с известным пациентом. Проверьте каждое поле на точность. Скорректируйте сопоставления, если инструмент неправильно интерпретирует поле. Большинство инструментов учатся на исправлениях.</p>
+<p><strong>Шаг 5: Обучите свою команду.</strong>
+Покажите сотрудникам, как запускать автозаполнение и что нужно проверять вручную. Автоматизация не означает «настроил и забыл» — это означает «заполнить форму за 10 секунд вместо 3 минут, а затем проверить».</p>
+<hr>
+<h2>Распространённые ошибки при автоматизации медицинских форм</h2>
+<p>Я видел, как офисы пытались внедрить автоматизацию и сдавались, столкнувшись с одной из этих ловушек. Избегайте их:</p>
+<p><strong>Ошибка 1: Автоматизация всего сразу.</strong>
+Начните с одного типа форм — того, который вы заполняете чаще всего. Добейтесь его идеальной работы, прежде чем переходить к следующему. Попытка автоматизировать 20 форм одновременно приводит к путанице и ошибкам.</p>
+<p><strong>Ошибка 2: Игнорирование качества данных.</strong>
+Если адреса пациентов непоследовательны (где-то «ул.», где-то «улица»), ваше автозаполнение тоже будет непоследовательным. Потратьте час на очистку данных в первую очередь. Это окупится немедленно.</p>
+<p><strong>Ошибка 3: Нерегулярное обновление шаблонов.</strong>
+Страховые планы меняются. NPI-номера врачей меняются. Установите ежемесячное напоминание, чтобы пересматривать шаблоны автоматизации и обновлять устаревшую информацию.</p>
+<p><strong>Ошибка 4: Предположение, что инструмент делает всё.</strong>
+Ни одна автоматизация не является точной на 100%. Всегда проверяйте окончательную форму перед отправкой. Цель — сэкономить время на вводе данных, а не отказаться от проверки человеком.</p>
+<hr>
+<h2>Вопросы конфиденциальности при автоматизации медицинских форм</h2>
+<p>Медицинские данные чувствительны. Когда вы изучаете решения <strong>для автоматизации медицинского офиса</strong>, конфиденциальность должна быть вашим главным приоритетом.</p>
+<p>На что обратить внимание:</p>
+<ul>
+<li><strong>Локальное хранение данных.</strong> Инструмент должен хранить данные пациентов на вашем собственном компьютере, а не в облаке. Это обеспечивает соответствие HIPAA без лишней бумажной работы.</li>
+<li><strong>Отсутствие передачи данных.</strong> Инструмент автозаполнения никогда не должен отправлять ваши данные третьим лицам. Он просто считывает ваши локальные данные и вставляет их в поля формы.</li>
+<li><strong>Доступ только для чтения.</strong> Инструмент должен иметь возможность читать поля формы, но не изменять другие части веб-сайта или системы.</li>
+</ul>
+<p>Если вы работаете в крупной медицинской организации, проконсультируйтесь со своим IT-отделом перед установкой любого нового программного обеспечения. Большинство современных инструментов автозаполнения — это лёгкие расширения браузера, не требующие прав администратора, но лучше перепроверить.</p>
+<hr>
+<h2>За пределами демографии: автоматизация клинических полей</h2>
+<p>Большинство инструментов для заполнения медицинских форм хорошо справляются с демографическими данными пациентов. Но настоящая экономия времени происходит при автоматизации клинических полей — тех частей, где нужно вводить симптомы, диагнозы и историю болезни.</p>
+<p>Вы можете автоматизировать клинические поля:</p>
+<ul>
+<li>Создав библиотеку часто используемых фраз (например, «Пациент жалуется на боль в пояснице, иррадиирующую в левую ногу»)</li>
+<li>Используя макросы или текстовые расширители вместе с инструментом <strong>автозаполнения форм пациентов</strong></li>
+<li>Предварительно заполняя структурированные поля, такие как коды МКБ-10, из выпадающего списка</li>
+</ul>
+<p>Это особенно полезно для:</p>
+<ul>
+<li>Направлений</li>
+<li>Клинических сводок для предварительного разрешения</li>
+<li>Шаблонов заметок о ходе лечения</li>
+<li>Апелляционных писем по страховке</li>
+</ul>
+<p>Ключ в том, чтобы автоматизировать стандартные блоки и оставить место для индивидуальной настройки. Каждый пациент уникален — но способ описания распространённых состояний не нужно набирать каждый раз заново.</p>
+<hr>
+<h2>Измерение влияния автоматизации</h2>
+<p>После внедрения автоматизации медицинских форм отслеживайте результаты. Вот что нужно измерять:</p>
+<ul>
+<li><strong>Время на одну форму.</strong> До автоматизации засеките, сколько времени занимает заполнение конкретной формы. После автоматизации замерьте снова. Разница — ваша экономия.</li>
+<li><strong>Частота ошибок.</strong> Подсчитайте, сколько форм требует исправлений или повторной отправки. Автоматизация должна значительно снизить это число.</li>
+<li><strong>Удовлетворённость персонала.</strong> Спросите свою команду на ресепшене, чувствуют ли они меньший стресс. Снижение усталости от ввода данных — реальное преимущество.</li>
+</ul>
+<p>Большинство офисов видят сокращение времени заполнения форм на 60–70% в течение первой недели. Это часы в день, возвращённые для взаимодействия с пациентами или других задач.</p>
+<hr>
+<h2>Когда использовать специализированный инструмент для заполнения медицинских форм, а когда — общую автоматизацию</h2>
+<p>Вы можете задаться вопросом: разве я не могу просто использовать общий инструмент автозаполнения или менеджер паролей? Короткий ответ — нет: общие инструменты не понимают структуру медицинских форм.</p>
+<p>Специализированное <strong>расширение для автозаполнения в здравоохранении</strong> понимает:</p>
+<ul>
+<li>Медицинские метки полей (например, «Дата рождения пациента» vs. «Дата рождения»)</li>
+<li>Выпадающие меню для страховых планов</li>
+<li>Многопольные блоки адресов</li>
+<li>Клиническую терминологию</li>
+</ul>
+<p>Общие инструменты рассматривают каждое поле как универсальное текстовое поле. Они не могут отличить фамилию пациента от фамилии врача в одной и той же форме. Вот почему медицинские инструменты стоят вложений.</p>
+<p>Один из вариантов, который стоит оценить — <strong>MedAutoFill</strong>, расширение для Chrome, разработанное специально для медицинских форм. Оно обрабатывает демографические данные, страховку, данные врачей и клинические поля в нескольких системах — и хранит все данные локально для обеспечения конфиденциальности.</p>
+<hr>
+<h2>Начните завтра</h2>
+<p>Вам не нужен шестимесячный план внедрения. Вот что можно сделать на этой неделе:</p>
+<ol>
+<li><strong>Выберите одну форму.</strong> Выберите форму, которую ваш офис заполняет чаще всего.</li>
+<li><strong>Перечислите поля.</strong> Запишите каждое поле в этой форме.</li>
+<li><strong>Соберите данные.</strong> Объедините необходимую информацию в один документ или электронную таблицу.</li>
+<li><strong>Установите инструмент для заполнения медицинских форм.</strong> Настройте его для этой одной формы.</li>
+<li><strong>Протестируйте на 5 пациентах.</strong> Проверьте точность и внесите корректировки.</li>
+<li><strong>Обучите одного сотрудника.</strong> Пусть он использует его в течение дня.</li>
+<li><strong>Переходите к следующей форме.</strong></li>
+</ol>
+<p>Вот и всё. Начните с малого, докажите ценность, а затем масштабируйте.</p>
+<hr>
+<h2>Заключение</h2>
+<p>Освоение <strong>автоматизации заполнения медицинских форм</strong> — это не внедрение модных технологий. Это устранение препятствий в вашем ежедневном рабочем процессе, чтобы вы могли сосредоточиться на главном — уходе за пациентами, точном выставлении счетов и эффективной работе.</p>
+<p>Инструменты существуют уже сегодня. Рабочие процессы просты. Окупаемость инвестиций мгновенна.</p>
+<p>Если ваш офис готов попробовать специализированное решение, <strong>MedAutoFill</strong> создан специально для медицинских работников, которым нужно заполнять формы быстрее, не жертвуя конфиденциальностью или точностью. Он работает в системах EHR, страховых порталах и медицинском офисном ПО — и при этом хранит ваши данные на вашем компьютере.</p>
+<p><a href="https://donbrico.net/med-autofill">Посетите MedAutoFill на Donbrico</a>, чтобы узнать, подходит ли он для вашего рабочего процесса. Без давления — просто инструмент, который делает одну вещь хорошо: помогает вам заполнять формы быстрее.</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="../../../../js/i18n.js" defer></script>
+    <script src="../../../../js/chatwoot.js" defer></script>
+  </body>
+</html>

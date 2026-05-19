@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cómo Automatizar el Llenado de Formularios Médicos: Guía Práctica para Equipos de Salud | Donbrico Blog</title>
+    <meta name="description" content="Cada consultorio médico conoce la molestia: copiar el mismo nombre del paciente, fecha de nacimiento y número de seguro en formulario tras formulario. Lo escrib" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/blog/med-autofill/en/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/blog/med-autofill/es/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/blog/med-autofill/ja/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/blog/med-autofill/pt_BR/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/blog/med-autofill/fr/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/blog/med-autofill/de/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/blog/med-autofill/it/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/blog/med-autofill/zh_CN/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/blog/med-autofill/zh_TW/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/blog/med-autofill/hi/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/blog/med-autofill/ru/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/blog/med-autofill/ko/how-to-automate-medical-form-filling/" />
+    <meta property="og:title" content="Cómo Automatizar el Llenado de Formularios Médicos: Guía Práctica para Equipos de Salud | Donbrico Blog" />
+    <meta property="og:description" content="Cada consultorio médico conoce la molestia: copiar el mismo nombre del paciente, fecha de nacimiento y número de seguro en formulario tras formulario. Lo escrib" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/blog/med-autofill/es/how-to-automate-medical-form-filling/" />
+    <meta property="og:image" content="https://donbrico.net/blog/med-autofill/how-to-automate-medical-form-filling/hero.png" />
+    <link rel="stylesheet" href="../../../../css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../../../../assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/blog/med-autofill/es/how-to-automate-medical-form-filling/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+            </div>
+          </li>
+          <li><a href="/blog/" class="active" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        <a href="../../../../blog/" class="blog-back">← Volver al Blog</a>
+        <img src="hero.png" alt="Cómo Automatizar el Llenado de Formularios Médicos: Guía Práctica para Equipos de Salud" style="width:100%;max-height:420px;object-fit:cover;border-radius:8px;margin-bottom:var(--spacing-lg);" loading="lazy" />
+        <div class="blog-meta">
+          <span>📅 18 de mayo de 2026</span>
+          <span>🏷️ med-autofill</span>
+        </div>
+        <h1>Cómo Automatizar el Llenado de Formularios Médicos: Guía Práctica para Equipos de Salud</h1>
+<p>Cada consultorio médico conoce la molestia: copiar el mismo nombre del paciente, fecha de nacimiento y número de seguro en formulario tras formulario. Lo escribes en el EHR, luego en el portal de autorización previa, después en un formulario de referencia en papel. Es repetitivo, propenso a errores y consume tiempo que podría dedicarse a la atención al paciente.</p>
+<p>Aprender <strong>cómo automatizar el llenado de formularios médicos</strong> es uno de los cambios con mayor retorno de inversión que un consultorio médico puede implementar. No requiere una renovación completa del software ni un proyecto masivo de TI. Con las herramientas adecuadas y algunos ajustes en el flujo de trabajo, puedes reducir el tiempo de llenado de formularios entre un 50 y un 70 %.</p>
+<p>Esta guía cubre los pasos prácticos que cualquier profesional de la salud puede aplicar hoy mismo.</p>
+<hr>
+<h2>Por qué el llenado manual de formularios le está costando a tu consultorio</h2>
+<p>Analicemos los números. Un recepcionista típico completa entre 20 y 40 formularios de pacientes al día. Cada formulario toma de 3 a 5 minutos solo para los datos demográficos. Eso es de 1 a 3 horas al día dedicadas a la entrada de datos que debería ser automática.</p>
+<p>El costo real no es solo el tiempo, sino la precisión. Cuando escribes manualmente, invitas a los errores:</p>
+<ul>
+<li>Dígitos transpuestos en los números de identificación del seguro</li>
+<li>Nombres de pacientes mal escritos</li>
+<li>Fecha de nacimiento incorrecta en un formulario de reclamo</li>
+<li>Números NPI de proveedores faltantes</li>
+</ul>
+<p>Cada error genera una cascada descendente: reclamos denegados, autorizaciones previas retrasadas, pacientes frustrados y llamadas telefónicas adicionales para corregir los errores.</p>
+<p>La automatización de formularios médicos aborda directamente estos puntos críticos. No reemplaza el juicio humano: elimina la parte mecánica y repetitiva de la entrada de datos para que puedas concentrarte en las excepciones y el trabajo cara a cara con el paciente.</p>
+<hr>
+<h2>Lo que necesitas para automatizar el llenado de formularios médicos</h2>
+<p>Antes de elegir una solución, comprende cómo es un buen flujo de trabajo automatizado. El objetivo es llenar formularios con datos que ya tienes, sin tener que volver a escribirlos.</p>
+<p>Esto es lo que necesitas:</p>
+<h3>1. Una fuente de datos central</h3>
+<p>Los datos demográficos del paciente, los detalles del seguro y la información del proveedor deben estar en un lugar accesible. Esto podría ser:</p>
+<ul>
+<li>Tu sistema de gestión de consultorio</li>
+<li>Una hoja de cálculo segura (para consultorios más pequeños)</li>
+<li>Un portal dedicado de admisión de pacientes</li>
+</ul>
+<p>Los datos no necesitan ser perfectos, pero deben estar organizados. Limpia primero tus campos más comunes: nombre del paciente, fecha de nacimiento, dirección, aseguradora e ID, nombre del médico de cabecera y NPI.</p>
+<h3>2. Una forma de insertar esos datos en los formularios</h3>
+<p>Aquí es donde entra en juego una herramienta de <strong>relleno de formularios médicos</strong>. Las mejores soluciones funcionan como extensiones de navegador que reconocen los campos del formulario y los completan automáticamente. No requieren integración con tu EHR ni APIs especiales.</p>
+<p>Busca una herramienta que:</p>
+<ul>
+<li>Funcione en múltiples sitios web y portales (no solo en un EHR)</li>
+<li>Mantenga los datos locales (enfoque centrado en la privacidad)</li>
+<li>Te permita personalizar qué campos se asignan a qué datos</li>
+<li>Admita tanto campos de texto como menús desplegables</li>
+</ul>
+<h3>3. Plantillas para formularios repetidos</h3>
+<p>Si tu consultorio llena el mismo formulario de referencia o solicitud de autorización previa repetidamente, crea una plantilla. Almacena los campos comunes (dirección del consultorio, códigos de diagnóstico frecuentes, detalles de proveedores de uso habitual) para que solo tengas que completar la información específica del paciente cada vez.</p>
+<hr>
+<h2>Paso a paso: Automatizando tu primer tipo de formulario</h2>
+<p>Veamos un ejemplo real. Supongamos que procesas solicitudes de autorización previa para estudios de imagen. Cada solicitud requiere:</p>
+<ul>
+<li>Datos demográficos del paciente</li>
+<li>Información del seguro</li>
+<li>Detalles del médico remitente</li>
+<li>Indicaciones clínicas</li>
+</ul>
+<p>Así es como puedes automatizar esto:</p>
+<p><strong>Paso 1: Identifica los campos del formulario.</strong>
+Abre el portal de autorización previa y anota cada campo. Agrupa los campos en categorías: información del paciente, del seguro, del proveedor y clínica.</p>
+<p><strong>Paso 2: Prepara tus datos.</strong>
+Crea un documento de referencia simple con la información estándar de tu consultorio: tu NPI, ID fiscal, dirección del consultorio y códigos CIE-10 comunes. Para los datos del paciente, extráelos de tu sistema de programación de citas.</p>
+<p><strong>Paso 3: Usa una extensión de autocompletado para el sector salud.</strong>
+Instala una herramienta de <strong>relleno de formularios EHR</strong>. Configúrala para que reconozca los campos en tu portal de autorización previa. Asigna el campo del nombre del paciente a tu fuente de datos del nombre del paciente, el ID del seguro a la columna correcta, y así sucesivamente.</p>
+<p><strong>Paso 4: Prueba y refina.</strong>
+Realiza una prueba con un paciente conocido. Verifica la precisión de cada campo. Ajusta las asignaciones si la herramienta malinterpreta algún campo. La mayoría de las herramientas aprenden de las correcciones.</p>
+<p><strong>Paso 5: Capacita a tu equipo.</strong>
+Muéstrale a tu personal cómo activar el autocompletado y qué deben verificar manualmente. La automatización no significa &quot;configurar y olvidar&quot;, sino &quot;llenar el formulario en 10 segundos en lugar de 3 minutos, y luego verificar&quot;.</p>
+<hr>
+<h2>Errores comunes al automatizar formularios médicos</h2>
+<p>He visto consultorios intentar la automatización y rendirse por caer en estos errores. Evítalos:</p>
+<p><strong>Error 1: Automatizar todo a la vez.</strong>
+Comienza con un tipo de formulario: el que llenas con más frecuencia. Haz que funcione perfectamente antes de pasar al siguiente. Intentar automatizar 20 formularios simultáneamente genera confusión y errores.</p>
+<p><strong>Error 2: Ignorar la calidad de los datos.</strong>
+Si las direcciones de tus pacientes son inconsistentes (a veces &quot;Calle&quot;, a veces &quot;C.&quot;), tu autocompletado también será inconsistente. Dedica una hora a limpiar tus datos primero. Vale la pena de inmediato.</p>
+<p><strong>Error 3: No actualizar las plantillas con regularidad.</strong>
+Los planes de seguro cambian. Los números NPI de los proveedores cambian. Establece un recordatorio mensual para revisar tus plantillas de automatización y actualizar cualquier información desactualizada.</p>
+<p><strong>Error 4: Asumir que la herramienta lo hace todo.</strong>
+Ninguna automatización es 100 % precisa. Siempre verifica el formulario final antes de enviarlo. El objetivo es ahorrar tiempo en la entrada de datos, no eliminar la revisión humana.</p>
+<hr>
+<h2>Consideraciones de privacidad para la automatización de formularios médicos</h2>
+<p>Los datos de salud son sensibles. Cuando explores soluciones de <strong>automatización para consultorios médicos</strong>, la privacidad debe ser tu máxima prioridad.</p>
+<p>Esto es lo que debes buscar:</p>
+<ul>
+<li><strong>Almacenamiento local de datos.</strong> La herramienta debe almacenar los datos del paciente en tu propio ordenador, no en un servidor en la nube. Esto te mantiene en cumplimiento con HIPAA sin papeleo adicional.</li>
+<li><strong>Sin transmisión de datos.</strong> La herramienta de autocompletado nunca debe enviar tus datos a un tercero. Simplemente lee tus datos locales y los inserta en los campos del formulario.</li>
+<li><strong>Acceso de solo lectura.</strong> La herramienta debe poder leer los campos del formulario, pero no modificar otras partes del sitio web o sistema.</li>
+</ul>
+<p>Si estás en una organización de salud grande, consulta con tu departamento de TI antes de instalar cualquier software nuevo. La mayoría de las herramientas modernas de autocompletado son extensiones de navegador ligeras que no requieren privilegios de administrador, pero siempre es mejor verificarlo.</p>
+<hr>
+<h2>Más allá de los datos demográficos: Automatizando campos clínicos</h2>
+<p>La mayoría de los rellenadores de formularios médicos manejan bien los datos demográficos del paciente. Pero el verdadero ahorro de tiempo proviene de automatizar los campos clínicos: las partes que requieren escribir síntomas, diagnósticos e historial médico.</p>
+<p>Puedes automatizar los campos clínicos:</p>
+<ul>
+<li>Creando una biblioteca de frases comunes (ej.: &quot;El paciente se presenta con dolor lumbar que irradia a la pierna izquierda&quot;)</li>
+<li>Usando macros o expansores de texto junto con tu herramienta de <strong>autocompletado de formularios para pacientes</strong></li>
+<li>Precargando campos estructurados como códigos CIE-10 desde una lista desplegable</li>
+</ul>
+<p>Esto es especialmente útil para:</p>
+<ul>
+<li>Cartas de derivación</li>
+<li>Resúmenes clínicos para autorizaciones previas</li>
+<li>Plantillas de notas de evolución</li>
+<li>Cartas de apelación al seguro</li>
+</ul>
+<p>La clave es automatizar el texto estándar y dejar espacio para la personalización. Cada paciente es único, pero la forma en que describes las enfermedades comunes no necesita ser escrita de nuevo cada vez.</p>
+<hr>
+<h2>Midiendo el impacto de la automatización</h2>
+<p>Una vez que implementes la automatización de formularios médicos, haz un seguimiento de los resultados. Esto es lo que debes medir:</p>
+<ul>
+<li><strong>Tiempo por formulario.</strong> Antes de la automatización, cronometra cuánto tiempo se tarda en llenar un formulario específico. Después de la automatización, vuelve a cronometrarlo. La diferencia es tu ahorro.</li>
+<li><strong>Tasa de errores.</strong> Cuenta cuántos formularios necesitan correcciones o reenvíos. La automatización debería reducir significativamente este número.</li>
+<li><strong>Satisfacción del personal.</strong> Pregunta a tu equipo de recepción si se sienten menos estresados. La reducción de la fatiga por entrada de datos es un beneficio real.</li>
+</ul>
+<p>La mayoría de los consultorios ven una reducción del 60-70 % en el tiempo de llenado de formularios durante la primera semana. Eso son horas al día que se devuelven a la interacción con el paciente u otras tareas.</p>
+<hr>
+<h2>Cuándo usar un rellenador de formularios médicos dedicado vs. automatización general</h2>
+<p>Quizás te preguntes: ¿no puedo usar simplemente una herramienta de autocompletado general o un gestor de contraseñas? La respuesta corta es no: las herramientas generales no entienden las estructuras de los formularios médicos.</p>
+<p>Una <strong>extensión de autocompletado para el sector salud</strong> diseñada específicamente entiende:</p>
+<ul>
+<li>Etiquetas de campos médicos (ej.: &quot;Fecha de nacimiento del paciente&quot; vs. &quot;DOB&quot;)</li>
+<li>Menús desplegables para planes de seguro</li>
+<li>Bloques de direcciones con múltiples campos</li>
+<li>Terminología clínica</li>
+</ul>
+<p>Las herramientas generales tratan cada campo como un cuadro de texto genérico. No pueden distinguir entre el apellido de un paciente y el apellido de un proveedor en el mismo formulario. Por eso, las herramientas específicas para el ámbito médico valen la inversión.</p>
+<p>Una opción que vale la pena evaluar es <strong>MedAutoFill</strong>, una extensión de Chrome diseñada específicamente para formularios de salud. Maneja datos demográficos, seguros, detalles del proveedor y campos clínicos en múltiples sistemas, y mantiene todos los datos locales para garantizar la privacidad.</p>
+<hr>
+<h2>Cómo empezar mañana</h2>
+<p>No necesitas un plan de implementación de seis meses. Esto es lo que puedes hacer esta semana:</p>
+<ol>
+<li><strong>Elige un formulario.</strong> Selecciona el formulario que tu consultorio llena con más frecuencia.</li>
+<li><strong>Enumera los campos.</strong> Escribe todos los campos de ese formulario.</li>
+<li><strong>Reúne los datos.</strong> Extrae la información que necesitarás en un solo documento u hoja de cálculo.</li>
+<li><strong>Instala un rellenador de formularios médicos.</strong> Configúralo para ese formulario.</li>
+<li><strong>Prueba con 5 pacientes.</strong> Verifica la precisión y haz ajustes.</li>
+<li><strong>Capacita a un miembro del personal.</strong> Haz que lo use durante un día.</li>
+<li><strong>Expande al siguiente formulario.</strong></li>
+</ol>
+<p>Eso es todo. Empieza poco a poco, demuestra el valor y luego escala.</p>
+<hr>
+<h2>Conclusión</h2>
+<p>Aprender <strong>cómo automatizar el llenado de formularios médicos</strong> no se trata de adoptar tecnología llamativa. Se trata de eliminar la fricción de tu flujo de trabajo diario para que puedas concentrarte en lo que importa: la atención al paciente, la facturación precisa y las operaciones eficientes.</p>
+<p>Las herramientas existen hoy. Los flujos de trabajo son sencillos. El retorno de la inversión es inmediato.</p>
+<p>Si tu consultorio está listo para probar una solución dedicada, <strong>MedAutoFill</strong> está creado específicamente para profesionales de la salud que necesitan llenar formularios más rápido sin comprometer la privacidad ni la precisión. Funciona en sistemas EHR, portales de seguros y software de consultorios médicos, todo mientras mantiene tus datos en tu máquina.</p>
+<p><a href="https://donbrico.net/med-autofill">Visita MedAutoFill en Donbrico</a> para ver si se adapta a tu flujo de trabajo. Sin presiones, solo una herramienta que hace bien una cosa: ayudarte a completar formularios más rápido.</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="../../../../js/i18n.js" defer></script>
+    <script src="../../../../js/chatwoot.js" defer></script>
+  </body>
+</html>

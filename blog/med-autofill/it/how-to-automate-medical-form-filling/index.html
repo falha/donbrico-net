@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Come Automatizzare la Compilazione di Moduli Medici: Guida Pratica per Team Sanitari | Donbrico Blog</title>
+    <meta name="description" content="Ogni studio medico conosce il problema: riscrivere lo stesso nome del paziente, data di nascita e codice assicurativo in modulo dopo modulo. Lo digiti nell'EHR," />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/blog/med-autofill/en/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/blog/med-autofill/es/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/blog/med-autofill/ja/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/blog/med-autofill/pt_BR/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/blog/med-autofill/fr/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/blog/med-autofill/de/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/blog/med-autofill/it/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/blog/med-autofill/zh_CN/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/blog/med-autofill/zh_TW/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/blog/med-autofill/hi/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/blog/med-autofill/ru/how-to-automate-medical-form-filling/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/blog/med-autofill/ko/how-to-automate-medical-form-filling/" />
+    <meta property="og:title" content="Come Automatizzare la Compilazione di Moduli Medici: Guida Pratica per Team Sanitari | Donbrico Blog" />
+    <meta property="og:description" content="Ogni studio medico conosce il problema: riscrivere lo stesso nome del paziente, data di nascita e codice assicurativo in modulo dopo modulo. Lo digiti nell'EHR," />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/blog/med-autofill/it/how-to-automate-medical-form-filling/" />
+    <meta property="og:image" content="https://donbrico.net/blog/med-autofill/how-to-automate-medical-form-filling/hero.png" />
+    <link rel="stylesheet" href="../../../../css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../../../../assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/blog/med-autofill/it/how-to-automate-medical-form-filling/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+            </div>
+          </li>
+          <li><a href="/blog/" class="active" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        <a href="../../../../blog/" class="blog-back">← Torna al Blog</a>
+        <img src="hero.png" alt="Come Automatizzare la Compilazione di Moduli Medici: Guida Pratica per Team Sanitari" style="width:100%;max-height:420px;object-fit:cover;border-radius:8px;margin-bottom:var(--spacing-lg);" loading="lazy" />
+        <div class="blog-meta">
+          <span>📅 18 maggio 2026</span>
+          <span>🏷️ med-autofill</span>
+        </div>
+        <h1>Come Automatizzare la Compilazione di Moduli Medici: Guida Pratica per Team Sanitari</h1>
+<p>Ogni studio medico conosce il problema: riscrivere lo stesso nome del paziente, data di nascita e codice assicurativo in modulo dopo modulo. Lo digiti nell&#39;EHR, poi nel portale per l&#39;autorizzazione preventiva, poi su un modulo cartaceo di referral. È ripetitivo, soggetto a errori e consuma tempo che potrebbe essere dedicato alla cura del paziente.</p>
+<p>Imparare <strong>come automatizzare la compilazione di moduli medici</strong> è uno dei cambiamenti a più alto ROI che uno studio medico possa fare. Non richiede una revisione completa del software o un enorme progetto IT. Con gli strumenti giusti e qualche piccolo aggiustamento nel flusso di lavoro, puoi ridurre i tempi di compilazione del 50-70%.</p>
+<p>Questa guida copre i passaggi pratici che qualsiasi professionista sanitario può adottare oggi.</p>
+<hr>
+<h2>Perché la Compilazione Manuale dei Moduli Costa al Tuo Studio</h2>
+<p>Diamo un&#39;occhiata ai numeri. Un tipico impiegato alla reception compila 20-40 moduli paziente al giorno. Ogni modulo richiede 3-5 minuti solo per i dati demografici. Sono 1-3 ore al giorno spese in inserimento dati che sembra dovrebbe essere automatico.</p>
+<p>Il costo reale non è solo il tempo — è la precisione. Quando digiti manualmente, inviti errori:</p>
+<ul>
+<li>Cifre invertite nei codici identificativi assicurativi</li>
+<li>Nomi di pazienti scritti male</li>
+<li>Data di nascita sbagliata su un modulo di richiesta</li>
+<li>Numeri NPI del medico mancanti</li>
+</ul>
+<p>Ogni errore crea una cascata a valle: richieste respinte, autorizzazioni preventive ritardate, pazienti frustrati e telefonate extra per correggere gli errori.</p>
+<p>L&#39;automazione dei moduli medici affronta direttamente questi punti critici. Non sostituisce il giudizio umano — rimuove la parte meccanica e ripetitiva dell&#39;inserimento dati così puoi concentrarti sulle eccezioni e sul lavoro a contatto con il paziente.</p>
+<hr>
+<h2>Cosa Serve per Automatizzare la Compilazione di Moduli Medici</h2>
+<p>Prima di scegliere una soluzione, comprendi come dovrebbe essere un buon flusso di lavoro automatizzato. L&#39;obiettivo è compilare i moduli con i dati che già possiedi, senza riscriverli.</p>
+<p>Ecco cosa ti serve:</p>
+<h3>1. Una Fonte di Dati Centrale</h3>
+<p>I dati demografici dei pazienti, i dettagli assicurativi e le informazioni del medico devono risiedere in un posto accessibile. Potrebbe essere:</p>
+<ul>
+<li>Il tuo sistema di gestione dello studio</li>
+<li>Un foglio di calcolo sicuro (per studi più piccoli)</li>
+<li>Un portale dedicato all&#39;accoglienza pazienti</li>
+</ul>
+<p>I dati non devono essere perfetti — ma devono essere organizzati. Pulisci prima i campi più comuni: nome paziente, data di nascita, indirizzo, compagnia assicurativa e codice, nome e NPI del medico di base.</p>
+<h3>2. Un Modo per Inserire Quei Dati nei Moduli</h3>
+<p>Qui entra in gioco uno strumento di <strong>compilazione automatica di moduli medici</strong>. Le soluzioni migliori funzionano come estensioni del browser che riconoscono i campi dei moduli e li popolano automaticamente. Non richiedono integrazione con il tuo EHR o API speciali.</p>
+<p>Cerca uno strumento che:</p>
+<ul>
+<li>Funzioni su più siti web e portali (non solo un EHR)</li>
+<li>Mantenga i dati in locale (approccio privacy-first)</li>
+<li>Ti permetta di personalizzare quali campi mappare a quali dati</li>
+<li>Supporti sia campi di testo che menu a tendina</li>
+</ul>
+<h3>3. Template per Moduli Ripetuti</h3>
+<p>Se il tuo studio compila ripetutamente lo stesso modulo di referral o richiesta di autorizzazione preventiva, crea un template. Salva i campi comuni — l&#39;indirizzo dello studio, i codici diagnosi più frequenti, i dettagli dei medici usati spesso — così da inserire solo le informazioni specifiche del paziente ogni volta.</p>
+<hr>
+<h2>Passo dopo Passo: Automatizzare il Tuo Primo Tipo di Modulo</h2>
+<p>Vediamo un esempio reale. Supponiamo che tu gestisca richieste di autorizzazione preventiva per esami di imaging. Ogni richiesta richiede:</p>
+<ul>
+<li>Dati demografici del paziente</li>
+<li>Informazioni assicurative</li>
+<li>Dettagli del medico prescrittore</li>
+<li>Indicazioni cliniche</li>
+</ul>
+<p>Ecco come automatizzare:</p>
+<p><strong>Passo 1: Identifica i campi del modulo.</strong>
+Apri il portale per l&#39;autorizzazione preventiva e annota ogni campo. Raggruppali in categorie: info paziente, info assicurative, info medico, info cliniche.</p>
+<p><strong>Passo 2: Prepara i tuoi dati.</strong>
+Crea un semplice documento di riferimento con le informazioni standard del tuo studio — il tuo NPI, codice fiscale, indirizzo dello studio, codici ICD-10 comuni. Per i dati del paziente, attingi dal tuo sistema di pianificazione.</p>
+<p><strong>Passo 3: Usa un&#39;estensione di autocompilazione sanitaria.</strong>
+Installa uno strumento di <strong>compilazione automatica EHR</strong>. Configuralo per riconoscere i campi nel tuo portale di autorizzazione preventiva. Mappa il campo nome paziente alla tua fonte dati del nome paziente, il codice assicurativo alla colonna corretta, e così via.</p>
+<p><strong>Passo 4: Testa e perfeziona.</strong>
+Esegui un test con un paziente noto. Controlla ogni campo per precisione. Regola le mappature se lo strumento interpreta male un campo. La maggior parte degli strumenti impara dalle correzioni.</p>
+<p><strong>Passo 5: Forma il tuo team.</strong>
+Mostra al tuo personale come attivare l&#39;autocompilazione e cosa controllare manualmente. L&#39;automazione non significa &quot;imposta e dimentica&quot; — significa &quot;compila il modulo in 10 secondi invece di 3 minuti, poi verifica&quot;.</p>
+<hr>
+<h2>Errori Comuni nell&#39;Automatizzare i Moduli Medici</h2>
+<p>Ho visto studi provare l&#39;automazione e arrendersi perché hanno incontrato uno di questi ostacoli. Evitali:</p>
+<p><strong>Errore 1: Automatizzare tutto in una volta.</strong>
+Inizia con un tipo di modulo — quello che compili più spesso. Fallo funzionare perfettamente prima di passare al successivo. Tentare di automatizzare 20 moduli contemporaneamente porta a confusione ed errori.</p>
+<p><strong>Errore 2: Ignorare la qualità dei dati.</strong>
+Se gli indirizzi dei pazienti sono incoerenti (a volte &quot;Via&quot;, a volte &quot;V.&quot;), anche la tua autocompilazione sarà incoerente. Dedica un&#39;ora a pulire prima i tuoi dati. Ne vale subito la pena.</p>
+<p><strong>Errore 3: Non aggiornare i template regolarmente.</strong>
+I piani assicurativi cambiano. I numeri NPI dei medici cambiano. Imposta un promemoria mensile per rivedere i tuoi template di automazione e aggiornare eventuali informazioni obsolete.</p>
+<p><strong>Errore 4: Presumere che lo strumento gestisca tutto.</strong>
+Nessuna automazione è accurata al 100%. Verifica sempre il modulo finale prima di inviarlo. L&#39;obiettivo è risparmiare tempo nell&#39;inserimento dati, non eliminare la revisione umana.</p>
+<hr>
+<h2>Considerazioni sulla Privacy per l&#39;Automazione dei Moduli Medici</h2>
+<p>I dati sanitari sono sensibili. Quando esplori soluzioni di <strong>automazione per studi medici</strong>, la privacy dovrebbe essere la tua priorità assoluta.</p>
+<p>Ecco cosa cercare:</p>
+<ul>
+<li><strong>Archiviazione locale dei dati.</strong> Lo strumento dovrebbe memorizzare i dati dei pazienti sul tuo computer, non su un server cloud. Questo ti mantiene conforme all&#39;HIPAA senza pratiche burocratiche extra.</li>
+<li><strong>Nessuna trasmissione di dati.</strong> Lo strumento di autocompilazione non dovrebbe mai inviare i tuoi dati a terze parti. Si limita a leggere i tuoi dati locali e inserirli nei campi del modulo.</li>
+<li><strong>Accesso in sola lettura.</strong> Lo strumento dovrebbe essere in grado di leggere i campi del modulo ma non modificare altre parti del sito web o del sistema.</li>
+</ul>
+<p>Se lavori in una grande organizzazione sanitaria, verifica con il tuo reparto IT prima di installare qualsiasi nuovo software. La maggior parte degli strumenti di autocompilazione moderni sono estensioni leggere del browser che non richiedono privilegi di amministratore, ma è sempre meglio verificare.</p>
+<hr>
+<h2>Oltre i Dati Demografici: Automatizzare i Campi Clinici</h2>
+<p>La maggior parte dei compilatori di moduli medici gestisce bene i dati demografici. Ma il vero risparmio di tempo arriva dall&#39;automatizzare i campi clinici — le parti che richiedono di digitare sintomi, diagnosi e storia medica.</p>
+<p>Puoi automatizzare i campi clinici:</p>
+<ul>
+<li>Creando una libreria di frasi comuni (es. &quot;Il paziente si presenta con dolore lombare irradiato alla gamba sinistra&quot;)</li>
+<li>Usando macro o espansori di testo insieme al tuo strumento di <strong>autocompilazione moduli paziente</strong></li>
+<li>Precompilando campi strutturati come i codici ICD-10 da un menu a tendina</li>
+</ul>
+<p>Questo è particolarmente utile per:</p>
+<ul>
+<li>Lettere di referral</li>
+<li>Riepiloghi clinici per autorizzazioni preventive</li>
+<li>Template di note di progresso</li>
+<li>Lettere di appello assicurative</li>
+</ul>
+<p>La chiave è automatizzare la parte standardizzata e lasciare spazio alla personalizzazione. Ogni paziente è unico — ma il modo in cui descrivi le condizioni comuni non deve essere riscritto ogni volta.</p>
+<hr>
+<h2>Misurare l&#39;Impatto dell&#39;Automazione</h2>
+<p>Una volta implementata l&#39;automazione dei moduli medici, monitora i risultati. Ecco cosa misurare:</p>
+<ul>
+<li><strong>Tempo per modulo.</strong> Prima dell&#39;automazione, cronometra quanto tempo ci vuole per compilare un modulo specifico. Dopo l&#39;automazione, cronometra di nuovo. La differenza è il tuo risparmio.</li>
+<li><strong>Tasso di errore.</strong> Conta quanti moduli necessitano di correzioni o reinvii. L&#39;automazione dovrebbe ridurre significativamente questo numero.</li>
+<li><strong>Soddisfazione del personale.</strong> Chiedi al tuo team alla reception se si sente meno stressato. La riduzione dell&#39;affaticamento da inserimento dati è un vero vantaggio.</li>
+</ul>
+<p>La maggior parte degli studi vede una riduzione del 60-70% del tempo di compilazione entro la prima settimana. Sono ore al giorno restituite all&#39;interazione con i pazienti o ad altre attività.</p>
+<hr>
+<h2>Quando Usare un Compilatore di Moduli Medici Dedicato vs. Automazione Generale</h2>
+<p>Potresti chiederti: non posso semplicemente usare uno strumento di autocompilazione generale o un gestore di password? La risposta breve è no — gli strumenti generali non comprendono le strutture dei moduli medici.</p>
+<p>Un&#39;estensione di <strong>autocompilazione sanitaria</strong> appositamente progettata comprende:</p>
+<ul>
+<li>Etichette dei campi medici (es. &quot;Data di nascita paziente&quot; vs. &quot;Data di Nascita&quot;)</li>
+<li>Menu a tendina per i piani assicurativi</li>
+<li>Blocchi di indirizzi multi-campo</li>
+<li>Terminologia clinica</li>
+</ul>
+<p>Gli strumenti generali trattano ogni campo come una casella di testo generica. Non riescono a distinguere tra il cognome di un paziente e il cognome di un medico nello stesso modulo. Ecco perché gli strumenti specifici per il settore medico valgono l&#39;investimento.</p>
+<p>Un&#39;opzione da valutare è <strong>MedAutoFill</strong>, un&#39;estensione per Chrome progettata specificamente per moduli sanitari. Gestisce dati demografici, assicurativi, dettagli del medico e campi clinici attraverso più sistemi — e mantiene tutti i dati in locale per la privacy.</p>
+<hr>
+<h2>Iniziare Domani</h2>
+<p>Non hai bisogno di un piano di implementazione di sei mesi. Ecco cosa fare questa settimana:</p>
+<ol>
+<li><strong>Scegli un modulo.</strong> Seleziona il modulo che il tuo studio compila più frequentemente.</li>
+<li><strong>Elenca i campi.</strong> Scrivi ogni campo di quel modulo.</li>
+<li><strong>Raccogli i dati.</strong> Preleva le informazioni necessarie in un unico documento o foglio di calcolo.</li>
+<li><strong>Installa un compilatore di moduli medici.</strong> Configuralo per quel singolo modulo.</li>
+<li><strong>Testa con 5 pazienti.</strong> Verifica la precisione e apporta modifiche.</li>
+<li><strong>Forma un membro del personale.</strong> Fallo usare per un giorno.</li>
+<li><strong>Passa al modulo successivo.</strong></li>
+</ol>
+<p>Tutto qui. Inizia in piccolo, dimostra il valore, poi amplia.</p>
+<hr>
+<h2>Conclusione</h2>
+<p>Imparare <strong>come automatizzare la compilazione di moduli medici</strong> non significa adottare tecnologia appariscente. Significa rimuovere attriti dal tuo flusso di lavoro quotidiano così da poterti concentrare su ciò che conta — la cura del paziente, la fatturazione accurata e le operazioni efficienti.</p>
+<p>Gli strumenti esistono oggi. I flussi di lavoro sono semplici. Il ROI è immediato.</p>
+<p>Se il tuo studio è pronto a provare una soluzione dedicata, <strong>MedAutoFill</strong> è costruito specificamente per i professionisti sanitari che devono compilare moduli più velocemente senza compromettere privacy o precisione. Funziona su sistemi EHR, portali assicurativi e software per studi medici — tutto mantenendo i tuoi dati sulla tua macchina.</p>
+<p><a href="https://donbrico.net/med-autofill">Visita MedAutoFill su Donbrico</a> per vedere se si adatta al tuo flusso di lavoro. Nessuna pressione — solo uno strumento che fa bene una cosa: aiutarti a compilare i moduli più velocemente.</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="../../../../js/i18n.js" defer></script>
+    <script src="../../../../js/chatwoot.js" defer></script>
+  </body>
+</html>
