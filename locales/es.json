@@ -55,7 +55,8 @@
     "byRole": "Por rol",
     "extensionsHostReply": "HostRespuesta AI",
     "blog": "Blog",
-    "extensionsTradeDesk": "IA de TradeDesk"
+    "extensionsTradeDesk": "IA de TradeDesk",
+    "extensionsSellerDesk": "SellerDesk AI"
   },
   "home": {
     "page": {
@@ -533,7 +534,8 @@
       "workDesk": "Escritorio de trabajo",
       "hostReplyAi": "HostRespuesta AI",
       "medAutoFillAi": "MedAutoFill IA",
-      "tradeDesk": "IA de TradeDesk"
+      "tradeDesk": "IA de TradeDesk",
+      "sellerDesk": "SellerDesk AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Asistente de respuesta de IA de Donbrico",
@@ -648,6 +650,29 @@
       "dataDeletion": {
         "sectionTitle": "Eliminación de datos",
         "paragraph": "La desinstalación de la extensión elimina todos los detalles y configuraciones comerciales almacenados localmente. "
+      }
+    },
+    "sellerDesk": {
+      "sectionTitle": "SellerDesk AI",
+      "whatWeCollect": {
+        "sectionTitle": "Qué datos recopilamos",
+        "paragraph": "Ninguno. Los perfiles de su tienda, las respuestas guardadas y la configuración se almacenan localmente en el almacenamiento de Chrome en su dispositivo. No se transmiten datos a los servidores de Donbrico."
+      },
+      "howStored": {
+        "sectionTitle": "Cómo se almacenan sus datos",
+        "paragraph": "Los perfiles y las plantillas de la tienda se almacenan en el almacenamiento local de Chrome. Estos datos nunca salen de su dispositivo a menos que use un proveedor de IA de terceros."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Proveedores de IA de terceros (Traiga su propia clave)",
+        "paragraph": "Si configura un proveedor de Traiga su propia clave, como OpenAI, el mensaje del comprador y los detalles del perfil de su tienda se envían a ese proveedor externo para generar una respuesta. Si usa Gemini Nano, todo el procesamiento se realiza en el dispositivo. Donbrico no almacena ni registra ninguna solicitud de IA."
+      },
+      "permissions": {
+        "sectionTitle": "Permisos utilizados",
+        "paragraph": "almacenamiento (para perfiles de tienda y configuración), activeTab (para detectar campos de texto), scripting (para inyectar la barra de herramientas de respuesta)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Eliminación de datos",
+        "paragraph": "Desinstalar la extensión elimina todos los detalles de la tienda y la configuración almacenados localmente. No se retienen datos en los servidores de Donbrico."
       }
     }
   },
@@ -3172,6 +3197,114 @@
         "question": "¿Cómo funciona 'Trae tu propia llave' (BYOK)?",
         "answer": "Puede conectar su propia clave API de OpenAI, Anthropic, Groq u OpenRouter en la configuración. "
       }
+    }
+  },
+  "sellerDesk": {
+    "page": {
+      "title": "Asistente de respuestas con IA para vendedores online — Respuestas más rápidas",
+      "description": "Respuestas a mensajes de compradores con IA para Etsy, eBay, Facebook Marketplace, Shopify y más. Extensión de Chrome gratuita."
+    },
+    "hero": {
+      "eyebrow": "EXTENSIÓN DE CHROME",
+      "title": "Responde mensajes de compradores en segundos.",
+      "subtitle": "SellerDesk AI ayuda a los vendedores online a responder preguntas más rápido con IA, generando respuestas profesionales y personales directamente en tu navegador.",
+      "buttonPrimary": "Añadir a Chrome — Gratis",
+      "buttonSecondary": "Ver cómo funciona ↓",
+      "disclaimer": "🔒 Funciona en tu dispositivo — tus conversaciones con los compradores se mantienen locales"
+    },
+    "howItWorks": {
+      "sectionTitle": "Cómo funciona",
+      "step1": {
+        "title": "1. Guarda las políticas de la tienda",
+        "description": "Almacena los detalles de tu tienda, políticas de devolución y respuestas frecuentes una sola vez en tu perfil de vendedor."
+      },
+      "step2": {
+        "title": "2. Abre los mensajes de los compradores",
+        "description": "Funciona directamente dentro de Etsy, eBay, Facebook Marketplace, Shopify y tu bandeja de entrada de correo electrónico."
+      },
+      "step3": {
+        "title": "3. La IA redacta la respuesta",
+        "description": "SellerDesk lee la pregunta del comprador y las políticas de tu tienda para redactar una respuesta profesional al instante."
+      }
+    },
+    "features": {
+      "sectionTitle": "Características",
+      "feature1": {
+        "title": "Funciona donde vendes",
+        "description": "Compatible con Etsy, eBay, Facebook Marketplace, Shopify, Mercari, Poshmark, Gmail, Outlook y Yahoo Mail."
+      },
+      "feature2": {
+        "title": "Ahorra tiempo en preguntas repetitivas",
+        "description": "Reutiliza respuestas guardadas para envíos, ofertas, devoluciones, disponibilidad, recogida, paquetes y más."
+      },
+      "feature3": {
+        "title": "Mantén un tono consistente",
+        "description": "Elige cómo quieres sonar: amigable, profesional, servicial o firme."
+      },
+      "feature4": {
+        "title": "Diseño centrado en la privacidad",
+        "description": "Ningún servidor de SellerDesk procesa tus conversaciones. Soporta IA en el dispositivo con Gemini Nano y proveedores de IA opcionales BYOK."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Precios simples. Sin comisiones ocultas.",
+      "free": {
+        "title": "Gratis",
+        "price": "$0",
+        "features": {
+          "f1": "5 respuestas de IA por día",
+          "f2": "5 respuestas/plantillas guardadas",
+          "f3": "1 perfil de vendedor",
+          "f4": "Funciona en todas las plataformas compatibles",
+          "f5": "No requiere cuenta",
+          "f6": "IA en el dispositivo de Chrome"
+        },
+        "button": "Añadir a Chrome"
+      },
+      "proMonthly": {
+        "title": "Pro (Mensual)",
+        "price": "$9.99/mes",
+        "features": {
+          "f1": "Respuestas de IA ilimitadas",
+          "f2": "Plantillas guardadas ilimitadas",
+          "f3": "Múltiples perfiles de vendedor/tienda",
+          "f4": "Tonos de respuesta avanzados",
+          "f5": "Herramientas de optimización de listados",
+          "f6": "Insights del mercado",
+          "f7": "Herramientas de importación/exportación",
+          "f8": "Soporte prioritario"
+        },
+        "button": "Suscribirse mensualmente"
+      },
+      "proLifetime": {
+        "title": "Pro (De por vida)",
+        "price": "$149",
+        "tagline": "Paga una vez, úsalo para siempre",
+        "features": {
+          "f1": "Todo lo incluido en Pro Mensual",
+          "f2": "Sin cuotas recurrentes",
+          "f3": "Actualizaciones futuras incluidas",
+          "f4": "Precio especial para primeros usuarios"
+        },
+        "button": "Pase de por vida"
+      }
+    },
+    "faq": {
+      "sectionTitle": "Preguntas Frecuentes",
+      "q1": {
+        "question": "¿Están seguros los datos de mis clientes con SellerDesk AI?",
+        "answer": "Sí. Todos los detalles guardados y perfiles de negocios se almacenan en el almacenamiento local de Chrome en tu dispositivo. La extensión envía notas directamente a tu proveedor de IA elegido (o se ejecuta en el dispositivo a través de Gemini Nano). Nada se almacena en los servidores de Donbrico."
+      },
+      "q2": {
+        "question": "¿Es compatible con mi mercado específico?",
+        "answer": "Sí. SellerDesk AI está creado para funcionar perfectamente con Etsy, eBay, Facebook Marketplace, Shopify, Mercari, Poshmark, así como con proveedores de correo electrónico habituales como Gmail, Outlook y Yahoo Mail."
+      },
+      "q3": {
+        "question": "¿Cómo funciona 'Trae tu propia clave' (BYOK)?",
+        "answer": "Puedes conectar tu propia clave API de OpenAI, Anthropic, Groq u OpenRouter en la configuración. Esto te proporciona una generación de IA ultrarrápida e ilimitada y garantiza que tengas respuestas de la mejor calidad para tus clientes."
+      },
+      "moreQuestions": "¿Tienes más preguntas?",
+      "viewFullLink": "Lee nuestras preguntas frecuentes completas →"
     }
   }
 }

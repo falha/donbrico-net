@@ -55,7 +55,8 @@
     "byRole": "Nach Rolle",
     "extensionsHostReply": "HostReply AI",
     "blog": "Blog",
-    "extensionsTradeDesk": "TradeDesk KI"
+    "extensionsTradeDesk": "TradeDesk KI",
+    "extensionsSellerDesk": "SellerDesk AI"
   },
   "home": {
     "page": {
@@ -533,7 +534,8 @@
       "workDesk": "Arbeitsplatz",
       "hostReplyAi": "HostReply AI",
       "medAutoFillAi": "MedAutoFill AI",
-      "tradeDesk": "TradeDesk KI"
+      "tradeDesk": "TradeDesk KI",
+      "sellerDesk": "SellerDesk AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico AI-Antwortassistent",
@@ -648,6 +650,29 @@
       "dataDeletion": {
         "sectionTitle": "Datenlöschung",
         "paragraph": "Durch die Deinstallation der Erweiterung werden alle lokal gespeicherten Geschäftsdetails und -einstellungen gelöscht. "
+      }
+    },
+    "sellerDesk": {
+      "sectionTitle": "SellerDesk AI",
+      "whatWeCollect": {
+        "sectionTitle": "Welche Daten wir sammeln",
+        "paragraph": "Keine. Ihre Shop-Profile, gespeicherten Antworten und Einstellungen werden lokal im Chrome-Speicher auf Ihrem Gerät gespeichert. Es werden keine Daten an Donbrico-Server übermittelt."
+      },
+      "howStored": {
+        "sectionTitle": "Wie Ihre Daten gespeichert werden",
+        "paragraph": "Shop-Profile und Vorlagen werden im lokalen Chrome-Speicher gespeichert. Diese Daten verlassen niemals Ihr Gerät, es sei denn, Sie verwenden einen Drittanbieter-KI-Anbieter."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Drittanbieter-KI-Anbieter (Bring Your Own Key)",
+        "paragraph": "Wenn Sie einen Anbieter wie OpenAI konfigurieren, werden die Käufernachricht und Ihre Shop-Profildetails an diesen Drittanbieter gesendet, um eine Antwort zu generieren. Wenn Sie Gemini Nano verwenden, erfolgt die gesamte Verarbeitung auf dem Gerät. Donbrico speichert oder protokolliert keine KI-Anfragen."
+      },
+      "permissions": {
+        "sectionTitle": "Verwendete Berechtigungen",
+        "paragraph": "Speicher (für Shop-Profile und Einstellungen), activeTab (zur Erkennung von Textfeldern), Scripting (zum Einfügen der Antwort-Symbolleiste)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Datenlöschung",
+        "paragraph": "Bei der Deinstallation der Erweiterung werden alle lokal gespeicherten Shop-Details und Einstellungen gelöscht. Auf Donbrico-Servern werden keine Daten gespeichert."
       }
     }
   },
@@ -3162,6 +3187,114 @@
         "question": "Wie funktioniert „Bring Your Own Key“ (BYOK)?",
         "answer": "Sie können Ihren eigenen API-Schlüssel von OpenAI, Anthropic, Groq oder OpenRouter in den Einstellungen verbinden. "
       }
+    }
+  },
+  "sellerDesk": {
+    "page": {
+      "title": "KI-Antwortassistent für Online-Verkäufer",
+      "description": "KI-gestützte Antworten auf Käufernachrichten für Etsy, eBay, Facebook Marketplace, Shopify. Kostenlose Erweiterung."
+    },
+    "hero": {
+      "eyebrow": "CHROME-ERWEITERUNG",
+      "title": "Beantworten Sie Käufernachrichten in Sekunden.",
+      "subtitle": "SellerDesk AI hilft Online-Verkäufern, schneller mit KI-generierten, professionellen Antworten zu reagieren.",
+      "buttonPrimary": "Zu Chrome hinzufügen — Kostenlos",
+      "buttonSecondary": "So funktioniert es ↓",
+      "disclaimer": "🔒 Funktioniert auf dem Gerät — Ihre Gespräche bleiben lokal"
+    },
+    "howItWorks": {
+      "sectionTitle": "Wie es funktioniert",
+      "step1": {
+        "title": "1. Shop-Richtlinien speichern",
+        "description": "Speichern Sie Ihre Shop-Details und Rückgaberichtlinien einmalig in Ihrem Profil."
+      },
+      "step2": {
+        "title": "2. Nachrichten öffnen",
+        "description": "Funktioniert direkt in Etsy, eBay, Facebook Marketplace, Shopify und in Ihrem Posteingang."
+      },
+      "step3": {
+        "title": "3. KI entwirft die Antwort",
+        "description": "SellerDesk liest die Frage und Ihre Richtlinien, um sofort eine professionelle Antwort zu verfassen."
+      }
+    },
+    "features": {
+      "sectionTitle": "Funktionen",
+      "feature1": {
+        "title": "Funktioniert dort, wo Sie verkaufen",
+        "description": "Kompatibel mit Etsy, eBay, Facebook Marketplace, Shopify, Mercari, Gmail, Outlook und mehr."
+      },
+      "feature2": {
+        "title": "Sparen Sie Zeit bei wiederholten Fragen",
+        "description": "Verwenden Sie gespeicherte Antworten für Versand, Angebote, Rückgaben und mehr wieder."
+      },
+      "feature3": {
+        "title": "Konsistenter Tonfall",
+        "description": "Wählen Sie, wie Sie klingen möchten: freundlich, professionell, hilfsbereit oder bestimmt."
+      },
+      "feature4": {
+        "title": "Datenschutzfreundlich",
+        "description": "Ihre Gespräche werden nicht auf SellerDesk-Servern verarbeitet."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Einfache Preisgestaltung.",
+      "free": {
+        "title": "Kostenlos",
+        "price": "0 $",
+        "features": {
+          "f1": "5 KI-Antworten pro Tag",
+          "f2": "5 gespeicherte Vorlagen",
+          "f3": "1 Verkäuferprofil",
+          "f4": "Auf allen Plattformen",
+          "f5": "Kein Konto erforderlich",
+          "f6": "On-Device Chrome-KI"
+        },
+        "button": "Zu Chrome hinzufügen"
+      },
+      "proMonthly": {
+        "title": "Pro (Monatlich)",
+        "price": "9,99 $/Monat",
+        "features": {
+          "f1": "Unbegrenzte KI-Antworten",
+          "f2": "Unbegrenzte Vorlagen",
+          "f3": "Mehrere Profile",
+          "f4": "Erweiterte Antwort-Töne",
+          "f5": "Optimierungstools",
+          "f6": "Marktplatz-Einblicke",
+          "f7": "Import/Export",
+          "f8": "Prioritäts-Support"
+        },
+        "button": "Monatlich abonnieren"
+      },
+      "proLifetime": {
+        "title": "Pro (Lebenslang)",
+        "price": "149 $",
+        "tagline": "Einmal zahlen, für immer nutzen",
+        "features": {
+          "f1": "Alles in Pro Monatlich",
+          "f2": "Keine wiederkehrenden Gebühren",
+          "f3": "Zukünftige Updates inklusive",
+          "f4": "Early-Adopter-Preis"
+        },
+        "button": "Lebenslanger Pass"
+      }
+    },
+    "faq": {
+      "sectionTitle": "Häufig gestellte Fragen",
+      "q1": {
+        "question": "Sind meine Kundendaten sicher?",
+        "answer": "Ja. Alle Profile werden lokal gespeichert. Nichts wird auf Donbrico-Servern gespeichert."
+      },
+      "q2": {
+        "question": "Unterstützt es meinen Marktplatz?",
+        "answer": "Ja. Funktioniert mit Etsy, eBay, Facebook Marketplace, Shopify usw."
+      },
+      "q3": {
+        "question": "Wie funktioniert Bring Your Own Key (BYOK)?",
+        "answer": "Sie können Ihren eigenen API-Schlüssel von OpenAI, Anthropic usw. in den Einstellungen verbinden."
+      },
+      "moreQuestions": "Noch Fragen?",
+      "viewFullLink": "Lesen Sie unsere vollständigen FAQs →"
     }
   }
 }

@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="sellerDesk.page.title">
+      AI Reply Assistant for Online Sellers — Faster Replies
+    </title>
+    <meta
+      name="description"
+      data-i18n="sellerDesk.page.description"
+      content="AI-powered buyer message replies for Etsy, eBay, Facebook Marketplace, Shopify, and more. Free Chrome extension for online sellers."
+    />
+    <meta
+      property="og:title"
+      data-i18n="sellerDesk.page.ogTitle"
+      content="AI Reply Assistant for Online Sellers — Faster Replies"
+    />
+    <meta
+      property="og:description"
+      data-i18n="sellerDesk.page.ogDescription"
+      content="AI-powered buyer message replies for Etsy, eBay, Facebook Marketplace, Shopify, and more. Free Chrome extension for online sellers."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://donbrico.net/seller-desk/"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+
+    <link rel="canonical" href="https://donbrico.net/seller-desk/" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"
+          ><span></span><span></span><span></span></label
+        >
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a
+                href="/solutions/communication/"
+                data-i18n="nav.solutionsCommunication"
+                >Write &amp; Respond</a
+              >
+              <a
+                href="/solutions/automation/"
+                data-i18n="nav.solutionsAutomation"
+                >Fill &amp; Process</a
+              >
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace"
+                >Organize &amp; Focus</a
+              >
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a
+                href="/solutions/job-seekers/"
+                data-i18n="nav.solutionsJobSeekers"
+                >For Job Seekers</a
+              >
+              <a
+                href="/med-autofill/"
+                data-i18n="nav.solutionsMedicalAdmin"
+                >For Medical Admin</a
+              >
+              <a
+                href="/solutions/recruiters/"
+                data-i18n="nav.solutionsRecruiters"
+                >For Recruiters</a
+              >
+              <a
+                href="/solutions/support-teams/"
+                data-i18n="nav.solutionsSupportTeams"
+                >For Support Teams</a
+              >
+              <a
+                href="/solutions/ecommerce-support/"
+                data-i18n="nav.solutionsEcommerceSupport"
+                >For Ecommerce</a
+              >
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance"
+                >For Insurance</a
+              >
+              <a
+                href="/solutions/real-estate/"
+                data-i18n="nav.solutionsRealEstate"
+                >For Real Estate</a
+              >
+              <a
+                href="/solutions/browser-workspace/"
+                data-i18n="nav.solutionsBrowserWorkspace"
+                >Browser Workspace</a
+              >
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" class="active" data-i18n="nav.extensions"
+              >Extensions</a
+            >
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll"
+                >All Extensions</a
+              >
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill"
+                >Autofill AI</a
+              >
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply"
+                >AI Reply Assistant</a
+              >
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply"
+                >HostReply AI</a
+              >
+              <a href="/trade-desk/" data-i18n="nav.extensionsTradeDesk">TradeDesk AI</a>
+              <a href="/seller-desk/" data-i18n="nav.extensionsSellerDesk">SellerDesk AI</a>
+              <a href="/seller-desk/" class="active" data-i18n="nav.extensionsSellerDesk">SellerDesk AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk"
+                >WorkDesk</a
+              >
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow" data-i18n="sellerDesk.hero.eyebrow">
+          CHROME EXTENSION
+        </p>
+        <h1 data-i18n="sellerDesk.hero.title">
+          Answer buyer messages in seconds.
+        </h1>
+        <p class="subtitle" data-i18n="sellerDesk.hero.subtitle">
+          SellerDesk AI helps online sellers respond to buyer questions faster with AI-generated replies that sound professional and personal — directly inside your browser.
+        </p>
+        <div class="install-group">
+          <a
+            href="https://chromewebstore.google.com/detail/khcpemlmikkjknbepapfdfaeggjohelb"
+            class="btn"
+            data-i18n="sellerDesk.hero.buttonPrimary"
+            >Add to Chrome — Free</a
+          >
+          <a
+            href="#how-it-works"
+            class="btn-outline"
+            data-i18n="sellerDesk.hero.buttonSecondary"
+            >See how it works ↓</a
+          >
+        </div>
+        <p
+          class="text-muted"
+          style="margin-top: var(--spacing-md)"
+          data-i18n="sellerDesk.hero.disclaimer"
+        >
+          🔒 Works on-device — your buyer conversations stay local
+        </p>
+      </div>
+    </section>
+
+    <section id="how-it-works" style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2
+          class="section-title"
+          data-i18n="sellerDesk.howItWorks.sectionTitle"
+        >
+          How It Works
+        </h2>
+        <div
+          style="
+            display: flex;
+            gap: var(--spacing-lg);
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <div class="card" style="flex: 1; min-width: 250px">
+            <h3 data-i18n="sellerDesk.howItWorks.step1.title">
+              1. Save store policies
+            </h3>
+            <p data-i18n="sellerDesk.howItWorks.step1.description">
+              Store your shop details, return policies, and frequent answers once in your seller profile.
+            </p>
+          </div>
+          <div class="card" style="flex: 1; min-width: 250px">
+            <h3 data-i18n="sellerDesk.howItWorks.step2.title">
+              2. Open buyer messages
+            </h3>
+            <p data-i18n="sellerDesk.howItWorks.step2.description">
+              Works directly inside Etsy, eBay, Facebook Marketplace, Shopify, and your email inbox.
+            </p>
+          </div>
+          <div class="card" style="flex: 1; min-width: 250px">
+            <h3 data-i18n="sellerDesk.howItWorks.step3.title">
+              3. AI drafts the reply
+            </h3>
+            <p data-i18n="sellerDesk.howItWorks.step3.description">
+              SellerDesk reads the buyer's question and your store policies to draft a professional response instantly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2
+          class="section-title"
+          data-i18n="sellerDesk.features.sectionTitle"
+        >
+          Features
+        </h2>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+          "
+        >
+          <div class="card">
+            <h4 data-i18n="sellerDesk.features.feature1.title">
+              Works where you sell
+            </h4>
+            <p data-i18n="sellerDesk.features.feature1.description">
+              Compatible with Etsy, eBay, Facebook Marketplace, Shopify, Mercari, Poshmark, Gmail, Outlook, and Yahoo Mail.
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="sellerDesk.features.feature2.title">
+              Save time on repetitive questions
+            </h4>
+            <p data-i18n="sellerDesk.features.feature2.description">
+              Reuse saved replies for shipping, offers, returns, availability, pickup, bundles, and more.
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="sellerDesk.features.feature3.title">
+              Keep your tone consistent
+            </h4>
+            <p data-i18n="sellerDesk.features.feature3.description">
+              Choose how you want to sound — friendly, professional, helpful, or firm.
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="sellerDesk.features.feature4.title">
+              Privacy-first design
+            </h4>
+            <p data-i18n="sellerDesk.features.feature4.description">
+              No SellerDesk servers process your buyer conversations. Supports on-device AI with Gemini Nano and optional BYOK AI providers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2
+          class="section-title"
+          data-i18n="sellerDesk.pricing.sectionTitle"
+        >
+          Simple pricing. No hidden fees.
+        </h2>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-lg);
+            justify-content: center;
+          "
+        >
+          <div class="card" style="border: 2px solid var(--accent)">
+            <h3 data-i18n="sellerDesk.pricing.free.title">Free</h3>
+            <p
+              style="font-size: 2rem; font-weight: 700; color: var(--accent)"
+              data-i18n="sellerDesk.pricing.free.price"
+            >
+              $0
+            </p>
+            <ul>
+              <li data-i18n="sellerDesk.pricing.free.features.f1">5 AI replies per day</li>
+              <li data-i18n="sellerDesk.pricing.free.features.f2">5 saved replies/templates</li>
+              <li data-i18n="sellerDesk.pricing.free.features.f3">1 seller profile</li>
+              <li data-i18n="sellerDesk.pricing.free.features.f4">Works on all supported platforms</li>
+              <li data-i18n="sellerDesk.pricing.free.features.f5">No account required</li>
+              <li data-i18n="sellerDesk.pricing.free.features.f6">On-device Chrome AI</li>
+            </ul>
+            <a
+              href="https://chromewebstore.google.com/detail/khcpemlmikkjknbepapfdfaeggjohelb"
+              class="btn"
+              data-i18n="sellerDesk.pricing.free.button"
+              >Add to Chrome</a
+            >
+          </div>
+
+          <div class="card" style="border: 2px solid var(--accent)">
+            <h3 data-i18n="sellerDesk.pricing.proMonthly.title">Pro (Monthly)</h3>
+            <p
+              style="font-size: 2rem; font-weight: 700; color: var(--accent)"
+              data-i18n="sellerDesk.pricing.proMonthly.price"
+            >
+              $9.99/mo
+            </p>
+            <ul>
+              <li data-i18n="sellerDesk.pricing.proMonthly.features.f1">Unlimited AI replies</li>
+              <li data-i18n="sellerDesk.pricing.proMonthly.features.f2">Unlimited saved templates</li>
+              <li data-i18n="sellerDesk.pricing.proMonthly.features.f3">Multiple seller/store profiles</li>
+              <li data-i18n="sellerDesk.pricing.proMonthly.features.f4">Advanced reply tones</li>
+              <li data-i18n="sellerDesk.pricing.proMonthly.features.f5">Listing optimization tools</li>
+              <li data-i18n="sellerDesk.pricing.proMonthly.features.f6">Marketplace insights</li>
+              <li data-i18n="sellerDesk.pricing.proMonthly.features.f7">Import/export tools</li>
+              <li data-i18n="sellerDesk.pricing.proMonthly.features.f8">Priority support</li>
+            </ul>
+            <a
+              href="https://checkout.dodopayments.com/buy/pdt_0NfD1JyVAr16rcXrejO59?quantity=1&redirect_url=https%3A%2F%2Fdonbrico.net%2Factivate%3Fproduct%3Dseller-desk"
+              class="btn"
+              data-i18n="sellerDesk.pricing.proMonthly.button"
+              >Subscribe monthly</a
+            >
+          </div>
+
+          <div class="card" style="background: linear-gradient(135deg, var(--card-bg), rgba(99, 102, 241, 0.15)); border: 2px solid var(--accent); position: relative; overflow: hidden;">
+            <div style="position: absolute; top: 12px; right: -30px; background: var(--accent); color: white; padding: 4px 30px; transform: rotate(45deg); font-size: 0.8rem; font-weight: bold;">LAUNCH</div>
+            <h3 data-i18n="sellerDesk.pricing.proLifetime.title">Pro (Lifetime)</h3>
+            <p
+              style="font-size: 2rem; font-weight: 700; color: var(--accent)"
+              data-i18n="sellerDesk.pricing.proLifetime.price"
+            >
+              $149
+            </p>
+            <p style="font-size: 0.9rem; margin-top: -10px; margin-bottom: 20px; color: var(--muted);" data-i18n="sellerDesk.pricing.proLifetime.tagline">Pay once, use forever</p>
+            <ul>
+              <li data-i18n="sellerDesk.pricing.proLifetime.features.f1">Everything in Pro Monthly</li>
+              <li data-i18n="sellerDesk.pricing.proLifetime.features.f2">No recurring fees</li>
+              <li data-i18n="sellerDesk.pricing.proLifetime.features.f3">Future updates included</li>
+              <li data-i18n="sellerDesk.pricing.proLifetime.features.f4">Early adopter pricing</li>
+            </ul>
+            <a
+              href="https://checkout.dodopayments.com/buy/pdt_0NfD1JmY5NdXtiZHF1KPM?quantity=1&redirect_url=https%3A%2F%2Fdonbrico.net%2Factivate%3Fproduct%3Dseller-desk"
+              class="btn"
+              style="background: linear-gradient(135deg, var(--accent), #8b5cf6);"
+              data-i18n="sellerDesk.pricing.proLifetime.button"
+              >Lifetime pass</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2 class="section-title" data-i18n="sellerDesk.faq.sectionTitle">
+          Frequently Asked Questions
+        </h2>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary
+            style="cursor: pointer; font-weight: 600"
+            data-i18n="sellerDesk.faq.q1.question"
+          >
+            Is my customer data safe with SellerDesk AI?
+          </summary>
+          <p data-i18n="sellerDesk.faq.q1.answer">
+            Yes. All saved details and business profiles are stored in Chrome's local storage on your device. The extension sends notes directly to your chosen AI provider (or runs on-device via Gemini Nano). Nothing is stored on Donbrico servers.
+          </p>
+        </details>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary
+            style="cursor: pointer; font-weight: 600"
+            data-i18n="sellerDesk.faq.q2.question"
+          >
+            Does it support my specific marketplace?
+          </summary>
+          <p data-i18n="sellerDesk.faq.q2.answer">
+            Yes. SellerDesk AI is built to work seamlessly with Etsy, eBay, Facebook Marketplace, Shopify, Mercari, Poshmark, as well as regular email providers like Gmail, Outlook, and Yahoo Mail.
+          </p>
+        </details>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary
+            style="cursor: pointer; font-weight: 600"
+            data-i18n="sellerDesk.faq.q3.question"
+          >
+            How does the 'Bring Your Own Key' (BYOK) work?
+          </summary>
+          <p data-i18n="sellerDesk.faq.q3.answer">
+            You can connect your own API key from OpenAI, Anthropic, Groq, or OpenRouter in settings. This gives you ultra-fast, unlimited AI generation and ensures you have the best quality replies for your customers.
+          </p>
+        </details>
+        <div style="text-align: center; margin-top: var(--spacing-lg)">
+          <p>
+            <span data-i18n="sellerDesk.faq.moreQuestions">Have more questions?</span>
+            <a href="/seller-desk/en/faq/" data-i18n="sellerDesk.faq.viewFullLink" style="color: var(--accent); text-decoration: none; font-weight: 600;">Read our full FAQ →</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">Job Seekers</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/trade-desk/" data-i18n="nav.extensionsTradeDesk">TradeDesk AI</a>
+              <a href="/seller-desk/" data-i18n="nav.extensionsSellerDesk">SellerDesk AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="../js/i18n.js" defer></script>
+    <script src="../js/chatwoot.js" defer></script>
+  </body>
+</html>

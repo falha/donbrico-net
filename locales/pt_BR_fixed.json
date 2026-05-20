@@ -25,7 +25,8 @@
     "privacyPolicy": "Política de Privacidade",
     "support": "Suporte",
     "aiReplyAssistant": "AI Reply Assistant",
-    "workDesk": "Mesa de trabalho"
+    "workDesk": "Mesa de trabalho",
+    "extensionsSellerDesk": "SellerDesk AI"
   },
   "home": {
     "page": {
@@ -440,7 +441,8 @@
       "workDesk": "Mesa de trabalho",
       "nullCarrier": "Jogo de operadora nula",
       "website": "Este site",
-      "contact": "Contato"
+      "contact": "Contato",
+      "sellerDesk": "SellerDesk AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico AI Reply Assistant — Chrome Extension",
@@ -486,6 +488,29 @@
       "dataDeletion": {
         "sectionTitle": "Exclusão de dados",
         "paragraph": "A desinstalação da extensão exclui todos os espaços de trabalho e configurações armazenados localmente. "
+      }
+    },
+    "sellerDesk": {
+      "sectionTitle": "SellerDesk AI",
+      "whatWeCollect": {
+        "sectionTitle": "What data we collect",
+        "paragraph": "None. Your store profiles, saved replies, and settings are stored locally in Chrome's storage on your device. No data is transmitted to Donbrico servers."
+      },
+      "howStored": {
+        "sectionTitle": "How your data is stored",
+        "paragraph": "Store profiles and templates are stored in Chrome's local storage. This data never leaves your device unless you use a third-party AI provider."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Third-party AI providers (Bring Your Own Key)",
+        "paragraph": "If you configure a Bring Your Own Key provider such as OpenAI, the buyer message and your store profile details are sent to that third-party provider to generate a response. If you use Gemini Nano (where available), all processing is on-device. Donbrico does not store or log any AI requests."
+      },
+      "permissions": {
+        "sectionTitle": "Permissions used",
+        "paragraph": "storage (for store profiles and settings), activeTab (to detect text fields), scripting (to inject the reply toolbar)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Data deletion",
+        "paragraph": "Uninstalling the extension deletes all locally stored store details and settings. No data is retained on Donbrico servers."
       }
     }
   },
@@ -849,6 +874,114 @@
         "genericFailed": "Falha na ativação. ",
         "pending": "Pagamento concluído, mas nenhuma chave de licença foi encontrada neste link. "
       }
+    }
+  },
+  "sellerDesk": {
+    "page": {
+      "title": "AI Reply Assistant for Online Sellers — Faster Replies",
+      "description": "AI-powered buyer message replies for Etsy, eBay, Facebook Marketplace, Shopify, and more. Free Chrome extension for online sellers."
+    },
+    "hero": {
+      "eyebrow": "CHROME EXTENSION",
+      "title": "Answer buyer messages in seconds.",
+      "subtitle": "SellerDesk AI helps online sellers respond to buyer questions faster with AI-generated replies that sound professional and personal — directly inside your browser.",
+      "buttonPrimary": "Add to Chrome — Free",
+      "disclaimer": "🔒 Works on-device — your buyer conversations stay local",
+      "buttonSecondary": "See how it works ↓"
+    },
+    "howItWorks": {
+      "sectionTitle": "How It Works",
+      "step1": {
+        "title": "1. Save store policies",
+        "description": "Store your shop details, return policies, and frequent answers once in your seller profile."
+      },
+      "step2": {
+        "title": "2. Open buyer messages",
+        "description": "Works directly inside Etsy, eBay, Facebook Marketplace, Shopify, and your email inbox."
+      },
+      "step3": {
+        "title": "3. AI drafts the reply",
+        "description": "SellerDesk reads the buyer's question and your store policies to draft a professional response instantly."
+      }
+    },
+    "features": {
+      "sectionTitle": "Features",
+      "feature1": {
+        "title": "Works where you sell",
+        "description": "Compatible with Etsy, eBay, Facebook Marketplace, Shopify, Mercari, Poshmark, Gmail, Outlook, and Yahoo Mail."
+      },
+      "feature2": {
+        "title": "Save time on repetitive questions",
+        "description": "Reuse saved replies for shipping, offers, returns, availability, pickup, bundles, and more."
+      },
+      "feature3": {
+        "title": "Keep your tone consistent",
+        "description": "Choose how you want to sound — friendly, professional, helpful, or firm."
+      },
+      "feature4": {
+        "title": "Privacy-first design",
+        "description": "No SellerDesk servers process your buyer conversations. Supports on-device AI with Gemini Nano and optional BYOK AI providers."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Simple pricing. No hidden fees.",
+      "free": {
+        "title": "Free",
+        "price": "$0",
+        "features": {
+          "f1": "5 AI replies per day",
+          "f2": "5 saved replies/templates",
+          "f3": "1 seller profile",
+          "f4": "Works on all supported platforms",
+          "f5": "No account required",
+          "f6": "On-device Chrome AI"
+        },
+        "button": "Add to Chrome"
+      },
+      "proMonthly": {
+        "title": "Pro (Monthly)",
+        "price": "$9.99/mo",
+        "features": {
+          "f1": "Unlimited AI replies",
+          "f2": "Unlimited saved templates",
+          "f3": "Multiple seller/store profiles",
+          "f4": "Advanced reply tones",
+          "f5": "Listing optimization tools",
+          "f6": "Marketplace insights",
+          "f7": "Import/export tools",
+          "f8": "Priority support"
+        },
+        "button": "Subscribe monthly"
+      },
+      "proLifetime": {
+        "title": "Pro (Lifetime)",
+        "price": "$149",
+        "tagline": "Pay once, use forever",
+        "features": {
+          "f1": "Everything in Pro Monthly",
+          "f2": "No recurring fees",
+          "f3": "Future updates included",
+          "f4": "Early adopter pricing"
+        },
+        "button": "Lifetime pass"
+      }
+    },
+    "faq": {
+      "sectionTitle": "Frequently Asked Questions",
+      "q1": {
+        "question": "Is my customer data safe with SellerDesk AI?",
+        "answer": "Yes. All saved details and business profiles are stored in Chrome's local storage on your device. The extension sends notes directly to your chosen AI provider (or runs on-device via Gemini Nano). Nothing is stored on Donbrico servers."
+      },
+      "q2": {
+        "question": "Does it support my specific marketplace?",
+        "answer": "Yes. SellerDesk AI is built to work seamlessly with Etsy, eBay, Facebook Marketplace, Shopify, Mercari, Poshmark, as well as regular email providers like Gmail, Outlook, and Yahoo Mail."
+      },
+      "q3": {
+        "question": "How does the 'Bring Your Own Key' (BYOK) work?",
+        "answer": "You can connect your own API key from OpenAI, Anthropic, Groq, or OpenRouter in settings. This gives you ultra-fast, unlimited AI generation and ensures you have the best quality replies for your customers."
+      },
+      "moreQuestions": "Have more questions?",
+      "viewFullLink": "Read our full FAQ →"
     }
   }
 }

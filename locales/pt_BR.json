@@ -55,7 +55,8 @@
     "byRole": "Por função",
     "blog": "Blog",
     "extensionsHostReply": "HostReply AI",
-    "extensionsTradeDesk": "IA TradeDesk"
+    "extensionsTradeDesk": "IA TradeDesk",
+    "extensionsSellerDesk": "SellerDesk AI"
   },
   "home": {
     "page": {
@@ -533,7 +534,8 @@
       "contact": "Contato",
       "hostReplyAi": "HostReply AI",
       "medAutoFillAi": "MedAutoFill AI",
-      "tradeDesk": "IA TradeDesk"
+      "tradeDesk": "IA TradeDesk",
+      "sellerDesk": "SellerDesk AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Assistente de resposta Donbrico AI",
@@ -648,6 +650,29 @@
       "dataDeletion": {
         "sectionTitle": "Exclusão de dados",
         "paragraph": "A desinstalação da extensão exclui todos os detalhes e configurações comerciais armazenados localmente. "
+      }
+    },
+    "sellerDesk": {
+      "sectionTitle": "SellerDesk AI",
+      "whatWeCollect": {
+        "sectionTitle": "Quais dados nós coletamos",
+        "paragraph": "Nenhum. Os perfis da sua loja, respostas salvas e configurações são armazenados localmente no armazenamento do Chrome no seu dispositivo. Nenhum dado é transmitido aos servidores da Donbrico."
+      },
+      "howStored": {
+        "sectionTitle": "Como seus dados são armazenados",
+        "paragraph": "Os perfis e modelos de loja são armazenados no armazenamento local do Chrome. Esses dados nunca saem do seu dispositivo, a menos que você use um provedor de IA de terceiros."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Provedores de IA de terceiros (Traga sua própria chave)",
+        "paragraph": "Se você configurar um provedor como OpenAI, a mensagem do comprador e os detalhes do perfil da sua loja serão enviados a esse provedor terceirizado para gerar uma resposta. Se você usar o Gemini Nano, todo o processamento será no dispositivo. A Donbrico não armazena nem registra nenhuma solicitação de IA."
+      },
+      "permissions": {
+        "sectionTitle": "Permissões usadas",
+        "paragraph": "armazenamento (para perfis e configurações da loja), activeTab (para detectar campos de texto), scripting (para injetar a barra de ferramentas de resposta)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Exclusão de dados",
+        "paragraph": "A desinstalação da extensão exclui todos os detalhes da loja e configurações armazenados localmente. Nenhum dado é retido nos servidores da Donbrico."
       }
     }
   },
@@ -3162,6 +3187,114 @@
         "question": "Como funciona o 'Traga sua própria chave' (BYOK)?",
         "answer": "Você pode conectar sua própria chave de API do OpenAI, Anthropic, Groq ou OpenRouter nas configurações. "
       }
+    }
+  },
+  "sellerDesk": {
+    "page": {
+      "title": "Assistente de Resposta de IA para Vendedores",
+      "description": "Respostas com tecnologia de IA para mensagens no Etsy, eBay, Shopify e mais. Extensão gratuita do Chrome."
+    },
+    "hero": {
+      "eyebrow": "EXTENSÃO DO CHROME",
+      "title": "Responda às mensagens dos compradores em segundos.",
+      "subtitle": "O SellerDesk AI ajuda os vendedores online a responder às perguntas mais rapidamente com respostas geradas por IA.",
+      "buttonPrimary": "Adicionar ao Chrome — Grátis",
+      "buttonSecondary": "Veja como funciona ↓",
+      "disclaimer": "🔒 Funciona no dispositivo — suas conversas permanecem locais"
+    },
+    "howItWorks": {
+      "sectionTitle": "Como funciona",
+      "step1": {
+        "title": "1. Salve as políticas da loja",
+        "description": "Armazene os detalhes da sua loja, políticas de devolução e respostas frequentes."
+      },
+      "step2": {
+        "title": "2. Abra as mensagens",
+        "description": "Funciona diretamente no Etsy, eBay, Facebook Marketplace, Shopify e na sua caixa de entrada."
+      },
+      "step3": {
+        "title": "3. A IA redige a resposta",
+        "description": "O SellerDesk lê a pergunta e as políticas da sua loja para redigir uma resposta profissional instantaneamente."
+      }
+    },
+    "features": {
+      "sectionTitle": "Recursos",
+      "feature1": {
+        "title": "Funciona onde você vende",
+        "description": "Compatível com Etsy, eBay, Shopify, Mercari, Poshmark, Gmail, Outlook e mais."
+      },
+      "feature2": {
+        "title": "Economize tempo em perguntas repetitivas",
+        "description": "Reutilize respostas salvas para envios, ofertas, devoluções, disponibilidade e mais."
+      },
+      "feature3": {
+        "title": "Mantenha seu tom consistente",
+        "description": "Escolha como você quer soar: amigável, profissional, útil ou firme."
+      },
+      "feature4": {
+        "title": "Design focado na privacidade",
+        "description": "Nenhum servidor do SellerDesk processa suas conversas. Suporta IA local ou provedores de IA opcionais BYOK."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Preço simples.",
+      "free": {
+        "title": "Grátis",
+        "price": "US$ 0",
+        "features": {
+          "f1": "5 respostas de IA por dia",
+          "f2": "5 modelos salvos",
+          "f3": "1 perfil de vendedor",
+          "f4": "Funciona em todas as plataformas",
+          "f5": "Não requer conta",
+          "f6": "IA do Chrome no dispositivo"
+        },
+        "button": "Adicionar ao Chrome"
+      },
+      "proMonthly": {
+        "title": "Pro (Mensal)",
+        "price": "US$ 9,99/mês",
+        "features": {
+          "f1": "Respostas de IA ilimitadas",
+          "f2": "Modelos salvos ilimitados",
+          "f3": "Vários perfis de loja",
+          "f4": "Tons de resposta avançados",
+          "f5": "Ferramentas de otimização",
+          "f6": "Insights de mercado",
+          "f7": "Ferramentas de importação/exportação",
+          "f8": "Suporte prioritário"
+        },
+        "button": "Assinar mensalmente"
+      },
+      "proLifetime": {
+        "title": "Pro (Vitalício)",
+        "price": "US$ 149",
+        "tagline": "Pague uma vez, use para sempre",
+        "features": {
+          "f1": "Tudo no Pro Mensal",
+          "f2": "Sem taxas recorrentes",
+          "f3": "Atualizações futuras incluídas",
+          "f4": "Preço para primeiros usuários"
+        },
+        "button": "Passe vitalício"
+      }
+    },
+    "faq": {
+      "sectionTitle": "Perguntas Frequentes",
+      "q1": {
+        "question": "Meus dados de clientes estão seguros?",
+        "answer": "Sim. Todos os perfis são armazenados localmente. Nada é armazenado nos servidores da Donbrico."
+      },
+      "q2": {
+        "question": "É compatível com o meu mercado específico?",
+        "answer": "Sim. Funciona com Etsy, eBay, Facebook Marketplace, Shopify, etc."
+      },
+      "q3": {
+        "question": "Como funciona o Traga sua própria chave (BYOK)?",
+        "answer": "Você pode conectar sua própria chave de API da OpenAI, Anthropic, etc. nas configurações."
+      },
+      "moreQuestions": "Tem mais perguntas?",
+      "viewFullLink": "Leia nosso FAQ completo →"
     }
   }
 }

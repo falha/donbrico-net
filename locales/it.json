@@ -55,7 +55,8 @@
     "byRole": "Per ruolo",
     "extensionsHostReply": "HostReply AI",
     "blog": "Blog",
-    "extensionsTradeDesk": "IA di TradeDesk"
+    "extensionsTradeDesk": "IA di TradeDesk",
+    "extensionsSellerDesk": "SellerDesk AI"
   },
   "home": {
     "page": {
@@ -533,7 +534,8 @@
       "workDesk": "Scrivania",
       "hostReplyAi": "HostReply AI",
       "medAutoFillAi": "MedAutoFill AI",
-      "tradeDesk": "IA di TradeDesk"
+      "tradeDesk": "IA di TradeDesk",
+      "sellerDesk": "SellerDesk AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico Assistente di risposta AI",
@@ -648,6 +650,29 @@
       "dataDeletion": {
         "sectionTitle": "Cancellazione dei dati",
         "paragraph": "La disinstallazione dell'estensione elimina tutti i dettagli e le impostazioni aziendali archiviati localmente. "
+      }
+    },
+    "sellerDesk": {
+      "sectionTitle": "SellerDesk AI",
+      "whatWeCollect": {
+        "sectionTitle": "Quali dati raccogliamo",
+        "paragraph": "Nessuno. I profili del tuo negozio, le risposte salvate e le impostazioni sono archiviati localmente nella memoria di Chrome sul tuo dispositivo. Nessun dato viene trasmesso ai server di Donbrico."
+      },
+      "howStored": {
+        "sectionTitle": "Come vengono archiviati i tuoi dati",
+        "paragraph": "I profili e i modelli del negozio sono archiviati nella memoria locale di Chrome. Questi dati non lasciano mai il tuo dispositivo a meno che tu non utilizzi un fornitore di intelligenza artificiale di terze parti."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Fornitori di intelligenza artificiale di terze parti (Porta la tua chiave)",
+        "paragraph": "Se configuri un fornitore come OpenAI, il messaggio dell'acquirente e i dettagli del profilo del tuo negozio vengono inviati a quel fornitore di terze parti per generare una risposta. Se utilizzi Gemini Nano, tutta l'elaborazione avviene sul dispositivo. Donbrico non archivia né registra alcuna richiesta di intelligenza artificiale."
+      },
+      "permissions": {
+        "sectionTitle": "Autorizzazioni utilizzate",
+        "paragraph": "archiviazione (per profili negozio e impostazioni), activeTab (per rilevare campi di testo), scripting (per inserire la barra degli strumenti di risposta)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Cancellazione dei dati",
+        "paragraph": "La disinstallazione dell'estensione elimina tutti i dettagli del negozio e le impostazioni archiviati localmente. Nessun dato viene conservato sui server di Donbrico."
       }
     }
   },
@@ -3193,6 +3218,114 @@
         "question": "Come funziona il servizio \"Bring Your Own Key\" (BYOK)?",
         "answer": "Puoi connettere la tua chiave API da OpenAI, Anthropic, Groq o OpenRouter nelle impostazioni. "
       }
+    }
+  },
+  "sellerDesk": {
+    "page": {
+      "title": "Assistente di risposta AI per venditori online",
+      "description": "Risposte AI ai messaggi degli acquirenti per Etsy, eBay, Shopify, ecc. Estensione Chrome gratuita."
+    },
+    "hero": {
+      "eyebrow": "ESTENSIONE CHROME",
+      "title": "Rispondi ai messaggi degli acquirenti in pochi secondi.",
+      "subtitle": "SellerDesk AI aiuta i venditori online a rispondere più velocemente con risposte generate dall'IA, direttamente nel browser.",
+      "buttonPrimary": "Aggiungi a Chrome — Gratis",
+      "buttonSecondary": "Scopri come funziona ↓",
+      "disclaimer": "🔒 Funziona sul dispositivo — le tue conversazioni rimangono locali"
+    },
+    "howItWorks": {
+      "sectionTitle": "Come funziona",
+      "step1": {
+        "title": "1. Salva le politiche del negozio",
+        "description": "Memorizza i dettagli del tuo negozio e le risposte frequenti nel tuo profilo."
+      },
+      "step2": {
+        "title": "2. Apri i messaggi",
+        "description": "Funziona direttamente in Etsy, eBay, Facebook Marketplace, Shopify e nella tua casella di posta."
+      },
+      "step3": {
+        "title": "3. L'IA redige la risposta",
+        "description": "SellerDesk legge la domanda e le tue politiche per redigere istantaneamente una risposta professionale."
+      }
+    },
+    "features": {
+      "sectionTitle": "Funzionalità",
+      "feature1": {
+        "title": "Funziona dove vendi",
+        "description": "Compatibile con Etsy, eBay, Facebook Marketplace, Shopify, Mercari, Gmail, Outlook."
+      },
+      "feature2": {
+        "title": "Risparmia tempo sulle domande ripetitive",
+        "description": "Riutilizza le risposte salvate per spedizioni, resi, disponibilità, ecc."
+      },
+      "feature3": {
+        "title": "Mantieni un tono coerente",
+        "description": "Scegli come vuoi sembrare: amichevole, professionale, utile o deciso."
+      },
+      "feature4": {
+        "title": "Design orientato alla privacy",
+        "description": "Nessun server SellerDesk elabora le tue conversazioni. Supporta l'IA sul dispositivo."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Prezzi semplici.",
+      "free": {
+        "title": "Gratis",
+        "price": "0 €",
+        "features": {
+          "f1": "5 risposte AI al giorno",
+          "f2": "5 modelli salvati",
+          "f3": "1 profilo venditore",
+          "f4": "Funziona su tutte le piattaforme",
+          "f5": "Nessun account richiesto",
+          "f6": "IA Chrome sul dispositivo"
+        },
+        "button": "Aggiungi a Chrome"
+      },
+      "proMonthly": {
+        "title": "Pro (Mensile)",
+        "price": "9,99 $/mese",
+        "features": {
+          "f1": "Risposte AI illimitate",
+          "f2": "Modelli illimitati",
+          "f3": "Profili negozio multipli",
+          "f4": "Toni di risposta avanzati",
+          "f5": "Strumenti di ottimizzazione",
+          "f6": "Approfondimenti di mercato",
+          "f7": "Strumenti di importazione/esportazione",
+          "f8": "Supporto prioritario"
+        },
+        "button": "Abbonati mensilmente"
+      },
+      "proLifetime": {
+        "title": "Pro (A vita)",
+        "price": "149 $",
+        "tagline": "Paga una volta, usa per sempre",
+        "features": {
+          "f1": "Tutto in Pro Mensile",
+          "f2": "Nessun costo ricorrente",
+          "f3": "Aggiornamenti futuri inclusi",
+          "f4": "Prezzo per i primi utenti"
+        },
+        "button": "Pass a vita"
+      }
+    },
+    "faq": {
+      "sectionTitle": "Domande Frequenti",
+      "q1": {
+        "question": "I dati dei miei clienti sono al sicuro?",
+        "answer": "Sì. Tutti i profili sono archiviati localmente. Nessun dato viene archiviato sui server di Donbrico."
+      },
+      "q2": {
+        "question": "Supporta il mio marketplace specifico?",
+        "answer": "Sì. Funziona con Etsy, eBay, Facebook Marketplace, Shopify, ecc."
+      },
+      "q3": {
+        "question": "Come funziona 'Porta la tua chiave' (BYOK)?",
+        "answer": "Puoi collegare la tua chiave API di OpenAI, Anthropic, ecc. nelle impostazioni."
+      },
+      "moreQuestions": "Hai altre domande?",
+      "viewFullLink": "Leggi le nostre FAQ complete →"
     }
   }
 }

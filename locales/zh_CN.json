@@ -55,7 +55,8 @@
     "extensionsAll": "所有扩展",
     "solutionsJobSeekers": "对于求职者",
     "solutionsMedicalAdmin": "对于医疗管理人员",
-    "extensionsTradeDesk": "贸易台人工智能"
+    "extensionsTradeDesk": "贸易台人工智能",
+    "extensionsSellerDesk": "SellerDesk AI"
   },
   "home": {
     "page": {
@@ -533,7 +534,8 @@
       "workDesk": "办公桌",
       "hostReplyAi": "主机回复AI",
       "medAutoFillAi": "医疗自动填写人工智能",
-      "tradeDesk": "贸易台人工智能"
+      "tradeDesk": "贸易台人工智能",
+      "sellerDesk": "SellerDesk AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico AI回复助手",
@@ -648,6 +650,29 @@
       "dataDeletion": {
         "sectionTitle": "数据删除",
         "paragraph": "卸载扩展程序会删除所有本地存储的业务详细信息和设置。 "
+      }
+    },
+    "sellerDesk": {
+      "sectionTitle": "SellerDesk AI",
+      "whatWeCollect": {
+        "sectionTitle": "我们收集哪些数据",
+        "paragraph": "没有。您的商店个人资料、保存的回复和设置都本地存储在您设备上的Chrome存储中。没有任何数据传输到Donbrico服务器。"
+      },
+      "howStored": {
+        "sectionTitle": "您的数据如何存储",
+        "paragraph": "商店个人资料和模板存储在Chrome的本地存储中。除非您使用第三方AI提供商，否则此数据永远不会离开您的设备。"
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "第三方AI提供商（自带密钥）",
+        "paragraph": "如果您配置了像OpenAI这样的自带密钥提供商，买家消息和您的商店个人资料详细信息将发送到该第三方提供商以生成回复。如果您使用Gemini Nano，所有处理都在设备上进行。Donbrico不存储或记录任何AI请求。"
+      },
+      "permissions": {
+        "sectionTitle": "使用的权限",
+        "paragraph": "存储（用于商店个人资料和设置），activeTab（用于检测文本字段），脚本（用于注入回复工具栏）。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "数据删除",
+        "paragraph": "卸载扩展程序会删除所有本地存储的商店详细信息和设置。Donbrico服务器上不保留任何数据。"
       }
     }
   },
@@ -3193,6 +3218,114 @@
         "question": "“自带密钥”(BYOK) 如何运作？",
         "answer": "您可以在设置中从 OpenAI、Anthropic、Groq 或 OpenRouter 连接您自己的 API 密钥。"
       }
+    }
+  },
+  "sellerDesk": {
+    "page": {
+      "title": "在线卖家AI回复助手",
+      "description": "适用于Etsy、eBay、Shopify等平台的买家消息AI回复。免费的Chrome扩展程序。"
+    },
+    "hero": {
+      "eyebrow": "CHROME扩展程序",
+      "title": "只需几秒钟即可回复买家消息。",
+      "subtitle": "SellerDesk AI 帮助在线卖家使用直接在浏览器中生成的专业AI回复更快地响应买家的问题。",
+      "buttonPrimary": "添加到 Chrome — 免费",
+      "buttonSecondary": "了解其工作原理 ↓",
+      "disclaimer": "🔒 在设备上运行 — 您的买家对话保留在本地"
+    },
+    "howItWorks": {
+      "sectionTitle": "工作原理",
+      "step1": {
+        "title": "1. 保存商店政策",
+        "description": "在卖家个人资料中保存您的商店详细信息、退货政策和常见答案。"
+      },
+      "step2": {
+        "title": "2. 打开买家消息",
+        "description": "直接在 Etsy、eBay、Facebook Marketplace、Shopify 和您的电子邮件收件箱内工作。"
+      },
+      "step3": {
+        "title": "3. AI 起草回复",
+        "description": "SellerDesk 阅读买家的问题和您的商店政策，立即起草专业的回复。"
+      }
+    },
+    "features": {
+      "sectionTitle": "功能",
+      "feature1": {
+        "title": "在您销售的地方工作",
+        "description": "兼容 Etsy、eBay、Facebook Marketplace、Shopify、Mercari、Gmail、Outlook 等。"
+      },
+      "feature2": {
+        "title": "在重复问题上节省时间",
+        "description": "重复使用保存的回复来处理运输、报价、退货、可用性、取件等。"
+      },
+      "feature3": {
+        "title": "保持一致的语气",
+        "description": "选择您的语气：友好、专业、乐于助人或坚定。"
+      },
+      "feature4": {
+        "title": "隐私优先设计",
+        "description": "没有 SellerDesk 服务器处理您的对话。支持本地 AI 和 BYOK AI 提供商。"
+      }
+    },
+    "pricing": {
+      "sectionTitle": "简单的定价。",
+      "free": {
+        "title": "免费",
+        "price": "$0",
+        "features": {
+          "f1": "每天5次AI回复",
+          "f2": "5个保存的模板",
+          "f3": "1个卖家档案",
+          "f4": "在所有支持的平台上工作",
+          "f5": "无需帐户",
+          "f6": "设备端 Chrome AI"
+        },
+        "button": "添加到 Chrome"
+      },
+      "proMonthly": {
+        "title": "专业版 (月付)",
+        "price": "$9.99/月",
+        "features": {
+          "f1": "无限AI回复",
+          "f2": "无限保存的模板",
+          "f3": "多个卖家档案",
+          "f4": "高级回复语气",
+          "f5": "列表优化工具",
+          "f6": "市场洞察",
+          "f7": "导入/导出工具",
+          "f8": "优先支持"
+        },
+        "button": "按月订阅"
+      },
+      "proLifetime": {
+        "title": "专业版 (终身)",
+        "price": "$149",
+        "tagline": "一次付费，永久使用",
+        "features": {
+          "f1": "月度专业版中的所有内容",
+          "f2": "无经常性费用",
+          "f3": "包括未来的更新",
+          "f4": "早期采用者定价"
+        },
+        "button": "终身通行证"
+      }
+    },
+    "faq": {
+      "sectionTitle": "常见问题",
+      "q1": {
+        "question": "我的客户数据安全吗？",
+        "answer": "是的。所有个人资料都在本地存储。Donbrico 服务器上不存储任何内容。"
+      },
+      "q2": {
+        "question": "它支持我特定的市场吗？",
+        "answer": "是的。它与 Etsy、eBay、Facebook Marketplace、Shopify 等兼容。"
+      },
+      "q3": {
+        "question": "自带密钥 (BYOK) 是如何工作的？",
+        "answer": "您可以在设置中连接来自 OpenAI、Anthropic 等的自己的 API 密钥。"
+      },
+      "moreQuestions": "还有其他问题吗？",
+      "viewFullLink": "阅读我们完整的常见问题解答 →"
     }
   }
 }

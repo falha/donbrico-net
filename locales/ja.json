@@ -55,7 +55,8 @@
     "extensionsAutofill": "オートフィルAI",
     "extensionsHostReply": "ホストリプライAI",
     "blog": "Blog",
-    "extensionsTradeDesk": "トレードデスクAI"
+    "extensionsTradeDesk": "トレードデスクAI",
+    "extensionsSellerDesk": "SellerDesk AI"
   },
   "home": {
     "page": {
@@ -533,7 +534,8 @@
       "workDesk": "ワークデスク",
       "hostReplyAi": "ホストリプライAI",
       "medAutoFillAi": "MedAutoFill AI",
-      "tradeDesk": "トレードデスクAI"
+      "tradeDesk": "トレードデスクAI",
+      "sellerDesk": "SellerDesk AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "ドンブリコAI返信アシスタント",
@@ -648,6 +650,29 @@
       "dataDeletion": {
         "sectionTitle": "データの削除",
         "paragraph": "拡張機能をアンインストールすると、ローカルに保存されているビジネスの詳細と設定がすべて削除されます。 "
+      }
+    },
+    "sellerDesk": {
+      "sectionTitle": "SellerDesk AI",
+      "whatWeCollect": {
+        "sectionTitle": "収集するデータ",
+        "paragraph": "なし。ストアプロファイル、保存された返信、設定は、デバイス上のChromeのストレージにローカルに保存されます。Donbricoサーバーに送信されるデータはありません。"
+      },
+      "howStored": {
+        "sectionTitle": "データの保存方法",
+        "paragraph": "ストアプロファイルとテンプレートはChromeのローカルストレージに保存されます。サードパーティのAIプロバイダーを使用しない限り、このデータがデバイスを離れることはありません。"
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "サードパーティAIプロバイダー（Bring Your Own Key）",
+        "paragraph": "OpenAIなどのプロバイダーを設定すると、購入者のメッセージとストアプロファイルの詳細がそのサードパーティプロバイダーに送信され、返信が生成されます。Gemini Nanoを使用する場合、すべての処理はデバイス上で行われます。DonbricoはAIリクエストを保存またはログに記録しません。"
+      },
+      "permissions": {
+        "sectionTitle": "使用される権限",
+        "paragraph": "ストレージ（ストアプロファイルと設定用）、activeTab（テキストフィールドの検出用）、スクリプト（返信ツールバーの挿入用）。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "データの削除",
+        "paragraph": "拡張機能をアンインストールすると、ローカルに保存されているすべてのストアの詳細と設定が削除されます。Donbricoサーバーに保持されるデータはありません。"
       }
     }
   },
@@ -3193,6 +3218,114 @@
         "question": "「Bring Your Own Key」(BYOK) はどのように機能しますか?",
         "answer": "設定で OpenAI、Anthropic、Groq、または OpenRouter から独自の API キーを接続できます。"
       }
+    }
+  },
+  "sellerDesk": {
+    "page": {
+      "title": "オンライン販売者向け AI 返信アシスタント",
+      "description": "Etsy、eBay、Shopify など向けの AI による返信。無料の Chrome 拡張機能。"
+    },
+    "hero": {
+      "eyebrow": "CHROME 拡張機能",
+      "title": "数秒で購入者のメッセージに返信します。",
+      "subtitle": "SellerDesk AI は、ブラウザ内で直接、AI が生成した専門的かつ個人的な返信を提供し、購入者の質問にすばやく対応できるようにします。",
+      "buttonPrimary": "Chrome に追加 — 無料",
+      "buttonSecondary": "仕組みを見る ↓",
+      "disclaimer": "🔒 デバイス上で動作 — 会話はローカルに保持されます"
+    },
+    "howItWorks": {
+      "sectionTitle": "仕組み",
+      "step1": {
+        "title": "1. ストアのポリシーを保存する",
+        "description": "ショップの詳細、返品ポリシー、よくある質問の回答を一度だけ保存します。"
+      },
+      "step2": {
+        "title": "2. メッセージを開く",
+        "description": "Etsy、eBay、Facebook Marketplace、Shopify などの内部で直接動作します。"
+      },
+      "step3": {
+        "title": "3. AI が返信を作成する",
+        "description": "SellerDesk は購入者の質問とストアのポリシーを読み取り、即座に返信を作成します。"
+      }
+    },
+    "features": {
+      "sectionTitle": "特徴",
+      "feature1": {
+        "title": "販売する場所で動作します",
+        "description": "Etsy、eBay、Shopify、Mercari、Gmail、Outlook などと互換性があります。"
+      },
+      "feature2": {
+        "title": "繰り返しの質問にかかる時間を節約",
+        "description": "配送、オファー、返品、在庫状況などの保存された返信を再利用します。"
+      },
+      "feature3": {
+        "title": "トーンを一定に保つ",
+        "description": "フレンドリー、プロフェッショナル、親切、きっぱりとした態度から選びます。"
+      },
+      "feature4": {
+        "title": "プライバシーを重視した設計",
+        "description": "SellerDesk サーバーは会話を処理しません。ローカル AI または BYOK をサポートします。"
+      }
+    },
+    "pricing": {
+      "sectionTitle": "シンプルな料金設定",
+      "free": {
+        "title": "無料",
+        "price": "0 ドル",
+        "features": {
+          "f1": "1日あたり5回のAI返信",
+          "f2": "5つの保存済みテンプレート",
+          "f3": "1つの販売者プロファイル",
+          "f4": "すべてのプラットフォームで動作",
+          "f5": "アカウント不要",
+          "f6": "デバイス上の Chrome AI"
+        },
+        "button": "Chrome に追加"
+      },
+      "proMonthly": {
+        "title": "Pro (月額)",
+        "price": "9.99 ドル/月",
+        "features": {
+          "f1": "無制限の AI 返信",
+          "f2": "無制限のテンプレート",
+          "f3": "複数のプロファイル",
+          "f4": "高度な返信トーン",
+          "f5": "最適化ツール",
+          "f6": "マーケットプレイスのインサイト",
+          "f7": "インポート/エクスポート",
+          "f8": "優先サポート"
+        },
+        "button": "月額プランを購読する"
+      },
+      "proLifetime": {
+        "title": "Pro (ライフタイム)",
+        "price": "149 ドル",
+        "tagline": "一度の支払いで永久に使用",
+        "features": {
+          "f1": "Pro 月額のすべて",
+          "f2": "定期的な費用なし",
+          "f3": "将来のアップデートが含まれます",
+          "f4": "早期採用者価格"
+        },
+        "button": "ライフタイム パス"
+      }
+    },
+    "faq": {
+      "sectionTitle": "よくある質問",
+      "q1": {
+        "question": "顧客データは安全ですか?",
+        "answer": "はい。すべてのプロファイルはローカルに保存されます。Donbrico サーバーには何も保存されません。"
+      },
+      "q2": {
+        "question": "特定のマーケットプレイスをサポートしていますか?",
+        "answer": "はい。Etsy、eBay、Shopify などで動作します。"
+      },
+      "q3": {
+        "question": "Bring Your Own Key (BYOK) とは何ですか?",
+        "answer": "設定で OpenAI や Anthropic などの独自の API キーを接続できます。"
+      },
+      "moreQuestions": "さらに質問がありますか?",
+      "viewFullLink": "完全な FAQ を読む →"
     }
   }
 }
