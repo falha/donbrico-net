@@ -4,7 +4,4 @@
 /null-carrier    /null-carrier/    301
 /support         /support/         301
 
-# Force HTTPS and non-www
-https://www.donbrico.net/* https://donbrico.net/:splat 301
-http://www.donbrico.net/* https://donbrico.net/:splat 301
-http://donbrico.net/* https://donbrico.net/:splat 301
+# Force HTTPS and non-www (handled via _headers file elsewhere)
