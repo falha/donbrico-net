@@ -536,7 +536,8 @@
       "hostReplyAi": "HostReply AI",
       "medAutoFillAi": "MedAutoFill AI",
       "tradeDesk": "TradeDesk KI",
-      "sellerDesk": "SellerDesk AI"
+      "sellerDesk": "SellerDesk AI",
+      "recruitReply": "RecruitReply AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico AI-Antwortassistent",
@@ -674,6 +675,29 @@
       "dataDeletion": {
         "sectionTitle": "Datenlöschung",
         "paragraph": "Bei der Deinstallation der Erweiterung werden alle lokal gespeicherten Shop-Details und Einstellungen gelöscht. Auf Donbrico-Servern werden keine Daten gespeichert."
+      }
+    },
+    "recruitReplyAi": {
+      "sectionTitle": "RecruitReply AI",
+      "whatWeCollect": {
+        "sectionTitle": "Welche Daten wir sammeln",
+        "paragraph": "Keiner. Ihre Personalvermittlerprofile, gespeicherten Vorlagen und Einstellungen werden lokal im Chrome-Speicher auf Ihrem Gerät gespeichert. Es werden keine Daten an Donbrico-Server übermittelt."
+      },
+      "howStored": {
+        "sectionTitle": "Wie Ihre Daten gespeichert werden",
+        "paragraph": "Personalvermittlerprofile und -vorlagen werden im lokalen Speicher von Chrome gespeichert. Diese Daten verlassen niemals Ihr Gerät, es sei denn, Sie nutzen einen Drittanbieter für künstliche Intelligenz."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "KI-Drittanbieter (Bring Your Own Key)",
+        "paragraph": "Wenn Sie einen Bring Your Own Key-Anbieter wie OpenAI konfigurieren, werden die Kandidatennachricht und Ihre Profildetails an diesen Drittanbieter gesendet, um eine Antwort zu generieren. Wenn Sie Gemini Nano verwenden (sofern verfügbar), erfolgt die gesamte Verarbeitung auf dem Gerät. Donbrico speichert oder protokolliert keine KI-Anfragen."
+      },
+      "permissions": {
+        "sectionTitle": "Verwendete Berechtigungen",
+        "paragraph": "Speicherung (für Personalvermittlerprofile und -einstellungen), ActiveTab (zum Erkennen von Textfeldern), Skripting (zum Einfügen der Antwortsymbolleiste)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Datenlöschung",
+        "paragraph": "Durch die Deinstallation der Erweiterung werden alle lokal gespeicherten Daten und Einstellungen gelöscht. Auf den Donbrico-Servern werden keine Daten gespeichert."
       }
     }
   },

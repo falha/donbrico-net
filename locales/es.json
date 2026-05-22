@@ -536,7 +536,8 @@
       "hostReplyAi": "HostRespuesta AI",
       "medAutoFillAi": "MedAutoFill IA",
       "tradeDesk": "IA de TradeDesk",
-      "sellerDesk": "SellerDesk AI"
+      "sellerDesk": "SellerDesk AI",
+      "recruitReply": "ReclutarResponder AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Asistente de respuesta de IA de Donbrico",
@@ -674,6 +675,29 @@
       "dataDeletion": {
         "sectionTitle": "Eliminación de datos",
         "paragraph": "Desinstalar la extensión elimina todos los detalles de la tienda y la configuración almacenados localmente. No se retienen datos en los servidores de Donbrico."
+      }
+    },
+    "recruitReplyAi": {
+      "sectionTitle": "ReclutarResponder AI",
+      "whatWeCollect": {
+        "sectionTitle": "Qué datos recopilamos",
+        "paragraph": "Ninguno. Sus perfiles de reclutador, plantillas guardadas y configuraciones se almacenan localmente en el almacenamiento de Chrome en su dispositivo. No se transmiten datos a los servidores de Donbrico."
+      },
+      "howStored": {
+        "sectionTitle": "Cómo se almacenan tus datos",
+        "paragraph": "Los perfiles y plantillas de Recruiter se almacenan en el almacenamiento local de Chrome. Estos datos nunca salen de su dispositivo a menos que utilice un proveedor de inteligencia artificial externo."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Proveedores de IA de terceros (traiga su propia clave)",
+        "paragraph": "Si configura un proveedor Traiga su propia clave, como OpenAI, el mensaje del candidato y los detalles de su perfil se envían a ese proveedor externo para generar una respuesta. Si usa Gemini Nano (donde esté disponible), todo el procesamiento se realiza en el dispositivo. Donbrico no almacena ni registra ninguna solicitud de IA."
+      },
+      "permissions": {
+        "sectionTitle": "Permisos utilizados",
+        "paragraph": "almacenamiento (para perfiles y configuraciones de reclutador), activeTab (para detectar campos de texto), secuencias de comandos (para inyectar la barra de herramientas de respuesta)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Eliminación de datos",
+        "paragraph": "La desinstalación de la extensión elimina todos los datos y configuraciones almacenados localmente. No se retienen datos en los servidores de Donbrico."
       }
     }
   },

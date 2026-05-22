@@ -536,7 +536,8 @@
       "hostReplyAi": "ホストリプライAI",
       "medAutoFillAi": "MedAutoFill AI",
       "tradeDesk": "トレードデスクAI",
-      "sellerDesk": "SellerDesk AI"
+      "sellerDesk": "SellerDesk AI",
+      "recruitReply": "リクルートリプライAI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "ドンブリコAI返信アシスタント",
@@ -674,6 +675,29 @@
       "dataDeletion": {
         "sectionTitle": "データの削除",
         "paragraph": "拡張機能をアンインストールすると、ローカルに保存されているすべてのストアの詳細と設定が削除されます。Donbricoサーバーに保持されるデータはありません。"
+      }
+    },
+    "recruitReplyAi": {
+      "sectionTitle": "リクルートリプライAI",
+      "whatWeCollect": {
+        "sectionTitle": "私たちが収集するデータ",
+        "paragraph": "なし。採用担当者のプロフィール、保存されたテンプレート、設定は、デバイス上の Chrome ストレージにローカルに保存されます。 Donbrico サーバーにはデータは送信されません。"
+      },
+      "howStored": {
+        "sectionTitle": "データの保存方法",
+        "paragraph": "採用担当者のプロフィールとテンプレートは、Chrome のローカル ストレージに保存されます。サードパーティの AI プロバイダーを使用しない限り、このデータがデバイスから流出することはありません。"
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "サードパーティ AI プロバイダー (Bring Your Own Key)",
+        "paragraph": "OpenAI などの Bring Your Own Key プロバイダーを構成すると、候補メッセージとプロファイルの詳細がそのサードパーティ プロバイダーに送信され、応答が生成されます。 Gemini Nano (利用可能な場合) を使用する場合、すべての処理はデバイス上で行われます。 Donbrico は AI リクエストを保存または記録しません。"
+      },
+      "permissions": {
+        "sectionTitle": "使用される権限",
+        "paragraph": "ストレージ (採用担当者のプロファイルと設定用)、activeTab (テキスト フィールドの検出用)、スクリプト (返信ツールバーの挿入用)。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "データの削除",
+        "paragraph": "拡張機能をアンインストールすると、ローカルに保存されているデータと設定がすべて削除されます。 Donbrico サーバーにはデータは保持されません。"
       }
     }
   },

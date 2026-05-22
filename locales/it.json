@@ -536,7 +536,8 @@
       "hostReplyAi": "HostReply AI",
       "medAutoFillAi": "MedAutoFill AI",
       "tradeDesk": "IA di TradeDesk",
-      "sellerDesk": "SellerDesk AI"
+      "sellerDesk": "SellerDesk AI",
+      "recruitReply": "ReclutaRispondi AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico Assistente di risposta AI",
@@ -674,6 +675,29 @@
       "dataDeletion": {
         "sectionTitle": "Cancellazione dei dati",
         "paragraph": "La disinstallazione dell'estensione elimina tutti i dettagli del negozio e le impostazioni archiviati localmente. Nessun dato viene conservato sui server di Donbrico."
+      }
+    },
+    "recruitReplyAi": {
+      "sectionTitle": "ReclutaRispondi AI",
+      "whatWeCollect": {
+        "sectionTitle": "Quali dati raccogliamo",
+        "paragraph": "Nessuno. I profili del reclutatore, i modelli salvati e le impostazioni vengono archiviati localmente nello spazio di archiviazione di Chrome sul tuo dispositivo. Nessun dato viene trasmesso ai server Donbrico."
+      },
+      "howStored": {
+        "sectionTitle": "Come vengono archiviati i tuoi dati",
+        "paragraph": "I profili e i modelli dei reclutatori vengono archiviati nella memoria locale di Chrome. Questi dati non lasciano mai il tuo dispositivo a meno che non utilizzi un provider AI di terze parti."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Fornitori di IA di terze parti (Bring Your Own Key)",
+        "paragraph": "Se configuri un provider Bring Your Own Key come OpenAI, il messaggio candidato e i dettagli del tuo profilo vengono inviati a quel provider di terze parti per generare una risposta. Se utilizzi Gemini Nano (ove disponibile), tutta l'elaborazione avviene sul dispositivo. Donbrico non memorizza né registra alcuna richiesta AI."
+      },
+      "permissions": {
+        "sectionTitle": "Autorizzazioni utilizzate",
+        "paragraph": "archiviazione (per profili e impostazioni del reclutatore), activeTab (per rilevare campi di testo), scripting (per inserire la barra degli strumenti di risposta)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Cancellazione dei dati",
+        "paragraph": "La disinstallazione dell'estensione elimina tutti i dati e le impostazioni archiviati localmente. Nessun dato viene conservato sui server Donbrico."
       }
     }
   },
