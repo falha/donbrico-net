@@ -286,7 +286,11 @@
         }
 
         function isValidExtensionId(id) {
-          return typeof id === "string" && /^[a-z]{32}$/.test(id.trim());
+          return (
+            typeof id === "string" &&
+            /^[a-z]{32}$/i.test(id.trim()) &&
+            !id.includes("/")
+          );
         }
 
         function normalizeExtensionId(id) {
@@ -315,27 +319,41 @@
             .trim()
             .toLowerCase();
 
+          console.log("resolveTargetExtensionId:", {
+            mode,
+            isTestMode,
+            explicitExtId,
+            product,
+          });
+
           // Unpacked / dev: ?mode=test&extid=<chrome-extension-id>
           if (isTestMode && isValidExtensionId(explicitExtId)) {
+            console.log("Using test mode extid:", explicitExtId);
             return normalizeExtensionId(explicitExtId);
           }
           if (isKnownMappedExtensionId(explicitExtId)) {
+            console.log("Using known mapped extid:", explicitExtId);
             return normalizeExtensionId(explicitExtId);
           }
 
           var mappedExtId = normalizeExtensionId(
             EXTENSIONS_BY_PRODUCT[product] || "",
           );
+          console.log("Mapped extid for product", product, ":", mappedExtId);
           if (mappedExtId) {
             return mappedExtId;
           }
 
           // No product param: legacy checkout links without ?product= → Autofill AI only.
           if (!product) {
+            console.log("No product param, falling back to autofill-ai");
             return normalizeExtensionId(EXTENSIONS_BY_PRODUCT["autofill-ai"]);
           }
 
           // Known product slug but no store ID yet — manual activation (never message Autofill AI).
+          console.log(
+            "Product known but no mapped ID, returning empty for manual activation",
+          );
           return "";
         }
 
@@ -566,6 +584,7 @@
                     return;
                   }
 
+                  // Only show error after all retries are exhausted
                   showManual(errorMsg);
                 }
               },
