@@ -161,7 +161,7 @@
     <div id="loading">
       <h1 data-i18n="activate.loading.title">Activating License</h1>
       <div class="spinner"></div>
-      <p data-i18n="activate.loading.subtitle">Connecting to the Donbrico extension…</p>
+      <p id="loadingHint" data-i18n="activate.loading.subtitle">Connecting to the Donbrico extension…</p>
     </div>
 
     <div id="success" class="hidden">
@@ -207,14 +207,29 @@
         return def;
       }
 
-      var DEFAULT_PRODUCT_KEY = 'autofill-ai';
+      // Chrome Web Store IDs — keep in sync with each product's index.html install link.
+      // See docs/activation-routing.md. Empty string = show manual activation (no sendMessage).
       var EXTENSIONS_BY_PRODUCT = {
         'autofill-ai': 'ldglmpphcjdamkmfpknojafocpihhbal',
-        'ai-reply': 'iokjfnedkqeonjpfcnptjfgacdrhcbal',
+        'ai-reply': 'hkkbbcnmbhkcjcmmifbclgmbkipillih',
         'host-reply': 'habaanjfebpomgkglicmnkofhiikekol',
+        'seller-desk': 'khcpemlmikkjknbepapfdfaeggjohelb',
+        'trade-desk': 'olepgmahphlopgjihbpaochdbekadpcp',
+        'recruit-reply': '',
         'workdesk': 'kilfjjkfocajofinfhplccpmojdjplhb'
       };
+      var PRODUCT_LABELS = {
+        'autofill-ai': 'Donbrico Autofill AI',
+        'ai-reply': 'Donbrico AI Reply Assistant',
+        'host-reply': 'HostReply AI',
+        'seller-desk': 'SellerDesk AI',
+        'trade-desk': 'TradeDesk AI',
+        'recruit-reply': 'RecruitReply AI',
+        'workdesk': 'Donbrico WorkDesk'
+      };
       var params = new URLSearchParams(window.location.search);
+      var productSlug = (params.get('product') || '').trim().toLowerCase();
+      var productLabel = PRODUCT_LABELS[productSlug] || (productSlug ? productSlug : 'Donbrico');
       var key = parseLicenseKey(params);
       var targetExtId = resolveTargetExtensionId(params);
 
@@ -224,19 +239,27 @@
       var licenseKeyEl = document.getElementById('licenseKey');
       var copyBtn = document.getElementById('copyBtn');
       var manualIntro = document.getElementById('manualIntro');
+      var loadingHint = document.getElementById('loadingHint');
       var RETRY_INTERVAL_MS = 2000;
       var RETRY_TIMEOUT_MS = 60000;
 
-      function isAllowedExtensionId(id) {
-        if (!id || typeof id !== 'string') {
-          return false;
-        }
-        var normalizedId = id.trim();
-        if (!/^[a-z]{32}$/.test(normalizedId)) {
-          return false;
-        }
-        return Object.keys(EXTENSIONS_BY_PRODUCT).some(function(product) {
-          return EXTENSIONS_BY_PRODUCT[product] === normalizedId;
+      if (loadingHint && productSlug && PRODUCT_LABELS[productSlug]) {
+        loadingHint.textContent = 'Connecting to ' + productLabel + '…';
+      }
+
+      function isValidExtensionId(id) {
+        return typeof id === 'string' && /^[a-z]{32}$/.test(id.trim());
+      }
+
+      function normalizeExtensionId(id) {
+        return isValidExtensionId(id) ? id.trim() : '';
+      }
+
+      function isKnownMappedExtensionId(id) {
+        var normalized = normalizeExtensionId(id);
+        if (!normalized) return false;
+        return Object.keys(EXTENSIONS_BY_PRODUCT).some(function(slug) {
+          return EXTENSIONS_BY_PRODUCT[slug] === normalized;
         });
       }
 
@@ -246,25 +269,38 @@
       }
 
       function resolveTargetExtensionId(searchParams) {
-        var defaultExtId = EXTENSIONS_BY_PRODUCT[DEFAULT_PRODUCT_KEY];
         var mode = (searchParams.get('mode') || '').trim().toLowerCase();
         var isTestMode = mode === 'test';
         var explicitExtId = (searchParams.get('extid') || '').trim();
-        // Allow unpacked/dev extension ids in test mode.
-        if (isTestMode && /^[a-z]{32}$/.test(explicitExtId)) {
-          return explicitExtId;
+        var product = (searchParams.get('product') || '').trim().toLowerCase();
+
+        // Unpacked / dev: ?mode=test&extid=<chrome-extension-id>
+        if (isTestMode && isValidExtensionId(explicitExtId)) {
+          return normalizeExtensionId(explicitExtId);
         }
-        if (isAllowedExtensionId(explicitExtId)) {
-          return explicitExtId;
+        if (isKnownMappedExtensionId(explicitExtId)) {
+          return normalizeExtensionId(explicitExtId);
         }
 
-        var product = (searchParams.get('product') || '').trim().toLowerCase();
-        var mappedExtId = EXTENSIONS_BY_PRODUCT[product] || '';
-        if (isAllowedExtensionId(mappedExtId)) {
+        var mappedExtId = normalizeExtensionId(EXTENSIONS_BY_PRODUCT[product] || '');
+        if (mappedExtId) {
           return mappedExtId;
         }
 
-        return defaultExtId;
+        // No product param: legacy checkout links without ?product= → Autofill AI only.
+        if (!product) {
+          return normalizeExtensionId(EXTENSIONS_BY_PRODUCT['autofill-ai']);
+        }
+
+        // Known product slug but no store ID yet — manual activation (never message Autofill AI).
+        return '';
+      }
+
+      function manualActivationIntro() {
+        return (
+          'Copy the key below and paste it in <strong>' + productLabel +
+          '</strong>: open the extension → <strong>Settings</strong> → <strong>Premium</strong> → paste → <strong>Activate</strong>.'
+        );
       }
 
       function resolveLicenseKeyFromBackend(searchParams) {
@@ -379,8 +415,15 @@
           return;
         }
 
+        if (!targetExtId) {
+          showManual(
+            productLabel + ' auto-activation is not configured on this page yet. Paste your key in the extension Premium tab (steps below).'
+          );
+          return;
+        }
+
         if (typeof chrome === 'undefined' || !chrome.runtime || !chrome.runtime.sendMessage) {
-          showManual();
+          showManual(manualActivationIntro());
           return;
         }
 
@@ -388,18 +431,24 @@
           chrome.runtime.sendMessage(targetExtId, { type: 'LICENSE_ACTIVATED', key: key }, function(response) {
             if (chrome.runtime.lastError) {
               console.warn('Extension not reachable:', chrome.runtime.lastError.message);
-              showManual(getT('activate.manual.notReachable', 'The extension could not be reached from this page (install Donbrico, or use a supported Chromium browser). Activate manually below.'));
+              showManual(
+                productLabel + ' could not be reached from this page. Install or enable it in Chrome, then activate manually below.'
+              );
               return;
             }
             if (response && response.success) {
               showSuccess();
             } else {
-              showManual((response && response.error) ? String(response.error) : getT('activate.manual.genericFailed', 'Activation failed. Try pasting the key in the extension Premium tab.'));
+              showManual(
+                (response && response.error)
+                  ? String(response.error)
+                  : getT('activate.manual.genericFailed', 'Activation failed. Try pasting the key in the extension Premium tab.')
+              );
             }
           });
         } catch (e) {
           console.warn('sendMessage failed:', e);
-          showManual();
+          showManual(manualActivationIntro());
         }
       }
 

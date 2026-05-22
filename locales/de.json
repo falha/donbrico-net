@@ -56,7 +56,8 @@
     "extensionsHostReply": "HostReply AI",
     "blog": "Blog",
     "extensionsTradeDesk": "TradeDesk KI",
-    "extensionsSellerDesk": "SellerDesk AI"
+    "extensionsSellerDesk": "SellerDesk AI",
+    "extensionsRecruitReply": "RecruitReply AI"
   },
   "home": {
     "page": {
@@ -3295,6 +3296,115 @@
       },
       "moreQuestions": "Noch Fragen?",
       "viewFullLink": "Lesen Sie unsere vollständigen FAQs →"
+    }
+  },
+  "recruitReply": {
+    "page": {
+      "title": "RecruitReply AI – Kandidaten in Sekundenschnelle antworten (kostenlose Chrome-Erweiterung)",
+      "description": "Antworten Sie Kandidaten auf LinkedIn und ATS in Sekundenschnelle. RecruitReply AI verfasst professionelle Nachrichten in Ihrem Posteingang. Kostenlose Chrome-Erweiterung.",
+      "ogTitle": "RecruitReply AI – Kandidaten in Sekundenschnelle antworten (kostenlose Chrome-Erweiterung)",
+      "ogDescription": "Antworten Sie Kandidaten auf LinkedIn und ATS in Sekundenschnelle. RecruitReply AI verfasst professionelle Nachrichten in Ihrem Posteingang. Kostenlose Chrome-Erweiterung."
+    },
+    "hero": {
+      "eyebrow": "CHROM-VERLÄNGERUNG",
+      "title": "Antworten Sie Kandidaten in Sekundenschnelle.",
+      "subtitle": "RecruitReply AI verfasst professionelle Nachrichten direkt in Ihrem LinkedIn- oder ATS-Posteingang – und das kostenlos. Enthält eine Vorlagenbibliothek für Beschaffung, Nachverfolgung und Angebote.",
+      "buttonPrimary": "Zu Chrome hinzufügen – kostenlos",
+      "buttonSecondary": "Sehen Sie, wie es funktioniert ↓",
+      "disclaimer": "🔒 Integrierte KI läuft lokal – die Daten bleiben in Ihrem Browser"
+    },
+    "howItWorks": {
+      "sectionTitle": "Wie es funktioniert",
+      "step1": {
+        "title": "1. Speichern Sie Ihre Vorlagen",
+        "description": "Speichern Sie Ihre Beschaffungsanfragen, Nachverfolgungen, Angebote und Ablehnungsschreiben in der Bibliothek."
+      },
+      "step2": {
+        "title": "2. Öffnen Sie Ihr ATS oder LinkedIn",
+        "description": "Funktioniert direkt in LinkedIn, Gmail, Greenhouse, Lever und Workday."
+      },
+      "step3": {
+        "title": "3. AI entwirft die Antwort",
+        "description": "RecruitReply verwendet Ihre Vorlage, liest den Kontext und erstellt sofort eine personalisierte Antwort."
+      }
+    },
+    "features": {
+      "sectionTitle": "Merkmale",
+      "feature1": {
+        "title": "Funktioniert dort, wo Sie arbeiten",
+        "description": "Verarbeitet LinkedIn InMails und ATS-E-Mail-Ersteller automatisch."
+      },
+      "feature2": {
+        "title": "Intelligente Variablen",
+        "description": "Speichern Sie Ihre Vorlagen mit {{name}}, {{role}} und {{company}}. KI ersetzt sie dynamisch."
+      },
+      "feature3": {
+        "title": "Datenschutz zuerst",
+        "description": "Ihre Vorlagen werden lokal gespeichert. Verwenden Sie Chrome AI auf dem Gerät, um alles vollständig privat zu halten."
+      },
+      "feature4": {
+        "title": "Bringen Sie Ihre eigene KI mit",
+        "description": "Wenn Sie möchten, können Sie OpenAI, Claude oder Gemini mit Ihrem eigenen API-Schlüssel verbinden."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Einfache Preisgestaltung. Keine versteckten Kosten.",
+      "free": {
+        "title": "Frei",
+        "price": "0 $",
+        "features": {
+          "f1": "5 gespeicherte Antwortvorlagen",
+          "f2": "1 ATS-Profil",
+          "f3": "5 intelligente Kernvariablen",
+          "f4": "10 KI-Antworten/Tag",
+          "f5": "3 Antwortszenarien",
+          "f6": "Einzelner BYOK-Anbieter",
+          "f7": "3 Rekrutierertöne"
+        },
+        "button": "Zu Chrome hinzufügen"
+      },
+      "proMonthly": {
+        "title": "Pro (monatlich)",
+        "price": "7,99 $/Monat",
+        "features": {
+          "f1": "Unbegrenzte KI-Antworten",
+          "f2": "Unbegrenzt gespeicherte Antworten",
+          "f3": "Unbegrenzte Profile",
+          "f4": "5 Rekrutierertöne",
+          "f5": "Vorlagen exportieren/importieren",
+          "f6": "Über 20 intelligente Variablen",
+          "f7": "Mehrere BYOK-Anbieter",
+          "f8": "Vorrangiger Support"
+        },
+        "button": "Monatlich abonnieren"
+      },
+      "proLifetime": {
+        "title": "Pro (lebenslang)",
+        "price": "69 $",
+        "tagline": "Einmal bezahlen, für immer nutzen",
+        "features": {
+          "f1": "Alles in Pro Monthly",
+          "f2": "Keine wiederkehrenden Gebühren",
+          "f3": "Zukünftige Updates enthalten",
+          "f4": "Preise für Erstanwender"
+        },
+        "button": "Lebenslanger Pass"
+      }
+    },
+    "faq": {
+      "sectionTitle": "Häufig gestellte Fragen",
+      "q1": {
+        "question": "Funktioniert es mit LinkedIn und den wichtigsten ATS-Plattformen?",
+        "answer": "Ja, es funktioniert direkt in LinkedIn InMail, Gmail und den meisten ATS-Plattformen wie Greenhouse und Lever."
+      },
+      "q2": {
+        "question": "Ist es wirklich kostenlos?",
+        "answer": "Ja! Der kostenlose Plan bietet Ihnen alles, was Sie für den Einstieg benötigen, einschließlich 5 gespeicherter Vorlagen für Ihre Bibliothek."
+      },
+      "q3": {
+        "question": "Sind die Daten der Kandidaten sicher?",
+        "answer": "Ja, mit Gemini Nano (Chrome) bleibt die gesamte Verarbeitung auf dem Gerät. Wenn Sie Ihren eigenen API-Schlüssel verwenden, gehen die Daten nur an diesen Anbieter. Donbrico sieht Ihre Nachrichten nie."
+      }
     }
   }
 }

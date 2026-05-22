@@ -56,7 +56,8 @@
     "extensionsHostReply": "ホストリプライAI",
     "blog": "Blog",
     "extensionsTradeDesk": "トレードデスクAI",
-    "extensionsSellerDesk": "SellerDesk AI"
+    "extensionsSellerDesk": "SellerDesk AI",
+    "extensionsRecruitReply": "リクルートリプライAI"
   },
   "home": {
     "page": {
@@ -3326,6 +3327,115 @@
       },
       "moreQuestions": "さらに質問がありますか?",
       "viewFullLink": "完全な FAQ を読む →"
+    }
+  },
+  "recruitReply": {
+    "page": {
+      "title": "RecruitReply AI – 数秒で候補者に返信 (無料の Chrome 拡張機能)",
+      "description": "LinkedIn と ATS 上の候補者に数秒で返信します。 RecruitReply AI は、受信トレイ内でプロフェッショナルなメッセージを下書きします。無料のChrome拡張機能。",
+      "ogTitle": "RecruitReply AI – 数秒で候補者に返信 (無料の Chrome 拡張機能)",
+      "ogDescription": "LinkedIn と ATS 上の候補者に数秒で返信します。 RecruitReply AI は、受信トレイ内でプロフェッショナルなメッセージを下書きします。無料のChrome拡張機能。"
+    },
+    "hero": {
+      "eyebrow": "クローム拡張機能",
+      "title": "候補者に数秒で返信します。",
+      "subtitle": "RecruitReply AI は、LinkedIn または ATS の受信箱内にプロフェッショナルなメッセージを無料で直接作成します。調達、フォローアップ、オファー用のテンプレート ライブラリが含まれています。",
+      "buttonPrimary": "Chrome に追加 - 無料",
+      "buttonSecondary": "仕組みを見てみる ↓",
+      "disclaimer": "🔒 内蔵 AI はローカルで実行され、データはブラウザーに残ります"
+    },
+    "howItWorks": {
+      "sectionTitle": "仕組み",
+      "step1": {
+        "title": "1. テンプレートを保存します",
+        "description": "調達のアウトリーチ、フォローアップ、オファー、拒否の手紙をライブラリに保存します。"
+      },
+      "step2": {
+        "title": "2. ATS または LinkedIn を開きます",
+        "description": "LinkedIn、Gmail、Greenhouse、Lever、Workday 内で直接動作します。"
+      },
+      "step3": {
+        "title": "3.AIが返信文を作成",
+        "description": "RecruitReply は、テンプレートを使用してコンテキストを読み取り、パーソナライズされた応答の下書きを即座に作成します。"
+      }
+    },
+    "features": {
+      "sectionTitle": "特徴",
+      "feature1": {
+        "title": "あなたが働く場所で働きます",
+        "description": "LinkedIn InMails および ATS 電子メール コンポーザを自動的に処理します。"
+      },
+      "feature2": {
+        "title": "スマート変数",
+        "description": "{{name}}、{{role}}、および {{company}} を使用してテンプレートを保存します。 AI がそれらを動的に置き換えます。"
+      },
+      "feature3": {
+        "title": "プライバシー第一",
+        "description": "テンプレートはローカルに保存されます。デバイス上の Chrome AI を使用して、すべてを完全にプライベートに保ちます。"
+      },
+      "feature4": {
+        "title": "独自の AI を持ち込む",
+        "description": "必要に応じて、独自の API キーを使用して OpenAI、Claude、または Gemini に接続します。"
+      }
+    },
+    "pricing": {
+      "sectionTitle": "シンプルな料金設定。隠れたコストはありません。",
+      "free": {
+        "title": "無料",
+        "price": "$0",
+        "features": {
+          "f1": "5 つの保存された返信テンプレート",
+          "f2": "1 ATS プロファイル",
+          "f3": "5つのコアスマート変数",
+          "f4": "AI 返信 10 件/日",
+          "f5": "3 返信シナリオ",
+          "f6": "単一の BYOK プロバイダー",
+          "f7": "3 つのリクルータートーン"
+        },
+        "button": "Chromeに追加"
+      },
+      "proMonthly": {
+        "title": "プロ（月額）",
+        "price": "$7.99/月",
+        "features": {
+          "f1": "無制限の AI 応答",
+          "f2": "無制限に保存された返信",
+          "f3": "無制限のプロファイル",
+          "f4": "5 つのリクルータートーン",
+          "f5": "テンプレートのエクスポート/インポート",
+          "f6": "20 個以上のスマート変数",
+          "f7": "複数のBYOKプロバイダー",
+          "f8": "優先サポート"
+        },
+        "button": "毎月購読する"
+      },
+      "proLifetime": {
+        "title": "プロ (生涯)",
+        "price": "69ドル",
+        "tagline": "一度支払えば永久に使用可能",
+        "features": {
+          "f1": "Pro Monthly のすべて",
+          "f2": "定期的な料金はかかりません",
+          "f3": "将来のアップデートが含まれます",
+          "f4": "早期導入者の価格設定"
+        },
+        "button": "生涯パス"
+      }
+    },
+    "faq": {
+      "sectionTitle": "よくある質問",
+      "q1": {
+        "question": "LinkedIn や主要な ATS プラットフォームで動作しますか?",
+        "answer": "はい、LinkedIn InMail、Gmail、および Greenhouse や Lever などのほとんどの ATS プラットフォーム内で直接動作します。"
+      },
+      "q2": {
+        "question": "本当に無料ですか?",
+        "answer": "はい！無料プランでは、ライブラリ用に保存された 5 つのテンプレートを含め、開始するために必要なものがすべて提供されます。"
+      },
+      "q3": {
+        "question": "候補者のデータは安全ですか?",
+        "answer": "はい、Gemini Nano (Chrome) を使用すると、すべての処理がデバイス上に留まります。独自の API キーを使用する場合、データはそのプロバイダーにのみ送信されます。ドンブリコはあなたのメッセージを見ることはありません。"
+      }
     }
   }
 }
