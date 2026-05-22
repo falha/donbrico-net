@@ -21,7 +21,7 @@ This prevents false errors such as “Donbrico Autofill AI: resource could not b
 | `host-reply` | HostReply AI | `habaanjfebpomgkglicmnkofhiikekol` |
 | `seller-desk` | SellerDesk AI | `khcpemlmikkjknbepapfdfaeggjohelb` |
 | `trade-desk` | TradeDesk AI | `olepgmahphlopgjihbpaochdbekadpcp` |
-| `recruit-reply` | RecruitReply AI | *(empty until listed — use manual steps or `extid` in test)* |
+| `recruit-reply` | RecruitReply AI | `ombmddnjchahmokhcfglglgfipmbbbee` |
 | `workdesk` | Donbrico WorkDesk | `kilfjjkfocajofinfhplccpmojdjplhb` |
 
 Source of truth for store links: each product’s `index.html` install button (`chromewebstore.google.com/detail/...`).
@@ -41,7 +41,7 @@ Source of truth for store links: each product’s `index.html` install button (`
 - `/activate?license_key=abc` → Autofill AI (legacy, no `product`)
 - `/activate?license_key=abc&product=host-reply` → HostReply AI
 - `/activate?license_key=abc&product=recruit-reply&mode=test&extid=<unpacked-id>` → dev RecruitReply build
-- `/activate?license_key=abc&product=recruit-reply` → manual copy-key (until store id is set)
+- `/activate?license_key=abc&product=recruit-reply` → RecruitReply AI
 
 ## Onboarding a new extension
 
@@ -50,15 +50,11 @@ Source of truth for store links: each product’s `index.html` install button (`
 3. Use checkout `redirect_url` with `?product=<slug>` (and `&mode=test` for test checkout).
 4. Smoke-test: success screen or manual steps — **no** error toast from another extension.
 
-## Recruit Reply publish gate
-
-Before Recruit Reply store launch, set `recruit-reply` in `activate.html` to the **published** extension id (not an unpacked dev id). Until then, buyers see manual activation instructions instead of a false Autofill AI error.
-
 ## Test checklist
 
 - [ ] No `product` → Autofill AI (unchanged).
 - [ ] `product=host-reply` → HostReply (no Autofill toast).
 - [ ] `product=seller-desk` / `trade-desk` → correct extension.
-- [ ] `product=recruit-reply` without store id → manual UI only (no `sendMessage`).
-- [ ] `product=recruit-reply&mode=test&extid=<id>` → unpacked extension activates.
+- [ ] `product=recruit-reply` → RecruitReply AI (`ombmddnjchahmokhcfglglgfipmbbbee`).
+- [ ] `product=recruit-reply&mode=test&extid=<unpacked-id>` → dev build (when different from store id).
 - [ ] Unknown `product=foo` → manual UI only (no Autofill fallback).
