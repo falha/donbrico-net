@@ -1,480 +1,609 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="activate.page.title">Activate License — Donbrico</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #0a0a0f;
-      --text-color: #e8e8f0;
-      --accent: #6366f1;
-      --muted: #a0a0b0;
-      --border: #1a1a1f;
-      --success: #10b981;
-      --spacing-sm: 8px;
-      --spacing-md: 16px;
-      --spacing-lg: 24px;
-      --transition: background 0.15s ease, transform 0.15s ease;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="activate.page.title">Activate License — Donbrico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-color: #0a0a0f;
+        --text-color: #e8e8f0;
+        --accent: #6366f1;
+        --muted: #a0a0b0;
+        --border: #1a1a1f;
+        --success: #10b981;
+        --spacing-sm: 8px;
+        --spacing-md: 16px;
+        --spacing-lg: 24px;
+        --transition: background 0.15s ease, transform 0.15s ease;
+      }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg-color);
-      color: var(--text-color);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: var(--spacing-md);
-      line-height: 1.6;
-    }
+      body {
+        font-family: "Inter", sans-serif;
+        background: var(--bg-color);
+        color: var(--text-color);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: var(--spacing-md);
+        line-height: 1.6;
+      }
 
-    .container {
-      max-width: 500px;
-      width: 100%;
-      text-align: center;
-    }
+      .container {
+        max-width: 500px;
+        width: 100%;
+        text-align: center;
+      }
 
-    h1 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.75rem;
-      margin-bottom: var(--spacing-md);
-      color: var(--text-color);
-    }
+      h1 {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 1.75rem;
+        margin-bottom: var(--spacing-md);
+        color: var(--text-color);
+      }
 
-    p {
-      color: var(--muted);
-      margin-bottom: var(--spacing-lg);
-    }
+      p {
+        color: var(--muted);
+        margin-bottom: var(--spacing-lg);
+      }
 
-    .spinner {
-      width: 48px;
-      height: 48px;
-      border: 3px solid var(--border);
-      border-top-color: var(--accent);
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-      margin: var(--spacing-lg) auto;
-    }
+      .spinner {
+        width: 48px;
+        height: 48px;
+        border: 3px solid var(--border);
+        border-top-color: var(--accent);
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: var(--spacing-lg) auto;
+      }
 
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
 
-    .key-box {
-      background: var(--border);
-      border: 1px solid #2a2a2f;
-      border-radius: 8px;
-      padding: var(--spacing-md);
-      margin: var(--spacing-lg) 0;
-      display: flex;
-      align-items: center;
-      gap: var(--spacing-sm);
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+      .key-box {
+        background: var(--border);
+        border: 1px solid #2a2a2f;
+        border-radius: 8px;
+        padding: var(--spacing-md);
+        margin: var(--spacing-lg) 0;
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        flex-wrap: wrap;
+        justify-content: center;
+      }
 
-    .key-text {
-      font-family: 'Courier New', monospace;
-      font-size: 0.9rem;
-      color: var(--text-color);
-      word-break: break-all;
-    }
+      .key-text {
+        font-family: "Courier New", monospace;
+        font-size: 0.9rem;
+        color: var(--text-color);
+        word-break: break-all;
+      }
 
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: var(--spacing-sm) var(--spacing-md);
-      background: var(--accent);
-      color: var(--bg-color);
-      border: none;
-      border-radius: 8px;
-      font-family: 'Inter', sans-serif;
-      font-weight: 600;
-      font-size: 0.9rem;
-      cursor: pointer;
-      transition: var(--transition);
-      min-height: 44px;
-      text-decoration: none;
-    }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: var(--spacing-sm) var(--spacing-md);
+        background: var(--accent);
+        color: var(--bg-color);
+        border: none;
+        border-radius: 8px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: var(--transition);
+        min-height: 44px;
+        text-decoration: none;
+      }
 
-    .btn:hover {
-      background: #5a5fcf;
-      transform: translateY(-1px);
-    }
+      .btn:hover {
+        background: #5a5fcf;
+        transform: translateY(-1px);
+      }
 
-    .btn:active {
-      transform: translateY(0);
-    }
+      .btn:active {
+        transform: translateY(0);
+      }
 
-    .success {
-      color: var(--success);
-      font-weight: 600;
-    }
+      .success {
+        color: var(--success);
+        font-weight: 600;
+      }
 
-    .instructions {
-      background: rgba(99, 102, 241, 0.1);
-      border: 1px solid var(--accent);
-      border-radius: 8px;
-      padding: var(--spacing-md);
-      margin-top: var(--spacing-md);
-      text-align: left;
-      font-size: 0.9rem;
-    }
+      .instructions {
+        background: rgba(99, 102, 241, 0.1);
+        border: 1px solid var(--accent);
+        border-radius: 8px;
+        padding: var(--spacing-md);
+        margin-top: var(--spacing-md);
+        text-align: left;
+        font-size: 0.9rem;
+      }
 
-    .instructions h3 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1rem;
-      margin-bottom: var(--spacing-sm);
-      color: var(--accent);
-    }
+      .instructions h3 {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 1rem;
+        margin-bottom: var(--spacing-sm);
+        color: var(--accent);
+      }
 
-    .instructions ol {
-      margin-left: var(--spacing-md);
-      color: var(--muted);
-    }
+      .instructions ol {
+        margin-left: var(--spacing-md);
+        color: var(--muted);
+      }
 
-    .instructions li {
-      margin-bottom: var(--spacing-xs, 4px);
-    }
+      .instructions li {
+        margin-bottom: var(--spacing-xs, 4px);
+      }
 
-    .hidden {
-      display: none !important;
-    }
-  </style>
+      .hidden {
+        display: none !important;
+      }
+    </style>
 
-    <link rel="canonical" href="https://donbrico.net/activate.html">
-</head>
-<body>
-  <div class="container">
-    <div id="loading">
-      <h1 data-i18n="activate.loading.title">Activating License</h1>
-      <div class="spinner"></div>
-      <p id="loadingHint" data-i18n="activate.loading.subtitle">Connecting to the Donbrico extension…</p>
-    </div>
-
-    <div id="success" class="hidden">
-      <h1 class="success" data-i18n="activate.success.title">Pro activated!</h1>
-      <p data-i18n="activate.success.subtitle">You can close this tab and return to Donbrico.</p>
-    </div>
-
-    <div id="manual" class="hidden">
-      <h1 data-i18n="activate.manual.title">Activate Donbrico Pro</h1>
-      <p id="manualIntro" data-i18n="activate.manual.subtitle">Copy the key below and paste it in the extension: open Donbrico → Options → Premium → paste → Activate.</p>
-
-      <div class="key-box">
-        <span id="licenseKey" class="key-text"></span>
-        <button id="copyBtn" class="btn" type="button" title="Copy to clipboard">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-          </svg>
-          <span data-i18n="activate.manual.copy">Copy</span>
-        </button>
+    <link rel="canonical" href="https://donbrico.net/activate.html" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="loading">
+        <h1 data-i18n="activate.loading.title">Activating License</h1>
+        <div class="spinner"></div>
+        <p id="loadingHint" data-i18n="activate.loading.subtitle">
+          Connecting to the Donbrico extension…
+        </p>
       </div>
 
-      <div id="extensionInstructions" class="instructions">
-        <h3 data-i18n="activate.manual.steps.title">Steps</h3>
-        <ol>
-          <li data-i18n="activate.manual.steps.s1">Click the Donbrico extension icon in your toolbar</li>
-          <li data-i18n="activate.manual.steps.s2">Open <strong>Options</strong> (or right-click the icon → Options)</li>
-          <li data-i18n="activate.manual.steps.s3">Go to the <strong>Premium</strong> tab</li>
-          <li data-i18n="activate.manual.steps.s4">Paste your license key and click <strong>Activate</strong></li>
-        </ol>
+      <div id="success" class="hidden">
+        <h1 class="success" data-i18n="activate.success.title">
+          Pro activated!
+        </h1>
+        <p data-i18n="activate.success.subtitle">
+          You can close this tab and return to Donbrico.
+        </p>
+      </div>
+
+      <div id="manual" class="hidden">
+        <h1 data-i18n="activate.manual.title">Activate Donbrico Pro</h1>
+        <p id="manualIntro" data-i18n="activate.manual.subtitle">
+          Copy the key below and paste it in the extension: open Donbrico →
+          Options → Premium → paste → Activate.
+        </p>
+
+        <div class="key-box">
+          <span id="licenseKey" class="key-text"></span>
+          <button
+            id="copyBtn"
+            class="btn"
+            type="button"
+            title="Copy to clipboard"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path
+                d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+              ></path>
+            </svg>
+            <span data-i18n="activate.manual.copy">Copy</span>
+          </button>
+        </div>
+
+        <div id="extensionInstructions" class="instructions">
+          <h3 data-i18n="activate.manual.steps.title">Steps</h3>
+          <ol>
+            <li data-i18n="activate.manual.steps.s1">
+              Click the Donbrico extension icon in your toolbar
+            </li>
+            <li data-i18n="activate.manual.steps.s2">
+              Open <strong>Options</strong> (or right-click the icon → Options)
+            </li>
+            <li data-i18n="activate.manual.steps.s3">
+              Go to the <strong>Premium</strong> tab
+            </li>
+            <li data-i18n="activate.manual.steps.s4">
+              Paste your license key and click <strong>Activate</strong>
+            </li>
+          </ol>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="./js/i18n.js"></script>
-  <script>
-    (function() {
-      function getT(key, def) {
-        if (window.i18n && typeof window.i18n.t === 'function') {
-          const val = window.i18n.t(key);
-          return val.startsWith('[') && val.endsWith(']') ? def : val;
-        }
-        return def;
-      }
-
-      // Chrome Web Store IDs — keep in sync with each product's index.html install link.
-      // See docs/activation-routing.md. Empty string = show manual activation (no sendMessage).
-      var EXTENSIONS_BY_PRODUCT = {
-        'autofill-ai': 'ldglmpphcjdamkmfpknojafocpihhbal',
-        'ai-reply': 'hkkbbcnmbhkcjcmmifbclgmbkipillih',
-        'host-reply': 'habaanjfebpomgkglicmnkofhiikekol',
-        'seller-desk': 'khcpemlmikkjknbepapfdfaeggjohelb',
-        'trade-desk': 'olepgmahphlopgjihbpaochdbekadpcp',
-        'recruit-reply': 'ombmddnjchahmokhcfglglgfipmbbbee',
-        'workdesk': 'kilfjjkfocajofinfhplccpmojdjplhb'
-      };
-      var PRODUCT_LABELS = {
-        'autofill-ai': 'Donbrico Autofill AI',
-        'ai-reply': 'Donbrico AI Reply Assistant',
-        'host-reply': 'HostReply AI',
-        'seller-desk': 'SellerDesk AI',
-        'trade-desk': 'TradeDesk AI',
-        'recruit-reply': 'RecruitReply AI',
-        'workdesk': 'Donbrico WorkDesk'
-      };
-      var params = new URLSearchParams(window.location.search);
-      var productSlug = (params.get('product') || '').trim().toLowerCase();
-      var productLabel = PRODUCT_LABELS[productSlug] || (productSlug ? productSlug : 'Donbrico');
-      var key = parseLicenseKey(params);
-      var targetExtId = resolveTargetExtensionId(params);
-
-      var loadingEl = document.getElementById('loading');
-      var successEl = document.getElementById('success');
-      var manualEl = document.getElementById('manual');
-      var licenseKeyEl = document.getElementById('licenseKey');
-      var copyBtn = document.getElementById('copyBtn');
-      var manualIntro = document.getElementById('manualIntro');
-      var loadingHint = document.getElementById('loadingHint');
-      var RETRY_INTERVAL_MS = 2000;
-      var RETRY_TIMEOUT_MS = 60000;
-
-      if (loadingHint && productSlug && PRODUCT_LABELS[productSlug]) {
-        loadingHint.textContent = 'Connecting to ' + productLabel + '…';
-      }
-
-      function isValidExtensionId(id) {
-        return typeof id === 'string' && /^[a-z]{32}$/.test(id.trim());
-      }
-
-      function normalizeExtensionId(id) {
-        return isValidExtensionId(id) ? id.trim() : '';
-      }
-
-      function isKnownMappedExtensionId(id) {
-        var normalized = normalizeExtensionId(id);
-        if (!normalized) return false;
-        return Object.keys(EXTENSIONS_BY_PRODUCT).some(function(slug) {
-          return EXTENSIONS_BY_PRODUCT[slug] === normalized;
-        });
-      }
-
-      function parseLicenseKey(searchParams) {
-        var raw = searchParams.get('license_key') || searchParams.get('key') || '';
-        return raw ? String(raw).split(',')[0].trim() : '';
-      }
-
-      function resolveTargetExtensionId(searchParams) {
-        var mode = (searchParams.get('mode') || '').trim().toLowerCase();
-        var isTestMode = mode === 'test';
-        var explicitExtId = (searchParams.get('extid') || '').trim();
-        var product = (searchParams.get('product') || '').trim().toLowerCase();
-
-        // Unpacked / dev: ?mode=test&extid=<chrome-extension-id>
-        if (isTestMode && isValidExtensionId(explicitExtId)) {
-          return normalizeExtensionId(explicitExtId);
-        }
-        if (isKnownMappedExtensionId(explicitExtId)) {
-          return normalizeExtensionId(explicitExtId);
+    <script src="./js/i18n.js"></script>
+    <script>
+      (function () {
+        function getT(key, def) {
+          if (window.i18n && typeof window.i18n.t === "function") {
+            const val = window.i18n.t(key);
+            return val.startsWith("[") && val.endsWith("]") ? def : val;
+          }
+          return def;
         }
 
-        var mappedExtId = normalizeExtensionId(EXTENSIONS_BY_PRODUCT[product] || '');
-        if (mappedExtId) {
-          return mappedExtId;
+        // Chrome Web Store IDs — keep in sync with each product's index.html install link.
+        // See docs/activation-routing.md. Empty string = show manual activation (no sendMessage).
+        var EXTENSIONS_BY_PRODUCT = {
+          "autofill-ai": "ldglmpphcjdamkmfpknojafocpihhbal",
+          "ai-reply": "hkkbbcnmbhkcjcmmifbclgmbkipillih",
+          "host-reply": "habaanjfebpomgkglicmnkofhiikekol",
+          "seller-desk": "khcpemlmikkjknbepapfdfaeggjohelb",
+          "trade-desk": "olepgmahphlopgjihbpaochdbekadpcp",
+          "recruit-reply": "ombmddnjchahmokhcfglglgfipmbbbee",
+          workdesk: "kilfjjkfocajofinfhplccpmojdjplhb",
+        };
+        var PRODUCT_LABELS = {
+          "autofill-ai": "Donbrico Autofill AI",
+          "ai-reply": "Donbrico AI Reply Assistant",
+          "host-reply": "HostReply AI",
+          "seller-desk": "SellerDesk AI",
+          "trade-desk": "TradeDesk AI",
+          "recruit-reply": "RecruitReply AI",
+          workdesk: "Donbrico WorkDesk",
+        };
+        var params = new URLSearchParams(window.location.search);
+        var productSlug = (params.get("product") || "").trim().toLowerCase();
+        var productLabel =
+          PRODUCT_LABELS[productSlug] ||
+          (productSlug ? productSlug : "Donbrico");
+        var key = parseLicenseKey(params);
+        var targetExtId = resolveTargetExtensionId(params);
+
+        var loadingEl = document.getElementById("loading");
+        var successEl = document.getElementById("success");
+        var manualEl = document.getElementById("manual");
+        var licenseKeyEl = document.getElementById("licenseKey");
+        var copyBtn = document.getElementById("copyBtn");
+        var manualIntro = document.getElementById("manualIntro");
+        var loadingHint = document.getElementById("loadingHint");
+        var RETRY_INTERVAL_MS = 2000;
+        var RETRY_TIMEOUT_MS = 60000;
+
+        if (loadingHint && productSlug && PRODUCT_LABELS[productSlug]) {
+          loadingHint.textContent = "Connecting to " + productLabel + "…";
         }
 
-        // No product param: legacy checkout links without ?product= → Autofill AI only.
-        if (!product) {
-          return normalizeExtensionId(EXTENSIONS_BY_PRODUCT['autofill-ai']);
+        function isValidExtensionId(id) {
+          return typeof id === "string" && /^[a-z]{32}$/.test(id.trim());
         }
 
-        // Known product slug but no store ID yet — manual activation (never message Autofill AI).
-        return '';
-      }
-
-      function manualActivationIntro() {
-        return (
-          'Copy the key below and paste it in <strong>' + productLabel +
-          '</strong>: open the extension → <strong>Settings</strong> → <strong>Premium</strong> → paste → <strong>Activate</strong>.'
-        );
-      }
-
-      function resolveLicenseKeyFromBackend(searchParams) {
-        var subscriptionId = (searchParams.get('subscription_id') || '').trim();
-        if (!subscriptionId) {
-          return Promise.resolve({ key: '', error: '' });
+        function normalizeExtensionId(id) {
+          return isValidExtensionId(id) ? id.trim() : "";
         }
 
-        var requestParams = new URLSearchParams();
-        requestParams.set('subscription_id', subscriptionId);
-
-        var product = (searchParams.get('product') || '').trim();
-        if (product) {
-          requestParams.set('product', product);
-        }
-
-        var email = (searchParams.get('email') || '').trim();
-        if (email) {
-          requestParams.set('email', email);
-        }
-
-        var mode = (searchParams.get('mode') || '').trim();
-        if (mode) {
-          requestParams.set('mode', mode);
-        }
-
-        return fetch('/api/resolve-license?' + requestParams.toString(), {
-          method: 'GET',
-          credentials: 'same-origin'
-        }).then(function(response) {
-          return response.json().then(function(data) {
-            if (data && data.ok === true && data.license_key) {
-              return { key: String(data.license_key).trim(), error: '' };
-            }
-            return {
-              key: '',
-              error: data && data.error ? String(data.error) : '',
-              retryable: Boolean(data && data.retryable === true),
-            };
-          }).catch(function() {
-            return { key: '', error: 'invalid_resolver_response' };
+        function isKnownMappedExtensionId(id) {
+          var normalized = normalizeExtensionId(id);
+          if (!normalized) return false;
+          return Object.keys(EXTENSIONS_BY_PRODUCT).some(function (slug) {
+            return EXTENSIONS_BY_PRODUCT[slug] === normalized;
           });
-        }).catch(function() {
-          return { key: '', error: 'resolver_unreachable' };
-        });
-      }
-
-      function wait(ms) {
-        return new Promise(function(resolve) {
-          setTimeout(resolve, ms);
-        });
-      }
-
-      async function resolveLicenseWithRetries(searchParams) {
-        var subscriptionId = (searchParams.get('subscription_id') || '').trim();
-        if (!subscriptionId) {
-          return { key: '', error: '' };
         }
 
-        var startedAt = Date.now();
-        var lastError = '';
+        function parseLicenseKey(searchParams) {
+          var raw =
+            searchParams.get("license_key") || searchParams.get("key") || "";
+          return raw ? String(raw).split(",")[0].trim() : "";
+        }
 
-        while ((Date.now() - startedAt) < RETRY_TIMEOUT_MS) {
-          var result = await resolveLicenseKeyFromBackend(searchParams);
-          if (result && result.key) {
-            return result;
+        function resolveTargetExtensionId(searchParams) {
+          var mode = (searchParams.get("mode") || "").trim().toLowerCase();
+          var isTestMode = mode === "test";
+          var explicitExtId = (searchParams.get("extid") || "").trim();
+          var product = (searchParams.get("product") || "")
+            .trim()
+            .toLowerCase();
+
+          // Unpacked / dev: ?mode=test&extid=<chrome-extension-id>
+          if (isTestMode && isValidExtensionId(explicitExtId)) {
+            return normalizeExtensionId(explicitExtId);
+          }
+          if (isKnownMappedExtensionId(explicitExtId)) {
+            return normalizeExtensionId(explicitExtId);
           }
 
-          lastError = (result && result.error) ? String(result.error) : '';
-          if (!result || result.retryable !== true) {
-            return { key: '', error: lastError };
-          }
-
-          await wait(RETRY_INTERVAL_MS);
-        }
-
-        return { key: '', error: lastError || 'license_pending' };
-      }
-
-      function showManual(message) {
-        loadingEl.classList.add('hidden');
-        manualEl.classList.remove('hidden');
-        licenseKeyEl.textContent = key || getT('activate.manual.noKey', '(no key in URL — check your purchase email)');
-        if (message && manualIntro) {
-          manualIntro.innerHTML = message;
-        }
-      }
-
-      function showSuccess() {
-        loadingEl.classList.add('hidden');
-        successEl.classList.remove('hidden');
-        setTimeout(function() {
-          window.location.href = 'https://donbrico.net/';
-        }, 4000);
-      }
-
-      copyBtn.addEventListener('click', function() {
-        var toCopy = key || licenseKeyEl.textContent || '';
-        navigator.clipboard.writeText(toCopy).then(function() {
-          var labelEl = copyBtn.querySelector('[data-i18n]');
-          var original = labelEl ? labelEl.textContent : 'Copy';
-          if (labelEl) labelEl.textContent = getT('activate.manual.copied', '✓ Copied');
-          setTimeout(function() { if (labelEl) labelEl.textContent = original; }, 2000);
-        }).catch(function(err) {
-          console.error('Copy failed:', err);
-        });
-      });
-
-      function continueActivation(missingKeyMessage) {
-        if (!key) {
-          showManual(missingKeyMessage || getT('activate.manual.pending', 'Payment completed, but no license key was found in this link. Use the key from your receipt email, or open the extension Premium tab.'));
-          return;
-        }
-
-        if (!targetExtId) {
-          showManual(
-            productLabel + ' auto-activation is not configured on this page yet. Paste your key in the extension Premium tab (steps below).'
+          var mappedExtId = normalizeExtensionId(
+            EXTENSIONS_BY_PRODUCT[product] || "",
           );
+          if (mappedExtId) {
+            return mappedExtId;
+          }
+
+          // No product param: legacy checkout links without ?product= → Autofill AI only.
+          if (!product) {
+            return normalizeExtensionId(EXTENSIONS_BY_PRODUCT["autofill-ai"]);
+          }
+
+          // Known product slug but no store ID yet — manual activation (never message Autofill AI).
+          return "";
+        }
+
+        function manualActivationIntro() {
+          return (
+            "Copy the key below and paste it in <strong>" +
+            productLabel +
+            "</strong>: open the extension → <strong>Settings</strong> → <strong>Premium</strong> → paste → <strong>Activate</strong>."
+          );
+        }
+
+        function resolveLicenseKeyFromBackend(searchParams) {
+          var subscriptionId = (
+            searchParams.get("subscription_id") || ""
+          ).trim();
+          if (!subscriptionId) {
+            return Promise.resolve({ key: "", error: "" });
+          }
+
+          var requestParams = new URLSearchParams();
+          requestParams.set("subscription_id", subscriptionId);
+
+          var product = (searchParams.get("product") || "").trim();
+          if (product) {
+            requestParams.set("product", product);
+          }
+
+          var email = (searchParams.get("email") || "").trim();
+          if (email) {
+            requestParams.set("email", email);
+          }
+
+          var mode = (searchParams.get("mode") || "").trim();
+          if (mode) {
+            requestParams.set("mode", mode);
+          }
+
+          return fetch("/api/resolve-license?" + requestParams.toString(), {
+            method: "GET",
+            credentials: "same-origin",
+          })
+            .then(function (response) {
+              return response
+                .json()
+                .then(function (data) {
+                  if (data && data.ok === true && data.license_key) {
+                    return { key: String(data.license_key).trim(), error: "" };
+                  }
+                  return {
+                    key: "",
+                    error: data && data.error ? String(data.error) : "",
+                    retryable: Boolean(data && data.retryable === true),
+                  };
+                })
+                .catch(function () {
+                  return { key: "", error: "invalid_resolver_response" };
+                });
+            })
+            .catch(function () {
+              return { key: "", error: "resolver_unreachable" };
+            });
+        }
+
+        function wait(ms) {
+          return new Promise(function (resolve) {
+            setTimeout(resolve, ms);
+          });
+        }
+
+        async function resolveLicenseWithRetries(searchParams) {
+          var subscriptionId = (
+            searchParams.get("subscription_id") || ""
+          ).trim();
+          if (!subscriptionId) {
+            return { key: "", error: "" };
+          }
+
+          var startedAt = Date.now();
+          var lastError = "";
+
+          while (Date.now() - startedAt < RETRY_TIMEOUT_MS) {
+            var result = await resolveLicenseKeyFromBackend(searchParams);
+            if (result && result.key) {
+              return result;
+            }
+
+            lastError = result && result.error ? String(result.error) : "";
+            if (!result || result.retryable !== true) {
+              return { key: "", error: lastError };
+            }
+
+            await wait(RETRY_INTERVAL_MS);
+          }
+
+          return { key: "", error: lastError || "license_pending" };
+        }
+
+        function showManual(message) {
+          loadingEl.classList.add("hidden");
+          manualEl.classList.remove("hidden");
+          licenseKeyEl.textContent =
+            key ||
+            getT(
+              "activate.manual.noKey",
+              "(no key in URL — check your purchase email)",
+            );
+          if (message && manualIntro) {
+            manualIntro.innerHTML = message;
+          }
+        }
+
+        function showSuccess() {
+          loadingEl.classList.add("hidden");
+          successEl.classList.remove("hidden");
+          setTimeout(function () {
+            window.location.href = "https://donbrico.net/";
+          }, 4000);
+        }
+
+        copyBtn.addEventListener("click", function () {
+          var toCopy = key || licenseKeyEl.textContent || "";
+          navigator.clipboard
+            .writeText(toCopy)
+            .then(function () {
+              var labelEl = copyBtn.querySelector("[data-i18n]");
+              var original = labelEl ? labelEl.textContent : "Copy";
+              if (labelEl)
+                labelEl.textContent = getT(
+                  "activate.manual.copied",
+                  "✓ Copied",
+                );
+              setTimeout(function () {
+                if (labelEl) labelEl.textContent = original;
+              }, 2000);
+            })
+            .catch(function (err) {
+              console.error("Copy failed:", err);
+            });
+        });
+
+        function continueActivation(missingKeyMessage, retryCount) {
+          retryCount = retryCount || 0;
+          var maxRetries = 3;
+          var retryDelayMs = 1500;
+
+          if (!key) {
+            showManual(
+              missingKeyMessage ||
+                getT(
+                  "activate.manual.pending",
+                  "Payment completed, but no license key was found in this link. Use the key from your receipt email, or open the extension Premium tab.",
+                ),
+            );
+            return;
+          }
+
+          if (!targetExtId) {
+            showManual(
+              productLabel +
+                " auto-activation is not configured on this page yet. Paste your key in the extension Premium tab (steps below).",
+            );
+            return;
+          }
+
+          if (
+            typeof chrome === "undefined" ||
+            !chrome.runtime ||
+            !chrome.runtime.sendMessage
+          ) {
+            showManual(manualActivationIntro());
+            return;
+          }
+
+          try {
+            chrome.runtime.sendMessage(
+              targetExtId,
+              { type: "LICENSE_ACTIVATED", key: key },
+              function (response) {
+                if (chrome.runtime.lastError) {
+                  console.warn(
+                    "Extension not reachable:",
+                    chrome.runtime.lastError.message,
+                  );
+                  showManual(
+                    productLabel +
+                      " could not be reached from this page. Install or enable it in Chrome, then activate manually below.",
+                  );
+                  return;
+                }
+                if (response && response.success) {
+                  showSuccess();
+                } else {
+                  var errorMsg =
+                    response && response.error
+                      ? String(response.error)
+                      : getT(
+                          "activate.manual.genericFailed",
+                          "Activation failed. Try pasting the key in the extension Premium tab.",
+                        );
+
+                  // Retry on "requested resource could not be found" errors (race condition with Dodo Payments provisioning)
+                  var isProvisioningError =
+                    errorMsg.includes(
+                      "requested resource could not be found",
+                    ) ||
+                    errorMsg.includes("Invalid license key or wrong product");
+
+                  if (isProvisioningError && retryCount < maxRetries) {
+                    console.warn(
+                      "Activation failed with provisioning error, retrying (" +
+                        (retryCount + 1) +
+                        "/" +
+                        maxRetries +
+                        "):",
+                      errorMsg,
+                    );
+                    if (loadingHint) {
+                      loadingHint.textContent =
+                        "Activating license (retry " +
+                        (retryCount + 1) +
+                        "/" +
+                        maxRetries +
+                        ")…";
+                    }
+                    setTimeout(function () {
+                      continueActivation(missingKeyMessage, retryCount + 1);
+                    }, retryDelayMs);
+                    return;
+                  }
+
+                  showManual(errorMsg);
+                }
+              },
+            );
+          } catch (e) {
+            console.warn("sendMessage failed:", e);
+            showManual(manualActivationIntro());
+          }
+        }
+
+        if (key) {
+          // Delay slightly to allow i18n to load
+          setTimeout(continueActivation, 500);
           return;
         }
 
-        if (typeof chrome === 'undefined' || !chrome.runtime || !chrome.runtime.sendMessage) {
-          showManual(manualActivationIntro());
-          return;
-        }
-
-        try {
-          chrome.runtime.sendMessage(targetExtId, { type: 'LICENSE_ACTIVATED', key: key }, function(response) {
-            if (chrome.runtime.lastError) {
-              console.warn('Extension not reachable:', chrome.runtime.lastError.message);
-              showManual(
-                productLabel + ' could not be reached from this page. Install or enable it in Chrome, then activate manually below.'
-              );
+        resolveLicenseWithRetries(params)
+          .then(function (result) {
+            if (result && result.key) {
+              key = result.key;
+              continueActivation();
               return;
             }
-            if (response && response.success) {
-              showSuccess();
-            } else {
-              showManual(
-                (response && response.error)
-                  ? String(response.error)
-                  : getT('activate.manual.genericFailed', 'Activation failed. Try pasting the key in the extension Premium tab.')
-              );
+            var errorMessage = "";
+            if (result && result.error) {
+              console.warn("Resolve-license failed:", result.error);
+              errorMessage = getT(
+                "activate.manual.lookupFailed",
+                "Activation lookup failed ({{error}}). You can still paste your key manually below.",
+              ).replace("{{error}}", result.error);
             }
+            continueActivation(errorMessage);
+          })
+          .catch(function () {
+            continueActivation();
           });
-        } catch (e) {
-          console.warn('sendMessage failed:', e);
-          showManual(manualActivationIntro());
-        }
-      }
-
-      if (key) {
-        // Delay slightly to allow i18n to load
-        setTimeout(continueActivation, 500);
-        return;
-      }
-
-      resolveLicenseWithRetries(params).then(function(result) {
-        if (result && result.key) {
-          key = result.key;
-          continueActivation();
-          return;
-        }
-        var errorMessage = '';
-        if (result && result.error) {
-          console.warn('Resolve-license failed:', result.error);
-          errorMessage = getT('activate.manual.lookupFailed', 'Activation lookup failed ({{error}}). You can still paste your key manually below.').replace('{{error}}', result.error);
-        }
-        continueActivation(errorMessage);
-      }).catch(function() {
-        continueActivation();
-      });
-    })();
-  </script>
-  <script src="./js/chatwoot.js" defer></script>
-</body>
+      })();
+    </script>
+    <script src="./js/chatwoot.js" defer></script>
+  </body>
 </html>
