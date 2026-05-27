@@ -466,11 +466,8 @@
         }
 
         function showSuccess() {
-          loadingEl.classList.add("hidden");
-          successEl.classList.remove("hidden");
-          setTimeout(function () {
-            window.location.href = "https://donbrico.net/";
-          }, 4000);
+          // Immediately close the tab - extension options page will be open
+          window.close();
         }
 
         copyBtn.addEventListener("click", function () {

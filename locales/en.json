@@ -87,6 +87,10 @@
         "title": "Not sure which extension you need?",
         "subtitle": "Browse solutions by workflow to find the right fit for your role.",
         "button": "Explore Solutions →"
+      },
+      "propertyfill": {
+        "title": "Donbrico PropertyFill AI",
+        "description": "AI-powered real estate listing autofill. Generate professional property descriptions from rough notes (family, luxury, condo, investment, or quick templates) and automatically fill listing forms on Centris, Realtor.ca, Zillow, Flexmls, and Matrix instantly."
       }
     },
     "page": {
@@ -592,7 +596,8 @@
       "website": "This Website",
       "contact": "Contact",
       "sellerDesk": "SellerDesk AI",
-      "recruitReply": "RecruitReply AI"
+      "recruitReply": "RecruitReply AI",
+      "propertyFillAi": "PropertyFill AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico AI Reply Assistant",
@@ -730,6 +735,29 @@
       "dataDeletion": {
         "sectionTitle": "Data deletion",
         "paragraph": "Uninstalling the extension deletes all locally stored data and settings. No data is retained on Donbrico servers."
+      }
+    },
+    "propertyFillAi": {
+      "sectionTitle": "Donbrico PropertyFill AI",
+      "whatWeCollect": {
+        "sectionTitle": "What data we collect",
+        "paragraph": "None. All saved property draft profiles and settings are stored locally in Chrome's storage on the user's device. No data is transmitted to any server owned or operated by Donbrico."
+      },
+      "howStored": {
+        "sectionTitle": "How profile data is stored",
+        "paragraph": "Chrome's storage.local API. Data remains on the device and is never uploaded."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Third-party AI providers (Bring Your Own Key)",
+        "paragraph": "If the user configures a Bring Your Own Key provider such as OpenAI, Anthropic, Groq, or OpenRouter, their listing description text and property data are sent to that third-party provider. Donbrico is not responsible for the privacy practices of those providers. Gemini Nano (the default AI) runs entirely on-device."
+      },
+      "permissions": {
+        "sectionTitle": "Permissions used",
+        "paragraph": "storage (local drafts), activeTab (detect listing forms on current tab), scripting (inject fill button), host_permissions (work on real estate portals like Centris, Realtor.ca, Zillow, Flexmls, Matrix)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Data deletion",
+        "paragraph": "Uninstalling the extension removes all stored drafts and settings."
       }
     }
   },
@@ -1202,7 +1230,8 @@
     "extensionsTradeDesk": "TradeDesk AI",
     "blog": "Blog",
     "extensionsSellerDesk": "SellerDesk AI",
-    "extensionsRecruitReply": "RecruitReply AI"
+    "extensionsRecruitReply": "RecruitReply AI",
+    "extensionsPropertyFill": "PropertyFill AI"
   },
   "home2": {
     "page": {
@@ -3455,6 +3484,156 @@
       "q3": {
         "question": "Are candidates' data safe?",
         "answer": "Yes, all processing stays on-device with Gemini Nano (Chrome). If you use your own API key, data goes only to that provider. Donbrico never sees your messages."
+      }
+    }
+  },
+  "propertyFillAi": {
+    "page": {
+      "title": "PropertyFill AI — Best AI Listing Generator for Real Estate & Chrome",
+      "description": "Best AI listing generator for real estate agents. Autofill Centris, Realtor.ca, Zillow, Flexmls, and Matrix listing forms in one click. Free Chrome extension.",
+      "ogTitle": "PropertyFill AI — Best AI Listing Generator for Real Estate & Chrome",
+      "ogDescription": "Best AI listing generator for real estate agents. Autofill Centris, Realtor.ca, Zillow, Flexmls, and Matrix listing forms in one click. Free Chrome extension."
+    },
+    "hero": {
+      "badge": "REAL ESTATE · CHROME EXTENSION",
+      "title": "Fill listing forms. In one click.",
+      "subtitle": "PropertyFill AI helps real estate agents generate professional, high-converting property descriptions from rough notes and autofill listing forms on Centris, Realtor.ca, Zillow, Flexmls, and Matrix instantly.",
+      "buttonPrimary": "Add to Chrome — Free",
+      "buttonSecondary": "See how it works ↓",
+      "disclaimer": "🔒 Listing drafts are stored locally · Gemini Nano on Chrome is 100% private · No account required"
+    },
+    "roles": {
+      "agent": "Listing Agent",
+      "broker": "Real Estate Broker",
+      "admin": "Real Estate Admin",
+      "assistant": "Virtual Assistant"
+    },
+    "howItWorks": {
+      "sectionTitle": "How It Works",
+      "step1": {
+        "title": "1. Save your profile",
+        "description": "Enter your name, license number, and brokerage details. Stored securely on your device, synced across your Chrome."
+      },
+      "step2": {
+        "title": "2. Draft listing notes",
+        "description": "Describe the property in rough notes. Select a template (luxury, family, condo, investment) to generate a professional listing summary."
+      },
+      "step3": {
+        "title": "3. One-click fill",
+        "description": "Open your listing form on Centris, Realtor.ca, Zillow, or MLS. Click the ⚡ button to instantly autofill all standard and AI-generated fields."
+      }
+    },
+    "whatItFills": {
+      "sectionTitle": "What it fills.",
+      "property": {
+        "title": "Property Details",
+        "items": "Property type · Year built · Square footage · Lot size · Bedrooms · Bathrooms"
+      },
+      "listing": {
+        "title": "Listing Information",
+        "items": "Asking price · MLS/Centris ID · Street address · City · Province/State · Postal code"
+      },
+      "description": {
+        "title": "AI Descriptions",
+        "items": "Remarks (English & French) · Public remarks · Listing headlines"
+      },
+      "agent": {
+        "title": "Agent & Brokerage",
+        "items": "License number · Brokerage name · Brokerage address & phone · Agent bio"
+      }
+    },
+    "features": {
+      "sectionTitle": "Built for real estate workflows.",
+      "worksEverywhere": {
+        "title": "Works everywhere",
+        "description": "Autofill on Centris, Realtor.ca, Zillow, Flexmls, Matrix, and standard listing portals."
+      },
+      "private": {
+        "title": "100% private by default",
+        "description": "Drafts stay in Chrome's local storage. On-device Gemini Nano keeps your client data strictly private."
+      },
+      "aiListing": {
+        "title": "AI Listing Generator",
+        "description": "Turn rough bullet points into professional, high-converting property descriptions matching 5 distinct templates."
+      },
+      "byok": {
+        "title": "Bring your own AI key",
+        "description": "Use OpenAI, Anthropic (Claude), Groq, or OpenRouter for unlimited cloud AI completions on any machine."
+      },
+      "multiProfile": {
+        "title": "Up to 10 drafts",
+        "description": "Save and manage up to 10 property listings in progress and quickly swap between drafts (Pro)."
+      },
+      "noAccount": {
+        "title": "No account needed",
+        "description": "No sign-up. No subscription needed. Install the extension and start generating listings immediately."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Simple pricing.",
+      "free": {
+        "title": "Free",
+        "price": "$0",
+        "features": {
+          "f1": "5 AI listings / month",
+          "f2": "1 active property draft",
+          "f3": "Quick listing template",
+          "f4": "Gemini Nano (on-device AI)",
+          "f5": "Bring your own cloud AI key"
+        },
+        "button": "Add to Chrome"
+      },
+      "proMonthly": {
+        "title": "Pro - Monthly",
+        "price": "$19.99/mo",
+        "features": {
+          "f1": "Unlimited AI listings",
+          "f2": "Up to 10 saved drafts",
+          "f3": "All 5 listing templates",
+          "f4": "Export & import backups",
+          "f5": "Priority support"
+        },
+        "button": "Get Pro Monthly"
+      },
+      "proYearly": {
+        "title": "Pro - Yearly",
+        "price": "$149/year",
+        "subtitle": "~$12.42/month",
+        "savings": "Save 38% vs monthly",
+        "features": {
+          "f1": "All Monthly Pro features",
+          "f2": "Best value for active agents"
+        },
+        "button": "Get Pro Yearly"
+      },
+      "lifetime": {
+        "title": "Lifetime",
+        "price": "$199 one-time",
+        "tagline": "Limited — first 200 buyers only",
+        "features": {
+          "f1": "All Pro features, forever",
+          "f2": "All future updates included"
+        },
+        "button": "Get Lifetime Pro"
+      }
+    },
+    "faq": {
+      "sectionTitle": "FAQ",
+      "q1": {
+        "question": "Is my client or property data safe?",
+        "answer": "Completely. All saved drafts and agent profiles are stored locally in Chrome's storage on your device. The default Gemini Nano AI runs entirely on-device with zero data leaving your machine."
+      },
+      "q2": {
+        "question": "Does it support Centris and Realtor.ca?",
+        "answer": "Yes! PropertyFill AI is custom-tailored with specialized adapters for Centris.ca (supporting bilingual English/French fields) and Realtor.ca/RealtorLink."
+      },
+      "q3": {
+        "question": "Do I need a paid plan to use my own AI key?",
+        "answer": "No. Bringing your own API key (BYOK) from OpenAI, Claude, Groq, or OpenRouter is fully supported on the Free plan."
+      },
+      "q4": {
+        "question": "What platforms are supported?",
+        "answer": "Out of the box, it supports Centris, Realtor.ca, Zillow, Flexmls, and Matrix portals. We are continually adding support for more MLS platforms."
       }
     }
   }

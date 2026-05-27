@@ -57,7 +57,8 @@
     "solutionsMedicalAdmin": "對於醫療管理人員",
     "extensionsTradeDesk": "貿易台人工智慧",
     "extensionsSellerDesk": "SellerDesk AI",
-    "extensionsRecruitReply": "RecruitReply AI"
+    "extensionsRecruitReply": "RecruitReply AI",
+    "extensionsPropertyFill": "PropertyFill AI"
   },
   "home": {
     "page": {
@@ -144,7 +145,21 @@
     "comingSoon": "即將推出",
     "nullCarrierTitle": "空載體",
     "nullCarrierDescription": "訊號重建益智遊戲。你操作一個深空監聽陣列。調諧頻率、解碼傳輸、詢問指揮部告訴您的內容。",
-    "learnMore": "了解更多 →"
+    "learnMore": "了解更多 →",
+    "seoSections": {
+      "writing": {
+        "title": "人工智慧寫作自動化",
+        "text": "建立個人回應庫並在 Gmail、LinkedIn、支援台和任何網站上產生人工智慧驅動的回應。停止重寫相同的電子郵件和票據。"
+      },
+      "forms": {
+        "title": "智慧填表",
+        "text": "從一份已儲存的個人資料中自動填寫工作申請、醫療表格、保險索賠和 CRM 條目。人工智慧會編寫開放式答案，而您的資料則保留在 Chrome 本地。"
+      },
+      "tabs": {
+        "title": "選項卡和會話管理",
+        "text": "一鍵儲存並還原完整的瀏覽器工作區。人工智慧會命名會話和群組選項卡，以便研究人員和多任務處理者可以在不遺失上下文的情況下切換項目。"
+      }
+    }
   },
   "autofillAi": {
     "page": {
@@ -464,7 +479,8 @@
         "question": "回復中未使用主機內存詳細信息",
         "answer": "檢查您是否已將屬性詳細資訊儲存在擴充彈出視窗的「主機記憶體」標籤中。"
       }
-    }
+    },
+    "heroCta": "立即給我們發電子郵件"
   },
   "privacyPolicy": {
     "page": {
@@ -537,7 +553,8 @@
       "medAutoFillAi": "醫療自動填寫人工智慧",
       "tradeDesk": "貿易台人工智慧",
       "sellerDesk": "SellerDesk AI",
-      "recruitReply": "RecruitReply AI"
+      "recruitReply": "RecruitReply AI",
+      "propertyFillAi": "PropertyFill AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico AI回覆助理",
@@ -699,6 +716,29 @@
         "sectionTitle": "Data deletion",
         "paragraph": "Uninstalling the extension deletes all locally stored data and settings. No data is retained on Donbrico servers."
       }
+    },
+    "propertyFillAi": {
+      "sectionTitle": "Donbrico PropertyFill AI",
+      "whatWeCollect": {
+        "sectionTitle": "我們收集哪些數據",
+        "paragraph": "沒有任何。所有已儲存的媒體資源草稿設定檔和設定都將儲存在使用者裝置上的 Chrome 儲存空間中。不會將任何資料傳輸至 Donbrico 擁有或經營的任何伺服器。"
+      },
+      "howStored": {
+        "sectionTitle": "設定檔資料的儲存方式",
+        "paragraph": "Chrome 的 storage.local API。資料保留在裝置上並且永遠不會上傳。"
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "第三方人工智慧提供者（自備金鑰）",
+        "paragraph": "如果使用者配置了「自帶金鑰」供應商，例如 OpenAI、Anthropic、Groq 或 OpenRouter，則其清單描述文字和屬性資料將傳送至該第三方提供者。 Donbrico 對這些提供者的隱私做法不承擔任何責任。 Gemini Nano（預設 AI）完全在裝置上運作。"
+      },
+      "permissions": {
+        "sectionTitle": "使用的權限",
+        "paragraph": "儲存（本機草稿）、activeTab（偵測目前標籤上的清單表單）、腳本（注入填入按鈕）、host_permissions（在 Centris、Realtor.ca、Zillow、Flexmls、Matrix 等房地產入口網站上運作）。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "資料刪除",
+        "paragraph": "卸載擴充功能會刪除所有儲存的草稿和設定。"
+      }
     }
   },
   "emails": {
@@ -788,7 +828,17 @@
         "title": "不確定需要哪個擴充功能？",
         "subtitle": "按工作流程瀏覽解決方案，找到適合您角色的解決方案。",
         "button": "探索解決方案 →"
+      },
+      "propertyfill": {
+        "title": "Donbrico PropertyFill AI",
+        "description": "由人工智慧驅動的房地產清單自動填入。根據粗略註釋（家庭、豪華、公寓、投資或快速模板）產生專業的房地產描述，並立即自動填寫 Centris、Realtor.ca、Zillow、Flexmls 和 Matrix 上的清單表格。"
       }
+    },
+    "page": {
+      "title": "提高生產力的 AI 瀏覽器擴充 |東布里科",
+      "ogTitle": "提高生產力的 AI 瀏覽器擴充 |東布里科",
+      "description": "下載免費的 AI 瀏覽器擴展，用於寫作、表單自動填充和工作流程自動化。隱私優先的工具可提高瀏覽器的工作效率。",
+      "ogDescription": "下載免費的 AI 瀏覽器擴展，用於寫作、表單自動填充和工作流程自動化。隱私優先的工具可提高瀏覽器的工作效率。"
     }
   },
   "cta": {
@@ -1614,7 +1664,9 @@
       "chrome": "在 Chrome 上，所有三個擴充功能均預設為 Gemini Nano——Chrome 內建的 Google 裝置上人工智慧模型。這意味著人工智慧完全在您的機器上運行：沒有 API 調用，沒有資料離開您的瀏覽器。",
       "edge": "在 Edge（即將推出）上，Gemini Nano 不可用。使用者可以連接自己的 API 金鑰（OpenAI、Anthropic、Groq 或 OpenRouter）來解鎖 AI 功能。",
       "principle": "Donbrico 從不儲存您的資料。絕不。"
-    }
+    },
+    "heroCtaPrimary": "免費試用 Donbrico",
+    "heroCtaSecondary": "探索我們的工具"
   },
   "extensionsHub": {
     "autofill": {
@@ -2541,7 +2593,24 @@
       },
       "messageLibrary": {
         "title": "訊息庫",
-        "description": "Build a library of outreach templates for candidate communication. AI drafts personalised versions for each candidate."
+        "description": "Build a library of outreach templates for candidate communication. AI drafts personalised versions for each candidate.",
+        "subtitle": "保存一次，始終個性化",
+        "sourcing": {
+          "title": "採購外展",
+          "description": "適用於被動候選人的 LinkedIn InMail 和電子郵件範本。人工智慧會用候選人的姓名、角色以及與他們相關的機會來重寫它們。"
+        },
+        "followup": {
+          "title": "後續序列",
+          "description": "第 3 天、第 7 天和第 14 天的後續行動。人工智慧會根據候選人在管道中的位置來調整語氣和脈絡。"
+        },
+        "offerRejection": {
+          "title": "錄取通知書和拒絕信",
+          "description": "溫暖、專業的模板，讓人感覺不那麼普通。智慧變數自動注入候選人姓名、職位頭銜和包詳細資訊。"
+        },
+        "interview": {
+          "title": "面試安排",
+          "description": "確認、提醒和重新安排範本。一鍵直接插入 Gmail、Outlook 或 ATS 電子郵件編輯器。"
+        }
       },
       "page": {
         "title": "招募人員的人工智慧工具：自動化職位申請和 ATS 工作流程 |東布里科",
@@ -2667,8 +2736,58 @@
         "subtitle": "所有三個擴充功能均可免費啟動。目前僅限 Chrome - Edge 即將推出。",
         "button": "查看所有擴充 →"
       },
-      "categories": "類別",
-      "workflows": "工作流程",
+      "categories": {
+        "communication": {
+          "title": "寫信回覆",
+          "description": "自動回覆電子郵件、支援回應和外展訊息。專為高容量通訊角色而設計。",
+          "cta": "查看工作流程 →"
+        },
+        "automation": {
+          "title": "填充和處理",
+          "description": "自動執行重複的表單填寫和結構化資料輸入。專為招募人員、管理員和營運團隊而設計。",
+          "cta": "查看工作流程 →"
+        },
+        "workspace": {
+          "title": "組織與聚焦",
+          "description": "儲存和還原瀏覽器工作區。專為研究人員、開發人員和複雜的專案工作流程而建置。",
+          "cta": "查看工作流程 →"
+        }
+      },
+      "workflows": {
+        "title": "具體工作流程",
+        "subtitle": "每個利基頁面都準確地顯示了 Donbrico 擴充功能如何解決該工作流程。",
+        "cta": "查看工作流程 →",
+        "supportTeams": {
+          "title": "支援團隊",
+          "description": "支援代理的人工智慧回复庫。更快地產生準確的響應。",
+          "cta": "查看工作流程 →"
+        },
+        "ecommerceSupport": {
+          "title": "電子商務支持",
+          "description": "自動支援回覆訂單、退款和客戶問題。減少票務負擔。",
+          "cta": "查看工作流程 →"
+        },
+        "recruiters": {
+          "title": "招募人員",
+          "description": "利用人工智慧自動填入職位委員會、產生候選人摘要並減少手動 ATS 資料輸入，加快招募速度。",
+          "cta": "查看工作流程 →"
+        },
+        "insurance": {
+          "title": "保險",
+          "description": "使用人工智慧輔助填寫填寫索賠表和保單資料。錯誤更少，時間更少。",
+          "cta": "查看工作流程 →"
+        },
+        "browserWorkspace": {
+          "title": "研究人員和開發人員",
+          "description": "組織複雜的瀏覽器會話。儲存工作空間、立即復原、使用 AI 進行搜尋。",
+          "cta": "查看工作流程 →"
+        },
+        "jobSeekers": {
+          "title": "求職者",
+          "description": "使用人工智慧產生的求職信自動填寫工作申請。申請更快。",
+          "cta": "查看工作流程 →"
+        }
+      },
       "automation": {
         "title": "填充和處理",
         "description": "自動執行重複的表單填寫和結構化資料輸入。專為招募人員、管理員和營運團隊而建置。",
@@ -2818,7 +2937,28 @@
       "cta": {
         "title": "三個擴展。壓力較小的工作日。",
         "subtitle": "全部免費安裝。無需帳戶。目前僅限 Chrome - Edge 即將推出。"
+      },
+      "howEachHelps": "每個擴展有何幫助 ↓",
+      "related": {
+        "title": "相關工作流程",
+        "items": [
+          {
+            "label": "Write & Respond Overview"
+          },
+          {
+            "label": "For Job Seekers"
+          },
+          {
+            "label": "Browser Workspace"
+          }
+        ]
       }
+    },
+    "page": {
+      "title": "瀏覽器工作流程自動化與人工智慧工具 |東布里科",
+      "ogTitle": "瀏覽器工作流程自動化與人工智慧工具 |東布里科",
+      "description": "使用 Donbrico 的 AI 工作流程工具自動執行重複的瀏覽器任務。節省表格、資料輸入和溝通的時間。安裝免費擴充。",
+      "ogDescription": "使用 Donbrico 的 AI 工作流程工具自動執行重複的瀏覽器任務。節省表格、資料輸入和溝通的時間。安裝免費擴充。"
     }
   },
   "footer": {
@@ -3242,7 +3382,9 @@
       "q3": {
         "question": "「自帶金鑰」(BYOK) 如何運作？",
         "answer": "您可以在設定中從 OpenAI、Anthropic、Groq 或 OpenRouter 連接您自己的 API 金鑰。這為您提供超快速、無限的 AI 生成，並在幾秒鐘內處理大量估計。"
-      }
+      },
+      "moreQuestions": "還有其他問題嗎？",
+      "viewFullLink": "閱讀我們完整的常見問題 →"
     }
   },
   "sellerDesk": {
@@ -3459,6 +3601,156 @@
       "q3": {
         "question": "Are candidates' data safe?",
         "answer": "Yes, all processing stays on-device with Gemini Nano (Chrome). If you use your own API key, data goes only to that provider. Donbrico never sees your messages."
+      }
+    }
+  },
+  "propertyFillAi": {
+    "page": {
+      "title": "PropertyFill AI — Best AI Listing Generator for Real Estate & Chrome",
+      "description": "房地產經紀人的最佳人工智慧清單產生器。一鍵自動填寫 Centris、Realtor.ca、Zillow、Flexmls 和 Matrix 清單表格。免費的 Chrome 擴充功能。",
+      "ogTitle": "PropertyFill AI — Best AI Listing Generator for Real Estate & Chrome",
+      "ogDescription": "房地產經紀人的最佳人工智慧清單產生器。一鍵自動填寫 Centris、Realtor.ca、Zillow、Flexmls 和 Matrix 清單表格。免費的 Chrome 擴充功能。"
+    },
+    "hero": {
+      "badge": "房地產·Chrome 擴展",
+      "title": "填寫清單表格。一鍵點擊。",
+      "subtitle": "PropertyFill AI 可協助房地產經紀人根據 Centris、Realtor.ca、Zillow、Flexmls 和 Matrix 上的粗略註釋和自動填寫清單表格，立即產生專業、高轉換率的房地產描述。",
+      "buttonPrimary": "添加到 Chrome — 免費",
+      "buttonSecondary": "看看效果如何↓",
+      "disclaimer": "🔒 清單草稿儲存在本地 · Chrome 上的 Gemini Nano 是 100% 私密的 · 無需帳戶"
+    },
+    "roles": {
+      "agent": "上市代理商",
+      "broker": "纖維手",
+      "admin": "房地產管理員",
+      "assistant": "虛擬助理"
+    },
+    "howItWorks": {
+      "sectionTitle": "它是如何運作的",
+      "step1": {
+        "title": "1. 儲存您的個人資料",
+        "description": "輸入您的姓名、許可證號碼和經紀詳細資訊。安全地儲存在您的裝置上，並在 Chrome 中同步。"
+      },
+      "step2": {
+        "title": "2. 上市說明草案",
+        "description": "用粗略的註釋描述該屬性。選擇一個範本（豪華、家庭、公寓、投資）來產生專業的清單摘要。"
+      },
+      "step3": {
+        "title": "3.一鍵填充",
+        "description": "在 Centris、Realtor.ca、Zillow 或 MLS 上開啟您的清單表格。點擊 ⚡ 按鈕即可立即自動填入所有標準和 AI 產生的欄位。"
+      }
+    },
+    "whatItFills": {
+      "sectionTitle": "它填充什麼。",
+      "property": {
+        "title": "物業詳情",
+        "items": "房產類型 · 建成年份 · 平方英尺 · 地塊面積 · 臥室 · 浴室"
+      },
+      "listing": {
+        "title": "上市資訊",
+        "items": "要價 · MLS/Centris ID · 街道地址 · 城市 · 省/州 · 郵遞區號"
+      },
+      "description": {
+        "title": "人工智慧描述",
+        "items": "備註（英文及法文）·公開言論·上市標題"
+      },
+      "agent": {
+        "title": "代理及經紀",
+        "items": "執照號碼 · 經紀公司名稱 · 經紀公司地址及電話 · 代理人簡介"
+      }
+    },
+    "features": {
+      "sectionTitle": "專為房地產工作流程而設計。",
+      "worksEverywhere": {
+        "title": "隨處可用",
+        "description": "在 Centris、Realtor.ca、Zillow、Flexmls、Matrix 和標準清單入口網站上自動填入。"
+      },
+      "private": {
+        "title": "預設 100% 私有",
+        "description": "草稿保留在 Chrome 的本地儲存中。裝置上的 Gemini Nano 可以嚴格保護您的客戶資料的隱私。"
+      },
+      "aiListing": {
+        "title": "人工智慧列表產生器",
+        "description": "將粗略的要點轉化為與 5 個不同模板相符的專業、高轉換率的屬性描述。"
+      },
+      "byok": {
+        "title": "帶上你自己的AI鑰匙",
+        "description": "使用 OpenAI、Anthropic (Claude)、Groq 或 OpenRouter 在任何機器上實現無限的雲端 AI 完成。"
+      },
+      "multiProfile": {
+        "title": "最多 10 個草稿",
+        "description": "保存和管理最多 10 個正在進行的房產列表，並在草稿之間快速交換（專業版）。"
+      },
+      "noAccount": {
+        "title": "無需帳戶",
+        "description": "無需註冊。無需訂閱。安裝擴充功能並立即開始產生清單。"
+      }
+    },
+    "pricing": {
+      "sectionTitle": "簡單的定價。",
+      "free": {
+        "title": "自由的",
+        "price": "$0",
+        "features": {
+          "f1": "每月 5 個 AI 列表",
+          "f2": "1份有效財產草案",
+          "f3": "快速清單模板",
+          "f4": "Gemini Nano（裝置上人工智慧）",
+          "f5": "自帶雲AI密鑰"
+        },
+        "button": "添加到 Chrome"
+      },
+      "proMonthly": {
+        "title": "專業版 - 每月",
+        "price": "$19.99/月",
+        "features": {
+          "f1": "無限人工智慧列表",
+          "f2": "最多可儲存 10 個草稿",
+          "f3": "所有 5 個清單模板",
+          "f4": "匯出和匯入備份",
+          "f5": "優先支持"
+        },
+        "button": "每月獲得專業版"
+      },
+      "proYearly": {
+        "title": "專業版 - 每年",
+        "price": "$149/年",
+        "subtitle": "~$12.42/月",
+        "savings": "與每月相比節省 38%",
+        "features": {
+          "f1": "All Monthly Pro features",
+          "f2": "活性劑的最佳價值"
+        },
+        "button": "每年獲得專業版"
+      },
+      "lifetime": {
+        "title": "壽命",
+        "price": "199 美元 一次性",
+        "tagline": "數量有限——僅限前 200 名買家",
+        "features": {
+          "f1": "永久保留所有 Pro 功能",
+          "f2": "包括所有未來的更新"
+        },
+        "button": "取得終身專業版"
+      }
+    },
+    "faq": {
+      "sectionTitle": "常問問題",
+      "q1": {
+        "question": "我的客戶或財產資料安全嗎？",
+        "answer": "完全地。所有已儲存的草稿和代理程式設定檔都將儲存在您裝置上的 Chrome 儲存空間。預設的 Gemini Nano AI 完全在裝置上運行，機器中的資料為零。"
+      },
+      "q2": {
+        "question": "它支援 Centris 和 Realtor.ca 嗎？",
+        "answer": "是的！ PropertyFill AI 採用針對 Centris.ca（支援英文/法文雙語欄位）和 Realtor.ca/RealtorLink 的專用轉接器進行客製化。"
+      },
+      "q3": {
+        "question": "我需要付費方案才能使用自己的 AI 金鑰嗎？",
+        "answer": "不需要。免費方案完全支援從 OpenAI、Claude、Groq 或 OpenRouter 自備 API 金鑰 (BYOK)。"
+      },
+      "q4": {
+        "question": "支援哪些平台？",
+        "answer": "它開箱即用，支援 Centris、Realtor.ca、Zillow、Flexmls 和 Matrix 入口網站。我們正在不斷增加對更多 MLS 平台的支援。"
       }
     }
   }

@@ -57,7 +57,8 @@
     "blog": "Blog",
     "extensionsTradeDesk": "トレードデスクAI",
     "extensionsSellerDesk": "SellerDesk AI",
-    "extensionsRecruitReply": "リクルートリプライAI"
+    "extensionsRecruitReply": "リクルートリプライAI",
+    "extensionsPropertyFill": "PropertyFill AI"
   },
   "home": {
     "page": {
@@ -144,7 +145,21 @@
     "comingSoon": "近日公開",
     "nullCarrierTitle": "ヌルキャリア",
     "nullCarrierDescription": "信号を復元するパズルゲーム。あなたは深宇宙のリスニングアレイを操作します。周波数を調整し、通信を解読し、コマンドの指示に疑問を呈します。",
-    "learnMore": "さらに詳しく→"
+    "learnMore": "さらに詳しく→",
+    "seoSections": {
+      "writing": {
+        "title": "AIライティング自動化",
+        "text": "個人用返信ライブラリを構築し、Gmail、LinkedIn、サポート デスク、その他の Web サイトで AI を活用した返信を生成します。"
+      },
+      "forms": {
+        "title": "スマートフォーム入力",
+        "text": "保存された 1 つのプロファイルから求人応募、医療フォーム、保険請求、CRM エントリを自動入力します。"
+      },
+      "tabs": {
+        "title": "タブとセッションの管理",
+        "text": "ワンクリックでブラウザーのワークスペース全体を保存および復元します。 "
+      }
+    }
   },
   "autofillAi": {
     "page": {
@@ -464,7 +479,8 @@
         "question": "ホスト メモリの詳細は応答では使用されません",
         "answer": "拡張機能ポップアップの [ホスト メモリ] タブにプロパティの詳細が保存されていることを確認してください。"
       }
-    }
+    },
+    "heroCta": "今すぐメールでお問い合わせください"
   },
   "privacyPolicy": {
     "page": {
@@ -537,7 +553,8 @@
       "medAutoFillAi": "MedAutoFill AI",
       "tradeDesk": "トレードデスクAI",
       "sellerDesk": "SellerDesk AI",
-      "recruitReply": "リクルートリプライAI"
+      "recruitReply": "リクルートリプライAI",
+      "propertyFillAi": "PropertyFill AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "ドンブリコAI返信アシスタント",
@@ -699,6 +716,29 @@
         "sectionTitle": "データの削除",
         "paragraph": "拡張機能をアンインストールすると、ローカルに保存されているデータと設定がすべて削除されます。 Donbrico サーバーにはデータは保持されません。"
       }
+    },
+    "propertyFillAi": {
+      "sectionTitle": "Donbrico PropertyFill AI",
+      "whatWeCollect": {
+        "sectionTitle": "私たちが収集するデータ",
+        "paragraph": "なし。"
+      },
+      "howStored": {
+        "sectionTitle": "プロファイルデータの保存方法",
+        "paragraph": "Chrome の storage.local API。"
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "サードパーティ AI プロバイダー (Bring Your Own Key)",
+        "paragraph": "ユーザーが OpenAI、Anthropic、Groq、OpenRouter などの Bring Your Own Key プロバイダーを構成すると、リストの説明テキストとプロパティ データがそのサードパーティ プロバイダーに送信されます。 "
+      },
+      "permissions": {
+        "sectionTitle": "使用される権限",
+        "paragraph": "ストレージ (ローカルの下書き)、activeTab (現在のタブのリスト フォームの検出)、スクリプト (入力ボタンの挿入)、host_permissions (Centris、Realtor.ca、Zillow、Flexmls、Matrix などの不動産ポータルでの作業)。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "データの削除",
+        "paragraph": "拡張機能をアンインストールすると、保存されているすべての下書きと設定が削除されます。"
+      }
     }
   },
   "emails": {
@@ -788,7 +828,17 @@
         "title": "どの拡張機能が必要か不明ですか？",
         "subtitle": "ワークフロー別にソリューションを参照して、自分の役割に適したものを見つけてください。",
         "button": "ソリューションを探す →"
+      },
+      "propertyfill": {
+        "title": "ドンブリコ PropertyFill AI",
+        "description": "AI を活用した不動産リストの自動入力。"
       }
+    },
+    "page": {
+      "title": "生産性向上のための AI ブラウザ拡張機能 |",
+      "ogTitle": "生産性向上のための AI ブラウザ拡張機能 |",
+      "description": "書き込み、フォーム自動入力、ワークフロー自動化のための AI ブラウザ拡張機能を無料でダウンロードしてください。",
+      "ogDescription": "書き込み、フォーム自動入力、ワークフロー自動化のための AI ブラウザ拡張機能を無料でダウンロードしてください。"
     }
   },
   "cta": {
@@ -1614,7 +1664,9 @@
       "chrome": "Chrome では、3 つの拡張機能はすべて、Chrome に組み込まれた Google のオンデバイス AI モデルである Gemini Nano にデフォルトで設定されています。これは、AI が完全にマシン上で実行されることを意味します。API 呼び出しやブラウザからデータが送信されることはありません。",
       "edge": "Edge (近日公開予定) では、Gemini Nano は利用できません。ユーザーは独自の API キー (OpenAI、Anthropic、Groq、または OpenRouter) を接続して AI 機能のロックを解除できます。",
       "principle": "ドンブリコがあなたのデータを保管することはありません。一度もない。"
-    }
+    },
+    "heroCtaPrimary": "ドンブリコを無料で試してみる",
+    "heroCtaSecondary": "当社のツールを探索する"
   },
   "extensionsHub": {
     "autofill": {
@@ -2541,7 +2593,24 @@
       },
       "messageLibrary": {
         "title": "メッセージライブラリ",
-        "description": "候補者とのコミュニケーションのためのアウトリーチ テンプレートのライブラリを構築します。 AI が候補者ごとにパーソナライズされたバージョンを草案します。"
+        "description": "候補者とのコミュニケーションのためのアウトリーチ テンプレートのライブラリを構築します。 AI が候補者ごとにパーソナライズされたバージョンを草案します。",
+        "subtitle": "一度保存すれば、いつでもカスタマイズ可能",
+        "sourcing": {
+          "title": "アウトリーチの調達",
+          "description": "受動的候補者向けの LinkedIn InMail および電子メール テンプレート。 "
+        },
+        "followup": {
+          "title": "フォローアップシーケンス",
+          "description": "3日目、7日目、14日目のフォローアップ。 "
+        },
+        "offerRejection": {
+          "title": "内定通知書と拒否通知書",
+          "description": "汎用性を感じさせない、温かみのあるプロフェッショナルなテンプレート。"
+        },
+        "interview": {
+          "title": "面接のスケジュール設定",
+          "description": "確認、リマインダー、および再スケジュールのテンプレート。"
+        }
       },
       "page": {
         "title": "採用担当者向け AI ツール: 求人応募と ATS ワークフローを自動化 |ドンブリコ",
@@ -2667,8 +2736,58 @@
         "subtitle": "3 つの拡張機能はすべて無料で開始できます。現時点では Chrome のみですが、Edge は近日中に提供される予定です。",
         "button": "すべての拡張機能を見る→"
       },
-      "categories": "カテゴリー",
-      "workflows": "ワークフロー",
+      "categories": {
+        "communication": {
+          "title": "書いて返信する",
+          "description": "電子メールの返信、サポートの返信、アウトリーチ メッセージを自動化します。",
+          "cta": "ワークフローを見る→"
+        },
+        "automation": {
+          "title": "充填と処理",
+          "description": "繰り返しのフォーム入力と構造化データ入力を自動化します。",
+          "cta": "ワークフローを見る→"
+        },
+        "workspace": {
+          "title": "整理して集中する",
+          "description": "ブラウザーのワークスペースを保存および復元します。",
+          "cta": "ワークフローを見る→"
+        }
+      },
+      "workflows": {
+        "title": "特定のワークフロー",
+        "subtitle": "各ニッチ ページでは、Donbrico 拡張機能がそのワークフローをどのように解決するかを正確に示しています。",
+        "cta": "ワークフローを見る→",
+        "supportTeams": {
+          "title": "サポートチーム",
+          "description": "サポート エージェント向けの AI を活用した返信ライブラリ。",
+          "cta": "ワークフローを見る→"
+        },
+        "ecommerceSupport": {
+          "title": "eコマースサポート",
+          "description": "注文、返金、顧客の質問に対するサポートの返信を自動化します。",
+          "cta": "ワークフローを見る→"
+        },
+        "recruiters": {
+          "title": "採用担当者",
+          "description": "求人情報サイトに自動入力し、候補者の概要を生成し、手動による ATS データ入力を削減する AI を使用して採用をスピードアップします。",
+          "cta": "ワークフローを見る→"
+        },
+        "insurance": {
+          "title": "保険",
+          "description": "AI 支援による入力を使用して、請求フォームと保険契約データを入力します。",
+          "cta": "ワークフローを見る→"
+        },
+        "browserWorkspace": {
+          "title": "研究者と開発者",
+          "description": "複雑なブラウザセッションを整理します。",
+          "cta": "ワークフローを見る→"
+        },
+        "jobSeekers": {
+          "title": "求職者",
+          "description": "AI が生成したカバーレターを求人応募書に自動入力します。",
+          "cta": "ワークフローを見る→"
+        }
+      },
       "automation": {
         "title": "充填と処理",
         "description": "繰り返しのフォーム入力と構造化データ入力を自動化します。採用担当者、管理者、運用チーム向けに構築されています。",
@@ -2818,7 +2937,28 @@
       "cta": {
         "title": "拡張子は3つ。ストレスの少ない勤務日が 1 つ減りました。",
         "subtitle": "すべて無料でインストールできます。アカウントは必要ありません。現時点では Chrome のみ — Edge は近日公開予定。"
+      },
+      "howEachHelps": "各拡張機能がどのように役立つか↓",
+      "related": {
+        "title": "関連するワークフロー",
+        "items": [
+          {
+            "label": "Write & Respond Overview"
+          },
+          {
+            "label": "For Job Seekers"
+          },
+          {
+            "label": "Browser Workspace"
+          }
+        ]
       }
+    },
+    "page": {
+      "title": "ブラウザのワークフロー自動化と AI ツール |",
+      "ogTitle": "ブラウザのワークフロー自動化と AI ツール |",
+      "description": "Donbrico の AI ワークフロー ツールを使用して、反復的なブラウザ タスクを自動化します。",
+      "ogDescription": "Donbrico の AI ワークフロー ツールを使用して、反復的なブラウザ タスクを自動化します。"
     }
   },
   "footer": {
@@ -3242,7 +3382,9 @@
       "q3": {
         "question": "「Bring Your Own Key」(BYOK) はどのように機能しますか?",
         "answer": "設定で OpenAI、Anthropic、Groq、または OpenRouter から独自の API キーを接続できます。"
-      }
+      },
+      "moreQuestions": "さらに質問がありますか?",
+      "viewFullLink": "よくある質問の全文を読む→"
     }
   },
   "sellerDesk": {
@@ -3459,6 +3601,156 @@
       "q3": {
         "question": "候補者のデータは安全ですか?",
         "answer": "はい、Gemini Nano (Chrome) を使用すると、すべての処理がデバイス上に留まります。独自の API キーを使用する場合、データはそのプロバイダーにのみ送信されます。ドンブリコはあなたのメッセージを見ることはありません。"
+      }
+    }
+  },
+  "propertyFillAi": {
+    "page": {
+      "title": "PropertyFill AI — Best AI Listing Generator for Real Estate & Chrome",
+      "description": "不動産業者向けの最高の AI リスティング ジェネレーター。 ",
+      "ogTitle": "PropertyFill AI — Best AI Listing Generator for Real Estate & Chrome",
+      "ogDescription": "不動産業者向けの最高の AI リスティング ジェネレーター。 "
+    },
+    "hero": {
+      "badge": "不動産・Chrome拡張機能",
+      "title": "リストフォームに記入します。",
+      "subtitle": "PropertyFill AI は、不動産業者がラフなメモから専門的でコンバージョン率の高い物件説明を生成し、Centris、Realtor.ca、Zillow、Flexmls、および Matrix の物件リスト フォームを即座に自動入力できるように支援します。",
+      "buttonPrimary": "Chrome に追加 - 無料",
+      "buttonSecondary": "仕組みを見てみる ↓",
+      "disclaimer": "🔒 リストの下書きはローカルに保存されます · Chrome 上の Gemini Nano は 100% プライベートです · アカウントは必要ありません"
+    },
+    "roles": {
+      "agent": "上場エージェント",
+      "broker": "不動産仲介業者",
+      "admin": "不動産管理者",
+      "assistant": "仮想アシスタント"
+    },
+    "howItWorks": {
+      "sectionTitle": "仕組み",
+      "step1": {
+        "title": "1. プロフィールを保存します",
+        "description": "名前、ライセンス番号、仲介業者の詳細を入力します。"
+      },
+      "step2": {
+        "title": "2. 上場メモの草案",
+        "description": "プロパティを大まかにメモして説明します。"
+      },
+      "step3": {
+        "title": "3. ワンクリックで塗りつぶし",
+        "description": "Centris、Realtor.ca、Zillow、または MLS でリスティング フォームを開きます。 "
+      }
+    },
+    "whatItFills": {
+      "sectionTitle": "それが満たすもの。",
+      "property": {
+        "title": "物件詳細",
+        "items": "物件タイプ · 築年数 · 面積 · 敷地面積 · 寝室 · バスルーム"
+      },
+      "listing": {
+        "title": "出品情報",
+        "items": "希望価格 · MLS/セントリス ID · 住所 · 市区町村 · 都道府県/州 · 郵便番号"
+      },
+      "description": {
+        "title": "AIの説明",
+        "items": "発言 (英語およびフランス語) · 公開発言 · 見出しのリスト"
+      },
+      "agent": {
+        "title": "代理店と仲介",
+        "items": "ライセンス番号 · 仲介業者名 · 仲介業者の住所と電話番号 · 代理店の経歴"
+      }
+    },
+    "features": {
+      "sectionTitle": "不動産ワークフロー向けに構築されています。",
+      "worksEverywhere": {
+        "title": "どこでも使えます",
+        "description": "Centris、Realtor.ca、Zillow、Flexmls、Matrix、および標準のリスティング ポータルでの自動入力。"
+      },
+      "private": {
+        "title": "デフォルトでは 100% プライベート",
+        "description": "下書きは Chrome のローカル ストレージに残ります。"
+      },
+      "aiListing": {
+        "title": "AI リスト ジェネレーター",
+        "description": "大まかな箇条書きを、5 つの異なるテンプレートに一致するプロのコンバージョン率の高い物件説明に変換します。"
+      },
+      "byok": {
+        "title": "自分の AI キーを持参する",
+        "description": "OpenAI、Anthropic (Claude)、Groq、または OpenRouter を使用して、任意のマシンで無制限のクラウド AI 補完を実現します。"
+      },
+      "multiProfile": {
+        "title": "最大 10 件のドラフト",
+        "description": "進行中の最大 10 件の物件リストを保存して管理し、ドラフト間ですばやく交換できます (Pro)。"
+      },
+      "noAccount": {
+        "title": "アカウントは必要ありません",
+        "description": "サインアップはありません。"
+      }
+    },
+    "pricing": {
+      "sectionTitle": "シンプルな料金設定。",
+      "free": {
+        "title": "無料",
+        "price": "$0",
+        "features": {
+          "f1": "AI リスト 5 件/月",
+          "f2": "1 件のアクティブなプロパティのドラフト",
+          "f3": "クイックリストテンプレート",
+          "f4": "Gemini Nano (オンデバイス AI)",
+          "f5": "独自のクラウド AI キーを持ち込む"
+        },
+        "button": "Chromeに追加"
+      },
+      "proMonthly": {
+        "title": "プロ - 毎月",
+        "price": "$19.99/月",
+        "features": {
+          "f1": "無制限の AI リスティング",
+          "f2": "保存された下書きは最大 10 件まで",
+          "f3": "5 つのリスト テンプレートすべて",
+          "f4": "バックアップのエクスポートとインポート",
+          "f5": "優先サポート"
+        },
+        "button": "毎月プロを入手"
+      },
+      "proYearly": {
+        "title": "プロ - 毎年",
+        "price": "149ドル/年",
+        "subtitle": "~$12.42/月",
+        "savings": "毎月と比較して 38% 節約",
+        "features": {
+          "f1": "Monthly Pro のすべての機能",
+          "f2": "アクティブなエージェントにとって最高の価値"
+        },
+        "button": "毎年プロになれる"
+      },
+      "lifetime": {
+        "title": "一生",
+        "price": "1 回あたり 199 ドル",
+        "tagline": "数量限定 — 先着 200 名のみ",
+        "features": {
+          "f1": "すべての Pro 機能を永久に",
+          "f2": "今後のすべてのアップデートが含まれます"
+        },
+        "button": "生涯プロを入手"
+      }
+    },
+    "faq": {
+      "sectionTitle": "よくある質問",
+      "q1": {
+        "question": "私のクライアントや資産のデータは安全ですか?",
+        "answer": "完全に。"
+      },
+      "q2": {
+        "question": "Centris と Realtor.ca はサポートされていますか?",
+        "answer": "はい！ "
+      },
+      "q3": {
+        "question": "自分の AI キーを使用するには有料プランが必要ですか?",
+        "answer": "いいえ。OpenAI、Claude、Groq、または OpenRouter からの独自の API キーの持ち込み (BYOK) は、無料プランで完全にサポートされています。"
+      },
+      "q4": {
+        "question": "どのようなプラットフォームがサポートされていますか?",
+        "answer": "追加設定なしで、Centris、Realtor.ca、Zillow、Flexmls、および Matrix ポータルをサポートします。"
       }
     }
   }

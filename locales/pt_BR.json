@@ -57,7 +57,8 @@
     "extensionsHostReply": "HostReply AI",
     "extensionsTradeDesk": "IA TradeDesk",
     "extensionsSellerDesk": "SellerDesk AI",
-    "extensionsRecruitReply": "RecruitReply AI"
+    "extensionsRecruitReply": "RecruitReply AI",
+    "extensionsPropertyFill": "PropertyFill AI"
   },
   "home": {
     "page": {
@@ -144,7 +145,21 @@
     "comingSoon": "EM BREVE",
     "nullCarrierTitle": "Portadora Nula",
     "nullCarrierDescription": "Um jogo de quebra-cabeça de reconstrução de sinal. Você opera uma matriz de escuta no espaço profundo. Sintonize frequências, decodifique transmissões, questione o que o Comando lhe diz.",
-    "learnMore": "Saiba mais →"
+    "learnMore": "Saiba mais →",
+    "seoSections": {
+      "writing": {
+        "title": "Automação de escrita de IA",
+        "text": "Crie uma biblioteca de respostas pessoal e gere respostas com tecnologia de IA no Gmail, LinkedIn, centrais de suporte e em qualquer site. "
+      },
+      "forms": {
+        "title": "Preenchimento Inteligente de Formulários",
+        "text": "Preencha automaticamente formulários de emprego, formulários médicos, solicitações de seguros e entradas de CRM a partir de um perfil salvo. "
+      },
+      "tabs": {
+        "title": "Gerenciamento de guias e sessões",
+        "text": "Salve e restaure espaços de trabalho completos do navegador com um clique. "
+      }
+    }
   },
   "autofillAi": {
     "page": {
@@ -464,7 +479,8 @@
         "question": "Os detalhes da memória do host não estão sendo usados ​​nas respostas",
         "answer": "Verifique se você salvou os detalhes da sua propriedade na guia Host Memory do pop-up da extensão."
       }
-    }
+    },
+    "heroCta": "Envie-nos um e-mail agora"
   },
   "privacyPolicy": {
     "page": {
@@ -537,7 +553,8 @@
       "medAutoFillAi": "MedAutoFill AI",
       "tradeDesk": "IA TradeDesk",
       "sellerDesk": "SellerDesk AI",
-      "recruitReply": "RecruitReply AI"
+      "recruitReply": "RecruitReply AI",
+      "propertyFillAi": "PropertyFill AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Assistente de resposta Donbrico AI",
@@ -699,6 +716,29 @@
         "sectionTitle": "Data deletion",
         "paragraph": "Uninstalling the extension deletes all locally stored data and settings. No data is retained on Donbrico servers."
       }
+    },
+    "propertyFillAi": {
+      "sectionTitle": "Donbrico PropertyFill AI",
+      "whatWeCollect": {
+        "sectionTitle": "Quais dados coletamos",
+        "paragraph": "Nenhum. "
+      },
+      "howStored": {
+        "sectionTitle": "Como os dados do perfil são armazenados",
+        "paragraph": "API storage.local do Chrome. "
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Provedores terceirizados de IA (traga sua própria chave)",
+        "paragraph": "Se o usuário configurar um provedor Traga sua própria chave, como OpenAI, Anthropic, Groq ou OpenRouter, o texto da descrição da listagem e os dados de propriedade serão enviados para esse provedor terceirizado. "
+      },
+      "permissions": {
+        "sectionTitle": "Permissões usadas",
+        "paragraph": "armazenamento (rascunhos locais), activeTab (detecta formulários de listagem na guia atual), script (botão de preenchimento de injeção), host_permissions (trabalha em portais imobiliários como Centris, Realtor.ca, Zillow, Flexmls, Matrix)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Exclusão de dados",
+        "paragraph": "A desinstalação da extensão remove todos os rascunhos e configurações armazenados."
+      }
     }
   },
   "emails": {
@@ -788,7 +828,17 @@
         "title": "Não tem certeza de qual extensão você precisa?",
         "subtitle": "Navegue pelas soluções por fluxo de trabalho para encontrar a adequada para sua função.",
         "button": "Explorar Soluções →"
+      },
+      "propertyfill": {
+        "title": "Donbrico PropertyFill AI",
+        "description": "Preenchimento automático de listagem de imóveis com tecnologia de IA. "
       }
+    },
+    "page": {
+      "title": "Extensões de navegador AI para produtividade | ",
+      "ogTitle": "Extensões de navegador AI para produtividade | ",
+      "description": "Baixe extensões gratuitas de navegador de IA para escrita, preenchimento automático de formulários e automação de fluxo de trabalho. ",
+      "ogDescription": "Baixe extensões gratuitas de navegador de IA para escrita, preenchimento automático de formulários e automação de fluxo de trabalho. "
     }
   },
   "cta": {
@@ -1583,7 +1633,9 @@
       "chrome": "No Chrome, todas as três extensões são padronizadas como Gemini Nano – o modelo de IA no dispositivo do Google integrado ao Chrome. Isso significa que a IA funciona inteiramente na sua máquina: sem chamadas de API, sem saída de dados do seu navegador.",
       "edge": "On Edge (em breve), Gemini Nano não está disponível. Os usuários podem conectar sua própria chave de API (OpenAI, Anthropic, Groq ou OpenRouter) para desbloquear recursos de IA.",
       "principle": "Donbrico nunca armazena seus dados. Nunca."
-    }
+    },
+    "heroCtaPrimary": "Experimente Donbrico grátis",
+    "heroCtaSecondary": "Explore nossas ferramentas"
   },
   "extensionsHub": {
     "autofill": {
@@ -2510,7 +2562,24 @@
       },
       "messageLibrary": {
         "title": "Biblioteca de Mensagens",
-        "description": "Crie uma biblioteca de modelos de divulgação para comunicação com candidatos. A IA elabora versões personalizadas para cada candidato."
+        "description": "Crie uma biblioteca de modelos de divulgação para comunicação com candidatos. A IA elabora versões personalizadas para cada candidato.",
+        "subtitle": "Economize uma vez, personalize sempre",
+        "sourcing": {
+          "title": "Alcance de fornecimento",
+          "description": "Modelos de InMail e e-mail do LinkedIn para candidatos passivos. "
+        },
+        "followup": {
+          "title": "Sequências de acompanhamento",
+          "description": "Acompanhamentos do dia 3, dia 7 e dia 14. "
+        },
+        "offerRejection": {
+          "title": "Cartas de oferta e rejeição",
+          "description": "Modelos acolhedores e profissionais que não parecem genéricos. "
+        },
+        "interview": {
+          "title": "Agendamento de entrevista",
+          "description": "Modelos de confirmação, lembrete e reagendamento. "
+        }
       },
       "page": {
         "title": "Ferramentas de IA para recrutadores: automatize solicitações de emprego e fluxos de trabalho ATS | Donbrico",
@@ -2636,8 +2705,58 @@
         "subtitle": "Todas as três extensões são gratuitas para iniciar. Chrome apenas por enquanto – Edge em breve.",
         "button": "Veja todas as extensões →"
       },
-      "categories": "Categorias",
-      "workflows": "Fluxos de trabalho",
+      "categories": {
+        "communication": {
+          "title": "Escreva e responda",
+          "description": "Automatize respostas de e-mail, respostas de suporte e mensagens de divulgação. ",
+          "cta": "Ver fluxo de trabalho →"
+        },
+        "automation": {
+          "title": "Preencher e processar",
+          "description": "Automatize o preenchimento repetitivo de formulários e a entrada de dados estruturados. ",
+          "cta": "Ver fluxo de trabalho →"
+        },
+        "workspace": {
+          "title": "Organizar e focar",
+          "description": "Salve e restaure áreas de trabalho do navegador. ",
+          "cta": "Ver fluxo de trabalho →"
+        }
+      },
+      "workflows": {
+        "title": "FLUXOS DE TRABALHO ESPECÍFICOS",
+        "subtitle": "Cada página de nicho mostra exatamente como as extensões Donbrico resolvem esse fluxo de trabalho.",
+        "cta": "Ver fluxo de trabalho →",
+        "supportTeams": {
+          "title": "Equipes de suporte",
+          "description": "Biblioteca de respostas com tecnologia de IA para agentes de suporte. ",
+          "cta": "Ver fluxo de trabalho →"
+        },
+        "ecommerceSupport": {
+          "title": "Suporte para comércio eletrônico",
+          "description": "Automatize respostas de suporte para pedidos, reembolsos e perguntas de clientes. ",
+          "cta": "Ver fluxo de trabalho →"
+        },
+        "recruiters": {
+          "title": "Recrutadores",
+          "description": "Acelere o recrutamento com IA que preenche automaticamente os painéis de empregos, gera resumos de candidatos e reduz a entrada manual de dados ATS.",
+          "cta": "Ver fluxo de trabalho →"
+        },
+        "insurance": {
+          "title": "Seguro",
+          "description": "Preencha formulários de reclamação e dados de apólices com preenchimento assistido por IA. ",
+          "cta": "Ver fluxo de trabalho →"
+        },
+        "browserWorkspace": {
+          "title": "Pesquisadores e desenvolvedores",
+          "description": "Organize sessões complexas do navegador. ",
+          "cta": "Ver fluxo de trabalho →"
+        },
+        "jobSeekers": {
+          "title": "Candidatos a emprego",
+          "description": "Preencher automaticamente formulários de emprego com cartas de apresentação geradas por IA. ",
+          "cta": "Ver fluxo de trabalho →"
+        }
+      },
       "automation": {
         "title": "Preencher e processar",
         "description": "Automatize o preenchimento repetitivo de formulários e a entrada de dados estruturados. Criado para recrutadores, administradores e equipes de operações.",
@@ -2787,7 +2906,28 @@
       "cta": {
         "title": "Três extensões. Um dia de trabalho menos estressante.",
         "subtitle": "Tudo grátis para instalar. Nenhuma conta é necessária. Chrome apenas por enquanto – Edge será lançado em breve."
+      },
+      "howEachHelps": "Como cada extensão ajuda ↓",
+      "related": {
+        "title": "Fluxos de trabalho relacionados",
+        "items": [
+          {
+            "label": "Write & Respond Overview"
+          },
+          {
+            "label": "For Job Seekers"
+          },
+          {
+            "label": "Browser Workspace"
+          }
+        ]
       }
+    },
+    "page": {
+      "title": "Automação de fluxo de trabalho do navegador e ferramentas de IA | ",
+      "ogTitle": "Automação de fluxo de trabalho do navegador e ferramentas de IA | ",
+      "description": "Automatize tarefas repetitivas do navegador com as ferramentas de fluxo de trabalho de IA da Donbrico. ",
+      "ogDescription": "Automatize tarefas repetitivas do navegador com as ferramentas de fluxo de trabalho de IA da Donbrico. "
     }
   },
   "footer": {
@@ -3211,7 +3351,9 @@
       "q3": {
         "question": "Como funciona o 'Traga sua própria chave' (BYOK)?",
         "answer": "Você pode conectar sua própria chave de API do OpenAI, Anthropic, Groq ou OpenRouter nas configurações. "
-      }
+      },
+      "moreQuestions": "Tem mais perguntas?",
+      "viewFullLink": "Leia nosso FAQ completo →"
     }
   },
   "sellerDesk": {
@@ -3428,6 +3570,156 @@
       "q3": {
         "question": "Are candidates' data safe?",
         "answer": "Yes, all processing stays on-device with Gemini Nano (Chrome). If you use your own API key, data goes only to that provider. Donbrico never sees your messages."
+      }
+    }
+  },
+  "propertyFillAi": {
+    "page": {
+      "title": "PropertyFill AI — Best AI Listing Generator for Real Estate & Chrome",
+      "description": "Melhor gerador de listagem de IA para corretores imobiliários. ",
+      "ogTitle": "PropertyFill AI — Best AI Listing Generator for Real Estate & Chrome",
+      "ogDescription": "Melhor gerador de listagem de IA para corretores imobiliários. "
+    },
+    "hero": {
+      "badge": "IMOBILIÁRIO · EXTENSÃO CROMADA",
+      "title": "Preencha formulários de listagem. ",
+      "subtitle": "PropertyFill AI ajuda agentes imobiliários a gerar descrições de propriedades profissionais e de alta conversão a partir de notas aproximadas e formulários de listagem de preenchimento automático em Centris, Realtor.ca, Zillow, Flexmls e Matrix instantaneamente.",
+      "buttonPrimary": "Adicionar ao Chrome – grátis",
+      "buttonSecondary": "Veja como funciona ↓",
+      "disclaimer": "🔒 Os rascunhos de listagens são armazenados localmente · Gemini Nano no Chrome é 100% privado · Não é necessária uma conta"
+    },
+    "roles": {
+      "agent": "Agente de listagem",
+      "broker": "Corretor de imóveis",
+      "admin": "Administrador imobiliário",
+      "assistant": "Assistente virtual"
+    },
+    "howItWorks": {
+      "sectionTitle": "Como funciona",
+      "step1": {
+        "title": "1. Salve seu perfil",
+        "description": "Insira seu nome, número de licença e detalhes de corretagem. "
+      },
+      "step2": {
+        "title": "2. Rascunho de notas de listagem",
+        "description": "Descreva a propriedade em notas aproximadas. "
+      },
+      "step3": {
+        "title": "3. Preenchimento com um clique",
+        "description": "Abra seu formulário de listagem no Centris, Realtor.ca, Zillow ou MLS. "
+      }
+    },
+    "whatItFills": {
+      "sectionTitle": "O que preenche.",
+      "property": {
+        "title": "Detalhes da propriedade",
+        "items": "Tipo de imóvel · Ano de construção · Metragem quadrada · Tamanho do lote · Quartos · Banheiros"
+      },
+      "listing": {
+        "title": "Informações de listagem",
+        "items": "Preço pedido · MLS/Centris ID · Endereço · Cidade · Província/Estado · Código postal"
+      },
+      "description": {
+        "title": "Descrições de IA",
+        "items": "Observações (inglês e francês) · Observações públicas · Manchetes de listagens"
+      },
+      "agent": {
+        "title": "Agente e Corretagem",
+        "items": "Número de licença · Nome da corretora · Endereço e telefone da corretora · Biografia do agente"
+      }
+    },
+    "features": {
+      "sectionTitle": "Criado para fluxos de trabalho imobiliários.",
+      "worksEverywhere": {
+        "title": "Funciona em qualquer lugar",
+        "description": "Preenchimento automático em Centris, Realtor.ca, Zillow, Flexmls, Matrix e portais de listagem padrão."
+      },
+      "private": {
+        "title": "100% privado por padrão",
+        "description": "Os rascunhos permanecem no armazenamento local do Chrome. "
+      },
+      "aiListing": {
+        "title": "Gerador de listagem AI",
+        "description": "Transforme marcadores aproximados em descrições de propriedades profissionais e de alta conversão, combinando 5 modelos distintos."
+      },
+      "byok": {
+        "title": "Traga sua própria chave de IA",
+        "description": "Use OpenAI, Anthropic (Claude), Groq ou OpenRouter para conclusões ilimitadas de IA na nuvem em qualquer máquina."
+      },
+      "multiProfile": {
+        "title": "Até 10 rascunhos",
+        "description": "Salve e gerencie até 10 anúncios de imóveis em andamento e alterne rapidamente entre rascunhos (Pro)."
+      },
+      "noAccount": {
+        "title": "Nenhuma conta necessária",
+        "description": "Sem inscrição. "
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Preços simples.",
+      "free": {
+        "title": "Livre",
+        "price": "US$ 0",
+        "features": {
+          "f1": "5 listagens de IA/mês",
+          "f2": "1 minuta de imóvel ativo",
+          "f3": "Modelo de listagem rápida",
+          "f4": "Gemini Nano (IA no dispositivo)",
+          "f5": "Traga sua própria chave de IA na nuvem"
+        },
+        "button": "Adicionar ao Chrome"
+      },
+      "proMonthly": {
+        "title": "Pró - Mensal",
+        "price": "US$ 19,99/mês",
+        "features": {
+          "f1": "Listagens de IA ilimitadas",
+          "f2": "Até 10 rascunhos salvos",
+          "f3": "Todos os 5 modelos de listagem",
+          "f4": "Exportar e importar backups",
+          "f5": "Suporte prioritário"
+        },
+        "button": "Obtenha o Pro mensalmente"
+      },
+      "proYearly": {
+        "title": "Pró - Anual",
+        "price": "$ 149/ano",
+        "subtitle": "~$12,42/mês",
+        "savings": "Economize 38% em relação ao mês",
+        "features": {
+          "f1": "Todos os recursos mensais do Pro",
+          "f2": "Melhor valor para agentes ativos"
+        },
+        "button": "Torne-se profissional anualmente"
+      },
+      "lifetime": {
+        "title": "Vida",
+        "price": "$ 199 único",
+        "tagline": "Limitado – apenas os primeiros 200 compradores",
+        "features": {
+          "f1": "Todos os recursos Pro, para sempre",
+          "f2": "Todas as atualizações futuras incluídas"
+        },
+        "button": "Obtenha o Lifetime Pro"
+      }
+    },
+    "faq": {
+      "sectionTitle": "Perguntas frequentes",
+      "q1": {
+        "question": "Os dados do meu cliente ou propriedade estão seguros?",
+        "answer": "Completamente. "
+      },
+      "q2": {
+        "question": "Suporta Centris e Realtor.ca?",
+        "answer": "Sim! "
+      },
+      "q3": {
+        "question": "Preciso de um plano pago para usar minha própria chave de IA?",
+        "answer": "Trazer sua própria chave de API (BYOK) do OpenAI, Claude, Groq ou OpenRouter é totalmente compatível com o plano Gratuito."
+      },
+      "q4": {
+        "question": "Quais plataformas são suportadas?",
+        "answer": "Pronto para uso, ele oferece suporte aos portais Centris, Realtor.ca, Zillow, Flexmls e Matrix. "
       }
     }
   }

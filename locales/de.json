@@ -57,7 +57,8 @@
     "blog": "Blog",
     "extensionsTradeDesk": "TradeDesk KI",
     "extensionsSellerDesk": "SellerDesk AI",
-    "extensionsRecruitReply": "RecruitReply AI"
+    "extensionsRecruitReply": "RecruitReply AI",
+    "extensionsPropertyFill": "PropertyFill AI"
   },
   "home": {
     "page": {
@@ -144,7 +145,21 @@
     "comingSoon": "KOMMT BALD",
     "nullCarrierTitle": "Null-Carrier",
     "nullCarrierDescription": "Ein Puzzlespiel zur Signalrekonstruktion. Sie betreiben ein Deep-Space-Listening-Array. Stimmen Sie Frequenzen ab, dekodieren Sie Übertragungen und hinterfragen Sie, was Command Ihnen sagt.",
-    "learnMore": "Erfahren Sie mehr →"
+    "learnMore": "Erfahren Sie mehr →",
+    "seoSections": {
+      "writing": {
+        "title": "KI-Schreibautomatisierung",
+        "text": "Erstellen Sie eine persönliche Antwortbibliothek und generieren Sie KI-gestützte Antworten auf Gmail, LinkedIn, Support-Desks und jeder Website. "
+      },
+      "forms": {
+        "title": "Intelligentes Ausfüllen von Formularen",
+        "text": "Füllen Sie Bewerbungen, medizinische Formulare, Versicherungsansprüche und CRM-Einträge automatisch aus einem gespeicherten Profil aus. "
+      },
+      "tabs": {
+        "title": "Tab- und Sitzungsverwaltung",
+        "text": "Speichern und stellen Sie vollständige Browser-Arbeitsbereiche mit einem Klick wieder her. "
+      }
+    }
   },
   "autofillAi": {
     "page": {
@@ -464,7 +479,8 @@
         "question": "Details zum Hostspeicher werden in Antworten nicht verwendet",
         "answer": "Überprüfen Sie, ob Sie Ihre Eigentumsdetails auf der Registerkarte „Hostspeicher“ des Erweiterungs-Popups gespeichert haben."
       }
-    }
+    },
+    "heroCta": "Schicken Sie uns jetzt eine E-Mail"
   },
   "privacyPolicy": {
     "page": {
@@ -537,7 +553,8 @@
       "medAutoFillAi": "MedAutoFill AI",
       "tradeDesk": "TradeDesk KI",
       "sellerDesk": "SellerDesk AI",
-      "recruitReply": "RecruitReply AI"
+      "recruitReply": "RecruitReply AI",
+      "propertyFillAi": "PropertyFill AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico AI-Antwortassistent",
@@ -699,6 +716,29 @@
         "sectionTitle": "Datenlöschung",
         "paragraph": "Durch die Deinstallation der Erweiterung werden alle lokal gespeicherten Daten und Einstellungen gelöscht. Auf den Donbrico-Servern werden keine Daten gespeichert."
       }
+    },
+    "propertyFillAi": {
+      "sectionTitle": "Donbrico PropertyFill AI",
+      "whatWeCollect": {
+        "sectionTitle": "Welche Daten wir sammeln",
+        "paragraph": "Keiner. "
+      },
+      "howStored": {
+        "sectionTitle": "Wie Profildaten gespeichert werden",
+        "paragraph": "Die storage.local-API von Chrome. "
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "KI-Drittanbieter (Bring Your Own Key)",
+        "paragraph": "Wenn der Benutzer einen Bring Your Own Key-Anbieter wie OpenAI, Anthropic, Groq oder OpenRouter konfiguriert, werden der Beschreibungstext und die Eigenschaftsdaten seines Eintrags an diesen Drittanbieter gesendet. "
+      },
+      "permissions": {
+        "sectionTitle": "Verwendete Berechtigungen",
+        "paragraph": "storage (lokale Entwürfe), activeTab (Auflistungsformulare auf aktueller Registerkarte erkennen), Scripting (Schaltfläche zum Einfügen von Ausfüllungen), host_permissions (Arbeiten auf Immobilienportalen wie Centris, Realtor.ca, Zillow, Flexmls, Matrix)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Datenlöschung",
+        "paragraph": "Durch die Deinstallation der Erweiterung werden alle gespeicherten Entwürfe und Einstellungen entfernt."
+      }
     }
   },
   "emails": {
@@ -788,7 +828,17 @@
         "title": "Nicht sicher, welche Erweiterung Sie benötigen?",
         "subtitle": "Durchsuchen Sie Lösungen nach Workflow, um die passende für Ihre Rolle zu finden.",
         "button": "Lösungen erkunden →"
+      },
+      "propertyfill": {
+        "title": "Donbrico PropertyFill AI",
+        "description": "KI-gestütztes automatisches Ausfüllen von Immobilienlisten. "
       }
+    },
+    "page": {
+      "title": "KI-Browsererweiterungen für Produktivität | ",
+      "ogTitle": "KI-Browsererweiterungen für Produktivität | ",
+      "description": "Laden Sie kostenlose KI-Browsererweiterungen zum Schreiben, zum automatischen Ausfüllen von Formularen und zur Workflow-Automatisierung herunter. ",
+      "ogDescription": "Laden Sie kostenlose KI-Browsererweiterungen zum Schreiben, zum automatischen Ausfüllen von Formularen und zur Workflow-Automatisierung herunter. "
     }
   },
   "cta": {
@@ -1583,7 +1633,9 @@
       "chrome": "In Chrome verwenden alle drei Erweiterungen standardmäßig Gemini Nano – das in Chrome integrierte On-Device-KI-Modell von Google. Das bedeutet, dass KI vollständig auf Ihrem Computer läuft: keine API-Aufrufe, keine Daten, die Ihren Browser verlassen.",
       "edge": "Auf Edge (bald erhältlich) ist Gemini Nano nicht verfügbar. Benutzer können ihren eigenen API-Schlüssel (OpenAI, Anthropic, Groq oder OpenRouter) verbinden, um KI-Funktionen freizuschalten.",
       "principle": "Donbrico speichert Ihre Daten niemals. Niemals."
-    }
+    },
+    "heroCtaPrimary": "Probieren Sie Donbrico Free aus",
+    "heroCtaSecondary": "Entdecken Sie unsere Tools"
   },
   "extensionsHub": {
     "autofill": {
@@ -2510,7 +2562,24 @@
       },
       "messageLibrary": {
         "title": "Nachrichtenbibliothek",
-        "description": "Erstellen Sie eine Bibliothek mit Outreach-Vorlagen für die Kandidatenkommunikation. KI erstellt personalisierte Versionen für jeden Kandidaten."
+        "description": "Erstellen Sie eine Bibliothek mit Outreach-Vorlagen für die Kandidatenkommunikation. KI erstellt personalisierte Versionen für jeden Kandidaten.",
+        "subtitle": "Einmal sparen, immer personalisieren",
+        "sourcing": {
+          "title": "Sourcing-Reichweite",
+          "description": "LinkedIn InMail- und E-Mail-Vorlagen für passive Kandidaten. "
+        },
+        "followup": {
+          "title": "Folgesequenzen",
+          "description": "Nachuntersuchungen am 3., 7. und 14. Tag. "
+        },
+        "offerRejection": {
+          "title": "Angebots- und Ablehnungsschreiben",
+          "description": "Herzliche, professionelle Vorlagen, die nicht generisch wirken. "
+        },
+        "interview": {
+          "title": "Interviewplanung",
+          "description": "Vorlagen für Bestätigungen, Erinnerungen und Umplanungen. "
+        }
       },
       "page": {
         "title": "KI-Tools für Personalvermittler: Automatisieren Sie Bewerbungen und ATS-Workflows | Donbrico",
@@ -2636,8 +2705,58 @@
         "subtitle": "Der Start aller drei Erweiterungen ist kostenlos. Vorerst nur Chrome – Edge kommt bald.",
         "button": "Alle Erweiterungen anzeigen →"
       },
-      "categories": "Kategorien",
-      "workflows": "Arbeitsabläufe",
+      "categories": {
+        "communication": {
+          "title": "Schreiben und antworten",
+          "description": "Automatisieren Sie E-Mail-Antworten, Support-Antworten und Outreach-Nachrichten. ",
+          "cta": "Workflow anzeigen →"
+        },
+        "automation": {
+          "title": "Füllen und verarbeiten",
+          "description": "Automatisieren Sie das wiederholte Ausfüllen von Formularen und die strukturierte Dateneingabe. ",
+          "cta": "Workflow anzeigen →"
+        },
+        "workspace": {
+          "title": "Organisieren und fokussieren",
+          "description": "Browser-Arbeitsbereiche speichern und wiederherstellen. ",
+          "cta": "Workflow anzeigen →"
+        }
+      },
+      "workflows": {
+        "title": "SPEZIFISCHE ABLÄUFE",
+        "subtitle": "Jede Nischenseite zeigt genau, wie Donbrico-Erweiterungen diesen Arbeitsablauf lösen.",
+        "cta": "Workflow anzeigen →",
+        "supportTeams": {
+          "title": "Support-Teams",
+          "description": "KI-gestützte Antwortbibliothek für Supportmitarbeiter. ",
+          "cta": "Workflow anzeigen →"
+        },
+        "ecommerceSupport": {
+          "title": "E-Commerce-Unterstützung",
+          "description": "Automatisieren Sie Support-Antworten auf Bestellungen, Rückerstattungen und Kundenfragen. ",
+          "cta": "Workflow anzeigen →"
+        },
+        "recruiters": {
+          "title": "Personalvermittler",
+          "description": "Beschleunigen Sie die Rekrutierung mit KI, die Jobbörsen automatisch ausfüllt, Kandidatenzusammenfassungen erstellt und die manuelle ATS-Dateneingabe reduziert.",
+          "cta": "Workflow anzeigen →"
+        },
+        "insurance": {
+          "title": "Versicherung",
+          "description": "Füllen Sie Anspruchsformulare und Versicherungsdaten mit KI-gestütztem Ausfüllen aus. ",
+          "cta": "Workflow anzeigen →"
+        },
+        "browserWorkspace": {
+          "title": "Forscher und Entwickler",
+          "description": "Organisieren Sie komplexe Browsersitzungen. ",
+          "cta": "Workflow anzeigen →"
+        },
+        "jobSeekers": {
+          "title": "Arbeitssuchende",
+          "description": "Füllen Sie Bewerbungen automatisch mit KI-generierten Anschreiben aus. ",
+          "cta": "Workflow anzeigen →"
+        }
+      },
       "automation": {
         "title": "Füllen und verarbeiten",
         "description": "Automatisieren Sie das wiederholte Ausfüllen von Formularen und die strukturierte Dateneingabe. Entwickelt für Personalvermittler, Administratoren und Betriebsteams.",
@@ -2787,7 +2906,28 @@
       "cta": {
         "title": "Drei Erweiterungen. Ein stressiger Arbeitstag weniger.",
         "subtitle": "Alles kostenlos zu installieren. Kein Konto erforderlich. Vorerst nur Chrome – Edge kommt bald auf den Markt."
+      },
+      "howEachHelps": "Wie jede Erweiterung hilft ↓",
+      "related": {
+        "title": "Verwandte Arbeitsabläufe",
+        "items": [
+          {
+            "label": "Write & Respond Overview"
+          },
+          {
+            "label": "For Job Seekers"
+          },
+          {
+            "label": "Browser Workspace"
+          }
+        ]
       }
+    },
+    "page": {
+      "title": "Browser-Workflow-Automatisierung und KI-Tools | ",
+      "ogTitle": "Browser-Workflow-Automatisierung und KI-Tools | ",
+      "description": "Automatisieren Sie wiederkehrende Browseraufgaben mit den KI-Workflow-Tools von Donbrico. ",
+      "ogDescription": "Automatisieren Sie wiederkehrende Browseraufgaben mit den KI-Workflow-Tools von Donbrico. "
     }
   },
   "footer": {
@@ -3211,7 +3351,9 @@
       "q3": {
         "question": "Wie funktioniert „Bring Your Own Key“ (BYOK)?",
         "answer": "Sie können Ihren eigenen API-Schlüssel von OpenAI, Anthropic, Groq oder OpenRouter in den Einstellungen verbinden. "
-      }
+      },
+      "moreQuestions": "Haben Sie weitere Fragen?",
+      "viewFullLink": "Lesen Sie unsere vollständigen FAQ →"
     }
   },
   "sellerDesk": {
@@ -3428,6 +3570,156 @@
       "q3": {
         "question": "Sind die Daten der Kandidaten sicher?",
         "answer": "Ja, mit Gemini Nano (Chrome) bleibt die gesamte Verarbeitung auf dem Gerät. Wenn Sie Ihren eigenen API-Schlüssel verwenden, gehen die Daten nur an diesen Anbieter. Donbrico sieht Ihre Nachrichten nie."
+      }
+    }
+  },
+  "propertyFillAi": {
+    "page": {
+      "title": "PropertyFill AI — Best AI Listing Generator for Real Estate & Chrome",
+      "description": "Bester KI-Inseratgenerator für Immobilienmakler. ",
+      "ogTitle": "PropertyFill AI — Best AI Listing Generator for Real Estate & Chrome",
+      "ogDescription": "Bester KI-Inseratgenerator für Immobilienmakler. "
+    },
+    "hero": {
+      "badge": "IMMOBILIEN · CHROM-ERWEITERUNG",
+      "title": "Füllen Sie Auflistungsformulare aus. ",
+      "subtitle": "PropertyFill AI hilft Immobilienmaklern, aus groben Notizen und automatisch ausgefüllten Angebotsformularen auf Centris, Realtor.ca, Zillow, Flexmls und Matrix sofort professionelle, hochkonvertierende Immobilienbeschreibungen zu erstellen.",
+      "buttonPrimary": "Zu Chrome hinzufügen – kostenlos",
+      "buttonSecondary": "Sehen Sie, wie es funktioniert ↓",
+      "disclaimer": "🔒 Angebotsentwürfe werden lokal gespeichert · Gemini Nano auf Chrome ist 100 % privat · Kein Konto erforderlich"
+    },
+    "roles": {
+      "agent": "Listing-Agent",
+      "broker": "Immobilienmakler",
+      "admin": "Immobilienadministrator",
+      "assistant": "Virtueller Assistent"
+    },
+    "howItWorks": {
+      "sectionTitle": "Wie es funktioniert",
+      "step1": {
+        "title": "1. Speichern Sie Ihr Profil",
+        "description": "Geben Sie Ihren Namen, Ihre Lizenznummer und Ihre Maklerdaten ein. "
+      },
+      "step2": {
+        "title": "2. Entwurf der Auflistungsnotizen",
+        "description": "Beschreiben Sie die Immobilie in groben Notizen. "
+      },
+      "step3": {
+        "title": "3. Füllen mit einem Klick",
+        "description": "Öffnen Sie Ihr Angebotsformular auf Centris, Realtor.ca, Zillow oder MLS. "
+      }
+    },
+    "whatItFills": {
+      "sectionTitle": "Was es erfüllt.",
+      "property": {
+        "title": "Details zur Immobilie",
+        "items": "Immobilientyp · Baujahr · Quadratmeterzahl · Grundstücksgröße · Schlafzimmer · Badezimmer"
+      },
+      "listing": {
+        "title": "Auflistungsinformationen",
+        "items": "Preisvorstellung · MLS/Centris-ID · Straße · Stadt · Provinz/Bundesland · Postleitzahl"
+      },
+      "description": {
+        "title": "KI-Beschreibungen",
+        "items": "Bemerkungen (Englisch und Französisch) · Öffentliche Bemerkungen · Schlagzeilen auflisten"
+      },
+      "agent": {
+        "title": "Agent & Makler",
+        "items": "Lizenznummer · Name des Maklers · Adresse und Telefonnummer des Maklers · Biografie des Maklers"
+      }
+    },
+    "features": {
+      "sectionTitle": "Entwickelt für Immobilien-Workflows.",
+      "worksEverywhere": {
+        "title": "Funktioniert überall",
+        "description": "Automatisches Ausfüllen auf Centris, Realtor.ca, Zillow, Flexmls, Matrix und Standard-Eintragsportalen."
+      },
+      "private": {
+        "title": "Standardmäßig 100 % privat",
+        "description": "Entwürfe bleiben im lokalen Speicher von Chrome. "
+      },
+      "aiListing": {
+        "title": "AI-Listing-Generator",
+        "description": "Verwandeln Sie grobe Aufzählungspunkte in professionelle, hochkonvertierende Immobilienbeschreibungen, die zu 5 verschiedenen Vorlagen passen."
+      },
+      "byok": {
+        "title": "Bringen Sie Ihren eigenen KI-Schlüssel mit",
+        "description": "Verwenden Sie OpenAI, Anthropic (Claude), Groq oder OpenRouter für unbegrenzte Cloud-KI-Vervollständigungen auf jedem Computer."
+      },
+      "multiProfile": {
+        "title": "Bis zu 10 Entwürfe",
+        "description": "Speichern und verwalten Sie bis zu 10 laufende Immobilienangebote und wechseln Sie schnell zwischen Entwürfen (Pro)."
+      },
+      "noAccount": {
+        "title": "Kein Konto erforderlich",
+        "description": "Keine Anmeldung. "
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Einfache Preisgestaltung.",
+      "free": {
+        "title": "Frei",
+        "price": "0 $",
+        "features": {
+          "f1": "5 AI-Einträge pro Monat",
+          "f2": "1 aktiver Immobilienentwurf",
+          "f3": "Vorlage für eine schnelle Auflistung",
+          "f4": "Gemini Nano (KI auf dem Gerät)",
+          "f5": "Bringen Sie Ihren eigenen Cloud-KI-Schlüssel mit"
+        },
+        "button": "Zu Chrome hinzufügen"
+      },
+      "proMonthly": {
+        "title": "Pro – Monatlich",
+        "price": "19,99 $/Monat",
+        "features": {
+          "f1": "Unbegrenzte AI-Einträge",
+          "f2": "Bis zu 10 gespeicherte Entwürfe",
+          "f3": "Alle 5 Listing-Vorlagen",
+          "f4": "Backups exportieren und importieren",
+          "f5": "Vorrangiger Support"
+        },
+        "button": "Holen Sie sich Pro Monthly"
+      },
+      "proYearly": {
+        "title": "Pro – Jährlich",
+        "price": "149 $/Jahr",
+        "subtitle": "~12,42 $/Monat",
+        "savings": "Sparen Sie 38 % im Vergleich zu monatlich",
+        "features": {
+          "f1": "Alle Monthly Pro-Funktionen",
+          "f2": "Bestes Preis-Leistungs-Verhältnis für Wirkstoffe"
+        },
+        "button": "Holen Sie sich Pro Yearly"
+      },
+      "lifetime": {
+        "title": "Lebensdauer",
+        "price": "199 $ einmalig",
+        "tagline": "Begrenzt – nur für die ersten 200 Käufer",
+        "features": {
+          "f1": "Alle Pro-Funktionen, für immer",
+          "f2": "Alle zukünftigen Updates enthalten"
+        },
+        "button": "Holen Sie sich Lifetime Pro"
+      }
+    },
+    "faq": {
+      "sectionTitle": "FAQ",
+      "q1": {
+        "question": "Sind meine Kunden- oder Immobiliendaten sicher?",
+        "answer": "Vollständig. "
+      },
+      "q2": {
+        "question": "Unterstützt es Centris und Realtor.ca?",
+        "answer": "Ja! "
+      },
+      "q3": {
+        "question": "Benötige ich einen kostenpflichtigen Plan, um meinen eigenen KI-Schlüssel zu verwenden?",
+        "answer": "Nein. Das Mitbringen Ihres eigenen API-Schlüssels (BYOK) von OpenAI, Claude, Groq oder OpenRouter wird im kostenlosen Plan vollständig unterstützt."
+      },
+      "q4": {
+        "question": "Welche Plattformen werden unterstützt?",
+        "answer": "Standardmäßig unterstützt es die Portale Centris, Realtor.ca, Zillow, Flexmls und Matrix. "
       }
     }
   }

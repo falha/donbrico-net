@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="propertyFillAi.page.title">
+      PropertyFill AI — Best AI Listing Generator for Real Estate &amp; Chrome
+    </title>
+    <meta
+      name="description"
+      data-i18n="propertyFillAi.page.description"
+      content="Best AI listing generator for real estate agents. Autofill Centris, Realtor.ca, Zillow, Flexmls, and Matrix listing forms in one click. Free Chrome extension."
+    />
+    <meta
+      property="og:title"
+      data-i18n="propertyFillAi.page.ogTitle"
+      content="PropertyFill AI — Best AI Listing Generator for Real Estate &amp; Chrome"
+    />
+    <meta
+      property="og:description"
+      data-i18n="propertyFillAi.page.ogDescription"
+      content="Best AI listing generator for real estate agents. Autofill Centris, Realtor.ca, Zillow, Flexmls, and Matrix listing forms in one click. Free Chrome extension."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://donbrico.net/propertyfill-ai/" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/propertyfill-ai/" />
+    <style>
+      .role-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin-top: var(--spacing-lg);
+      }
+      .role-tag {
+        background: rgba(99, 102, 241, 0.12);
+        border: 1px solid rgba(99, 102, 241, 0.3);
+        color: #a5b4fc;
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+      }
+      .fill-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: var(--spacing-lg);
+      }
+      .fill-card {
+        background: rgba(99, 102, 241, 0.06);
+        border: 1px solid rgba(99, 102, 241, 0.2);
+        border-radius: 12px;
+        padding: var(--spacing-lg);
+      }
+      .fill-card-icon {
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+        display: block;
+      }
+      .fill-card h4 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #e8e8f0;
+      }
+      .fill-card p {
+        font-size: 0.85rem;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+      .badge-realestate {
+        display: inline-block;
+        background: rgba(99, 102, 241, 0.15);
+        border: 1px solid rgba(99, 102, 241, 0.4);
+        color: #a5b4fc;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        padding: 4px 12px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"
+          ><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/ecommerce-support/" data-i18n="nav.solutionsEcommerceSupport">For Ecommerce</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" class="active" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/propertyfill-ai/" data-i18n="nav.extensionsPropertyFill">PropertyFill AI</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/trade-desk/" data-i18n="nav.extensionsTradeDesk">TradeDesk AI</a>
+              <a href="/seller-desk/" data-i18n="nav.extensionsSellerDesk">SellerDesk AI</a>
+              <a href="/recruit-reply/" data-i18n="nav.extensionsRecruitReply">RecruitReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ── Hero ─────────────────────────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="container">
+        <span class="badge-realestate" data-i18n="propertyFillAi.hero.badge">REAL ESTATE · CHROME EXTENSION</span>
+        <h1 data-i18n="propertyFillAi.hero.title">
+          Fill listing forms. In one click.
+        </h1>
+        <p class="subtitle" data-i18n="propertyFillAi.hero.subtitle">
+          PropertyFill AI helps real estate agents generate professional, high-converting property descriptions from rough notes and autofill listing forms on Centris, Realtor.ca, Zillow, Flexmls, and Matrix instantly.
+        </p>
+        <div class="install-group">
+          <a
+            href="https://chromewebstore.google.com/detail/propertyfill-ai-real-estate-autofill/cdmednlpfgkbfnfjakjgdjecekpbaphg"
+            class="btn"
+            data-i18n="propertyFillAi.hero.buttonPrimary"
+            >Add to Chrome — Free</a
+          >
+          <span
+            class="btn-disabled"
+            title="Edge version coming soon."
+            >Edge &nbsp;<span class="badge-soon">Coming Soon</span></span
+          >
+          <a
+            href="#how-it-works"
+            class="btn-outline"
+            data-i18n="propertyFillAi.hero.buttonSecondary"
+            >See how it works ↓</a
+          >
+        </div>
+        <p
+          class="text-muted"
+          style="margin-top: var(--spacing-md)"
+          data-i18n="propertyFillAi.hero.disclaimer"
+        >
+          🔒 Listing drafts are stored locally · Gemini Nano on Chrome is 100% private · No account required
+        </p>
+
+        <!-- Role tags -->
+        <div class="role-tags">
+          <span class="role-tag" data-i18n="propertyFillAi.roles.agent">Listing Agent</span>
+          <span class="role-tag" data-i18n="propertyFillAi.roles.broker">Real Estate Broker</span>
+          <span class="role-tag" data-i18n="propertyFillAi.roles.admin">Real Estate Admin</span>
+          <span class="role-tag" data-i18n="propertyFillAi.roles.assistant">Virtual Assistant</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── How It Works ──────────────────────────────────────────────────────── -->
+    <section id="how-it-works" style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2 class="section-title" data-i18n="propertyFillAi.howItWorks.sectionTitle">
+          How It Works
+        </h2>
+        <div style="display: flex; gap: var(--spacing-lg); justify-content: center; flex-wrap: wrap;">
+          <div class="card" style="flex: 1; min-width: 250px">
+            <h3 data-i18n="propertyFillAi.howItWorks.step1.title">1. Save your profile</h3>
+            <p data-i18n="propertyFillAi.howItWorks.step1.description">
+              Enter your name, license number, and brokerage details. Stored securely on your device, synced across your Chrome.
+            </p>
+          </div>
+          <div class="card" style="flex: 1; min-width: 250px">
+            <h3 data-i18n="propertyFillAi.howItWorks.step2.title">2. Draft listing notes</h3>
+            <p data-i18n="propertyFillAi.howItWorks.step2.description">
+              Describe the property in rough notes. Select a template (luxury, family, condo, investment) to generate a professional listing summary.
+            </p>
+          </div>
+          <div class="card" style="flex: 1; min-width: 250px">
+            <h3 data-i18n="propertyFillAi.howItWorks.step3.title">3. One-click fill</h3>
+            <p data-i18n="propertyFillAi.howItWorks.step3.description">
+              Open your listing form on Centris, Realtor.ca, Zillow, or MLS. Click the ⚡ button to instantly autofill all standard and AI-generated fields.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── What It Fills ─────────────────────────────────────────────────────── -->
+    <section id="what-it-fills" style="padding: var(--spacing-xl) 0; background: rgba(99,102,241,0.03); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border)">
+      <div class="container">
+        <h2 class="section-title" data-i18n="propertyFillAi.whatItFills.sectionTitle">
+          What it fills.
+        </h2>
+        <div class="fill-grid">
+          <div class="fill-card">
+            <span class="fill-card-icon">🏠</span>
+            <h4 data-i18n="propertyFillAi.whatItFills.property.title">Property Details</h4>
+            <p data-i18n="propertyFillAi.whatItFills.property.items">
+              Property type · Year built · Square footage · Lot size · Bedrooms · Bathrooms
+            </p>
+          </div>
+          <div class="fill-card">
+            <span class="fill-card-icon">📋</span>
+            <h4 data-i18n="propertyFillAi.whatItFills.listing.title">Listing Information</h4>
+            <p data-i18n="propertyFillAi.whatItFills.listing.items">
+              Asking price · MLS/Centris ID · Street address · City · Province/State · Postal code
+            </p>
+          </div>
+          <div class="fill-card">
+            <span class="fill-card-icon">🧠</span>
+            <h4 data-i18n="propertyFillAi.whatItFills.description.title">AI Descriptions</h4>
+            <p data-i18n="propertyFillAi.whatItFills.description.items">
+              Remarks (English &amp; French) · Public remarks · Listing headlines
+            </p>
+          </div>
+          <div class="fill-card">
+            <span class="fill-card-icon">💼</span>
+            <h4 data-i18n="propertyFillAi.whatItFills.agent.title">Agent &amp; Brokerage</h4>
+            <p data-i18n="propertyFillAi.whatItFills.agent.items">
+              License number · Brokerage name · Brokerage address &amp; phone · Agent bio
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Features ──────────────────────────────────────────────────────────── -->
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2 class="section-title" data-i18n="propertyFillAi.features.sectionTitle">
+          Built for real estate workflows.
+        </h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-lg);">
+          <div class="card">
+            <h4 data-i18n="propertyFillAi.features.worksEverywhere.title">Works everywhere</h4>
+            <p data-i18n="propertyFillAi.features.worksEverywhere.description">
+              Autofill on Centris, Realtor.ca, Zillow, Flexmls, Matrix, and standard listing portals.
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="propertyFillAi.features.private.title">100% private by default</h4>
+            <p data-i18n="propertyFillAi.features.private.description">
+              Drafts stay in Chrome's local storage. On-device Gemini Nano keeps your client data strictly private.
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="propertyFillAi.features.aiListing.title">AI Listing Generator</h4>
+            <p data-i18n="propertyFillAi.features.aiListing.description">
+              Turn rough bullet points into professional, high-converting property descriptions matching 5 distinct templates.
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="propertyFillAi.features.byok.title">Bring your own AI key</h4>
+            <p data-i18n="propertyFillAi.features.byok.description">
+              Use OpenAI, Anthropic (Claude), Groq, or OpenRouter for unlimited cloud AI completions on any machine.
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="propertyFillAi.features.multiProfile.title">Up to 10 drafts</h4>
+            <p data-i18n="propertyFillAi.features.multiProfile.description">
+              Save and manage up to 10 property listings in progress and quickly swap between drafts (Pro).
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="propertyFillAi.features.noAccount.title">No account needed</h4>
+            <p data-i18n="propertyFillAi.features.noAccount.description">
+              No sign-up. No subscription needed. Install the extension and start generating listings immediately.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Pricing ───────────────────────────────────────────────────────────── -->
+    <section style="padding: var(--spacing-xl) 0; background: rgba(99,102,241,0.03); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border)">
+      <div class="container">
+        <h2 class="section-title" data-i18n="propertyFillAi.pricing.sectionTitle">
+          Simple pricing.
+        </h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--spacing-lg);">
+          <!-- Free -->
+          <div class="card" style="border: 2px solid var(--accent)">
+            <h3 data-i18n="propertyFillAi.pricing.free.title">Free</h3>
+            <p style="font-size: 2rem; font-weight: 700; color: var(--accent)"
+               data-i18n="propertyFillAi.pricing.free.price">$0</p>
+            <ul>
+              <li data-i18n="propertyFillAi.pricing.free.features.f1">5 AI listings / month</li>
+              <li data-i18n="propertyFillAi.pricing.free.features.f2">1 active property draft</li>
+              <li data-i18n="propertyFillAi.pricing.free.features.f3">Quick listing template</li>
+              <li data-i18n="propertyFillAi.pricing.free.features.f4">Gemini Nano (on-device AI)</li>
+              <li data-i18n="propertyFillAi.pricing.free.features.f5">Bring your own cloud AI key</li>
+            </ul>
+            <a
+              href="https://chromewebstore.google.com/detail/propertyfill-ai-real-estate-autofill/cdmednlpfgkbfnfjakjgdjecekpbaphg"
+              class="btn"
+              data-i18n="propertyFillAi.pricing.free.button"
+              >Add to Chrome</a
+            >
+          </div>
+          <!-- Monthly Pro -->
+          <div class="card" style="border: 2px solid var(--accent)">
+            <h3 data-i18n="propertyFillAi.pricing.proMonthly.title">Pro - Monthly</h3>
+            <p style="font-size: 2rem; font-weight: 700; color: var(--accent)"
+               data-i18n="propertyFillAi.pricing.proMonthly.price">$19.99/mo</p>
+            <ul>
+              <li data-i18n="propertyFillAi.pricing.proMonthly.features.f1">Unlimited AI listings</li>
+              <li data-i18n="propertyFillAi.pricing.proMonthly.features.f2">Up to 10 saved drafts</li>
+              <li data-i18n="propertyFillAi.pricing.proMonthly.features.f3">All 5 listing templates</li>
+              <li data-i18n="propertyFillAi.pricing.proMonthly.features.f4">Export &amp; import backups</li>
+              <li data-i18n="propertyFillAi.pricing.proMonthly.features.f5">Priority support</li>
+            </ul>
+            <a
+              href="https://checkout.dodopayments.com/buy/pdt_0NfYG4FkzcIclWc8xq3wJ?quantity=1&redirect_url=https%3A%2F%2Fdonbrico.net%2Factivate.html"
+              class="btn"
+              data-i18n="propertyFillAi.pricing.proMonthly.button"
+              >Get Pro Monthly</a
+            >
+          </div>
+          <!-- Yearly Pro -->
+          <div class="card" style="border: 2px solid var(--accent)">
+            <h3 data-i18n="propertyFillAi.pricing.proYearly.title">Pro - Yearly</h3>
+            <p style="font-size: 2rem; font-weight: 700; color: var(--accent)"
+               data-i18n="propertyFillAi.pricing.proYearly.price">$149/year</p>
+            <p class="text-muted" style="font-size: 0.85rem;"
+               data-i18n="propertyFillAi.pricing.proYearly.subtitle">~$12.42/month</p>
+            <p style="color: #22c55e; font-weight: 600; font-size: 0.9rem"
+               data-i18n="propertyFillAi.pricing.proYearly.savings">Save 38% vs monthly</p>
+            <ul>
+              <li data-i18n="propertyFillAi.pricing.proYearly.features.f1">All Monthly Pro features</li>
+              <li data-i18n="propertyFillAi.pricing.proYearly.features.f2">Best value for active agents</li>
+            </ul>
+            <a
+              href="https://checkout.dodopayments.com/buy/pdt_0NfYG4g9MHL8gk1VU6mI5?quantity=1&redirect_url=https%3A%2F%2Fdonbrico.net%2Factivate.html"
+              class="btn"
+              data-i18n="propertyFillAi.pricing.proYearly.button"
+              >Get Pro Yearly</a
+            >
+          </div>
+          <!-- Lifetime Pro -->
+          <div class="card" style="border: 2px solid #ffd700">
+            <h3 data-i18n="propertyFillAi.pricing.lifetime.title">Lifetime</h3>
+            <p style="font-size: 2rem; font-weight: 700; color: #ffd700"
+               data-i18n="propertyFillAi.pricing.lifetime.price">$199 one-time</p>
+            <p class="text-muted" style="font-size: 0.85rem; color: #ffd700; font-weight: 600; margin-bottom: 12px"
+               data-i18n="propertyFillAi.pricing.lifetime.tagline">Limited — first 200 buyers only</p>
+            <ul>
+              <li data-i18n="propertyFillAi.pricing.lifetime.features.f1">All Pro features, forever</li>
+              <li data-i18n="propertyFillAi.pricing.lifetime.features.f2">All future updates included</li>
+            </ul>
+            <a
+              href="https://checkout.dodopayments.com/buy/pdt_0NfYG4g9MHL8gk1VU6mI5?quantity=1&redirect_url=https%3A%2F%2Fdonbrico.net%2Factivate.html"
+              class="btn"
+              data-i18n="propertyFillAi.pricing.lifetime.button"
+              >Get Lifetime Pro</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ───────────────────────────────────────────────────────────────── -->
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2 class="section-title" data-i18n="propertyFillAi.faq.sectionTitle">FAQ</h2>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary style="cursor: pointer; font-weight: 600"
+                   data-i18n="propertyFillAi.faq.q1.question">
+            Is my client or property data safe?
+          </summary>
+          <p data-i18n="propertyFillAi.faq.q1.answer">
+            Completely. All saved drafts and agent profiles are stored locally in Chrome's storage on your device. The default Gemini Nano AI runs entirely on-device with zero data leaving your machine.
+          </p>
+        </details>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary style="cursor: pointer; font-weight: 600"
+                   data-i18n="propertyFillAi.faq.q2.question">
+            Does it support Centris and Realtor.ca?
+          </summary>
+          <p data-i18n="propertyFillAi.faq.q2.answer">
+            Yes! PropertyFill AI is custom-tailored with specialized adapters for Centris.ca (supporting bilingual English/French fields) and Realtor.ca/RealtorLink.
+          </p>
+        </details>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary style="cursor: pointer; font-weight: 600"
+                   data-i18n="propertyFillAi.faq.q3.question">
+            Do I need a paid plan to use my own AI key?
+          </summary>
+          <p data-i18n="propertyFillAi.faq.q3.answer">
+            No. Bringing your own API key (BYOK) from OpenAI, Claude, Groq, or OpenRouter is fully supported on the Free plan.
+          </p>
+        </details>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary style="cursor: pointer; font-weight: 600"
+                   data-i18n="propertyFillAi.faq.q4.question">
+            What platforms are supported?
+          </summary>
+          <p data-i18n="propertyFillAi.faq.q4.answer">
+            Out of the box, it supports Centris, Realtor.ca, Zillow, Flexmls, and Matrix portals. We are continually adding support for more MLS platforms.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ── Footer ────────────────────────────────────────────────────────────── -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/propertyfill-ai/" data-i18n="nav.extensionsPropertyFill">PropertyFill AI</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/trade-desk/" data-i18n="nav.extensionsTradeDesk">TradeDesk AI</a>
+            <a href="/seller-desk/" data-i18n="nav.extensionsSellerDesk">SellerDesk AI</a>
+            <a href="/recruit-reply/" data-i18n="nav.extensionsRecruitReply">RecruitReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="footer.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="footer.terms">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.allRightsReserved">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../js/i18n.js" defer></script>
+    <script src="../js/chatwoot.js" defer></script>
+  </body>
+</html>

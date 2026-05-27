@@ -79,6 +79,14 @@ const skipTranslatePaths = new Set([
   'home.projects.aiReplyAssistant.title',
   'aiReplyAssistant.page.title',
   'aiReplyAssistant.page.ogTitle',
+  'nav.extensionsPropertyFill',
+  'propertyFillAi.page.title',
+  'propertyFillAi.page.ogTitle',
+  'nav.extensionsSellerDesk',
+  'sellerDesk.page.title',
+  'nav.extensionsRecruitReply',
+  'recruitReply.page.title',
+  'recruitReply.page.ogTitle',
 ]);
 
 // ---------- Main ----------
