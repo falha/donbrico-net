@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MedAutoFill FAQ – Chrome Extension for Medical Form Automation</title>
-    <meta name="description" content="Get answers about MedAutoFill, the AI Chrome extension for medical form autofill. Learn setup, privacy, pricing and more. Save hours on patient data entry." />
+    <title>MedAutoFill — Frequently Asked Questions | Donbrico FAQ</title>
+    <meta name="description" content="MedAutoFill is a Chrome extension. Visit the Chrome Web Store, search for "MedAutoFill by Donbrico," and click "Add to Chrome." Once installed, you'll see the M" />
     <link rel="alternate" hreflang="en" href="https://donbrico.net/med-autofill/en/faq/" />
     <link rel="alternate" hreflang="es" href="https://donbrico.net/med-autofill/es/faq/" />
     <link rel="alternate" hreflang="ja" href="https://donbrico.net/med-autofill/ja/faq/" />
@@ -17,39 +17,15 @@
     <link rel="alternate" hreflang="hi" href="https://donbrico.net/med-autofill/hi/faq/" />
     <link rel="alternate" hreflang="ru" href="https://donbrico.net/med-autofill/ru/faq/" />
     <link rel="alternate" hreflang="ko" href="https://donbrico.net/med-autofill/ko/faq/" />
-    <meta property="og:title" content="MedAutoFill FAQ – Chrome Extension for Medical Form Automation" />
-    <meta property="og:description" content="Get answers about MedAutoFill, the AI Chrome extension for medical form autofill. Learn setup, privacy, pricing and more. Save hours on patient data entry." />
+    <meta property="og:title" content="MedAutoFill — Frequently Asked Questions | Donbrico FAQ" />
+    <meta property="og:description" content="MedAutoFill is a Chrome extension. Visit the Chrome Web Store, search for "MedAutoFill by Donbrico," and click "Add to Chrome." Once installed, you'll see the M" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://donbrico.net/med-autofill/en/faq/" />
     
-    <link rel="stylesheet" href="../../../css/style.css" />
-    <link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <meta name="theme-color" content="#0a0a0f" />
     <link rel="canonical" href="https://donbrico.net/med-autofill/en/faq/" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How do I install MedAutoFill on my browser?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Search for MedAutoFill by Donbrico on the Chrome Web Store and click Add to Chrome. No account required."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does MedAutoFill work with payer portals and prior authorization forms?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. MedAutoFill autofills patient demographics, insurance, and billing fields on payer portals, prior auth, and intake forms."
-            }
-          }
-        ]
-      }
-    </script>
     <style>
       .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
       .blog-post h1 { margin-bottom: var(--spacing-md); }
@@ -69,6 +45,33 @@
       th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
       th { background: rgba(99,102,241,0.1); font-weight: 600; }
     </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
   </head>
   <body>
     <nav class="nav">
@@ -93,7 +96,8 @@
               <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
               <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
               <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
-              </div>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
           </li>
           <li class="dropdown">
             <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
@@ -103,10 +107,19 @@
               <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
               <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
               <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
-              <a href="/trade-desk/" data-i18n="nav.extensionsTradeDesk">TradeDesk AI</a>
-              <a href="/seller-desk/" data-i18n="nav.extensionsSellerDesk">SellerDesk AI</a>
-              <a href="/recruit-reply/" data-i18n="nav.extensionsRecruitReply">RecruitReply AI</a>
               <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+              <span class="dropdown-group-label" style="display:block; margin-top:10px; font-size:0.7rem; color:var(--muted);" data-i18n="nav.tools">Tools</span>
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" data-i18n="nav.tools">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
             </div>
           </li>
           <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
@@ -120,16 +133,8 @@
     <main>
       <div class="blog-post">
         
-        <p style="color: var(--muted); margin-bottom: var(--spacing-md); line-height: 1.7">
-          Automate patient form filling with AI. Answers on setup, privacy, pricing, and daily use for medical admins.
-        </p>
-        <div class="install-group" style="margin-bottom: var(--spacing-lg)">
-          <a
-            href="https://chromewebstore.google.com/detail/medautofill-medical-admin-autofill/cnpmpohneoaakpllhkaieoognepcalai"
-            class="btn"
-            >Install MedAutoFill Free</a>
-          <a href="/med-autofill/" class="btn-outline">Product overview →</a>
-        </div>
+        
+        
         <h1>MedAutoFill — Frequently Asked Questions</h1>
 <h2>Getting Started</h2>
 <h3>How do I install MedAutoFill on my browser?</h3>
@@ -179,12 +184,7 @@
 <h3>Does MedAutoFill work offline?</h3>
 <p>MedAutoFill works offline for rule-based filling and stored patient profiles. The BYOK AI feature requires an internet connection to communicate with the AI provider. For most standard forms, you can work without internet access—just ensure you&#39;ve loaded your profiles while online.</p>
 
-        <div class="install-group" style="margin-top: var(--spacing-xl); justify-content: center; display: flex; flex-wrap: wrap; gap: 1rem">
-          <a
-            href="https://chromewebstore.google.com/detail/medautofill-medical-admin-autofill/cnpmpohneoaakpllhkaieoognepcalai"
-            class="btn"
-            >Install MedAutoFill Free</a>
-        </div>
+        
       </div>
     </main>
 
@@ -210,10 +210,7 @@
             <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
             <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
             <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
-            <a href="/trade-desk/" data-i18n="nav.extensionsTradeDesk">TradeDesk AI</a>
-              <a href="/seller-desk/" data-i18n="nav.extensionsSellerDesk">SellerDesk AI</a>
-              <a href="/recruit-reply/" data-i18n="nav.extensionsRecruitReply">RecruitReply AI</a>
-              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
           </div>
           <div class="footer-col">
             <h4 data-i18n="footer.company">Company</h4>
@@ -227,7 +224,7 @@
         <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
       </div>
     </footer>
-    <script src="../../../js/i18n.js" defer></script>
-    <script src="../../../js/chatwoot.js" defer></script>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
   </body>
 </html>

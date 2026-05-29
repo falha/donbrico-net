@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WorkDesk — 常見問題解答 | Donbrico FAQ</title>
+    <meta name="description" content="直接從 Chrome 線上應用程式商店搜尋「WorkDesk」，或前往產品頁面 donbrico.net/workdesk 進行安裝。點擊「加到 Chrome」並確認安裝。安裝完成後，您會在瀏覽器工具列看到 WorkDesk 圖示。" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/workdesk/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/workdesk/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/workdesk/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/workdesk/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/workdesk/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/workdesk/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/workdesk/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/workdesk/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/workdesk/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/workdesk/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/workdesk/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/workdesk/ko/faq/" />
+    <meta property="og:title" content="WorkDesk — 常見問題解答 | Donbrico FAQ" />
+    <meta property="og:description" content="直接從 Chrome 線上應用程式商店搜尋「WorkDesk」，或前往產品頁面 donbrico.net/workdesk 進行安裝。點擊「加到 Chrome」並確認安裝。安裝完成後，您會在瀏覽器工具列看到 WorkDesk 圖示。" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/workdesk/zh_TW/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/workdesk/zh_TW/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+              <span class="dropdown-group-label" style="display:block; margin-top:10px; font-size:0.7rem; color:var(--muted);" data-i18n="nav.tools">Tools</span>
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" data-i18n="nav.tools">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>WorkDesk — 常見問題解答</h1>
+<h2>入門指南</h2>
+<h3>如何在 Chrome 瀏覽器安裝 WorkDesk？</h3>
+<p>直接從 Chrome 線上應用程式商店搜尋「WorkDesk」，或前往產品頁面 donbrico.net/workdesk 進行安裝。點擊「加到 Chrome」並確認安裝。安裝完成後，您會在瀏覽器工具列看到 WorkDesk 圖示。</p>
+<h3>第一次開啟 WorkDesk 會發生什麼事？</h3>
+<p>安裝後，點擊 WorkDesk 圖示開啟控制面板。您會看到將目前瀏覽器視窗儲存為第一個工作區的選項。WorkDesk 會自動偵測所有開啟的分頁與分頁群組，讓您無需任何設定即可立即命名並儲存工作區。</p>
+<h3>使用 WorkDesk 需要建立帳戶嗎？</h3>
+<p>不需要帳戶或註冊。WorkDesk 設計為完全離線運作，並在您的本機裝置上執行。所有工作區資料都儲存在瀏覽器的本地儲存空間中，因此安裝後即可立即開始儲存與還原工作區。</p>
+<h3>如何儲存我的第一個工作區？</h3>
+<p>點擊工具列圖示開啟 WorkDesk 彈出視窗，然後按一下「儲存目前工作區」按鈕。為工作區命名，例如「研究專案」或「開發衝刺」，WorkDesk 會捕捉所有開啟的分頁及其分頁群組設定。您也可以加入描述，方便日後辨識工作區。</p>
+<h2>功能與使用</h2>
+<h3>我可以使用 WorkDesk 儲存與還原分頁群組嗎？</h3>
+<p>可以，WorkDesk 完全支援 Chrome 分頁群組。當您儲存工作區時，所有現有的分頁群組（包含名稱與顏色）都會被保留。稍後還原該工作區時，分頁群組會完全依照您離開時的狀態重現，省去手動重新整理分頁的麻煩。</p>
+<h3>如何在關閉目前分頁的情況下切換不同工作區？</h3>
+<p>點擊 WorkDesk 圖示，選取要切換的工作區。WorkDesk 會在背景儲存您目前的分頁，並立即還原新工作區。先前的工作區會保留，因此您可以隨時切換回來，不會遺失當前上下文，也無需為所有分頁建立書籤。</p>
+<h3>我可以依專案或主題整理工作區嗎？</h3>
+<p>當然可以。WorkDesk 讓您為每個工作區命名，並加入選擇性描述。您也可以在工作區控制面板中拖曳重新排序。這讓您能輕鬆依專案、客戶、研究主題或任何符合工作流程的方式來分組工作區。</p>
+<h3>WorkDesk 支援固定分頁與多個視窗嗎？</h3>
+<p>支援，WorkDesk 會捕捉固定分頁，並在還原時保留其固定狀態。它也支援單一工作區內的多個 Chrome 視窗。如果分頁分散在多個視窗中，WorkDesk 會儲存並還原所有分頁，同時保持視窗結構完整。</p>
+<h3>我可以與同事或跨裝置分享工作區嗎？</h3>
+<p>WorkDesk 將所有資料儲存在本機，不包含雲端同步或分享功能。這是基於保護隱私的設計原則。如果您需要分享工作區，可以手動匯出分頁或建立書籤，但 WorkDesk 本身專注於個人本機工作區管理。</p>
+<h2>隱私與安全</h2>
+<h3>我的工作區資料儲存在哪裡？</h3>
+<p>所有工作區資料完全儲存在瀏覽器的本地儲存空間中。WorkDesk 不會將任何資料傳送到外部伺服器、雲端服務或第三方。您的分頁、URL 與分頁群組資訊絕不會離開您的電腦。</p>
+<h3>WorkDesk 會收集或販售我的瀏覽資料嗎？</h3>
+<p>不會。WorkDesk 是隱私優先的擴充功能，不會收集任何分析資料、遙測數據或個人資訊。沒有追蹤器、使用記錄或資料分享。該擴充功能完全離線運作，僅具備讀取目前分頁所需的網路權限。</p>
+<h3>WorkDesk 會使用 AI 或處理我的分頁內容嗎？</h3>
+<p>WorkDesk 不使用 AI、機器學習或任何形式的內容處理。它僅讀取開啟分頁的 URL 與分頁群組中繼資料，以便儲存與還原工作區。它不會讀取頁面內容、追蹤您的活動或分析您的瀏覽行為。</p>
+<h3>WorkDesk 對敏感或機密分頁安全嗎？</h3>
+<p>是的。由於 WorkDesk 將所有資料儲存在本機且不傳輸至任何地方，因此對機密工作安全無虞。無論您是在研究法律案件、管理財務資料或處理機密客戶資訊，您的分頁都將在您自己的電腦上保持隱私。</p>
+<h2>價格與授權</h2>
+<h3>WorkDesk 免費使用嗎？</h3>
+<p>WorkDesk 提供免費方案，包含儲存與還原工作區等核心功能。未來可能會有進階功能或使用限制，但目前版本對大多數使用者而言功能完整。請前往產品頁面 donbrico.net/workdesk 查看最新價格詳情。</p>
+<h3>進階版本包含哪些內容？</h3>
+<p>如果提供進階版本，通常包含無限工作區儲存空間、進階整理功能與優先支援。免費版本設計為完全可用於日常工作區管理，不會強迫您升級付費方案。</p>
+<h3>如何支付 WorkDesk？有訂閱制嗎？</h3>
+<p>付款與訂閱詳細資訊請見 WorkDesk 產品頁面。WorkDesk 可能提供一次性購買或訂閱模式。未經您同意不會自動扣款，若適用訂閱方案，您可隨時取消。</p>
+<h2>疑難排解</h2>
+<h3>WorkDesk 無法儲存所有分頁，該檢查什麼？</h3>
+<p>首先，確認您已授予 WorkDesk 讀取分頁的必要權限。您可以在 Chrome 擴充功能設定的「網站存取權」中檢查。此外，請確認您沒有開啟特殊的 Chrome 頁面（如 chrome://settings 或 chrome://extensions），因為這些頁面無法儲存。如果問題持續，請重新啟動 Chrome 再試一次。</p>
+<h3>我還原了工作區，但有些分頁沒有載入，為什麼？</h3>
+<p>這通常是因為分頁已無法使用（例如頁面已刪除或連結失效）。WorkDesk 會儲存您開啟的 URL，但無法保證這些頁面仍然存在。此外，如果您啟用了 Chrome 的「繼續瀏覽上次開啟的網頁」設定，可能會干擾 WorkDesk 的還原功能。請嘗試在 Chrome 的啟動選項中停用該設定。</p>
+<h3>如何解除安裝 WorkDesk 而不遺失工作區？</h3>
+<p>解除安裝前，請開啟 WorkDesk 手動記錄或匯出您的工作區名稱與 URL，因為解除安裝擴充功能會刪除所有本地儲存資料。若要解除安裝，請右鍵點擊 WorkDesk 圖示，選取「從 Chrome 移除」並確認。工作區將會遺失，因此請先備份重要資料。</p>
+<h3>WorkDesk 似乎很慢或沒有回應，如何解決？</h3>
+<p>嘗試關閉不必要的分頁並重新啟動 Chrome。WorkDesk 本身輕量，但如果單一工作區包含數百個分頁，效能可能會下降。您也可以從控制面板移除未使用的工作區，以減少 WorkDesk 需管理的資料量。如果問題持續，請從 Chrome 線上應用程式商店重新安裝擴充功能。</p>
+
+        
+    <div style="background:linear-gradient(135deg,rgba(99,102,241,0.12),rgba(139,92,246,0.12));border:1px solid rgba(99,102,241,0.3);border-radius:12px;padding:24px 28px;margin:var(--spacing-lg) 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+      <div>
+        <div style="font-weight:700;font-size:1.1rem;margin-bottom:4px;">🚀 Try it free — no credit card required</div>
+        <div style="color:var(--muted);font-size:0.9rem;">Available for Chrome, Edge, and Brave</div>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="https://chromewebstore.google.com/detail/donbrico-workdesk/kilfjjkfocajofinfhplccpmojdjplhb" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+          安裝到 Chrome
+        </a>
+        <a href="https://donbrico.net/workdesk" style="display:inline-flex;align-items:center;gap:6px;color:var(--accent);padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:500;font-size:0.95rem;border:1px solid rgba(99,102,241,0.4);">Learn More →</a>
+      </div>
+    </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

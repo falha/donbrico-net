@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SellerDesk AI — 常見問題解答 | Donbrico FAQ</title>
+    <meta name="description" content="請前往官方頁面 donbrico.net/seller-desk，依照適用於您瀏覽器（Chrome、Firefox 或 Edge）的安裝連結操作。安裝擴充功能後，請將其固定在工具列上，以便輕鬆存取設定和鍵盤快捷鍵。" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/seller-desk/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/seller-desk/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/seller-desk/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/seller-desk/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/seller-desk/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/seller-desk/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/seller-desk/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/seller-desk/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/seller-desk/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/seller-desk/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/seller-desk/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/seller-desk/ko/faq/" />
+    <meta property="og:title" content="SellerDesk AI — 常見問題解答 | Donbrico FAQ" />
+    <meta property="og:description" content="請前往官方頁面 donbrico.net/seller-desk，依照適用於您瀏覽器（Chrome、Firefox 或 Edge）的安裝連結操作。安裝擴充功能後，請將其固定在工具列上，以便輕鬆存取設定和鍵盤快捷鍵。" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/seller-desk/zh_TW/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/seller-desk/zh_TW/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+              <span class="dropdown-group-label" style="display:block; margin-top:10px; font-size:0.7rem; color:var(--muted);" data-i18n="nav.tools">Tools</span>
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" data-i18n="nav.tools">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>SellerDesk AI — 常見問題解答</h1>
+<h2>開始使用</h2>
+<h3>如何安裝 SellerDesk AI 瀏覽器擴充功能？</h3>
+<p>請前往官方頁面 donbrico.net/seller-desk，依照適用於您瀏覽器（Chrome、Firefox 或 Edge）的安裝連結操作。安裝擴充功能後，請將其固定在工具列上，以便輕鬆存取設定和鍵盤快捷鍵。</p>
+<h3>SellerDesk AI 開箱即支援哪些平台？</h3>
+<p>它支援 Etsy、eBay、Facebook Marketplace、Shopify、Mercari、Poshmark、Gmail、Outlook 和 Yahoo Mail。擴充功能會偵測您是否位於支援的訊息頁面，並自動啟動 AI 回覆面板。</p>
+<h3>我需要建立帳戶才能開始使用 SellerDesk AI 嗎？</h3>
+<p>是的，您需要一個免費的 Donbrico 帳戶才能啟用擴充功能。登入後，您即可立即使用免費方案，其中包括每天 5 次 AI 生成和 5 則儲存回覆。</p>
+<h3>如何設定我的第一個商品檔案和商店政策？</h3>
+<p>開啟擴充功能彈出視窗，點擊「檔案」。新增您的商店名稱、預設語氣（例如：友善或專業），並貼上您的關鍵政策（退貨期限、運送時間、客製化要求）。此檔案會儲存在本地端，並用於個人化每一則 AI 生成的回覆。</p>
+<h2>功能與使用</h2>
+<h3>AI 如何根據買家訊息生成回覆？</h3>
+<p>當您在支援平台上開啟一則買家訊息時，請點擊訊息區域中的 SellerDesk AI 圖示。AI 會讀取買家的文字內容和您儲存的商店政策，然後生成一份符合情境的草稿。您可以在發送前編輯草稿，或以不同語氣重新生成。</p>
+<h3>我可以儲存自己的自訂回覆並重複使用嗎？</h3>
+<p>可以，「儲存回覆」資料庫讓您在 premium 方案中儲存無限量的自訂回覆。在免費方案中，您最多可儲存 5 則回覆。利用此資料庫保存常見情境的範本，例如運送延遲、組合商品要求或訂單取消。</p>
+<h3>如何更改生成回覆的語氣或情境？</h3>
+<p>AI 生成草稿後，請點擊回覆面板中的語氣選擇器。從「友善」、「正式」、「緊急」或「道歉」等選項中選擇。您也可以選取特定情境（例如「議價」或「未收到商品」），以進一步調整回覆內容。</p>
+<h3>有哪些鍵盤快捷鍵可用於加快回覆速度？</h3>
+<p>使用 Alt+Shift+G 生成回覆、Alt+Shift+S 開啟儲存回覆資料庫、Alt+Shift+M 切換檔案、Alt+Shift+Z 復原上一個動作。這些快捷鍵在所有支援平台上皆可使用。</p>
+<h3>SellerDesk AI 可以在回覆中包含特定商品或刊登資訊嗎？</h3>
+<p>可以。當您設定好商品或刊登檔案後，AI 會擷取商品名稱、價格、狀況和運送方式等詳細資訊。這讓回覆感覺更具個人化，而非千篇一律，尤其適合回答關於尺寸或庫存狀態的問題。</p>
+<h2>隱私與安全性</h2>
+<h3>使用 AI 時，我的資料會在哪裡處理？</h3>
+<p>所有 AI 處理程序都在您的瀏覽器中本地端進行。您的買家訊息、商店政策和商品詳細資料絕不會離開您的電腦。SellerDesk AI 僅會將匿名且無法識別的文字內容傳送至 AI 模型以生成回覆。</p>
+<h3>SellerDesk AI 會將我的買家訊息或商店政策儲存在其伺服器上嗎？</h3>
+<p>不會。您的儲存回覆、商品檔案和商店政策會儲存在瀏覽器的本地儲存空間中。我們不會在任何 Donbrico 伺服器上收集、記錄或儲存您的買家訊息或敏感的商店資料。</p>
+<h3>我在 Etsy 或 eBay 的登入資訊會與他人分享嗎？</h3>
+<p>絕對不會。擴充功能不會存取您的登入憑證或工作階段 token。它只會讀取您目前瀏覽頁面上的可見訊息文字，就像一般人查看一樣。</p>
+<h3>我可以在沒有網路連線的情況下使用 SellerDesk AI 嗎？</h3>
+<p>不可以，需要網路連線才能與 AI 模型溝通以生成回覆。不過，您的儲存回覆資料庫和檔案在離線狀態下仍可存取，以便手動複製貼上使用。</p>
+<h2>價格與授權</h2>
+<h3>SellerDesk AI 的免費方案包含哪些內容？</h3>
+<p>免費方案提供每天 5 次 AI 生成回覆、資料庫中 5 則儲存回覆，以及建立 1 個商品檔案的功能。您還可完整使用鍵盤快捷鍵和多平台支援。</p>
+<h3>如何升級到 premium 方案，以及我能獲得什麼？</h3>
+<p>直接從擴充功能彈出視窗或 Donbrico 網站升級。premium 方案取消每日生成次數限制、提供無限儲存回覆，並允許建立多個商品檔案。付款方式為每月或每年，可透過信用卡或 PayPal 處理。</p>
+<h3>如果取消 premium 訂閱，有退款政策嗎？</h3>
+<p>有的，Donbrico 針對首次購買 premium 提供 14 天退款保證。之後，取消訂閱將在目前計費週期結束時生效，剩餘天數不予部分退款。</p>
+<h2>疑難排解</h2>
+<h3>為什麼 SellerDesk AI 沒有顯示在我的 Etsy 或 eBay 訊息頁面上？</h3>
+<p>請確認擴充功能已固定在瀏覽器工具列上並已啟用。重新整理訊息頁面（不僅是分頁），並檢查您是否已登入 Donbrico 帳戶。如果仍未顯示，請嘗試停用可能與內容腳本衝突的其他擴充功能。</p>
+<h3>AI 生成的回覆與我的商店政策不符。我該檢查什麼？</h3>
+<p>開啟您的檔案設定，確認政策已正確儲存。常見問題包括缺少退貨期限或運送說明過於模糊。此外，如果您有多間商店，請確認已選取正確的檔案。您隨時可以在發送前手動編輯生成的回覆。</p>
+<h3>我升級到 premium，但擴充功能仍顯示免費方案的限制。</h3>
+<p>在擴充功能中登出您的 Donbrico 帳戶，然後重新登入。如果限制在 5 分鐘內未更新，請清除瀏覽器快取並重新啟動瀏覽器。若問題持續存在，請透過 donbrico.net 聯絡支援團隊。</p>
+<h3>SellerDesk AI 導致我的瀏覽器變慢。如何解決？</h3>
+<p>擴充功能執行輕量級程序，但如果您開啟許多包含不支援網站的分頁，可能會消耗額外記憶體。嘗試關閉未使用的分頁，並在您未販售商品的網站上停用此擴充功能。當您未在回覆訊息時，也可以從彈出選單中暫停擴充功能。</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

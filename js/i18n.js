@@ -102,9 +102,8 @@ const i18next = {
    */
   async loadTranslations(lang) {
     try {
-      const basePath = this.getBasePath();
       const response = await fetch(
-        `${basePath}locales/${lang}.json?v=${this.translationsVersion}`,
+        `/locales/${lang}.json?v=${this.translationsVersion}`,
         {
           cache: "no-store",
         },
@@ -150,13 +149,15 @@ const i18next = {
     return value != null ? value : `[${key}]`;
   },
 
-  /**
-   * Initialize i18n system
-   */
   async init() {
     // Detect language
     this.currentLang = this.detectLanguage();
     localStorage.setItem("donbrico-lang", this.currentLang);
+
+    // If on a localized FAQ page, check if we need to redirect
+    if (this.handleFaqRedirect(this.currentLang)) {
+      return;
+    }
 
     // Load all translation files in parallel
     const loadPromises = Object.keys(this.availableLanguages).map((lang) =>
@@ -196,6 +197,12 @@ const i18next = {
 
     // Update HTML lang attribute
     document.documentElement.lang = this.currentLang;
+
+    // Update FAQ links dynamically to point to the active language subfolder
+    const faqLinks = document.querySelectorAll("[data-faq-link]");
+    faqLinks.forEach((el) => {
+      el.setAttribute("href", `./${this.currentLang}/faq/`);
+    });
 
     // Translate footer copyright year (dynamic)
     const yearEl = document.querySelector('[data-i18n="app.copyright"]');
@@ -275,6 +282,12 @@ const i18next = {
 
     this.currentLang = lang;
     localStorage.setItem("donbrico-lang", lang);
+
+    // If on a localized FAQ page, check if we need to redirect
+    if (this.handleFaqRedirect(lang)) {
+      return;
+    }
+
     this.translatePage();
 
     // Update URL without reload
@@ -286,6 +299,34 @@ const i18next = {
     window.dispatchEvent(
       new CustomEvent("languageChanged", { detail: { lang } }),
     );
+  },
+
+  /**
+   * Handles redirecting to the correct FAQ folder if there is a mismatch
+   * Returns true if a redirect is triggered, false otherwise
+   */
+  handleFaqRedirect(targetLang) {
+    const path = window.location.pathname;
+    const segments = path.split("/");
+    const faqIndex = segments.indexOf("faq");
+    
+    if (faqIndex !== -1 && faqIndex > 0) {
+      const pathLang = segments[faqIndex - 1];
+      if (this.availableLanguages[pathLang]) {
+        // We are on a localized FAQ page!
+        if (pathLang !== targetLang) {
+          // Mismatch! Redirect to the target language's FAQ page.
+          segments[faqIndex - 1] = targetLang;
+          const newPathname = segments.join("/");
+          const url = new URL(window.location);
+          url.pathname = newPathname;
+          url.searchParams.set("lang", targetLang);
+          window.location.href = url.toString();
+          return true;
+        }
+      }
+    }
+    return false;
   },
 };
 

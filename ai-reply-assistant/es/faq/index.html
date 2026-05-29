@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asistente de Respuestas IA — Preguntas Frecuentes | Donbrico FAQ</title>
+    <meta name="description" content="Ve a Chrome Web Store, busca "Donbrico AI Reply Assistant" y haz clic en "Añadir a Chrome". Una vez instalada, ancla la extensión a tu barra de herramientas par" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/ai-reply-assistant/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/ai-reply-assistant/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/ai-reply-assistant/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/ai-reply-assistant/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/ai-reply-assistant/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/ai-reply-assistant/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/ai-reply-assistant/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/ai-reply-assistant/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/ai-reply-assistant/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/ai-reply-assistant/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/ai-reply-assistant/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/ai-reply-assistant/ko/faq/" />
+    <meta property="og:title" content="Asistente de Respuestas IA — Preguntas Frecuentes | Donbrico FAQ" />
+    <meta property="og:description" content="Ve a Chrome Web Store, busca "Donbrico AI Reply Assistant" y haz clic en "Añadir a Chrome". Una vez instalada, ancla la extensión a tu barra de herramientas par" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/ai-reply-assistant/es/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/ai-reply-assistant/es/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+              <span class="dropdown-group-label" style="display:block; margin-top:10px; font-size:0.7rem; color:var(--muted);" data-i18n="nav.tools">Tools</span>
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" data-i18n="nav.tools">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>Asistente de Respuestas IA — Preguntas Frecuentes</h1>
+<h2>Primeros Pasos</h2>
+<h3>¿Cómo instalo la extensión Asistente de Respuestas IA?</h3>
+<p>Ve a Chrome Web Store, busca &quot;Donbrico AI Reply Assistant&quot; y haz clic en &quot;Añadir a Chrome&quot;. Una vez instalada, ancla la extensión a tu barra de herramientas para acceder fácilmente. Verás un breve mensaje de bienvenida para completar la configuración inicial.</p>
+<h3>¿Necesito una cuenta para usar el Asistente de Respuestas IA?</h3>
+<p>Sí, necesitarás una cuenta gratuita de Donbrico para activar la extensión. Regístrate directamente desde la pantalla de bienvenida dentro del popup de la extensión. Esto te permite guardar tus preferencias de tono y gestionar tu clave API si decides usar tu propio modelo.</p>
+<h3>¿Qué debería hacer primero después de instalar la extensión?</h3>
+<p>Abre cualquier plataforma de mensajería como Gmail, una interfaz de tickets de soporte o mensajes de Airbnb. Haz clic en el icono de Donbrico en el campo de texto – la extensión leerá automáticamente el contexto de la conversación. Prueba a generar una respuesta con el tono predeterminado para ver cómo funciona antes de personalizar la configuración.</p>
+<h3>¿Puedo usarla en plataformas que no sean correo electrónico?</h3>
+<p>Por supuesto. El Asistente de Respuestas IA funciona en cualquier campo de texto dentro de tu navegador – comentarios en redes sociales, mensajes de Slack, tickets de Zendesk y bandejas de entrada de Airbnb. No necesitas cambiar de pestaña ni copiar y pegar contenido; detecta la conversación dondequiera que escribas.</p>
+<h2>Funciones y Uso</h2>
+<h3>¿Cómo lee la extensión el contexto de mi conversación?</h3>
+<p>La extensión analiza el texto visible en la página, incluyendo los mensajes anteriores del hilo o la cadena de comentarios. No escanea todo tu historial de navegación ni pestañas no relacionadas. Esta lectura contextual permite que la IA genere respuestas que hagan referencia a puntos específicos de la conversación.</p>
+<h3>¿Puedo cambiar el tono de las respuestas generadas?</h3>
+<p>Sí. Abre el popup de la extensión y ve a &quot;Tono y Estilo&quot;. Puedes elegir opciones predefinidas como Profesional, Amigable o Conciso, o escribir una instrucción personalizada como &quot;Suena como un anfitrión servicial de Airbnb&quot;. La IA aplicará este tono a todas las respuestas hasta que lo cambies.</p>
+<h3>¿Cómo edito una respuesta antes de enviarla?</h3>
+<p>Después de hacer clic en &quot;Generar Respuesta&quot;, el texto sugerido aparece directamente en el campo de entrada. Puedes editarlo como cualquier mensaje normal: añadir una frase, cambiar una palabra o eliminar partes. La extensión no envía nada automáticamente; tienes control total antes de pulsar enviar.</p>
+<h3>¿Puedo usar el Asistente de Respuestas IA para comentarios en redes sociales?</h3>
+<p>Sí. Navega a cualquier red social como LinkedIn, Twitter o Facebook. Haz clic dentro del cuadro de comentarios y aparecerá el icono de Donbrico. La extensión lee la publicación original y las respuestas existentes para crear un comentario relevante y con sonido natural.</p>
+<h3>¿Funciona con varios idiomas?</h3>
+<p>El Asistente de Respuestas IA funciona mejor en inglés, pero puede generar respuestas en otros idiomas si el contexto de la conversación está en ese idioma. Para mejores resultados, configura tu idioma preferido en los ajustes de tono. El modelo subyacente puede producir respuestas menos precisas para idiomas poco comunes.</p>
+<h2>Privacidad y Seguridad</h2>
+<h3>¿Dónde se procesan los datos de mi conversación?</h3>
+<p>Por defecto, todo el procesamiento ocurre localmente en tu dispositivo usando Gemini Nano. Ningún texto de tus conversaciones se envía a servidores externos. Si decides usar tu propia clave API (BYOK), los datos se envían a ese proveedor (ej. OpenAI) únicamente para generar la respuesta, y Donbrico no los almacena ni registra.</p>
+<h3>¿Donbrico almacena mis mensajes o respuestas?</h3>
+<p>No. Donbrico no almacena tu historial de conversaciones, respuestas generadas ni ningún dato personal en sus servidores. La extensión solo guarda tus preferencias de tono y la configuración de la clave API localmente en tu navegador. Tu privacidad está integrada en el diseño – no entrenamos con tus datos.</p>
+<h3>¿Qué sucede si uso una clave API gratuita de un tercero?</h3>
+<p>Si activas BYOK con un proveedor externo como OpenAI, el contexto de tu conversación se envía a los servidores de ese proveedor para generar la respuesta. Revisa la política de privacidad de ese proveedor para saber cómo manejan los datos. Puedes volver a la IA local (Gemini Nano) en cualquier momento desde la configuración.</p>
+<h3>¿Es segura la extensión para usar en cuentas de trabajo?</h3>
+<p>Sí. La extensión no accede a tus credenciales de inicio de sesión, contraseñas ni datos de pago. Solo lee el texto visible en el campo de entrada activo. Muchos agentes de atención al cliente y freelancers la usan en plataformas de trabajo como Gmail y Zendesk sin problemas de seguridad.</p>
+<h2>Precios y Licencias</h2>
+<h3>¿Hay una versión gratuita del Asistente de Respuestas IA?</h3>
+<p>Sí. La versión gratuita incluye respuestas ilimitadas con IA local usando Gemini Nano y ajustes básicos de tono. Puedes generar tantas respuestas como quieras sin pagar. Las funciones premium como instrucciones de tono personalizadas y soporte BYOK requieren una suscripción.</p>
+<h3>¿Qué obtengo con una suscripción premium?</h3>
+<p>Premium desbloquea la posibilidad de usar tu propia clave API (BYOK) para modelos de mayor calidad como GPT-4, además de personalización avanzada de tono donde puedes escribir instrucciones de estilo detalladas. El precio es mensual y puedes gestionarlo desde el panel de tu cuenta Donbrico.</p>
+<h3>¿Puedo cancelar mi suscripción en cualquier momento?</h3>
+<p>Sí. Puedes cancelar tu suscripción premium desde la configuración de tu cuenta Donbrico en cualquier momento. El acceso continúa hasta el final del período de facturación actual. Después de la cancelación, vuelves al plan gratuito con solo IA local – no se pierde ningún dato.</p>
+<h2>Solución de Problemas</h2>
+<h3>El icono de la extensión no aparece en mi plataforma de mensajería. ¿Qué ocurre?</h3>
+<p>Primero, asegúrate de que la extensión esté anclada en tu barra de herramientas. Si aún no aparece, actualiza la página o reinicia Chrome. Algunas plataformas (como ciertas aplicaciones web personalizadas) pueden requerir que primero hagas clic dentro del campo de texto. Si el problema persiste, verifica que la extensión esté habilitada en tu lista de extensiones de Chrome.</p>
+<h3>La respuesta generada no coincide con el contexto de la conversación. ¿Cómo puedo solucionarlo?</h3>
+<p>Esto suele ocurrir cuando la extensión no puede leer completamente el hilo de la conversación. Intenta desplazarte hacia arriba para cargar mensajes más antiguos para que aparezcan en pantalla, luego haz clic de nuevo en el icono de Donbrico. También verifica que tu configuración de tono no esté anulando el contexto – restablécelo a &quot;Neutral&quot; y vuelve a generar.</p>
+<h3>Mi clave API no funciona con la función BYOK. ¿Qué debo hacer?</h3>
+<p>Asegúrate de haber copiado la clave API completa desde el panel de tu proveedor sin espacios adicionales. Verifica que la clave tenga facturación activa y permisos para el modelo que seleccionaste. Si sigue fallando, vuelve temporalmente a la IA local y contacta al soporte con el mensaje de error que muestra la extensión.</p>
+<h3>La extensión ralentiza mi navegador. ¿Hay alguna solución?</h3>
+<p>El modelo de IA local (Gemini Nano) puede consumir algunos recursos del sistema. Cierra otras pestañas o extensiones pesadas para mejorar el rendimiento. Si usas un dispositivo de gama baja, considera usar BYOK con un modelo en la nube, que traslada el procesamiento a los servidores del proveedor. También puedes desactivar la extensión en páginas donde no la necesites.</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

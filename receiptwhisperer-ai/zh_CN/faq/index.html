@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReceiptWhisperer AI — 常见问题解答 | Donbrico FAQ</title>
+    <meta name="description" content="从提供的 URL 在 Donbrico 产品页面下载安装程序。运行下载的文件并按照屏幕提示操作——无需复杂配置。安装完成后启动应用程序，即可立即开始扫描收据。" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/receiptwhisperer-ai/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/receiptwhisperer-ai/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/receiptwhisperer-ai/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/receiptwhisperer-ai/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/receiptwhisperer-ai/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/receiptwhisperer-ai/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/receiptwhisperer-ai/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/receiptwhisperer-ai/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/receiptwhisperer-ai/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/receiptwhisperer-ai/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/receiptwhisperer-ai/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/receiptwhisperer-ai/ko/faq/" />
+    <meta property="og:title" content="ReceiptWhisperer AI — 常见问题解答 | Donbrico FAQ" />
+    <meta property="og:description" content="从提供的 URL 在 Donbrico 产品页面下载安装程序。运行下载的文件并按照屏幕提示操作——无需复杂配置。安装完成后启动应用程序，即可立即开始扫描收据。" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/receiptwhisperer-ai/zh_CN/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/receiptwhisperer-ai/zh_CN/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>ReceiptWhisperer AI — 常见问题解答</h1>
+<h2>开始使用</h2>
+<h3>如何在电脑上安装 ReceiptWhisperer AI？</h3>
+<p>从提供的 URL 在 Donbrico 产品页面下载安装程序。运行下载的文件并按照屏幕提示操作——无需复杂配置。安装完成后启动应用程序，即可立即开始扫描收据。</p>
+<h3>支持哪些收据上传文件格式？</h3>
+<p>ReceiptWhisperer AI 支持图像文件（如 JPEG 和 PNG）以及 PDF 文档。您可以直接将这些文件拖放到应用程序中，或使用上传按钮从文件系统中选择。</p>
+<h3>使用 ReceiptWhisperer AI 需要网络连接吗？</h3>
+<p>不需要。所有 AI 和 OCR 处理均在本地机器上完成，因此您可以完全离线扫描和整理收据。仅当您选择下载软件或导出数据到云服务时才需要网络连接。</p>
+<h3>如何扫描我的第一张收据？</h3>
+<p>打开 ReceiptWhisperer AI，点击上传按钮或将收据图像或 PDF 拖入指定区域。AI 将自动处理文件，并在几秒钟内提取商家名称、日期、总金额和明细项目。查看提取的数据，如有需要可进行更正，然后保存到您整理好的资料库中。</p>
+<h2>功能与使用</h2>
+<h3>手写收据的 OCR 准确度如何？</h3>
+<p>ReceiptWhisperer AI 使用先进的基于 AI 的 OCR，旨在处理印刷体和大多数手写文本。准确度取决于原始收据的清晰度，但对于标准印刷收据，提取总金额和日期等关键字段的可靠性很高。对于手写收据，结果可能有所不同，您可以手动编辑任何提取的数据。</p>
+<h3>能否将收据数据导出到会计软件？</h3>
+<p>可以。您可以将整理好的收据数据导出为 CSV、PDF 及其他常见格式。这样您就可以将数据导入 QuickBooks、Excel 或您偏好的费用管理系统等会计工具中。只需选择要导出的收据，然后选择所需的格式即可。</p>
+<h3>智能分类和标签功能如何工作？</h3>
+<p>ReceiptWhisperer AI 会自动分析商家名称和明细项目，分配一个类别，如&quot;办公用品&quot;或&quot;差旅&quot;。您还可以创建自定义标签，进一步整理您的开支。这些类别和标签完全可编辑，因此您可以调整它们以匹配您个人或企业的会计结构。</p>
+<h3>可以一次扫描多张收据吗？</h3>
+<p>可以。您可以一次性上传多张收据图像或 PDF。ReceiptWhisperer AI 将逐一处理每个文件，并在队列中显示提取的数据。这对于需要处理出差后多张收据的自由职业者或旅行者尤其有用。</p>
+<h3>该应用能识别杂货或零售收据的明细项目吗？</h3>
+<p>可以。AI 经过训练，能够提取单个明细项目，包括产品名称、数量和价格。对于包含许多项目的复杂收据，提取的数据可能需要快速审核，但绝大多数明细项目都能正确捕获。此功能对于注重开支、跟踪详细消费的个人尤其有用。</p>
+<h2>隐私与安全</h2>
+<h3>我的财务数据会存储在云服务器上吗？</h3>
+<p>不会。ReceiptWhisperer AI 在本地机器上处理所有数据，这意味着您的收据图像和提取的信息永远不会离开您的电脑。这确保了您的财务数据完全保密，并由您掌控。</p>
+<h3>AI 会将我的收据数据发送给第三方服务吗？</h3>
+<p>不会。AI 不会将任何数据发送给第三方服务。所有 OCR 和数据提取均使用应用程序内置模型在本地执行。数据离开您机器的唯一情况是您手动选择导出文件或将其保存到外部服务。</p>
+<h3>我可以在有严格 IT 政策的公司电脑上使用 ReceiptWhisperer AI 吗？</h3>
+<p>可以。由于该应用程序完全离线运行，无需云连接，因此适用于公司管理的设备。但是，在安装任何桌面应用程序之前，您应核实您所在组织的软件安装政策。正常使用期间不会通过网络传输任何数据。</p>
+<h3>如果我丢失笔记本电脑，我的数据如何得到保护？</h3>
+<p>由于所有数据都存储在本地机器上，您的收据信息的安全程度取决于您设备自身的安全措施。我们建议使用全盘加密和定期备份来保护您的数据。ReceiptWhisperer AI 本身不会在外部存储任何数据。</p>
+<h2>定价与许可</h2>
+<h3>免费版包含哪些功能？</h3>
+<p>ReceiptWhisperer AI 的免费版包括基本扫描功能，每月最多可处理 10 张收据。您仍然可以获得完整的 AI 驱动 OCR 提取和本地处理，但有月度限制。这非常适合偶尔使用的用户或希望先测试软件再决定购买的人。</p>
+<h3>高级版的价格是多少？包含什么功能？</h3>
+<p>高级版的定价详情可在 Donbrico 产品页面上查看。高级版取消了每月 10 张收据的限制，提供批量扫描和自定义标签等高级功能，并享有优先支持。请查看产品 URL 了解最新定价和套餐选项。</p>
+<h3>是否有一次性购买选项，还是仅限订阅？</h3>
+<p>ReceiptWhisperer AI 以订阅制产品形式提供，可选择按月或按年付费。订阅模式确保您能获得持续更新、AI 模型改进以及技术支持。目前没有一次性购买选项。</p>
+<h2>故障排除</h2>
+<h3>为什么 ReceiptWhisperer AI 无法识别我收据上的文字？</h3>
+<p>首先，确保您的收据图像清晰、光线充足且不模糊。低质量扫描件或严重褶皱的收据会降低 OCR 准确度。如果问题仍然存在，请尝试将文件转换为其他格式（例如，从 PDF 转换为 PNG）并重新上传。如果 AI 误读任何数据，您也可以手动编辑提取的字段。</p>
+<h3>处理多张收据时应用程序运行缓慢。我该怎么办？</h3>
+<p>批量处理大量高分辨率图像可能会消耗大量资源。关闭其他应用程序以释放系统内存，并考虑在上传前调整超大图像的尺寸。ReceiptWhisperer AI 针对本地处理进行了优化，因此性能取决于您电脑的 CPU 和 RAM。</p>
+<h3>我不小心删除了一张收据。可以恢复吗？</h3>
+<p>收据存储在应用程序的本地数据库中，没有内置回收站或撤销删除功能。我们强烈建议您定期将数据导出为 CSV 或 PDF 作为备份。如果您尚未导出，删除的收据可能无法恢复。</p>
+<h3>安装后应用无法启动。我该怎么办？</h3>
+<p>确保您的电脑满足 Donbrico 产品页面上列出的最低系统要求。如果您使用的是 Windows，请尝试以管理员身份运行应用程序（右键单击并选择&quot;以管理员身份运行&quot;）。如果仍然无法启动，请重新安装应用程序，或通过 Donbrico 网站联系支持人员以获取进一步帮助。</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SellerDesk AI — Foire aux questions | Donbrico FAQ</title>
+    <meta name="description" content="Rendez-vous sur la page officielle donbrico.net/seller-desk et suivez le lien d'installation pour votre navigateur (Chrome, Firefox ou Edge). Après avoir ajouté" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/seller-desk/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/seller-desk/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/seller-desk/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/seller-desk/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/seller-desk/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/seller-desk/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/seller-desk/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/seller-desk/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/seller-desk/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/seller-desk/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/seller-desk/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/seller-desk/ko/faq/" />
+    <meta property="og:title" content="SellerDesk AI — Foire aux questions | Donbrico FAQ" />
+    <meta property="og:description" content="Rendez-vous sur la page officielle donbrico.net/seller-desk et suivez le lien d'installation pour votre navigateur (Chrome, Firefox ou Edge). Après avoir ajouté" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/seller-desk/fr/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/seller-desk/fr/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+              <span class="dropdown-group-label" style="display:block; margin-top:10px; font-size:0.7rem; color:var(--muted);" data-i18n="nav.tools">Tools</span>
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" data-i18n="nav.tools">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>SellerDesk AI — Foire aux questions</h1>
+<h2>Pour commencer</h2>
+<h3>Comment installer l&#39;extension navigateur SellerDesk AI ?</h3>
+<p>Rendez-vous sur la page officielle donbrico.net/seller-desk et suivez le lien d&#39;installation pour votre navigateur (Chrome, Firefox ou Edge). Après avoir ajouté l&#39;extension, épinglez-la à votre barre d&#39;outils pour accéder facilement aux paramètres et aux raccourcis clavier.</p>
+<h3>Avec quelles plateformes SellerDesk AI fonctionne-t-il dès l&#39;installation ?</h3>
+<p>Il prend en charge Etsy, eBay, Facebook Marketplace, Shopify, Mercari, Poshmark, Gmail, Outlook et Yahoo Mail. L&#39;extension détecte automatiquement lorsque vous êtes sur une page de messagerie prise en charge et active le panneau de réponses IA.</p>
+<h3>Dois-je créer un compte pour utiliser SellerDesk AI ?</h3>
+<p>Oui, vous aurez besoin d&#39;un compte Donbrico gratuit pour activer l&#39;extension. Une fois connecté, vous pouvez immédiatement utiliser l&#39;offre gratuite, qui comprend 5 générations IA par jour et 5 réponses enregistrées.</p>
+<h3>Comment configurer mon premier profil de boutique et mes politiques ?</h3>
+<p>Ouvrez la fenêtre contextuelle de l&#39;extension et cliquez sur « Profils ». Ajoutez le nom de votre boutique, le ton par défaut (ex. : amical ou professionnel) et collez vos politiques clés (délai de retour, délais d&#39;expédition, demandes personnalisées). Ce profil est stocké localement et sert à personnaliser chaque réponse générée par l&#39;IA.</p>
+<h2>Fonctionnalités et utilisation</h2>
+<h3>Comment l&#39;IA génère-t-elle une réponse à partir du message d&#39;un acheteur ?</h3>
+<p>Lorsque vous ouvrez un message d&#39;acheteur sur une plateforme prise en charge, cliquez sur l&#39;icône SellerDesk AI dans la zone de message. L&#39;IA lit le texte de l&#39;acheteur et vos politiques de boutique enregistrées, puis génère un brouillon contextuel. Vous pouvez modifier le brouillon ou le régénérer avec un ton différent avant d&#39;envoyer.</p>
+<h3>Puis-je enregistrer mes propres réponses personnalisées et les réutiliser plus tard ?</h3>
+<p>Oui, la bibliothèque de réponses enregistrées vous permet de stocker un nombre illimité de réponses personnalisées avec le forfait premium. Avec l&#39;offre gratuite, vous pouvez enregistrer jusqu&#39;à 5 réponses. Utilisez la bibliothèque pour conserver des modèles pour les scénarios courants comme les retards d&#39;expédition, les demandes de lot ou les annulations de commande.</p>
+<h3>Comment changer le ton ou le scénario d&#39;une réponse générée ?</h3>
+<p>Après que l&#39;IA a généré un brouillon, cliquez sur le sélecteur de ton dans le panneau de réponse. Choisissez parmi les options « Amical », « Formel », « Urgent » ou « D&#39;excuse ». Vous pouvez également sélectionner un scénario spécifique (ex. : « Négociation de prix » ou « Article non reçu ») pour adapter davantage la réponse.</p>
+<h3>Quels raccourcis clavier sont disponibles pour répondre plus rapidement ?</h3>
+<p>Utilisez Alt+Maj+G pour générer une réponse, Alt+Maj+S pour ouvrir votre bibliothèque de réponses enregistrées, Alt+Maj+M pour basculer entre les profils, et Alt+Maj+Z pour annuler la dernière action. Ces raccourcis fonctionnent sur toutes les plateformes prises en charge.</p>
+<h3>SellerDesk AI peut-il inclure des détails spécifiques sur un produit ou une annonce dans les réponses ?</h3>
+<p>Oui. Lorsque vous avez configuré un profil de propriété ou d&#39;annonce, l&#39;IA intègre des détails comme le nom de l&#39;article, le prix, l&#39;état et le mode d&#39;expédition. Cela rend la réponse personnalisée plutôt que générique, surtout pour les questions sur les mesures ou la disponibilité.</p>
+<h2>Confidentialité et sécurité</h2>
+<h3>Où mes données sont-elles traitées lorsque j&#39;utilise l&#39;IA ?</h3>
+<p>Tout le traitement IA se fait localement dans votre navigateur. Vos messages d&#39;acheteurs, politiques de boutique et détails de produits ne quittent jamais votre ordinateur. SellerDesk AI envoie uniquement du texte anonymisé et non identifiable au modèle IA pour la génération de réponses.</p>
+<h3>SellerDesk AI stocke-t-il mes messages d&#39;acheteurs ou mes politiques de boutique sur ses serveurs ?</h3>
+<p>Non. Vos réponses enregistrées, profils de propriété et politiques de boutique sont stockés localement dans le stockage de votre navigateur. Nous ne collectons, ne journalisons ni ne stockons vos messages d&#39;acheteurs ou données sensibles de boutique sur aucun serveur Donbrico.</p>
+<h3>Mes identifiants de connexion pour Etsy ou eBay sont-ils partagés avec quelqu&#39;un ?</h3>
+<p>Jamais. L&#39;extension n&#39;accède pas à vos identifiants de connexion ni à vos jetons de session. Elle lit uniquement le texte visible du message sur la page que vous consultez, exactement comme le ferait un humain.</p>
+<h3>Puis-je utiliser SellerDesk AI sans connexion Internet ?</h3>
+<p>Non, une connexion Internet est nécessaire pour communiquer avec le modèle IA afin de générer des réponses. Cependant, votre bibliothèque de réponses enregistrées et vos profils restent accessibles hors ligne pour une utilisation manuelle par copier-coller.</p>
+<h2>Tarifs et licences</h2>
+<h3>Qu&#39;est-ce qui est inclus dans l&#39;offre gratuite de SellerDesk AI ?</h3>
+<p>L&#39;offre gratuite vous donne 5 réponses générées par IA par jour, 5 réponses enregistrées dans votre bibliothèque et la possibilité de créer 1 profil de boutique. Vous bénéficiez également d&#39;un accès complet aux raccourcis clavier et à la prise en charge multiplateforme.</p>
+<h3>Comment passer au forfait premium et qu&#39;est-ce que j&#39;obtiens ?</h3>
+<p>Effectuez la mise à niveau directement depuis la fenêtre contextuelle de l&#39;extension ou le site Web Donbrico. Le forfait premium supprime la limite quotidienne de génération, offre des réponses enregistrées illimitées et permet plusieurs profils de boutique. Le paiement est effectué mensuellement ou annuellement par carte de crédit ou PayPal.</p>
+<h3>Existe-t-il une politique de remboursement si j&#39;annule mon abonnement premium ?</h3>
+<p>Oui, Donbrico propose une garantie de remboursement de 14 jours pour les premiers achats premium. Après cette période, les annulations prennent effet à la fin de votre cycle de facturation en cours, et aucun remboursement partiel n&#39;est accordé pour les jours restants.</p>
+<h2>Dépannage</h2>
+<h3>Pourquoi SellerDesk AI n&#39;apparaît-il pas sur ma page de messages Etsy ou eBay ?</h3>
+<p>Assurez-vous que l&#39;extension est épinglée et activée dans la barre d&#39;outils de votre navigateur. Actualisez complètement la page de messages (pas seulement l&#39;onglet) et vérifiez que vous êtes connecté à votre compte Donbrico. Si cela ne fonctionne toujours pas, essayez de désactiver d&#39;autres extensions qui pourraient interférer avec les scripts de contenu.</p>
+<h3>La réponse générée par l&#39;IA ne correspond pas à mes politiques de boutique. Que dois-je vérifier ?</h3>
+<p>Ouvrez vos paramètres de profil et vérifiez que vos politiques sont correctement enregistrées. Les problèmes courants incluent des délais de retour manquants ou des descriptions d&#39;expédition vagues. Assurez-vous également d&#39;avoir sélectionné le bon profil si vous avez plusieurs boutiques. Vous pouvez toujours modifier la réponse générée manuellement avant de l&#39;envoyer.</p>
+<h3>J&#39;ai passé au premium, mais l&#39;extension affiche encore les limites gratuites.</h3>
+<p>Déconnectez-vous de votre compte Donbrico dans l&#39;extension, puis reconnectez-vous. Si les limites ne se mettent pas à jour dans les 5 minutes, videz le cache de votre navigateur et redémarrez-le. Contactez le support sur donbrico.net si le problème persiste.</p>
+<h3>SellerDesk AI ralentit mon navigateur. Comment puis-je résoudre ce problème ?</h3>
+<p>L&#39;extension exécute des processus légers, mais si vous avez beaucoup d&#39;onglets ouverts avec des sites non pris en charge, elle peut consommer plus de mémoire. Essayez de fermer les onglets inutilisés et de désactiver l&#39;extension sur les sites où vous ne vendez pas. Vous pouvez également mettre l&#39;extension en pause depuis le menu contextuel lorsque vous ne répondez pas aux messages.</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Listing - Zillow Premier Agent (Simulated)</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    :root {
+      --zillow-blue: #006aff;
+      --zillow-blue-hover: #0056cf;
+      --zillow-bg: #f9f9fb;
+      --zillow-text: #2a2a2a;
+      --zillow-border: #d2d2d2;
+      --zillow-card-bg: #ffffff;
+    }
+
+    body.zillow-theme {
+      background-color: var(--zillow-bg);
+      color: var(--zillow-text);
+      font-family: 'Open Sans', 'Inter', system-ui, sans-serif;
+    }
+
+    /* Zillow Header */
+    .zillow-header {
+      background-color: #ffffff;
+      border-bottom: 1px solid var(--zillow-border);
+      padding: 16px 0;
+    }
+    .zillow-nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 var(--spacing-md);
+    }
+    .zillow-logo {
+      font-weight: 800;
+      font-size: 1.8rem;
+      color: var(--zillow-blue);
+      letter-spacing: -0.03em;
+    }
+    .zillow-logo span {
+      color: #ff5a5f;
+    }
+
+    /* Zillow Workspace Wrapper */
+    .zillow-wrapper {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 var(--spacing-md);
+    }
+
+    .zillow-title-bar {
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .zillow-title-bar h1 {
+      font-size: 1.75rem;
+      color: #2a2a2a;
+    }
+
+    /* Quick Fill Bar for Extension Interaction */
+    .extension-interaction-banner {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(6, 182, 212, 0.08) 100%);
+      border: 1px dashed var(--accent);
+      border-radius: 12px;
+      padding: var(--spacing-md);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--spacing-md);
+      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.05);
+    }
+    .extension-interaction-banner p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--text-color);
+    }
+    .extension-interaction-banner .fill-trigger-btn {
+      background-color: var(--accent);
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+      box-shadow: 0 4px 10px rgba(99, 102, 241, 0.2);
+    }
+    .extension-interaction-banner .fill-trigger-btn:hover {
+      background-color: #5053df;
+      transform: translateY(-1px);
+    }
+
+    /* Zillow Listing Form Panels */
+    .zillow-panel {
+      background: var(--zillow-card-bg);
+      border: 1px solid var(--zillow-border);
+      border-radius: 8px;
+      padding: 30px;
+      margin-bottom: 24px;
+    }
+    .zillow-panel-header {
+      border-bottom: 1px solid var(--zillow-border);
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #2a2a2a;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Form fields styling */
+    .zillow-form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .zillow-field-full {
+      grid-column: span 2;
+    }
+    .zillow-form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .zillow-label {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #4a5568;
+    }
+    .zillow-input, .zillow-select, .zillow-textarea {
+      border: 1px solid var(--zillow-border);
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: #2d3748;
+      background-color: #ffffff;
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+    .zillow-input:focus, .zillow-select:focus, .zillow-textarea:focus {
+      border-color: var(--zillow-blue);
+    }
+    .zillow-textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+
+    /* Buttons styling */
+    .zillow-btn-primary {
+      background-color: var(--zillow-blue);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .zillow-btn-primary:hover {
+      background-color: var(--zillow-blue-hover);
+    }
+
+    /* Highlight class for filled fields */
+    .field-filled {
+      animation: highlightPulse 1.5s ease-out;
+      border-color: #10b981 !important;
+      background-color: rgba(16, 185, 129, 0.03) !important;
+    }
+
+    @keyframes highlightPulse {
+      0% {
+        background-color: rgba(16, 185, 129, 0.2);
+        box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.25);
+      }
+      100% {
+        background-color: rgba(16, 185, 129, 0.03);
+        box-shadow: 0 0 0 0 transparent;
+      }
+    }
+
+    /* Toast notification */
+    .toast-notif {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #10b981;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 2000;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .toast-notif.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="zillow-theme">
+  
+  <header class="zillow-header">
+    <div class="zillow-nav-container">
+      <div class="zillow-logo">Zillow<span>Premier Agent</span></div>
+    </div>
+  </header>
+
+  <div class="zillow-wrapper">
+    <div class="zillow-title-bar">
+      <h1>Create Listing Profile</h1>
+      <a href="../propertyfill-ai/" style="font-size: 0.9rem; font-weight:600;">← Back to PropertyFill AI</a>
+    </div>
+
+    <!-- Banner to trigger/demonstrate PropertyFill extension functionality -->
+    <div class="extension-interaction-banner">
+      <div>
+        <p style="font-weight: 700; margin-bottom: 4px;">⚡ PropertyFill AI Extension Demo</p>
+        <p style="font-size: 0.85rem; color: #a0a0b0;">Click to simulate the extension autofilling these US real estate fields instantaneously.</p>
+      </div>
+      <button class="fill-trigger-btn" id="fillTriggerBtn">
+        <span>⚡ Autofill with PropertyFill AI</span>
+      </button>
+    </div>
+
+    <form id="zillowForm" onsubmit="event.preventDefault(); showSuccessToast();">
+      <!-- SECTION 1: HOUSE CHARACTERISTICS -->
+      <div class="zillow-panel">
+        <div class="zillow-panel-header">
+          <span>🏠</span> Property Information
+        </div>
+        <div class="zillow-form-grid">
+          <div class="zillow-form-group">
+            <label class="zillow-label" for="homeType">Home Type</label>
+            <select class="zillow-select" id="homeType">
+              <option value="">Select home type</option>
+              <option value="Single Family">Single Family Home</option>
+              <option value="Condo">Condominium</option>
+              <option value="Townhouse">Townhouse</option>
+            </select>
+          </div>
+          <div class="zillow-form-group">
+            <label class="zillow-label" for="yearBuilt">Year Built</label>
+            <input class="zillow-input" type="number" id="yearBuilt" placeholder="e.g. 2015">
+          </div>
+          <div class="zillow-form-group">
+            <label class="zillow-label" for="bedrooms">Bedrooms</label>
+            <input class="zillow-input" type="number" id="bedrooms" placeholder="e.g. 4">
+          </div>
+          <div class="zillow-form-group">
+            <label class="zillow-label" for="bathrooms">Bathrooms</label>
+            <input class="zillow-input" type="number" id="bathrooms" placeholder="e.g. 3.5">
+          </div>
+          <div class="zillow-form-group">
+            <label class="zillow-label" for="price">Listing Price ($ USD)</label>
+            <input class="zillow-input" type="text" id="price" placeholder="e.g. 985000">
+          </div>
+          <div class="zillow-form-group">
+            <label class="zillow-label" for="lotSize">Lot Size (sq ft)</label>
+            <input class="zillow-input" type="text" id="lotSize" placeholder="e.g. 7500">
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 2: GEOGRAPHIC LOCATION -->
+      <div class="zillow-panel">
+        <div class="zillow-panel-header">
+          <span>📍</span> Location Details
+        </div>
+        <div class="zillow-form-grid">
+          <div class="zillow-form-group centillow-field-full zillow-field-full">
+            <label class="zillow-label" for="address">Street Address</label>
+            <input class="zillow-input" type="text" id="address" placeholder="e.g. 742 Evergreen Terrace">
+          </div>
+          <div class="zillow-form-group">
+            <label class="zillow-label" for="city">City</label>
+            <input class="zillow-input" type="text" id="city" placeholder="e.g. Springfield">
+          </div>
+          <div class="zillow-form-group">
+            <label class="zillow-label" for="state">State</label>
+            <input class="zillow-input" type="text" id="state" placeholder="e.g. OR">
+          </div>
+          <div class="zillow-form-group">
+            <label class="zillow-label" for="zipCode">Zip Code</label>
+            <input class="zillow-input" type="text" id="zipCode" placeholder="e.g. 97477">
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 3: DESCRIPTION -->
+      <div class="zillow-panel">
+        <div class="zillow-panel-header">
+          <span>✍️</span> Public Listing Description
+        </div>
+        <div class="zillow-form-grid">
+          <div class="zillow-form-group centillow-field-full zillow-field-full">
+            <label class="zillow-label" for="description">Listing Description (AI-Generated Summary)</label>
+            <textarea class="zillow-textarea" id="description" placeholder="A compelling, detailed marketing description of the property..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: right; margin-bottom: 40px;">
+        <button type="submit" class="zillow-btn-primary">Submit Listing Profile</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="toast-notif" id="successToast">
+    <span>✅</span> <span id="toastText">Listing profile updated successfully!</span>
+  </div>
+
+  <script>
+    const mockPropertyData = {
+      homeType: "Single Family",
+      yearBuilt: "2021",
+      bedrooms: "4",
+      bathrooms: "3.5",
+      price: "1,250,000",
+      lotSize: "8,200",
+      address: "1056 Sunset Boulevard",
+      city: "Los Angeles",
+      state: "CA",
+      zipCode: "90026",
+      description: "Magnificent turn-key custom architectural masterpiece situated on legendary Sunset Boulevard. Built in 2021, this smart home offers 4 opulent bedrooms, 3.5 exquisite baths, and breathtaking panoramic views of the city skyline. Step into an open-concept indoor/outdoor layout with soaring double-height ceilings. The chef's kitchen features custom white oak cabinetry, an over-sized quartz waterfall island, and top-tier smart appliances. Fully-landscaped backyard paradise complete with a designer zero-edge pool and modern firepit lounge. Located moments away from prime dining, entertainment, and fashion landmarks."
+    };
+
+    document.getElementById('fillTriggerBtn').addEventListener('click', () => {
+      // Simulate autofilling with pulse animation
+      for (const [key, value] of Object.entries(mockPropertyData)) {
+        const input = document.getElementById(key);
+        if (input) {
+          input.value = value;
+          input.classList.remove('field-filled');
+          void input.offsetWidth; // trigger reflow to restart CSS animation
+          input.classList.add('field-filled');
+        }
+      }
+      
+      showSuccessToast("PropertyFill AI filled all listing fields!");
+    });
+
+    function showSuccessToast(message) {
+      const toast = document.getElementById('successToast');
+      const toastText = document.getElementById('toastText');
+      if (message) {
+        toastText.textContent = message;
+      }
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 4000);
+    }
+  </script>
+</body>
+</html>

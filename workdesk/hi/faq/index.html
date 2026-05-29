@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WorkDesk — अक्सर पूछे जाने वाले प्रश्न | Donbrico FAQ</title>
+    <meta name="description" content="Chrome Web Store पर "WorkDesk" सर्च करके या donbrico.net/workdesk पर उत्पाद पेज पर जाकर सीधे WorkDesk इंस्टॉल करें। "Add to Chrome" पर क्लिक करें और इंस्टॉलेशन " />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/workdesk/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/workdesk/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/workdesk/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/workdesk/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/workdesk/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/workdesk/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/workdesk/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/workdesk/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/workdesk/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/workdesk/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/workdesk/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/workdesk/ko/faq/" />
+    <meta property="og:title" content="WorkDesk — अक्सर पूछे जाने वाले प्रश्न | Donbrico FAQ" />
+    <meta property="og:description" content="Chrome Web Store पर "WorkDesk" सर्च करके या donbrico.net/workdesk पर उत्पाद पेज पर जाकर सीधे WorkDesk इंस्टॉल करें। "Add to Chrome" पर क्लिक करें और इंस्टॉलेशन " />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/workdesk/hi/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/workdesk/hi/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+              <span class="dropdown-group-label" style="display:block; margin-top:10px; font-size:0.7rem; color:var(--muted);" data-i18n="nav.tools">Tools</span>
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" data-i18n="nav.tools">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>WorkDesk — अक्सर पूछे जाने वाले प्रश्न</h1>
+<h2>शुरुआत कैसे करें</h2>
+<h3>मैं अपने Chrome ब्राउज़र पर WorkDesk कैसे इंस्टॉल करूँ?</h3>
+<p>Chrome Web Store पर &quot;WorkDesk&quot; सर्च करके या donbrico.net/workdesk पर उत्पाद पेज पर जाकर सीधे WorkDesk इंस्टॉल करें। &quot;Add to Chrome&quot; पर क्लिक करें और इंस्टॉलेशन की पुष्टि करें। इंस्टॉल होने के बाद, आपको अपने ब्राउज़र टूलबार में WorkDesk आइकन दिखाई देगा।</p>
+<h3>WorkDesk को पहली बार खोलने पर क्या होता है?</h3>
+<p>इंस्टॉलेशन के बाद, डैशबोर्ड खोलने के लिए WorkDesk आइकन पर क्लिक करें। आपको अपनी वर्तमान ब्राउज़र विंडो को पहले वर्कस्पेस के रूप में सहेजने का विकल्प दिखेगा। WorkDesk स्वचालित रूप से सभी खुले टैब और टैब ग्रुप का पता लगाता है, ताकि आप बिना किसी कॉन्फ़िगरेशन के तुरंत अपने वर्कस्पेस को नाम देकर सहेज सकें।</p>
+<h3>क्या WorkDesk का उपयोग करने के लिए मुझे खाता बनाना होगा?</h3>
+<p>नहीं, किसी खाते या पंजीकरण की आवश्यकता नहीं है। WorkDesk को पूरी तरह से ऑफलाइन और आपकी मशीन पर स्थानीय रूप से काम करने के लिए डिज़ाइन किया गया है। आपका सारा वर्कस्पेस डेटा आपके ब्राउज़र के स्थानीय स्टोरेज में स्टोर होता है, इसलिए आप इंस्टॉलेशन के तुरंत बाद वर्कस्पेस को सहेजना और पुनर्स्थापित करना शुरू कर सकते हैं।</p>
+<h3>मैं अपना पहला वर्कस्पेस कैसे सहेजूँ?</h3>
+<p>टूलबार आइकन पर क्लिक करके WorkDesk पॉपअप खोलें, फिर &quot;Save Current Workspace&quot; बटन पर क्लिक करें। अपने वर्कस्पेस को &quot;Research Project&quot; या &quot;Dev Sprint&quot; जैसा नाम दें, और WorkDesk सभी खुले टैब और उनके टैब ग्रुप असाइनमेंट को कैप्चर कर लेगा। आप बाद में वर्कस्पेस की पहचान करने में मदद के लिए एक विवरण भी जोड़ सकते हैं।</p>
+<h2>सुविधाएँ और उपयोग</h2>
+<h3>क्या मैं WorkDesk के साथ टैब ग्रुप को सहेज और पुनर्स्थापित कर सकता हूँ?</h3>
+<p>हाँ, WorkDesk Chrome टैब ग्रुप को पूरी तरह से सपोर्ट करता है। जब आप कोई वर्कस्पेस सहेजते हैं, तो आपके सभी मौजूदा टैब ग्रुप, उनके नाम और रंगों सहित, संरक्षित रहते हैं। जब आप बाद में उस वर्कस्पेस को पुनर्स्थापित करते हैं, तो आपके टैब ग्रुप बिल्कुल वैसे ही दिखाई देते हैं जैसे आपने छोड़े थे, जिससे आपको टैब को मैन्युअल रूप से पुनर्व्यवस्थित करने की आवश्यकता नहीं होती।</p>
+<h3>मैं अपने वर्तमान टैब को बंद किए बिना विभिन्न वर्कस्पेस के बीच कैसे स्विच करूँ?</h3>
+<p>WorkDesk आइकन पर क्लिक करें और उस वर्कस्पेस का चयन करें जिस पर आप स्विच करना चाहते हैं। WorkDesk आपके वर्तमान टैब को बैकग्राउंड में सहेज लेगा और नए वर्कस्पेस को तुरंत पुनर्स्थापित कर देगा। आपका पिछला वर्कस्पेस सहेजा हुआ रहता है, ताकि आप बिना अपना संदर्भ खोए या सब कुछ बुकमार्क किए कभी भी वापस स्विच कर सकें।</p>
+<h3>क्या मैं अपने वर्कस्पेस को प्रोजेक्ट या विषय के अनुसार व्यवस्थित कर सकता हूँ?</h3>
+<p>बिल्कुल। WorkDesk आपको प्रत्येक वर्कस्पेस को नाम देने और वैकल्पिक विवरण जोड़ने की सुविधा देता है। आप डैशबोर्ड में वर्कस्पेस को खींचकर उन्हें पुनर्क्रमित भी कर सकते हैं। इससे प्रोजेक्ट, क्लाइंट, शोध विषय या आपके वर्कफ़्लो के अनुकूल किसी भी सिस्टम के अनुसार वर्कस्पेस को समूहित करना आसान हो जाता है।</p>
+<h3>क्या WorkDesk पिन किए गए टैब और कई विंडो के साथ काम करता है?</h3>
+<p>हाँ, WorkDesk पिन किए गए टैब को कैप्चर करता है और पुनर्स्थापित करते समय उनकी पिन की गई स्थिति को बनाए रखता है। यह एक ही वर्कस्पेस के भीतर कई Chrome विंडो को भी सपोर्ट करता है। यदि आपके टैब कई विंडो में फैले हुए हैं, तो WorkDesk उन सभी को सहेज और पुनर्स्थापित करेगा, जिससे विंडो की संरचना बरकरार रहेगी।</p>
+<h3>क्या मैं किसी सहकर्मी के साथ या विभिन्न डिवाइसों पर वर्कस्पेस साझा कर सकता हूँ?</h3>
+<p>WorkDesk सारा डेटा आपकी मशीन पर स्थानीय रूप से स्टोर करता है और इसमें क्लाउड सिंक या साझा करने की सुविधाएँ शामिल नहीं हैं। यह आपकी गोपनीयता बनाए रखने के लिए जानबूझकर किया गया है। यदि आपको कोई वर्कस्पेस साझा करने की आवश्यकता है, तो आप मैन्युअल रूप से अपने टैब निर्यात कर सकते हैं या उन्हें बुकमार्क कर सकते हैं, लेकिन WorkDesk स्वयं व्यक्तिगत, स्थानीय वर्कस्पेस प्रबंधन पर केंद्रित है।</p>
+<h2>गोपनीयता और सुरक्षा</h2>
+<h3>मेरा वर्कस्पेस डेटा कहाँ संग्रहीत होता है?</h3>
+<p>सभी वर्कस्पेस डेटा पूरी तरह से आपके ब्राउज़र के स्थानीय स्टोरेज में संग्रहीत होता है। WorkDesk किसी भी बाहरी सर्वर, क्लाउड सेवा या तीसरे पक्ष को कोई डेटा नहीं भेजता है। आपके टैब, URL और टैब ग्रुप की जानकारी कभी भी आपके कंप्यूटर से बाहर नहीं जाती।</p>
+<h3>क्या WorkDesk मेरे ब्राउज़िंग डेटा को एकत्र या बेचता है?</h3>
+<p>नहीं। WorkDesk एक गोपनीयता-प्रथम एक्सटेंशन है जो कोई एनालिटिक्स, टेलीमेट्री या व्यक्तिगत डेटा एकत्र नहीं करता है। इसमें कोई ट्रैकर, कोई उपयोग लॉग और कोई डेटा साझाकरण नहीं है। एक्सटेंशन पूरी तरह से ऑफलाइन काम करता है और आपके वर्तमान टैब को पढ़ने के लिए आवश्यक नेटवर्क अनुमतियों से अधिक कुछ नहीं है।</p>
+<h3>क्या WorkDesk AI का उपयोग करता है या मेरे टैब की सामग्री को प्रोसेस करता है?</h3>
+<p>WorkDesk AI, मशीन लर्निंग या किसी भी प्रकार की सामग्री प्रोसेसिंग का उपयोग नहीं करता है। यह केवल आपके खुले टैब के URL और टैब ग्रुप मेटाडेटा को पढ़ता है ताकि वर्कस्पेस को सहेज और पुनर्स्थापित कर सके। यह पेज की सामग्री नहीं पढ़ता, आपकी गतिविधि को ट्रैक नहीं करता, या आपके ब्राउज़िंग व्यवहार का विश्लेषण नहीं करता।</p>
+<h3>क्या संवेदनशील या गोपनीय टैब के साथ WorkDesk का उपयोग करना सुरक्षित है?</h3>
+<p>हाँ। क्योंकि WorkDesk सब कुछ स्थानीय रूप से स्टोर करता है और कहीं भी डेटा ट्रांसमिट नहीं करता, यह संवेदनशील कार्यों के लिए सुरक्षित है। चाहे आप किसी कानूनी मामले के लिए शोध कर रहे हों, वित्तीय डेटा प्रबंधित कर रहे हों, या गोपनीय क्लाइंट जानकारी संभाल रहे हों, आपके टैब आपकी अपनी मशीन पर निजी रहते हैं।</p>
+<h2>मूल्य निर्धारण और लाइसेंसिंग</h2>
+<h3>क्या WorkDesk उपयोग करने के लिए मुफ़्त है?</h3>
+<p>WorkDesk एक मुफ़्त टियर प्रदान करता है जिसमें वर्कस्पेस को सहेजने और पुनर्स्थापित करने जैसी मुख्य कार्यक्षमता शामिल है। भविष्य में प्रीमियम सुविधाएँ या उपयोग सीमाएँ हो सकती हैं, लेकिन वर्तमान संस्करण अधिकांश उपयोगकर्ताओं के लिए पूरी तरह से कार्यात्मक है। नवीनतम मूल्य विवरण के लिए donbrico.net/workdesk पर उत्पाद पेज देखें।</p>
+<h3>प्रीमियम संस्करण में क्या शामिल है?</h3>
+<p>यदि प्रीमियम संस्करण उपलब्ध है, तो इसमें आमतौर पर असीमित वर्कस्पेस स्टोरेज, उन्नत संगठन सुविधाएँ और प्राथमिकता सहायता शामिल होती है। मुफ़्त संस्करण को आपको भुगतान योजना में मजबूर किए बिना रोजमर्रा के वर्कस्पेस प्रबंधन के लिए पूरी तरह से उपयोग करने योग्य बनाया गया है।</p>
+<h3>मैं WorkDesk के लिए भुगतान कैसे करूँ, और क्या कोई सब्सक्रिप्शन है?</h3>
+<p>भुगतान और सब्सक्रिप्शन विवरण WorkDesk उत्पाद पेज पर उपलब्ध हैं। WorkDesk एकमुश्त खरीद या सब्सक्रिप्शन मॉडल प्रदान कर सकता है। आपकी सहमति के बिना कोई स्वचालित बिलिंग नहीं है, और यदि सब्सक्रिप्शन लागू होता है तो आप कभी भी रद्द कर सकते हैं।</p>
+<h2>समस्या निवारण</h2>
+<h3>WorkDesk मेरे सभी टैब सहेज नहीं रहा है। मुझे क्या जाँचना चाहिए?</h3>
+<p>सबसे पहले, सुनिश्चित करें कि आपने WorkDesk को अपने टैब पढ़ने के लिए आवश्यक अनुमतियाँ दी हैं। आप इसे Chrome के एक्सटेंशन सेटिंग्स में &quot;Site access&quot; के अंतर्गत जाँच सकते हैं। साथ ही, सत्यापित करें कि आपके पास कोई विशेष Chrome पेज (जैसे chrome://settings या chrome://extensions) खुला नहीं है, क्योंकि इन्हें सहेजा नहीं जा सकता। यदि समस्या बनी रहती है तो Chrome को पुनरारंभ करें और पुनः प्रयास करें।</p>
+<h3>मैंने एक वर्कस्पेस पुनर्स्थापित किया, लेकिन कुछ टैब लोड नहीं हुए। क्यों?</h3>
+<p>यह आमतौर पर तब होता है जब कोई टैब अब उपलब्ध नहीं है (जैसे, हटाया गया पेज या टूटा हुआ लिंक)। WorkDesk आपके द्वारा खोले गए URL को सहेजता है, लेकिन यह गारंटी नहीं दे सकता कि वे पेज अभी भी मौजूद हैं। इसके अतिरिक्त, यदि आपने Chrome की &quot;Continue where you left off&quot; सेटिंग सक्षम की है, तो यह WorkDesk की पुनर्स्थापना में हस्तक्षेप कर सकती है। Chrome के स्टार्टअप विकल्पों में उस सेटिंग को अक्षम करने का प्रयास करें।</p>
+<h3>मैं अपने वर्कस्पेस खोए बिना WorkDesk को कैसे अनइंस्टॉल करूँ?</h3>
+<p>अनइंस्टॉल करने से पहले, WorkDesk खोलें और मैन्युअल रूप से अपने वर्कस्पेस के नाम और URL नोट करें या निर्यात करें, क्योंकि एक्सटेंशन को अनइंस्टॉल करने से सभी स्थानीय रूप से संग्रहीत डेटा हट जाएगा। अनइंस्टॉल करने के लिए, WorkDesk आइकन पर राइट-क्लिक करें, &quot;Remove from Chrome&quot; चुनें और पुष्टि करें। आपके वर्कस्पेस खो जाएँगे, इसलिए पहले किसी भी महत्वपूर्ण चीज़ का बैकअप लें।</p>
+<h3>WorkDesk धीमा या अनुत्तरदायी लगता है। मैं इसे कैसे ठीक कर सकता हूँ?</h3>
+<p>अनावश्यक टैब बंद करने और Chrome को पुनरारंभ करने का प्रयास करें। WorkDesk हल्का है, लेकिन यदि एक ही वर्कस्पेस में सैकड़ों टैब हैं, तो प्रदर्शन धीमा हो सकता है। आप डैशबोर्ड से अप्रयुक्त वर्कस्पेस को हटाकर WorkDesk द्वारा प्रबंधित किए जाने वाले डेटा को कम करने का भी प्रयास कर सकते हैं। यदि समस्या जारी रहती है, तो Chrome Web Store से एक्सटेंशन को पुनः इंस्टॉल करें।</p>
+
+        
+    <div style="background:linear-gradient(135deg,rgba(99,102,241,0.12),rgba(139,92,246,0.12));border:1px solid rgba(99,102,241,0.3);border-radius:12px;padding:24px 28px;margin:var(--spacing-lg) 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+      <div>
+        <div style="font-weight:700;font-size:1.1rem;margin-bottom:4px;">🚀 Try it free — no credit card required</div>
+        <div style="color:var(--muted);font-size:0.9rem;">Available for Chrome, Edge, and Brave</div>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="https://chromewebstore.google.com/detail/donbrico-workdesk/kilfjjkfocajofinfhplccpmojdjplhb" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+          Chrome पर इंस्टॉल करें
+        </a>
+        <a href="https://donbrico.net/workdesk" style="display:inline-flex;align-items:center;gap:6px;color:var(--accent);padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:500;font-size:0.95rem;border:1px solid rgba(99,102,241,0.4);">Learn More →</a>
+      </div>
+    </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

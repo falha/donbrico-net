@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RecruitReply AI — Frequently Asked Questions | Donbrico FAQ</title>
+    <meta name="description" content="RecruitReply AI is a browser extension. After purchasing, you’ll receive a link to install it on Chrome or Edge. Once installed, pin the extension and log in us" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/recruit-reply/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/recruit-reply/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/recruit-reply/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/recruit-reply/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/recruit-reply/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/recruit-reply/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/recruit-reply/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/recruit-reply/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/recruit-reply/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/recruit-reply/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/recruit-reply/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/recruit-reply/ko/faq/" />
+    <meta property="og:title" content="RecruitReply AI — Frequently Asked Questions | Donbrico FAQ" />
+    <meta property="og:description" content="RecruitReply AI is a browser extension. After purchasing, you’ll receive a link to install it on Chrome or Edge. Once installed, pin the extension and log in us" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/recruit-reply/it/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/recruit-reply/it/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+              <span class="dropdown-group-label" style="display:block; margin-top:10px; font-size:0.7rem; color:var(--muted);" data-i18n="nav.tools">Tools</span>
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" data-i18n="nav.tools">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>RecruitReply AI — Frequently Asked Questions</h1>
+<h2>Getting Started</h2>
+<h3>How do I install RecruitReply AI in my browser?</h3>
+<p>RecruitReply AI is a browser extension. After purchasing, you’ll receive a link to install it on Chrome or Edge. Once installed, pin the extension and log in using your API key or enable the on-device Gemini Nano mode. No complex configuration is needed — you can start generating messages within 60 seconds.</p>
+<h3>Do I need an API key to use RecruitReply AI, or can I run it offline?</h3>
+<p>You have two options. You can use the on-device Gemini Nano mode, which works entirely offline and requires no external service. Alternatively, you can bring your own API key from OpenAI, Anthropic, or Google Gemini. If you choose BYOK, you’ll enter the key once in the settings panel, and it stays stored locally on your machine.</p>
+<h3>How do I set up my recruiter profile inside RecruitReply AI?</h3>
+<p>Open the extension and navigate to the Profile tab. Fill in your company name, typical salary ranges, benefits, and your preferred email signature. You can also save multiple profiles if you recruit for different clients or departments. This information is used automatically when generating messages, so you don’t have to retype it every time.</p>
+<h3>Can I use RecruitReply AI on LinkedIn Recruiter right after installation?</h3>
+<p>Yes. Once the extension is installed and your profile is set, visit any candidate profile on LinkedIn Recruiter. Click the RecruitReply AI icon that appears next to the message field. Select a scenario like “Outreach – Initial” or “Follow-up,” choose a tone, and click Generate. The draft appears instantly — you can edit it before sending.</p>
+<h2>Features &amp; Usage</h2>
+<h3>How do I generate a personalized outreach message with RecruitReply AI?</h3>
+<p>Navigate to a candidate profile on LinkedIn Recruiter, Greenhouse, Lever, or Workday. Click the RecruitReply AI icon, select “Outreach – Initial” from the 22 available scenarios, and choose a tone (e.g., Warm or Professional). The AI pulls in your profile details, the candidate’s name, and role title to create a draft that sounds like you wrote it.</p>
+<h3>Can I customize the tone of messages in RecruitReply AI?</h3>
+<p>Yes. You can choose from seven tones: Professional, Warm, Direct, Enthusiastic, Empathetic, Executive, and Casual. Select your preferred tone before generating a message, or change it afterward and regenerate. The tone applies to the entire draft, including subject lines when applicable.</p>
+<h3>How do I use saved replies and smart variables in RecruitReply AI?</h3>
+<p>Open the Saved Replies library from the extension panel. Create a template and insert smart variables like <code>{{candidate_name}}</code>, <code>{{role_title}}</code>, or <code>{{company}}</code>. When you apply a saved reply to a message, RecruitReply AI automatically fills in those variables with the correct data from the candidate profile or your recruiter profile.</p>
+<h3>Does RecruitReply AI work with Greenhouse, Lever, and Workday?</h3>
+<p>Yes. RecruitReply AI is built to work natively inside those ATS platforms. When you open a candidate record in Greenhouse, Lever, or Workday, the extension detects the page and activates the same message-generation features you use on LinkedIn Recruiter. No extra setup is required per platform.</p>
+<h3>Will RecruitReply AI ever send messages automatically?</h3>
+<p>No. RecruitReply AI is draft-only. It never auto-sends, auto-submits, or posts anything to a candidate or ATS. Every generated message appears as a draft in the text field for you to review, edit, and send manually. You remain in full control of all communications.</p>
+<h2>Privacy &amp; Security</h2>
+<h3>Where is my API key stored when I use RecruitReply AI?</h3>
+<p>Your API key is stored locally on your device using the browser’s secure storage. RecruitReply AI does not send your key to any external server, and it is never shared with Donbrico or any third party. If you use on-device Gemini Nano mode, no key is needed at all.</p>
+<h3>Does RecruitReply AI send my candidate data or messages to external servers?</h3>
+<p>No. When you use on-device Gemini Nano mode, all processing happens locally on your machine — no data leaves your browser. Even when you use a BYOK setup with OpenAI or Anthropic, the extension only sends the message context (candidate name, role title, your profile details) to the AI model via your own API key. RecruitReply AI itself does not log, store, or transmit your data.</p>
+<h3>Is RecruitReply AI compliant with GDPR and data privacy regulations?</h3>
+<p>Yes. Because RecruitReply AI processes data locally or through your own API key, you retain full control over candidate information. There is no central database where messages or personal data are stored. This architecture aligns with GDPR, CCPA, and other data privacy frameworks commonly required by enterprise recruiting teams.</p>
+<h3>Can my employer see that I’m using RecruitReply AI?</h3>
+<p>RecruitReply AI runs as a browser extension and does not report usage to any external service. It does not track your activity or send analytics. If your employer monitors browser extensions, they may see the extension is installed, but RecruitReply AI does not generate any logs or network traffic beyond the AI API calls you authorize.</p>
+<h2>Pricing &amp; Licensing</h2>
+<h3>Is there a free version of RecruitReply AI, or is it paid only?</h3>
+<p>RecruitReply AI currently offers a paid license. There is no free tier, but there is a one-time purchase option that gives you lifetime access. The license includes all 22 messaging scenarios, all seven tones, saved replies, and the ability to use either on-device AI or your own API key.</p>
+<h3>What is the difference between the one-time purchase and a subscription?</h3>
+<p>RecruitReply AI offers a one-time purchase for lifetime access — no recurring subscription fees. You pay once and own the license indefinitely. Updates and support are included with the purchase. There is no monthly or annual billing.</p>
+<h3>Can I get a refund if RecruitReply AI doesn’t work for my workflow?</h3>
+<p>Yes. Donbrico offers a 30-day money-back guarantee. If RecruitReply AI does not meet your needs within the first 30 days of purchase, contact support for a full refund. No questions asked.</p>
+<h2>Troubleshooting</h2>
+<h3>RecruitReply AI is not showing up on LinkedIn Recruiter. What should I do?</h3>
+<p>First, make sure the extension is pinned and enabled in your browser. Refresh the LinkedIn Recruiter page. If it still doesn’t appear, check that you’re on a candidate profile page (not a search results page). You can also try reinstalling the extension from the link provided in your purchase confirmation email.</p>
+<h3>The generated message looks generic or doesn’t include my company details.</h3>
+<p>This usually means your recruiter profile is incomplete. Open the extension, go to the Profile tab, and fill in your company name, salary range, benefits, and signature. Also verify that the candidate profile contains the correct role title and company fields — RecruitReply AI pulls this info to personalize the draft.</p>
+<h3>I’m getting an error about my API key. How do I fix it?</h3>
+<p>If you’re using BYOK mode, double-check that your API key is entered correctly without extra spaces. Ensure your API account has credits available and that the key has permissions for the model you selected (e.g., GPT-4 or Claude). If the error persists, switch to on-device Gemini Nano mode as a fallback — it requires no API key.</p>
+<h3>Can I use RecruitReply AI on my work computer if IT restricts extensions?</h3>
+<p>If your IT policy blocks browser extensions, you may need to request an exception or use a personal device for recruiting outreach. RecruitReply AI does not require admin privileges to install, but some corporate browsers may disable extension installation entirely. Contact your IT team with the extension’s privacy documentation to support your request.</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

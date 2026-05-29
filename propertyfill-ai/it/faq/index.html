@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>propertyfill — Domande Frequenti | Donbrico FAQ</title>
+    <meta name="description" content="Installare propertyfill richiede circa due minuti. Visita il Chrome Web Store o il marketplace delle estensioni del tuo browser, cerca "propertyfill by Donbrico" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/propertyfill-ai/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/propertyfill-ai/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/propertyfill-ai/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/propertyfill-ai/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/propertyfill-ai/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/propertyfill-ai/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/propertyfill-ai/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/propertyfill-ai/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/propertyfill-ai/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/propertyfill-ai/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/propertyfill-ai/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/propertyfill-ai/ko/faq/" />
+    <meta property="og:title" content="propertyfill — Domande Frequenti | Donbrico FAQ" />
+    <meta property="og:description" content="Installare propertyfill richiede circa due minuti. Visita il Chrome Web Store o il marketplace delle estensioni del tuo browser, cerca "propertyfill by Donbrico" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/propertyfill-ai/it/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/propertyfill-ai/it/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+              <span class="dropdown-group-label" style="display:block; margin-top:10px; font-size:0.7rem; color:var(--muted);" data-i18n="nav.tools">Tools</span>
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" data-i18n="nav.tools">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>propertyfill — Domande Frequenti</h1>
+<h2>Per Iniziare</h2>
+<h3>Come installo l&#39;estensione del browser propertyfill?</h3>
+<p>Installare propertyfill richiede circa due minuti. Visita il Chrome Web Store o il marketplace delle estensioni del tuo browser, cerca &quot;propertyfill by Donbrico&quot; e clicca su &quot;Aggiungi all&#39;estensione.&quot; Una volta installata, fissa l&#39;estensione alla barra degli strumenti e clicca sull&#39;icona per aprire il pannello di configurazione, dove imposterai la lingua predefinita e le impostazioni del provider.</p>
+<h3>Cosa mi serve prima di poter usare propertyfill per la prima volta?</h3>
+<p>Ti serve un browser supportato (Chrome, Edge o Firefox) e una connessione internet attiva per il download iniziale. L&#39;estensione funziona interamente sul dispositivo, quindi non è richiesta la creazione di un account o una chiave API, a meno che tu non stia usando una configurazione BYOK personalizzata. Dopo l&#39;installazione, apri qualsiasi campo di testo MLS o CRM e inizia a scrivere appunti grezzi.</p>
+<h3>Come genero il mio primo annuncio con propertyfill?</h3>
+<p>Dopo l&#39;installazione, vai a qualsiasi campo di inserimento annunci nel tuo sistema MLS o CRM. Digita o incolla i tuoi appunti grezzi da agente nel campo di testo, poi clicca sull&#39;icona di propertyfill nella barra degli strumenti del browser e seleziona &quot;Genera Annuncio.&quot; L&#39;AI elaborerà i tuoi appunti localmente e popolerà la descrizione bilingue, l&#39;elenco dei comfort e i dettagli stanza per stanza in pochi secondi.</p>
+<h3>propertyfill funziona con la mia piattaforma MLS o CRM esistente?</h3>
+<p>Sì, propertyfill è progettato come estensione del browser che funziona sopra i tuoi strumenti web esistenti. Si integra con qualsiasi piattaforma che utilizza campi di testo standard, inclusi i sistemi MLS più diffusi, piattaforme CRM e software di gestione immobiliare personalizzati. Se puoi digitare appunti in un campo su una pagina web, propertyfill può elaborarli.</p>
+<h2>Funzionalità e Utilizzo</h2>
+<h3>Come fa propertyfill a generare annunci bilingue inglese e francese?</h3>
+<p>Quando configuri propertyfill per la prima volta, puoi scegliere la lingua di output preferita o selezionare &quot;Bilingue.&quot; L&#39;AI sul dispositivo genera quindi ogni annuncio con descrizioni parallele in inglese e francese, inclusi dettagli delle stanze, elenchi di comfort e parole chiave SEO. Questo è progettato specificamente per i professionisti immobiliari del Québec che necessitano di contenuti bilingue conformi senza traduzione manuale.</p>
+<h3>Cosa impedisce esattamente il &quot;guardiano delle allucinazioni&quot;?</h3>
+<p>Il guardiano delle allucinazioni è un livello di sicurezza che analizza l&#39;output dell&#39;AI per individuare dati inventati come numeri MLS falsi, metrature inventate o prezzi fasulli. Se l&#39;AI genera uno di questi elementi, il guardiano li rimuove o corregge automaticamente prima che l&#39;annuncio venga visualizzato. Questo previene il comune problema dell&#39;AI di &quot;allucinare&quot; informazioni false ma dall&#39;aspetto realistico che potrebbero violare la conformità o fuorviare gli acquirenti.</p>
+<h3>propertyfill può suddividere un annuncio stanza per stanza?</h3>
+<p>Sì. Quando fornisci appunti che menzionano le stanze, propertyfill genera automaticamente una suddivisione stanza per stanza con descrizioni individuali. Ad esempio, appunti come &quot;cucina rinnovata con quarzo, camera matrimoniale con cabina armadio&quot; diventano paragrafi separati e curati per la cucina e la camera da letto principale. Puoi anche attivare manualmente una generazione stanza per stanza dal pannello dell&#39;estensione se i tuoi appunti sono meno strutturati.</p>
+<h3>Come funziona la generazione di parole chiave SEO e dell&#39;elenco dei comfort?</h3>
+<p>Propertyfill analizza i tuoi appunti grezzi e il testo dell&#39;annuncio generato per estrarre parole chiave e comfort pertinenti. Costruisce un elenco di termini ottimizzati per la ricerca (es. &quot;open space,&quot; &quot;piani di lavoro in granito,&quot; &quot;pavimenti in legno&quot;) e un elenco separato di comfort. Entrambi vengono prodotti nella lingua scelta e possono essere copiati direttamente nei metadati del tuo annuncio o nei campi delle caratteristiche.</p>
+<h3>Posso personalizzare il tono o la lunghezza delle descrizioni generate?</h3>
+<p>Attualmente, propertyfill utilizza un tono professionale e curato, ottimizzato per gli annunci immobiliari. Puoi influenzare l&#39;output dal modo in cui formuli i tuoi appunti grezzi: appunti più descrittivi generano annunci più dettagliati. Aggiornamenti futuri potrebbero includere preimpostazioni di tono, ma il design principale dà priorità all&#39;accuratezza e alla completezza rispetto alla variazione stilistica.</p>
+<h2>Privacy e Sicurezza</h2>
+<h3>Dove elabora i miei dati propertyfill—sul mio dispositivo o nel cloud?</h3>
+<p>Tutta l&#39;elaborazione AI avviene interamente sul tuo dispositivo. Quando clicchi su &quot;Genera Annuncio,&quot; i tuoi appunti grezzi vengono elaborati localmente dal modello AI memorizzato nell&#39;estensione del tuo browser. Nessun dato—né i tuoi appunti, né l&#39;annuncio generato, né alcun dettaglio della proprietà—viene mai inviato ai server di Donbrico o a servizi cloud di terze parti.</p>
+<h3>propertyfill memorizza o registra i dati dei miei annunci?</h3>
+<p>No. Propertyfill non memorizza, registra né mette in cache alcun dato dei tuoi annunci. Una volta che l&#39;AI genera l&#39;output e lo visualizza nel pannello dell&#39;estensione, gli appunti grezzi e il contenuto generato esistono solo nella memoria temporanea del tuo browser. Chiudere l&#39;estensione o aggiornare la pagina cancella tutto. Donbrico non ha accesso ai tuoi annunci.</p>
+<h3>La mia agenzia può controllare o monitorare ciò che propertyfill genera?</h3>
+<p>Poiché tutta l&#39;elaborazione è locale e nessun dato lascia il tuo browser, propertyfill non crea log lato server o tracce di controllo. La tua agenzia vedrebbe solo l&#39;annuncio finale dopo che lo hai incollato nel tuo MLS o CRM—esattamente come se lo avessi digitato manualmente. Se la tua agenzia richiede registrazioni interne, dovresti implementarle attraverso i tuoi strumenti di flusso di lavoro esistenti.</p>
+<h3>In cosa si differenzia propertyfill dagli strumenti di scrittura AI basati su cloud per il settore immobiliare?</h3>
+<p>Gli strumenti basati su cloud inviano i tuoi appunti e i dettagli della proprietà a server esterni per l&#39;elaborazione, creando potenziali rischi per la privacy e problemi di conservazione dei dati. Propertyfill mantiene tutto sul tuo dispositivo—i tuoi appunti non toccano mai una rete. Questo significa anche che funziona offline dopo il download iniziale e non ha costi di abbonamento legati all&#39;utilizzo dell&#39;API.</p>
+<h2>Prezzi e Licenze</h2>
+<h3>propertyfill è gratuito o esiste una versione a pagamento?</h3>
+<p>Propertyfill opera con un modello freemium. Il livello gratuito include un numero limitato di generazioni di annunci al mese, sufficiente per un uso occasionale o per test. Il livello premium offre generazioni illimitate, accesso prioritario alle nuove funzionalità e la possibilità di utilizzare la propria chiave API (BYOK) per modelli AI personalizzati. I dettagli sui prezzi sono disponibili sulla pagina dei prezzi di Donbrico.</p>
+<h3>Cosa significa l&#39;opzione BYOK e chi ne ha bisogno?</h3>
+<p>BYOK sta per &quot;Bring Your Own Key&quot; (Porta la tua chiave). Se la tua agenzia ha un provider AI preferito o vuoi utilizzare un modello specifico, puoi inserire la tua chiave API nelle impostazioni di propertyfill. Questo è utile per le agenzie che hanno già contratti AI o vogliono garantire coerenza con i modelli approvati dall&#39;azienda. Il livello gratuito utilizza il modello predefinito sul dispositivo di Donbrico.</p>
+<h3>Posso ottenere un rimborso se propertyfill non funziona per il mio flusso di lavoro?</h3>
+<p>Sì, Donbrico offre una garanzia di rimborso di 14 giorni sugli abbonamenti premium. Se propertyfill non si adatta al tuo flusso di lavoro o non soddisfa le tue aspettative entro le prime due settimane, contatta l&#39;assistenza per un rimborso completo. Gli utenti del livello gratuito possono testare l&#39;estensione senza costi prima di impegnarsi in un piano a pagamento.</p>
+<h2>Risoluzione dei Problemi</h2>
+<h3>propertyfill non genera nulla quando clicco sul pulsante. Cosa c&#39;è che non va?</h3>
+<p>Prima di tutto, controlla che l&#39;estensione sia fissata e attiva nella tua barra degli strumenti—a volte gli aggiornamenti del browser disabilitano le estensioni. Successivamente, assicurati di aver inserito del testo nel campo di input sulla pagina; propertyfill non genera da un campo vuoto. Se ancora non funziona, prova ad aggiornare la pagina o riavviare il browser. Problemi persistenti potrebbero richiedere la reinstallazione dell&#39;estensione dal marketplace.</p>
+<h3>L&#39;annuncio generato contiene informazioni errate o dettagli mancanti.</h3>
+<p>Questo di solito accade quando i tuoi appunti grezzi sono troppo vaghi o contengono termini ambigui. Propertyfill funziona meglio con appunti specifici e strutturati (es. &quot;3 camere da letto, 2 bagni, cucina rinnovata 2022, pavimenti in legno ovunque&quot;). Se l&#39;AI interpreta male qualcosa, puoi modificare l&#39;output direttamente nel pannello dell&#39;estensione prima di copiarlo. Per imprecisioni ricorrenti, verifica che i tuoi appunti non contengano informazioni contraddittorie.</p>
+<h3>propertyfill non rileva i campi della mia piattaforma MLS o CRM.</h3>
+<p>Alcune piattaforme personalizzate o più datate utilizzano campi di input non standard che propertyfill potrebbe non riconoscere automaticamente. Prova a cliccare direttamente nel campo di testo prima di attivare l&#39;estensione. Se ancora non rileva il campo, utilizza l&#39;opzione &quot;Modalità Manuale&quot; nel pannello dell&#39;estensione per incollare i tuoi appunti direttamente in propertyfill, poi copia l&#39;output generato nella tua piattaforma.</p>
+<h3>L&#39;estensione rallenta il mio browser o lo fa crashare.</h3>
+<p>L&#39;elaborazione AI sul dispositivo utilizza la CPU e la RAM del tuo computer. Se stai eseguendo più applicazioni pesanti (come software di editing video o molte schede del browser), propertyfill potrebbe causare rallentamenti. Chiudi schede o applicazioni non necessarie prima di generare un annuncio. Se i crash persistono, il tuo dispositivo potrebbe non soddisfare i requisiti minimi di sistema—controlla la pagina di supporto di Donbrico per le raccomandazioni hardware.</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

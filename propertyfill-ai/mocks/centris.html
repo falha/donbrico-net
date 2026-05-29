@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Créer une inscription - Centris.ca (Simulé)</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    :root {
+      --centris-blue: #004d80;
+      --centris-blue-hover: #003353;
+      --centris-orange: #f26522;
+      --centris-bg: #f5f7fa;
+      --centris-text: #333333;
+      --centris-border: #dcdfe6;
+      --centris-card-bg: #ffffff;
+    }
+
+    body.centris-theme {
+      background-color: var(--centris-bg);
+      color: var(--centris-text);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    /* Centris Top Header / Navigation */
+    .centris-header {
+      background-color: #ffffff;
+      border-bottom: 2px solid var(--centris-border);
+      padding: 12px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    .centris-nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 var(--spacing-md);
+    }
+    .centris-logo {
+      font-weight: 800;
+      font-size: 1.6rem;
+      color: var(--centris-blue);
+      letter-spacing: -0.02em;
+    }
+    .centris-logo span {
+      color: var(--centris-orange);
+    }
+    .centris-lang-toggle {
+      background: none;
+      border: 1px solid var(--centris-blue);
+      color: var(--centris-blue);
+      padding: 4px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+    .centris-lang-toggle:hover {
+      background-color: rgba(0, 77, 128, 0.05);
+    }
+
+    /* Centris Workspace Wrapper */
+    .centris-wrapper {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 var(--spacing-md);
+    }
+
+    .centris-title-bar {
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .centris-title-bar h1 {
+      font-size: 1.75rem;
+      color: var(--centris-blue);
+    }
+
+    /* Quick Fill Bar for Extension Interaction */
+    .extension-interaction-banner {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(6, 182, 212, 0.08) 100%);
+      border: 1px dashed var(--accent);
+      border-radius: 12px;
+      padding: var(--spacing-md);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--spacing-md);
+      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.05);
+    }
+    .extension-interaction-banner p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--text-color);
+    }
+    .extension-interaction-banner .fill-trigger-btn {
+      background-color: var(--accent);
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+      box-shadow: 0 4px 10px rgba(99, 102, 241, 0.2);
+    }
+    .extension-interaction-banner .fill-trigger-btn:hover {
+      background-color: #5053df;
+      transform: translateY(-1px);
+    }
+
+    /* Centris Listing Form Panels */
+    .centris-panel {
+      background: var(--centris-card-bg);
+      border: 1px solid var(--centris-border);
+      border-radius: 8px;
+      padding: 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    }
+    .centris-panel-header {
+      border-bottom: 2px solid var(--centris-bg);
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--centris-blue);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Form fields styling */
+    .centris-form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .centris-field-full {
+      grid-column: span 2;
+    }
+    .centris-form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .centris-label {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #4a5568;
+    }
+    .centris-input, .centris-select, .centris-textarea {
+      border: 1px solid var(--centris-border);
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: #2d3748;
+      background-color: #ffffff;
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+    .centris-input:focus, .centris-select:focus, .centris-textarea:focus {
+      border-color: var(--centris-blue);
+    }
+    .centris-textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    /* Switch buttons styling */
+    .centris-btn-primary {
+      background-color: var(--centris-blue);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .centris-btn-primary:hover {
+      background-color: var(--centris-blue-hover);
+    }
+
+    /* Highlight class for filled fields */
+    .field-filled {
+      animation: highlightPulse 1.5s ease-out;
+      border-color: #10b981 !important;
+      background-color: rgba(16, 185, 129, 0.03) !important;
+    }
+
+    @keyframes highlightPulse {
+      0% {
+        background-color: rgba(16, 185, 129, 0.2);
+        box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.25);
+      }
+      100% {
+        background-color: rgba(16, 185, 129, 0.03);
+        box-shadow: 0 0 0 0 transparent;
+      }
+    }
+
+    /* Toast notification */
+    .toast-notif {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #10b981;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 2000;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .toast-notif.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="centris-theme">
+  
+  <header class="centris-header">
+    <div class="centris-nav-container">
+      <div class="centris-logo">Centris<span>.ca</span> <span style="font-size:0.75rem; color:#a0a0b0; font-weight:normal; margin-left:10px;">Système de Saisie</span></div>
+      <button class="centris-lang-toggle" id="langToggle">EN / FR</button>
+    </div>
+  </header>
+
+  <div class="centris-wrapper">
+    <div class="centris-title-bar">
+      <h1 id="pageTitle">Nouvelle inscription résidentielle</h1>
+      <a href="../propertyfill-ai/" style="font-size: 0.9rem; font-weight:600;">← Retour à PropertyFill AI</a>
+    </div>
+
+    <!-- Banner to trigger/demonstrate PropertyFill extension functionality -->
+    <div class="extension-interaction-banner">
+      <div>
+        <p style="font-weight: 700; margin-bottom: 4px;">⚡ Démonstration de PropertyFill AI</p>
+        <p id="bannerDesc" style="font-size: 0.85rem; color: #a0a0b0;">Cliquez ci-contre pour simuler le remplissage automatique instantané de la fiche par l'extension.</p>
+      </div>
+      <button class="fill-trigger-btn" id="fillTriggerBtn">
+        <span>⚡ Autofill Centris</span>
+      </button>
+    </div>
+
+    <form id="centrisForm" onsubmit="event.preventDefault(); showSuccessToast();">
+      <!-- SECTION 1: DÉTAILS DE LA PROPRIÉTÉ -->
+      <div class="centris-panel">
+        <div class="centris-panel-header">
+          <span>🏠</span> <span id="section1Title">Caractéristiques de la propriété</span>
+        </div>
+        <div class="centris-form-grid">
+          <div class="centris-form-group">
+            <label class="centris-label" for="propType" id="lblPropType">Genre de propriété</label>
+            <select class="centris-select" id="propType">
+              <option value="">Sélectionner / Select</option>
+              <option value="Maison à un étage">Maison à un étage / Bungalow</option>
+              <option value="Maison à étages">Maison à étages / Two-storey house</option>
+              <option value="Condo">Cottage / Condo</option>
+            </select>
+          </div>
+          <div class="centris-form-group">
+            <label class="centris-label" for="yearBuilt" id="lblYearBuilt">Année de construction</label>
+            <input class="centris-input" type="number" id="yearBuilt" placeholder="Ex: 2020">
+          </div>
+          <div class="centris-form-group">
+            <label class="centris-label" for="bedrooms" id="lblBedrooms">Nombre de chambres (hors sous-sol)</label>
+            <input class="centris-input" type="number" id="bedrooms" placeholder="Ex: 3">
+          </div>
+          <div class="centris-form-group">
+            <label class="centris-label" for="bathrooms" id="lblBathrooms">Nombre de salles de bain</label>
+            <input class="centris-input" type="number" id="bathrooms" placeholder="Ex: 2">
+          </div>
+          <div class="centris-form-group">
+            <label class="centris-label" for="price" id="lblPrice">Prix demandé ($ CAD)</label>
+            <input class="centris-input" type="text" id="price" placeholder="Ex: 649000">
+          </div>
+          <div class="centris-form-group">
+            <label class="centris-label" for="centrisId" id="lblCentrisId">Numéro Centris</label>
+            <input class="centris-input" type="text" id="centrisId" placeholder="Ex: 142857">
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 2: ADRESSE -->
+      <div class="centris-panel">
+        <div class="centris-panel-header">
+          <span>📍</span> <span id="section2Title">Localisation de la propriété</span>
+        </div>
+        <div class="centris-form-grid">
+          <div class="centris-form-group centris-field-full">
+            <label class="centris-label" for="address" id="lblAddress">Adresse municipale</label>
+            <input class="centris-input" type="text" id="address" placeholder="Ex: 456 Avenue des Érables">
+          </div>
+          <div class="centris-form-group">
+            <label class="centris-label" for="city" id="lblCity">Ville</label>
+            <input class="centris-input" type="text" id="city" placeholder="Ex: Montréal">
+          </div>
+          <div class="centris-form-group">
+            <label class="centris-label" for="postalCode" id="lblPostalCode">Code postal</label>
+            <input class="centris-input" type="text" id="postalCode" placeholder="Ex: H2W 1Y4">
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 3: REMARQUES (BILINGUES) -->
+      <div class="centris-panel">
+        <div class="centris-panel-header">
+          <span>✍️</span> <span id="section3Title">Description & Remarques (Bilingue)</span>
+        </div>
+        <div class="centris-form-grid">
+          <div class="centris-form-group centris-field-full">
+            <label class="centris-label" for="remarksFr" id="lblRemarksFr">Remarques - Français (Affiche sur Centris.ca public)</label>
+            <textarea class="centris-textarea" id="remarksFr" placeholder="Remarques détaillées décrivant les atouts de la propriété en français..."></textarea>
+          </div>
+          <div class="centris-form-group centris-field-full">
+            <label class="centris-label" for="remarksEn" id="lblRemarksEn">Remarks - English (Displays on public Centris.ca english version)</label>
+            <textarea class="centris-textarea" id="remarksEn" placeholder="Detailed property features and marketing remarks in English..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: right; margin-bottom: 40px;">
+        <button type="submit" class="centris-btn-primary" id="btnSubmit">Enregistrer l'inscription</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="toast-notif" id="successToast">
+    <span>✅</span> <span id="toastText">Formulaire simulé rempli avec succès !</span>
+  </div>
+
+  <script>
+    const dictionary = {
+      fr: {
+        pageTitle: "Nouvelle inscription résidentielle",
+        bannerDesc: "Cliquez ci-contre pour simuler le remplissage automatique instantané de la fiche par l'extension.",
+        section1Title: "Caractéristiques de la propriété",
+        lblPropType: "Genre de propriété",
+        lblYearBuilt: "Année de construction",
+        lblBedrooms: "Nombre de chambres (hors sous-sol)",
+        lblBathrooms: "Nombre de salles de bain",
+        lblPrice: "Prix demandé ($ CAD)",
+        lblCentrisId: "Numéro Centris",
+        section2Title: "Localisation de la propriété",
+        lblAddress: "Adresse municipale",
+        lblCity: "Ville",
+        lblPostalCode: "Code postal",
+        section3Title: "Description & Remarques (Bilingue)",
+        lblRemarksFr: "Remarques - Français (Affiche sur Centris.ca public)",
+        lblRemarksEn: "Remarks - English (Displays on public Centris.ca english version)",
+        btnSubmit: "Enregistrer l'inscription",
+        toastText: "Formulaire simulé rempli avec succès !",
+        toastAutofillText: "PropertyFill AI a rempli tous les champs bilingues !"
+      },
+      en: {
+        pageTitle: "New Residential Listing",
+        bannerDesc: "Click here to simulate the instant autofill of the listing details by the extension.",
+        section1Title: "Property Details",
+        lblPropType: "Property Type",
+        lblYearBuilt: "Year Built",
+        lblBedrooms: "Number of Bedrooms (excl. basement)",
+        lblBathrooms: "Number of Bathrooms",
+        lblPrice: "Asking Price ($ CAD)",
+        lblCentrisId: "Centris Number",
+        section2Title: "Property Location",
+        lblAddress: "Street Address",
+        lblCity: "City",
+        lblPostalCode: "Postal Code",
+        section3Title: "Description & Remarks (Bilingual)",
+        lblRemarksFr: "Remarks - French (Publicly displays on Centris.ca)",
+        lblRemarksEn: "Remarks - English (Publicly displays on Centris.ca)",
+        btnSubmit: "Save Listing",
+        toastText: "Simulated form successfully saved!",
+        toastAutofillText: "PropertyFill AI has filled all bilingual fields!"
+      }
+    };
+
+    let currentLang = 'fr';
+
+    document.getElementById('langToggle').addEventListener('click', () => {
+      currentLang = currentLang === 'fr' ? 'en' : 'fr';
+      updateLanguage();
+    });
+
+    function updateLanguage() {
+      const dict = dictionary[currentLang];
+      document.getElementById('pageTitle').textContent = dict.pageTitle;
+      document.getElementById('bannerDesc').textContent = dict.bannerDesc;
+      document.getElementById('section1Title').textContent = dict.section1Title;
+      document.getElementById('lblPropType').textContent = dict.lblPropType;
+      document.getElementById('lblYearBuilt').textContent = dict.lblYearBuilt;
+      document.getElementById('lblBedrooms').textContent = dict.lblBedrooms;
+      document.getElementById('lblBathrooms').textContent = dict.lblBathrooms;
+      document.getElementById('lblPrice').textContent = dict.lblPrice;
+      document.getElementById('lblCentrisId').textContent = dict.lblCentrisId;
+      document.getElementById('section2Title').textContent = dict.section2Title;
+      document.getElementById('lblAddress').textContent = dict.lblAddress;
+      document.getElementById('lblCity').textContent = dict.lblCity;
+      document.getElementById('lblPostalCode').textContent = dict.lblPostalCode;
+      document.getElementById('section3Title').textContent = dict.section3Title;
+      document.getElementById('lblRemarksFr').textContent = dict.lblRemarksFr;
+      document.getElementById('lblRemarksEn').textContent = dict.lblRemarksEn;
+      document.getElementById('btnSubmit').textContent = dict.btnSubmit;
+      document.getElementById('toastText').textContent = dict.toastText;
+    }
+
+    const mockPropertyData = {
+      propType: "Maison à étages",
+      yearBuilt: "2018",
+      bedrooms: "4",
+      bathrooms: "3",
+      price: "875,000",
+      centrisId: "28461537",
+      address: "1280 Boulevard Saint-Laurent",
+      city: "Montréal",
+      postalCode: "H2X 2S9",
+      remarksFr: "Somptueuse demeure moderne idéalement située sur le Plateau. Offrant 4 chambres à coucher spacieuses, 3 salles de bain contemporaines et une luminosité abondante grâce à sa fenestration généreuse. Cuisine haut de gamme à aire ouverte avec des finitions en quartz, parfaite pour recevoir. Cour arrière intime et paysagée. À proximité immédiate de tous les commerces branchés, parcs et écoles.",
+      remarksEn: "Stunning modern home ideally situated in the heart of the Plateau. Offering 4 spacious bedrooms, 3 contemporary bathrooms, and abundant natural light from its massive windows. High-end open concept kitchen with quartz countertops, ideal for hosting. Private landscaped backyard. Steps away from trendy local shops, parks, and schools."
+    };
+
+    document.getElementById('fillTriggerBtn').addEventListener('click', () => {
+      // Simulate autofilling with a pulse animation
+      for (const [key, value] of Object.entries(mockPropertyData)) {
+        const input = document.getElementById(key);
+        if (input) {
+          input.value = value;
+          input.classList.remove('field-filled');
+          void input.offsetWidth; // trigger reflow to restart CSS animation
+          input.classList.add('field-filled');
+        }
+      }
+      
+      showSuccessToast(dictionary[currentLang].toastAutofillText);
+    });
+
+    function showSuccessToast(message) {
+      const toast = document.getElementById('successToast');
+      const toastText = document.getElementById('toastText');
+      if (message) {
+        toastText.textContent = message;
+      }
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 4000);
+    }
+  </script>
+</body>
+</html>

@@ -27,7 +27,8 @@
     "learnMore": "Learn more →",
     "tryAiReply": "Try AI Reply Assistant →",
     "tryAutofill": "Try Autofill AI →",
-    "tryWorkDesk": "Try WorkDesk →"
+    "tryWorkDesk": "Try WorkDesk →",
+    "viewAllFaqs": "View all FAQs →"
   },
   "extensions": {
     "hub": {
@@ -500,6 +501,42 @@
         "question": "Host Memory details aren't being used in replies",
         "answer": "Check that you've saved your property details in the Host Memory tab of the extension popup."
       }
+    },
+    "fileWhisperer": {
+      "sectionTitle": "FileWhisperer AI Support",
+      "subtitle": "Common Issues",
+      "q1": {
+        "question": "Why does the model download take so long?",
+        "answer": "On the first run, FileWhisperer AI downloads highly-optimized Llama-3 models (~2-4GB) to run completely offline. Depending on your internet speed, this might take several minutes, but once downloaded, you'll never need an internet connection again."
+      },
+      "q2": {
+        "question": "What file types are supported?",
+        "answer": "Currently, FileWhisperer AI supports PDF documents (.pdf), rich text (.rtf), Word documents (.docx), text files (.txt), markdown (.md), and Excel/CSV spreadsheets."
+      }
+    },
+    "receiptWhisperer": {
+      "sectionTitle": "ReceiptWhisperer AI Support",
+      "subtitle": "Common Issues",
+      "q1": {
+        "question": "The OCR engine skipped some items on my receipt",
+        "answer": "Extremely blurry scans, crumpled paper, or handwriting can lower OCR accuracy. Try straightening the receipt and scanning under good lighting. You can always manually double-click any parsed field to edit values directly."
+      },
+      "q2": {
+        "question": "How do I backup my expense data?",
+        "answer": "Go to Settings in the application and click 'Export Expense Vault'. This exports a self-contained database backup (.db) along with all categorized receipt images in a single ZIP archive."
+      }
+    },
+    "meetingWhisperer": {
+      "sectionTitle": "MeetingWhisperer AI Support",
+      "subtitle": "Common Issues",
+      "q1": {
+        "question": "My video file is taking too long to transcribe",
+        "answer": "High-definition video files can take longer to load. MeetingWhisperer AI automatically extracts the audio track first to save resources. Check your system's hardware acceleration in Settings — selecting CUDA (NVIDIA) or DirectML can speed up Whisper by up to 5x."
+      },
+      "q2": {
+        "question": "How do I improve speaker identification?",
+        "answer": "Local speaker diarization works best when speakers do not overlap or interrupt frequently. You can name detected speaker profiles (e.g. 'Speaker 1' -> 'Alice') in the audio transcript editor to update the names globally."
+      }
     }
   },
   "privacyPolicy": {
@@ -597,7 +634,10 @@
       "contact": "Contact",
       "sellerDesk": "SellerDesk AI",
       "recruitReply": "RecruitReply AI",
-      "propertyFillAi": "PropertyFill AI"
+      "propertyFillAi": "PropertyFill AI",
+      "fileWhisperer": "FileWhisperer AI",
+      "receiptWhisperer": "ReceiptWhisperer AI",
+      "meetingWhisperer": "MeetingWhisperer AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico AI Reply Assistant",
@@ -758,6 +798,75 @@
       "dataDeletion": {
         "sectionTitle": "Data deletion",
         "paragraph": "Uninstalling the extension removes all stored drafts and settings."
+      }
+    },
+    "fileWhisperer": {
+      "sectionTitle": "Donbrico FileWhisperer AI",
+      "whatWeCollect": {
+        "sectionTitle": "What data we collect",
+        "paragraph": "None. Your files are analyzed locally on your device. No document text, metadata, or analysis summaries are ever transmitted to Donbrico servers."
+      },
+      "howStored": {
+        "sectionTitle": "How data is stored",
+        "paragraph": "All indexed content, embeddings, and chat histories are stored locally in an encrypted database on your personal computer."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Third-party AI providers (Bring Your Own Key)",
+        "paragraph": "FileWhisperer AI defaults to fully offline local models. If you configure a third-party API key, text segments relevant to your query are securely sent to that provider to generate replies."
+      },
+      "permissions": {
+        "sectionTitle": "Permissions used",
+        "paragraph": "Local file system access (to read selected documents and save reports)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Data deletion",
+        "paragraph": "Deleting your project folder or uninstalling the app permanently removes all local databases and indexes."
+      }
+    },
+    "receiptWhisperer": {
+      "sectionTitle": "Donbrico ReceiptWhisperer AI",
+      "whatWeCollect": {
+        "sectionTitle": "What data we collect",
+        "paragraph": "None. Receipt scanning, text recognition, and category matching run fully in-process offline on your computer. Financial data is never shared."
+      },
+      "howStored": {
+        "sectionTitle": "How data is stored",
+        "paragraph": "All OCR transactions, receipt paths, and budgeting summaries are stored locally in a local SQLite file."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Third-party AI providers (Bring Your Own Key)",
+        "paragraph": "Local OCR runs 100% offline. If you connect external models for advanced categorizations, the metadata is processed securely via that provider."
+      },
+      "permissions": {
+        "sectionTitle": "Permissions used",
+        "paragraph": "File read/write access (to load receipt scans and write Excel sheets)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Data deletion",
+        "paragraph": "Uninstalling the desktop application clears all local expense records."
+      }
+    },
+    "meetingWhisperer": {
+      "sectionTitle": "Donbrico MeetingWhisperer AI",
+      "whatWeCollect": {
+        "sectionTitle": "What data we collect",
+        "paragraph": "None. All audio files, video files, and voice recordings are processed in-process using local Whisper engines. Your voice data is never sent to the internet."
+      },
+      "howStored": {
+        "sectionTitle": "How data is stored",
+        "paragraph": "Meeting transcripts, speaker tags, and summarized text are saved inside the local Vault database on your computer."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Third-party AI providers (Bring Your Own Key)",
+        "paragraph": "Whisper transcription runs completely offline. If you choose external models for summarizing transcripts, only the text content is shared with that provider."
+      },
+      "permissions": {
+        "sectionTitle": "Permissions used",
+        "paragraph": "Audio hardware access (microphone recording) and file read/write permissions."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Data deletion",
+        "paragraph": "Deleting a meeting from your local vault or uninstalling the app permanently purges the transcript data."
       }
     }
   },
@@ -1231,7 +1340,11 @@
     "blog": "Blog",
     "extensionsSellerDesk": "SellerDesk AI",
     "extensionsRecruitReply": "RecruitReply AI",
-    "extensionsPropertyFill": "PropertyFill AI"
+    "extensionsPropertyFill": "PropertyFill AI",
+    "tools": "Tools",
+    "toolsFileWhisperer": "FileWhisperer AI",
+    "toolsReceiptWhisperer": "ReceiptWhisperer AI",
+    "toolsMeetingWhisperer": "MeetingWhisperer AI"
   },
   "home2": {
     "page": {
@@ -3634,6 +3747,303 @@
       "q4": {
         "question": "What platforms are supported?",
         "answer": "Out of the box, it supports Centris, Realtor.ca, Zillow, Flexmls, and Matrix portals. We are continually adding support for more MLS platforms."
+      }
+    }
+  },
+  "fileWhisperer": {
+    "page": {
+      "title": "FileWhisperer AI — Local Offline File Analysis & Summarization",
+      "description": "Private local file summarization for PDF, text, and documents. Zero cloud data transmission. Uses local Hugging Face Transformers. Download from MS Store.",
+      "ogTitle": "FileWhisperer AI — Local Offline File Analysis & Summarization",
+      "ogDescription": "Private local file summarization for PDF, text, and documents. Zero cloud data transmission. Uses local Hugging Face Transformers. Download from MS Store."
+    },
+    "hero": {
+      "eyebrow": "DESKTOP APPLICATION",
+      "title": "Summarize files locally.<br>100% private, offline.",
+      "subtitle": "Extract details, translate, and analyze PDFs, documents, and spreadsheets entirely on your machine. No APIs, no cloud subscriptions, no data leaks.",
+      "buttonPrimary": "Get on Microsoft Store",
+      "buttonSecondary": "Get from Gumroad",
+      "disclaimer": "💻 Runs on Windows 10/11 · Fully offline · Local AI"
+    },
+    "howItWorks": {
+      "sectionTitle": "How It Works",
+      "step1": {
+        "title": "1. Drag & drop files",
+        "description": "Drop PDFs, text files, or Word documents into the clean desktop interface."
+      },
+      "step2": {
+        "title": "2. Process offline",
+        "description": "Local Hugging Face transformers parse text and build index vector structures entirely on your device."
+      },
+      "step3": {
+        "title": "3. Ask or summarize",
+        "description": "Ask questions in natural language, generate summaries, or translate sections with zero bytes uploaded."
+      }
+    },
+    "features": {
+      "sectionTitle": "Built for secure environments.",
+      "worksOffline": {
+        "title": "Works 100% offline",
+        "description": "Run it in air-gapped systems or on flights. No active internet connection is ever required."
+      },
+      "privacyFirst": {
+        "title": "Privacy by design",
+        "description": "Your confidential contracts, medical records, or research papers never leave your disk."
+      },
+      "batchProcessing": {
+        "title": "Batch PDF analysis",
+        "description": "Analyze whole directories of reports or documentation in seconds using structured local indexing."
+      },
+      "customPrompts": {
+        "title": "Custom prompts library",
+        "description": "Save your recurring prompts for translation, legal clause analysis, or bullet-point summaries."
+      },
+      "vectorSearch": {
+        "title": "Local Vector Search",
+        "description": "Find relevant paragraphs across hundreds of pages instantly using offline embedding models."
+      },
+      "noSubscription": {
+        "title": "One-time purchase",
+        "description": "No monthly recurring charges. Pay once, run forever on your device."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Local AI, direct license.",
+      "freeTrial": {
+        "title": "Basic / Trial",
+        "price": "Free",
+        "features": {
+          "f1": "Process files up to 10 pages",
+          "f2": "Standard summarization",
+          "f3": "Local Hugging Face runtime",
+          "f4": "No internet required"
+        },
+        "button": "Download Basic"
+      },
+      "proLifetime": {
+        "title": "Pro Lifetime",
+        "price": "$29 one-time",
+        "features": {
+          "f1": "Unlimited file pages and sizes",
+          "f2": "Advanced vector search & Q&A",
+          "f3": "Full custom prompt library",
+          "f4": "Priority offline updates",
+          "f5": "Priority customer support"
+        },
+        "button": "Buy Pro Lifetime"
+      }
+    },
+    "faq": {
+      "sectionTitle": "Frequently Asked Questions",
+      "q1": {
+        "question": "Where are my files uploaded?",
+        "answer": "Nowhere. FileWhisperer AI operates entirely on your physical computer. The AI models run in-process using local CPU/GPU acceleration via ONNX runtime, so no text is ever transmitted over the network."
+      },
+      "q2": {
+        "question": "What models does it use?",
+        "answer": "It is powered by local, highly-optimized open-source models like Llama-3-8B-Instruct (quantized) and lightweight embedding models from Hugging Face, running in a sandboxed Electron environment."
+      },
+      "q3": {
+        "question": "Is there a monthly subscription?",
+        "answer": "No. We believe desktop software should be owned, not rented. FileWhisperer AI is a one-time purchase that includes lifetime updates for that major version."
+      }
+    }
+  },
+  "receiptWhisperer": {
+    "page": {
+      "title": "ReceiptWhisperer AI — Private Offline Receipt Scanner & Expense Tracker",
+      "description": "Scan and track receipts locally with local AI. Private offline expense report generator for Chrome & Windows. Zero server storage.",
+      "ogTitle": "ReceiptWhisperer AI — Private Offline Receipt Scanner & Expense Tracker",
+      "ogDescription": "Scan and track receipts locally with local AI. Private offline expense report generator for Chrome & Windows. Zero server storage."
+    },
+    "hero": {
+      "eyebrow": "DESKTOP APPLICATION",
+      "title": "Organize expenses.<br>Offline and secure.",
+      "subtitle": "Extract merchant details, dates, items, tax, and totals from receipt images and PDFs locally. Generate clean reports without any financial data going to the cloud.",
+      "buttonPrimary": "Get on Microsoft Store",
+      "buttonSecondary": "Get from Gumroad",
+      "disclaimer": "💻 Runs on Windows 10/11 · Fully offline · Local OCR"
+    },
+    "howItWorks": {
+      "sectionTitle": "How It Works",
+      "step1": {
+        "title": "1. Import receipt scans",
+        "description": "Import PNG, JPG, or PDF scans of your receipts, invoices, or utility bills in one click."
+      },
+      "step2": {
+        "title": "2. Offline OCR",
+        "description": "Lightweight local OCR models analyze text and isolate financial fields entirely on your device."
+      },
+      "step3": {
+        "title": "3. Export sheets",
+        "description": "Classify items, tag expense groups, and export clean Excel or CSV reports ready for bookkeeping."
+      }
+    },
+    "features": {
+      "sectionTitle": "High-accuracy, local accounting.",
+      "worksOffline": {
+        "title": "Zero server dependency",
+        "description": "Process your business tax reports offline. No third-party API key, no slow cloud uploads."
+      },
+      "privacyFirst": {
+        "title": "Financial isolation",
+        "description": "Keep your sensitive business income and personal expenditure completely secure in your own hands."
+      },
+      "batchProcessing": {
+        "title": "Batch receipt scanning",
+        "description": "Import 50+ receipts simultaneously. Let the local pipeline categorize and structure them automatically."
+      },
+      "customPrompts": {
+        "title": "Smart tax tagger",
+        "description": "Create rule-based triggers or local heuristics to automatically tag items for IRS/CRA classification."
+      },
+      "vectorSearch": {
+        "title": "Dynamic budget graphing",
+        "description": "Visualize monthly costs and product trends offline with direct browser-embedded charting."
+      },
+      "noSubscription": {
+        "title": "Permanent license",
+        "description": "No subscription fees. A single, solid desktop license runs on your desktop indefinitely."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "No subscription, pay once.",
+      "freeTrial": {
+        "title": "Basic / Trial",
+        "price": "Free",
+        "features": {
+          "f1": "Process up to 20 receipts per month",
+          "f2": "Basic OCR field parsing",
+          "f3": "Single category tagging",
+          "f4": "No cloud sync"
+        },
+        "button": "Download Basic"
+      },
+      "proLifetime": {
+        "title": "Pro Lifetime",
+        "price": "$29 one-time",
+        "features": {
+          "f1": "Unlimited receipt uploads and processing",
+          "f2": "Full line-item itemization OCR",
+          "f3": "Advanced Excel/CSV/JSON exports",
+          "f4": "Multi-currency and exchange support",
+          "f5": "Priority customer support"
+        },
+        "button": "Buy Pro Lifetime"
+      }
+    },
+    "faq": {
+      "sectionTitle": "Frequently Asked Questions",
+      "q1": {
+        "question": "Is my bank information safe?",
+        "answer": "Yes. ReceiptWhisperer AI doesn't connect to bank APIs or sync with external servers. It reads documents and scans locally, leaving you in 100% control of your personal bank data."
+      },
+      "q2": {
+        "question": "How does the OCR function?",
+        "answer": "It runs an optimized offline Tesseract and CNN pipeline built directly into the application runtime, enabling zero-latency recognition without cloud delays."
+      },
+      "q3": {
+        "question": "Can I use it for tax audits?",
+        "answer": "Absolutely. Exported records include precise file links to matching receipt scans stored in your local directory, serving as clean, self-contained documentation for audits."
+      }
+    }
+  },
+  "meetingWhisperer": {
+    "page": {
+      "title": "MeetingWhisperer AI — Private Local Meeting Transcription & Notes",
+      "description": "High-accuracy local audio transcription. Convert audio files to text, summarize offline, and search meeting histories locally. Download from MS Store.",
+      "ogTitle": "MeetingWhisperer AI — Private Local Meeting Transcription & Notes",
+      "ogDescription": "High-accuracy local audio transcription. Convert audio files to text, summarize offline, and search meeting histories locally. Download from MS Store."
+    },
+    "hero": {
+      "eyebrow": "DESKTOP APPLICATION",
+      "title": "Transcribe meetings.<br>Privately, offline.",
+      "subtitle": "Convert meeting audio, voice notes, and lectures into formatted text locally using Whisper. Generate instant AI summaries and action items with zero cloud storage.",
+      "buttonPrimary": "Get on Microsoft Store",
+      "buttonSecondary": "Get from Gumroad",
+      "disclaimer": "💻 Runs on Windows 10/11 · Fully offline · Local Whisper ASR"
+    },
+    "howItWorks": {
+      "sectionTitle": "How It Works",
+      "step1": {
+        "title": "1. Import audio or video",
+        "description": "Drag and drop MP3, WAV, M4A, or MP4 files directly into the desktop dashboard."
+      },
+      "step2": {
+        "title": "2. Local transcription",
+        "description": "Optimized Whisper models transcribe text locally, utilizing your system's hardware acceleration."
+      },
+      "step3": {
+        "title": "3. AI analysis",
+        "description": "Generate action items, structure meeting notes, and run semantic search over your entire transcript vault."
+      }
+    },
+    "features": {
+      "sectionTitle": "Premium transcription, local cost.",
+      "worksOffline": {
+        "title": "Offline Whisper runtime",
+        "description": "Powered by whisper.cpp and ONNX acceleration. Get near-instant transcription speeds offline."
+      },
+      "privacyFirst": {
+        "title": "Protected conversations",
+        "description": "Transcribe board meetings, strategic reviews, or legal consultations knowing zero voice data is shared."
+      },
+      "batchProcessing": {
+        "title": "Speaker diarization",
+        "description": "Detect and label multiple speakers automatically from local acoustic profiles, locally."
+      },
+      "customPrompts": {
+        "title": "Action item generator",
+        "description": "Extract clear tasks, deadlines, and responsibilities with preconfigured offline post-processing templates."
+      },
+      "vectorSearch": {
+        "title": "Transcript Vault search",
+        "description": "Search all past transcribes using semantic query phrases (e.g. 'what did we decide about pricing?')."
+      },
+      "noSubscription": {
+        "title": "Perpetual ownership",
+        "description": "A simple single payment replaces expensive monthly third-party web-based transcribers."
+      }
+    },
+    "pricing": {
+      "sectionTitle": "Own your transcriber.",
+      "freeTrial": {
+        "title": "Basic / Trial",
+        "price": "Free",
+        "features": {
+          "f1": "Transcribe up to 15 minutes per file",
+          "f2": "Standard transcription engine",
+          "f3": "Basic markdown export",
+          "f4": "No speaker labeling"
+        },
+        "button": "Download Basic"
+      },
+      "proLifetime": {
+        "title": "Pro Lifetime",
+        "price": "$29 one-time",
+        "features": {
+          "f1": "Unlimited transcription length",
+          "f2": "High-accuracy Whisper engines",
+          "f3": "Automated speaker diarization",
+          "f4": "Advanced Vault semantic search",
+          "f5": "Priority customer support"
+        },
+        "button": "Buy Pro Lifetime"
+      }
+    },
+    "faq": {
+      "sectionTitle": "Frequently Asked Questions",
+      "q1": {
+        "question": "How fast is local transcription?",
+        "answer": "It depends on your hardware. On modern laptops with dedicated GPUs or neural accelerators, a 1-hour recording typically transcribes in under 5 minutes. Standard CPUs process it in about 15-20 minutes."
+      },
+      "q2": {
+        "question": "What languages are supported?",
+        "answer": "MeetingWhisperer AI supports over 30 languages, including English, Spanish, French, German, Japanese, Portuguese, Chinese, Hindi, Russian, and Korean."
+      },
+      "q3": {
+        "question": "Can it run in the background?",
+        "answer": "Yes. Simply minimize the app while the local thread processes your audio queue. A desktop notification will alert you when your transcript is ready."
       }
     }
   }

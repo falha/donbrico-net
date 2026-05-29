@@ -35,6 +35,23 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Tools / Whisperer Suite pages -->
+  <url>
+    <loc>https://donbrico.net/file-whisperer/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://donbrico.net/receipt-whisperer/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://donbrico.net/meeting-whisperer/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Solutions hub -->
   <url>
     <loc>https://donbrico.net/solutions/</loc>

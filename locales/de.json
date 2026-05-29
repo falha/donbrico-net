@@ -480,7 +480,43 @@
         "answer": "Überprüfen Sie, ob Sie Ihre Eigentumsdetails auf der Registerkarte „Hostspeicher“ des Erweiterungs-Popups gespeichert haben."
       }
     },
-    "heroCta": "Schicken Sie uns jetzt eine E-Mail"
+    "heroCta": "Schicken Sie uns jetzt eine E-Mail",
+    "fileWhisperer": {
+      "sectionTitle": "FileWhisperer AI-Unterstützung",
+      "subtitle": "Häufige Probleme",
+      "q1": {
+        "question": "Warum dauert der Modell-Download so lange?",
+        "answer": "Beim ersten Durchlauf lädt FileWhisperer AI hochoptimierte Llama-3-Modelle (~2–4 GB) herunter, um sie vollständig offline auszuführen. Abhängig von Ihrer Internetgeschwindigkeit kann dies einige Minuten dauern, aber nach dem Herunterladen benötigen Sie nie wieder eine Internetverbindung."
+      },
+      "q2": {
+        "question": "Welche Dateitypen werden unterstützt?",
+        "answer": "Derzeit unterstützt FileWhisperer AI PDF-Dokumente (.pdf), Rich Text (.rtf), Word-Dokumente (.docx), Textdateien (.txt), Markdown (.md) und Excel/CSV-Tabellen."
+      }
+    },
+    "receiptWhisperer": {
+      "sectionTitle": "ReceiptWhisperer AI-Unterstützung",
+      "subtitle": "Häufige Probleme",
+      "q1": {
+        "question": "Die OCR-Engine hat einige Elemente auf meiner Quittung übersprungen",
+        "answer": "Extrem verschwommene Scans, zerknittertes Papier oder Handschrift können die OCR-Genauigkeit beeinträchtigen. Versuchen Sie, den Beleg gerade auszurichten und bei guter Beleuchtung zu scannen. Sie können jederzeit manuell auf ein analysiertes Feld doppelklicken, um Werte direkt zu bearbeiten."
+      },
+      "q2": {
+        "question": "Wie sichere ich meine Spesendaten?",
+        "answer": "Gehen Sie in der Anwendung zu „Einstellungen“ und klicken Sie auf „Kostentresor exportieren“. Dadurch wird eine eigenständige Datenbanksicherung (.db) zusammen mit allen kategorisierten Belegbildern in ein einziges ZIP-Archiv exportiert."
+      }
+    },
+    "meetingWhisperer": {
+      "sectionTitle": "MeetingWhisperer AI-Unterstützung",
+      "subtitle": "Häufige Probleme",
+      "q1": {
+        "question": "Das Transkribieren meiner Videodatei dauert zu lange",
+        "answer": "Das Laden von hochauflösenden Videodateien kann länger dauern. MeetingWhisperer AI extrahiert automatisch zuerst die Audiospur, um Ressourcen zu sparen. Überprüfen Sie die Hardwarebeschleunigung Ihres Systems in den Einstellungen – die Auswahl von CUDA (NVIDIA) oder DirectML kann Whisper um das bis zu Fünffache beschleunigen."
+      },
+      "q2": {
+        "question": "Wie verbessere ich die Sprecheridentifikation?",
+        "answer": "Local speaker diarization works best when speakers do not overlap or interrupt frequently. You can name detected speaker profiles (e.g. 'Speaker 1' -> 'Alice') in the audio transcript editor to update the names globally."
+      }
+    }
   },
   "privacyPolicy": {
     "page": {
@@ -554,7 +590,10 @@
       "tradeDesk": "TradeDesk KI",
       "sellerDesk": "SellerDesk AI",
       "recruitReply": "RecruitReply AI",
-      "propertyFillAi": "PropertyFill AI"
+      "propertyFillAi": "PropertyFill AI",
+      "fileWhisperer": "FileWhisperer KI",
+      "receiptWhisperer": "ReceiptWhisperer AI",
+      "meetingWhisperer": "MeetingWhisperer AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico AI-Antwortassistent",
@@ -739,6 +778,75 @@
         "sectionTitle": "Datenlöschung",
         "paragraph": "Durch die Deinstallation der Erweiterung werden alle gespeicherten Entwürfe und Einstellungen entfernt."
       }
+    },
+    "fileWhisperer": {
+      "sectionTitle": "Donbrico FileWhisperer AI",
+      "whatWeCollect": {
+        "sectionTitle": "Welche Daten wir sammeln",
+        "paragraph": "Keiner. Ihre Dateien werden lokal auf Ihrem Gerät analysiert. Es werden niemals Dokumenttexte, Metadaten oder Analysezusammenfassungen an Donbrico-Server übertragen."
+      },
+      "howStored": {
+        "sectionTitle": "Wie Daten gespeichert werden",
+        "paragraph": "Alle indizierten Inhalte, Einbettungen und Chatverläufe werden lokal in einer verschlüsselten Datenbank auf Ihrem PC gespeichert."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "KI-Drittanbieter (Bring Your Own Key)",
+        "paragraph": "FileWhisperer AI verwendet standardmäßig vollständig offline verfügbare lokale Modelle. Wenn Sie einen API-Schlüssel eines Drittanbieters konfigurieren, werden für Ihre Anfrage relevante Textsegmente sicher an diesen Anbieter gesendet, um Antworten zu generieren."
+      },
+      "permissions": {
+        "sectionTitle": "Verwendete Berechtigungen",
+        "paragraph": "Zugriff auf das lokale Dateisystem (um ausgewählte Dokumente zu lesen und Berichte zu speichern)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Datenlöschung",
+        "paragraph": "Durch das Löschen Ihres Projektordners oder die Deinstallation der App werden alle lokalen Datenbanken und Indizes dauerhaft entfernt."
+      }
+    },
+    "receiptWhisperer": {
+      "sectionTitle": "Donbrico ReceiptWhisperer AI",
+      "whatWeCollect": {
+        "sectionTitle": "Welche Daten wir sammeln",
+        "paragraph": "Keiner. Das Scannen von Belegen, die Texterkennung und der Kategorieabgleich laufen vollständig offline auf Ihrem Computer. Finanzdaten werden niemals weitergegeben."
+      },
+      "howStored": {
+        "sectionTitle": "Wie Daten gespeichert werden",
+        "paragraph": "Alle OCR-Transaktionen, Belegpfade und Budgetierungszusammenfassungen werden lokal in einer lokalen SQLite-Datei gespeichert."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "KI-Drittanbieter (Bring Your Own Key)",
+        "paragraph": "Die lokale OCR läuft zu 100 % offline. Wenn Sie externe Modelle für erweiterte Kategorisierungen anbinden, werden die Metadaten sicher über diesen Anbieter verarbeitet."
+      },
+      "permissions": {
+        "sectionTitle": "Verwendete Berechtigungen",
+        "paragraph": "Lese-/Schreibzugriff auf Dateien (zum Laden von Quittungsscans und Schreiben von Excel-Tabellen)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Datenlöschung",
+        "paragraph": "Durch die Deinstallation der Desktop-Anwendung werden alle lokalen Spesenaufzeichnungen gelöscht."
+      }
+    },
+    "meetingWhisperer": {
+      "sectionTitle": "Donbrico MeetingFlüsterer KI",
+      "whatWeCollect": {
+        "sectionTitle": "Welche Daten wir sammeln",
+        "paragraph": "Keiner. Alle Audiodateien, Videodateien und Sprachaufzeichnungen werden prozessintern mithilfe lokaler Whisper-Engines verarbeitet. Ihre Sprachdaten werden niemals an das Internet gesendet."
+      },
+      "howStored": {
+        "sectionTitle": "Wie Daten gespeichert werden",
+        "paragraph": "Besprechungsprotokolle, Redner-Tags und zusammengefasster Text werden in der lokalen Vault-Datenbank auf Ihrem Computer gespeichert."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "KI-Drittanbieter (Bring Your Own Key)",
+        "paragraph": "Die Whisper-Transkription läuft vollständig offline. Wenn Sie externe Modelle zur Zusammenfassung von Transkripten wählen, wird nur der Textinhalt mit diesem Anbieter geteilt."
+      },
+      "permissions": {
+        "sectionTitle": "Verwendete Berechtigungen",
+        "paragraph": "Zugriff auf Audio-Hardware (Mikrofonaufnahme) und Lese-/Schreibberechtigungen für Dateien."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Datenlöschung",
+        "paragraph": "Wenn Sie ein Meeting aus Ihrem lokalen Tresor löschen oder die App deinstallieren, werden die Transkriptdaten dauerhaft gelöscht."
+      }
     }
   },
   "emails": {
@@ -768,7 +876,8 @@
     "learnMore": "Mehr erfahren →",
     "tryAiReply": "AI Reply Assistant testen →",
     "tryAutofill": "Autofill AI testen →",
-    "tryWorkDesk": "WorkDesk testen →"
+    "tryWorkDesk": "WorkDesk testen →",
+    "viewAllFaqs": "Alle FAQs anzeigen →"
   },
   "extensions": {
     "hub": {

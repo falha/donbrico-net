@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FileWhisperer AI — 常见问题解答 | Donbrico FAQ</title>
+    <meta name="description" content="从 Donbrico 网站的产品页面下载安装程序。FileWhisperer AI 是一款桌面应用，运行安装程序后，根据 Windows 或 macOS 的屏幕提示操作即可。安装过程中无需创建账户或连接互联网。" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/filewhisperer-ai/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/filewhisperer-ai/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/filewhisperer-ai/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/filewhisperer-ai/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/filewhisperer-ai/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/filewhisperer-ai/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/filewhisperer-ai/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/filewhisperer-ai/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/filewhisperer-ai/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/filewhisperer-ai/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/filewhisperer-ai/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/filewhisperer-ai/ko/faq/" />
+    <meta property="og:title" content="FileWhisperer AI — 常见问题解答 | Donbrico FAQ" />
+    <meta property="og:description" content="从 Donbrico 网站的产品页面下载安装程序。FileWhisperer AI 是一款桌面应用，运行安装程序后，根据 Windows 或 macOS 的屏幕提示操作即可。安装过程中无需创建账户或连接互联网。" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/filewhisperer-ai/zh_CN/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/filewhisperer-ai/zh_CN/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>FileWhisperer AI — 常见问题解答</h1>
+<h2>入门指南</h2>
+<h3>如何在电脑上安装 FileWhisperer AI？</h3>
+<p>从 Donbrico 网站的产品页面下载安装程序。FileWhisperer AI 是一款桌面应用，运行安装程序后，根据 Windows 或 macOS 的屏幕提示操作即可。安装过程中无需创建账户或连接互联网。</p>
+<h3>运行 FileWhisperer AI 需要什么系统配置？</h3>
+<p>您的电脑需要至少 8GB 内存和多核处理器，因为 AI 模型在本地运行。为获得最佳转录速度，建议配备 4GB 以上显存的独立显卡，但并非必需。基础安装包和模型文件约占用 2GB 磁盘空间。</p>
+<h3>如何转录我的第一个音频文件？</h3>
+<p>打开 FileWhisperer AI，点击&quot;导入文件&quot;按钮，从电脑中选择一个音频或视频文件。应用将自动使用默认 Whisper 模型开始处理。完成后，您的转录文本会显示在主窗口中，并提供可搜索的文本视图。</p>
+<h3>没有网络连接也能使用 FileWhisperer AI 吗？</h3>
+<p>是的，完全可以。FileWhisperer AI 专为 100% 离线使用而设计。所有 AI 处理都在您的设备上完成，因此您可以在咖啡馆、飞机上或安全办公室中转录文件，完全无需依赖互联网。</p>
+<h2>功能与使用</h2>
+<h3>FileWhisperer AI 支持哪些文件格式进行转录？</h3>
+<p>您可以导入常见的音频格式，如 MP3、WAV、M4A 和 FLAC，以及视频格式，包括 MP4、MOV 和 AVI。FileWhisperer AI 会自动从视频文件中提取音轨，并通过本地 Whisper 模型进行处理。</p>
+<h3>FileWhisperer AI 的批量文件处理是如何工作的？</h3>
+<p>使用导入对话框一次选择多个文件，或将包含媒体文件的文件夹拖放到应用程序窗口中。FileWhisperer AI 会将其排队，并依次处理每个文件。您可以监控每个文件的进度，并随时暂停或取消批量处理。</p>
+<h3>我的转录文本有哪些导出格式可用？</h3>
+<p>您可以将转录文本导出为纯文本 (TXT)、字幕文件 (SRT 和 VTT) 或格式化文档 (PDF)。每个导出选项都会保留时间戳和说话人标签（如果已启用）。只需点击任何已完成转录文本上的导出按钮，即可选择格式。</p>
+<h3>我可以在转录的文件中搜索内容吗？</h3>
+<p>是的，内置搜索功能让您可以即时在所有转录文本中查找关键词或短语。在免费版中，基本搜索仅扫描当前打开的转录文本。高级版增加了高级搜索功能，可索引您的整个库，包括文件日期和时长等元数据。</p>
+<h3>与云服务相比，转录准确度如何？</h3>
+<p>FileWhisperer AI 使用与许多云服务相同的 Whisper 模型架构，但完全在本地运行。准确度取决于音频质量和您选择的特定 Whisper 模型。对于清晰无噪的录音，您可以期待 95% 以上的准确度，与付费云替代方案相当。</p>
+<h2>隐私与安全</h2>
+<h3>FileWhisperer AI 会将我的文件发送到远程服务器吗？</h3>
+<p>不会。FileWhisperer AI 在您的本地机器上处理所有音频、视频和转录数据。没有任何数据会上传、分享或传输给 Donbrico 或任何第三方。您的文件和转录文本始终物理保存在您的电脑上。</p>
+<h3>本地 AI 模型如何处理敏感或机密录音？</h3>
+<p>由于 Whisper 模型在您的设备上运行，法律证词、医疗访谈或机密会议等敏感内容永远不会离开您的电脑。没有数据日志、没有云队列、也没有外部处理端点。您对所有转录文本的删除和存储拥有完全控制权。</p>
+<h3>我可以永久删除我的转录文本和临时文件吗？</h3>
+<p>可以。FileWhisperer AI 将转录文本和临时处理文件存储在本地应用程序文件夹中。您可以通过应用界面删除单个转录文本，或通过系统设置删除整个应用程序数据文件夹。不会有残留数据发送给 Donbrico。</p>
+<h3>FileWhisperer AI 是否符合 GDPR 或 HIPAA 等数据保护法规？</h3>
+<p>FileWhisperer AI 的隐私优先架构天然支持要求数据保留在本地的法规。由于没有数据被外部传输，您避免了云存储风险。不过，您应咨询组织的合规官，以确认符合具体政策。</p>
+<h2>定价与许可</h2>
+<h3>FileWhisperer AI 的免费版包含哪些功能？</h3>
+<p>免费版允许您每天转录最多 10 个文件，并可在当前转录文本中进行基本搜索。您可以完全访问所有导出格式，并享受相同的本地处理速度。这是在升级前测试准确度和工作流程的好方法。</p>
+<h3>高级终身许可证是如何运作的？</h3>
+<p>高级终身许可证价格为 14.99 美元，解锁无限每日转录、跨整个库的高级搜索以及软件更新的优先访问权。这是一次性付款，无需定期订阅。购买后，许可证与您的设备绑定。</p>
+<h3>高级许可证是否涵盖未来更新和新功能？</h3>
+<p>是的。高级终身许可证持有者可获得 FileWhisperer AI 的所有未来更新，包括新的 Whisper 模型集成、界面改进和功能新增。无需升级费用，也没有基于版本的分层定价。</p>
+<h2>故障排除</h2>
+<h3>为什么 FileWhisperer AI 转录文件需要很长时间？</h3>
+<p>转录速度取决于您的电脑硬件，特别是 CPU 和 GPU。较长的文件或配置较低的硬件会花费更多时间。尝试关闭其他应用程序以释放系统资源，或在设置菜单中选择较小的 Whisper 模型以加快处理速度。</p>
+<h3>转录文本有错误或缺失单词。如何提高准确度？</h3>
+<p>确保您的音频文件语音清晰且背景噪音最小。在 FileWhisperer AI 设置中，您可以选择更大的 Whisper 模型（例如，选择&quot;large&quot;而非&quot;small&quot;），这能提高准确度但会降低速度。对于口音较重或技术术语较多的语音，使用更大的模型会有显著帮助。</p>
+<h3>导入视频文件时 FileWhisperer AI 崩溃。该怎么办？</h3>
+<p>检查您的视频文件是否损坏，并使用支持的格式（MP4、MOV 或 AVI）。如果问题仍然存在，请更新您的显卡驱动程序，并确保 FileWhisperer AI 是最新版本。您也可以尝试将视频转换为纯音频格式（如 MP3）再导入。</p>
+<h3>我的转录文本在搜索结果中不显示。</h3>
+<p>在免费版中，搜索仅扫描当前打开的转录文本。请确保您已选择正确的文件。如果您是高级用户，请验证设置中是否启用了高级搜索索引。如果之前添加的文件缺失，请从设置菜单重建搜索索引。</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

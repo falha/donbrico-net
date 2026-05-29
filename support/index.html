@@ -101,6 +101,18 @@
               <a href="/recruit-reply/" data-i18n="nav.extensionsRecruitReply">RecruitReply AI</a>
               <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk"
                 >WorkDesk</a>
+              <span class="dropdown-group-label" style="display:block; margin-top:10px; font-size:0.7rem; color:var(--muted);" data-i18n="nav.tools">Tools</span>
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" data-i18n="nav.tools">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
             </div>
           </li>
           <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
@@ -394,6 +406,81 @@
           <p data-i18n="support.workDesk.q3.answer">
             Deleted workspaces are gone forever. However, you can use the
             'Archive' feature to hide workspaces without deleting them.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2 data-i18n="support.fileWhisperer.sectionTitle">
+          FileWhisperer AI Support
+        </h2>
+        <h3 data-i18n="support.fileWhisperer.subtitle">Common Issues</h3>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary style="cursor: pointer; font-weight: 600" data-i18n="support.fileWhisperer.q1.question">
+            Why does the model download take so long?
+          </summary>
+          <p data-i18n="support.fileWhisperer.q1.answer">
+            On the first run, FileWhisperer AI downloads highly-optimized Llama-3 models (~2-4GB) to run completely offline. Depending on your internet speed, this might take several minutes, but once downloaded, you'll never need an internet connection again.
+          </p>
+        </details>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary style="cursor: pointer; font-weight: 600" data-i18n="support.fileWhisperer.q2.question">
+            What file types are supported?
+          </summary>
+          <p data-i18n="support.fileWhisperer.q2.answer">
+            Currently, FileWhisperer AI supports PDF documents (.pdf), rich text (.rtf), Word documents (.docx), text files (.txt), markdown (.md), and Excel/CSV spreadsheets.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2 data-i18n="support.receiptWhisperer.sectionTitle">
+          ReceiptWhisperer AI Support
+        </h2>
+        <h3 data-i18n="support.receiptWhisperer.subtitle">Common Issues</h3>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary style="cursor: pointer; font-weight: 600" data-i18n="support.receiptWhisperer.q1.question">
+            The OCR engine skipped some items on my receipt
+          </summary>
+          <p data-i18n="support.receiptWhisperer.q1.answer">
+            Extremely blurry scans, crumpled paper, or handwriting can lower OCR accuracy. Try straightening the receipt and scanning under good lighting. You can always manually double-click any parsed field to edit values directly.
+          </p>
+        </details>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary style="cursor: pointer; font-weight: 600" data-i18n="support.receiptWhisperer.q2.question">
+            How do I backup my expense data?
+          </summary>
+          <p data-i18n="support.receiptWhisperer.q2.answer">
+            Go to Settings in the application and click 'Export Expense Vault'. This exports a self-contained database backup (.db) along with all categorized receipt images in a single ZIP archive.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2 data-i18n="support.meetingWhisperer.sectionTitle">
+          MeetingWhisperer AI Support
+        </h2>
+        <h3 data-i18n="support.meetingWhisperer.subtitle">Common Issues</h3>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary style="cursor: pointer; font-weight: 600" data-i18n="support.meetingWhisperer.q1.question">
+            My video file is taking too long to transcribe
+          </summary>
+          <p data-i18n="support.meetingWhisperer.q1.answer">
+            High-definition video files can take longer to load. MeetingWhisperer AI automatically extracts the audio track first to save resources. Check your system's hardware acceleration in Settings — selecting CUDA (NVIDIA) or DirectML can speed up Whisper by up to 5x.
+          </p>
+        </details>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary style="cursor: pointer; font-weight: 600" data-i18n="support.meetingWhisperer.q2.question">
+            How do I improve speaker identification?
+          </summary>
+          <p data-i18n="support.meetingWhisperer.q2.answer">
+            Local speaker diarization works best when speakers do not overlap or interrupt frequently. You can name detected speaker profiles (e.g. 'Speaker 1' -> 'Alice') in the audio transcript editor to update the names globally.
           </p>
         </details>
       </div>

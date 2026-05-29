@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>propertyfill — 자주 묻는 질문 | Donbrico FAQ</title>
+    <meta name="description" content="설치는 약 2분이면 완료됩니다. Chrome 웹 스토어 또는 사용 중인 브라우저의 확장 프로그램 마켓플레이스에 방문하여 "propertyfill by Donbrico"를 검색한 후 "확장 프로그램에 추가"를 클릭하세요. 설치가 완료되면 확장 프로그램을 툴바에 고정하고 아이콘을 클릭하여 " />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/propertyfill-ai/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/propertyfill-ai/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/propertyfill-ai/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/propertyfill-ai/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/propertyfill-ai/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/propertyfill-ai/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/propertyfill-ai/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/propertyfill-ai/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/propertyfill-ai/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/propertyfill-ai/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/propertyfill-ai/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/propertyfill-ai/ko/faq/" />
+    <meta property="og:title" content="propertyfill — 자주 묻는 질문 | Donbrico FAQ" />
+    <meta property="og:description" content="설치는 약 2분이면 완료됩니다. Chrome 웹 스토어 또는 사용 중인 브라우저의 확장 프로그램 마켓플레이스에 방문하여 "propertyfill by Donbrico"를 검색한 후 "확장 프로그램에 추가"를 클릭하세요. 설치가 완료되면 확장 프로그램을 툴바에 고정하고 아이콘을 클릭하여 " />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/propertyfill-ai/ko/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/propertyfill-ai/ko/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+              <span class="dropdown-group-label" style="display:block; margin-top:10px; font-size:0.7rem; color:var(--muted);" data-i18n="nav.tools">Tools</span>
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" data-i18n="nav.tools">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>propertyfill — 자주 묻는 질문</h1>
+<h2>시작하기</h2>
+<h3>propertyfill 브라우저 확장 프로그램은 어떻게 설치하나요?</h3>
+<p>설치는 약 2분이면 완료됩니다. Chrome 웹 스토어 또는 사용 중인 브라우저의 확장 프로그램 마켓플레이스에 방문하여 &quot;propertyfill by Donbrico&quot;를 검색한 후 &quot;확장 프로그램에 추가&quot;를 클릭하세요. 설치가 완료되면 확장 프로그램을 툴바에 고정하고 아이콘을 클릭하여 설정 패널을 열어 기본 언어와 공급자 설정을 구성하면 됩니다.</p>
+<h3>propertyfill을 처음 사용하기 전에 무엇이 필요한가요?</h3>
+<p>지원되는 브라우저(Chrome, Edge 또는 Firefox)와 초기 다운로드를 위한 활성 인터넷 연결이 필요합니다. 확장 프로그램 자체는 전적으로 기기 내에서 실행되므로, 맞춤 BYOK 설정을 사용하지 않는 한 계정 생성이나 API 키가 필요하지 않습니다. 설치 후 MLS 또는 CRM 텍스트 필드를 열고 원시 노트를 입력하기만 하면 됩니다.</p>
+<h3>propertyfill로 첫 번째 매물 설명을 어떻게 생성하나요?</h3>
+<p>설치 후 MLS 시스템 또는 CRM의 매물 입력 필드로 이동하세요. 텍스트 상자에 원시 중개인 노트를 입력하거나 붙여넣은 다음, 브라우저 툴바에서 propertyfill 아이콘을 클릭하고 &quot;매물 설명 생성&quot;을 선택하세요. AI가 노트를 로컬에서 처리하여 몇 초 내에 이중 언어 설명, 편의시설 목록, 방별 세부 정보를 생성합니다.</p>
+<h3>propertyfill은 기존 MLS 또는 CRM 플랫폼과 호환되나요?</h3>
+<p>네, propertyfill은 기존 웹 기반 도구 위에서 작동하도록 설계된 브라우저 확장 프로그램입니다. 표준 텍스트 입력 필드를 사용하는 모든 플랫폼(인기 MLS 시스템, CRM 플랫폼, 맞춤형 부동산 관리 소프트웨어 포함)과 통합됩니다. 웹페이지의 필드에 노트를 입력할 수 있다면 propertyfill이 처리할 수 있습니다.</p>
+<h2>기능 및 사용법</h2>
+<h3>propertyfill은 어떻게 이중 언어(영어/프랑스어) 매물 설명을 생성하나요?</h3>
+<p>처음 propertyfill을 설정할 때 원하는 출력 언어를 선택하거나 &quot;이중 언어&quot;를 선택할 수 있습니다. 그러면 기기 내 AI가 각 매물에 대해 영어와 프랑스어 설명을 병행하여 생성하며, 방 세부 정보, 편의시설 목록, SEO 키워드도 포함됩니다. 이는 수동 번역 없이 규정을 준수하는 이중 언어 콘텐츠가 필요한 퀘벡 부동산 전문가를 위해 특별히 제작되었습니다.</p>
+<h3>&quot;환각 방지 기능&quot;은 실제로 무엇을 방지하나요?</h3>
+<p>환각 방지 기능은 AI 출력에서 가짜 MLS 번호, 허위 평방피트, 조작된 가격 같은 조작된 데이터 포인트를 검사하는 안전 장치입니다. AI가 이러한 정보를 생성하면 해당 기능이 자동으로 제거하거나 수정한 후 매물 설명을 표시합니다. 이는 규정 위반을 초래하거나 구매자를 오도할 수 있는 현실적으로 보이지만 허위인 정보를 AI가 &quot;환각&quot;하는 일반적인 문제를 방지합니다.</p>
+<h3>propertyfill은 매물 설명을 방별로 세분화할 수 있나요?</h3>
+<p>네. 방을 언급하는 노트를 입력하면 propertyfill이 자동으로 각 방에 대한 개별 설명과 함께 방별 세부 정보를 생성합니다. 예를 들어, &quot;쿼츠로 리모델링한 주방, 마스터룸에 워크인 옷장&quot; 같은 노트가 주방과 마스터 침실에 대한 별도의 정리된 문단으로 변환됩니다. 노트가 덜 구조화된 경우 확장 프로그램 패널에서 수동으로 방별 생성을 실행할 수도 있습니다.</p>
+<h3>SEO 키워드 및 편의시설 목록 생성은 어떻게 작동하나요?</h3>
+<p>Propertyfill은 원시 노트와 생성된 매물 설명 텍스트를 분석하여 관련 키워드와 편의시설을 추출합니다. &quot;오픈 컨셉&quot;, &quot;화강암 조리대&quot;, &quot;하드우드 바닥&quot; 같은 검색 친화적인 용어 목록과 별도의 편의시설 체크리스트를 작성합니다. 둘 다 선택한 언어로 출력되며 매물 설명의 메타데이터나 기능 필드에 직접 복사할 수 있습니다.</p>
+<h3>생성된 설명의 톤이나 길이를 맞춤 설정할 수 있나요?</h3>
+<p>현재 propertyfill은 부동산 매물 설명에 최적화된 전문적이고 세련된 톤을 사용합니다. 원시 노트를 작성하는 방식으로 출력에 영향을 줄 수 있습니다. 더 상세한 노트일수록 더 풍부한 매물 설명이 생성됩니다. 향후 업데이트에는 톤 프리셋이 포함될 수 있지만, 핵심 설계는 스타일 변형보다 정확성과 완전성을 우선시합니다.</p>
+<h2>프라이버시 및 보안</h2>
+<h3>propertyfill은 내 데이터를 어디에서 처리하나요? 기기에서, 아니면 클라우드에서?</h3>
+<p>모든 AI 처리는 전적으로 기기 내에서 이루어집니다. &quot;매물 설명 생성&quot;을 클릭하면 원시 노트가 브라우저 확장 프로그램에 저장된 AI 모델에 의해 로컬에서 처리됩니다. 노트, 생성된 매물 설명, 모든 부동산 세부 정보를 포함한 어떤 데이터도 Donbrico의 서버나 타사 클라우드 서비스로 전송되지 않습니다.</p>
+<h3>propertyfill은 내 매물 데이터를 저장하거나 기록하나요?</h3>
+<p>아니요. propertyfill은 매물 데이터를 저장, 기록 또는 캐시하지 않습니다. AI가 출력을 생성하여 확장 프로그램 패널에 표시하면, 원시 노트와 생성된 콘텐츠는 브라우저의 임시 메모리에만 존재합니다. 확장 프로그램을 닫거나 페이지를 새로고침하면 모든 내용이 지워집니다. Donbrico는 귀하의 매물에 접근할 수 없습니다.</p>
+<h3>내 중개 회사에서 propertyfill이 생성한 내용을 감사하거나 모니터링할 수 있나요?</h3>
+<p>모든 처리가 로컬에서 이루어지고 데이터가 브라우저를 떠나지 않기 때문에, propertyfill은 서버 측 로그나 감사 추적을 생성하지 않습니다. 중개 회사는 MLS나 CRM에 붙여넣은 후의 최종 매물 설명만 볼 수 있습니다. 이는 수동으로 입력한 것과 동일합니다. 중개 회사에서 내부 로깅이 필요한 경우 기존 워크플로 도구를 통해 구현해야 합니다.</p>
+<h3>propertyfill은 클라우드 기반 AI 부동산 작성 도구와 어떻게 다른가요?</h3>
+<p>클라우드 기반 도구는 처리를 위해 노트와 부동산 세부 정보를 외부 서버로 전송하므로 잠재적인 프라이버시 위험과 데이터 보존 문제가 발생합니다. propertyfill은 모든 것을 기기에 보관하므로 노트가 네트워크에 닿지 않습니다. 또한 초기 다운로드 후 오프라인에서도 작동하며 API 사용량에 따른 구독료가 없습니다.</p>
+<h2>가격 및 라이선싱</h2>
+<h3>propertyfill은 무료인가요, 아니면 유료 버전이 있나요?</h3>
+<p>Propertyfill은 프리미엄 모델로 운영됩니다. 무료 티어는 월별 제한된 횟수의 매물 설명 생성을 포함하며, 가끔 사용하거나 테스트하기에 충분합니다. 프리미엄 티어는 무제한 생성, 신규 기능 우선 접근, 맞춤형 AI 모델을 위한 자체 API 키 사용(BYOK) 기능을 제공합니다. 가격 세부 정보는 Donbrico 가격 페이지에서 확인할 수 있습니다.</p>
+<h3>BYOK 옵션은 무엇이며, 누가 필요하나요?</h3>
+<p>BYOK는 &quot;Bring Your Own Key&quot;의 약자입니다. 중개 회사가 선호하는 AI 공급자가 있거나 특정 모델을 사용하려는 경우 propertyfill 설정에 자체 API 키를 입력할 수 있습니다. 이는 이미 AI 계약이 있거나 회사 승인 모델과의 일관성을 유지하려는 에이전시에 유용합니다. 무료 티어는 Donbrico의 기본 기기 내 모델을 사용합니다.</p>
+<h3>propertyfill이 내 워크플로에 맞지 않으면 환불받을 수 있나요?</h3>
+<p>네, Donbrico는 프리미엄 구독에 대해 14일 환불 보장을 제공합니다. propertyfill이 워크플로에 맞지 않거나 기대에 미치지 못할 경우 처음 2주 이내에 지원팀에 문의하면 전액 환불받을 수 있습니다. 무료 티어 사용자는 유료 플랜에 가입하기 전에 확장 프로그램을 무료로 테스트할 수 있습니다.</p>
+<h2>문제 해결</h2>
+<h3>propertyfill이 버튼을 클릭해도 아무것도 생성하지 않습니다. 무엇이 문제인가요?</h3>
+<p>먼저 확장 프로그램이 툴바에 고정되어 있고 활성화되어 있는지 확인하세요. 브라우저 업데이트로 확장 프로그램이 비활성화되는 경우가 있습니다. 다음으로, 페이지의 입력 필드에 텍스트가 입력되어 있는지 확인하세요. propertyfill은 빈 필드에서는 생성되지 않습니다. 그래도 작동하지 않으면 페이지를 새로고침하거나 브라우저를 다시 시작해 보세요. 지속적인 문제는 마켓플레이스에서 확장 프로그램을 다시 설치해야 할 수 있습니다.</p>
+<h3>생성된 매물 설명에 잘못된 정보나 누락된 세부 정보가 있습니다.</h3>
+<p>이는 일반적으로 원시 노트가 너무 모호하거나 모호한 용어를 포함할 때 발생합니다. propertyfill은 구체적이고 구조화된 노트(예: &quot;침실 3개, 욕실 2개, 2022년 리모델링한 주방, 전체 하드우드 바닥&quot;)에서 가장 잘 작동합니다. AI가 무언가를 잘못 해석하면 복사하기 전에 확장 프로그램 패널에서 출력을 직접 편집할 수 있습니다. 반복적인 부정확성이 발생하면 노트에 모순된 정보가 포함되어 있지 않은지 확인하세요.</p>
+<h3>propertyfill이 내 MLS 또는 CRM 플랫폼 필드를 감지하지 못합니다.</h3>
+<p>일부 맞춤형 또는 오래된 플랫폼은 propertyfill이 자동으로 인식하지 못하는 비표준 입력 필드를 사용합니다. 확장 프로그램을 활성화하기 전에 텍스트 필드를 직접 클릭해 보세요. 그래도 필드를 감지하지 못하면 확장 프로그램 패널의 &quot;수동 모드&quot; 옵션을 사용하여 노트를 propertyfill에 직접 붙여넣은 후 생성된 출력을 플랫폼에 다시 복사하세요.</p>
+<h3>확장 프로그램이 브라우저를 느리게 하거나 충돌을 일으킵니다.</h3>
+<p>기기 내 AI 처리는 컴퓨터의 CPU와 RAM을 사용합니다. 여러 개의 무거운 애플리케이션(비디오 편집 소프트웨어 또는 많은 브라우저 탭 등)을 실행 중인 경우 propertyfill이 지연을 유발할 수 있습니다. 매물 설명을 생성하기 전에 불필요한 탭이나 애플리케이션을 닫으세요. 충돌이 지속되면 기기가 최소 시스템 요구 사항을 충족하지 못할 수 있습니다. 하드웨어 권장 사항은 Donbrico 지원 페이지를 확인하세요.</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

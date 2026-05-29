@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FileWhisperer AI — Häufig gestellte Fragen | Donbrico FAQ</title>
+    <meta name="description" content="Laden Sie das Installationsprogramm von der Donbrico-Website über die Produkt-URL herunter. FileWhisperer AI ist eine Desktop-Anwendung – führen Sie das Install" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/filewhisperer-ai/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/filewhisperer-ai/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/filewhisperer-ai/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/filewhisperer-ai/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/filewhisperer-ai/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/filewhisperer-ai/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/filewhisperer-ai/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/filewhisperer-ai/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/filewhisperer-ai/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/filewhisperer-ai/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/filewhisperer-ai/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/filewhisperer-ai/ko/faq/" />
+    <meta property="og:title" content="FileWhisperer AI — Häufig gestellte Fragen | Donbrico FAQ" />
+    <meta property="og:description" content="Laden Sie das Installationsprogramm von der Donbrico-Website über die Produkt-URL herunter. FileWhisperer AI ist eine Desktop-Anwendung – führen Sie das Install" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/filewhisperer-ai/de/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/filewhisperer-ai/de/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>FileWhisperer AI — Häufig gestellte Fragen</h1>
+<h2>Erste Schritte</h2>
+<h3>Wie installiere ich FileWhisperer AI auf meinem Computer?</h3>
+<p>Laden Sie das Installationsprogramm von der Donbrico-Website über die Produkt-URL herunter. FileWhisperer AI ist eine Desktop-Anwendung – führen Sie das Installationsprogramm aus und folgen Sie den Anweisungen auf dem Bildschirm für Windows oder macOS. Für die Einrichtung ist weder ein Konto noch eine Internetverbindung erforderlich.</p>
+<h3>Welche Systemanforderungen gelten für FileWhisperer AI?</h3>
+<p>Sie benötigen einen Computer mit mindestens 8 GB RAM und einem Multi-Core-Prozessor, da die KI-Modelle lokal ausgeführt werden. Für optimale Transkriptionsgeschwindigkeit wird eine dedizierte GPU mit 4 GB+ VRAM empfohlen, ist aber nicht zwingend erforderlich. Die Anwendung benötigt etwa 2 GB Speicherplatz für die Basisinstallation und die Modelldateien.</p>
+<h3>Wie transkribiere ich meine erste Audiodatei?</h3>
+<p>Öffnen Sie FileWhisperer AI, klicken Sie auf die Schaltfläche &quot;Dateien importieren&quot; und wählen Sie eine Audio- oder Videodatei von Ihrem Computer aus. Die App beginnt automatisch mit der Verarbeitung unter Verwendung des Standard-Whisper-Modells. Sobald der Vorgang abgeschlossen ist, wird Ihr Transkript im Hauptfenster mit einer durchsuchbaren Textansicht angezeigt.</p>
+<h3>Kann ich FileWhisperer AI ohne Internetverbindung nutzen?</h3>
+<p>Ja, absolut. FileWhisperer AI wurde für die 100%ige Offline-Nutzung entwickelt. Die gesamte KI-Verarbeitung erfolgt auf Ihrem Gerät, sodass Sie Dateien im Café, im Flugzeug oder in einem sicheren Büro ohne Internetabhängigkeit transkribieren können.</p>
+<h2>Funktionen &amp; Nutzung</h2>
+<h3>Welche Dateiformate unterstützt FileWhisperer AI für die Transkription?</h3>
+<p>Sie können gängige Audioformate wie MP3, WAV, M4A und FLAC sowie Videoformate wie MP4, MOV und AVI importieren. FileWhisperer AI extrahiert automatisch die Tonspur aus Videodateien und verarbeitet sie über das lokale Whisper-Modell.</p>
+<h3>Wie funktioniert die Stapelverarbeitung in FileWhisperer AI?</h3>
+<p>Wählen Sie mehrere Dateien gleichzeitig über den Importdialog aus oder ziehen Sie einen Ordner mit Mediendateien per Drag &amp; Drop in das Anwendungsfenster. FileWhisperer AI reiht sie in eine Warteschlange ein und verarbeitet jede Datei nacheinander. Sie können den Fortschritt pro Datei verfolgen und den Stapel jederzeit anhalten oder abbrechen.</p>
+<h3>Welche Exportformate stehen für meine Transkripte zur Verfügung?</h3>
+<p>Sie können Transkripte als einfachen Text (TXT), Untertiteldateien (SRT und VTT) oder formatierte Dokumente (PDF) exportieren. Jede Exportoption behält Zeitstempel und Sprecherbezeichnungen bei, sofern Sie diese aktiviert haben. Klicken Sie einfach auf die Export-Schaltfläche eines fertigen Transkripts, um Ihr Format zu wählen.</p>
+<h3>Kann ich in meinen transkribierten Dateien suchen?</h3>
+<p>Ja, die integrierte Suchfunktion ermöglicht es Ihnen, Schlüsselwörter oder Phrasen sofort in allen Ihren Transkripten zu finden. In der kostenlosen Version durchsucht die Basissuche das aktuell geöffnete Transkript. Die Premium-Version bietet eine erweiterte Suche, die Ihre gesamte Bibliothek indiziert, einschließlich Metadaten wie Dateidatum und -dauer.</p>
+<h3>Wie genau ist die Transkription im Vergleich zu Cloud-Diensten?</h3>
+<p>FileWhisperer AI verwendet dieselbe Whisper-Modellarchitektur, die viele Cloud-Dienste antreibt, läuft jedoch vollständig lokal. Die Genauigkeit hängt von der Audioqualität und dem gewählten Whisper-Modell ab. Bei klaren, rauschfreien Aufnahmen können Sie eine Genauigkeit von über 95 % erwarten – vergleichbar mit kostenpflichtigen Cloud-Alternativen.</p>
+<h2>Datenschutz &amp; Sicherheit</h2>
+<h3>Sendet FileWhisperer AI meine Dateien an einen externen Server?</h3>
+<p>Nein. FileWhisperer AI verarbeitet alle Audio-, Video- und Transkriptionsdaten auf Ihrem lokalen Rechner. Es werden keine Daten an Donbrico oder Dritte hochgeladen, weitergegeben oder übertragen. Ihre Dateien und Transkripte bleiben jederzeit physisch auf Ihrem Computer.</p>
+<h3>Wie geht das lokale KI-Modell mit sensiblen oder vertraulichen Aufnahmen um?</h3>
+<p>Da das Whisper-Modell auf Ihrem Gerät läuft, verlassen vertrauliche Inhalte wie juristische Aussagen, medizinische Interviews oder klassifizierte Besprechungen niemals Ihren Computer. Es gibt keine Datenprotokolle, keine Cloud-Warteschlangen und keine externen Verarbeitungsendpunkte. Sie haben die vollständige Kontrolle über Löschung und Speicherung aller Transkripte.</p>
+<h3>Kann ich meine Transkripte und temporären Dateien endgültig löschen?</h3>
+<p>Ja. FileWhisperer AI speichert Transkripte und temporäre Verarbeitungsdateien in einem lokalen Anwendungsordner. Sie können einzelne Transkripte über die App-Oberfläche löschen oder den gesamten Anwendungsdatenordner über Ihre Systemeinstellungen entfernen. Es werden keine Restdaten an Donbrico gesendet.</p>
+<h3>Ist FileWhisperer AI konform mit Datenschutzbestimmungen wie der DSGVO oder HIPAA?</h3>
+<p>Die datenschutzorientierte Architektur von FileWhisperer AI unterstützt grundsätzlich die Einhaltung von Vorschriften, die verlangen, dass Daten lokal verbleiben. Da keine Daten extern übertragen werden, vermeiden Sie Cloud-Speicherrisiken. Sie sollten jedoch den Datenschutzbeauftragten Ihres Unternehmens konsultieren, um die Übereinstimmung mit spezifischen Richtlinien zu bestätigen.</p>
+<h2>Preise &amp; Lizenzierung</h2>
+<h3>Was ist in der kostenlosen Version von FileWhisperer AI enthalten?</h3>
+<p>Die kostenlose Version ermöglicht Ihnen die Transkription von bis zu 10 Dateien pro Tag mit Basissuche innerhalb des aktuellen Transkripts. Sie haben vollen Zugriff auf alle Exportformate und dieselbe lokale Verarbeitungsgeschwindigkeit. Dies ist eine gute Möglichkeit, Genauigkeit und Arbeitsablauf zu testen, bevor Sie ein Upgrade durchführen.</p>
+<h3>Wie funktioniert die Premium-Lifetime-Lizenz?</h3>
+<p>Die Premium-Lifetime-Lizenz kostet 14,99 $ und schaltet unbegrenzte tägliche Transkriptionen, erweiterte Suche in Ihrer gesamten Bibliothek sowie vorrangigen Zugang zu Software-Updates frei. Es handelt sich um eine einmalige Zahlung ohne wiederkehrende Abonnements. Nach dem Kauf ist die Lizenz an Ihr Gerät gebunden.</p>
+<h3>Deckt die Premium-Lizenz zukünftige Updates und neue Funktionen ab?</h3>
+<p>Ja. Inhaber einer Premium-Lifetime-Lizenz erhalten alle zukünftigen Updates von FileWhisperer AI, einschließlich neuer Whisper-Modellintegrationen, UI-Verbesserungen und Funktionserweiterungen. Es fallen keine Upgrade-Gebühren oder versionsabhängigen Preisstufen an.</p>
+<h2>Fehlerbehebung</h2>
+<h3>Warum benötigt FileWhisperer AI so lange für die Transkription einer Datei?</h3>
+<p>Die Transkriptionsgeschwindigkeit hängt von der Hardware Ihres Computers ab, insbesondere von CPU und GPU. Längere Dateien oder schwächere Hardware benötigen mehr Zeit. Versuchen Sie, andere Anwendungen zu schließen, um Systemressourcen freizugeben, oder wechseln Sie im Einstellungsmenü zu einem kleineren Whisper-Modell für schnellere Verarbeitung.</p>
+<h3>Das Transkript enthält Fehler oder fehlende Wörter. Wie kann ich die Genauigkeit verbessern?</h3>
+<p>Stellen Sie sicher, dass Ihre Audiodatei eine klare Sprache mit minimalen Hintergrundgeräuschen enthält. In den FileWhisperer AI-Einstellungen können Sie ein größeres Whisper-Modell auswählen (z. B. &quot;large&quot; statt &quot;small&quot;), was die Genauigkeit auf Kosten der Geschwindigkeit verbessert. Bei stark akzentuierter Sprache oder Fachjargon hilft die Verwendung des größeren Modells erheblich.</p>
+<h3>FileWhisperer AI stürzt ab, wenn ich eine Videodatei importieren möchte. Was soll ich tun?</h3>
+<p>Überprüfen Sie, ob Ihre Videodatei nicht beschädigt ist und ein unterstütztes Format verwendet (MP4, MOV oder AVI). Wenn das Problem weiterhin besteht, aktualisieren Sie Ihre Grafiktreiber und stellen Sie sicher, dass FileWhisperer AI die neueste Version ist. Sie können auch versuchen, das Video in ein reines Audioformat wie MP3 zu konvertieren und stattdessen zu importieren.</p>
+<h3>Meine Transkripte werden nicht in den Suchergebnissen angezeigt.</h3>
+<p>In der kostenlosen Version durchsucht die Suche nur das aktuell geöffnete Transkript. Stellen Sie sicher, dass die richtige Datei ausgewählt ist. Wenn Sie ein Premium-Nutzer sind, überprüfen Sie, ob die erweiterte Suchindizierung in den Einstellungen aktiviert ist. Erstellen Sie den Suchindex über das Einstellungsmenü neu, wenn zuvor hinzugefügte Dateien fehlen.</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

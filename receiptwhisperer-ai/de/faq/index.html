@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReceiptWhisperer AI – Häufig gestellte Fragen | Donbrico FAQ</title>
+    <meta name="description" content="Laden Sie das Installationsprogramm von der Donbrico-Produktseite über die angegebene URL herunter. Führen Sie die heruntergeladene Datei aus und folgen Sie den" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/receiptwhisperer-ai/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/receiptwhisperer-ai/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/receiptwhisperer-ai/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/receiptwhisperer-ai/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/receiptwhisperer-ai/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/receiptwhisperer-ai/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/receiptwhisperer-ai/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/receiptwhisperer-ai/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/receiptwhisperer-ai/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/receiptwhisperer-ai/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/receiptwhisperer-ai/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/receiptwhisperer-ai/ko/faq/" />
+    <meta property="og:title" content="ReceiptWhisperer AI – Häufig gestellte Fragen | Donbrico FAQ" />
+    <meta property="og:description" content="Laden Sie das Installationsprogramm von der Donbrico-Produktseite über die angegebene URL herunter. Führen Sie die heruntergeladene Datei aus und folgen Sie den" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/receiptwhisperer-ai/de/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/receiptwhisperer-ai/de/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>ReceiptWhisperer AI – Häufig gestellte Fragen</h1>
+<h2>Erste Schritte</h2>
+<h3>Wie installiere ich ReceiptWhisperer AI auf meinem Computer?</h3>
+<p>Laden Sie das Installationsprogramm von der Donbrico-Produktseite über die angegebene URL herunter. Führen Sie die heruntergeladene Datei aus und folgen Sie den Anweisungen auf dem Bildschirm – keine komplexe Konfiguration erforderlich. Nach der Installation starten Sie die Anwendung und können sofort mit dem Scannen von Belegen beginnen.</p>
+<h3>Welche Dateiformate werden für den Beleg-Upload unterstützt?</h3>
+<p>ReceiptWhisperer AI unterstützt sowohl Bilddateien (wie JPEG und PNG) als auch PDF-Dokumente. Sie können diese Dateien direkt per Drag &amp; Drop in die Anwendung ziehen oder über die Upload-Schaltfläche aus Ihrem Dateisystem auswählen.</p>
+<h3>Benötige ich eine Internetverbindung, um ReceiptWhisperer AI zu nutzen?</h3>
+<p>Nein, das ist nicht erforderlich. Die gesamte KI- und OCR-Verarbeitung erfolgt lokal auf Ihrem Rechner, sodass Sie Belege vollständig offline scannen und organisieren können. Eine Internetverbindung wird nur zum Herunterladen der Software oder zum Exportieren von Daten in Cloud-Dienste benötigt, falls gewünscht.</p>
+<h3>Wie scanne ich meinen ersten Beleg?</h3>
+<p>Öffnen Sie ReceiptWhisperer AI und klicken Sie auf die Upload-Schaltfläche oder ziehen Sie ein Belegbild oder PDF in den dafür vorgesehenen Bereich. Die KI verarbeitet die Datei automatisch und extrahiert innerhalb von Sekunden Händlernamen, Datum, Gesamtbetrag und Einzelposten. Überprüfen Sie die extrahierten Daten, nehmen Sie bei Bedarf Korrekturen vor und speichern Sie sie in Ihrer organisierten Bibliothek.</p>
+<h2>Funktionen &amp; Nutzung</h2>
+<h3>Wie genau ist die OCR bei handschriftlichen Belegen?</h3>
+<p>ReceiptWhisperer AI verwendet eine fortschrittliche KI-basierte OCR, die sowohl gedruckte als auch die meisten handschriftlichen Texte verarbeiten kann. Die Genauigkeit hängt von der Lesbarkeit des Originalbelegs ab, aber bei standardmäßigen gedruckten Belegen ist die Extraktion von Schlüsselfeldern wie Gesamtbeträgen und Daten äußerst zuverlässig. Bei handschriftlichen Belegen können die Ergebnisse variieren – Sie können extrahierte Daten jederzeit manuell bearbeiten.</p>
+<h3>Kann ich meine Belegdaten in Buchhaltungssoftware exportieren?</h3>
+<p>Ja, Sie können Ihre organisierten Belegdaten in CSV, PDF und andere gängige Formate exportieren. So können Sie die Daten in Buchhaltungstools wie QuickBooks, Excel oder Ihr bevorzugtes Ausgabenverwaltungssystem importieren. Wählen Sie einfach die gewünschten Belege aus und das gewünschte Exportformat.</p>
+<h3>Wie funktionieren die intelligente Kategorisierung und das Tagging?</h3>
+<p>ReceiptWhisperer AI analysiert automatisch den Händlernamen und die Einzelposten, um eine Kategorie zuzuweisen, z. B. „Bürobedarf“ oder „Reise“. Sie können auch benutzerdefinierte Tags erstellen, um Ihre Ausgaben weiter zu organisieren. Diese Kategorien und Tags sind vollständig bearbeitbar, sodass Sie sie an Ihre persönliche oder geschäftliche Buchhaltungsstruktur anpassen können.</p>
+<h3>Kann ich mehrere Belege auf einmal scannen?</h3>
+<p>Ja, Sie können mehrere Belegbilder oder PDFs in einem Batch hochladen. ReceiptWhisperer AI verarbeitet jede Datei einzeln und zeigt die extrahierten Daten in einer Warteschlange an. Dies ist besonders nützlich für Freiberufler oder Reisende, die nach einer Reise mehrere Belege verarbeiten müssen.</p>
+<h3>Erkennt die App Einzelposten von Lebensmittel- oder Einzelhandelsbelegen?</h3>
+<p>Ja, die KI ist darauf trainiert, einzelne Posten inklusive Produktnamen, Mengen und Preisen zu extrahieren. Bei komplexen Belegen mit vielen Artikeln kann eine kurze Überprüfung der extrahierten Daten erforderlich sein, aber die überwältigende Mehrheit der Einzelposten wird korrekt erfasst. Diese Funktion ist besonders hilfreich für ausgabenbewusste Personen, die detaillierte Ausgaben verfolgen möchten.</p>
+<h2>Datenschutz &amp; Sicherheit</h2>
+<h3>Werden meine Finanzdaten auf Cloud-Servern gespeichert?</h3>
+<p>Nein. ReceiptWhisperer AI verarbeitet alle Daten lokal auf Ihrem Rechner – Ihre Belegbilder und extrahierten Informationen verlassen niemals Ihren Computer. Dadurch bleiben Ihre Finanzdaten vollständig privat und unter Ihrer Kontrolle.</p>
+<h3>Sendet die KI meine Belegdaten an Drittanbieter?</h3>
+<p>Nein, die KI sendet keine Daten an Drittanbieter. Die gesamte OCR- und Datenextraktion erfolgt lokal mit den integrierten Modellen der Anwendung. Daten verlassen Ihren Rechner nur dann, wenn Sie manuell eine Datei exportieren oder in einem externen Dienst speichern.</p>
+<h3>Kann ich ReceiptWhisperer AI auf einem Firmencomputer mit strengen IT-Richtlinien nutzen?</h3>
+<p>Ja, da die Anwendung vollständig offline läuft und keine Cloud-Konnektivität erfordert, ist sie für die Nutzung auf firmeneigenen Geräten geeignet. Sie sollten jedoch die Software-Installationsrichtlinien Ihres Unternehmens prüfen, bevor Sie eine Desktop-Anwendung installieren. Während der normalen Nutzung werden keine Daten über das Netzwerk übertragen.</p>
+<h3>Wie sind meine Daten geschützt, wenn ich meinen Laptop verliere?</h3>
+<p>Da alle Daten lokal auf Ihrem Rechner gespeichert sind, ist Ihre Beleginformation nur so sicher wie die Sicherheitsmaßnahmen Ihres Geräts. Wir empfehlen die Verwendung einer vollständigen Festplattenverschlüsselung und regelmäßiger Backups, um Ihre Daten zu schützen. ReceiptWhisperer AI selbst speichert keine Daten extern.</p>
+<h2>Preise &amp; Lizenzierung</h2>
+<h3>Was beinhaltet die kostenlose Version?</h3>
+<p>Die kostenlose Version von ReceiptWhisperer AI umfasst grundlegende Scan-Funktionen und erlaubt die Verarbeitung von bis zu 10 Belegen pro Monat. Sie erhalten weiterhin die volle KI-gestützte OCR-Extraktion und lokale Verarbeitung, jedoch mit einem monatlichen Limit. Dies ist ideal für Gelegenheitsnutzer oder diejenigen, die die Software vor einer Kaufentscheidung testen möchten.</p>
+<h3>Wie viel kostet die Premium-Version und was bekomme ich dafür?</h3>
+<p>Preisdetails für die Premium-Version finden Sie auf der Donbrico-Produktseite. Die Premium-Stufe hebt das monatliche Limit von 10 Belegen auf, bietet erweiterte Funktionen wie Batch-Scanning und benutzerdefinierte Tags sowie Prioritäts-Support. Besuchen Sie die Produkt-URL für die aktuellen Preise und Tarifoptionen.</p>
+<h3>Gibt es eine Einmalkauf-Option oder nur ein Abonnement?</h3>
+<p>ReceiptWhisperer AI wird als Abonnement-Produkt angeboten, mit monatlichen und jährlichen Abrechnungsoptionen. Das Abonnementmodell stellt sicher, dass Sie fortlaufende Updates, Verbesserungen der KI-Modelle und technischen Support erhalten. Derzeit gibt es keine Einmalkauf-Option.</p>
+<h2>Fehlerbehebung</h2>
+<h3>Warum erkennt ReceiptWhisperer AI keinen Text auf meinem Beleg?</h3>
+<p>Stellen Sie zunächst sicher, dass Ihr Belegbild klar, gut beleuchtet und nicht unscharf ist. Scans von schlechter Qualität oder stark zerknitterte Belege können die OCR-Genauigkeit beeinträchtigen. Wenn das Problem weiterhin besteht, konvertieren Sie die Datei in ein anderes Format (z. B. von PDF zu PNG) und laden Sie sie erneut hoch. Sie können die extrahierten Felder auch manuell bearbeiten, falls die KI Daten falsch liest.</p>
+<h3>Die Anwendung läuft langsam, wenn ich mehrere Belege verarbeite. Was kann ich tun?</h3>
+<p>Die Batch-Verarbeitung vieler hochauflösender Bilder kann ressourcenintensiv sein. Schließen Sie andere Anwendungen, um Systemspeicher freizugeben, und erwägen Sie, sehr große Bilder vor dem Hochladen zu verkleinern. ReceiptWhisperer AI ist für die lokale Verarbeitung optimiert, daher hängt die Leistung von der CPU und dem RAM Ihres Computers ab.</p>
+<h3>Ich habe versehentlich einen Beleg gelöscht. Kann ich ihn wiederherstellen?</h3>
+<p>Belege werden lokal in der Datenbank der Anwendung gespeichert, und es gibt keine integrierte Funktion für einen Papierkorb oder Rückgängig-Machung bei Löschungen. Wir empfehlen dringend, Ihre Daten regelmäßig als CSV oder PDF zu exportieren, um ein Backup zu haben. Wenn Sie keinen Export durchgeführt haben, ist der gelöschte Beleg möglicherweise nicht wiederherstellbar.</p>
+<h3>Die App startet nach der Installation nicht. Was soll ich tun?</h3>
+<p>Stellen Sie sicher, dass Ihr Computer die auf der Donbrico-Produktseite aufgeführten Mindestsystemanforderungen erfüllt. Versuchen Sie unter Windows, die Anwendung als Administrator auszuführen (Rechtsklick und „Als Administrator ausführen“ auswählen). Wenn sie immer noch nicht startet, installieren Sie die Anwendung neu oder kontaktieren Sie den Support über die Donbrico-Website für weitere Hilfe.</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

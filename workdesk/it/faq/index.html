@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WorkDesk — Domande Frequenti | Donbrico FAQ</title>
+    <meta name="description" content="Installa WorkDesk direttamente dal Chrome Web Store cercando "WorkDesk" o visitando la pagina del prodotto su donbrico.net/workdesk. Clicca su "Aggiungi a Chrom" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/workdesk/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/workdesk/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/workdesk/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/workdesk/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/workdesk/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/workdesk/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/workdesk/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/workdesk/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/workdesk/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/workdesk/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/workdesk/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/workdesk/ko/faq/" />
+    <meta property="og:title" content="WorkDesk — Domande Frequenti | Donbrico FAQ" />
+    <meta property="og:description" content="Installa WorkDesk direttamente dal Chrome Web Store cercando "WorkDesk" o visitando la pagina del prodotto su donbrico.net/workdesk. Clicca su "Aggiungi a Chrom" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/workdesk/it/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/workdesk/it/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+              <span class="dropdown-group-label" style="display:block; margin-top:10px; font-size:0.7rem; color:var(--muted);" data-i18n="nav.tools">Tools</span>
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" data-i18n="nav.tools">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>WorkDesk — Domande Frequenti</h1>
+<h2>Per Iniziare</h2>
+<h3>Come installo WorkDesk sul mio browser Chrome?</h3>
+<p>Installa WorkDesk direttamente dal Chrome Web Store cercando &quot;WorkDesk&quot; o visitando la pagina del prodotto su donbrico.net/workdesk. Clicca su &quot;Aggiungi a Chrome&quot; e conferma l&#39;installazione. Una volta installato, vedrai l&#39;icona di WorkDesk nella barra degli strumenti del browser.</p>
+<h3>Cosa succede la prima volta che apro WorkDesk?</h3>
+<p>Dopo l&#39;installazione, clicca sull&#39;icona di WorkDesk per aprire il pannello di controllo. Vedrai un&#39;opzione per salvare la finestra corrente del browser come primo spazio di lavoro. WorkDesk rileva automaticamente tutte le schede e i gruppi di schede aperti, così puoi nominare e salvare il tuo spazio di lavoro immediatamente, senza alcuna configurazione.</p>
+<h3>Devo creare un account per usare WorkDesk?</h3>
+<p>Non è richiesto alcun account o registrazione. WorkDesk è progettato per funzionare completamente offline e localmente sul tuo computer. Tutti i dati dei tuoi spazi di lavoro sono memorizzati nello storage locale del browser, quindi puoi iniziare a salvare e ripristinare spazi di lavoro subito dopo l&#39;installazione.</p>
+<h3>Come salvo il mio primo spazio di lavoro?</h3>
+<p>Apri il popup di WorkDesk cliccando sulla sua icona nella barra degli strumenti, poi clicca sul pulsante &quot;Salva spazio di lavoro corrente&quot;. Dai un nome al tuo spazio di lavoro, ad esempio &quot;Progetto di ricerca&quot; o &quot;Sprint di sviluppo&quot;, e WorkDesk catturerà tutte le schede aperte e le loro assegnazioni ai gruppi di schede. Puoi anche aggiungere una descrizione per identificare più facilmente lo spazio di lavoro in seguito.</p>
+<h2>Funzionalità e Utilizzo</h2>
+<h3>Posso salvare e ripristinare i gruppi di schede con WorkDesk?</h3>
+<p>Sì, WorkDesk supporta completamente i gruppi di schede di Chrome. Quando salvi uno spazio di lavoro, tutti i tuoi gruppi di schede esistenti, inclusi nomi e colori, vengono preservati. Quando ripristini quello spazio di lavoro in seguito, i tuoi gruppi di schede riappaiono esattamente come li hai lasciati, risparmiandoti di dover riorganizzare le schede manualmente.</p>
+<h3>Come posso passare da uno spazio di lavoro all&#39;altro senza chiudere le schede correnti?</h3>
+<p>Clicca sull&#39;icona di WorkDesk e seleziona lo spazio di lavoro a cui vuoi passare. WorkDesk salverà le tue schede correnti in background e ripristinerà istantaneamente il nuovo spazio di lavoro. Il tuo spazio di lavoro precedente rimane salvato, così puoi tornare indietro in qualsiasi momento senza perdere il contesto o dover aggiungere tutto ai segnalibri.</p>
+<h3>Posso organizzare i miei spazi di lavoro per progetto o argomento?</h3>
+<p>Assolutamente. WorkDesk ti permette di nominare ogni spazio di lavoro e aggiungere descrizioni opzionali. Puoi anche riordinare gli spazi di lavoro nel pannello di controllo trascinandoli. Questo rende facile raggruppare gli spazi di lavoro per progetto, cliente, argomento di ricerca o qualsiasi sistema si adatti al tuo flusso di lavoro.</p>
+<h3>WorkDesk funziona con schede fissate e più finestre?</h3>
+<p>Sì, WorkDesk cattura le schede fissate e preserva il loro stato di fissaggio durante il ripristino. Supporta anche più finestre di Chrome all&#39;interno di un singolo spazio di lavoro. Se hai schede distribuite su più finestre, WorkDesk le salverà e ripristinerà tutte, mantenendo intatta la struttura delle finestre.</p>
+<h3>Posso condividere uno spazio di lavoro con un collega o tra dispositivi?</h3>
+<p>WorkDesk memorizza tutti i dati localmente sul tuo computer e non include funzionalità di sincronizzazione cloud o condivisione. Questa è una scelta progettuale per mantenere la tua privacy. Se devi condividere uno spazio di lavoro, puoi esportare manualmente le tue schede o aggiungerle ai segnalibri, ma WorkDesk è focalizzato sulla gestione personale e locale degli spazi di lavoro.</p>
+<h2>Privacy e Sicurezza</h2>
+<h3>Dove vengono memorizzati i dati dei miei spazi di lavoro?</h3>
+<p>Tutti i dati degli spazi di lavoro sono memorizzati interamente nello storage locale del tuo browser. WorkDesk non invia alcun dato a server esterni, servizi cloud o terze parti. Le tue schede, URL e informazioni sui gruppi di schede non lasciano mai il tuo computer.</p>
+<h3>WorkDesk raccoglie o vende i miei dati di navigazione?</h3>
+<p>No. WorkDesk è un&#39;estensione incentrata sulla privacy che raccoglie zero analytics, telemetria o dati personali. Non ci sono tracker, log di utilizzo o condivisione di dati. L&#39;estensione opera completamente offline e non ha permessi di rete oltre a quelli necessari per leggere le tue schede correnti.</p>
+<h3>WorkDesk utilizza l&#39;AI o elabora il contenuto delle mie schede?</h3>
+<p>WorkDesk non utilizza AI, machine learning o alcuna forma di elaborazione dei contenuti. Legge solo gli URL e i metadati dei gruppi di schede delle tue schede aperte per salvare e ripristinare spazi di lavoro. Non legge il contenuto delle pagine, non traccia la tua attività e non analizza il tuo comportamento di navigazione.</p>
+<h3>WorkDesk è sicuro da usare con schede sensibili o riservate?</h3>
+<p>Sì. Poiché WorkDesk memorizza tutto localmente e non trasmette dati da nessuna parte, è sicuro per lavori sensibili. Che tu stia facendo ricerche per un caso legale, gestendo dati finanziari o gestendo informazioni riservate dei clienti, le tue schede rimangono private sul tuo computer.</p>
+<h2>Prezzi e Licenze</h2>
+<h3>WorkDesk è gratuito?</h3>
+<p>WorkDesk offre un livello gratuito che include funzionalità principali come salvare e ripristinare spazi di lavoro. Potrebbero esserci funzionalità premium o limiti di utilizzo in futuro, ma la versione attuale è completamente funzionale per la maggior parte degli utenti. Controlla la pagina del prodotto su donbrico.net/workdesk per i dettagli più recenti sui prezzi.</p>
+<h3>Cosa è incluso nella versione premium?</h3>
+<p>Se è disponibile una versione premium, include tipicamente archiviazione illimitata degli spazi di lavoro, funzionalità di organizzazione avanzate e supporto prioritario. La versione gratuita è progettata per essere pienamente utilizzabile per la gestione quotidiana degli spazi di lavoro senza obbligarti a un piano a pagamento.</p>
+<h3>Come pago per WorkDesk, e c&#39;è un abbonamento?</h3>
+<p>I dettagli sul pagamento e sugli abbonamenti sono disponibili sulla pagina del prodotto WorkDesk. WorkDesk potrebbe offrire un acquisto una tantum o un modello di abbonamento. Non c&#39;è fatturazione automatica senza il tuo consenso, e puoi cancellare in qualsiasi momento se è previsto un abbonamento.</p>
+<h2>Risoluzione dei Problemi</h2>
+<h3>WorkDesk non salva tutte le mie schede. Cosa dovrei controllare?</h3>
+<p>Per prima cosa, assicurati di aver concesso a WorkDesk i permessi necessari per leggere le tue schede. Puoi verificarlo nelle impostazioni delle estensioni di Chrome sotto &quot;Accesso al sito&quot;. Inoltre, verifica di non avere pagine speciali di Chrome aperte (come chrome://settings o chrome://extensions), poiché queste non possono essere salvate. Riavvia Chrome e riprova se il problema persiste.</p>
+<h3>Ho ripristinato uno spazio di lavoro, ma alcune schede non si sono caricate. Perché?</h3>
+<p>Di solito accade se una scheda non è più disponibile (ad esempio, una pagina eliminata o un link rotto). WorkDesk salva gli URL che avevi aperti, ma non può garantire che quelle pagine esistano ancora. Inoltre, se hai abilitato l&#39;impostazione di Chrome &quot;Continua da dove hai interrotto&quot;, potrebbe interferire con il ripristino di WorkDesk. Prova a disabilitare quella impostazione nelle opzioni di avvio di Chrome.</p>
+<h3>Come disinstallo WorkDesk senza perdere i miei spazi di lavoro?</h3>
+<p>Prima di disinstallare, apri WorkDesk e annota manualmente o esporta i nomi e gli URL dei tuoi spazi di lavoro, poiché disinstallare l&#39;estensione cancellerà tutti i dati memorizzati localmente. Per disinstallare, clicca con il tasto destro sull&#39;icona di WorkDesk, seleziona &quot;Rimuovi da Chrome&quot; e conferma. I tuoi spazi di lavoro andranno persi, quindi fai prima un backup di tutto ciò che è importante.</p>
+<h3>WorkDesk sembra lento o non risponde. Come posso risolvere?</h3>
+<p>Prova a chiudere le schede non necessarie e a riavviare Chrome. WorkDesk è leggero, ma se hai centinaia di schede in un singolo spazio di lavoro, le prestazioni potrebbero rallentare. Puoi anche provare a rimuovere gli spazi di lavoro inutilizzati dal pannello di controllo per ridurre i dati che WorkDesk deve gestire. Se il problema persiste, re-installa l&#39;estensione dal Chrome Web Store.</p>
+
+        
+    <div style="background:linear-gradient(135deg,rgba(99,102,241,0.12),rgba(139,92,246,0.12));border:1px solid rgba(99,102,241,0.3);border-radius:12px;padding:24px 28px;margin:var(--spacing-lg) 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+      <div>
+        <div style="font-weight:700;font-size:1.1rem;margin-bottom:4px;">🚀 Try it free — no credit card required</div>
+        <div style="color:var(--muted);font-size:0.9rem;">Available for Chrome, Edge, and Brave</div>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="https://chromewebstore.google.com/detail/donbrico-workdesk/kilfjjkfocajofinfhplccpmojdjplhb" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+          Installa su Chrome
+        </a>
+        <a href="https://donbrico.net/workdesk" style="display:inline-flex;align-items:center;gap:6px;color:var(--accent);padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:500;font-size:0.95rem;border:1px solid rgba(99,102,241,0.4);">Learn More →</a>
+      </div>
+    </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

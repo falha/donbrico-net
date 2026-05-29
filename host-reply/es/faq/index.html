@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HostReply AI — Preguntas Frecuentes | Donbrico FAQ</title>
+    <meta name="description" content="Visita la página del producto en donbrico.net/hostreply-ai y sigue el enlace de descarga de Chrome Web Store. Haz clic en "Añadir a Chrome" y confirma la instal" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/host-reply/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/host-reply/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/host-reply/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/host-reply/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/host-reply/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/host-reply/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/host-reply/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/host-reply/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/host-reply/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/host-reply/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/host-reply/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/host-reply/ko/faq/" />
+    <meta property="og:title" content="HostReply AI — Preguntas Frecuentes | Donbrico FAQ" />
+    <meta property="og:description" content="Visita la página del producto en donbrico.net/hostreply-ai y sigue el enlace de descarga de Chrome Web Store. Haz clic en "Añadir a Chrome" y confirma la instal" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/host-reply/es/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/host-reply/es/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+              <span class="dropdown-group-label" style="display:block; margin-top:10px; font-size:0.7rem; color:var(--muted);" data-i18n="nav.tools">Tools</span>
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" data-i18n="nav.tools">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>HostReply AI — Preguntas Frecuentes</h1>
+<h2>Primeros Pasos</h2>
+<h3>¿Cómo instalo la extensión de Chrome HostReply AI?</h3>
+<p>Visita la página del producto en donbrico.net/hostreply-ai y sigue el enlace de descarga de Chrome Web Store. Haz clic en &quot;Añadir a Chrome&quot; y confirma la instalación. Una vez instalado, verás el icono de HostReply AI en la barra de herramientas de tu navegador, listo para usar en Airbnb, Vrbo y Booking.com.</p>
+<h3>¿Necesito crear una cuenta para empezar a usar HostReply AI?</h3>
+<p>No es necesario crear ninguna cuenta para empezar. HostReply AI funciona directamente en tu navegador tras la instalación. La extensión procesa todo localmente, por lo que no hay que iniciar sesión ni registrarse: solo instala y abre un hilo de mensajes de huéspedes en tu plataforma preferida para comenzar.</p>
+<h3>¿Cómo genero mi primera respuesta a un huésped con HostReply AI?</h3>
+<p>Abre cualquier conversación con un huésped en Airbnb, Vrbo o Booking.com. Haz clic en el icono de HostReply AI en la barra de herramientas del navegador o en el botón integrado que aparece cerca del campo de entrada de mensajes. La extensión analizará el historial de la conversación y generará una respuesta contextual. Puedes revisarla, editarla y enviarla directamente desde la ventana emergente.</p>
+<h3>¿Puedo usar HostReply AI tanto en mi ordenador de sobremesa como en mi portátil?</h3>
+<p>Sí, al ser una extensión de Chrome, HostReply AI se sincroniza en cualquier dispositivo donde hayas iniciado sesión con el mismo navegador Chrome. Instálala una vez en cada dispositivo y tus ajustes, plantillas y preferencias de voz se transferirán automáticamente si tienes la sincronización de Chrome activada.</p>
+<h2>Funciones y Uso</h2>
+<h3>¿Cómo genera HostReply AI respuestas que suenan como yo?</h3>
+<p>La extensión aprende tu estilo de escritura a partir del historial de conversaciones en la plataforma. Analiza tus mensajes anteriores para detectar patrones de tono, formalidad y redacción. También puedes configurar una preferencia de voz personalizada en el panel de ajustes para reforzar opciones de lenguaje específicas, como informal o profesional.</p>
+<h3>¿Puede HostReply AI gestionar mensajes de entrada y salida automáticamente?</h3>
+<p>Sí, HostReply AI incluye plantillas rápidas para instrucciones de llegada, recordatorios de salida y otras situaciones habituales. Puedes activar estas plantillas con un solo clic desde la ventana emergente de la extensión. Cada plantilla extrae los detalles relevantes de la reserva del contexto de la conversación, para que no tengas que escribir la fecha o el nombre del huésped manualmente.</p>
+<h3>¿Funciona HostReply AI en Vrbo y Booking.com, o solo en Airbnb?</h3>
+<p>HostReply AI está diseñado específicamente para las tres plataformas principales: Airbnb, Vrbo y Booking.com. Cuando abres un hilo de mensajes en cualquiera de estos sitios, la extensión detecta la plataforma y adapta la generación de respuestas para ajustarse a la interfaz y la estructura típica de los mensajes.</p>
+<h3>¿Cómo personalizo las plantillas rápidas en HostReply AI?</h3>
+<p>Abre los ajustes de la extensión haciendo clic derecho en el icono de HostReply AI y seleccionando &quot;Opciones&quot;. Desde allí, puedes editar las plantillas predeterminadas para llegada, salida, llegada tardía y otras respuestas comunes. También puedes crear nuevas plantillas desde cero y asignarlas a palabras clave o estados de reserva específicos.</p>
+<h3>¿HostReply AI traducirá los mensajes de los huéspedes por mí?</h3>
+<p>HostReply AI puede generar respuestas en el mismo idioma del mensaje entrante del huésped. Si un huésped escribe en francés, la respuesta sugerida estará en francés. Para idiomas no totalmente compatibles con el modelo de IA local, la extensión te pedirá que verifiques la traducción antes de enviarla.</p>
+<h2>Privacidad y Seguridad</h2>
+<h3>¿Dónde se almacenan los datos de las conversaciones con mis huéspedes?</h3>
+<p>Todo el procesamiento de datos ocurre localmente en tu ordenador. HostReply AI no envía tus conversaciones con huéspedes, detalles de reservas ni información personal a ningún servidor externo. La extensión utiliza un modelo de IA local que funciona completamente dentro de tu navegador, por lo que tus datos nunca salen de tu dispositivo.</p>
+<h3>¿Comparte HostReply AI mis datos de anfitrión con terceros?</h3>
+<p>No. HostReply AI está diseñado como una herramienta centrada en la privacidad. No hay análisis de terceros, ni almacenamiento en la nube de tus mensajes, ni intercambio de datos con anunciantes o proveedores de plataformas. El único dato transmitido es la comprobación de actualización de la extensión, algo estándar en todas las extensiones de Chrome.</p>
+<h3>¿Pueden los equipos de gestión de propiedades usar HostReply AI sin exponer los datos de los huéspedes entre sí?</h3>
+<p>Sí. Dado que todo el procesamiento es local en el navegador de cada usuario, los miembros del equipo pueden instalar HostReply AI en sus propios dispositivos sin centralizar los datos de los huéspedes. Cada anfitrión o gestor mantiene el control total de sus propias conversaciones, y ningún servidor compartido almacena el historial de mensajes del equipo.</p>
+<h3>¿Qué ocurre con mis datos si desinstalo la extensión?</h3>
+<p>Desinstalar HostReply AI elimina la extensión y sus datos locales de tu navegador. Cualquier plantilla o preferencia de voz que hayas guardado se elimina junto con la extensión. Tus conversaciones con huéspedes en Airbnb, Vrbo o Booking.com no se ven afectadas y permanecen en esas plataformas con normalidad.</p>
+<h2>Precios y Licencias</h2>
+<h3>¿Existe una versión gratuita de HostReply AI y qué incluye?</h3>
+<p>Sí, HostReply AI ofrece un nivel gratuito que incluye generación básica de respuestas y acceso a las plantillas rápidas estándar. La versión gratuita tiene un límite de respuestas por día. Para uso ilimitado y funciones avanzadas como entrenamiento de voz personalizado y creación de plantillas, necesitas la licencia premium.</p>
+<h3>¿Cuánto cuesta la versión premium y cómo se paga?</h3>
+<p>Los precios de HostReply AI se indican en la página del producto en donbrico.net/hostreply-ai. La licencia premium es un pago único o una suscripción, según el plan vigente. El pago se procesa de forma segura a través de Chrome Web Store o la página de pago de Donbrico, y puedes actualizar desde la versión gratuita en cualquier momento.</p>
+<h3>¿Puedo obtener un reembolso si HostReply AI no funciona para mi propiedad?</h3>
+<p>Las políticas de reembolso las gestiona la plataforma donde compraste la licencia (Chrome Web Store o Donbrico directamente). Consulta los términos de reembolso específicos en el momento de la compra. La mayoría de los productos digitales ofrecen un plazo de reembolso de 30 días si la extensión no funciona como se describe.</p>
+<h2>Solución de Problemas</h2>
+<h3>¿Por qué no aparece HostReply AI en mi página de mensajes de Airbnb?</h3>
+<p>Primero, asegúrate de que la extensión esté activada en Chrome yendo a <code>chrome://extensions</code> y activando HostReply AI. Si aún no aparece, intenta actualizar la pestaña de Airbnb o reiniciar Chrome. Algunos bloqueadores de anuncios o extensiones de privacidad pueden interferir: prueba a desactivarlos temporalmente para verificarlo.</p>
+<h3>HostReply AI genera respuestas que no se ajustan a mi estilo como anfitrión. ¿Cómo lo soluciono?</h3>
+<p>Abre los ajustes de la extensión y revisa tus preferencias de voz. Si no has configurado una voz personalizada, la extensión usa tu historial de conversaciones por defecto, lo que puede necesitar algunos mensajes para calibrarse. Intenta enviar de 5 a 10 respuestas manuales primero para darle a la IA local más datos de aprendizaje, y luego vuelve a generar.</p>
+<h3>La extensión funciona lentamente o se congela. ¿Qué debo hacer?</h3>
+<p>HostReply AI ejecuta un modelo de IA local, que puede consumir muchos recursos en ordenadores antiguos. Cierra otras pestañas o aplicaciones pesadas del navegador para liberar memoria. Si el problema persiste, ve a <code>chrome://extensions</code>, desactiva HostReply AI, vuelve a activarlo y reinicia Chrome. Para problemas de rendimiento continuos, consulta la página del producto para ver si hay problemas conocidos o actualizaciones.</p>
+<h3>¿Puedo usar HostReply AI en un ordenador compartido o del trabajo?</h3>
+<p>Sí, pero ten en cuenta que el modelo de IA local y las plantillas guardadas se almacenan en ese perfil específico de Chrome. Si inicias sesión con otra cuenta de Chrome en el mismo ordenador, deberás instalar y configurar HostReply AI de nuevo. En ordenadores compartidos, asegúrate de cerrar sesión en Chrome para proteger tus datos de anfitrión.</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

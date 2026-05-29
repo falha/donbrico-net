@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TradeDesk AI — Perguntas Frequentes | Donbrico FAQ</title>
+    <meta name="description" content="Instale o TradeDesk AI diretamente da Chrome Web Store ou da loja de extensões do seu navegador. Após adicioná-lo, o ícone do TradeDesk aparecerá na barra de fe" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/trade-desk/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/trade-desk/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/trade-desk/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/trade-desk/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/trade-desk/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/trade-desk/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/trade-desk/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/trade-desk/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/trade-desk/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/trade-desk/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/trade-desk/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/trade-desk/ko/faq/" />
+    <meta property="og:title" content="TradeDesk AI — Perguntas Frequentes | Donbrico FAQ" />
+    <meta property="og:description" content="Instale o TradeDesk AI diretamente da Chrome Web Store ou da loja de extensões do seu navegador. Após adicioná-lo, o ícone do TradeDesk aparecerá na barra de fe" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/trade-desk/pt_BR/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/trade-desk/pt_BR/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+              <span class="dropdown-group-label" style="display:block; margin-top:10px; font-size:0.7rem; color:var(--muted);" data-i18n="nav.tools">Tools</span>
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" data-i18n="nav.tools">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>TradeDesk AI — Perguntas Frequentes</h1>
+<h2>Primeiros Passos</h2>
+<h3>Como instalo o TradeDesk AI no meu navegador?</h3>
+<p>Instale o TradeDesk AI diretamente da Chrome Web Store ou da loja de extensões do seu navegador. Após adicioná-lo, o ícone do TradeDesk aparecerá na barra de ferramentas do navegador — clique nele para abrir o painel de configuração, onde você inserirá sua chave de API e configurará seu perfil profissional.</p>
+<h3>O que preciso para começar a usar o TradeDesk AI?</h3>
+<p>Você precisa de três coisas: um navegador compatível (Chrome, Edge ou Firefox), uma chave de API de um provedor como OpenAI, Groq ou Anthropic, e os dados básicos do seu negócio. Assim que inserir a chave nas configurações da extensão, você já pode começar a gerar respostas — sem necessidade de cadastro ou cartão de crédito no plano gratuito.</p>
+<h3>Preciso criar uma conta no Donbrico para usar a extensão?</h3>
+<p>Não é necessária nenhuma conta. O TradeDesk AI funciona inteiramente pela extensão do navegador usando sua própria chave de API. Não há login na nuvem, senha para lembrar ou banco de dados de usuários — basta instalar, configurar e começar a redigir.</p>
+<h3>Como configuro meu perfil profissional pela primeira vez?</h3>
+<p>Abra o painel da extensão e vá até a seção &quot;Perfil Profissional&quot;. Preencha o nome da sua empresa, telefone, e-mail, número de licença e área de atendimento. Depois de salvar, o TradeDesk AI preencherá automaticamente esses dados em cada resposta, orçamento e estimativa que você gerar — poupando o trabalho de digitar as mesmas informações repetidamente.</p>
+<h2>Funcionalidades e Uso</h2>
+<h3>Como uso o TradeDesk AI dentro do Gmail ou Outlook?</h3>
+<p>Crie um novo e-mail ou responda a uma conversa existente, depois clique no ícone do TradeDesk AI que aparece na janela de e-mail. Selecione um cenário (como &quot;Solicitação de Orçamento&quot; ou &quot;Acompanhamento&quot;), adicione suas anotações e clique em Gerar — a extensão inserirá uma resposta profissional diretamente no corpo da mensagem.</p>
+<h3>Quais são os mais de 23 cenários integrados e como escolho o certo?</h3>
+<p>Os cenários cobrem comunicações comuns para prestadores de serviços: estimativas de orçamento, acompanhamento de licenças, confirmações de serviço, ordens de alteração, lembretes de garantia e muito mais. Ao abrir o menu de cenários, cada opção inclui uma breve descrição. Se tiver dúvidas, comece com &quot;Resposta Rápida&quot; — ele se adapta a qualquer anotação que você fornecer.</p>
+<h3>O TradeDesk AI pode gerar orçamentos e estimativas, ou apenas respostas de e-mail?</h3>
+<p>Ele faz ambos. Selecione um cenário como &quot;Estimativa Formal&quot; ou &quot;Orçamento de Materiais&quot;, insira os detalhes do serviço e os preços, e o TradeDesk AI formatará tudo em um documento profissional. O resultado funciona em qualquer formulário web, permitindo que você cole em seu CRM, ferramenta de faturamento ou portal do cliente.</p>
+<h3>Como funciona a especialização por área para HVAC, encanamento ou elétrica?</h3>
+<p>Nas configurações da extensão, selecione sua área principal entre 8 opções — HVAC, encanamento, elétrica, telhados, paisagismo, reparos gerais, pintura ou construção civil. O TradeDesk AI usa terminologia específica do setor ao gerar respostas, então um encanador verá &quot;aquecedor de água&quot; e &quot;tubulação de dreno&quot;, enquanto um eletricista verá &quot;painel de disjuntores&quot; e &quot;eletroduto&quot;.</p>
+<h3>Posso salvar meus próprios modelos e reutilizá-los depois?</h3>
+<p>Sim, o plano gratuito inclui 5 slots para modelos salvos. Após gerar uma resposta de que gostou, clique em &quot;Salvar como Modelo&quot; e dê um nome. Você pode carregar esse modelo em sessões futuras e regenerá-lo com dados atualizados — útil para serviços recorrentes ou promoções sazonais.</p>
+<h2>Privacidade e Segurança</h2>
+<h3>Onde meus dados são processados quando uso o TradeDesk AI?</h3>
+<p>Todo o processamento de dados ocorre através da API do provedor que você escolher — o TradeDesk AI não possui servidores próprios. A extensão envia suas anotações diretamente do navegador para o endpoint da API configurada (OpenAI, Groq, Anthropic, etc.), e a resposta gerada volta para o seu navegador. Nada é armazenado ou registrado na infraestrutura do Donbrico.</p>
+<h3>O TradeDesk AI armazena meus e-mails ou informações de clientes?</h3>
+<p>Não. O TradeDesk AI lê apenas a conversa de e-mail que você está visualizando no momento para fornecer contexto à geração de IA. Ele não salva, armazena em cache ou transmite seus e-mails, nomes de clientes, endereços ou qualquer outro dado pessoal para nenhum servidor além da chamada de API que você autorizou.</p>
+<h3>É seguro usar minha própria chave de API com esta extensão?</h3>
+<p>Sim, e essa é a abordagem mais segura. Sua chave de API é armazenada localmente no armazenamento da extensão do navegador, não em nenhum servidor remoto. Ao gerar uma resposta, a chave é enviada diretamente ao provedor da API — da mesma forma que qualquer aplicativo que usa chaves de API funciona. Você pode revogar ou trocar a chave a qualquer momento pelo painel do seu provedor.</p>
+<h3>O que acontece se eu usar o TradeDesk AI em um computador compartilhado ou público?</h3>
+<p>Recomendamos sair da extensão ou remover sua chave de API antes de deixar um computador compartilhado. Como a chave fica armazenada localmente, qualquer pessoa com acesso ao navegador pode usá-la para gerar respostas. Para estações de trabalho compartilhadas, considere usar uma chave de API temporária com limites de uso.</p>
+<h2>Preços e Licenciamento</h2>
+<h3>O que o plano gratuito inclui e por quanto tempo dura?</h3>
+<p>O plano gratuito oferece 5 respostas geradas por IA por dia e 5 slots para modelos salvos — e nunca expira. Você só precisa da sua própria chave de API para começar. É ideal para profissionais que enviam alguns e-mails por dia e querem testar a ferramenta antes de se comprometer.</p>
+<h3>Quanto custa o plano premium e o que ele oferece?</h3>
+<p>Os detalhes de preços estão disponíveis no site do Donbrico, na página do TradeDesk AI. O plano premium remove o limite diário de respostas, oferece armazenamento ilimitado de modelos e desbloqueia acesso prioritário a novos cenários e funcionalidades. Todos os planos usam sua própria chave de API — não há taxa por mensagem do Donbrico.</p>
+<h3>Posso usar uma chave de API para vários usuários na minha empresa?</h3>
+<p>Sim, mas verifique os termos do seu provedor de API. Alguns provedores (como OpenAI) permitem chaves compartilhadas com rastreamento de uso, enquanto outros podem exigir chaves por usuário. O TradeDesk AI não restringe quantos dispositivos usam a mesma chave — cada instalação é independente e configurada localmente.</p>
+<h2>Solução de Problemas</h2>
+<h3>Por que o TradeDesk AI não aparece na janela de composição do meu e-mail?</h3>
+<p>Primeiro, verifique se a extensão está ativada no gerenciador de extensões do navegador. Depois, atualize a aba do e-mail. Se ainda não aparecer, confirme se você está em uma plataforma compatível (Gmail, Outlook web, Yahoo Mail). Para outros formulários web, talvez seja necessário clicar no campo de texto antes que o ícone do TradeDesk seja ativado.</p>
+<h3>A IA gerou uma resposta, mas não parece com meu estilo — como corrigir isso?</h3>
+<p>Atualize seu perfil profissional com detalhes específicos sobre o tom e estilo da sua empresa. Nas configurações da extensão, você pode adicionar instruções personalizadas como &quot;Sempre use um tom amigável&quot; ou &quot;Inclua nossas informações de garantia&quot;. Você também pode editar o texto gerado diretamente antes de enviar — o TradeDesk AI é uma ferramenta de rascunho, não de saída final.</p>
+<h3>Estou recebendo um erro sobre minha chave de API — o que devo verificar?</h3>
+<p>Problemas comuns incluem: chave de API expirada, créditos insuficientes na conta do provedor ou cópia de espaços extras ao colar a chave. Acesse o painel do seu provedor de API, gere uma nova chave de teste e cole-a cuidadosamente nas configurações do TradeDesk AI. Se o erro persistir, verifique se você selecionou o provedor correto (OpenAI, Groq, etc.) no menu suspenso da extensão.</p>
+<h3>O TradeDesk AI está lento ou não responde — o que posso fazer?</h3>
+<p>O desempenho depende do tempo de resposta do seu provedor de API e da sua conexão com a internet. Tente mudar para um provedor mais rápido, como Groq, se estiver usando um mais lento. Além disso, limpe o cache do navegador e desative outras extensões temporariamente para descartar conflitos. Se o problema continuar, a página de suporte do TradeDesk AI no Donbrico tem soluções alternativas conhecidas para versões específicas de navegadores.</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

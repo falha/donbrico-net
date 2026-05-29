@@ -5,3 +5,7 @@
 /support         /support/         301
 
 # Force HTTPS and non-www (handled via _headers file elsewhere)
+
+# Legacy and alternative product folder mapping redirects
+/propertyfill/*   /propertyfill-ai/:splat   301
+/hostreply-ai/*  /host-reply/:splat        301

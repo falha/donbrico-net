@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autofill AI — Часто задаваемые вопросы | Donbrico FAQ</title>
+    <meta name="description" content="Перейдите в Chrome Web Store и найдите «Autofill AI от Donbrico» или сразу откройте страницу продукта по адресу donbrico.net/autofill-ai. Нажмите «Add to Chrome" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/autofill-ai/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/autofill-ai/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/autofill-ai/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/autofill-ai/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/autofill-ai/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/autofill-ai/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/autofill-ai/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/autofill-ai/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/autofill-ai/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/autofill-ai/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/autofill-ai/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/autofill-ai/ko/faq/" />
+    <meta property="og:title" content="Autofill AI — Часто задаваемые вопросы | Donbrico FAQ" />
+    <meta property="og:description" content="Перейдите в Chrome Web Store и найдите «Autofill AI от Donbrico» или сразу откройте страницу продукта по адресу donbrico.net/autofill-ai. Нажмите «Add to Chrome" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/autofill-ai/ru/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/autofill-ai/ru/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+              <span class="dropdown-group-label" style="display:block; margin-top:10px; font-size:0.7rem; color:var(--muted);" data-i18n="nav.tools">Tools</span>
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" data-i18n="nav.tools">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>Autofill AI — Часто задаваемые вопросы</h1>
+<h2>Начало работы</h2>
+<h3>Как установить Autofill AI в браузер Chrome?</h3>
+<p>Перейдите в Chrome Web Store и найдите «Autofill AI от Donbrico» или сразу откройте страницу продукта по адресу donbrico.net/autofill-ai. Нажмите «Add to Chrome» и подтвердите установку. Регистрация и создание аккаунта не требуются — расширение готово к работе сразу после установки.</p>
+<h3>Нужно ли создавать аккаунт для использования Autofill AI?</h3>
+<p>Нет, Autofill AI не требует регистрации. Вы устанавливаете расширение, сохраняете данные своего профиля и сразу начинаете заполнять формы. Никакого входа в систему, подтверждения по email или сбора личной информации при настройке не предусмотрено.</p>
+<h3>Как настроить профиль в первый раз?</h3>
+<p>Нажмите на иконку Autofill AI на панели инструментов Chrome и выберите «Manage Profile». Введите стандартные данные: имя, email, номер телефона и адрес. После сохранения профиль будет храниться локально в вашем браузере и использоваться для автозаполнения стандартных полей на любых сайтах.</p>
+<h3>Что нужно настроить перед использованием функции AI-ответов?</h3>
+<p>Для генерации ответов в открытых полях (например, сопроводительные письма) у вас есть два варианта. По умолчанию Autofill AI использует Gemini Nano, который работает полностью внутри Chrome. Альтернативно, вы можете добавить собственный API-ключ от провайдеров вроде OpenAI, Anthropic, Groq или OpenRouter — для этого перейдите в настройки расширения и введите ключ.</p>
+<h2>Возможности и использование</h2>
+<h3>Как Autofill AI распознает поля на веб-странице?</h3>
+<p>Когда вы заходите на страницу с формой, Autofill AI сканирует HTML-структуру в поисках стандартных меток полей и типов ввода: текстовые поля, выпадающие списки и текстовые области. Расширение сопоставляет их с полями вашего сохраненного профиля и подсвечивает обнаруженные поля, чтобы вы видели, что будет заполнено.</p>
+<h3>Можно ли отредактировать ответы AI перед отправкой?</h3>
+<p>Да. Перед тем как вставить сгенерированный AI контент в поле формы, Autofill AI показывает ответ для проверки. Вы можете отредактировать текст прямо в поле или сгенерировать новый ответ, если первый не подходит. Никакие данные не отправляются автоматически без вашего одобрения.</p>
+<h3>Работает ли Autofill AI на всех сайтах с формами?</h3>
+<p>Autofill AI разработан для работы на любых сайтах, использующих стандартные HTML-элементы форм. Это включает порталы для подачи заявок на работу, медицинские анкеты, системы страховых заявок и страницы фриланс-предложений. В редких случаях, когда сайт использует нестандартные конструкторы форм, распознавание может быть ограничено.</p>
+<h3>Как заполнить форму одним кликом с помощью Autofill AI?</h3>
+<p>Перейдите на страницу с формой, затем нажмите иконку Autofill AI на панели инструментов или используйте сочетание клавиш (настраивается в параметрах). Расширение мгновенно заполнит все обнаруженные стандартные поля данными из вашего профиля. Для открытых полей будут сгенерированы AI-ответы, которые можно проверить перед вставкой.</p>
+<h3>Можно ли сохранить несколько профилей для разных целей?</h3>
+<p>В настоящее время Autofill AI поддерживает только один активный профиль. Вы можете редактировать данные профиля по мере необходимости для разных сценариев, например, переключаясь между личным и рабочим адресом. Поддержка нескольких профилей рассматривается для будущих обновлений.</p>
+<h2>Конфиденциальность и безопасность</h2>
+<h3>Где хранятся мои личные данные?</h3>
+<p>Все данные вашего профиля хранятся локально в браузере Chrome с использованием локального хранилища расширения. Они никогда не покидают ваше устройство, не загружаются на серверы и недоступны для Donbrico или третьих лиц.</p>
+<h3>Как AI генерирует ответы без отправки данных на сервер?</h3>
+<p>По умолчанию Autofill AI использует модель Gemini Nano от Google — это небольшая языковая модель, работающая непосредственно в Chrome благодаря встроенным AI-возможностям браузера. Никакие данные не передаются через интернет для обработки. Если вы решите использовать собственный API-ключ, данные отправляются только указанному вами провайдеру на условиях вашего аккаунта.</p>
+<h3>Безопасно ли использовать собственный API-ключ с Autofill AI?</h3>
+<p>Да. Ваш API-ключ хранится локально в браузере и используется только для запросов к настроенному провайдеру (OpenAI, Anthropic, Groq или OpenRouter). Расширение не записывает, не хранит и не передает ваш ключ куда-либо еще. Вы полностью контролируете, какой провайдер обрабатывает ваши данные.</p>
+<h3>Собирает ли Autofill AI аналитику использования или данные отслеживания?</h3>
+<p>Нет. Autofill AI создан с политикой строгого запрета на отслеживание. В расширении нет скриптов аналитики, телеметрии или отслеживания действий пользователя. Расширение работает полностью офлайн для хранения профиля и стандартной AI-обработки, с опциональными API-запросами только при предоставлении ключа.</p>
+<h2>Цены и лицензирование</h2>
+<h3>Бесплатно ли использовать Autofill AI?</h3>
+<p>Да, Autofill AI полностью бесплатен для установки и использования. Нет премиум-уровней, платной подписки или скрытых платежей. Все функции, включая AI-ответы через Gemini Nano, доступны без каких-либо затрат.</p>
+<h3>Есть ли ограничения на количество заполняемых форм?</h3>
+<p>Нет. Вы можете заполнять сколько угодно форм без каких-либо лимитов использования или ограничений по частоте. Единственное потенциальное ограничение — если вы используете собственный API-ключ, то действуют правила использования и тарифы соответствующего провайдера.</p>
+<h3>Планируется ли введение платного тарифа для Autofill AI?</h3>
+<p>В настоящее время платный тариф не планируется. Autofill AI поддерживается Donbrico как бесплатный инструмент. Если в будущем условия использования изменятся, существующие пользователи будут уведомлены заблаговременно.</p>
+<h2>Устранение неполадок</h2>
+<h3>Autofill AI не распознает поля в форме. Что делать?</h3>
+<p>Сначала обновите страницу и убедитесь, что форма полностью загружена, прежде чем нажимать иконку Autofill AI. Некоторые динамические формы загружают поля после взаимодействия с пользователем — попробуйте сначала кликнуть в любое поле. Если распознавание по-прежнему не работает, возможно, сайт использует нестандартные элементы форм, которые Autofill AI не может обработать.</p>
+<h3>Почему AI-ответ пустой или не отображается?</h3>
+<p>Убедитесь, что вы либо включили Gemini Nano в настройках Chrome, либо ввели действующий API-ключ в настройках расширения. При использовании API-ключа проверьте, достаточно ли средств на вашем аккаунте и имеет ли ключ правильные разрешения. Также убедитесь, что поле формы является текстовой областью (textarea), а не выпадающим списком или кнопкой.</p>
+<h3>Расширение перестало работать после обновления Chrome.</h3>
+<p>Обновления Chrome иногда могут влиять на разрешения или настройки расширений. Попробуйте отключить и снова включить Autofill AI в меню расширений (chrome://extensions). Если проблема не исчезнет, удалите и переустановите расширение из Chrome Web Store. Данные вашего профиля хранятся локально и не пропадут при переустановке.</p>
+<h3>Как сообщить об ошибке или предложить новую функцию?</h3>
+<p>Перейдите на сайт Donbrico по адресу donbrico.net и воспользуйтесь контактной формой, чтобы отправить отзыв. Пожалуйста, укажите подробную информацию о сайте, на котором возникла проблема, шаги для её воспроизведения и версию вашего Chrome. Запросы на новые функции регулярно рассматриваются для будущих обновлений.</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

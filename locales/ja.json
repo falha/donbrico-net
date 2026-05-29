@@ -480,7 +480,43 @@
         "answer": "拡張機能ポップアップの [ホスト メモリ] タブにプロパティの詳細が保存されていることを確認してください。"
       }
     },
-    "heroCta": "今すぐメールでお問い合わせください"
+    "heroCta": "今すぐメールでお問い合わせください",
+    "fileWhisperer": {
+      "sectionTitle": "FileWhisperer AI サポート",
+      "subtitle": "よくある問題",
+      "q1": {
+        "question": "モデルのダウンロードにこれほど時間がかかるのはなぜですか?",
+        "answer": "最初の実行時に、FileWhisperer AI は高度に最適化された Llama-3 モデル (約 2 ～ 4 GB) をダウンロードし、完全にオフラインで実行します。インターネットの速度によっては、これには数分かかる場合がありますが、一度ダウンロードしたら、再度インターネット接続を必要とすることはありません。"
+      },
+      "q2": {
+        "question": "どのようなファイル形式がサポートされていますか?",
+        "answer": "現在、FileWhisperer AI は PDF ドキュメント (.pdf)、リッチ テキスト (.rtf)、Word ドキュメント (.docx)、テキスト ファイル (.txt)、マークダウン (.md)、および Excel/CSV スプレッドシートをサポートしています。"
+      }
+    },
+    "receiptWhisperer": {
+      "sectionTitle": "ReceiptWhisperer AI サポート",
+      "subtitle": "よくある問題",
+      "q1": {
+        "question": "OCR エンジンがレシートの一部の項目をスキップしました",
+        "answer": "スキャンが非常にぼやけている場合、紙が丸くなっている場合、または手書きの場合は、OCR の精度が低下する可能性があります。レシートをまっすぐにして、明るい照明の下でスキャンしてみてください。解析されたフィールドをいつでも手動でダブルクリックして、値を直接編集できます。"
+      },
+      "q2": {
+        "question": "経費データをバックアップするにはどうすればよいですか?",
+        "answer": "アプリケーションの「設定」に移動し、「経費保管庫をエクスポート」をクリックします。これにより、自己完結型データベースのバックアップ (.db) が、分類されたすべてのレシート画像とともに単一の ZIP アーカイブにエクスポートされます。"
+      }
+    },
+    "meetingWhisperer": {
+      "sectionTitle": "MeetingWhisperer AI サポート",
+      "subtitle": "よくある問題",
+      "q1": {
+        "question": "ビデオ ファイルの文字起こしに時間がかかりすぎます",
+        "answer": "高解像度ビデオ ファイルの読み込みには時間がかかることがあります。 MeetingWhisperer AI は、リソースを節約するために、最初にオーディオ トラックを自動的に抽出します。設定でシステムのハードウェア アクセラレーションを確認します。CUDA (NVIDIA) または DirectML を選択すると、Whisper を最大 5 倍高速化できます。"
+      },
+      "q2": {
+        "question": "話者の識別を改善するにはどうすればよいですか?",
+        "answer": "Local speaker diarization works best when speakers do not overlap or interrupt frequently. You can name detected speaker profiles (e.g. 'Speaker 1' -> 'Alice') in the audio transcript editor to update the names globally."
+      }
+    }
   },
   "privacyPolicy": {
     "page": {
@@ -554,7 +590,10 @@
       "tradeDesk": "トレードデスクAI",
       "sellerDesk": "SellerDesk AI",
       "recruitReply": "リクルートリプライAI",
-      "propertyFillAi": "PropertyFill AI"
+      "propertyFillAi": "PropertyFill AI",
+      "fileWhisperer": "FileWhisperer AI",
+      "receiptWhisperer": "レシートウィスパラーAI",
+      "meetingWhisperer": "ミーティングウィスパラーAI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "ドンブリコAI返信アシスタント",
@@ -739,6 +778,75 @@
         "sectionTitle": "データの削除",
         "paragraph": "拡張機能をアンインストールすると、保存されているすべての下書きと設定が削除されます。"
       }
+    },
+    "fileWhisperer": {
+      "sectionTitle": "ドンブリコ FileWhisperer AI",
+      "whatWeCollect": {
+        "sectionTitle": "私たちが収集するデータ",
+        "paragraph": "なし。ファイルはデバイス上でローカルに分析されます。文書テキスト、メタデータ、または分析概要が Donbrico サーバーに送信されることはありません。"
+      },
+      "howStored": {
+        "sectionTitle": "データの保存方法",
+        "paragraph": "すべてのインデックス付きコンテンツ、埋め込み、チャット履歴は、個人コンピュータ上の暗号化されたデータベースにローカルに保存されます。"
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "サードパーティ AI プロバイダー (Bring Your Own Key)",
+        "paragraph": "FileWhisperer AI は、デフォルトで完全にオフラインのローカル モデルを使用します。サードパーティ API キーを構成すると、クエリに関連するテキスト セグメントがそのプロバイダーに安全に送信され、応答が生成されます。"
+      },
+      "permissions": {
+        "sectionTitle": "使用される権限",
+        "paragraph": "ローカル ファイル システム アクセス (選択したドキュメントを読み取り、レポートを保存するため)。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "データの削除",
+        "paragraph": "プロジェクト フォルダーを削除するか、アプリをアンインストールすると、すべてのローカル データベースとインデックスが完全に削除されます。"
+      }
+    },
+    "receiptWhisperer": {
+      "sectionTitle": "ドンブリコレシートウィスパラーAI",
+      "whatWeCollect": {
+        "sectionTitle": "私たちが収集するデータ",
+        "paragraph": "なし。レシートのスキャン、テキスト認識、カテゴリの照合は、コンピューター上で完全にインプロセスでオフラインで実行されます。財務データは決して共有されません。"
+      },
+      "howStored": {
+        "sectionTitle": "データの保存方法",
+        "paragraph": "すべての OCR トランザクション、領収書パス、予算概要はローカルの SQLite ファイルに保存されます。"
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "サードパーティ AI プロバイダー (Bring Your Own Key)",
+        "paragraph": "ローカル OCR は 100% オフラインで実行されます。高度な分類のために外部モデルを接続すると、メタデータはそのプロバイダーを介して安全に処理されます。"
+      },
+      "permissions": {
+        "sectionTitle": "使用される権限",
+        "paragraph": "ファイルの読み取り/書き込みアクセス (レシートのスキャンをロードし、Excel シートに書き込むため)。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "データの削除",
+        "paragraph": "デスクトップ アプリケーションをアンインストールすると、ローカルの経費記録がすべてクリアされます。"
+      }
+    },
+    "meetingWhisperer": {
+      "sectionTitle": "ドンブリコミーティングささやきAI",
+      "whatWeCollect": {
+        "sectionTitle": "私たちが収集するデータ",
+        "paragraph": "なし。すべてのオーディオ ファイル、ビデオ ファイル、および音声録音は、ローカルの Whisper エンジンを使用してインプロセスで処理されます。音声データがインターネットに送信されることはありません。"
+      },
+      "howStored": {
+        "sectionTitle": "データの保存方法",
+        "paragraph": "会議のトランスクリプト、発言者タグ、要約テキストは、コンピュータ上のローカル Vault データベース内に保存されます。"
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "サードパーティ AI プロバイダー (Bring Your Own Key)",
+        "paragraph": "ウィスパー文字起こしは完全にオフラインで実行されます。トランスクリプトの要約に外部モデルを選択した場合、テキスト コンテンツのみがそのプロバイダーと共有されます。"
+      },
+      "permissions": {
+        "sectionTitle": "使用される権限",
+        "paragraph": "オーディオ ハードウェア アクセス (マイク録音) およびファイルの読み取り/書き込み権限。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "データの削除",
+        "paragraph": "ローカルの保管庫から会議を削除するか、アプリをアンインストールすると、トランスクリプト データが完全に消去されます。"
+      }
     }
   },
   "emails": {
@@ -768,7 +876,8 @@
     "learnMore": "詳細を見る →",
     "tryAiReply": "AI Reply Assistantを試す →",
     "tryAutofill": "Autofill AIを試す →",
-    "tryWorkDesk": "WorkDesk を試す →"
+    "tryWorkDesk": "WorkDesk を試す →",
+    "viewAllFaqs": "すべてのFAQを表示 →"
   },
   "extensions": {
     "hub": {

@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TradeDesk AI — अक्सर पूछे जाने वाले प्रश्न | Donbrico FAQ</title>
+    <meta name="description" content="TradeDesk AI को सीधे Chrome Web Store या अपने ब्राउज़र के एक्सटेंशन मार्केटप्लेस से इंस्टॉल करें। इसे जोड़ने के बाद, आपके ब्राउज़र टूलबार में TradeDesk आइकन दिख" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/trade-desk/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/trade-desk/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/trade-desk/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/trade-desk/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/trade-desk/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/trade-desk/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/trade-desk/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/trade-desk/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/trade-desk/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/trade-desk/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/trade-desk/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/trade-desk/ko/faq/" />
+    <meta property="og:title" content="TradeDesk AI — अक्सर पूछे जाने वाले प्रश्न | Donbrico FAQ" />
+    <meta property="og:description" content="TradeDesk AI को सीधे Chrome Web Store या अपने ब्राउज़र के एक्सटेंशन मार्केटप्लेस से इंस्टॉल करें। इसे जोड़ने के बाद, आपके ब्राउज़र टूलबार में TradeDesk आइकन दिख" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/trade-desk/hi/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/trade-desk/hi/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+              <span class="dropdown-group-label" style="display:block; margin-top:10px; font-size:0.7rem; color:var(--muted);" data-i18n="nav.tools">Tools</span>
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" data-i18n="nav.tools">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>TradeDesk AI — अक्सर पूछे जाने वाले प्रश्न</h1>
+<h2>शुरुआत कैसे करें</h2>
+<h3>मैं अपने ब्राउज़र पर TradeDesk AI कैसे इंस्टॉल करूं?</h3>
+<p>TradeDesk AI को सीधे Chrome Web Store या अपने ब्राउज़र के एक्सटेंशन मार्केटप्लेस से इंस्टॉल करें। इसे जोड़ने के बाद, आपके ब्राउज़र टूलबार में TradeDesk आइकन दिखाई देगा — इसे क्लिक करके सेटअप पैनल खोलें, जहां आप अपनी API key दर्ज करेंगे और अपना बिज़नेस प्रोफ़ाइल कॉन्फ़िगर करेंगे।</p>
+<h3>TradeDesk AI का उपयोग शुरू करने के लिए मुझे क्या चाहिए?</h3>
+<p>आपको तीन चीज़ें चाहिए: एक सपोर्टेड ब्राउज़र (Chrome, Edge, या Firefox), OpenAI, Groq, या Anthropic जैसे प्रदाता से एक API key, और आपके बिज़नेस की बुनियादी जानकारी। एक्सटेंशन सेटिंग्स में API key डालने के बाद, आप तुरंत रिप्लाई जनरेट करना शुरू कर सकते हैं — फ्री प्लान के लिए कोई अकाउंट रजिस्ट्रेशन या क्रेडिट कार्ड की आवश्यकता नहीं है।</p>
+<h3>क्या एक्सटेंशन का उपयोग करने के लिए मुझे Donbrico पर अकाउंट बनाना होगा?</h3>
+<p>किसी अकाउंट की आवश्यकता नहीं है। TradeDesk AI आपकी अपनी API key का उपयोग करके पूरी तरह से आपके ब्राउज़र एक्सटेंशन के माध्यम से चलता है। कोई क्लाउड लॉगिन नहीं, याद रखने के लिए कोई पासवर्ड नहीं, और कोई यूज़र डेटाबेस नहीं — बस इंस्टॉल करें, कॉन्फ़िगर करें, और ड्राफ्ट करना शुरू करें।</p>
+<h3>मैं पहली बार अपना बिज़नेस प्रोफ़ाइल कैसे सेट करूं?</h3>
+<p>एक्सटेंशन पैनल खोलें और &quot;Business Profile&quot; सेक्शन पर जाएं। अपनी कंपनी का नाम, फ़ोन नंबर, ईमेल, लाइसेंस नंबर और सेवा क्षेत्र भरें। सेव करने के बाद, TradeDesk AI आपके द्वारा जनरेट किए जाने वाले हर रिप्लाई, कोट और एस्टीमेट में ये विवरण ऑटो-फिल करेगा — जिससे आपको एक ही जानकारी बार-बार टाइप करने से बचाएगा।</p>
+<h2>फीचर्स और उपयोग</h2>
+<h3>मैं Gmail या Outlook के अंदर TradeDesk AI का उपयोग कैसे करूं?</h3>
+<p>एक नया ईमेल लिखें या किसी मौजूदा थ्रेड का जवाब दें, फिर ईमेल विंडो के अंदर दिखाई देने वाले TradeDesk AI आइकन पर क्लिक करें। कोई सीनारियो चुनें (जैसे &quot;Quote Request&quot; या &quot;Follow-Up&quot;), अपने मोटे नोट्स जोड़ें, और Generate पर क्लिक करें — एक्सटेंशन सीधे आपके मैसेज बॉडी में एक पॉलिश्ड रिप्लाई डाल देगा।</p>
+<h3>23+ बिल्ट-इन सीनारियो क्या हैं, और मैं सही कैसे चुनूं?</h3>
+<p>सीनारियो सामान्य कॉन्ट्रैक्टर संचार को कवर करते हैं: कोट एस्टीमेट, परमिट फॉलो-अप, जॉब कन्फर्मेशन, चेंज ऑर्डर, वारंटी रिमाइंडर, और भी बहुत कुछ। जब आप सीनारियो मेनू खोलते हैं, तो प्रत्येक विकल्प में एक छोटा विवरण शामिल होता है। अगर आप अनिश्चित हैं, तो &quot;Quick Reply&quot; से शुरू करें — यह आपके द्वारा दिए गए किसी भी नोट्स के अनुसार ढल जाता है।</p>
+<h3>क्या TradeDesk AI कोट और एस्टीमेट जनरेट कर सकता है, या सिर्फ ईमेल रिप्लाई?</h3>
+<p>यह दोनों करता है। &quot;Formal Estimate&quot; या &quot;Material Quote&quot; जैसा कोई सीनारियो चुनें, जॉब विवरण और मूल्य निर्धारण दर्ज करें, और TradeDesk AI सब कुछ एक प्रोफेशनल डॉक्यूमेंट में फॉर्मेट कर देगा। आउटपुट किसी भी वेब फॉर्म में काम करता है, ताकि आप इसे अपने CRM, इनवॉइसिंग टूल या कस्टमर पोर्टल में पेस्ट कर सकें।</p>
+<h3>HVAC, प्लंबिंग या इलेक्ट्रिकल काम के लिए ट्रेड स्पेशलाइज़ेशन कैसे काम करता है?</h3>
+<p>एक्सटेंशन सेटिंग्स में, 8 विकल्पों की सूची से अपना प्राथमिक ट्रेड चुनें — HVAC, प्लंबिंग, इलेक्ट्रिकल, रूफिंग, लैंडस्केपिंग, हैंडीमैन, पेंटिंग, या जनरल कॉन्ट्रैक्टिंग। फिर TradeDesk AI रिप्लाई जनरेट करते समय उस ट्रेड के लिए उद्योग-विशिष्ट शब्दावली का उपयोग करता है, जिससे एक प्लंबर को &quot;water heater&quot; और &quot;drain line&quot; मिलता है जबकि एक इलेक्ट्रीशियन को &quot;breaker panel&quot; और &quot;conduit&quot; मिलता है।</p>
+<h3>क्या मैं अपने टेम्पलेट सेव कर सकता हूं और बाद में उनका पुन: उपयोग कर सकता हूं?</h3>
+<p>हां, फ्री प्लान में 5 सेव किए गए टेम्पलेट स्लॉट शामिल हैं। आपको पसंद आने वाली रिप्लाई जनरेट करने के बाद, &quot;Save as Template&quot; पर क्लिक करें और इसे एक नाम दें। आप भविष्य के सत्रों में उस टेम्पलेट को लोड कर सकते हैं और अपडेटेड विवरण के साथ इसे पुन: जनरेट कर सकते हैं — बार-बार होने वाले कामों या मौसमी प्रमोशन के लिए उपयोगी।</p>
+<h2>गोपनीयता और सुरक्षा</h2>
+<h3>जब मैं TradeDesk AI का उपयोग करता हूं तो मेरा डेटा कहां प्रोसेस होता है?</h3>
+<p>सभी डेटा प्रोसेसिंग आपके चुने हुए AI प्रदाता के API के माध्यम से होती है — TradeDesk AI के पास स्वयं कोई बैकएंड सर्वर नहीं है। एक्सटेंशन आपके नोट्स सीधे आपके ब्राउज़र से उस API एंडपॉइंट पर भेजता है जिसे आप कॉन्फ़िगर करते हैं (OpenAI, Groq, Anthropic, आदि), और जनरेट की गई रिप्लाई आपके ब्राउज़र में वापस आती है। Donbrico के इंफ्रास्ट्रक्चर पर कुछ भी स्टोर या लॉग नहीं किया जाता है।</p>
+<h3>क्या TradeDesk AI मेरे ईमेल या ग्राहक जानकारी स्टोर करता है?</h3>
+<p>नहीं। TradeDesk AI AI जनरेशन के लिए संदर्भ प्रदान करने के लिए केवल उस ईमेल थ्रेड को पढ़ता है जिसे आप वर्तमान में देख रहे हैं। यह आपके ईमेल, ग्राहकों के नाम, पते, या किसी अन्य व्यक्तिगत डेटा को आपके द्वारा अधिकृत API कॉल के अलावा किसी भी सर्वर पर सेव, कैश या ट्रांसमिट नहीं करता है।</p>
+<h3>क्या इस एक्सटेंशन के साथ अपनी API key का उपयोग करना सुरक्षित है?</h3>
+<p>हां, और यह सबसे सुरक्षित तरीका है। आपकी API key आपके ब्राउज़र के एक्सटेंशन स्टोरेज में स्थानीय रूप से संग्रहीत होती है, किसी रिमोट सर्वर पर नहीं। जब आप कोई रिप्लाई जनरेट करते हैं, तो key सीधे API प्रदाता को भेजी जाती है — उसी तरह जैसे API key का उपयोग करने वाला कोई भी ऐप काम करता है। आप अपने प्रदाता के डैशबोर्ड से किसी भी समय key को रिवोक या रोटेट कर सकते हैं।</p>
+<h3>अगर मैं शेयर्ड या पब्लिक कंप्यूटर पर TradeDesk AI का उपयोग करूं तो क्या होगा?</h3>
+<p>हम शेयर्ड कंप्यूटर छोड़ने से पहले एक्सटेंशन से लॉग आउट करने या अपनी API key हटाने की सलाह देते हैं। चूंकि key स्थानीय रूप से संग्रहीत होती है, उस ब्राउज़र तक पहुंच रखने वाला कोई भी व्यक्ति रिप्लाई जनरेट करने के लिए आपकी key का उपयोग कर सकता है। शेयर्ड वर्कस्टेशन के लिए, उपयोग सीमा वाली अस्थायी API key का उपयोग करने पर विचार करें।</p>
+<h2>मूल्य निर्धारण और लाइसेंसिंग</h2>
+<h3>फ्री प्लान में क्या शामिल है, और यह कितने समय तक चलता है?</h3>
+<p>फ्री प्लान आपको प्रति दिन 5 AI-जनरेटेड रिप्लाई और 5 सेव किए गए टेम्पलेट स्लॉट देता है — और यह कभी समाप्त नहीं होता। शुरू करने के लिए आपको केवल अपनी API key चाहिए। यह उन कॉन्ट्रैक्टरों के लिए आदर्श है जो रोजाना कुछ ईमेल भेजते हैं और प्रतिबद्ध होने से पहले टूल का परीक्षण करना चाहते हैं।</p>
+<h3>प्रीमियम प्लान की कीमत कितनी है, और मुझे क्या मिलता है?</h3>
+<p>मूल्य निर्धारण विवरण Donbrico वेबसाइट पर TradeDesk AI पेज के अंतर्गत उपलब्ध हैं। प्रीमियम प्लान दैनिक रिप्लाई सीमा हटाता है, असीमित टेम्पलेट स्टोरेज जोड़ता है, और नए सीनारियो और फीचर्स तक प्राथमिकता पहुंच अनलॉक करता है। सभी प्लान आपकी अपनी API key का उपयोग करते हैं — Donbrico की ओर से कोई प्रति-मैसेज शुल्क नहीं है।</p>
+<h3>क्या मैं अपनी कंपनी में कई उपयोगकर्ताओं के लिए एक API key का उपयोग कर सकता हूं?</h3>
+<p>हां, लेकिन अपने API प्रदाता की शर्तों की जांच करें। कुछ प्रदाता (जैसे OpenAI) उपयोग ट्रैकिंग के साथ शेयर्ड keys की अनुमति देते हैं, जबकि अन्य को प्रति-उपयोगकर्ता keys की आवश्यकता हो सकती है। TradeDesk AI यह प्रतिबंधित नहीं करता है कि एक ही key का उपयोग कितने डिवाइस कर सकते हैं — प्रत्येक इंस्टॉलेशन स्वतंत्र है और स्थानीय रूप से कॉन्फ़िगर किया गया है।</p>
+<h2>समस्या निवारण</h2>
+<h3>TradeDesk AI मेरे ईमेल कंपोज़ विंडो में क्यों नहीं दिख रहा है?</h3>
+<p>पहले, सुनिश्चित करें कि आपके ब्राउज़र के एक्सटेंशन मैनेजर में एक्सटेंशन सक्षम है। फिर अपने ईमेल टैब को रिफ्रेश करें। अगर यह अभी भी दिखाई नहीं देता है, तो जांचें कि आप एक सपोर्टेड प्लेटफॉर्म (Gmail, Outlook web, Yahoo Mail) पर हैं। अन्य वेब फॉर्म के लिए, TradeDesk आइकन सक्रिय होने से पहले आपको टेक्स्ट फील्ड पर क्लिक करने की आवश्यकता हो सकती है।</p>
+<h3>AI ने एक रिप्लाई जनरेट की, लेकिन यह मेरी तरह नहीं लगती — मैं इसे कैसे ठीक करूं?</h3>
+<p>अपनी कंपनी के टोन और शैली के बारे में विशिष्ट विवरण के साथ अपने बिज़नेस प्रोफ़ाइल को अपडेट करें। एक्सटेंशन सेटिंग्स में, आप कस्टम निर्देश जोड़ सकते हैं जैसे &quot;हमेशा मैत्रीपूर्ण लहजे का उपयोग करें&quot; या &quot;हमारी वारंटी जानकारी शामिल करें।&quot; आप भेजने से पहले जनरेटेड टेक्स्ट को सीधे संपादित भी कर सकते हैं — TradeDesk AI एक ड्राफ्टिंग टूल है, अंतिम आउटपुट नहीं।</p>
+<h3>मुझे अपनी API key के बारे में लगातार एरर आ रही है — मुझे क्या जांचना चाहिए?</h3>
+<p>सामान्य समस्याओं में शामिल हैं: समाप्त हो चुकी API key, आपके प्रदाता अकाउंट में अपर्याप्त क्रेडिट, या key पेस्ट करते समय अतिरिक्त स्पेस कॉपी करना। अपने API प्रदाता के डैशबोर्ड पर जाएं, एक नई टेस्ट key जनरेट करें, और इसे ध्यान से TradeDesk AI की सेटिंग्स में पेस्ट करें। अगर एरर बनी रहती है, तो जांचें कि आपने एक्सटेंशन ड्रॉपडाउन में सही प्रदाता (OpenAI, Groq, आदि) चुना है।</p>
+<h3>TradeDesk AI धीमा या अनुत्तरदायी है — मैं क्या कर सकता हूं?</h3>
+<p>प्रदर्शन आपके API प्रदाता की प्रतिक्रिया समय और आपके इंटरनेट कनेक्शन पर निर्भर करता है। यदि आप धीमे प्रदाता का उपयोग कर रहे हैं तो Groq जैसे तेज़ प्रदाता पर स्विच करने का प्रयास करें। साथ ही, विरोधों को रोकने के लिए अपना ब्राउज़र कैश साफ़ करें और अस्थायी रूप से अन्य एक्सटेंशन अक्षम करें। अगर समस्या जारी रहती है, तो Donbrico पर TradeDesk AI सपोर्ट पेज में विशिष्ट ब्राउज़र संस्करणों के लिए ज्ञात वर्कअराउंड हैं।</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

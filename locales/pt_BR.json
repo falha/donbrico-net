@@ -480,7 +480,43 @@
         "answer": "Verifique se você salvou os detalhes da sua propriedade na guia Host Memory do pop-up da extensão."
       }
     },
-    "heroCta": "Envie-nos um e-mail agora"
+    "heroCta": "Envie-nos um e-mail agora",
+    "fileWhisperer": {
+      "sectionTitle": "Suporte para IA do FileWhisperer",
+      "subtitle": "Problemas comuns",
+      "q1": {
+        "question": "Por que o download do modelo demora tanto?",
+        "answer": "Na primeira execução, o FileWhisperer AI baixa modelos Llama-3 altamente otimizados (~2-4GB) para rodar completamente offline. Dependendo da velocidade da sua internet, isso pode levar vários minutos, mas depois de baixado, você nunca mais precisará de uma conexão com a internet."
+      },
+      "q2": {
+        "question": "Quais tipos de arquivo são suportados?",
+        "answer": "Atualmente, FileWhisperer AI oferece suporte a documentos PDF (.pdf), rich text (.rtf), documentos Word (.docx), arquivos de texto (.txt), markdown (.md) e planilhas Excel/CSV."
+      }
+    },
+    "receiptWhisperer": {
+      "sectionTitle": "Suporte de IA do ReceiptWhisperer",
+      "subtitle": "Problemas comuns",
+      "q1": {
+        "question": "O mecanismo de OCR ignorou alguns itens do meu recibo",
+        "answer": "Digitalizações extremamente borradas, papel amassado ou escrita à mão podem diminuir a precisão do OCR. Tente endireitar o recibo e digitalizá-lo sob boa iluminação. Você sempre pode clicar duas vezes manualmente em qualquer campo analisado para editar os valores diretamente."
+      },
+      "q2": {
+        "question": "Como faço backup dos meus dados de despesas?",
+        "answer": "Vá para Configurações no aplicativo e clique em 'Exportar Cofre de Despesas'. Isso exporta um backup de banco de dados independente (.db) junto com todas as imagens de recibos categorizadas em um único arquivo ZIP."
+      }
+    },
+    "meetingWhisperer": {
+      "sectionTitle": "Suporte para IA do MeetingWhisperer",
+      "subtitle": "Problemas comuns",
+      "q1": {
+        "question": "Meu arquivo de vídeo está demorando muito para ser transcrito",
+        "answer": "Arquivos de vídeo de alta definição podem demorar mais para carregar. MeetingWhisperer AI extrai automaticamente a trilha de áudio primeiro para economizar recursos. Verifique a aceleração de hardware do seu sistema em Configurações – selecionar CUDA (NVIDIA) ou DirectML pode acelerar o Whisper em até 5x."
+      },
+      "q2": {
+        "question": "Como posso melhorar a identificação do orador?",
+        "answer": "Local speaker diarization works best when speakers do not overlap or interrupt frequently. You can name detected speaker profiles (e.g. 'Speaker 1' -> 'Alice') in the audio transcript editor to update the names globally."
+      }
+    }
   },
   "privacyPolicy": {
     "page": {
@@ -554,7 +590,10 @@
       "tradeDesk": "IA TradeDesk",
       "sellerDesk": "SellerDesk AI",
       "recruitReply": "RecruitReply AI",
-      "propertyFillAi": "PropertyFill AI"
+      "propertyFillAi": "PropertyFill AI",
+      "fileWhisperer": "FileWhisperer IA",
+      "receiptWhisperer": "IA do ReceiptWhisperer",
+      "meetingWhisperer": "IA do MeetingWhisperer"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Assistente de resposta Donbrico AI",
@@ -739,6 +778,75 @@
         "sectionTitle": "Exclusão de dados",
         "paragraph": "A desinstalação da extensão remove todos os rascunhos e configurações armazenados."
       }
+    },
+    "fileWhisperer": {
+      "sectionTitle": "Donbrico FileWhisperer AI",
+      "whatWeCollect": {
+        "sectionTitle": "Quais dados coletamos",
+        "paragraph": "Nenhum. Seus arquivos são analisados ​​localmente no seu dispositivo. Nenhum texto de documento, metadados ou resumos de análise são transmitidos aos servidores Donbrico."
+      },
+      "howStored": {
+        "sectionTitle": "Como os dados são armazenados",
+        "paragraph": "Todo o conteúdo indexado, incorporações e históricos de bate-papo são armazenados localmente em um banco de dados criptografado em seu computador pessoal."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Provedores terceirizados de IA (traga sua própria chave)",
+        "paragraph": "O padrão do FileWhisperer AI é modelos locais totalmente offline. Se você configurar uma chave de API de terceiros, os segmentos de texto relevantes à sua consulta serão enviados com segurança a esse provedor para gerar respostas."
+      },
+      "permissions": {
+        "sectionTitle": "Permissões usadas",
+        "paragraph": "Acesso ao sistema de arquivos local (para ler documentos selecionados e salvar relatórios)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Exclusão de dados",
+        "paragraph": "Excluir a pasta do projeto ou desinstalar o aplicativo remove permanentemente todos os bancos de dados e índices locais."
+      }
+    },
+    "receiptWhisperer": {
+      "sectionTitle": "Donbrico ReceiptWhisperer AI",
+      "whatWeCollect": {
+        "sectionTitle": "Quais dados coletamos",
+        "paragraph": "Nenhum. A digitalização de recibos, o reconhecimento de texto e a correspondência de categorias são executados totalmente offline no seu computador. Os dados financeiros nunca são compartilhados."
+      },
+      "howStored": {
+        "sectionTitle": "Como os dados são armazenados",
+        "paragraph": "Todas as transações de OCR, caminhos de recebimento e resumos orçamentários são armazenados localmente em um arquivo SQLite local."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Provedores terceirizados de IA (traga sua própria chave)",
+        "paragraph": "OCR local funciona 100% offline. Se você conectar modelos externos para categorizações avançadas, os metadados serão processados ​​com segurança por meio desse provedor."
+      },
+      "permissions": {
+        "sectionTitle": "Permissões usadas",
+        "paragraph": "Acesso de leitura/gravação de arquivos (para carregar digitalizações de recibos e escrever planilhas do Excel)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Exclusão de dados",
+        "paragraph": "A desinstalação do aplicativo de desktop limpa todos os registros de despesas locais."
+      }
+    },
+    "meetingWhisperer": {
+      "sectionTitle": "Donbrico MeetingWhisperer AI",
+      "whatWeCollect": {
+        "sectionTitle": "Quais dados coletamos",
+        "paragraph": "Nenhum. Todos os arquivos de áudio, vídeo e gravações de voz são processados ​​em processo usando mecanismos Whisper locais. Seus dados de voz nunca são enviados para a Internet."
+      },
+      "howStored": {
+        "sectionTitle": "Como os dados são armazenados",
+        "paragraph": "Transcrições de reuniões, tags de palestrantes e texto resumido são salvos no banco de dados local do Vault em seu computador."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Provedores terceirizados de IA (traga sua própria chave)",
+        "paragraph": "A transcrição do Whisper é totalmente offline. Se você escolher modelos externos para resumir transcrições, apenas o conteúdo do texto será compartilhado com esse provedor."
+      },
+      "permissions": {
+        "sectionTitle": "Permissões usadas",
+        "paragraph": "Acesso ao hardware de áudio (gravação de microfone) e permissões de leitura/gravação de arquivos."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Exclusão de dados",
+        "paragraph": "Excluir uma reunião do seu cofre local ou desinstalar o aplicativo limpa permanentemente os dados da transcrição."
+      }
     }
   },
   "emails": {
@@ -768,7 +876,8 @@
     "learnMore": "Saiba mais →",
     "tryAiReply": "Testar AI Reply Assistant →",
     "tryAutofill": "Testar Autofill AI →",
-    "tryWorkDesk": "Testar WorkDesk →"
+    "tryWorkDesk": "Testar WorkDesk →",
+    "viewAllFaqs": "Ver todas as FAQs →"
   },
   "extensions": {
     "hub": {

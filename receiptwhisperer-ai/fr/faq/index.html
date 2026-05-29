@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReceiptWhisperer AI — Foire aux questions | Donbrico FAQ</title>
+    <meta name="description" content="Téléchargez l'installateur depuis la page produit Donbrico à l'URL fournie. Lancez le fichier téléchargé et suivez les instructions à l'écran : aucune configura" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/receiptwhisperer-ai/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/receiptwhisperer-ai/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/receiptwhisperer-ai/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/receiptwhisperer-ai/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/receiptwhisperer-ai/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/receiptwhisperer-ai/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/receiptwhisperer-ai/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/receiptwhisperer-ai/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/receiptwhisperer-ai/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/receiptwhisperer-ai/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/receiptwhisperer-ai/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/receiptwhisperer-ai/ko/faq/" />
+    <meta property="og:title" content="ReceiptWhisperer AI — Foire aux questions | Donbrico FAQ" />
+    <meta property="og:description" content="Téléchargez l'installateur depuis la page produit Donbrico à l'URL fournie. Lancez le fichier téléchargé et suivez les instructions à l'écran : aucune configura" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/receiptwhisperer-ai/fr/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/receiptwhisperer-ai/fr/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>ReceiptWhisperer AI — Foire aux questions</h1>
+<h2>Pour commencer</h2>
+<h3>Comment installer ReceiptWhisperer AI sur mon ordinateur ?</h3>
+<p>Téléchargez l&#39;installateur depuis la page produit Donbrico à l&#39;URL fournie. Lancez le fichier téléchargé et suivez les instructions à l&#39;écran : aucune configuration complexe n&#39;est nécessaire. Une fois installé, ouvrez l&#39;application et vous serez prêt à numériser vos reçus immédiatement.</p>
+<h3>Quels formats de fichiers sont pris en charge pour l&#39;import des reçus ?</h3>
+<p>ReceiptWhisperer AI prend en charge les fichiers image (comme JPEG et PNG) ainsi que les documents PDF. Vous pouvez glisser-déposer ces fichiers directement dans l&#39;application ou utiliser le bouton d&#39;import pour les sélectionner depuis votre système de fichiers.</p>
+<h3>Ai-je besoin d&#39;une connexion Internet pour utiliser ReceiptWhisperer AI ?</h3>
+<p>Non, pas du tout. Tout le traitement IA et OCR s&#39;effectue localement sur votre machine, vous pouvez donc numériser et organiser vos reçus entièrement hors ligne. Une connexion Internet n&#39;est nécessaire que pour télécharger le logiciel ou, si vous le souhaitez, exporter des données vers des services cloud.</p>
+<h3>Comment numériser mon premier reçu ?</h3>
+<p>Ouvrez ReceiptWhisperer AI et cliquez sur le bouton d&#39;import, ou glissez-déposez une image ou un PDF de reçu dans la zone prévue à cet effet. L&#39;IA traitera automatiquement le fichier et extraira le nom du commerçant, la date, le montant total et les articles en quelques secondes. Vérifiez les données extraites, apportez les corrections nécessaires, puis enregistrez-les dans votre bibliothèque organisée.</p>
+<h2>Fonctionnalités et utilisation</h2>
+<h3>Quelle est la précision de l&#39;OCR pour les reçus manuscrits ?</h3>
+<p>ReceiptWhisperer AI utilise une OCR avancée basée sur l&#39;IA, conçue pour traiter aussi bien les textes imprimés que la plupart des écritures manuscrites. La précision dépend de la lisibilité du reçu d&#39;origine, mais pour les reçus imprimés standard, l&#39;extraction des champs clés comme les totaux et les dates est très fiable. Pour les reçus manuscrits, les résultats peuvent varier, et vous pouvez modifier manuellement toute donnée extraite.</p>
+<h3>Puis-je exporter mes données de reçus vers un logiciel comptable ?</h3>
+<p>Oui, vous pouvez exporter vos données organisées aux formats CSV, PDF et autres formats courants. Cela vous permet d&#39;importer les données dans des outils comptables comme QuickBooks, Excel ou votre système de gestion des dépenses préféré. Il vous suffit de sélectionner les reçus à exporter et de choisir le format souhaité.</p>
+<h3>Comment fonctionnent le classement intelligent et l&#39;étiquetage ?</h3>
+<p>ReceiptWhisperer AI analyse automatiquement le nom du commerçant et les articles pour attribuer une catégorie, comme « Fournitures de bureau » ou « Voyage ». Vous pouvez également créer des étiquettes personnalisées pour mieux organiser vos dépenses. Ces catégories et étiquettes sont entièrement modifiables pour correspondre à votre structure comptable personnelle ou professionnelle.</p>
+<h3>Puis-je numériser plusieurs reçus à la fois ?</h3>
+<p>Oui, vous pouvez importer plusieurs images ou PDF de reçus en un seul lot. ReceiptWhisperer AI traitera chaque fichier individuellement et affichera les données extraites dans une file d&#39;attente. Cette fonction est particulièrement utile pour les freelances ou les voyageurs qui doivent traiter plusieurs reçus après un déplacement.</p>
+<h3>L&#39;application reconnaît-elle les articles des reçus de supermarché ou de magasin ?</h3>
+<p>Oui, l&#39;IA est entraînée à extraire les articles individuellement, y compris les noms de produits, les quantités et les prix. Pour les reçus complexes comportant de nombreux articles, une vérification rapide peut être nécessaire, mais la grande majorité des articles sont correctement capturés. Cette fonction est particulièrement utile pour les personnes soucieuses de leurs dépenses et qui suivent leurs achats en détail.</p>
+<h2>Confidentialité et sécurité</h2>
+<h3>Mes données financières sont-elles stockées sur des serveurs cloud ?</h3>
+<p>Non. ReceiptWhisperer AI traite toutes les données localement sur votre machine, ce qui signifie que vos images de reçus et les informations extraites ne quittent jamais votre ordinateur. Ainsi, vos données financières restent totalement privées et sous votre contrôle.</p>
+<h3>L&#39;IA envoie-t-elle mes données de reçus à des services tiers ?</h3>
+<p>Non, l&#39;IA n&#39;envoie aucune donnée à des services tiers. Tout le traitement OCR et l&#39;extraction sont effectués localement grâce aux modèles intégrés de l&#39;application. Les données ne quittent votre machine que lorsque vous choisissez manuellement d&#39;exporter un fichier ou de l&#39;enregistrer vers un service externe.</p>
+<h3>Puis-je utiliser ReceiptWhisperer AI sur un ordinateur professionnel soumis à des règles IT strictes ?</h3>
+<p>Oui, car l&#39;application fonctionne entièrement hors ligne et ne nécessite pas de connexion cloud, elle convient à une utilisation sur des appareils gérés par l&#39;entreprise. Cependant, vérifiez les politiques d&#39;installation de logiciels de votre organisation avant d&#39;installer toute application de bureau. Aucune donnée n&#39;est transmise sur le réseau en usage normal.</p>
+<h3>Comment mes données sont-elles protégées si je perds mon ordinateur portable ?</h3>
+<p>Comme toutes les données sont stockées localement sur votre machine, la sécurité de vos informations de reçus dépend des mesures de sécurité de votre appareil. Nous recommandons d&#39;utiliser le chiffrement complet du disque et des sauvegardes régulières pour protéger vos données. ReceiptWhisperer AI ne stocke aucune donnée en externe.</p>
+<h2>Tarifs et licences</h2>
+<h3>Que comprend l&#39;offre gratuite ?</h3>
+<p>L&#39;offre gratuite de ReceiptWhisperer AI inclut les capacités de numérisation de base et vous permet de traiter jusqu&#39;à 10 reçus par mois. Vous bénéficiez toujours de l&#39;extraction OCR complète par IA et du traitement local, mais avec un plafond mensuel. Cette formule est idéale pour les utilisateurs occasionnels ou ceux qui souhaitent tester le logiciel avant de s&#39;engager.</p>
+<h3>Combien coûte la version premium et qu&#39;est-ce qu&#39;elle inclut ?</h3>
+<p>Les détails des tarifs de la version premium sont disponibles sur la page produit Donbrico. L&#39;offre premium supprime la limite mensuelle de 10 reçus, propose des fonctionnalités avancées comme la numérisation par lots et l&#39;étiquetage personnalisé, et offre un support prioritaire. Consultez l&#39;URL du produit pour connaître les tarifs et les options d&#39;abonnement les plus récents.</p>
+<h3>Existe-t-il une option d&#39;achat unique ou est-ce uniquement sur abonnement ?</h3>
+<p>ReceiptWhisperer AI est proposé sous forme d&#39;abonnement, avec des options de facturation mensuelle et annuelle. Le modèle d&#39;abonnement vous garantit des mises à jour continues, des améliorations des modèles d&#39;IA et un support technique. Il n&#39;existe pas d&#39;option d&#39;achat unique pour le moment.</p>
+<h2>Dépannage</h2>
+<h3>Pourquoi ReceiptWhisperer AI ne reconnaît-il pas le texte de mon reçu ?</h3>
+<p>Assurez-vous d&#39;abord que l&#39;image de votre reçu est nette, bien éclairée et non floue. Les numérisations de mauvaise qualité ou les reçus très froissés peuvent réduire la précision de l&#39;OCR. Si le problème persiste, essayez de convertir le fichier dans un autre format (par exemple, de PDF à PNG) et de le réimporter. Vous pouvez également modifier manuellement les champs extraits si l&#39;IA interprète mal certaines données.</p>
+<h3>L&#39;application est lente lors du traitement de plusieurs reçus. Que puis-je faire ?</h3>
+<p>Le traitement par lots d&#39;un grand nombre d&#39;images haute résolution peut être gourmand en ressources. Fermez les autres applications pour libérer de la mémoire système et envisagez de redimensionner les images très volumineuses avant de les importer. ReceiptWhisperer AI est optimisé pour le traitement local, donc les performances dépendent du processeur et de la RAM de votre ordinateur.</p>
+<h3>J&#39;ai supprimé un reçu par erreur. Puis-je le récupérer ?</h3>
+<p>Les reçus sont stockés localement dans la base de données de l&#39;application, et il n&#39;existe pas de corbeille intégrée ni de fonction d&#39;annulation pour les suppressions. Nous vous recommandons vivement d&#39;exporter régulièrement vos données au format CSV ou PDF comme sauvegarde. Si vous n&#39;avez pas exporté, le reçu supprimé est probablement irrécupérable.</p>
+<h3>L&#39;application ne se lance pas après l&#39;installation. Que dois-je faire ?</h3>
+<p>Assurez-vous que votre ordinateur répond à la configuration minimale requise indiquée sur la page produit Donbrico. Essayez d&#39;exécuter l&#39;application en tant qu&#39;administrateur (clic droit et sélectionnez « Exécuter en tant qu&#39;administrateur ») si vous êtes sous Windows. Si elle ne se lance toujours pas, réinstallez l&#39;application ou contactez le support via le site Web Donbrico pour obtenir de l&#39;aide.</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

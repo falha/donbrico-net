@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReceiptWhisperer AI — अक्सर पूछे जाने वाले प्रश्न | Donbrico FAQ</title>
+    <meta name="description" content="Donbrico उत्पाद पेज से दिए गए URL पर इंस्टॉलर डाउनलोड करें। डाउनलोड की गई फ़ाइल को चलाएं और ऑन-स्क्रीन निर्देशों का पालन करें—किसी जटिल कॉन्फ़िगरेशन की आवश्यकता" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/receiptwhisperer-ai/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/receiptwhisperer-ai/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/receiptwhisperer-ai/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/receiptwhisperer-ai/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/receiptwhisperer-ai/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/receiptwhisperer-ai/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/receiptwhisperer-ai/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/receiptwhisperer-ai/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/receiptwhisperer-ai/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/receiptwhisperer-ai/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/receiptwhisperer-ai/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/receiptwhisperer-ai/ko/faq/" />
+    <meta property="og:title" content="ReceiptWhisperer AI — अक्सर पूछे जाने वाले प्रश्न | Donbrico FAQ" />
+    <meta property="og:description" content="Donbrico उत्पाद पेज से दिए गए URL पर इंस्टॉलर डाउनलोड करें। डाउनलोड की गई फ़ाइल को चलाएं और ऑन-स्क्रीन निर्देशों का पालन करें—किसी जटिल कॉन्फ़िगरेशन की आवश्यकता" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/receiptwhisperer-ai/hi/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/receiptwhisperer-ai/hi/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>ReceiptWhisperer AI — अक्सर पूछे जाने वाले प्रश्न</h1>
+<h2>शुरुआत कैसे करें</h2>
+<h3>मैं अपने कंप्यूटर पर ReceiptWhisperer AI कैसे इंस्टॉल करूं?</h3>
+<p>Donbrico उत्पाद पेज से दिए गए URL पर इंस्टॉलर डाउनलोड करें। डाउनलोड की गई फ़ाइल को चलाएं और ऑन-स्क्रीन निर्देशों का पालन करें—किसी जटिल कॉन्फ़िगरेशन की आवश्यकता नहीं है। इंस्टॉल होने के बाद, एप्लिकेशन लॉन्च करें और आप तुरंत रसीदें स्कैन करने के लिए तैयार होंगे।</p>
+<h3>रसीद अपलोड करने के लिए कौन से फ़ाइल फ़ॉर्मेट सपोर्टेड हैं?</h3>
+<p>ReceiptWhisperer AI इमेज फ़ाइलों (जैसे JPEG और PNG) और PDF दस्तावेज़ों दोनों को सपोर्ट करता है। आप इन फ़ाइलों को सीधे एप्लिकेशन में ड्रैग और ड्रॉप कर सकते हैं या अपने फ़ाइल सिस्टम से चुनने के लिए अपलोड बटन का उपयोग कर सकते हैं।</p>
+<h3>क्या ReceiptWhisperer AI का उपयोग करने के लिए मुझे इंटरनेट कनेक्शन की आवश्यकता है?</h3>
+<p>नहीं, बिल्कुल नहीं। सभी AI और OCR प्रोसेसिंग आपकी मशीन पर स्थानीय रूप से होती है, इसलिए आप पूरी तरह से ऑफ़लाइन रसीदें स्कैन और व्यवस्थित कर सकते हैं। इंटरनेट कनेक्शन केवल सॉफ़्टवेयर डाउनलोड करने या यदि आप चाहें तो क्लाउड सेवाओं पर डेटा एक्सपोर्ट करने के लिए आवश्यक है।</p>
+<h3>मैं अपनी पहली रसीद कैसे स्कैन करूं?</h3>
+<p>ReceiptWhisperer AI खोलें और अपलोड बटन पर क्लिक करें या किसी रसीद की इमेज या PDF को निर्दिष्ट क्षेत्र में ड्रैग करें। AI स्वचालित रूप से फ़ाइल को प्रोसेस करेगा और सेकंडों में व्यापारी का नाम, तारीख, कुल राशि और आइटम निकाल लेगा। निकाले गए डेटा की समीक्षा करें, यदि आवश्यक हो तो कोई सुधार करें, और इसे अपनी व्यवस्थित लाइब्रेरी में सेव करें।</p>
+<h2>सुविधाएं और उपयोग</h2>
+<h3>हस्तलिखित रसीदों के लिए OCR कितना सटीक है?</h3>
+<p>ReceiptWhisperer AI उन्नत AI-आधारित OCR का उपयोग करता है जो मुद्रित और अधिकांश हस्तलिखित टेक्स्ट को संभालने के लिए डिज़ाइन किया गया है। सटीकता मूल रसीद की स्पष्टता पर निर्भर करती है, लेकिन मानक मुद्रित रसीदों के लिए, कुल राशि और तारीख जैसे प्रमुख फ़ील्ड की निकासी अत्यधिक विश्वसनीय है। हस्तलिखित रसीदों के लिए, परिणाम भिन्न हो सकते हैं, और आप किसी भी निकाले गए डेटा को मैन्युअल रूप से संपादित कर सकते हैं।</p>
+<h3>क्या मैं अपना रसीद डेटा अकाउंटिंग सॉफ़्टवेयर में एक्सपोर्ट कर सकता हूं?</h3>
+<p>हां, आप अपने व्यवस्थित रसीद डेटा को CSV, PDF और अन्य सामान्य फ़ॉर्मेट में एक्सपोर्ट कर सकते हैं। यह आपको डेटा को QuickBooks, Excel या अपने पसंदीदा खर्च प्रबंधन सिस्टम जैसे अकाउंटिंग टूल में इम्पोर्ट करने की अनुमति देता है। बस उन रसीदों का चयन करें जिन्हें आप एक्सपोर्ट करना चाहते हैं और अपना पसंदीदा फ़ॉर्मेट चुनें।</p>
+<h3>स्मार्ट वर्गीकरण और टैगिंग कैसे काम करती है?</h3>
+<p>ReceiptWhisperer AI स्वचालित रूप से व्यापारी के नाम और आइटम का विश्लेषण करके एक श्रेणी निर्दिष्ट करता है, जैसे &quot;कार्यालय आपूर्ति&quot; या &quot;यात्रा&quot;। आप अपने खर्चों को और व्यवस्थित करने के लिए कस्टम टैग भी बना सकते हैं। ये श्रेणियां और टैग पूरी तरह से संपादन योग्य हैं, इसलिए आप उन्हें अपने व्यक्तिगत या व्यावसायिक अकाउंटिंग ढांचे से मेल खाने के लिए समायोजित कर सकते हैं।</p>
+<h3>क्या मैं एक साथ कई रसीदें स्कैन कर सकता हूं?</h3>
+<p>हां, आप एक ही बैच में कई रसीद इमेज या PDF अपलोड कर सकते हैं। ReceiptWhisperer AI प्रत्येक फ़ाइल को अलग-अलग प्रोसेस करेगा और निकाले गए डेटा को एक कतार में प्रदर्शित करेगा। यह विशेष रूप से फ्रीलांसरों या यात्रियों के लिए उपयोगी है जिन्हें यात्रा के बाद कई रसीदें प्रोसेस करनी होती हैं।</p>
+<h3>क्या ऐप किराने या खुदरा रसीदों से आइटम को पहचानता है?</h3>
+<p>हां, AI उत्पाद के नाम, मात्रा और कीमतों सहित व्यक्तिगत आइटम निकालने के लिए प्रशिक्षित है। कई आइटमों वाली जटिल रसीदों के लिए, निकाले गए डेटा की त्वरित समीक्षा की आवश्यकता हो सकती है, लेकिन अधिकांश आइटम सही ढंग से कैप्चर किए जाते हैं। यह सुविधा विशेष रूप से खर्च-जागरूक व्यक्तियों के लिए सहायक है जो विस्तृत खर्चों पर नज़र रखते हैं।</p>
+<h2>गोपनीयता और सुरक्षा</h2>
+<h3>क्या मेरा वित्तीय डेटा क्लाउड सर्वर पर संग्रहीत होता है?</h3>
+<p>नहीं। ReceiptWhisperer AI सभी डेटा को आपकी मशीन पर स्थानीय रूप से प्रोसेस करता है, जिसका अर्थ है कि आपकी रसीद इमेज और निकाली गई जानकारी कभी भी आपके कंप्यूटर को नहीं छोड़ती है। यह सुनिश्चित करता है कि आपका वित्तीय डेटा पूरी तरह से निजी और आपके नियंत्रण में रहे।</p>
+<h3>क्या AI मेरा रसीद डेटा तीसरे पक्ष की सेवाओं को भेजता है?</h3>
+<p>नहीं, AI तीसरे पक्ष की सेवाओं को कोई डेटा नहीं भेजता है। सभी OCR और डेटा निष्कर्षण एप्लिकेशन के अंतर्निहित मॉडल का उपयोग करके स्थानीय रूप से किया जाता है। आपकी मशीन से डेटा केवल तभी निकलता है जब आप मैन्युअल रूप से किसी फ़ाइल को एक्सपोर्ट करना या किसी बाहरी सेवा में सेव करना चुनते हैं।</p>
+<h3>क्या मैं सख्त IT नीतियों वाले कंपनी कंप्यूटर पर ReceiptWhisperer AI का उपयोग कर सकता हूं?</h3>
+<p>हां, क्योंकि एप्लिकेशन पूरी तरह से ऑफ़लाइन चलता है और इसे क्लाउड कनेक्टिविटी की आवश्यकता नहीं है, यह कंपनी-प्रबंधित उपकरणों पर उपयोग के लिए उपयुक्त है। हालांकि, किसी भी डेस्कटॉप एप्लिकेशन को इंस्टॉल करने से पहले आपको अपने संगठन की सॉफ़्टवेयर इंस्टॉलेशन नीतियों की पुष्टि करनी चाहिए। सामान्य उपयोग के दौरान नेटवर्क पर कोई डेटा प्रेषित नहीं होता है।</p>
+<h3>अगर मैं अपना लैपटॉप खो दूं तो मेरा डेटा कैसे सुरक्षित रहेगा?</h3>
+<p>चूंकि सभी डेटा आपकी मशीन पर स्थानीय रूप से संग्रहीत है, आपकी रसीद की जानकारी उतनी ही सुरक्षित है जितनी आपके डिवाइस की अपनी सुरक्षा उपाय। हम आपके डेटा की सुरक्षा के लिए फुल-डिस्क एन्क्रिप्शन और नियमित बैकअप की सलाह देते हैं। ReceiptWhisperer AI स्वयं बाहरी रूप से कोई डेटा संग्रहीत नहीं करता है।</p>
+<h2>मूल्य निर्धारण और लाइसेंसिंग</h2>
+<h3>फ्री टियर में क्या शामिल है?</h3>
+<p>ReceiptWhisperer AI के फ्री टियर में बुनियादी स्कैनिंग क्षमताएं शामिल हैं और यह आपको प्रति माह 10 रसीदों तक प्रोसेस करने की अनुमति देता है। आपको अभी भी पूर्ण AI-संचालित OCR निष्कर्षण और स्थानीय प्रोसेसिंग मिलती है, लेकिन मासिक सीमा के साथ। यह कभी-कभार उपयोगकर्ताओं या उन लोगों के लिए आदर्श है जो सॉफ़्टवेयर को खरीदने से पहले परीक्षण करना चाहते हैं।</p>
+<h3>प्रीमियम संस्करण की कीमत कितनी है और मुझे क्या मिलता है?</h3>
+<p>प्रीमियम संस्करण के मूल्य निर्धारण विवरण Donbrico उत्पाद पेज पर उपलब्ध हैं। प्रीमियम टियर 10-रसीद मासिक सीमा को हटा देता है, बैच स्कैनिंग और कस्टम टैगिंग जैसी उन्नत सुविधाएं प्रदान करता है, और प्राथमिकता सहायता प्रदान करता है। नवीनतम मूल्य निर्धारण और योजना विकल्पों के लिए उत्पाद URL देखें।</p>
+<h3>क्या एकमुश्त खरीद विकल्प है, या यह केवल सब्सक्रिप्शन है?</h3>
+<p>ReceiptWhisperer AI एक सब्सक्रिप्शन-आधारित उत्पाद के रूप में पेश किया जाता है, जिसमें मासिक और वार्षिक बिलिंग विकल्प उपलब्ध हैं। सब्सक्रिप्शन मॉडल सुनिश्चित करता है कि आपको निरंतर अपडेट, AI मॉडल में सुधार और तकनीकी सहायता मिलती रहे। फिलहाल कोई एकमुश्त खरीद विकल्प नहीं है।</p>
+<h2>समस्या निवारण</h2>
+<h3>ReceiptWhisperer AI मेरी रसीद से टेक्स्ट क्यों नहीं पहचान रहा है?</h3>
+<p>पहले, सुनिश्चित करें कि आपकी रसीद की इमेज स्पष्ट, अच्छी रोशनी वाली और धुंधली न हो। कम गुणवत्ता वाले स्कैन या बहुत अधिक मुड़ी हुई रसीदें OCR सटीकता को कम कर सकती हैं। यदि समस्या बनी रहती है, तो फ़ाइल को किसी भिन्न फ़ॉर्मेट (जैसे PDF से PNG) में बदलने का प्रयास करें और पुनः अपलोड करें। यदि AI कोई डेटा गलत पढ़ता है तो आप निकाले गए फ़ील्ड को मैन्युअल रूप से भी संपादित कर सकते हैं।</p>
+<h3>कई रसीदें प्रोसेस करते समय एप्लिकेशन धीमा चल रहा है। मैं क्या कर सकता हूं?</h3>
+<p>बड़ी संख्या में उच्च-रिज़ॉल्यूशन इमेज का बैच प्रोसेसिंग संसाधन-गहन हो सकता है। सिस्टम मेमोरी खाली करने के लिए अन्य एप्लिकेशन बंद करें, और अपलोड करने से पहले बहुत बड़ी इमेज को रीसाइज़ करने पर विचार करें। ReceiptWhisperer AI स्थानीय प्रोसेसिंग के लिए ऑप्टिमाइज़ किया गया है, इसलिए प्रदर्शन आपके कंप्यूटर के CPU और RAM पर निर्भर करता है।</p>
+<h3>मैंने गलती से एक रसीद डिलीट कर दी। क्या मैं इसे रिकवर कर सकता हूं?</h3>
+<p>रसीदें एप्लिकेशन के डेटाबेस में स्थानीय रूप से संग्रहीत होती हैं, और डिलीट करने के लिए कोई अंतर्निहित रीसायकल बिन या पूर्ववत सुविधा नहीं है। हम दृढ़ता से अनुशंसा करते हैं कि बैकअप के रूप में नियमित रूप से अपने डेटा को CSV या PDF में एक्सपोर्ट करें। यदि आपने एक्सपोर्ट नहीं किया है, तो डिलीट की गई रसीद पुनर्प्राप्त करने योग्य नहीं हो सकती है।</p>
+<h3>इंस्टॉलेशन के बाद ऐप लॉन्च नहीं हो रहा है। मुझे क्या करना चाहिए?</h3>
+<p>सुनिश्चित करें कि आपका कंप्यूटर Donbrico उत्पाद पेज पर सूचीबद्ध न्यूनतम सिस्टम आवश्यकताओं को पूरा करता है। यदि आप Windows पर हैं तो एप्लिकेशन को एडमिनिस्ट्रेटर के रूप में चलाने का प्रयास करें (राइट-क्लिक करें और &quot;Run as administrator&quot; चुनें)। यदि यह अभी भी लॉन्च नहीं होता है, तो एप्लिकेशन को पुनः इंस्टॉल करें या आगे की सहायता के लिए Donbrico वेबसाइट के माध्यम से सपोर्ट से संपर्क करें।</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

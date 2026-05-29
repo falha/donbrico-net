@@ -142,6 +142,18 @@
               <a href="/trade-desk/" data-i18n="nav.extensionsTradeDesk">TradeDesk AI</a>
               <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk"
                 >WorkDesk</a>
+              <span class="dropdown-group-label" style="display:block; margin-top:10px; font-size:0.7rem; color:var(--muted);" data-i18n="nav.tools">Tools</span>
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" data-i18n="nav.tools">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
             </div>
           </li>
           <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
@@ -193,6 +205,9 @@
         <a href="#workdesk" data-i18n="privacyPolicy.nav.workDesk">WorkDesk</a>
         <a href="#null-carrier" data-i18n="privacyPolicy.nav.nullCarrier"
           >Null Carrier</a>
+        <a href="#file-whisperer" data-i18n="privacyPolicy.nav.fileWhisperer">FileWhisperer AI</a>
+        <a href="#receipt-whisperer" data-i18n="privacyPolicy.nav.receiptWhisperer">ReceiptWhisperer AI</a>
+        <a href="#meeting-whisperer" data-i18n="privacyPolicy.nav.meetingWhisperer">MeetingWhisperer AI</a>
         <a href="#website" data-i18n="privacyPolicy.nav.website"
           >This Website</a>
         <a href="#contact" data-i18n="privacyPolicy.nav.contact">Contact</a>
@@ -640,6 +655,54 @@
           The game itself does not collect personal data. Steam's own privacy
           policy governs any data collected through the Steam platform.
         </p>
+      </div>
+    </section>
+
+        <section style="padding: var(--spacing-xl) 0" id="file-whisperer">
+      <div class="container">
+        <h2 data-i18n="privacyPolicy.fileWhisperer.sectionTitle">Donbrico FileWhisperer AI</h2>
+        <h3 data-i18n="privacyPolicy.fileWhisperer.whatWeCollect.sectionTitle">What data we collect</h3>
+        <p data-i18n="privacyPolicy.fileWhisperer.whatWeCollect.paragraph">None. Your files are analyzed locally on your device. No document text, metadata, or analysis summaries are ever transmitted to Donbrico servers.</p>
+        <h3 data-i18n="privacyPolicy.fileWhisperer.howStored.sectionTitle">How data is stored</h3>
+        <p data-i18n="privacyPolicy.fileWhisperer.howStored.paragraph">All indexed content, embeddings, and chat histories are stored locally in an encrypted database on your personal computer.</p>
+        <h3 data-i18n="privacyPolicy.fileWhisperer.thirdPartyAI.sectionTitle">Third-party AI providers (Bring Your Own Key)</h3>
+        <p data-i18n="privacyPolicy.fileWhisperer.thirdPartyAI.paragraph">FileWhisperer AI defaults to fully offline local models. If you configure a third-party API key, text segments relevant to your query are securely sent to that provider to generate replies.</p>
+        <h3 data-i18n="privacyPolicy.fileWhisperer.permissions.sectionTitle">Permissions used</h3>
+        <p data-i18n="privacyPolicy.fileWhisperer.permissions.paragraph">Local file system access (to read selected documents and save reports).</p>
+        <h3 data-i18n="privacyPolicy.fileWhisperer.dataDeletion.sectionTitle">Data deletion</h3>
+        <p data-i18n="privacyPolicy.fileWhisperer.dataDeletion.paragraph">Deleting your project folder or uninstalling the app permanently removes all local databases and indexes.</p>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0" id="receipt-whisperer">
+      <div class="container">
+        <h2 data-i18n="privacyPolicy.receiptWhisperer.sectionTitle">Donbrico ReceiptWhisperer AI</h2>
+        <h3 data-i18n="privacyPolicy.receiptWhisperer.whatWeCollect.sectionTitle">What data we collect</h3>
+        <p data-i18n="privacyPolicy.receiptWhisperer.whatWeCollect.paragraph">None. Receipt scanning, text recognition, and category matching run fully in-process offline on your computer. Financial data is never shared.</p>
+        <h3 data-i18n="privacyPolicy.receiptWhisperer.howStored.sectionTitle">How data is stored</h3>
+        <p data-i18n="privacyPolicy.receiptWhisperer.howStored.paragraph">All OCR transactions, receipt paths, and budgeting summaries are stored locally in a local SQLite file.</p>
+        <h3 data-i18n="privacyPolicy.receiptWhisperer.thirdPartyAI.sectionTitle">Third-party AI providers (Bring Your Own Key)</h3>
+        <p data-i18n="privacyPolicy.receiptWhisperer.thirdPartyAI.paragraph">Local OCR runs 100% offline. If you connect external models for advanced categorizations, the metadata is processed securely via that provider.</p>
+        <h3 data-i18n="privacyPolicy.receiptWhisperer.permissions.sectionTitle">Permissions used</h3>
+        <p data-i18n="privacyPolicy.receiptWhisperer.permissions.paragraph">File read/write access (to load receipt scans and write Excel sheets).</p>
+        <h3 data-i18n="privacyPolicy.receiptWhisperer.dataDeletion.sectionTitle">Data deletion</h3>
+        <p data-i18n="privacyPolicy.receiptWhisperer.dataDeletion.paragraph">Uninstalling the desktop application clears all local expense records.</p>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0" id="meeting-whisperer">
+      <div class="container">
+        <h2 data-i18n="privacyPolicy.meetingWhisperer.sectionTitle">Donbrico MeetingWhisperer AI</h2>
+        <h3 data-i18n="privacyPolicy.meetingWhisperer.whatWeCollect.sectionTitle">What data we collect</h3>
+        <p data-i18n="privacyPolicy.meetingWhisperer.whatWeCollect.paragraph">None. All audio files, video files, and voice recordings are processed in-process using local Whisper engines. Your voice data is never sent to the internet.</p>
+        <h3 data-i18n="privacyPolicy.meetingWhisperer.howStored.sectionTitle">How data is stored</h3>
+        <p data-i18n="privacyPolicy.meetingWhisperer.howStored.paragraph">Meeting transcripts, speaker tags, and summarized text are saved inside the local Vault database on your computer.</p>
+        <h3 data-i18n="privacyPolicy.meetingWhisperer.thirdPartyAI.sectionTitle">Third-party AI providers (Bring Your Own Key)</h3>
+        <p data-i18n="privacyPolicy.meetingWhisperer.thirdPartyAI.paragraph">Whisper transcription runs completely offline. If you choose external models for summarizing transcripts, only the text content is shared with that provider.</p>
+        <h3 data-i18n="privacyPolicy.meetingWhisperer.permissions.sectionTitle">Permissions used</h3>
+        <p data-i18n="privacyPolicy.meetingWhisperer.permissions.paragraph">Audio hardware access (microphone recording) and file read/write permissions.</p>
+        <h3 data-i18n="privacyPolicy.meetingWhisperer.dataDeletion.sectionTitle">Data deletion</h3>
+        <p data-i18n="privacyPolicy.meetingWhisperer.dataDeletion.paragraph">Deleting a meeting from your local vault or uninstalling the app permanently purges the transcript data.</p>
       </div>
     </section>
 

@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FileWhisperer AI — Smart File Organizer & Renamer for Windows</title>
+    <meta
+      name="description"
+      content="FileWhisperer AI renames, tags, describes, summarizes, and organizes your files using a local AI that runs 100% on your PC. No cloud. No subscription. One-time purchase. Download for Windows."
+    />
+    <meta name="keywords" content="AI file organizer Windows, smart file renamer, local AI file manager, offline file organizer, bulk rename files AI, file tagging software, AI file sorter, private AI desktop app, file summarizer Windows, organize files automatically" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Donbrico Studio" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="FileWhisperer AI — Smart File Organizer & Renamer for Windows" />
+    <meta property="og:description" content="Drop your files. AI renames, tags, describes, summarizes, and organizes them — 100% offline on your PC. No cloud, no subscription." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://donbrico.net/file-whisperer/" />
+    <meta property="og:image" content="https://donbrico.net/assets/sc1.png" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:site_name" content="Donbrico" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FileWhisperer AI — Smart File Organizer for Windows" />
+    <meta name="twitter:description" content="Local AI renames, tags, and organizes your files. 100% offline. One-time purchase." />
+    <meta name="twitter:image" content="https://donbrico.net/assets/sc1.png" />
+
+    <link rel="canonical" href="https://donbrico.net/file-whisperer/" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+
+    <!-- JSON-LD: SoftwareApplication structured data for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "FileWhisperer AI",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Windows 10, Windows 11",
+      "description": "FileWhisperer AI is a local-AI desktop application for Windows that renames, tags, describes, summarizes, and organizes files entirely on your device — no cloud, no subscription.",
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "name": "Basic (Free Trial)"
+        },
+        {
+          "@type": "Offer",
+          "price": "29",
+          "priceCurrency": "USD",
+          "name": "Pro Lifetime"
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "Donbrico Studio",
+        "url": "https://donbrico.net"
+      },
+      "url": "https://donbrico.net/file-whisperer/",
+      "screenshot": [
+        "https://donbrico.net/assets/sc1.png",
+        "https://donbrico.net/assets/sc2.png",
+        "https://donbrico.net/assets/sc3.png"
+      ],
+      "featureList": [
+        "AI-powered file renaming with case styles and format templates",
+        "Automatic file tagging with language and format control",
+        "AI file descriptions with tone and audience control",
+        "File summarization with depth and style settings",
+        "Smart folder organization with preview and undo",
+        "100% offline local AI — no cloud required",
+        "Batch processing of multiple files at once"
+      ]
+    }
+    </script>
+
+    <!-- FAQ structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does FileWhisperer AI upload my files to the cloud?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. FileWhisperer AI runs entirely on your local machine. The AI model processes your files in-process — nothing is ever transmitted over the network."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What file types does FileWhisperer AI support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "FileWhisperer AI works with PDFs, Word documents, text files, images, spreadsheets, and more. It reads file content and metadata to generate names, tags, descriptions, summaries, and folder suggestions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is FileWhisperer AI a subscription?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. FileWhisperer AI is a one-time purchase. Pay once and use it forever on your Windows PC with no recurring charges."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What Windows versions are supported?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "FileWhisperer AI runs on Windows 10 and Windows 11. It is available on the Microsoft Store and as a direct NSIS installer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I rename and organize files in bulk?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. FileWhisperer AI is built for batch work — drop a folder of files and the AI processes them all at once, generating names, tags, descriptions, summaries, or folder groupings in a single pass."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+      /* ── page-specific styles ─────────────────────────────────────────── */
+      .trust-bar {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: var(--spacing-md) 0;
+      }
+      .trust-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.9rem;
+        color: var(--muted);
+        font-weight: 500;
+      }
+      .trust-item .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--accent);
+        flex-shrink: 0;
+      }
+      .trust-item .dot-green { background: #22c55e; }
+
+      /* Screenshot gallery */
+      .screenshot-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        max-width: 900px;
+        margin: var(--spacing-lg) auto 0;
+      }
+      .screenshot-gallery .main-shot {
+        grid-column: 1 / -1;
+      }
+      .screenshot-gallery img {
+        width: 100%;
+        border-radius: var(--border-radius);
+        border: 1px solid var(--border);
+        display: block;
+        transition: var(--transition);
+      }
+      .screenshot-gallery img:hover {
+        border-color: var(--accent);
+        box-shadow: 0 8px 32px rgba(99, 102, 241, 0.2);
+        transform: translateY(-2px);
+      }
+      @media (max-width: 640px) {
+        .screenshot-gallery { grid-template-columns: 1fr; }
+        .screenshot-gallery .main-shot { grid-column: 1; }
+      }
+
+      /* Feature cards — numbered */
+      .feature-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: rgba(99, 102, 241, 0.15);
+        border: 1px solid rgba(99, 102, 241, 0.4);
+        color: var(--accent);
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 0.9rem;
+        margin-bottom: var(--spacing-sm);
+        flex-shrink: 0;
+      }
+
+      /* Highlight chips inside feature descriptions */
+      .chip {
+        display: inline-block;
+        background: rgba(99, 102, 241, 0.1);
+        border: 1px solid rgba(99, 102, 241, 0.25);
+        border-radius: 4px;
+        padding: 1px 7px;
+        font-size: 0.78rem;
+        color: var(--accent);
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 600;
+        margin: 2px 2px 2px 0;
+        vertical-align: middle;
+      }
+
+      /* Privacy block */
+      .privacy-block {
+        background: rgba(34, 197, 94, 0.04);
+        border: 1px solid rgba(34, 197, 94, 0.2);
+        border-radius: var(--border-radius);
+        padding: var(--spacing-lg);
+        max-width: 760px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .privacy-block .icon-lock {
+        font-size: 2.5rem;
+        margin-bottom: var(--spacing-sm);
+      }
+
+      /* Comparison table */
+      .compare-table {
+        width: 100%;
+        max-width: 700px;
+        margin: var(--spacing-lg) auto 0;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+      }
+      .compare-table th {
+        padding: 12px 16px;
+        text-align: left;
+        font-family: "Space Grotesk", sans-serif;
+        border-bottom: 1px solid var(--border);
+        color: var(--muted);
+        font-weight: 600;
+      }
+      .compare-table td {
+        padding: 12px 16px;
+        border-bottom: 1px solid rgba(255,255,255,0.04);
+      }
+      .compare-table tr:last-child td { border-bottom: none; }
+      .compare-table .yes { color: #22c55e; font-weight: 600; }
+      .compare-table .no  { color: #f87171; }
+      .compare-table .highlight-col { background: rgba(99,102,241,0.06); }
+
+      /* MS Store button */
+      .btn-ms-store {
+        background: #111;
+        color: #fff;
+        border: 1px solid #333;
+        padding: var(--spacing-sm) var(--spacing-lg);
+        border-radius: var(--border-radius);
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 600;
+        transition: var(--transition);
+        min-height: 44px;
+        text-decoration: none;
+        font-family: "Space Grotesk", sans-serif;
+      }
+      .btn-ms-store:hover {
+        background: #222;
+        border-color: var(--accent);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(99, 102, 241, 0.15);
+      }
+      .btn-ms-store svg {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+        flex-shrink: 0;
+      }
+
+      /* Screenshot carousel tabs */
+      .sc-tabs {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: var(--spacing-md);
+      }
+      .sc-tab {
+        background: rgba(255,255,255,0.04);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 6px 16px;
+        font-size: 0.82rem;
+        color: var(--muted);
+        cursor: pointer;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 500;
+        transition: var(--transition);
+        user-select: none;
+      }
+      .sc-tab:hover, .sc-tab.active {
+        border-color: var(--accent);
+        color: var(--text-color);
+        background: rgba(99,102,241,0.1);
+      }
+      .sc-img-wrap {
+        max-width: 860px;
+        margin: 0 auto;
+        position: relative;
+        min-height: 200px;
+      }
+      .sc-img-wrap img {
+        width: 100%;
+        border-radius: var(--border-radius);
+        border: 1px solid var(--border);
+        display: none;
+        animation: fadeIn 0.3s ease;
+      }
+      .sc-img-wrap img.active {
+        display: block;
+      }
+      @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label">Categories</span>
+              <a href="/solutions/communication/">Write &amp; Respond</a>
+              <a href="/solutions/automation/">Fill &amp; Process</a>
+              <a href="/solutions/workspace/">Organize &amp; Focus</a>
+              <span class="dropdown-group-label">By Role</span>
+              <a href="/solutions/job-seekers/">For Job Seekers</a>
+              <a href="/med-autofill/">For Medical Admin</a>
+              <a href="/solutions/recruiters/">For Recruiters</a>
+              <a href="/solutions/support-teams/">For Support Teams</a>
+              <a href="/solutions/ecommerce-support/">For Ecommerce</a>
+              <a href="/solutions/insurance/">For Insurance</a>
+              <a href="/solutions/real-estate/">For Real Estate</a>
+              <a href="/solutions/browser-workspace/">Browser Workspace</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/">All Extensions</a>
+              <a href="/autofill-ai/">Autofill AI</a>
+              <a href="/med-autofill/">MedAutoFill</a>
+              <a href="/propertyfill-ai/">PropertyFill AI</a>
+              <a href="/ai-reply-assistant/">AI Reply Assistant</a>
+              <a href="/host-reply/">HostReply AI</a>
+              <a href="/trade-desk/">TradeDesk AI</a>
+              <a href="/seller-desk/">SellerDesk AI</a>
+              <a href="/recruit-reply/">RecruitReply AI</a>
+              <a href="/workdesk/">WorkDesk</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" class="active">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" class="active">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/null-carrier/">Game</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/support/">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ══════════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════════ -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">WINDOWS DESKTOP APP &nbsp;·&nbsp; LOCAL AI &nbsp;·&nbsp; ONE-TIME PURCHASE</p>
+        <h1>Stop naming files manually.<br />Let local AI do it.</h1>
+        <p class="subtitle">
+          Drop your files into FileWhisperer AI and get smart names, tags, descriptions, summaries, and folder organization — all generated on your PC, with zero data sent to the cloud.
+        </p>
+
+        <!-- Trust bar — quick scannable facts -->
+        <div class="trust-bar" aria-label="Key facts">
+          <span class="trust-item"><span class="dot dot-green"></span>100% offline — no internet needed</span>
+          <span class="trust-item"><span class="dot dot-green"></span>AI runs locally on your device</span>
+          <span class="trust-item"><span class="dot dot-green"></span>No subscription — own it forever</span>
+          <span class="trust-item"><span class="dot dot-green"></span>Windows 10 / 11</span>
+        </div>
+
+        <!-- CTA buttons -->
+        <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; align-items:center; margin-top: var(--spacing-md);">
+          <a href="#" class="btn-ms-store" aria-label="Download FileWhisperer AI on Microsoft Store">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M0 0h11.373v11.373H0V0zm12.627 0H24v11.373H12.627V0zM0 12.627h11.373V24H0V12.627zm12.627 0H24V24H12.627V12.627z"/>
+            </svg>
+            <span>Get on Microsoft Store</span>
+          </a>
+          <a href="https://donbrico.gumroad.com/l/file-whisperer" class="btn-outline" rel="noopener">
+            Buy direct — $29 one-time
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         SCREENSHOT GALLERY
+    ══════════════════════════════════════════════ -->
+    <section style="padding: var(--spacing-xl) 0; background: rgba(255,255,255,0.01);" aria-label="App screenshots">
+      <div class="container">
+        <h2 class="section-title">See it in action</h2>
+        <p style="text-align:center; color:var(--muted); margin-bottom: var(--spacing-md); max-width:600px; margin-left:auto; margin-right:auto;">
+          Click a tab to preview each feature. All processing shown here happens locally on your machine.
+        </p>
+
+        <div class="sc-tabs" role="tablist" aria-label="Feature screenshots">
+          <button class="sc-tab active" onclick="showTab(0)" role="tab" aria-selected="true">Drop files</button>
+          <button class="sc-tab" onclick="showTab(1)" role="tab" aria-selected="false">Smart Rename</button>
+          <button class="sc-tab" onclick="showTab(2)" role="tab" aria-selected="false">Auto Tag</button>
+          <button class="sc-tab" onclick="showTab(3)" role="tab" aria-selected="false">Describe</button>
+          <button class="sc-tab" onclick="showTab(4)" role="tab" aria-selected="false">Summarize</button>
+          <button class="sc-tab" onclick="showTab(5)" role="tab" aria-selected="false">Organize</button>
+          <button class="sc-tab" onclick="showTab(6)" role="tab" aria-selected="false">Results</button>
+        </div>
+
+        <div class="sc-img-wrap" role="tabpanel">
+          <img src="../assets/sc1.png" alt="FileWhisperer AI — drop files into the inbox to start AI processing" class="active" loading="eager" />
+          <img src="../assets/sc2.png" alt="FileWhisperer AI — Smart Rename: AI suggests clean file names with case and format options" loading="lazy" />
+          <img src="../assets/sc3.png" alt="FileWhisperer AI — Auto Tag: AI generates keyword tags in your preferred format and language" loading="lazy" />
+          <img src="../assets/sc4.png" alt="FileWhisperer AI — Describe: AI writes file descriptions with tone and audience control" loading="lazy" />
+          <img src="../assets/sc5.png" alt="FileWhisperer AI — Summarize: AI produces concise summaries with depth and style settings" loading="lazy" />
+          <img src="../assets/sc6.png" alt="FileWhisperer AI — Organize: AI groups files into folders with a preview before any files move" loading="lazy" />
+          <img src="../assets/sc7.png" alt="FileWhisperer AI — Results view showing completed batch with undo option" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         5 CORE FEATURES
+    ══════════════════════════════════════════════ -->
+    <section id="features" style="padding: var(--spacing-xl) 0;">
+      <div class="container">
+        <h2 class="section-title">5 things FileWhisperer AI does for you</h2>
+        <p style="text-align:center; color:var(--muted); margin-bottom: var(--spacing-lg); max-width:640px; margin-left:auto; margin-right:auto;">
+          Each operation is powered by a local AI model. Select your files, choose an operation, and confirm — the AI handles the rest.
+        </p>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:var(--spacing-lg);">
+
+          <!-- 1. Rename -->
+          <div class="card">
+            <div class="feature-number" aria-hidden="true">1</div>
+            <h3>Smart Rename</h3>
+            <p>The AI reads your file's content and suggests a clean, descriptive name — no more <em>scan001_final_v3.pdf</em>. You control the output format with options like:</p>
+            <p>
+              <span class="chip">hyphen-case</span>
+              <span class="chip">snake_case</span>
+              <span class="chip">Title Case</span>
+              <span class="chip">{date}-{name}</span>
+              <span class="chip">custom themes</span>
+            </p>
+            <p style="color:var(--muted); font-size:0.88rem; margin-bottom:0;">Rename a whole folder of files in one pass. Review every suggestion before anything changes on disk.</p>
+          </div>
+
+          <!-- 2. Tag -->
+          <div class="card">
+            <div class="feature-number" aria-hidden="true">2</div>
+            <h3>Auto Tag</h3>
+            <p>Generate keyword tags for every file — useful for document management, photo libraries, or building a searchable archive. Configure:</p>
+            <p>
+              <span class="chip">lowercase</span>
+              <span class="chip">Title Case</span>
+              <span class="chip">#hashtag</span>
+              <span class="chip">3–10 tags</span>
+              <span class="chip">any language</span>
+            </p>
+            <p style="color:var(--muted); font-size:0.88rem; margin-bottom:0;">Seed the AI with a custom taxonomy (e.g. "invoices, legal, HR") to keep tags consistent across your whole library.</p>
+          </div>
+
+          <!-- 3. Describe -->
+          <div class="card">
+            <div class="feature-number" aria-hidden="true">3</div>
+            <h3>Describe</h3>
+            <p>Get a one-paragraph description of each file — perfect for catalogues, knowledge bases, or just knowing what something is before you open it. Choose your format and audience:</p>
+            <p>
+              <span class="chip">sentence</span>
+              <span class="chip">bullet points</span>
+              <span class="chip">structured</span>
+              <span class="chip">neutral / technical / marketing</span>
+            </p>
+            <p style="color:var(--muted); font-size:0.88rem; margin-bottom:0;">Output in any language — great for multilingual file libraries.</p>
+          </div>
+
+          <!-- 4. Summarize -->
+          <div class="card">
+            <div class="feature-number" aria-hidden="true">4</div>
+            <h3>Summarize</h3>
+            <p>Turn lengthy documents into digestible takeaways without opening them. Ideal for reports, contracts, and research files. Control depth and style:</p>
+            <p>
+              <span class="chip">headline</span>
+              <span class="chip">brief</span>
+              <span class="chip">detailed</span>
+              <span class="chip">prose / bullets / action items</span>
+            </p>
+            <p style="color:var(--muted); font-size:0.88rem; margin-bottom:0;">Every summary is generated locally and stays on your machine — nothing is sent to any server.</p>
+          </div>
+
+          <!-- 5. Organize -->
+          <div class="card" style="grid-column: span 1;">
+            <div class="feature-number" aria-hidden="true">5</div>
+            <h3>Smart Organize</h3>
+            <p>The AI groups your files into suggested subfolders based on their content. Before anything moves, you see a full folder-tree preview. You decide to proceed, tweak, or cancel.</p>
+            <p>
+              <span class="chip">move or copy</span>
+              <span class="chip">date hierarchy YYYY/MM</span>
+              <span class="chip">undo support</span>
+              <span class="chip">preset templates</span>
+            </p>
+            <p style="color:var(--muted); font-size:0.88rem; margin-bottom:0;">Use presets like <em>Invoices, Contracts, Photos, Reports</em> to anchor the AI's suggestions to your workflow.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         LOCAL AI / PRIVACY
+    ══════════════════════════════════════════════ -->
+    <section id="privacy" style="padding: var(--spacing-xl) 0; background: rgba(255,255,255,0.01);">
+      <div class="container">
+        <h2 class="section-title">Local AI — your data stays on your machine</h2>
+
+        <div class="privacy-block">
+          <div class="icon-lock" aria-hidden="true">🔒</div>
+          <p style="font-size:1.1rem; font-weight:600; margin-bottom:var(--spacing-sm);">No cloud. No API keys. No monthly bill.</p>
+          <p style="color:var(--muted); margin-bottom:var(--spacing-md);">
+            FileWhisperer AI ships with an AI model that runs directly inside the app on your CPU or GPU. When you process a file, all inference happens in-process — the text of your files never leaves your computer. This makes it safe for confidential documents, medical records, legal contracts, or anything you wouldn't trust to a cloud service.
+          </p>
+          <p style="color:var(--muted); margin-bottom:0;">
+            Works on flights. Works on air-gapped machines. Works without Wi-Fi. Forever.
+          </p>
+        </div>
+
+        <!-- Comparison table -->
+        <table class="compare-table" aria-label="FileWhisperer vs cloud AI tools comparison">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th class="highlight-col" style="color:var(--accent);">FileWhisperer AI</th>
+              <th>Cloud AI tools</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Files sent to external servers</td>
+              <td class="yes highlight-col">Never</td>
+              <td class="no">Every request</td>
+            </tr>
+            <tr>
+              <td>Works offline</td>
+              <td class="yes highlight-col">Always</td>
+              <td class="no">Requires internet</td>
+            </tr>
+            <tr>
+              <td>Subscription required</td>
+              <td class="yes highlight-col">No — one-time purchase</td>
+              <td class="no">Monthly fee</td>
+            </tr>
+            <tr>
+              <td>AI usage limits</td>
+              <td class="yes highlight-col">Unlimited (local)</td>
+              <td class="no">Rate limits / credits</td>
+            </tr>
+            <tr>
+              <td>Safe for sensitive documents</td>
+              <td class="yes highlight-col">Yes — stays on your PC</td>
+              <td class="no">Risky</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         HOW IT WORKS (3 steps)
+    ══════════════════════════════════════════════ -->
+    <section id="how-it-works" style="padding: var(--spacing-xl) 0;">
+      <div class="container">
+        <h2 class="section-title">Three steps from chaos to clarity</h2>
+        <div style="display:flex; gap:var(--spacing-lg); justify-content:center; flex-wrap:wrap;">
+          <div class="card" style="flex:1; min-width:240px; text-align:center;">
+            <div style="font-size:2.5rem; margin-bottom:var(--spacing-sm);" aria-hidden="true">📂</div>
+            <h3>1. Drop your files</h3>
+            <p style="color:var(--muted); margin-bottom:0;">Drag and drop individual files or entire folders into the app inbox. Supported: PDFs, images, Word docs, text files, spreadsheets, and more.</p>
+          </div>
+          <div class="card" style="flex:1; min-width:240px; text-align:center;">
+            <div style="font-size:2.5rem; margin-bottom:var(--spacing-sm);" aria-hidden="true">🤖</div>
+            <h3>2. Choose an operation</h3>
+            <p style="color:var(--muted); margin-bottom:0;">Pick Rename, Tag, Describe, Summarize, or Organize. Adjust the output options — language, format, depth — then let the local AI process your batch.</p>
+          </div>
+          <div class="card" style="flex:1; min-width:240px; text-align:center;">
+            <div style="font-size:2.5rem; margin-bottom:var(--spacing-sm);" aria-hidden="true">✅</div>
+            <h3>3. Review &amp; apply</h3>
+            <p style="color:var(--muted); margin-bottom:0;">Every suggestion is shown before anything changes on disk. Approve the whole batch or tweak individual items. Full undo is available after apply.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         WHO IS IT FOR
+    ══════════════════════════════════════════════ -->
+    <section style="padding: var(--spacing-xl) 0; background: rgba(255,255,255,0.01);">
+      <div class="container">
+        <h2 class="section-title">Who uses FileWhisperer AI?</h2>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:var(--spacing-md);">
+          <div class="card" style="text-align:center;">
+            <div style="font-size:2rem; margin-bottom:8px;" aria-hidden="true">⚖️</div>
+            <h4 style="font-size:1rem; margin-bottom:8px;">Lawyers &amp; paralegals</h4>
+            <p style="color:var(--muted); font-size:0.85rem; margin-bottom:0;">Rename and summarize contracts, briefs, and exhibits without uploading to any cloud service.</p>
+          </div>
+          <div class="card" style="text-align:center;">
+            <div style="font-size:2rem; margin-bottom:8px;" aria-hidden="true">🏥</div>
+            <h4 style="font-size:1rem; margin-bottom:8px;">Healthcare professionals</h4>
+            <p style="color:var(--muted); font-size:0.85rem; margin-bottom:0;">Organize patient records and research files while keeping HIPAA obligations intact — zero external transmission.</p>
+          </div>
+          <div class="card" style="text-align:center;">
+            <div style="font-size:2rem; margin-bottom:8px;" aria-hidden="true">📸</div>
+            <h4 style="font-size:1rem; margin-bottom:8px;">Photographers &amp; creatives</h4>
+            <p style="color:var(--muted); font-size:0.85rem; margin-bottom:0;">Bulk-rename shoots, generate tags for your stock library, and organize folders by date hierarchy automatically.</p>
+          </div>
+          <div class="card" style="text-align:center;">
+            <div style="font-size:2rem; margin-bottom:8px;" aria-hidden="true">🔬</div>
+            <h4 style="font-size:1rem; margin-bottom:8px;">Researchers &amp; academics</h4>
+            <p style="color:var(--muted); font-size:0.85rem; margin-bottom:0;">Summarize and tag literature files at scale; keep proprietary research data off third-party servers entirely.</p>
+          </div>
+          <div class="card" style="text-align:center;">
+            <div style="font-size:2rem; margin-bottom:8px;" aria-hidden="true">🏢</div>
+            <h4 style="font-size:1rem; margin-bottom:8px;">IT &amp; enterprise teams</h4>
+            <p style="color:var(--muted); font-size:0.85rem; margin-bottom:0;">Deploy on air-gapped workstations. Clean up shared drives. No cloud subscriptions to manage or audit.</p>
+          </div>
+          <div class="card" style="text-align:center;">
+            <div style="font-size:2rem; margin-bottom:8px;" aria-hidden="true">🗂️</div>
+            <h4 style="font-size:1rem; margin-bottom:8px;">Anyone with messy downloads</h4>
+            <p style="color:var(--muted); font-size:0.85rem; margin-bottom:0;">If your Desktop is a graveyard of <em>final_v2_REAL.docx</em> files, FileWhisperer AI will sort it out in minutes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         PRICING
+    ══════════════════════════════════════════════ -->
+    <section id="pricing" style="padding: var(--spacing-xl) 0;">
+      <div class="container">
+        <h2 class="section-title">Simple pricing. No surprises.</h2>
+        <p style="text-align:center; color:var(--muted); max-width:560px; margin:0 auto var(--spacing-lg);">
+          The 15-day trial is the full app — no features removed, no file limits, no watermarks. Just try it completely free, then decide.
+        </p>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:var(--spacing-lg); max-width:760px; margin:0 auto;">
+          <div class="card">
+            <h3>15-Day Free Trial</h3>
+            <p style="font-size:2rem; font-weight:700; color:var(--accent); margin-bottom:4px;">Free</p>
+            <p style="color:var(--muted); font-size:0.85rem; margin-bottom:var(--spacing-sm);">No credit card · No signup</p>
+            <ul>
+              <li>All 5 AI operations — Rename, Tag, Describe, Summarize, Organize</li>
+              <li>Unlimited files &amp; batches</li>
+              <li>Full format, language &amp; style controls</li>
+              <li>Organize presets &amp; date hierarchy</li>
+              <li>Preview &amp; full undo support</li>
+              <li>Local AI — 100% offline</li>
+            </ul>
+            <a href="#" class="btn" style="margin-top:auto;">Start Free Trial</a>
+          </div>
+          <div class="card" style="border: 2px solid var(--accent); position:relative;">
+            <div style="position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:var(--accent); color:#fff; padding:2px 14px; border-radius:20px; font-size:0.75rem; font-family:'Space Grotesk',sans-serif; font-weight:700; white-space:nowrap;">KEEP IT FOREVER</div>
+            <h3>Pro Lifetime</h3>
+            <p style="font-size:2rem; font-weight:700; color:var(--accent); margin-bottom:4px;">$29 <span style="font-size:1rem; font-weight:400; color:var(--muted);">one-time</span></p>
+            <p style="color:var(--muted); font-size:0.85rem; margin-bottom:var(--spacing-sm);">Pay once — use forever</p>
+            <ul>
+              <li>Everything in the trial, permanently</li>
+              <li>Unlimited files &amp; batches</li>
+              <li>All 5 AI operations</li>
+              <li>Full format, language &amp; style controls</li>
+              <li>Organize presets (Invoices, Photos, etc.)</li>
+              <li>Priority support</li>
+              <li>All future updates for this version</li>
+            </ul>
+            <a href="https://donbrico.gumroad.com/l/file-whisperer" class="btn" style="margin-top:auto;" rel="noopener">Buy Pro — $29</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         FAQ
+    ══════════════════════════════════════════════ -->
+    <section id="faq" style="padding: var(--spacing-xl) 0; background: rgba(255,255,255,0.01);">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div style="max-width:760px; margin:0 auto;">
+
+          <details style="margin-bottom:var(--spacing-md);">
+            <summary style="cursor:pointer; font-weight:600; font-family:'Space Grotesk',sans-serif; padding:4px 0;">
+              Does FileWhisperer AI upload my files to the cloud?
+            </summary>
+            <p style="color:var(--muted); padding-top:var(--spacing-sm);">
+              No. The AI model runs entirely inside the app on your local machine — nothing is transmitted over the network. Your files never leave your PC. This makes it safe to use with sensitive documents like contracts, medical records, or proprietary research.
+            </p>
+          </details>
+
+          <details style="margin-bottom:var(--spacing-md);">
+            <summary style="cursor:pointer; font-weight:600; font-family:'Space Grotesk',sans-serif; padding:4px 0;">
+              What file types are supported?
+            </summary>
+            <p style="color:var(--muted); padding-top:var(--spacing-sm);">
+              FileWhisperer AI reads text content and metadata from PDFs, Word documents (.docx), plain text files, images (with EXIF data), spreadsheets, and other common document formats. The AI uses the extracted content to generate names, tags, descriptions, summaries, and folder groupings.
+            </p>
+          </details>
+
+          <details style="margin-bottom:var(--spacing-md);">
+            <summary style="cursor:pointer; font-weight:600; font-family:'Space Grotesk',sans-serif; padding:4px 0;">
+              Can I process files in bulk?
+            </summary>
+            <p style="color:var(--muted); padding-top:var(--spacing-sm);">
+              Yes — that's the main use case. Drop an entire folder and FileWhisperer AI processes every file in a single batch. You review all suggestions together before confirming, and full undo is available after any operation.
+            </p>
+          </details>
+
+          <details style="margin-bottom:var(--spacing-md);">
+            <summary style="cursor:pointer; font-weight:600; font-family:'Space Grotesk',sans-serif; padding:4px 0;">
+              Is FileWhisperer AI a subscription?
+            </summary>
+            <p style="color:var(--muted); padding-top:var(--spacing-sm);">
+              No. It is a one-time purchase. Buy Pro once and use it forever, including all future updates for that major version. No recurring charges, no API credits, no usage limits.
+            </p>
+          </details>
+
+          <details style="margin-bottom:var(--spacing-md);">
+            <summary style="cursor:pointer; font-weight:600; font-family:'Space Grotesk',sans-serif; padding:4px 0;">
+              What Windows versions are supported?
+            </summary>
+            <p style="color:var(--muted); padding-top:var(--spacing-sm);">
+              Windows 10 and Windows 11 (64-bit). Available from the Microsoft Store and as a direct NSIS installer download.
+            </p>
+          </details>
+
+          <details style="margin-bottom:var(--spacing-md);">
+            <summary style="cursor:pointer; font-weight:600; font-family:'Space Grotesk',sans-serif; padding:4px 0;">
+              Will it slow down my computer?
+            </summary>
+            <p style="color:var(--muted); padding-top:var(--spacing-sm);">
+              FileWhisperer AI uses a lightweight, quantized AI model optimized for desktop hardware. Processing runs in the background and typically finishes in a few seconds per file. Machines with a modern CPU or any GPU will see faster results.
+            </p>
+          </details>
+
+          <details style="margin-bottom:var(--spacing-md);">
+            <summary style="cursor:pointer; font-weight:600; font-family:'Space Grotesk',sans-serif; padding:4px 0;">
+              Does Organize actually move my files?
+            </summary>
+            <p style="color:var(--muted); padding-top:var(--spacing-sm);">
+              Only after you confirm. The Organize feature shows you a full folder-tree preview of where every file will go before touching your disk. You can choose between <em>move</em> (files go to new locations) or <em>copy</em> (originals stay, copies go into the new folders). Full undo is available after either mode.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         FINAL CTA
+    ══════════════════════════════════════════════ -->
+    <section style="padding: var(--spacing-xl) 0; text-align:center;">
+      <div class="container">
+        <h2 style="margin-bottom:var(--spacing-sm);">Your files, finally organized.</h2>
+        <p class="subtitle" style="max-width:540px; margin:0 auto var(--spacing-md);">
+          Try the free version and see how fast local AI can turn a folder of chaos into a clean, tagged, named, and summarized library.
+        </p>
+        <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; align-items:center;">
+          <a href="#" class="btn-ms-store" aria-label="Download FileWhisperer AI on Microsoft Store">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M0 0h11.373v11.373H0V0zm12.627 0H24v11.373H12.627V0zM0 12.627h11.373V24H0V12.627zm12.627 0H24V24H12.627V12.627z"/>
+            </svg>
+            <span>Get on Microsoft Store — Free</span>
+          </a>
+          <a href="https://donbrico.gumroad.com/l/file-whisperer" class="btn-outline" rel="noopener">
+            Buy Pro — $29 one-time
+          </a>
+        </div>
+        <p style="color:var(--muted); font-size:0.85rem; margin-top:var(--spacing-md);">Windows 10/11 · 100% offline · No cloud · No subscription</p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         FOOTER
+    ══════════════════════════════════════════════ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>Solutions</h4>
+            <a href="/solutions/communication/">Write &amp; Respond</a>
+            <a href="/solutions/automation/">Fill &amp; Process</a>
+            <a href="/solutions/workspace/">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4>Workflows</h4>
+            <a href="/solutions/job-seekers/">Job Seekers</a>
+            <a href="/solutions/recruiters/">Recruiters</a>
+            <a href="/solutions/support-teams/">Support Teams</a>
+            <a href="/solutions/real-estate/">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4>Extensions</h4>
+            <a href="/autofill-ai/">Autofill AI</a>
+            <a href="/med-autofill/">MedAutoFill</a>
+            <a href="/propertyfill-ai/">PropertyFill AI</a>
+            <a href="/ai-reply-assistant/">AI Reply Assistant</a>
+            <a href="/host-reply/">HostReply AI</a>
+            <a href="/trade-desk/">TradeDesk AI</a>
+            <a href="/seller-desk/">SellerDesk AI</a>
+            <a href="/recruit-reply/">RecruitReply AI</a>
+            <a href="/workdesk/">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="/about/">About</a>
+            <a href="/support/">Support</a>
+            <a href="/privacy-policy/">Privacy Policy</a>
+            <a href="/terms/">Terms</a>
+          </div>
+        </div>
+        <p>© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../js/i18n.js" defer></script>
+    <script src="../js/chatwoot.js" defer></script>
+    <script>
+      // Screenshot tab switcher
+      function showTab(index) {
+        const imgs = document.querySelectorAll('.sc-img-wrap img');
+        const tabs = document.querySelectorAll('.sc-tab');
+        imgs.forEach((img, i) => {
+          img.classList.toggle('active', i === index);
+        });
+        tabs.forEach((tab, i) => {
+          tab.classList.toggle('active', i === index);
+          tab.setAttribute('aria-selected', i === index ? 'true' : 'false');
+        });
+      }
+    </script>
+  </body>
+</html>

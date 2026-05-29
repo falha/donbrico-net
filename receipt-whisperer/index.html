@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="receiptWhisperer.page.title">
+      ReceiptWhisperer AI — Private Offline Receipt Scanner &amp; Expense Tracker
+    </title>
+    <meta
+      name="description"
+      data-i18n="receiptWhisperer.page.description"
+      content="Scan and track receipts locally with local AI. Private offline expense report generator for Chrome & Windows. Zero server storage."
+    />
+    <meta
+      property="og:title"
+      data-i18n="receiptWhisperer.page.ogTitle"
+      content="ReceiptWhisperer AI — Private Offline Receipt Scanner &amp; Expense Tracker"
+    />
+    <meta
+      property="og:description"
+      data-i18n="receiptWhisperer.page.ogDescription"
+      content="Scan and track receipts locally with local AI. Private offline expense report generator for Chrome & Windows. Zero server storage."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://donbrico.net/receipt-whisperer/" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/receipt-whisperer/" />
+    <style>
+      .btn-ms-store {
+        background: #111;
+        color: #fff;
+        border: 1px solid #333;
+        padding: var(--spacing-sm) var(--spacing-lg);
+        border-radius: var(--border-radius);
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 600;
+        transition: var(--transition);
+        min-height: 44px;
+        text-decoration: none;
+      }
+      .btn-ms-store:hover {
+        background: #222;
+        border-color: var(--accent);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(99, 102, 241, 0.15);
+      }
+      .btn-ms-store svg {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+      }
+      .app-preview-card {
+        background: rgba(99, 102, 241, 0.02);
+        border: 1px dashed rgba(99, 102, 241, 0.2);
+        padding: var(--spacing-lg);
+        border-radius: var(--border-radius);
+        margin: var(--spacing-lg) 0;
+        text-align: left;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .preview-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: var(--spacing-xs);
+        margin-bottom: var(--spacing-sm);
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+      .preview-body {
+        font-family: "Courier New", monospace;
+        font-size: 0.85rem;
+        color: var(--muted);
+        line-height: 1.5;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"
+          ><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories"
+                >Categories</span>
+              <a
+                href="/solutions/communication/"
+                data-i18n="nav.solutionsCommunication"
+                >Write &amp; Respond</a>
+              <a
+                href="/solutions/automation/"
+                data-i18n="nav.solutionsAutomation"
+                >Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace"
+                >Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole"
+                >By Role</span>
+              <a
+                href="/solutions/job-seekers/"
+                data-i18n="nav.solutionsJobSeekers"
+                >For Job Seekers</a>
+              <a
+                href="/med-autofill/"
+                data-i18n="nav.solutionsMedicalAdmin"
+                >For Medical Admin</a>
+              <a
+                href="/solutions/recruiters/"
+                data-i18n="nav.solutionsRecruiters"
+                >For Recruiters</a>
+              <a
+                href="/solutions/support-teams/"
+                data-i18n="nav.solutionsSupportTeams"
+                >For Support Teams</a>
+              <a
+                href="/solutions/ecommerce-support/"
+                data-i18n="nav.solutionsEcommerceSupport"
+                >For Ecommerce</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance"
+                >For Insurance</a>
+              <a
+                href="/solutions/real-estate/"
+                data-i18n="nav.solutionsRealEstate"
+                >For Real Estate</a>
+              <a
+                href="/solutions/browser-workspace/"
+                data-i18n="nav.solutionsBrowserWorkspace"
+                >Browser Workspace</a>
+              </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll"
+                >All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill"
+                >Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/propertyfill-ai/" data-i18n="nav.extensionsPropertyFill">PropertyFill AI</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply"
+                >AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply"
+                >HostReply AI</a>
+              <a href="/trade-desk/" data-i18n="nav.extensionsTradeDesk">TradeDesk AI</a>
+              <a href="/seller-desk/" data-i18n="nav.extensionsSellerDesk">SellerDesk AI</a>
+              <a href="/recruit-reply/" data-i18n="nav.extensionsRecruitReply">RecruitReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk"
+                >WorkDesk</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" class="active" data-i18n="nav.tools">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" class="active" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow" data-i18n="receiptWhisperer.hero.eyebrow">
+          DESKTOP APPLICATION
+        </p>
+        <h1 data-i18n="receiptWhisperer.hero.title">
+          Organize expenses.<br />Offline and secure.
+        </h1>
+        <p class="subtitle" data-i18n="receiptWhisperer.hero.subtitle">
+          Extract merchant details, dates, items, tax, and totals from receipt images and PDFs locally. Generate clean reports without any financial data going to the cloud.
+        </p>
+        <div class="install-group" style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; align-items:center;">
+          <a href="#" class="btn-ms-store">
+            <svg viewBox="0 0 24 24">
+              <path d="M0 0h11.373v11.373H0V0zm12.627 0H24v11.373H12.627V0zM0 12.627h11.373V24H0V12.627zm12.627 0H24V24H12.627V12.627z"/>
+            </svg>
+            <span data-i18n="receiptWhisperer.hero.buttonPrimary">Get on Microsoft Store</span>
+          </a>
+          <a href="https://donbrico.gumroad.com/l/receipt-whisperer" class="btn-outline" data-i18n="receiptWhisperer.hero.buttonSecondary">
+            Get from Gumroad
+          </a>
+        </div>
+        
+        <div class="app-preview-card">
+          <div class="preview-header">
+            <span>⚡ RECEIPT WHISPERER AI — LOCAL OCR RUNTIME</span>
+            <span style="color:var(--accent)">STATUS: IDLE</span>
+          </div>
+          <div class="preview-body">> Dragging: scan_receipt_3992.png
+> Running local Tesseract OCR &amp; bounding box detection...
+> Fields recognized locally:
+  MERCHANT: Stark Industries Inc.
+  DATE: 2026-05-12
+  TOTAL: $487.50 USD
+  TAX: $39.00 USD
+  ITEMS:
+    - Arc Reactor Part-A4  x2  $380.00
+    - Premium Lead Shield  x1   $68.50
+> Auto-classified: "Research &amp; Development"
+> Added local transaction record.</div>
+        </div>
+
+        <p
+          class="text-muted"
+          style="margin-top: var(--spacing-md)"
+          data-i18n="receiptWhisperer.hero.disclaimer"
+        >
+          💻 Runs on Windows 10/11 · Fully offline · Local OCR
+        </p>
+      </div>
+    </section>
+
+    <section id="how-it-works" style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2
+          class="section-title"
+          data-i18n="receiptWhisperer.howItWorks.sectionTitle"
+        >
+          How It Works
+        </h2>
+        <div
+          style="
+            display: flex;
+            gap: var(--spacing-lg);
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <div class="card" style="flex: 1; min-width: 250px">
+            <h3 data-i18n="receiptWhisperer.howItWorks.step1.title">
+              1. Import receipt scans
+            </h3>
+            <p data-i18n="receiptWhisperer.howItWorks.step1.description">
+              Import PNG, JPG, or PDF scans of your receipts, invoices, or utility bills in one click.
+            </p>
+          </div>
+          <div class="card" style="flex: 1; min-width: 250px">
+            <h3 data-i18n="receiptWhisperer.howItWorks.step2.title">
+              2. Offline OCR
+            </h3>
+            <p data-i18n="receiptWhisperer.howItWorks.step2.description">
+              Lightweight local OCR models analyze text and isolate financial fields entirely on your device.
+            </p>
+          </div>
+          <div class="card" style="flex: 1; min-width: 250px">
+            <h3 data-i18n="receiptWhisperer.howItWorks.step3.title">
+              3. Export sheets
+            </h3>
+            <p data-i18n="receiptWhisperer.howItWorks.step3.description">
+              Classify items, tag expense groups, and export clean Excel or CSV reports ready for bookkeeping.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2 class="section-title" data-i18n="receiptWhisperer.features.sectionTitle">
+          High-accuracy, local accounting.
+        </h2>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+          "
+        >
+          <div class="card">
+            <h4 data-i18n="receiptWhisperer.features.worksOffline.title">Zero server dependency</h4>
+            <p data-i18n="receiptWhisperer.features.worksOffline.description">
+              Process your business tax reports offline. No third-party API key, no slow cloud uploads.
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="receiptWhisperer.features.privacyFirst.title">Financial isolation</h4>
+            <p data-i18n="receiptWhisperer.features.privacyFirst.description">
+              Keep your sensitive business income and personal expenditure completely secure in your own hands.
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="receiptWhisperer.features.batchProcessing.title">Batch receipt scanning</h4>
+            <p data-i18n="receiptWhisperer.features.batchProcessing.description">
+              Import 50+ receipts simultaneously. Let the local pipeline categorize and structure them automatically.
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="receiptWhisperer.features.customPrompts.title">Smart tax tagger</h4>
+            <p data-i18n="receiptWhisperer.features.customPrompts.description">
+              Create rule-based triggers or local heuristics to automatically tag items for IRS/CRA classification.
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="receiptWhisperer.features.vectorSearch.title">Dynamic budget graphing</h4>
+            <p data-i18n="receiptWhisperer.features.vectorSearch.description">
+              Visualize monthly costs and product trends offline with direct browser-embedded charting.
+            </p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="receiptWhisperer.features.noSubscription.title">Permanent license</h4>
+            <p data-i18n="receiptWhisperer.features.noSubscription.description">
+              No subscription fees. A single, solid desktop license runs on your desktop indefinitely.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2 class="section-title" data-i18n="receiptWhisperer.pricing.sectionTitle">
+          No subscription, pay once.
+        </h2>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-lg);
+            max-width: 800px;
+            margin: 0 auto;
+          "
+        >
+          <div class="card">
+            <h3 data-i18n="receiptWhisperer.pricing.freeTrial.title">
+              Basic / Trial
+            </h3>
+            <p
+              style="font-size: 2rem; font-weight: 700; color: var(--accent)"
+              data-i18n="receiptWhisperer.pricing.freeTrial.price"
+            >
+              Free
+            </p>
+            <ul>
+              <li data-i18n="receiptWhisperer.pricing.freeTrial.features.f1">
+                Process up to 20 receipts per month
+              </li>
+              <li data-i18n="receiptWhisperer.pricing.freeTrial.features.f2">
+                Basic OCR field parsing
+              </li>
+              <li data-i18n="receiptWhisperer.pricing.freeTrial.features.f3">
+                Single category tagging
+              </li>
+              <li data-i18n="receiptWhisperer.pricing.freeTrial.features.f4">
+                No cloud sync
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="btn"
+              data-i18n="receiptWhisperer.pricing.freeTrial.button"
+              >Download Basic</a
+            >
+          </div>
+          <div class="card" style="border: 2px solid var(--accent)">
+            <h3 data-i18n="receiptWhisperer.pricing.proLifetime.title">
+              Pro Lifetime
+            </h3>
+            <p
+              style="font-size: 2rem; font-weight: 700; color: var(--accent)"
+              data-i18n="receiptWhisperer.pricing.proLifetime.price"
+            >
+              $29 one-time
+            </p>
+            <ul>
+              <li data-i18n="receiptWhisperer.pricing.proLifetime.features.f1">
+                Unlimited receipt uploads and processing
+              </li>
+              <li data-i18n="receiptWhisperer.pricing.proLifetime.features.f2">
+                Full line-item itemization OCR
+              </li>
+              <li data-i18n="receiptWhisperer.pricing.proLifetime.features.f3">
+                Advanced Excel/CSV/JSON exports
+              </li>
+              <li data-i18n="receiptWhisperer.pricing.proLifetime.features.f4">
+                Multi-currency and exchange support
+              </li>
+              <li data-i18n="receiptWhisperer.pricing.proLifetime.features.f5">
+                Priority customer support
+              </li>
+            </ul>
+            <a
+              href="https://donbrico.gumroad.com/l/receipt-whisperer"
+              class="btn"
+              data-i18n="receiptWhisperer.pricing.proLifetime.button"
+              >Buy Pro Lifetime</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2 class="section-title" data-i18n="receiptWhisperer.faq.sectionTitle">
+          Frequently Asked Questions
+        </h2>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary
+            style="cursor: pointer; font-weight: 600"
+            data-i18n="receiptWhisperer.faq.q1.question"
+          >
+            Is my bank information safe?
+          </summary>
+          <p data-i18n="receiptWhisperer.faq.q1.answer">
+            Yes. ReceiptWhisperer AI doesn't connect to bank APIs or sync with external servers. It reads documents and scans locally, leaving you in 100% control of your personal bank data.
+          </p>
+        </details>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary
+            style="cursor: pointer; font-weight: 600"
+            data-i18n="receiptWhisperer.faq.q2.question"
+          >
+            How does the OCR function?
+          </summary>
+          <p data-i18n="receiptWhisperer.faq.q2.answer">
+            It runs an optimized offline Tesseract and CNN pipeline built directly into the application runtime, enabling zero-latency recognition without cloud delays.
+          </p>
+        </details>
+        <details style="margin-bottom: var(--spacing-md)">
+          <summary
+            style="cursor: pointer; font-weight: 600"
+            data-i18n="receiptWhisperer.faq.q3.question"
+          >
+            Can I use it for tax audits?
+          </summary>
+          <p data-i18n="receiptWhisperer.faq.q3.answer">
+            Absolutely. Exported records include precise file links to matching receipt scans stored in your local directory, serving as clean, self-contained documentation for audits.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>Solutions</h4>
+            <a href="/solutions/communication/">Write &amp; Respond</a>
+            <a href="/solutions/automation/">Fill &amp; Process</a>
+            <a href="/solutions/workspace/">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4>Workflows</h4>
+            <a href="/solutions/job-seekers/">Job Seekers</a>
+            <a href="/solutions/recruiters/">Recruiters</a>
+            <a href="/solutions/support-teams/">Support Teams</a>
+            <a href="/solutions/real-estate/">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4>Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/propertyfill-ai/" data-i18n="nav.extensionsPropertyFill">PropertyFill AI</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/trade-desk/" data-i18n="nav.extensionsTradeDesk">TradeDesk AI</a>
+            <a href="/seller-desk/" data-i18n="nav.extensionsSellerDesk">SellerDesk AI</a>
+            <a href="/recruit-reply/" data-i18n="nav.extensionsRecruitReply">RecruitReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="/about/">About</a>
+            <a href="/support/">Support</a>
+            <a href="/privacy-policy/">Privacy Policy</a>
+            <a href="/terms/">Terms</a>
+          </div>
+        </div>
+        <p>© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="../js/i18n.js" defer></script>
+    <script src="../js/chatwoot.js" defer></script>
+  </body>
+</html>

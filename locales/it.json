@@ -480,7 +480,43 @@
         "answer": "Verifica di aver salvato i dettagli della tua proprietà nella scheda Memoria host del popup dell'estensione."
       }
     },
-    "heroCta": "Inviaci un'e-mail adesso"
+    "heroCta": "Inviaci un'e-mail adesso",
+    "fileWhisperer": {
+      "sectionTitle": "Supporto AI FileWhisperer",
+      "subtitle": "Problemi comuni",
+      "q1": {
+        "question": "Perché il download del modello impiega così tanto tempo?",
+        "answer": "Alla prima esecuzione, FileWhisperer AI scarica modelli Llama-3 altamente ottimizzati (~2-4GB) per l'esecuzione completamente offline. A seconda della velocità di Internet, l'operazione potrebbe richiedere diversi minuti, ma una volta scaricata, non avrai più bisogno di una connessione Internet."
+      },
+      "q2": {
+        "question": "Quali tipi di file sono supportati?",
+        "answer": "Attualmente, FileWhisperer AI supporta documenti PDF (.pdf), rich text (.rtf), documenti Word (.docx), file di testo (.txt), markdown (.md) e fogli di calcolo Excel/CSV."
+      }
+    },
+    "receiptWhisperer": {
+      "sectionTitle": "Supporto AI di ReceiptWhisperer",
+      "subtitle": "Problemi comuni",
+      "q1": {
+        "question": "Il motore OCR ha saltato alcuni elementi sulla mia ricevuta",
+        "answer": "Scansioni estremamente sfocate, carta spiegazzata o scrittura a mano possono ridurre la precisione dell'OCR. Prova ad raddrizzare la ricevuta e a scansionarla in condizioni di buona illuminazione. Puoi sempre fare doppio clic manualmente su qualsiasi campo analizzato per modificare direttamente i valori."
+      },
+      "q2": {
+        "question": "Come faccio a eseguire il backup dei dati delle mie spese?",
+        "answer": "Vai su Impostazioni nell'applicazione e fai clic su \"Esporta cassa spese\". Questo esporta un backup del database autonomo (.db) insieme a tutte le immagini delle ricevute classificate in un unico archivio ZIP."
+      }
+    },
+    "meetingWhisperer": {
+      "sectionTitle": "Supporto AI per MeetingWhisperer",
+      "subtitle": "Problemi comuni",
+      "q1": {
+        "question": "La trascrizione del mio file video impiega troppo tempo",
+        "answer": "Il caricamento dei file video ad alta definizione può richiedere più tempo. MeetingWhisperer AI estrae automaticamente prima la traccia audio per risparmiare risorse. Controlla l'accelerazione hardware del tuo sistema in Impostazioni: selezionando CUDA (NVIDIA) o DirectML puoi velocizzare Whisper fino a 5 volte."
+      },
+      "q2": {
+        "question": "Come posso migliorare l'identificazione del parlante?",
+        "answer": "Local speaker diarization works best when speakers do not overlap or interrupt frequently. You can name detected speaker profiles (e.g. 'Speaker 1' -> 'Alice') in the audio transcript editor to update the names globally."
+      }
+    }
   },
   "privacyPolicy": {
     "page": {
@@ -554,7 +590,10 @@
       "tradeDesk": "IA di TradeDesk",
       "sellerDesk": "SellerDesk AI",
       "recruitReply": "ReclutaRispondi AI",
-      "propertyFillAi": "PropertyFill AI"
+      "propertyFillAi": "PropertyFill AI",
+      "fileWhisperer": "FileWhisperer AI",
+      "receiptWhisperer": "Ricevuta Whisperer AI",
+      "meetingWhisperer": "MeetingWhisperer AI"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico Assistente di risposta AI",
@@ -739,6 +778,75 @@
         "sectionTitle": "Cancellazione dei dati",
         "paragraph": "La disinstallazione dell'estensione rimuove tutte le bozze e le impostazioni memorizzate."
       }
+    },
+    "fileWhisperer": {
+      "sectionTitle": "Donbrico FileWhisperer AI",
+      "whatWeCollect": {
+        "sectionTitle": "Quali dati raccogliamo",
+        "paragraph": "Nessuno. I tuoi file vengono analizzati localmente sul tuo dispositivo. Nessun testo di documento, metadati o riepiloghi di analisi viene mai trasmesso ai server Donbrico."
+      },
+      "howStored": {
+        "sectionTitle": "Come vengono archiviati i dati",
+        "paragraph": "Tutti i contenuti indicizzati, gli incorporamenti e le cronologie delle chat vengono archiviati localmente in un database crittografato sul tuo personal computer."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Fornitori di IA di terze parti (Bring Your Own Key)",
+        "paragraph": "Per impostazione predefinita, FileWhisperer AI utilizza modelli locali completamente offline. Se configuri una chiave API di terze parti, i segmenti di testo pertinenti alla tua query vengono inviati in modo sicuro a quel provider per generare risposte."
+      },
+      "permissions": {
+        "sectionTitle": "Autorizzazioni utilizzate",
+        "paragraph": "Accesso al file system locale (per leggere i documenti selezionati e salvare i report)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Cancellazione dei dati",
+        "paragraph": "L'eliminazione della cartella del progetto o la disinstallazione dell'app rimuove definitivamente tutti i database e gli indici locali."
+      }
+    },
+    "receiptWhisperer": {
+      "sectionTitle": "Donbrico RicevutaWhisperer AI",
+      "whatWeCollect": {
+        "sectionTitle": "Quali dati raccogliamo",
+        "paragraph": "Nessuno. La scansione delle ricevute, il riconoscimento del testo e la corrispondenza delle categorie vengono eseguiti completamente in-process offline sul tuo computer. I dati finanziari non vengono mai condivisi."
+      },
+      "howStored": {
+        "sectionTitle": "Come vengono archiviati i dati",
+        "paragraph": "Tutte le transazioni OCR, i percorsi delle ricevute e i riepiloghi del budget vengono archiviati localmente in un file SQLite locale."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Fornitori di IA di terze parti (Bring Your Own Key)",
+        "paragraph": "L'OCR locale funziona offline al 100%. Se colleghi modelli esterni per categorizzazioni avanzate, i metadati vengono elaborati in modo sicuro tramite quel provider."
+      },
+      "permissions": {
+        "sectionTitle": "Autorizzazioni utilizzate",
+        "paragraph": "Accesso in lettura/scrittura ai file (per caricare scansioni di ricevute e scrivere fogli Excel)."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Cancellazione dei dati",
+        "paragraph": "La disinstallazione dell'applicazione desktop cancella tutti i record di spesa locali."
+      }
+    },
+    "meetingWhisperer": {
+      "sectionTitle": "Donbrico MeetingWhisperer AI",
+      "whatWeCollect": {
+        "sectionTitle": "Quali dati raccogliamo",
+        "paragraph": "Nessuno. Tutti i file audio, file video e registrazioni vocali vengono elaborati durante il processo utilizzando i motori Whisper locali. I tuoi dati vocali non vengono mai inviati a Internet."
+      },
+      "howStored": {
+        "sectionTitle": "Come vengono archiviati i dati",
+        "paragraph": "Le trascrizioni delle riunioni, i tag dei relatori e il testo di riepilogo vengono salvati nel database locale del Vault sul tuo computer."
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "Fornitori di IA di terze parti (Bring Your Own Key)",
+        "paragraph": "La trascrizione sussurrata viene eseguita completamente offline. Se scegli modelli esterni per riassumere le trascrizioni, solo il contenuto del testo verrà condiviso con quel fornitore."
+      },
+      "permissions": {
+        "sectionTitle": "Autorizzazioni utilizzate",
+        "paragraph": "Accesso all'hardware audio (registrazione dal microfono) e autorizzazioni di lettura/scrittura dei file."
+      },
+      "dataDeletion": {
+        "sectionTitle": "Cancellazione dei dati",
+        "paragraph": "L'eliminazione di una riunione dal deposito locale o la disinstallazione dell'app elimina definitivamente i dati della trascrizione."
+      }
     }
   },
   "emails": {
@@ -768,7 +876,8 @@
     "learnMore": "Scopri di più →",
     "tryAiReply": "Prova AI Reply Assistant →",
     "tryAutofill": "Prova Autofill AI →",
-    "tryWorkDesk": "Prova WorkDesk →"
+    "tryWorkDesk": "Prova WorkDesk →",
+    "viewAllFaqs": "Visualizza tutte le FAQ →"
   },
   "extensions": {
     "hub": {

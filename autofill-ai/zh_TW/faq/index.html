@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autofill AI — 常見問題解答 | Donbrico FAQ</title>
+    <meta name="description" content="前往 Chrome 線上應用程式商店，搜尋「Autofill AI by Donbrico」，或直接造訪產品頁面 donbrico.net/autofill-ai。點擊「加到 Chrome」並確認安裝。無需建立帳戶或註冊，安裝後即可立即使用。" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/autofill-ai/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/autofill-ai/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/autofill-ai/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/autofill-ai/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/autofill-ai/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/autofill-ai/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/autofill-ai/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/autofill-ai/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/autofill-ai/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/autofill-ai/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/autofill-ai/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/autofill-ai/ko/faq/" />
+    <meta property="og:title" content="Autofill AI — 常見問題解答 | Donbrico FAQ" />
+    <meta property="og:description" content="前往 Chrome 線上應用程式商店，搜尋「Autofill AI by Donbrico」，或直接造訪產品頁面 donbrico.net/autofill-ai。點擊「加到 Chrome」並確認安裝。無需建立帳戶或註冊，安裝後即可立即使用。" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/autofill-ai/zh_TW/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/autofill-ai/zh_TW/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+              <span class="dropdown-group-label" style="display:block; margin-top:10px; font-size:0.7rem; color:var(--muted);" data-i18n="nav.tools">Tools</span>
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" data-i18n="nav.tools">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>Autofill AI — 常見問題解答</h1>
+<h2>開始使用</h2>
+<h3>如何在 Chrome 瀏覽器安裝 Autofill AI？</h3>
+<p>前往 Chrome 線上應用程式商店，搜尋「Autofill AI by Donbrico」，或直接造訪產品頁面 donbrico.net/autofill-ai。點擊「加到 Chrome」並確認安裝。無需建立帳戶或註冊，安裝後即可立即使用。</p>
+<h3>使用 Autofill AI 需要建立帳戶嗎？</h3>
+<p>不需要，Autofill AI 無需帳戶。安裝擴充功能後，儲存個人資料檔，就能開始填寫表單。過程中無需登入、無需電子郵件驗證，也不會收集任何個人資訊。</p>
+<h3>如何首次設定個人資料？</h3>
+<p>點擊 Chrome 工具列中的 Autofill AI 圖示，選擇「管理個人資料」。輸入姓名、電子郵件、電話號碼和地址等標準資訊。儲存後，這份資料會存放在瀏覽器本機端，並用於自動填寫任何網站的標準欄位。</p>
+<h3>使用 AI 回答功能前需要設定什麼？</h3>
+<p>針對開放式欄位（如求職信）的 AI 生成回答，您有兩種選擇。預設情況下，Autofill AI 使用 Gemini Nano，完全在 Chrome 內部運作。或者，您也可以前往擴充功能設定，輸入來自 OpenAI、Anthropic、Groq 或 OpenRouter 等供應商的 API 金鑰。</p>
+<h2>功能與使用方式</h2>
+<h3>Autofill AI 如何偵測網頁上的欄位？</h3>
+<p>當您造訪含有表單的頁面時，Autofill AI 會掃描 HTML 結構，尋找常見的欄位標籤與輸入類型，例如文字框、下拉選單和文字區域。它會將這些欄位與您儲存的個人資料進行比對，並標記已偵測到的欄位，讓您清楚哪些部分會被填寫。</p>
+<h3>我可以在送出前編輯 AI 生成的回答嗎？</h3>
+<p>可以。在 AI 生成的內容插入表單欄位之前，Autofill AI 會先顯示回答供您檢閱。您可以直接在欄位中編輯文字，如果第一個答案不滿意，也可以重新生成。未經您的核准，不會自動送出任何內容。</p>
+<h3>Autofill AI 能在所有含有表單的網站上運作嗎？</h3>
+<p>Autofill AI 專為任何使用標準 HTML 表單元素的網站而設計，包括求職申請入口、醫療病歷表單、保險理賠系統和自由工作者提案頁面。在少數情況下，如果網站使用自訂的非標準表單建構工具，偵測效果可能會受到限制。</p>
+<h3>如何一鍵使用 Autofill AI 填寫表單？</h3>
+<p>前往含有表單的頁面，點擊工具列中的 Autofill AI 圖示，或使用鍵盤快捷鍵（可在設定中自訂）。擴充功能會立即用您的個人資料填入所有偵測到的標準欄位。對於開放式欄位，則會生成 AI 回答，供您在插入前進行檢閱。</p>
+<h3>我可以為不同用途儲存多個個人資料嗎？</h3>
+<p>目前 Autofill AI 一次僅支援一個作用中的個人資料。您可以根據不同情境編輯個人資料細節，例如在個人地址和工作地址之間切換。未來更新中正在考慮支援多個個人資料功能。</p>
+<h2>隱私與安全性</h2>
+<h3>我的個人資料存放在哪裡？</h3>
+<p>所有個人資料都儲存在您 Chrome 瀏覽器的本機端擴充功能儲存空間中。資料絕不會離開您的裝置，不會上傳到任何伺服器，Donbrico 或任何第三方也無法存取。</p>
+<h3>AI 如何在不將資料傳送到伺服器的情況下生成回答？</h3>
+<p>預設情況下，Autofill AI 使用 Google 的 Gemini Nano 模型，這是一個小型語言模型，透過瀏覽器內建的 AI 功能直接在 Chrome 內部運作。無需透過網際網路傳送任何資料進行處理。如果您選擇使用自己的 API 金鑰，則資料只會根據您的帳戶條款傳送到您指定的供應商。</p>
+<h3>在 Autofill AI 中使用自己的 API 金鑰安全嗎？</h3>
+<p>安全。您的 API 金鑰會儲存在瀏覽器本機端，僅用於向您設定的供應商（OpenAI、Anthropic、Groq 或 OpenRouter）發出請求。擴充功能不會在別處記錄、儲存或傳輸您的金鑰。您完全掌控哪個供應商處理您的資料。</p>
+<h3>Autofill AI 會收集任何使用分析或追蹤資料嗎？</h3>
+<p>不會。Autofill AI 秉持嚴格的無追蹤政策。沒有分析腳本、沒有遙測技術、也沒有使用者行為追蹤。擴充功能在個人資料儲存與預設 AI 處理方面完全離線運作，僅在您提供金鑰時才會進行選擇性的 API 呼叫。</p>
+<h2>價格與授權</h2>
+<h3>Autofill AI 是免費的嗎？</h3>
+<p>是的，Autofill AI 完全免費安裝與使用。沒有高級方案、訂閱費用或隱藏收費。所有功能（包括透過 Gemini Nano 生成的 AI 回答）均免費提供。</p>
+<h3>填寫表單的數量有限制嗎？</h3>
+<p>沒有。您可以隨意填寫任意數量的表單，沒有使用上限或速率限制。唯一的潛在限制是，如果您選擇使用自己的 API 金鑰，則需遵守該供應商的使用政策與價格規定。</p>
+<h3>Autofill AI 未來會推出付費方案嗎？</h3>
+<p>目前沒有推出付費方案的計畫。Autofill AI 由 Donbrico 作為免費工具維護。如果未來價格有所變動，將會提前充分通知現有使用者。</p>
+<h2>疑難排解</h2>
+<h3>Autofill AI 沒有偵測到表單上的欄位，該怎麼辦？</h3>
+<p>首先，重新整理頁面，並確保表單已完全載入後再點擊 Autofill AI 圖示。某些動態表單會在使用者互動後才載入欄位，因此請先嘗試點擊某個欄位。如果仍無法偵測，可能是該網站使用了 Autofill AI 無法解析的非標準表單元素。</p>
+<h3>為什麼 AI 生成的回答是空的或沒有出現？</h3>
+<p>請確認您已在 Chrome 設定中啟用 Gemini Nano，或在擴充功能設定中輸入了有效的 API 金鑰。如果使用 API 金鑰，請檢查您的帳戶是否有足夠的額度，以及金鑰是否具有正確的權限。同時確認表單欄位確實是開放式的文字區域，而非下拉選單或按鈕。</p>
+<h3>Chrome 更新後擴充功能停止運作。</h3>
+<p>Chrome 更新有時會影響擴充功能的權限或設定。請嘗試在擴充功能選單（chrome://extensions）中停用後再啟用 Autofill AI。如果問題持續存在，請從 Chrome 線上應用程式商店解除安裝並重新安裝擴充功能。您的個人資料儲存在本機端，重新安裝後不會遺失。</p>
+<h3>如何回報錯誤或要求新功能？</h3>
+<p>請造訪 Donbrico 網站 donbrico.net，使用聯絡表單提交您的意見回饋。請提供您遇到問題的網站詳細資訊、重現步驟以及您的 Chrome 版本。功能請求會定期檢視，以納入未來更新。</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>

@@ -480,7 +480,43 @@
         "answer": "檢查您是否已將屬性詳細資訊儲存在擴充彈出視窗的「主機記憶體」標籤中。"
       }
     },
-    "heroCta": "立即給我們發電子郵件"
+    "heroCta": "立即給我們發電子郵件",
+    "fileWhisperer": {
+      "sectionTitle": "FileWhisperer AI 支持",
+      "subtitle": "常見問題",
+      "q1": {
+        "question": "為什麼模型下載需要這麼長時間？",
+        "answer": "第一次運行時，FileWhisperer AI 下載高度最佳化的 Llama-3 模型（~2-4GB）以完全離線運行。根據您的網路速度，這可能需要幾分鐘，但下載後，您將不再需要網路連線。"
+      },
+      "q2": {
+        "question": "支援哪些文件類型？",
+        "answer": "目前，FileWhisperer AI 支援 PDF 文件 (.pdf)、富文本 (.rtf)、Word 文件 (.docx)、文字檔案 (.txt)、markdown (.md) 和 Excel/CSV 電子表格。"
+      }
+    },
+    "receiptWhisperer": {
+      "sectionTitle": "ReceiptWhisperer AI 支持",
+      "subtitle": "常見問題",
+      "q1": {
+        "question": "OCR 引擎跳過了我收據上的一些項目",
+        "answer": "極度模糊的掃描件、皺巴巴的紙張或手寫內容可能會降低 OCR 準確性。嘗試拉直收據並在良好的照明下掃描。您始終可以手動雙擊任何已解析的欄位以直接編輯值。"
+      },
+      "q2": {
+        "question": "如何備份我的費用資料？",
+        "answer": "轉到應用程式中的“設定”，然後點擊“匯出費用庫”。這將匯出獨立的資料庫備份 (.db) 以及單一 ZIP 檔案中的所有分類收據映像。"
+      }
+    },
+    "meetingWhisperer": {
+      "sectionTitle": "MeetingWhisperer 人工智慧支援",
+      "subtitle": "常見問題",
+      "q1": {
+        "question": "我的影片檔案轉錄時間太長",
+        "answer": "載入高清視訊檔案可能需要更長的時間。 MeetingWhisperer AI 首先自動擷取音軌以節省資源。在「設定」中檢查系統的硬體加速 - 選擇 CUDA (NVIDIA) 或 DirectML 可以將 Whisper 速度提高高達 5 倍。"
+      },
+      "q2": {
+        "question": "如何提高說話者辨識能力？",
+        "answer": "Local speaker diarization works best when speakers do not overlap or interrupt frequently. You can name detected speaker profiles (e.g. 'Speaker 1' -> 'Alice') in the audio transcript editor to update the names globally."
+      }
+    }
   },
   "privacyPolicy": {
     "page": {
@@ -554,7 +590,10 @@
       "tradeDesk": "貿易台人工智慧",
       "sellerDesk": "SellerDesk AI",
       "recruitReply": "RecruitReply AI",
-      "propertyFillAi": "PropertyFill AI"
+      "propertyFillAi": "PropertyFill AI",
+      "fileWhisperer": "文件語者 AI",
+      "receiptWhisperer": "收據耳語者 AI",
+      "meetingWhisperer": "會議耳語者人工智慧"
     },
     "aiReplyAssistant": {
       "sectionTitle": "Donbrico AI回覆助理",
@@ -739,6 +778,75 @@
         "sectionTitle": "資料刪除",
         "paragraph": "卸載擴充功能會刪除所有儲存的草稿和設定。"
       }
+    },
+    "fileWhisperer": {
+      "sectionTitle": "Donbrico FileWhisperer AI",
+      "whatWeCollect": {
+        "sectionTitle": "我們收集哪些數據",
+        "paragraph": "沒有任何。您的文件在您的裝置上進行本機分析。任何文件文字、元資料或分析摘要都不會傳輸到 Donbrico 伺服器。"
+      },
+      "howStored": {
+        "sectionTitle": "資料如何儲存",
+        "paragraph": "所有索引內容、嵌入內容和聊天歷史記錄都儲存在您個人電腦上的本機加密資料庫中。"
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "第三方人工智慧提供者（自備金鑰）",
+        "paragraph": "FileWhisperer AI 預設使用完全離線的本地模型。如果您配置第三方 API 金鑰，與您的查詢相關的文字段將安全地傳送至該提供者以產生回應。"
+      },
+      "permissions": {
+        "sectionTitle": "使用的權限",
+        "paragraph": "本機檔案系統存取（讀取選定的文件並儲存報告）。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "資料刪除",
+        "paragraph": "刪除項目資料夾或卸載應用程式會永久刪除所有本機資料庫和索引。"
+      }
+    },
+    "receiptWhisperer": {
+      "sectionTitle": "Donbrico 收據Whisperer AI",
+      "whatWeCollect": {
+        "sectionTitle": "我們收集哪些數據",
+        "paragraph": "沒有任何。收據掃描、文字辨識和類別匹配在您的電腦上完全離線運行。財務數據永遠不會共享。"
+      },
+      "howStored": {
+        "sectionTitle": "資料如何儲存",
+        "paragraph": "所有 OCR 交易、收據路徑和預算摘要都儲存在本機 SQLite 檔案中。"
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "第三方人工智慧提供者（自備金鑰）",
+        "paragraph": "本地 OCR 100% 離線運作。如果您連接外部模型以進行高級分類，則元資料將透過該提供者安全地處理。"
+      },
+      "permissions": {
+        "sectionTitle": "使用的權限",
+        "paragraph": "文件讀取/寫入存取（載入收據掃描件和寫入 Excel 工作表）。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "資料刪除",
+        "paragraph": "卸載桌面應用程式會清除所有本機費用記錄。"
+      }
+    },
+    "meetingWhisperer": {
+      "sectionTitle": "Donbrico MeetingWhisperer AI",
+      "whatWeCollect": {
+        "sectionTitle": "我們收集哪些數據",
+        "paragraph": "沒有任何。所有音訊檔案、視訊檔案和錄音均使用本地 Whisper 引擎進行進程內處理。您的語音資料永遠不會發送到網路。"
+      },
+      "howStored": {
+        "sectionTitle": "資料如何儲存",
+        "paragraph": "會議記錄、演講者標籤和摘要文字保存在您電腦上的本機 Vault 資料庫中。"
+      },
+      "thirdPartyAI": {
+        "sectionTitle": "第三方人工智慧提供者（自備金鑰）",
+        "paragraph": "Whisper 轉錄完全離線運作。如果您選擇外部模型來匯總轉錄本，則僅與該提供者共用文字內容。"
+      },
+      "permissions": {
+        "sectionTitle": "使用的權限",
+        "paragraph": "音訊硬體存取（麥克風錄音）和檔案讀取/寫入權限。"
+      },
+      "dataDeletion": {
+        "sectionTitle": "資料刪除",
+        "paragraph": "從本機保管庫刪除會議或卸載應用程式會永久清除記錄資料。"
+      }
     }
   },
   "emails": {
@@ -768,7 +876,8 @@
     "learnMore": "了解更多 →",
     "tryAiReply": "試用 AI Reply Assistant →",
     "tryAutofill": "試用 Autofill AI →",
-    "tryWorkDesk": "試用 WorkDesk →"
+    "tryWorkDesk": "試用 WorkDesk →",
+    "viewAllFaqs": "查看所有常見問題 →"
   },
   "extensions": {
     "hub": {

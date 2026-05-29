@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedAutoFill — Perguntas Frequentes | Donbrico FAQ</title>
+    <meta name="description" content="MedAutoFill é uma extensão do Chrome. Acesse a Chrome Web Store, pesquise por "MedAutoFill by Donbrico" e clique em "Adicionar ao Chrome". Após a instalação, vo" />
+    <link rel="alternate" hreflang="en" href="https://donbrico.net/med-autofill/en/faq/" />
+    <link rel="alternate" hreflang="es" href="https://donbrico.net/med-autofill/es/faq/" />
+    <link rel="alternate" hreflang="ja" href="https://donbrico.net/med-autofill/ja/faq/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://donbrico.net/med-autofill/pt_BR/faq/" />
+    <link rel="alternate" hreflang="fr" href="https://donbrico.net/med-autofill/fr/faq/" />
+    <link rel="alternate" hreflang="de" href="https://donbrico.net/med-autofill/de/faq/" />
+    <link rel="alternate" hreflang="it" href="https://donbrico.net/med-autofill/it/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://donbrico.net/med-autofill/zh_CN/faq/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://donbrico.net/med-autofill/zh_TW/faq/" />
+    <link rel="alternate" hreflang="hi" href="https://donbrico.net/med-autofill/hi/faq/" />
+    <link rel="alternate" hreflang="ru" href="https://donbrico.net/med-autofill/ru/faq/" />
+    <link rel="alternate" hreflang="ko" href="https://donbrico.net/med-autofill/ko/faq/" />
+    <meta property="og:title" content="MedAutoFill — Perguntas Frequentes | Donbrico FAQ" />
+    <meta property="og:description" content="MedAutoFill é uma extensão do Chrome. Acesse a Chrome Web Store, pesquise por "MedAutoFill by Donbrico" e clique em "Adicionar ao Chrome". Após a instalação, vo" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://donbrico.net/med-autofill/pt_BR/faq/" />
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://donbrico.net/med-autofill/pt_BR/faq/" />
+    <style>
+      .blog-post { max-width: 780px; margin: 0 auto; padding: var(--spacing-xl) var(--spacing-md); }
+      .blog-post h1 { margin-bottom: var(--spacing-md); }
+      .blog-post h2 { margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm); }
+      .blog-post h3 { margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+      .blog-post p { line-height: 1.8; margin-bottom: var(--spacing-md); color: var(--muted); }
+      .blog-post ul, .blog-post ol { margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-lg); }
+      .blog-post li { line-height: 1.8; color: var(--muted); margin-bottom: 4px; }
+      .blog-post strong { color: var(--text); }
+      .blog-post a { color: var(--accent); }
+      .blog-post code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+      .blog-meta { color: var(--muted); font-size: 0.85rem; margin-bottom: var(--spacing-lg); display: flex; gap: 16px; flex-wrap: wrap; }
+      .blog-back { display: inline-block; color: var(--accent); text-decoration: none; margin-bottom: var(--spacing-lg); font-size: 0.9rem; }
+      .blog-back:hover { text-decoration: underline; }
+      details summary { cursor: pointer; font-weight: 600; padding: var(--spacing-sm) 0; }
+      table { width: 100%; border-collapse: collapse; margin: var(--spacing-md) 0; }
+      th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+      th { background: rgba(99,102,241,0.1); font-weight: 600; }
+    </style>
+    <script>
+    // Immediately redirect to the user's preferred language FAQ — runs before content renders
+    (function() {
+      try {
+        var supported = ['en','es','ja','pt_BR','fr','de','it','zh_CN','zh_TW','hi','ru','ko'];
+        var saved = localStorage.getItem('donbrico-lang');
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var browserLang = (navigator.language || '').replace('-', '_');
+        // Map browser codes to our codes
+        var langMap = {'pt-BR':'pt_BR','pt_BR':'pt_BR','zh-CN':'zh_CN','zh_CN':'zh_CN','zh-TW':'zh_TW','zh_TW':'zh_TW','ko-KR':'ko','ja-JP':'ja','hi-IN':'hi','ru-RU':'ru','de-DE':'de','fr-FR':'fr','es-ES':'es','it-IT':'it'};
+        var targetLang = (saved && supported.indexOf(saved) !== -1) ? saved
+          : (urlLang && supported.indexOf(urlLang) !== -1) ? urlLang
+          : (langMap[navigator.language] && supported.indexOf(langMap[navigator.language]) !== -1) ? langMap[navigator.language]
+          : (supported.indexOf(browserLang.split('_')[0]) !== -1) ? browserLang.split('_')[0]
+          : 'en';
+        var segs = window.location.pathname.split('/');
+        var faqIdx = segs.indexOf('faq');
+        if (faqIdx > 0) {
+          var pathLang = segs[faqIdx - 1];
+          if (supported.indexOf(pathLang) !== -1 && pathLang !== targetLang) {
+            segs[faqIdx - 1] = targetLang;
+            window.location.replace(segs.join('/'));
+          }
+        }
+      } catch(e) {}
+    })();
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
+            <div class="dropdown-content">
+              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+              <span class="dropdown-group-label" style="display:block; margin-top:10px; font-size:0.7rem; color:var(--muted);" data-i18n="nav.tools">Tools</span>
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/tools/" data-i18n="nav.tools">Tools</a>
+            <div class="dropdown-content">
+              <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+              <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+              <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="blog-post">
+        
+        
+        
+        <h1>MedAutoFill — Perguntas Frequentes</h1>
+<h2>Primeiros Passos</h2>
+<h3>Como instalar o MedAutoFill no meu navegador?</h3>
+<p>MedAutoFill é uma extensão do Chrome. Acesse a Chrome Web Store, pesquise por &quot;MedAutoFill by Donbrico&quot; e clique em &quot;Adicionar ao Chrome&quot;. Após a instalação, você verá o ícone do MedAutoFill na barra de ferramentas do navegador e poderá abrir o guia de configuração para criar seu primeiro perfil de paciente.</p>
+<h3>O que preciso fazer após instalar o MedAutoFill pela primeira vez?</h3>
+<p>Após a instalação, abra o painel da extensão MedAutoFill e clique em &quot;Novo Perfil&quot; para inserir os dados demográficos do seu primeiro paciente, informações do seguro e dados do profissional de saúde. Você também pode configurar suas opções de IA BYOK (Bring Your Own Key) para campos complexos. Não é necessário criar uma conta — seus dados permanecem locais desde o início.</p>
+<h3>O MedAutoFill funciona com meu sistema EHR ou portal de seguros específico?</h3>
+<p>O MedAutoFill foi projetado para funcionar com uma ampla variedade de sistemas EHR, portais de seguros e softwares de consultórios médicos. Se encontrar um formulário ou campo que não reconhece, você pode usar a ferramenta de treinamento &quot;Detecção Inteligente de Campos&quot; para ensinar o novo layout. A maioria dos usuários descobre que funciona perfeitamente com plataformas populares como Epic, Cerner e Practice Fusion.</p>
+<h3>Posso usar o MedAutoFill imediatamente ou há uma curva de aprendizado?</h3>
+<p>Você pode começar a preencher formulários automaticamente em minutos. A extensão vem com modelos pré-configurados para campos comuns como nome do paciente, data de nascimento e número do seguro. A curva de aprendizado é mínima — a maioria da equipe administrativa se torna produtiva após preencher os primeiros dois ou três formulários de teste.</p>
+<h2>Funcionalidades e Uso</h2>
+<h3>Como o MedAutoFill lida com campos de formulário complexos ou não padronizados?</h3>
+<p>O MedAutoFill usa duas camadas: um mecanismo baseado em regras para campos padrão (nome, data de nascimento, número do seguro) e uma camada de IA BYOK para campos complexos como &quot;queixa principal&quot; ou &quot;observações de autorização prévia&quot;. Você pode conectar sua própria chave de API OpenAI para ativar sugestões com IA ou manter apenas a detecção de campos integrada para entrada manual de dados.</p>
+<h3>Posso salvar vários perfis de paciente no MedAutoFill?</h3>
+<p>Sim, o MedAutoFill suporta vários perfis de paciente. Você pode criar, editar e alternar entre perfis pelo painel da extensão. Isso é especialmente útil para faturistas e codificadores médicos que lidam com dezenas de pacientes por dia — basta selecionar o perfil correto antes de preencher automaticamente um formulário.</p>
+<h3>Como funciona o recurso de Detecção Inteligente de Campos?</h3>
+<p>Quando você clica em um campo de formulário, o MedAutoFill varre a página em busca de rótulos, textos de placeholder e elementos HTML próximos para identificar o que o campo está solicitando (ex.: &quot;Número do Grupo do Seguro&quot; ou &quot;NPI do Profissional de Referência&quot;). Em seguida, ele mapeia esse campo para os dados corretos no perfil do paciente selecionado. Se o campo não for reconhecido, você pode atribuí-lo manualmente uma vez, e o MedAutoFill lembrará do mapeamento para formulários futuros.</p>
+<h3>O MedAutoFill funciona em formulários de várias páginas e assistentes?</h3>
+<p>Sim, o MedAutoFill foi projetado para lidar com formulários de várias páginas e assistentes passo a passo. Ao avançar para a próxima página, a extensão detecta e preenche automaticamente os campos relevantes com base no perfil de paciente ativo. Você não precisa reselecionar o perfil ou reativar o preenchimento.</p>
+<h3>Posso usar o MedAutoFill tanto para dados demográficos do paciente quanto para campos clínicos?</h3>
+<p>Com certeza. O MedAutoFill abrange dados demográficos do paciente (nome, endereço, informações de contato), informações do seguro (operadora, número da apólice, número do grupo), dados do profissional de saúde (NPI, taxonomia, médico de referência) e campos clínicos (códigos de diagnóstico, queixa principal, lista de medicamentos). Você pode personalizar quais campos incluir em cada perfil.</p>
+<h2>Privacidade e Segurança</h2>
+<h3>Onde os dados dos meus pacientes são armazenados quando uso o MedAutoFill?</h3>
+<p>Todos os dados de paciente inseridos no MedAutoFill são armazenados localmente no seu dispositivo, usando o armazenamento do navegador. Nada é enviado para os servidores da Donbrico ou para qualquer nuvem de terceiros. Seus dados nunca saem do seu computador, a menos que você conecte explicitamente um serviço de IA BYOK.</p>
+<h3>O MedAutoFill está em conformidade com a HIPAA?</h3>
+<p>O MedAutoFill foi projetado com uma arquitetura focada em privacidade que suporta conformidade com a HIPAA. Como todos os dados permanecem locais no seu dispositivo, não há transmissão de dados para os servidores da Donbrico. Para o recurso BYOK AI, você controla a chave de API e pode escolher um provedor em conformidade com a HIPAA, como o nível empresarial da OpenAI. Recomendamos consultar o responsável pela conformidade da sua organização para seu fluxo de trabalho específico.</p>
+<h3>O que acontece se eu usar o recurso BYOK AI — meus dados são enviados para a OpenAI?</h3>
+<p>Quando você ativa o BYOK AI e conecta sua própria chave de API, os dados do campo específico que está preenchendo (ex.: uma nota clínica) são enviados para o provedor de IA configurado. Campos padrão como nome do paciente e data de nascimento nunca são enviados para a IA. Você também pode desativar completamente o recurso de IA e usar apenas o preenchimento baseado em regras do MedAutoFill.</p>
+<h3>Meu empregador ou clínica pode ver os dados que estou inserindo no MedAutoFill?</h3>
+<p>Não. O MedAutoFill armazena dados localmente no armazenamento do seu navegador, que é isolado de outros aplicativos e extensões. Seu empregador não pode acessar seus dados do MedAutoFill, a menos que tenha acesso direto ao seu dispositivo. Para estações de trabalho compartilhadas, recomendamos usar a opção &quot;Limpar Perfis&quot; após cada sessão.</p>
+<h2>Preços e Licenciamento</h2>
+<h3>O MedAutoFill é gratuito ou existe uma versão premium?</h3>
+<p>O MedAutoFill oferece um plano gratuito com suporte para até 5 perfis de paciente e detecção padrão de campos. A versão premium desbloqueia perfis de paciente ilimitados, mapeamento avançado de campos e integração BYOK AI. Verifique o site da Donbrico para preços atuais e descontos por volume para clínicas ou equipes de faturamento.</p>
+<h3>Posso usar uma licença do MedAutoFill em vários dispositivos ou com minha equipe?</h3>
+<p>As licenças estão vinculadas a perfis individuais do Chrome. Para uso em equipe, cada usuário precisa de sua própria licença. A Donbrico oferece preços para equipes e empresas para clínicas e agências de faturamento — entre em contato com vendas pelo site para planos personalizados.</p>
+<h3>Existe um teste gratuito para os recursos premium?</h3>
+<p>Sim, o MedAutoFill oferece um teste gratuito de 14 dias dos recursos premium, incluindo perfis ilimitados e BYOK AI. Não é necessário cartão de crédito para iniciar o teste. Ao final do período, você pode optar por assinar ou continuar com o plano gratuito.</p>
+<h2>Solução de Problemas</h2>
+<h3>O MedAutoFill não está preenchendo um campo no meu formulário — o que devo fazer?</h3>
+<p>Primeiro, certifique-se de ter selecionado o perfil de paciente correto. Em seguida, clique no campo não preenchido e verifique se o ícone do MedAutoFill aparece. Se não aparecer, o campo pode usar HTML não padronizado. Use a opção &quot;Ensinar Campo&quot; na extensão para mapeá-lo manualmente ao dado correto. Após ensinar uma vez, o MedAutoFill lembrará do mapeamento para aquele formulário.</p>
+<h3>O ícone da extensão fica cinza em alguns sites — por quê?</h3>
+<p>O MedAutoFill foi projetado para ativar apenas em páginas de formulários médicos e de saúde. Se o ícone estiver cinza, a extensão não reconhece a página como um formulário compatível. Você pode ativá-lo manualmente clicando com o botão direito no ícone e selecionando &quot;Ativar neste site&quot;. Se o site ainda não funcionar, pode estar usando tecnologias não suportadas, como iframes ou applets Java.</p>
+<h3>Excluí acidentalmente um perfil de paciente — posso recuperá-lo?</h3>
+<p>Infelizmente, perfis excluídos não podem ser recuperados dentro do MedAutoFill, pois todos os dados são armazenados localmente sem backup em nuvem. Recomendamos exportar seus perfis periodicamente usando o recurso &quot;Exportar Perfis&quot; no painel de configurações, que os salva como um arquivo JSON que pode ser reimportado posteriormente.</p>
+<h3>O MedAutoFill está preenchendo dados errados em alguns campos — como corrigir isso?</h3>
+<p>Isso geralmente acontece quando um campo é identificado incorretamente pela Detecção Inteligente de Campos. Abra o painel do MedAutoFill, navegue até &quot;Mapeamentos de Campo&quot; e encontre o campo problemático. Reatribua-o ao dado correto do seu perfil de paciente. Alternativamente, você pode limpar todos os mapeamentos de campo para aquele formulário e começar do zero selecionando &quot;Redefinir Treinamento do Formulário&quot;.</p>
+<h3>O MedAutoFill funciona offline?</h3>
+<p>O MedAutoFill funciona offline para preenchimento baseado em regras e perfis de paciente armazenados. O recurso BYOK AI requer conexão com a internet para se comunicar com o provedor de IA. Para a maioria dos formulários padrão, você pode trabalhar sem acesso à internet — apenas certifique-se de carregar seus perfis enquanto estiver online.</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/chatwoot.js" defer></script>
+  </body>
+</html>
