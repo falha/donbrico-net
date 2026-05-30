@@ -58,7 +58,12 @@
     "extensionsTradeDesk": "貿易台人工智慧",
     "extensionsSellerDesk": "SellerDesk AI",
     "extensionsRecruitReply": "RecruitReply AI",
-    "extensionsPropertyFill": "PropertyFill AI"
+    "extensionsPropertyFill": "PropertyFill AI",
+    "products": "產品",
+    "tools": "工具",
+    "toolsFileWhisperer": "FileWhisperer AI",
+    "toolsReceiptWhisperer": "ReceiptWhisperer AI",
+    "toolsMeetingWhisperer": "MeetingWhisperer AI"
   },
   "home": {
     "page": {

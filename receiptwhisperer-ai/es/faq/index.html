@@ -76,11 +76,38 @@
   <body>
     <nav class="nav">
       <div class="container">
-        <a href="/" class="logo">Donbrico</a>
+        <a href="/" class="active" class="logo">Donbrico</a>
         <input type="checkbox" id="nav-toggle" />
-        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <label for="nav-toggle" class="hamburger"
+          ><span></span><span></span><span></span></label>
         <ul class="nav-links">
-          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li><a href="/"  data-i18n="nav.home">Home</a></li>
+          <li class="dropdown Products-dropdown">
+            <a href="/extensions/" data-i18n="nav.products">Products</a>
+            <div class="dropdown-content mega-dropdown">
+              <div class="mega-dropdown-grid">
+                <div class="mega-dropdown-col">
+                  <span class="dropdown-group-label" data-i18n="nav.extensions">Extensions</span>
+                  <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+                  <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+                  <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+                  <a href="/propertyfill-ai/" data-i18n="nav.extensionsPropertyFill">PropertyFill AI</a>
+                  <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+                  <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+                  <a href="/trade-desk/" data-i18n="nav.extensionsTradeDesk">TradeDesk AI</a>
+                  <a href="/seller-desk/" data-i18n="nav.extensionsSellerDesk">SellerDesk AI</a>
+                  <a href="/recruit-reply/" data-i18n="nav.extensionsRecruitReply">RecruitReply AI</a>
+                  <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+                </div>
+                <div class="mega-dropdown-col">
+                  <span class="dropdown-group-label" data-i18n="nav.tools">Tools</span>
+                  <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+                  <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+                  <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+                </div>
+              </div>
+            </div>
+          </li>
           <li class="dropdown">
             <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
             <div class="dropdown-content">
@@ -93,25 +120,13 @@
               <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
               <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
               <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/ecommerce-support/" data-i18n="nav.solutionsEcommerceSupport">For Ecommerce</a>
               <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
               <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
               <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
-              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="/extensions/" data-i18n="nav.extensions">Extensions</a>
-            <div class="dropdown-content">
-              <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
-              <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
-              <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
-              <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
-              <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
-              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
             </div>
           </li>
           <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
-          <li><a href="/null-carrier/" data-i18n="nav.game">Game</a></li>
           <li><a href="/about/" data-i18n="nav.about">About</a></li>
           <li><a href="/support/" data-i18n="nav.support">Support</a></li>
         </ul>
@@ -179,35 +194,62 @@
         <div class="footer-grid">
           <div class="footer-col">
             <h4 data-i18n="footer.solutions">Solutions</h4>
-            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
-            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
-            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+            <a
+              href="/solutions/communication/"
+              data-i18n="nav.solutionsCommunication"
+              >Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation"
+              >Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace"
+              >Organize &amp; Focus</a>
           </div>
           <div class="footer-col">
             <h4 data-i18n="footer.workflows">Workflows</h4>
-            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
-            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
-            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
-            <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">Real Estate</a>
+            <a
+              href="/solutions/support-teams/"
+              data-i18n="nav.solutionsSupportTeams"
+              >Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters"
+              >Recruiters</a>
+            <a
+              href="/solutions/ecommerce-support/"
+              data-i18n="nav.solutionsEcommerceSupport"
+              >Ecommerce</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance"
+              >Insurance</a>
+            <a
+              href="/solutions/browser-workspace/"
+              data-i18n="nav.solutionsBrowserWorkspace"
+              >Browser Workspace</a>
           </div>
           <div class="footer-col">
             <h4 data-i18n="footer.extensions">Extensions</h4>
-            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill"
+              >Autofill AI</a>
             <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
-            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+            <a href="/propertyfill-ai/" data-i18n="nav.extensionsPropertyFill">PropertyFill AI</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply"
+              >AI Reply Assistant</a>
             <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
-            <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+            <a href="/trade-desk/" data-i18n="nav.extensionsTradeDesk">TradeDesk AI</a>
+              <a href="/seller-desk/" data-i18n="nav.extensionsSellerDesk">SellerDesk AI</a>
+              <a href="/recruit-reply/" data-i18n="nav.extensionsRecruitReply">RecruitReply AI</a>
+              <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
           </div>
           <div class="footer-col">
             <h4 data-i18n="footer.company">Company</h4>
             <a href="/blog/" data-i18n="nav.blog">Blog</a>
             <a href="/about/" data-i18n="nav.about">About</a>
             <a href="/support/" data-i18n="nav.support">Support</a>
-            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy"
+              >Privacy Policy</a>
             <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+            <a href="/null-carrier/" data-i18n="nav.game">Null Carrier Game</a>
           </div>
         </div>
-        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+        <p data-i18n="footer.copyright">
+          © 2026 Donbrico Studio. All rights reserved.
+        </p>
       </div>
     </footer>
     <script src="/js/i18n.js" defer></script>

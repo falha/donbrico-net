@@ -58,7 +58,12 @@
     "extensionsTradeDesk": "トレードデスクAI",
     "extensionsSellerDesk": "SellerDesk AI",
     "extensionsRecruitReply": "リクルートリプライAI",
-    "extensionsPropertyFill": "PropertyFill AI"
+    "extensionsPropertyFill": "PropertyFill AI",
+    "products": "製品",
+    "tools": "ツール",
+    "toolsFileWhisperer": "FileWhisperer AI",
+    "toolsReceiptWhisperer": "ReceiptWhisperer AI",
+    "toolsMeetingWhisperer": "MeetingWhisperer AI"
   },
   "home": {
     "page": {

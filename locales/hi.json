@@ -58,7 +58,12 @@
     "extensionsTradeDesk": "ट्रेडडेस्क एआई",
     "extensionsSellerDesk": "SellerDesk AI",
     "extensionsRecruitReply": "रिक्रूटरिप्लाई एआई",
-    "extensionsPropertyFill": "PropertyFill AI"
+    "extensionsPropertyFill": "PropertyFill AI",
+    "products": "उत्पाद",
+    "tools": "उपकरण",
+    "toolsFileWhisperer": "FileWhisperer AI",
+    "toolsReceiptWhisperer": "ReceiptWhisperer AI",
+    "toolsMeetingWhisperer": "MeetingWhisperer AI"
   },
   "home": {
     "page": {

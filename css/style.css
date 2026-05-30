@@ -212,6 +212,53 @@ a:hover {
   color: var(--bg-color) !important;
 }
 
+/* Mega Dropdown Desktop Styling */
+@media (min-width: 769px) {
+  .nav .dropdown-content.mega-dropdown {
+    min-width: 480px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .nav .mega-dropdown-grid {
+    display: grid;
+    grid-template-columns: 250px 230px;
+  }
+
+  .nav .mega-dropdown-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav .mega-dropdown-col a {
+    border-bottom: none !important;
+  }
+
+  .nav .mega-dropdown-col .dropdown-group-label {
+    border-bottom: none !important;
+    margin-top: 4px;
+    margin-bottom: 2px;
+  }
+}
+
+/* Mobile mega dropdown styling override */
+@media (max-width: 768px) {
+  .nav .mega-dropdown-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav .mega-dropdown-col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .nav .mega-dropdown-col:last-child {
+    margin-bottom: 0;
+  }
+}
+
 /* Mobile dropdown handling */
 @media (max-width: 768px) {
   .nav .dropdown-content {

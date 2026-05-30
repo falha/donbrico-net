@@ -25,7 +25,37 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://donbrico.net/med-autofill/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://donbrico.net/propertyfill-ai/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://donbrico.net/ai-reply-assistant/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://donbrico.net/host-reply/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://donbrico.net/trade-desk/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://donbrico.net/seller-desk/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://donbrico.net/recruit-reply/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>

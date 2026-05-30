@@ -58,7 +58,12 @@
     "extensionsTradeDesk": "TradeDesk AI",
     "extensionsSellerDesk": "SellerDesk AI",
     "extensionsRecruitReply": "НанятьОтветить AI",
-    "extensionsPropertyFill": "PropertyFill AI"
+    "extensionsPropertyFill": "PropertyFill AI",
+    "products": "Продукты",
+    "tools": "Инструменты",
+    "toolsFileWhisperer": "FileWhisperer AI",
+    "toolsReceiptWhisperer": "ReceiptWhisperer AI",
+    "toolsMeetingWhisperer": "MeetingWhisperer AI"
   },
   "home": {
     "page": {
