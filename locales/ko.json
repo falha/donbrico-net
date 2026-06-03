@@ -63,7 +63,9 @@
     "tools": "도구",
     "toolsFileWhisperer": "FileWhisperer AI",
     "toolsReceiptWhisperer": "ReceiptWhisperer AI",
-    "toolsMeetingWhisperer": "MeetingWhisperer AI"
+    "toolsMeetingWhisperer": "MeetingWhisperer AI",
+    "toolsClaimWhisperer": "ClaimWhisperer",
+    "toolsStatementWhisperer": "StatementWhisperer"
   },
   "home": {
     "page": {
@@ -3835,6 +3837,105 @@
         "question": "어떤 플랫폼이 지원되나요?",
         "answer": "기본적으로 Centris, Realtor.ca, Zillow, Flexmls 및 Matrix 포털을 지원합니다. "
       }
+    }
+  },
+  "claimWhisperer": {
+    "page": {
+      "title": "ClaimWhisperer — Windows용 개인 보험청구 문서 정리 도구",
+      "description": "사진, 영수증, PDF 및 메모를 검토된 보험청구 패킷으로 변환합니다. 로친 AI. 계정 불필요. 클라우드 업로드 없음. Windows 10/11.",
+      "ogTitle": "ClaimWhisperer — Windows용 개인 보험청구 문서 정리 도구",
+      "ogDescription": "사진과 영수증을 가져온다. 품목 목록을 검토하라. 청구 패킷, 인벤토리 스프레드시트, 증거 ZIP을 내보내라. 모든 데이터는 컴퓨터에 저장됩니다."
+    },
+    "hero": {
+      "eyebrow": "WINDOWS 데스크탑 앱 · 로친 AI · 일회성 구매",
+      "title": "사진과 영수증을 가져오세요.<br />청구 준비 패킷을 받으세요.",
+      "subtitle": "ClaimWhisperer는 사진, 영수증, 보증서 PDF, 설명서, 시리얼 번호 메모, 손해 문서를 검토된 인벤토리와 연출한 수출판으로 변환합니다 — 계정 없이, 클라우드 업로드 없이 Windows PC에서 전부 로친 처리됩니다.",
+      "buttonPrimary": "Microsoft Store에서 받기 — 무료 체험판",
+      "disclaimer": "15일 전체 기능 체험판 · 49.99 USD 일회성 · 출시 프로모션 29.99 USD"
+    }
+  },
+  "statementWhisperer": {
+    "page": {
+      "title": "StatementWhisperer - Private Bank Statement to CSV for Windows",
+      "description": "Convert bank, credit-card, PayPal/Stripe-style, and brokerage statement PDFs or scans into reviewed CSV/XLSX transaction tables on your Windows PC. No bank connection. No cloud upload.",
+      "ogTitle": "StatementWhisperer - Private Bank Statement to CSV for Windows",
+      "ogDescription": "Drop statement PDFs and scans. Review rows, summaries, and duplicate findings. Export clean CSV/XLSX locally with no bank login or cloud upload."
+    },
+    "hero": {
+      "eyebrow": "WINDOWS 데스크톱 앱",
+      "title": "StatementWhisperer",
+      "subtitle": "명세서 PDF와 스캔 파일을 Windows PC에서 로컬로 검토된 CSV/XLSX 거래 표로 변환합니다. 은행 로그인 없음, 클라우드 업로드 없음, 구독 없음.",
+      "buttonPrimary": "Microsoft Store에서 받기",
+      "buttonSecondary": "검토 방식 보기",
+      "trust": "Windows 10/11 지원 · 로컬 OCR 및 로컬 AI · 15일 전체 기능 체험판"
+    },
+    "preview": {
+      "label": "Local review preview",
+      "title": "fake_checking_statement_2026_01.pdf",
+      "status": "Ready for review",
+      "profile": "Profile: Small business checking · USD · cash basis",
+      "row1": "2026-01-03 · Payroll deposit · +2500.00",
+      "row2": "2026-01-05 · Rent payment · -1450.00",
+      "row3": "2026-01-16 · Grocery Market #118 · -87.43",
+      "summary": "January summary: cash in +2500.00 · cash out -1537.43",
+      "finding": "Multi-statement review: one repeated row needs review"
+    },
+    "how": {
+      "title": "명세서 PDF에서 검토된 내보내기까지",
+      "subtitle": "이 앱은 자동 은행 접속이 아니라 수정, 추적 가능성, 개인정보 보호에 집중합니다.",
+      "step1Title": "Import fake-friendly files",
+      "step1Text": "PDFs, scanned PDFs, PNG/JPG images, helper TXT files, and helper CSV files.",
+      "step2Title": "Extract locally",
+      "step2Text": "OCR, table extraction, and local AI create editable rows with source references.",
+      "step3Title": "Review the evidence",
+      "step3Text": "Edit rows, apply saved profiles, inspect summaries, and resolve duplicate or balance warnings.",
+      "step4Title": "Export clean files",
+      "step4Text": "Write CSV, XLSX, QuickBooks CSV, an accountant-ready bundle, or optional QBO/OFX/QIF files when enabled."
+    },
+    "features": {
+      "title": "유용한 기능",
+      "profilesTitle": "Saved profiles",
+      "profilesText": "Reuse account type, currency, and layout hints without building a custom parser.",
+      "summariesTitle": "Local summaries",
+      "summariesText": "See neutral totals and month/category/account groupings without financial advice.",
+      "multiTitle": "Multi-statement review",
+      "multiText": "Spot duplicate imports, overlaps, continuations, and repeated rows across source files.",
+      "exportTitle": "Traceable exports",
+      "exportText": "Keep reviewed rows, validation reports, source references, and audit manifests together."
+    },
+    "exports": {
+      "title": "Export without pretending every importer is identical",
+      "text": "CSV/XLSX stay the core output. QBO, OFX, and QIF are optional Accounting Export Pack formats, off by default, with warnings because accounting importers vary."
+    },
+    "privacy": {
+      "title": "은행 연결 없음. 클라우드 업로드 없음.",
+      "text": "StatementWhisperer does not ask for bank credentials, connect to banks, upload statements, sync transaction data, or require an online account. Your files, OCR text, extracted rows, summaries, warnings, and exports stay on your PC."
+    },
+    "advice": {
+      "title": "회계 또는 세무 조언이 아닙니다",
+      "text": "StatementWhisperer converts documents into tables for review. It does not provide accounting advice, tax advice, bookkeeping decisions, fraud detection, cash-flow analysis, or guaranteed support for every statement layout."
+    },
+    "pricing": {
+      "title": "간단한 출시 가격",
+      "text": "Launch offer: USD 39.99 one-time. Regular v1 price: USD 59.99 one-time. Full-feature 15-day Microsoft Store trial."
+    },
+    "faq": {
+      "title": "자주 묻는 질문",
+      "q1": "Does it upload my statements?",
+      "a1": "No. StatementWhisperer processes statement documents locally on your Windows PC.",
+      "q2": "Does it connect to my bank?",
+      "a2": "No. It converts documents you import. It does not use bank logins, Plaid, or online sync.",
+      "q3": "What can it export?",
+      "a3": "Generic CSV, XLSX, QuickBooks CSV when enabled, a review bundle, and optional QBO/OFX/QIF files when the Accounting Export Pack is enabled and acknowledged.",
+      "q4": "Are QBO, OFX, and QIF guaranteed to import everywhere?",
+      "a4": "No. Accounting importers vary. Those formats stay off by default and should be tested with sample files first.",
+      "q5": "Does it replace accounting review?",
+      "a5": "No. It helps convert and review statement rows. You should inspect the output before giving it to an accountant or importing it elsewhere."
+    },
+    "final": {
+      "title": "금융 문서는 PC에 보관하세요.",
+      "subtitle": "Try StatementWhisperer with your own fake or real statement files during the full-feature trial.",
+      "button": "Get on Microsoft Store"
     }
   }
 }

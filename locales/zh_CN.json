@@ -63,7 +63,9 @@
     "tools": "工具",
     "toolsFileWhisperer": "FileWhisperer AI",
     "toolsReceiptWhisperer": "ReceiptWhisperer AI",
-    "toolsMeetingWhisperer": "MeetingWhisperer AI"
+    "toolsMeetingWhisperer": "MeetingWhisperer AI",
+    "toolsClaimWhisperer": "ClaimWhisperer",
+    "toolsStatementWhisperer": "StatementWhisperer"
   },
   "home": {
     "page": {
@@ -3866,6 +3868,105 @@
         "question": "支持哪些平台？",
         "answer": "它开箱即用，支持 Centris、Realtor.ca、Zillow、Flexmls 和 Matrix 门户。"
       }
+    }
+  },
+  "claimWhisperer": {
+    "page": {
+      "title": "ClaimWhisperer — Windows 私人理赔清单整理工具",
+      "description": "将照片、收据、PDF 和笔记转化为经过审核的保险理赔包或家庭财产清单。本地 AI。无需账户。无需上传云端。Windows 10/11。",
+      "ogTitle": "ClaimWhisperer — Windows 私人理赔清单整理工具",
+      "ogDescription": "导入照片和收据。审查物品清单。导出理赔包、清单表格和凭证 ZIP。所有内容存储在您的计算机上。"
+    },
+    "hero": {
+      "eyebrow": "WINDOWS 桌面应用 · 本地 AI · 一次性购买",
+      "title": "导入照片和收据，<br />获得理赔就绪包。",
+      "subtitle": "ClaimWhisperer 将您的照片、收据、保修 PDF、手册、序列号笔记和损害记录转化为经过审核的清单和导出包——全部在您的 Windows PC 上本地处理，无需账户，不上传云端。",
+      "buttonPrimary": "在 Microsoft Store 下载 — 免费试用",
+      "disclaimer": "15 天全功能试用 · 49.99 USD 一次性 · 首发价 29.99 USD"
+    }
+  },
+  "statementWhisperer": {
+    "page": {
+      "title": "StatementWhisperer - Private Bank Statement to CSV for Windows",
+      "description": "Convert bank, credit-card, PayPal/Stripe-style, and brokerage statement PDFs or scans into reviewed CSV/XLSX transaction tables on your Windows PC. No bank connection. No cloud upload.",
+      "ogTitle": "StatementWhisperer - Private Bank Statement to CSV for Windows",
+      "ogDescription": "Drop statement PDFs and scans. Review rows, summaries, and duplicate findings. Export clean CSV/XLSX locally with no bank login or cloud upload."
+    },
+    "hero": {
+      "eyebrow": "WINDOWS 桌面应用",
+      "title": "StatementWhisperer",
+      "subtitle": "在 Windows PC 本地将账单 PDF 和扫描件转换为已审核的 CSV/XLSX 交易表。无需银行登录，无需云上传，无需订阅。",
+      "buttonPrimary": "在 Microsoft Store 获取",
+      "buttonSecondary": "查看审核流程",
+      "trust": "支持 Windows 10/11 · 本地 OCR 和本地 AI · 15 天全功能试用"
+    },
+    "preview": {
+      "label": "Local review preview",
+      "title": "fake_checking_statement_2026_01.pdf",
+      "status": "Ready for review",
+      "profile": "Profile: Small business checking · USD · cash basis",
+      "row1": "2026-01-03 · Payroll deposit · +2500.00",
+      "row2": "2026-01-05 · Rent payment · -1450.00",
+      "row3": "2026-01-16 · Grocery Market #118 · -87.43",
+      "summary": "January summary: cash in +2500.00 · cash out -1537.43",
+      "finding": "Multi-statement review: one repeated row needs review"
+    },
+    "how": {
+      "title": "从账单 PDF 到已审核导出",
+      "subtitle": "应用专注于修正、可追溯和隐私，而不是自动银行访问。",
+      "step1Title": "Import fake-friendly files",
+      "step1Text": "PDFs, scanned PDFs, PNG/JPG images, helper TXT files, and helper CSV files.",
+      "step2Title": "Extract locally",
+      "step2Text": "OCR, table extraction, and local AI create editable rows with source references.",
+      "step3Title": "Review the evidence",
+      "step3Text": "Edit rows, apply saved profiles, inspect summaries, and resolve duplicate or balance warnings.",
+      "step4Title": "Export clean files",
+      "step4Text": "Write CSV, XLSX, QuickBooks CSV, an accountant-ready bundle, or optional QBO/OFX/QIF files when enabled."
+    },
+    "features": {
+      "title": "实用功能",
+      "profilesTitle": "Saved profiles",
+      "profilesText": "Reuse account type, currency, and layout hints without building a custom parser.",
+      "summariesTitle": "Local summaries",
+      "summariesText": "See neutral totals and month/category/account groupings without financial advice.",
+      "multiTitle": "Multi-statement review",
+      "multiText": "Spot duplicate imports, overlaps, continuations, and repeated rows across source files.",
+      "exportTitle": "Traceable exports",
+      "exportText": "Keep reviewed rows, validation reports, source references, and audit manifests together."
+    },
+    "exports": {
+      "title": "Export without pretending every importer is identical",
+      "text": "CSV/XLSX stay the core output. QBO, OFX, and QIF are optional Accounting Export Pack formats, off by default, with warnings because accounting importers vary."
+    },
+    "privacy": {
+      "title": "不连接银行。不上传云端。",
+      "text": "StatementWhisperer does not ask for bank credentials, connect to banks, upload statements, sync transaction data, or require an online account. Your files, OCR text, extracted rows, summaries, warnings, and exports stay on your PC."
+    },
+    "advice": {
+      "title": "不是会计或税务建议",
+      "text": "StatementWhisperer converts documents into tables for review. It does not provide accounting advice, tax advice, bookkeeping decisions, fraud detection, cash-flow analysis, or guaranteed support for every statement layout."
+    },
+    "pricing": {
+      "title": "简单的发布价格",
+      "text": "Launch offer: USD 39.99 one-time. Regular v1 price: USD 59.99 one-time. Full-feature 15-day Microsoft Store trial."
+    },
+    "faq": {
+      "title": "常见问题",
+      "q1": "Does it upload my statements?",
+      "a1": "No. StatementWhisperer processes statement documents locally on your Windows PC.",
+      "q2": "Does it connect to my bank?",
+      "a2": "No. It converts documents you import. It does not use bank logins, Plaid, or online sync.",
+      "q3": "What can it export?",
+      "a3": "Generic CSV, XLSX, QuickBooks CSV when enabled, a review bundle, and optional QBO/OFX/QIF files when the Accounting Export Pack is enabled and acknowledged.",
+      "q4": "Are QBO, OFX, and QIF guaranteed to import everywhere?",
+      "a4": "No. Accounting importers vary. Those formats stay off by default and should be tested with sample files first.",
+      "q5": "Does it replace accounting review?",
+      "a5": "No. It helps convert and review statement rows. You should inspect the output before giving it to an accountant or importing it elsewhere."
+    },
+    "final": {
+      "title": "把金融文件留在你的电脑上。",
+      "subtitle": "Try StatementWhisperer with your own fake or real statement files during the full-feature trial.",
+      "button": "Get on Microsoft Store"
     }
   }
 }

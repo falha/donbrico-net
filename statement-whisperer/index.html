@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="statementWhisperer.page.title">
+      StatementWhisperer - Private Bank Statement to CSV for Windows
+    </title>
+    <meta
+      name="description"
+      data-i18n="statementWhisperer.page.description"
+      content="Convert bank, credit-card, PayPal/Stripe-style, and brokerage statement PDFs or scans into reviewed CSV/XLSX transaction tables on your Windows PC. No bank connection. No cloud upload."
+    />
+    <meta
+      name="keywords"
+      content="bank statement to CSV, PDF statement converter, offline bank statement OCR, private statement converter, credit card statement to spreadsheet, statement to XLSX, local statement OCR, Windows statement converter, QuickBooks CSV statement export"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Donbrico Studio" />
+    <meta
+      property="og:title"
+      data-i18n="statementWhisperer.page.ogTitle"
+      content="StatementWhisperer - Private Bank Statement to CSV for Windows"
+    />
+    <meta
+      property="og:description"
+      data-i18n="statementWhisperer.page.ogDescription"
+      content="Drop statement PDFs and scans. Review rows, summaries, and duplicate findings. Export clean CSV/XLSX locally with no bank login or cloud upload."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://donbrico.net/statement-whisperer/" />
+    <meta property="og:site_name" content="Donbrico" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="StatementWhisperer - Private Statement Converter" />
+    <meta name="twitter:description" content="Convert statement PDFs into reviewed CSV/XLSX on your Windows PC. No bank login. No cloud upload." />
+    <link rel="canonical" href="https://donbrico.net/statement-whisperer/" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "StatementWhisperer",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Windows 10, Windows 11",
+      "description": "StatementWhisperer converts bank, credit-card, PayPal/Stripe-style, and brokerage statement PDFs or scans into reviewed CSV/XLSX transaction tables locally on a Windows PC, with no bank connection and no cloud upload.",
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "name": "15-Day Full-Feature Trial"
+        },
+        {
+          "@type": "Offer",
+          "price": "39.99",
+          "priceCurrency": "USD",
+          "name": "StatementWhisperer Launch License"
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "Donbrico Studio",
+        "url": "https://donbrico.net"
+      },
+      "url": "https://donbrico.net/statement-whisperer/",
+      "featureList": [
+        "Import PDF, scanned PDF, PNG, JPG, TXT, and CSV helper files",
+        "Local OCR, table extraction, and local AI transaction extraction",
+        "Editable review grid with source references, categories, notes, and review status",
+        "Saved statement profiles for account type, currency, and layout hints",
+        "Local summaries by month, category, and account",
+        "Multi-statement duplicate, overlap, continuation, and repeated-row review",
+        "Export Generic CSV, XLSX, QuickBooks CSV, review bundle, and optional QBO/OFX/QIF files",
+        "No bank connection, no cloud upload, no accounting or tax advice"
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does StatementWhisperer upload my statements?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. StatementWhisperer processes statement documents locally on your Windows PC."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does StatementWhisperer connect to my bank?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It converts documents you import. It does not use bank logins, Plaid, or online sync."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What can StatementWhisperer export?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Generic CSV, XLSX, QuickBooks CSV when enabled, a review bundle, and optional QBO, OFX, and QIF files when the Accounting Export Pack is enabled and acknowledged."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are QBO, OFX, and QIF guaranteed to import everywhere?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Accounting importers vary. Those formats stay off by default and should be tested with sample files first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does StatementWhisperer replace accounting review?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It helps convert and review statement rows. You should inspect the output before giving it to an accountant or importing it elsewhere."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+      .statement-hero {
+        padding-bottom: var(--spacing-lg);
+      }
+      .statement-hero .subtitle {
+        max-width: 760px;
+      }
+      .statement-preview {
+        max-width: 920px;
+        margin: var(--spacing-lg) auto 0;
+        border: 1px solid rgba(99, 102, 241, 0.32);
+        border-radius: var(--border-radius);
+        background: #101018;
+        box-shadow: 0 18px 60px rgba(0, 0, 0, 0.42);
+        overflow: hidden;
+        text-align: left;
+      }
+      .statement-preview-header {
+        display: flex;
+        justify-content: space-between;
+        gap: var(--spacing-sm);
+        padding: 14px 18px;
+        background: rgba(255, 255, 255, 0.035);
+        border-bottom: 1px solid var(--border);
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 0.88rem;
+      }
+      .statement-preview-status {
+        color: #22c55e;
+        white-space: nowrap;
+      }
+      .statement-preview-body {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 0;
+      }
+      .statement-table {
+        padding: var(--spacing-md);
+        border-right: 1px solid var(--border);
+      }
+      .statement-row {
+        display: grid;
+        grid-template-columns: 96px 1fr 104px;
+        gap: 10px;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        font-size: 0.9rem;
+      }
+      .statement-row:last-child {
+        border-bottom: none;
+      }
+      .statement-amount {
+        text-align: right;
+        font-family: "Space Grotesk", sans-serif;
+      }
+      .statement-positive {
+        color: #22c55e;
+      }
+      .statement-negative {
+        color: #f87171;
+      }
+      .statement-side {
+        padding: var(--spacing-md);
+        display: grid;
+        gap: var(--spacing-sm);
+      }
+      .statement-metric {
+        border: 1px solid var(--border);
+        border-radius: var(--border-radius);
+        padding: var(--spacing-sm);
+        background: rgba(255, 255, 255, 0.025);
+      }
+      .statement-metric strong {
+        display: block;
+        font-family: "Space Grotesk", sans-serif;
+        margin-bottom: 4px;
+      }
+      .trust-bar {
+        display: flex;
+        gap: var(--spacing-md);
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: var(--spacing-md) 0 0;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+      .statement-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: var(--spacing-md);
+      }
+      .statement-note {
+        border: 1px solid rgba(245, 158, 11, 0.28);
+        background: rgba(245, 158, 11, 0.06);
+        border-radius: var(--border-radius);
+        padding: var(--spacing-lg);
+        max-width: 820px;
+        margin: 0 auto;
+      }
+      .statement-note h2 {
+        font-size: 1.6rem;
+      }
+      @media (max-width: 760px) {
+        .statement-preview-body {
+          grid-template-columns: 1fr;
+        }
+        .statement-table {
+          border-right: none;
+          border-bottom: 1px solid var(--border);
+        }
+        .statement-row {
+          grid-template-columns: 86px 1fr;
+        }
+        .statement-amount {
+          grid-column: 1 / -1;
+          text-align: left;
+        }
+        .statement-preview-header {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown Products-dropdown">
+            <a href="/extensions/" data-i18n="nav.products">Products</a>
+            <div class="dropdown-content mega-dropdown">
+              <div class="mega-dropdown-grid">
+                <div class="mega-dropdown-col">
+                  <span class="dropdown-group-label" data-i18n="nav.extensions">Extensions</span>
+                  <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+                  <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+                  <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+                  <a href="/propertyfill-ai/" data-i18n="nav.extensionsPropertyFill">PropertyFill AI</a>
+                  <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+                  <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+                  <a href="/trade-desk/" data-i18n="nav.extensionsTradeDesk">TradeDesk AI</a>
+                  <a href="/seller-desk/" data-i18n="nav.extensionsSellerDesk">SellerDesk AI</a>
+                  <a href="/recruit-reply/" data-i18n="nav.extensionsRecruitReply">RecruitReply AI</a>
+                  <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+                </div>
+                <div class="mega-dropdown-col">
+                  <span class="dropdown-group-label" data-i18n="nav.tools">Tools</span>
+                  <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+                  <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+                  <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+                  <a href="/claim-whisperer/" data-i18n="nav.toolsClaimWhisperer">ClaimWhisperer</a>
+                  <a href="/statement-whisperer/" class="active" data-i18n="nav.toolsStatementWhisperer">StatementWhisperer</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/med-autofill/" data-i18n="nav.solutionsMedicalAdmin">For Medical Admin</a>
+              <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">For Recruiters</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/ecommerce-support/" data-i18n="nav.solutionsEcommerceSupport">For Ecommerce</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero statement-hero">
+      <div class="container">
+        <p class="eyebrow" data-i18n="statementWhisperer.hero.eyebrow">WINDOWS DESKTOP APP</p>
+        <h1 data-i18n="statementWhisperer.hero.title">StatementWhisperer</h1>
+        <p class="subtitle" data-i18n="statementWhisperer.hero.subtitle">
+          Convert statement PDFs and scans into reviewed CSV/XLSX transaction tables locally on your Windows PC. No bank login, no cloud upload, no subscription.
+        </p>
+        <div class="buttons">
+          <a href="#" class="btn" data-i18n="statementWhisperer.hero.buttonPrimary">Get on Microsoft Store</a>
+          <a href="#how-it-works" class="btn-outline" data-i18n="statementWhisperer.hero.buttonSecondary">See how review works</a>
+        </div>
+        <p class="trust-bar" data-i18n="statementWhisperer.hero.trust">
+          Runs on Windows 10/11 · Local OCR and local AI · Full-feature 15-day trial
+        </p>
+
+        <div class="statement-preview" aria-label="StatementWhisperer local review preview">
+          <div class="statement-preview-header">
+            <span data-i18n="statementWhisperer.preview.title">fake_checking_statement_2026_01.pdf</span>
+            <span class="statement-preview-status" data-i18n="statementWhisperer.preview.status">Ready for review</span>
+          </div>
+          <div class="statement-preview-body">
+            <div class="statement-table">
+              <p style="color: var(--muted); margin-bottom: 8px;" data-i18n="statementWhisperer.preview.profile">Profile: Small business checking · USD · cash basis</p>
+              <div class="statement-row"><span>2026-01-03</span><span>Payroll deposit</span><span class="statement-amount statement-positive">+2500.00</span></div>
+              <div class="statement-row"><span>2026-01-05</span><span>Rent payment</span><span class="statement-amount statement-negative">-1450.00</span></div>
+              <div class="statement-row"><span>2026-01-16</span><span>Grocery Market #118</span><span class="statement-amount statement-negative">-87.43</span></div>
+            </div>
+            <div class="statement-side">
+              <div class="statement-metric">
+                <strong>Summary</strong>
+                <span data-i18n="statementWhisperer.preview.summary">January summary: cash in +2500.00 · cash out -1537.43</span>
+              </div>
+              <div class="statement-metric">
+                <strong>Multi-statement review</strong>
+                <span data-i18n="statementWhisperer.preview.finding">Multi-statement review: one repeated row needs review</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2 class="section-title" data-i18n="statementWhisperer.how.title">From statement PDF to reviewed export</h2>
+        <p class="section-subtitle" data-i18n="statementWhisperer.how.subtitle">
+          The app is built for correction, traceability, and privacy instead of automatic bank access.
+        </p>
+        <div class="statement-grid">
+          <div class="card">
+            <h3 data-i18n="statementWhisperer.how.step1Title">Import fake-friendly files</h3>
+            <p data-i18n="statementWhisperer.how.step1Text">PDFs, scanned PDFs, PNG/JPG images, helper TXT files, and helper CSV files.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="statementWhisperer.how.step2Title">Extract locally</h3>
+            <p data-i18n="statementWhisperer.how.step2Text">OCR, table extraction, and local AI create editable rows with source references.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="statementWhisperer.how.step3Title">Review the evidence</h3>
+            <p data-i18n="statementWhisperer.how.step3Text">Edit rows, apply saved profiles, inspect summaries, and resolve duplicate or balance warnings.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="statementWhisperer.how.step4Title">Export clean files</h3>
+            <p data-i18n="statementWhisperer.how.step4Text">Write CSV, XLSX, QuickBooks CSV, an accountant-ready bundle, or optional QBO/OFX/QIF files when enabled.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0; background: rgba(255,255,255,0.01);">
+      <div class="container">
+        <h2 class="section-title" data-i18n="statementWhisperer.features.title">What makes it useful</h2>
+        <div class="statement-grid">
+          <div class="card">
+            <h3 data-i18n="statementWhisperer.features.profilesTitle">Saved profiles</h3>
+            <p data-i18n="statementWhisperer.features.profilesText">Reuse account type, currency, and layout hints without building a custom parser.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="statementWhisperer.features.summariesTitle">Local summaries</h3>
+            <p data-i18n="statementWhisperer.features.summariesText">See neutral totals and month/category/account groupings without financial advice.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="statementWhisperer.features.multiTitle">Multi-statement review</h3>
+            <p data-i18n="statementWhisperer.features.multiText">Spot duplicate imports, overlaps, continuations, and repeated rows across source files.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="statementWhisperer.features.exportTitle">Traceable exports</h3>
+            <p data-i18n="statementWhisperer.features.exportText">Keep reviewed rows, validation reports, source references, and audit manifests together.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <div class="statement-note">
+          <h2 data-i18n="statementWhisperer.exports.title">Export without pretending every importer is identical</h2>
+          <p data-i18n="statementWhisperer.exports.text">
+            CSV/XLSX stay the core output. QBO, OFX, and QIF are optional Accounting Export Pack formats, off by default, with warnings because accounting importers vary.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0; background: rgba(255,255,255,0.01);">
+      <div class="container">
+        <div class="statement-grid">
+          <div class="card">
+            <h2 data-i18n="statementWhisperer.privacy.title">No bank connection. No cloud upload.</h2>
+            <p data-i18n="statementWhisperer.privacy.text">StatementWhisperer does not ask for bank credentials, connect to banks, upload statements, sync transaction data, or require an online account. Your files, OCR text, extracted rows, summaries, warnings, and exports stay on your PC.</p>
+          </div>
+          <div class="card">
+            <h2 data-i18n="statementWhisperer.advice.title">Not accounting or tax advice</h2>
+            <p data-i18n="statementWhisperer.advice.text">StatementWhisperer converts documents into tables for review. It does not provide accounting advice, tax advice, bookkeeping decisions, fraud detection, cash-flow analysis, or guaranteed support for every statement layout.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0">
+      <div class="container">
+        <h2 class="section-title" data-i18n="statementWhisperer.pricing.title">Simple launch pricing</h2>
+        <p class="section-subtitle" data-i18n="statementWhisperer.pricing.text">Launch offer: USD 39.99 one-time. Regular v1 price: USD 59.99 one-time. Full-feature 15-day Microsoft Store trial.</p>
+      </div>
+    </section>
+
+    <section id="faq" style="padding: var(--spacing-xl) 0; background: rgba(255,255,255,0.01);">
+      <div class="container">
+        <h2 class="section-title" data-i18n="statementWhisperer.faq.title">Frequently Asked Questions</h2>
+        <div style="max-width: 780px; margin: 0 auto;">
+          <details style="margin-bottom: var(--spacing-md);">
+            <summary data-i18n="statementWhisperer.faq.q1">Does it upload my statements?</summary>
+            <p data-i18n="statementWhisperer.faq.a1">No. StatementWhisperer processes statement documents locally on your Windows PC.</p>
+          </details>
+          <details style="margin-bottom: var(--spacing-md);">
+            <summary data-i18n="statementWhisperer.faq.q2">Does it connect to my bank?</summary>
+            <p data-i18n="statementWhisperer.faq.a2">No. It converts documents you import. It does not use bank logins, Plaid, or online sync.</p>
+          </details>
+          <details style="margin-bottom: var(--spacing-md);">
+            <summary data-i18n="statementWhisperer.faq.q3">What can it export?</summary>
+            <p data-i18n="statementWhisperer.faq.a3">Generic CSV, XLSX, QuickBooks CSV when enabled, a review bundle, and optional QBO/OFX/QIF files when the Accounting Export Pack is enabled and acknowledged.</p>
+          </details>
+          <details style="margin-bottom: var(--spacing-md);">
+            <summary data-i18n="statementWhisperer.faq.q4">Are QBO, OFX, and QIF guaranteed to import everywhere?</summary>
+            <p data-i18n="statementWhisperer.faq.a4">No. Accounting importers vary. Those formats stay off by default and should be tested with sample files first.</p>
+          </details>
+          <details style="margin-bottom: var(--spacing-md);">
+            <summary data-i18n="statementWhisperer.faq.q5">Does it replace accounting review?</summary>
+            <p data-i18n="statementWhisperer.faq.a5">No. It helps convert and review statement rows. You should inspect the output before giving it to an accountant or importing it elsewhere.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0; text-align: center;">
+      <div class="container">
+        <h2 data-i18n="statementWhisperer.final.title">Keep financial documents on your PC.</h2>
+        <p class="subtitle" style="max-width: 680px; margin: 0 auto var(--spacing-md);" data-i18n="statementWhisperer.final.subtitle">
+          Try StatementWhisperer with your own fake or real statement files during the full-feature trial.
+        </p>
+        <a href="#" class="btn" data-i18n="statementWhisperer.final.button">Get on Microsoft Store</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/ecommerce-support/" data-i18n="nav.solutionsEcommerceSupport">Ecommerce</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/propertyfill-ai/" data-i18n="nav.extensionsPropertyFill">PropertyFill AI</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/blog/" data-i18n="nav.blog">Blog</a>
+            <a href="/about/" data-i18n="nav.about">About</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../js/i18n.js" defer></script>
+    <script src="../js/chatwoot.js" defer></script>
+  </body>
+</html>

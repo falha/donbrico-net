@@ -63,7 +63,9 @@
     "tools": "Strumenti",
     "toolsFileWhisperer": "FileWhisperer AI",
     "toolsReceiptWhisperer": "ReceiptWhisperer AI",
-    "toolsMeetingWhisperer": "MeetingWhisperer AI"
+    "toolsMeetingWhisperer": "MeetingWhisperer AI",
+    "toolsClaimWhisperer": "ClaimWhisperer",
+    "toolsStatementWhisperer": "StatementWhisperer"
   },
   "home": {
     "page": {
@@ -3866,6 +3868,105 @@
         "question": "Quali piattaforme sono supportate?",
         "answer": "Immediatamente supporta i portali Centris, Realtor.ca, Zillow, Flexmls e Matrix. "
       }
+    }
+  },
+  "claimWhisperer": {
+    "page": {
+      "title": "ClaimWhisperer — Organizzatore privato di sinistri per Windows",
+      "description": "Trasforma foto, ricevute, PDF e note in un pacchetto sinistro o inventario domestico revisionato. IA locale. Nessun account. Nessun upload nel cloud. Windows 10/11.",
+      "ogTitle": "ClaimWhisperer — Organizzatore privato di sinistri per Windows",
+      "ogDescription": "Importa foto e ricevute. Rivedi il tuo elenco articoli. Esporta pacchetto sinistro, foglio inventario e ZIP prove. Tutto rimane sul tuo computer."
+    },
+    "hero": {
+      "eyebrow": "APP WINDOWS · IA LOCALE · ACQUISTO UNICO",
+      "title": "Importa foto e ricevute.<br />Ottieni un pacchetto sinistro pronto.",
+      "subtitle": "ClaimWhisperer trasforma le tue foto, ricevute, PDF di garanzia, manuali, note sui numeri di serie e documentazione dei danni in un inventario revisionato e un pacchetto di esportazione pulito — tutto elaborato localmente sul tuo PC Windows, senza account e senza upload nel cloud.",
+      "buttonPrimary": "Scarica da Microsoft Store — Prova gratuita",
+      "disclaimer": "Prova completa 15 giorni · 49,99 USD una tantum · Offerta lancio 29,99 USD"
+    }
+  },
+  "statementWhisperer": {
+    "page": {
+      "title": "StatementWhisperer - Private Bank Statement to CSV for Windows",
+      "description": "Convert bank, credit-card, PayPal/Stripe-style, and brokerage statement PDFs or scans into reviewed CSV/XLSX transaction tables on your Windows PC. No bank connection. No cloud upload.",
+      "ogTitle": "StatementWhisperer - Private Bank Statement to CSV for Windows",
+      "ogDescription": "Drop statement PDFs and scans. Review rows, summaries, and duplicate findings. Export clean CSV/XLSX locally with no bank login or cloud upload."
+    },
+    "hero": {
+      "eyebrow": "APP DESKTOP PER WINDOWS",
+      "title": "StatementWhisperer",
+      "subtitle": "Converti PDF e scansioni di estratti conto in tabelle CSV/XLSX revisionate localmente sul tuo PC Windows. Nessun accesso bancario, nessun upload cloud, nessun abbonamento.",
+      "buttonPrimary": "Ottieni su Microsoft Store",
+      "buttonSecondary": "Vedi come funziona la revisione",
+      "trust": "Funziona su Windows 10/11 · OCR locale e IA locale · Prova completa di 15 giorni"
+    },
+    "preview": {
+      "label": "Local review preview",
+      "title": "fake_checking_statement_2026_01.pdf",
+      "status": "Ready for review",
+      "profile": "Profile: Small business checking · USD · cash basis",
+      "row1": "2026-01-03 · Payroll deposit · +2500.00",
+      "row2": "2026-01-05 · Rent payment · -1450.00",
+      "row3": "2026-01-16 · Grocery Market #118 · -87.43",
+      "summary": "January summary: cash in +2500.00 · cash out -1537.43",
+      "finding": "Multi-statement review: one repeated row needs review"
+    },
+    "how": {
+      "title": "Dal PDF dell'estratto conto all'export revisionato",
+      "subtitle": "L'app punta su correzione, tracciabilita e privacy, non sull'accesso bancario automatico.",
+      "step1Title": "Import fake-friendly files",
+      "step1Text": "PDFs, scanned PDFs, PNG/JPG images, helper TXT files, and helper CSV files.",
+      "step2Title": "Extract locally",
+      "step2Text": "OCR, table extraction, and local AI create editable rows with source references.",
+      "step3Title": "Review the evidence",
+      "step3Text": "Edit rows, apply saved profiles, inspect summaries, and resolve duplicate or balance warnings.",
+      "step4Title": "Export clean files",
+      "step4Text": "Write CSV, XLSX, QuickBooks CSV, an accountant-ready bundle, or optional QBO/OFX/QIF files when enabled."
+    },
+    "features": {
+      "title": "Cosa la rende utile",
+      "profilesTitle": "Saved profiles",
+      "profilesText": "Reuse account type, currency, and layout hints without building a custom parser.",
+      "summariesTitle": "Local summaries",
+      "summariesText": "See neutral totals and month/category/account groupings without financial advice.",
+      "multiTitle": "Multi-statement review",
+      "multiText": "Spot duplicate imports, overlaps, continuations, and repeated rows across source files.",
+      "exportTitle": "Traceable exports",
+      "exportText": "Keep reviewed rows, validation reports, source references, and audit manifests together."
+    },
+    "exports": {
+      "title": "Export without pretending every importer is identical",
+      "text": "CSV/XLSX stay the core output. QBO, OFX, and QIF are optional Accounting Export Pack formats, off by default, with warnings because accounting importers vary."
+    },
+    "privacy": {
+      "title": "Nessuna connessione bancaria. Nessun upload cloud.",
+      "text": "StatementWhisperer does not ask for bank credentials, connect to banks, upload statements, sync transaction data, or require an online account. Your files, OCR text, extracted rows, summaries, warnings, and exports stay on your PC."
+    },
+    "advice": {
+      "title": "Non e consulenza contabile o fiscale",
+      "text": "StatementWhisperer converts documents into tables for review. It does not provide accounting advice, tax advice, bookkeeping decisions, fraud detection, cash-flow analysis, or guaranteed support for every statement layout."
+    },
+    "pricing": {
+      "title": "Prezzo di lancio semplice",
+      "text": "Launch offer: USD 39.99 one-time. Regular v1 price: USD 59.99 one-time. Full-feature 15-day Microsoft Store trial."
+    },
+    "faq": {
+      "title": "Domande frequenti",
+      "q1": "Does it upload my statements?",
+      "a1": "No. StatementWhisperer processes statement documents locally on your Windows PC.",
+      "q2": "Does it connect to my bank?",
+      "a2": "No. It converts documents you import. It does not use bank logins, Plaid, or online sync.",
+      "q3": "What can it export?",
+      "a3": "Generic CSV, XLSX, QuickBooks CSV when enabled, a review bundle, and optional QBO/OFX/QIF files when the Accounting Export Pack is enabled and acknowledged.",
+      "q4": "Are QBO, OFX, and QIF guaranteed to import everywhere?",
+      "a4": "No. Accounting importers vary. Those formats stay off by default and should be tested with sample files first.",
+      "q5": "Does it replace accounting review?",
+      "a5": "No. It helps convert and review statement rows. You should inspect the output before giving it to an accountant or importing it elsewhere."
+    },
+    "final": {
+      "title": "Tieni i documenti finanziari sul tuo PC.",
+      "subtitle": "Try StatementWhisperer with your own fake or real statement files during the full-feature trial.",
+      "button": "Get on Microsoft Store"
     }
   }
 }
