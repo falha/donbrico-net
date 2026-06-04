@@ -3938,5 +3938,106 @@
       "subtitle": "Try StatementWhisperer with your own fake or real statement files during the full-feature trial.",
       "button": "Get on Microsoft Store"
     }
+  },
+  "evidenceWhisperer": {
+    "page": {
+      "title": "EvidenceWhisperer - Privater Beweispaket-Organizer fuer Windows",
+      "description": "Organisieren Sie Screenshots, Belege, PDFs, Fotos, E-Mail-Exporte und Notizen zu einem geprueften Beweispaket auf Ihrem Windows-PC. Lokale KI. Kein Konto. Keine Cloud. Keine Rechtsberatung.",
+      "keywords": "beweis organizer kleine klagen, beweispaket erstellen, beweisordner software, screenshots gericht ordnen, lokaler rechtsdokument organizer, redigiertes beweispaket, beweis zeitleiste",
+      "ogTitle": "EvidenceWhisperer - Privater Beweispaket-Organizer fuer Windows",
+      "ogDescription": "Unordentliche Belege ablegen. Exhibits, Zeitleiste, Daten und Redaktionen pruefen. Lokal praesentieren oder nummeriertes Paket exportieren.",
+      "twitterTitle": "EvidenceWhisperer - Privater Beweis-Organizer",
+      "twitterDescription": "Lokale KI hilft, Streitfall-Belege in geprueften Paketen zu organisieren. Kein Konto. Keine Cloud. Keine Rechtsberatung."
+    },
+    "hero": {
+      "eyebrow": "WINDOWS-DESKTOP-APP - LOKALE KI - KEINE RECHTSBERATUNG",
+      "title": "EvidenceWhisperer",
+      "subtitle": "Organisieren Sie Screenshots, Belege, PDFs, Fotos, E-Mail-Exporte und Notizen zu einem geprueften Paket, das Sie drucken, hochladen, mailen oder zu einer Anhoerung mitnehmen koennen. Kein Konto. Keine Cloud.",
+      "buttonPrimary": "Warteliste beitreten - Store-Link folgt",
+      "buttonSecondary": "Workflow ansehen",
+      "trust": "Windows 10/11 - 15-taegige Vollversion-Testphase im Microsoft Store geplant - Einfuehrung 39,99 USD - regulaer 59,99 USD"
+    },
+    "preview": {
+      "caption": "Fake sample case preview. Screenshots and Store assets must use generated evidence only."
+    },
+    "workflow": {
+      "title": "From messy proof to a packet you can inspect",
+      "subtitle": "EvidenceWhisperer is built around review. Local AI suggests structure; you approve the facts, redactions, order, and final export.",
+      "step1": {
+        "title": "Start from a neutral template",
+        "text": "Choose landlord deposit, contractor, warranty, chargeback, unpaid invoice, or generic organization defaults. Every section and tag is editable."
+      },
+      "step2": {
+        "title": "Import local evidence",
+        "text": "Drop PDFs, images, text files, CSVs, HTML exports, or email-like text exports. Originals are copied into app-owned storage and never modified."
+      },
+      "step3": {
+        "title": "Review the timeline and exhibits",
+        "text": "Edit dates, parties, organizations, amounts, issue tags, descriptions, exhibit titles, notes, and include/exclude decisions before export."
+      },
+      "step4": {
+        "title": "Redact before sharing",
+        "text": "Review sensitive-detail suggestions, draw manual rectangles, accept or ignore each suggestion, and burn accepted redactions into exported copies."
+      },
+      "step5": {
+        "title": "Track important dates manually",
+        "text": "Add dates you decide matter, link them to evidence, include or exclude them from outputs, and avoid automatic deadline advice entirely."
+      },
+      "step6": {
+        "title": "Present or export",
+        "text": "Use offline presentation mode for included/redacted evidence, or export packet styles for print, upload, timeline-first review, or exhibit binders."
+      }
+    },
+    "exports": {
+      "title": "What the export bundle includes",
+      "subtitle": "The paid output is simple: readable files, source traceability, and redacted copies you can inspect before sharing.",
+      "packet": "Numbered packet PDF",
+      "index": "Exhibit index CSV/XLSX",
+      "timeline": "Timeline PDF/CSV",
+      "zip": "Redacted exhibit ZIP",
+      "manifest": "Local audit manifest"
+    },
+    "privacy": {
+      "title": "Privat per Design",
+      "text": "EvidenceWhisperer runs on your Windows PC. Your source files, OCR text, extracted metadata, redaction decisions, notes, presentation view, and exports are not uploaded to Donbrico or any cloud workspace."
+    },
+    "advice": {
+      "title": "Keine Rechtsberatung",
+      "text": "EvidenceWhisperer organizes materials you provide. It does not assess case strength, recommend claims or defenses, calculate legal deadlines, fill legal forms, or guarantee acceptance by a court, platform, landlord, bank, or other decision-maker."
+    },
+    "eval": {
+      "title": "Real local-AI testing before release",
+      "text": "Before manual release testing, generated fake dispute cases are run through real-situation automated scenarios with the Balanced local AI model. The scorecard covers templates, import, extraction, review, important dates, redaction suggestions, packet styles, presentation-safe display, privacy behavior, and not-legal-advice boundaries."
+    },
+    "languages": {
+      "title": "Supported languages",
+      "text": "EvidenceWhisperer supports English, French, Spanish, Latin American Spanish, German, Italian, Brazilian Portuguese, Japanese, and Simplified Chinese for user-facing app text."
+    },
+    "pricing": {
+      "title": "Full-feature trial. One-time price.",
+      "subtitle": "Try the full app for 15 days through the Microsoft Store. No watermark, no exhibit cap, no disabled export formats.",
+      "trialTitle": "15-Day Trial",
+      "trialText": "Import, review, redact, present, and export real projects during the trial.",
+      "licenseTitle": "EvidenceWhisperer License",
+      "licenseText": "Regular v1 price: USD 59.99. Pay once. No subscription. No account."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "Does EvidenceWhisperer give legal advice?",
+      "a1": "No. It organizes evidence and exports packets. It does not recommend legal arguments, claims, defenses, forms, filing rules, or deadlines.",
+      "q2": "Does it upload my evidence?",
+      "a2": "No. EvidenceWhisperer is local-first. Your files, OCR text, metadata, redactions, notes, presentation views, and exports stay on your computer.",
+      "q3": "What files can I import?",
+      "a3": "PDF, PNG, JPG, TXT, MD, CSV, HTML, and EML-like text exports are in the v1 scope. Audio/video files can be attached as evidence but are not transcribed in v1.",
+      "q4": "Are redaction suggestions automatic?",
+      "a4": "No. Suggestions are review prompts. Nothing is applied or burned into an export until you accept or edit it, and you should review every output before sharing.",
+      "q5": "Can it calculate court deadlines?",
+      "a5": "No. The important-dates tracker is manual. You can enter dates and link evidence, but the app does not calculate legal deadlines or jurisdiction-specific rules."
+    },
+    "final": {
+      "title": "Drop messy proof. Keep control of the packet.",
+      "subtitle": "Start with the full-feature trial, use the sample case, or import your own evidence and inspect the export before buying.",
+      "button": "Warteliste beitreten - Store-Link folgt"
+    }
   }
 }
