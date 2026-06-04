@@ -1346,6 +1346,7 @@
     "toolsFileWhisperer": "FileWhisperer AI",
     "toolsReceiptWhisperer": "ReceiptWhisperer AI",
     "toolsMeetingWhisperer": "MeetingWhisperer AI",
+    "toolsEvidenceWhisperer": "EvidenceWhisperer",
     "toolsClaimWhisperer": "ClaimWhisperer",
     "toolsStatementWhisperer": "StatementWhisperer"
   },
@@ -4052,30 +4053,30 @@
   },
   "claimWhisperer": {
     "page": {
-      "title": "ClaimWhisperer — Private Claim Inventory Builder for Windows",
-      "description": "Turn photos, receipts, PDFs, manuals, and notes into a reviewed insurance claim or home inventory packet. Local AI. No account. No cloud upload. Windows 10/11.",
-      "ogTitle": "ClaimWhisperer — Private Claim Inventory Builder for Windows",
-      "ogDescription": "Drop photos and receipts. Review your item list. Export a claim packet, inventory spreadsheet, and proof ZIP. Everything stays on your computer."
+      "title": "ClaimWhisperer - Private Claim Inventory & Proof Packet Builder for Windows",
+      "description": "Build reviewed insurance claim, warranty, moving-damage, or home-inventory packets from photos, receipts, PDFs, manuals, and notes. Local AI. No cloud upload. Windows 10/11.",
+      "ogTitle": "ClaimWhisperer - Private Claim Inventory & Proof Packet Builder for Windows",
+      "ogDescription": "Start from templates or proof folders. Review item, identifier, photo, and redaction suggestions. Export generic packets locally."
     },
     "hero": {
       "eyebrow": "WINDOWS DESKTOP APP · LOCAL AI · ONE-TIME PURCHASE",
-      "title": "Drop photos and receipts.<br />Get a claim-ready packet.",
-      "subtitle": "ClaimWhisperer turns your photos, receipts, warranty PDFs, manuals, serial-number notes, and damage documentation into a reviewed inventory and a clean export packet — all processed locally on your Windows PC, with no account and no cloud upload.",
-      "buttonPrimary": "Get on Microsoft Store — Free Trial",
-      "disclaimer": "15-day full-feature trial · USD 49.99 one-time · USD 29.99 launch offer"
+      "title": "Drop proof folders.<br />Build a reviewed packet.",
+      "subtitle": "ClaimWhisperer turns photos, receipts, warranty PDFs, manuals, serial-number notes, and damage documentation into a reviewed claim, warranty, moving-damage, or home-inventory packet - processed locally on your Windows PC, with no account and no cloud upload.",
+      "buttonPrimary": "Get on Microsoft Store - Free Trial",
+      "disclaimer": "15-day full-feature trial · USD 49.99 one-time · USD 29.99 launch offer"
     }
   },
   "statementWhisperer": {
     "page": {
-      "title": "StatementWhisperer - Private Bank Statement to CSV for Windows",
-      "description": "Convert bank, credit-card, PayPal/Stripe-style, and brokerage statement PDFs or scans into reviewed CSV/XLSX transaction tables on your Windows PC. No bank connection. No cloud upload.",
-      "ogTitle": "StatementWhisperer - Private Bank Statement to CSV for Windows",
-      "ogDescription": "Drop statement PDFs and scans. Review rows, summaries, and duplicate findings. Export clean CSV/XLSX locally with no bank login or cloud upload."
+      "title": "StatementWhisperer - Offline Bank Statement to CSV, XLSX and OCR for Windows",
+      "description": "Convert bank, credit-card, PayPal/Stripe-style, and brokerage statement PDFs or scans into reviewed CSV/XLSX on Windows. Offline OCR, source-linked review, saved profiles, validation, and no cloud upload.",
+      "ogTitle": "StatementWhisperer - Offline Bank Statement to CSV, XLSX and OCR for Windows",
+      "ogDescription": "Convert statement PDFs and scans to reviewed CSV/XLSX locally with offline OCR, source links, saved profiles, validation, duplicate review, and no bank login or cloud upload."
     },
     "hero": {
       "eyebrow": "WINDOWS DESKTOP APP",
       "title": "StatementWhisperer",
-      "subtitle": "Convert statement PDFs and scans into reviewed CSV/XLSX transaction tables locally on your Windows PC. No bank login, no cloud upload, no subscription.",
+      "subtitle": "Convert bank and credit-card statement PDFs or scans into reviewed CSV/XLSX transaction tables locally on your Windows PC, with offline OCR, source links, saved profiles, validation, and no cloud upload.",
       "buttonPrimary": "Get on Microsoft Store",
       "buttonSecondary": "See how review works",
       "trust": "Runs on Windows 10/11 · Local OCR and local AI · Full-feature 15-day trial"
@@ -4101,7 +4102,7 @@
       "step3Title": "Review the evidence",
       "step3Text": "Edit rows, apply saved profiles, inspect summaries, and resolve duplicate or balance warnings.",
       "step4Title": "Export clean files",
-      "step4Text": "Write CSV, XLSX, QuickBooks CSV, an accountant-ready bundle, or optional QBO/OFX/QIF files when enabled."
+      "step4Text": "Write CSV, XLSX, QuickBooks CSV, validation/audit bundles, or optional QBO/OFX/QIF files when enabled and acknowledged."
     },
     "features": {
       "title": "What makes it useful",

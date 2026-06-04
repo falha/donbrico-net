@@ -4,35 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-i18n="statementWhisperer.page.title">
-      StatementWhisperer - Private Bank Statement to CSV for Windows
+      StatementWhisperer - Offline Bank Statement to CSV, XLSX and OCR for Windows
     </title>
     <meta
       name="description"
       data-i18n="statementWhisperer.page.description"
-      content="Convert bank, credit-card, PayPal/Stripe-style, and brokerage statement PDFs or scans into reviewed CSV/XLSX transaction tables on your Windows PC. No bank connection. No cloud upload."
+      content="Convert bank, credit-card, PayPal/Stripe-style, and brokerage statement PDFs or scans into reviewed CSV/XLSX on Windows. Offline OCR, source-linked review, saved profiles, validation, and no cloud upload."
     />
     <meta
       name="keywords"
-      content="bank statement to CSV, PDF statement converter, offline bank statement OCR, private statement converter, credit card statement to spreadsheet, statement to XLSX, local statement OCR, Windows statement converter, QuickBooks CSV statement export"
+      content="bank statement to CSV, PDF bank statement to Excel, PDF statement converter, offline bank statement OCR, private statement converter, credit card statement to spreadsheet, bank statement extraction, transaction table converter, source-linked statement review, QuickBooks CSV export, QBO OFX QIF export"
     />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Donbrico Studio" />
     <meta
       property="og:title"
       data-i18n="statementWhisperer.page.ogTitle"
-      content="StatementWhisperer - Private Bank Statement to CSV for Windows"
+      content="StatementWhisperer - Offline Bank Statement to CSV, XLSX and OCR for Windows"
     />
     <meta
       property="og:description"
       data-i18n="statementWhisperer.page.ogDescription"
-      content="Drop statement PDFs and scans. Review rows, summaries, and duplicate findings. Export clean CSV/XLSX locally with no bank login or cloud upload."
+      content="Convert statement PDFs and scans to reviewed CSV/XLSX locally with offline OCR, source links, saved profiles, validation, duplicate review, and no bank login or cloud upload."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://donbrico.net/statement-whisperer/" />
     <meta property="og:site_name" content="Donbrico" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="StatementWhisperer - Private Statement Converter" />
-    <meta name="twitter:description" content="Convert statement PDFs into reviewed CSV/XLSX on your Windows PC. No bank login. No cloud upload." />
+    <meta name="twitter:title" content="StatementWhisperer - Offline Statement Converter" />
+    <meta name="twitter:description" content="Offline bank statement OCR and PDF statement converter for reviewed CSV/XLSX exports on Windows. No bank login. No cloud upload." />
     <link rel="canonical" href="https://donbrico.net/statement-whisperer/" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
@@ -45,7 +45,8 @@
       "name": "StatementWhisperer",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Windows 10, Windows 11",
-      "description": "StatementWhisperer converts bank, credit-card, PayPal/Stripe-style, and brokerage statement PDFs or scans into reviewed CSV/XLSX transaction tables locally on a Windows PC, with no bank connection and no cloud upload.",
+      "description": "StatementWhisperer converts bank, credit-card, PayPal/Stripe-style, and brokerage statement PDFs or scans into reviewed CSV/XLSX transaction tables locally on a Windows PC, with offline OCR, source-linked review, saved profiles, validation warnings, and no cloud upload.",
+      "keywords": "bank statement to CSV, PDF statement converter, offline bank statement OCR, private statement converter, credit card statement to spreadsheet, bank statement extraction, statement to Excel",
       "offers": [
         {
           "@type": "Offer",
@@ -131,6 +132,11 @@
     <style>
       .statement-hero {
         padding-bottom: var(--spacing-lg);
+      }
+      .statement-hero h1 {
+        font-size: clamp(1.75rem, 9vw, 3.5rem);
+        overflow-wrap: normal;
+        word-break: normal;
       }
       .statement-hero .subtitle {
         max-width: 760px;
@@ -317,7 +323,7 @@
         <p class="eyebrow" data-i18n="statementWhisperer.hero.eyebrow">WINDOWS DESKTOP APP</p>
         <h1 data-i18n="statementWhisperer.hero.title">StatementWhisperer</h1>
         <p class="subtitle" data-i18n="statementWhisperer.hero.subtitle">
-          Convert statement PDFs and scans into reviewed CSV/XLSX transaction tables locally on your Windows PC. No bank login, no cloud upload, no subscription.
+          Convert bank and credit-card statement PDFs or scans into reviewed CSV/XLSX transaction tables locally on your Windows PC, with offline OCR, source links, saved profiles, validation, and no cloud upload.
         </p>
         <div class="buttons">
           <a href="#" class="btn" data-i18n="statementWhisperer.hero.buttonPrimary">Get on Microsoft Store</a>
@@ -375,7 +381,7 @@
           </div>
           <div class="card">
             <h3 data-i18n="statementWhisperer.how.step4Title">Export clean files</h3>
-            <p data-i18n="statementWhisperer.how.step4Text">Write CSV, XLSX, QuickBooks CSV, an accountant-ready bundle, or optional QBO/OFX/QIF files when enabled.</p>
+            <p data-i18n="statementWhisperer.how.step4Text">Write CSV, XLSX, QuickBooks CSV, validation/audit bundles, or optional QBO/OFX/QIF files when enabled and acknowledged.</p>
           </div>
         </div>
       </div>

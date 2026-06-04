@@ -64,6 +64,7 @@
     "toolsFileWhisperer": "FileWhisperer AI",
     "toolsReceiptWhisperer": "ReceiptWhisperer AI",
     "toolsMeetingWhisperer": "MeetingWhisperer AI",
+    "toolsEvidenceWhisperer": "EvidenceWhisperer",
     "toolsClaimWhisperer": "ClaimWhisperer",
     "toolsStatementWhisperer": "StatementWhisperer"
   },
@@ -3872,25 +3873,25 @@
   },
   "claimWhisperer": {
     "page": {
-      "title": "ClaimWhisperer — Organizzatore privato di sinistri per Windows",
-      "description": "Trasforma foto, ricevute, PDF e note in un pacchetto sinistro o inventario domestico revisionato. IA locale. Nessun account. Nessun upload nel cloud. Windows 10/11.",
-      "ogTitle": "ClaimWhisperer — Organizzatore privato di sinistri per Windows",
-      "ogDescription": "Importa foto e ricevute. Rivedi il tuo elenco articoli. Esporta pacchetto sinistro, foglio inventario e ZIP prove. Tutto rimane sul tuo computer."
+      "title": "ClaimWhisperer - Inventario privato e pacchetto prove per Windows",
+      "description": "Crea pacchetti revisionati per sinistri, garanzie, danni da trasloco o inventario domestico da foto, ricevute, PDF, manuali e note. IA locale. Nessun cloud. Windows 10/11.",
+      "ogTitle": "ClaimWhisperer - Inventario privato e pacchetto prove per Windows",
+      "ogDescription": "Parti da modelli o cartelle di prove. Rivedi articoli, identificatori, foto e suggerimenti di redazione. Esporta pacchetti generici localmente."
     },
     "hero": {
       "eyebrow": "APP WINDOWS · IA LOCALE · ACQUISTO UNICO",
-      "title": "Importa foto e ricevute.<br />Ottieni un pacchetto sinistro pronto.",
-      "subtitle": "ClaimWhisperer trasforma le tue foto, ricevute, PDF di garanzia, manuali, note sui numeri di serie e documentazione dei danni in un inventario revisionato e un pacchetto di esportazione pulito — tutto elaborato localmente sul tuo PC Windows, senza account e senza upload nel cloud.",
-      "buttonPrimary": "Scarica da Microsoft Store — Prova gratuita",
-      "disclaimer": "Prova completa 15 giorni · 49,99 USD una tantum · Offerta lancio 29,99 USD"
+      "title": "Importa cartelle di prove.<br />Crea un pacchetto revisionato.",
+      "subtitle": "ClaimWhisperer trasforma foto, ricevute, PDF di garanzia, manuali, note sui numeri di serie e documentazione dei danni in un pacchetto revisionato per sinistro, garanzia, danni da trasloco o inventario domestico - elaborato localmente sul tuo PC Windows, senza account e senza upload nel cloud.",
+      "buttonPrimary": "Scarica da Microsoft Store - Prova gratuita",
+      "disclaimer": "Prova completa 15 giorni · 49,99 USD una tantum · Offerta lancio 29,99 USD"
     }
   },
   "statementWhisperer": {
     "page": {
-      "title": "StatementWhisperer - Private Bank Statement to CSV for Windows",
-      "description": "Convert bank, credit-card, PayPal/Stripe-style, and brokerage statement PDFs or scans into reviewed CSV/XLSX transaction tables on your Windows PC. No bank connection. No cloud upload.",
-      "ogTitle": "StatementWhisperer - Private Bank Statement to CSV for Windows",
-      "ogDescription": "Drop statement PDFs and scans. Review rows, summaries, and duplicate findings. Export clean CSV/XLSX locally with no bank login or cloud upload."
+      "title": "StatementWhisperer - Estratti conto in CSV/XLSX con OCR offline per Windows",
+      "description": "Converti estratti bancari, carte e PDF o scansioni simili in CSV/XLSX da rivedere su Windows con OCR offline, riferimenti fonte, profili, validazione e niente cloud.",
+      "ogTitle": "StatementWhisperer - Estratti conto in CSV/XLSX con OCR offline per Windows",
+      "ogDescription": "Converti PDF e scansioni di estratti in CSV/XLSX localmente con OCR offline, profili, validazione, revisione duplicati e nessun collegamento bancario."
     },
     "hero": {
       "eyebrow": "APP DESKTOP PER WINDOWS",

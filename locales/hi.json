@@ -64,6 +64,7 @@
     "toolsFileWhisperer": "FileWhisperer AI",
     "toolsReceiptWhisperer": "ReceiptWhisperer AI",
     "toolsMeetingWhisperer": "MeetingWhisperer AI",
+    "toolsEvidenceWhisperer": "EvidenceWhisperer",
     "toolsClaimWhisperer": "ClaimWhisperer",
     "toolsStatementWhisperer": "StatementWhisperer"
   },
@@ -3872,25 +3873,25 @@
   },
   "claimWhisperer": {
     "page": {
-      "title": "ClaimWhisperer — Windows के लिए निजी दावा सूची निर्माता",
-      "description": "फॉटो, रसीदों, PDF और नोट्स को सत्यापित बीमा दावा पैकेट में बदलें। स्थानीय AI। खाता नहीं। क्लाउड अपलोड नहीं। Windows 10/11।",
-      "ogTitle": "ClaimWhisperer — Windows के लिए निजी दावा सूची निर्माता",
-      "ogDescription": "फोटो और रसीदें आयात करें। अपनी वस्तु सूची की समीक्षा करें। दावा पैकेट, सप्रेडशीट और सबूत ZIP निर्यात करें। सभी कुछ आपके कंप्यूटर पर रहता है।"
+      "title": "ClaimWhisperer - Windows के लिए निजी दावा सूची और प्रमाण पैकेट बिल्डर",
+      "description": "फोटो, रसीद, PDF, मैनुअल और नोट्स से समीक्षा किए गए बीमा दावा, वारंटी, मूविंग डैमेज या होम इन्वेंटरी पैकेट बनाएं। स्थानीय AI। क्लाउड अपलोड नहीं। Windows 10/11।",
+      "ogTitle": "ClaimWhisperer - Windows के लिए निजी दावा सूची और प्रमाण पैकेट बिल्डर",
+      "ogDescription": "टेम्पलेट या प्रमाण फ़ोल्डर से शुरू करें। आइटम, पहचान, फोटो और रेडैक्शन सुझावों की समीक्षा करें। सामान्य पैकेट स्थानीय रूप से निर्यात करें।"
     },
     "hero": {
-      "eyebrow": "WINDOWS डेस्कटॉप एप · स्थानीय AI · एकमुश्त खरीदारी",
-      "title": "फोटो और रसीदें आयात करें।<br />दावा-तैयार पैकेट पाएं।",
-      "subtitle": "ClaimWhisperer आपके फोटो, रसीदों, वारंटी PDF, मैन्युअल, सीरियल नंबर नोट्स और नुकसान दस्तावेज़ीकरण को एक सत्यापित सूची और साफ़ निर्यात पैकेट में बदलता है — सभी आपके Windows PC पर स्थानीय रूप से प्रसंस्कृत, बिना खाते और बिना क्लाउड अपलोड के।",
-      "buttonPrimary": "Microsoft Store पर पाएं — मुफ़्त परीक्षण",
+      "eyebrow": "WINDOWS डेस्कटॉप ऐप · स्थानीय AI · एकमुश्त खरीद",
+      "title": "प्रमाण फ़ोल्डर डालें।<br />समीक्षा किया पैकेट बनाएं।",
+      "subtitle": "ClaimWhisperer फोटो, रसीद, वारंटी PDF, मैनुअल, सीरियल नंबर नोट्स और नुकसान दस्तावेज़ों को समीक्षा किए गए बीमा दावा, वारंटी, मूविंग डैमेज या होम इन्वेंटरी पैकेट में बदलता है - सब कुछ आपके Windows PC पर स्थानीय रूप से, बिना खाते और बिना क्लाउड अपलोड के।",
+      "buttonPrimary": "Microsoft Store पर पाएं - मुफ़्त परीक्षण",
       "disclaimer": "15-दिन पूर्ण परीक्षण · 49.99 USD एकमुश्त · लॉन्च ऑफर 29.99 USD"
     }
   },
   "statementWhisperer": {
     "page": {
-      "title": "StatementWhisperer - Private Bank Statement to CSV for Windows",
-      "description": "Convert bank, credit-card, PayPal/Stripe-style, and brokerage statement PDFs or scans into reviewed CSV/XLSX transaction tables on your Windows PC. No bank connection. No cloud upload.",
-      "ogTitle": "StatementWhisperer - Private Bank Statement to CSV for Windows",
-      "ogDescription": "Drop statement PDFs and scans. Review rows, summaries, and duplicate findings. Export clean CSV/XLSX locally with no bank login or cloud upload."
+      "title": "StatementWhisperer - Windows par offline OCR se statement CSV/XLSX",
+      "description": "Bank, credit-card, PayPal/Stripe-style aur brokerage jaise PDF ya scan statements ko Windows par review-ready CSV/XLSX me badliye. Offline OCR, source links, profiles, validation, aur koi cloud upload nahi.",
+      "ogTitle": "StatementWhisperer - Windows par offline OCR se statement CSV/XLSX",
+      "ogDescription": "Statement PDFs aur scans ko local CSV/XLSX me badliye, offline OCR, saved profiles, validation, duplicate review, bina bank login ya cloud upload ke."
     },
     "hero": {
       "eyebrow": "WINDOWS डेस्कटॉप ऐप",

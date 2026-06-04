@@ -98,6 +98,7 @@
     "toolsReceiptWhisperer": "IA de ReceiptWhisperer",
     "toolsMeetingWhisperer": "IA MeetingWhisperer",
     "products": "Produits",
+    "toolsEvidenceWhisperer": "EvidenceWhisperer",
     "toolsClaimWhisperer": "ClaimWhisperer",
     "toolsStatementWhisperer": "StatementWhisperer"
   },
@@ -4081,25 +4082,25 @@
   },
   "claimWhisperer": {
     "page": {
-      "title": "ClaimWhisperer — Organiseur privé de dossiers de sinistre pour Windows",
-      "description": "Transformez photos, reçus, PDF et notes en un dossier de sinistre d’assurance ou inventaire domestique vérifié. IA locale. Aucun compte. Aucun envoi dans le cloud. Windows 10/11.",
-      "ogTitle": "ClaimWhisperer — Organiseur privé de dossiers de sinistre pour Windows",
-      "ogDescription": "Déposez vos photos et reçus. Vérifiez votre liste d’articles. Exportez un dossier de sinistre, un tableur d’inventaire et un ZIP de preuves. Tout reste sur votre ordinateur."
+      "title": "ClaimWhisperer - Inventaire privé et dossier de preuves pour Windows",
+      "description": "Créez des dossiers vérifiés de sinistre, garantie, dommage de déménagement ou inventaire domestique depuis photos, reçus, PDF, manuels et notes. IA locale. Aucun cloud. Windows 10/11.",
+      "ogTitle": "ClaimWhisperer - Inventaire privé et dossier de preuves pour Windows",
+      "ogDescription": "Partez de modèles ou de dossiers de preuves. Vérifiez articles, identifiants, photos et suggestions de rédaction. Exportez des dossiers génériques localement."
     },
     "hero": {
       "eyebrow": "APPLICATION WINDOWS · IA LOCALE · ACHAT UNIQUE",
-      "title": "Déposez photos et reçus.<br />Obtenez un dossier prêt à envoyer.",
-      "subtitle": "ClaimWhisperer transforme vos photos, reçus, PDF de garantie, manuels, notes de numéro de série et documentation des dommages en un inventaire vérifié et un dossier d’exportation propre — entièrement traité localement sur votre PC Windows, sans compte ni envoi dans le cloud.",
-      "buttonPrimary": "Obtenir sur Microsoft Store — Essai gratuit",
-      "disclaimer": "Essai complet 15 jours · 49,99 USD unique · Offre de lancement 29,99 USD"
+      "title": "Déposez vos dossiers de preuves.<br />Créez un dossier vérifié.",
+      "subtitle": "ClaimWhisperer transforme photos, reçus, PDF de garantie, manuels, notes de numéro de série et documents de dommages en dossier vérifié de sinistre, garantie, déménagement ou inventaire domestique - traité localement sur votre PC Windows, sans compte ni envoi dans le cloud.",
+      "buttonPrimary": "Obtenir sur Microsoft Store - Essai gratuit",
+      "disclaimer": "Essai complet 15 jours · 49,99 USD unique · Offre de lancement 29,99 USD"
     }
   },
   "statementWhisperer": {
     "page": {
-      "title": "StatementWhisperer - Private Bank Statement to CSV for Windows",
-      "description": "Convert bank, credit-card, PayPal/Stripe-style, and brokerage statement PDFs or scans into reviewed CSV/XLSX transaction tables on your Windows PC. No bank connection. No cloud upload.",
-      "ogTitle": "StatementWhisperer - Private Bank Statement to CSV for Windows",
-      "ogDescription": "Drop statement PDFs and scans. Review rows, summaries, and duplicate findings. Export clean CSV/XLSX locally with no bank login or cloud upload."
+      "title": "StatementWhisperer - Releves bancaires CSV/XLSX hors ligne pour Windows",
+      "description": "Convertissez des releves PDF ou scans en CSV/XLSX a verifier sur Windows avec OCR hors ligne, references source, profils, validation et aucun envoi cloud.",
+      "ogTitle": "StatementWhisperer - Releves bancaires CSV/XLSX hors ligne pour Windows",
+      "ogDescription": "Convertissez des PDF et scans de releves en CSV/XLSX localement avec OCR hors ligne, profils, validation, revue des doublons et sans connexion bancaire."
     },
     "hero": {
       "eyebrow": "APPLICATION DE BUREAU WINDOWS",

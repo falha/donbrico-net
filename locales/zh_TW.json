@@ -64,6 +64,7 @@
     "toolsFileWhisperer": "FileWhisperer AI",
     "toolsReceiptWhisperer": "ReceiptWhisperer AI",
     "toolsMeetingWhisperer": "MeetingWhisperer AI",
+    "toolsEvidenceWhisperer": "EvidenceWhisperer",
     "toolsClaimWhisperer": "ClaimWhisperer",
     "toolsStatementWhisperer": "StatementWhisperer"
   },
@@ -3872,25 +3873,25 @@
   },
   "claimWhisperer": {
     "page": {
-      "title": "ClaimWhisperer — Windows 私人理賞清单整理工具",
-      "description": "將照片、收據、PDF 和筆記轉化為經過審核的保險理賞包或家庭財產清单。本地 AI。無需帳號。無需上傳雲端。Windows 10/11。",
-      "ogTitle": "ClaimWhisperer — Windows 私人理賞清单整理工具",
-      "ogDescription": "匯入照片和收據。審查物品清单。匯出理賞包、清单表格和證據 ZIP。所有內容儲存在您的電腦上。"
+      "title": "ClaimWhisperer - Windows 私人理賠清單與憑證包工具",
+      "description": "從照片、收據、PDF、手冊和筆記建立已審核的保險理賠、保固、搬家損壞或家庭清單憑證包。本地 AI。不上傳雲端。Windows 10/11。",
+      "ogTitle": "ClaimWhisperer - Windows 私人理賠清單與憑證包工具",
+      "ogDescription": "從範本或憑證資料夾開始。審核物品、識別碼、照片和文字遮蔽建議。本地匯出通用憑證包。"
     },
     "hero": {
       "eyebrow": "WINDOWS 桌面應用 · 本地 AI · 一次性購買",
-      "title": "匯入照片和收據，<br />取得理賞就緒包。",
-      "subtitle": "ClaimWhisperer 將您的照片、收據、保修 PDF、手冊、序號筆記和損害記錄轉化為經過審核的清单和匯出包——全部在您的 Windows PC 上本地處理，無需帳號，不上傳雲端。",
-      "buttonPrimary": "在 Microsoft Store 下載 — 免費試用",
+      "title": "匯入憑證資料夾。<br />建立已審核的憑證包。",
+      "subtitle": "ClaimWhisperer 將照片、收據、保固 PDF、手冊、序號筆記和損壞記錄轉為已審核的理賠、保固、搬家損壞或家庭清單憑證包——全部在您的 Windows PC 本地處理，無需帳號，也不上傳雲端。",
+      "buttonPrimary": "在 Microsoft Store 下載 - 免費試用",
       "disclaimer": "15 天全功能試用 · 49.99 USD 一次性 · 首發價 29.99 USD"
     }
   },
   "statementWhisperer": {
     "page": {
-      "title": "StatementWhisperer - Private Bank Statement to CSV for Windows",
-      "description": "Convert bank, credit-card, PayPal/Stripe-style, and brokerage statement PDFs or scans into reviewed CSV/XLSX transaction tables on your Windows PC. No bank connection. No cloud upload.",
-      "ogTitle": "StatementWhisperer - Private Bank Statement to CSV for Windows",
-      "ogDescription": "Drop statement PDFs and scans. Review rows, summaries, and duplicate findings. Export clean CSV/XLSX locally with no bank login or cloud upload."
+      "title": "StatementWhisperer - Windows 離線 OCR 對帳單轉 CSV/XLSX",
+      "description": "在 Windows 上將銀行、信用卡、PayPal/Stripe 風格和券商類 PDF 或掃描對帳單轉換為可審核的 CSV/XLSX。離線 OCR、來源引用、設定檔、驗證，不上傳雲端。",
+      "ogTitle": "StatementWhisperer - Windows 離線 OCR 對帳單轉 CSV/XLSX",
+      "ogDescription": "本機將 PDF 或掃描對帳單轉換為 CSV/XLSX，包含離線 OCR、設定檔、驗證、重複檢查，無銀行登入或雲端上傳。"
     },
     "hero": {
       "eyebrow": "WINDOWS 桌面應用程式",

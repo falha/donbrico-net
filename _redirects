@@ -3,6 +3,7 @@
 /autofill-ai     /autofill-ai/     301
 /null-carrier    /null-carrier/    301
 /support         /support/         301
+/evidence-whisperer  /evidence-whisperer/  301
 
 # Force HTTPS and non-www (handled via _headers file elsewhere)
 

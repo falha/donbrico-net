@@ -64,6 +64,7 @@
     "toolsFileWhisperer": "FileWhisperer AI",
     "toolsReceiptWhisperer": "ReceiptWhisperer AI",
     "toolsMeetingWhisperer": "MeetingWhisperer AI",
+    "toolsEvidenceWhisperer": "EvidenceWhisperer",
     "toolsClaimWhisperer": "ClaimWhisperer",
     "toolsStatementWhisperer": "StatementWhisperer"
   },
@@ -3872,25 +3873,25 @@
   },
   "claimWhisperer": {
     "page": {
-      "title": "ClaimWhisperer — Приватный создатель страховых пакетов для Windows",
-      "description": "Превращайте фото, чеки, PDF и заметки в проверенный страховой пакет. Локальный ИИ. Без аккаунта. Без загрузки в облако. Windows 10/11.",
-      "ogTitle": "ClaimWhisperer — Приватный создатель страховых пакетов для Windows",
-      "ogDescription": "Загрузите фото и чеки. Проверьте список. Экспортируйте пакет документов, таблицу и ZIP-архив. Всё остаётся на вашем компьютере."
+      "title": "ClaimWhisperer - Приватный инвентарь и пакет доказательств для Windows",
+      "description": "Создавайте проверенные пакеты для страхового случая, гарантии, ущерба при переезде или домашнего инвентаря из фото, чеков, PDF, руководств и заметок. Локальный ИИ. Без облака. Windows 10/11.",
+      "ogTitle": "ClaimWhisperer - Приватный инвентарь и пакет доказательств для Windows",
+      "ogDescription": "Начните с шаблонов или папок с доказательствами. Проверьте предметы, идентификаторы, фото и предложения редактирования. Экспортируйте локально."
     },
     "hero": {
       "eyebrow": "ПРИЛОЖЕНИЕ WINDOWS · ЛОКАЛЬНЫЙ ИИ · ЕДИНОВРЕМЕННАЯ ПОКУПКА",
-      "title": "Загрузите фото и чеки.<br />Получите готовый пакет.",
-      "subtitle": "ClaimWhisperer превращает фото, чеки, PDF гарантий, руководства, заметки серийных номеров и документацию ущерба в проверенный инвентарь и чистый пакет документов — всё локально на вашем Windows PC, без аккаунта и загрузки в облако.",
-      "buttonPrimary": "Получить в Microsoft Store — Бесплатная пробная версия",
+      "title": "Добавьте папки с доказательствами.<br />Создайте проверенный пакет.",
+      "subtitle": "ClaimWhisperer превращает фото, чеки, гарантийные PDF, руководства, заметки с серийными номерами и документы об ущербе в проверенный пакет для страхового случая, гарантии, ущерба при переезде или домашнего инвентаря - локально на вашем Windows PC, без аккаунта и без облачной загрузки.",
+      "buttonPrimary": "Получить в Microsoft Store - Бесплатная пробная версия",
       "disclaimer": "15-дневная полная проба · 49,99 USD единовременно · Стартовое предложение 29,99 USD"
     }
   },
   "statementWhisperer": {
     "page": {
-      "title": "StatementWhisperer - Private Bank Statement to CSV for Windows",
-      "description": "Convert bank, credit-card, PayPal/Stripe-style, and brokerage statement PDFs or scans into reviewed CSV/XLSX transaction tables on your Windows PC. No bank connection. No cloud upload.",
-      "ogTitle": "StatementWhisperer - Private Bank Statement to CSV for Windows",
-      "ogDescription": "Drop statement PDFs and scans. Review rows, summaries, and duplicate findings. Export clean CSV/XLSX locally with no bank login or cloud upload."
+      "title": "StatementWhisperer - Выписки в CSV/XLSX с офлайн OCR для Windows",
+      "description": "Преобразуйте банковские, карточные и похожие PDF-выписки или сканы в проверяемые CSV/XLSX на Windows: офлайн OCR, ссылки на источник, профили, проверка и без облачной загрузки.",
+      "ogTitle": "StatementWhisperer - Выписки в CSV/XLSX с офлайн OCR для Windows",
+      "ogDescription": "Локально преобразуйте PDF-выписки и сканы в CSV/XLSX с офлайн OCR, профилями, проверкой, обзором дублей, без банковского входа и облачной загрузки."
     },
     "hero": {
       "eyebrow": "НАСТОЛЬНОЕ ПРИЛОЖЕНИЕ ДЛЯ WINDOWS",

@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EvidenceWhisperer - Private Evidence Packet Organizer for Windows</title>
+    <meta
+      name="description"
+      content="Turn screenshots, receipts, PDFs, photos, exported emails, and notes into a reviewed evidence packet on your Windows PC. Local AI. No account. No cloud upload. Not legal advice."
+    />
+    <meta
+      name="keywords"
+      content="small claims evidence organizer, exhibit packet builder, evidence binder software, organize screenshots for court, private legal document organizer, local evidence organizer, redacted exhibit packet, courtroom presentation evidence, dispute evidence templates, important dates tracker"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Donbrico Studio" />
+
+    <meta property="og:title" content="EvidenceWhisperer - Private Evidence Packet Organizer for Windows" />
+    <meta
+      property="og:description"
+      content="Drop messy proof. Review exhibits, timeline, dates, and redactions. Present locally or export a numbered evidence packet. Everything stays on your computer."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://donbrico.net/evidence-whisperer/" />
+    <meta property="og:site_name" content="Donbrico" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="EvidenceWhisperer - Private Evidence Packet Organizer" />
+    <meta
+      name="twitter:description"
+      content="Local AI helps organize dispute proof into reviewed evidence packets. No account. No cloud upload. Not legal advice."
+    />
+
+    <link rel="canonical" href="https://donbrico.net/evidence-whisperer/" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0f" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "EvidenceWhisperer",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Windows 10, Windows 11",
+      "description": "EvidenceWhisperer is a local-AI desktop application for Windows that helps self-represented people organize screenshots, receipts, PDFs, photos, exported emails, and notes into reviewed evidence packets with redaction, timeline, important dates, packet styles, and local presentation mode.",
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "name": "15-Day Full-Feature Trial"
+        },
+        {
+          "@type": "Offer",
+          "price": "39.99",
+          "priceCurrency": "USD",
+          "name": "EvidenceWhisperer Launch License"
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "Donbrico Studio",
+        "url": "https://donbrico.net"
+      },
+      "url": "https://donbrico.net/evidence-whisperer/",
+      "featureList": [
+        "Import PDF, PNG, JPG, TXT, MD, CSV, HTML, and EML-like text exports",
+        "Local OCR and local AI metadata/timeline extraction",
+        "Neutral organizational dispute templates",
+        "Editable evidence table, party/contact list, issue tags, case journal, and timeline",
+        "Manual important-dates tracker with evidence links",
+        "Review-based redaction suggestions and manual burned-in redaction",
+        "Packet export styles and courtroom presentation mode",
+        "Export numbered packet PDF, exhibit index CSV/XLSX, timeline PDF/CSV, audit manifest, and ZIP"
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does EvidenceWhisperer give legal advice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. EvidenceWhisperer organizes user-provided evidence. It does not provide legal advice, recommend claims or defenses, calculate filing deadlines, or guarantee that any court or decision-maker will accept your materials."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does EvidenceWhisperer upload my evidence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. EvidenceWhisperer is local-first. Evidence files, OCR text, extracted details, redactions, notes, presentation views, and exports stay on your Windows PC."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can it redact sensitive information automatically?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EvidenceWhisperer can suggest likely sensitive areas for review, but suggestions are never applied until you accept or edit them. You are responsible for reviewing redactions before sharing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the export include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The export bundle includes a numbered exhibit packet PDF, exhibit index CSV/XLSX, timeline PDF/CSV, local audit manifest, and a ZIP of redacted exhibit copies."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+      .evidence-hero {
+        padding-bottom: var(--spacing-lg);
+      }
+      .evidence-hero h1 {
+        font-size: clamp(2.25rem, 10vw, 4.6rem);
+      }
+      .evidence-hero .subtitle {
+        max-width: 800px;
+      }
+      .evidence-preview {
+        max-width: 980px;
+        margin: var(--spacing-lg) auto 0;
+        border: 1px solid rgba(20, 184, 166, 0.34);
+        border-radius: var(--border-radius);
+        background:
+          linear-gradient(135deg, rgba(20, 184, 166, 0.08), rgba(99, 102, 241, 0.06)),
+          #0f1018;
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+        overflow: hidden;
+        text-align: left;
+      }
+      .evidence-preview img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .evidence-preview figcaption {
+        padding: 12px 16px;
+        color: var(--muted);
+        font-size: 0.84rem;
+        text-align: center;
+        border-top: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.025);
+      }
+      .evidence-preview-header {
+        display: flex;
+        justify-content: space-between;
+        gap: var(--spacing-sm);
+        padding: 14px 18px;
+        border-bottom: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.035);
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 0.88rem;
+      }
+      .evidence-preview-status {
+        color: #2dd4bf;
+        white-space: nowrap;
+      }
+      .evidence-preview-body {
+        display: grid;
+        grid-template-columns: 1.25fr 0.75fr;
+      }
+      .evidence-table {
+        padding: var(--spacing-md);
+        border-right: 1px solid var(--border);
+      }
+      .evidence-row {
+        display: grid;
+        grid-template-columns: 82px 1fr 86px;
+        gap: 10px;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        font-size: 0.9rem;
+      }
+      .evidence-row:last-child {
+        border-bottom: none;
+      }
+      .evidence-pill {
+        display: inline-block;
+        width: fit-content;
+        border: 1px solid rgba(20, 184, 166, 0.38);
+        border-radius: 4px;
+        padding: 2px 7px;
+        color: #5eead4;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 0.74rem;
+        font-weight: 700;
+      }
+      .evidence-side {
+        display: grid;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-md);
+      }
+      .evidence-panel {
+        border: 1px solid var(--border);
+        border-radius: var(--border-radius);
+        padding: var(--spacing-sm);
+        background: rgba(255, 255, 255, 0.03);
+      }
+      .evidence-panel strong {
+        display: block;
+        margin-bottom: 4px;
+        font-family: "Space Grotesk", sans-serif;
+        color: var(--text-color);
+      }
+      .evidence-panel span {
+        color: var(--muted);
+        font-size: 0.86rem;
+      }
+      .trust-bar {
+        display: flex;
+        gap: var(--spacing-md);
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: var(--spacing-md) 0 0;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+      .evidence-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: var(--spacing-md);
+      }
+      .evidence-kicker {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: rgba(20, 184, 166, 0.12);
+        border: 1px solid rgba(20, 184, 166, 0.35);
+        color: #5eead4;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        margin-bottom: var(--spacing-sm);
+      }
+      .export-strip {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: var(--spacing-sm);
+        margin-top: var(--spacing-lg);
+      }
+      .export-chip {
+        border: 1px solid var(--border);
+        border-radius: var(--border-radius);
+        padding: var(--spacing-sm);
+        background: rgba(255, 255, 255, 0.025);
+        text-align: center;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 0.9rem;
+      }
+      .privacy-note {
+        border: 1px solid rgba(45, 212, 191, 0.28);
+        background: rgba(20, 184, 166, 0.055);
+        border-radius: var(--border-radius);
+        padding: var(--spacing-lg);
+      }
+      .warning-note {
+        border: 1px solid rgba(245, 158, 11, 0.28);
+        background: rgba(245, 158, 11, 0.055);
+        border-radius: var(--border-radius);
+        padding: var(--spacing-lg);
+      }
+      .btn-ms-store {
+        background: #111;
+        color: #fff;
+        border: 1px solid #333;
+        padding: var(--spacing-sm) var(--spacing-lg);
+        border-radius: var(--border-radius);
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 600;
+        transition: var(--transition);
+        min-height: 44px;
+        text-decoration: none;
+        font-family: "Space Grotesk", sans-serif;
+      }
+      .btn-ms-store:hover {
+        background: #222;
+        border-color: #2dd4bf;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(20, 184, 166, 0.16);
+      }
+      .btn-ms-store svg {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+      }
+      @media (max-width: 760px) {
+        .evidence-preview-body {
+          grid-template-columns: 1fr;
+        }
+        .evidence-table {
+          border-right: none;
+          border-bottom: 1px solid var(--border);
+        }
+        .evidence-row {
+          grid-template-columns: 70px 1fr;
+        }
+        .evidence-row .evidence-pill {
+          grid-column: 1 / -1;
+        }
+        .evidence-preview-header {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="/" class="logo">Donbrico</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+        <ul class="nav-links">
+          <li><a href="/" data-i18n="nav.home">Home</a></li>
+          <li class="dropdown Products-dropdown">
+            <a href="/extensions/" data-i18n="nav.products">Products</a>
+            <div class="dropdown-content mega-dropdown">
+              <div class="mega-dropdown-grid">
+                <div class="mega-dropdown-col">
+                  <span class="dropdown-group-label" data-i18n="nav.extensions">Extensions</span>
+                  <a href="/extensions/" data-i18n="nav.extensionsAll">All Extensions</a>
+                  <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+                  <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+                  <a href="/propertyfill-ai/" data-i18n="nav.extensionsPropertyFill">PropertyFill AI</a>
+                  <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+                  <a href="/host-reply/" data-i18n="nav.extensionsHostReply">HostReply AI</a>
+                  <a href="/trade-desk/" data-i18n="nav.extensionsTradeDesk">TradeDesk AI</a>
+                  <a href="/seller-desk/" data-i18n="nav.extensionsSellerDesk">SellerDesk AI</a>
+                  <a href="/recruit-reply/" data-i18n="nav.extensionsRecruitReply">RecruitReply AI</a>
+                  <a href="/workdesk/" data-i18n="nav.extensionsWorkdesk">WorkDesk</a>
+                </div>
+                <div class="mega-dropdown-col">
+                  <span class="dropdown-group-label" data-i18n="nav.tools">Tools</span>
+                  <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+                  <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+                  <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+                  <a href="/evidence-whisperer/" class="active" data-i18n="nav.toolsEvidenceWhisperer">EvidenceWhisperer</a>
+                  <a href="/claim-whisperer/" data-i18n="nav.toolsClaimWhisperer">ClaimWhisperer</a>
+                  <a href="/statement-whisperer/" data-i18n="nav.toolsStatementWhisperer">StatementWhisperer</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/solutions/" data-i18n="nav.solutions">Solutions</a>
+            <div class="dropdown-content">
+              <span class="dropdown-group-label" data-i18n="nav.categories">Categories</span>
+              <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+              <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+              <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+              <span class="dropdown-group-label" data-i18n="nav.byRole">By Role</span>
+              <a href="/solutions/job-seekers/" data-i18n="nav.solutionsJobSeekers">For Job Seekers</a>
+              <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">For Support Teams</a>
+              <a href="/solutions/ecommerce-support/" data-i18n="nav.solutionsEcommerceSupport">For Ecommerce</a>
+              <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">For Insurance</a>
+              <a href="/solutions/real-estate/" data-i18n="nav.solutionsRealEstate">For Real Estate</a>
+              <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+            </div>
+          </li>
+          <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/support/" data-i18n="nav.support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero evidence-hero">
+      <div class="container">
+        <p class="eyebrow">WINDOWS DESKTOP APP - LOCAL AI - NOT LEGAL ADVICE</p>
+        <h1>EvidenceWhisperer</h1>
+        <p class="subtitle">
+          Turn screenshots, receipts, PDFs, photos, exported emails, and notes into a
+          reviewed evidence packet you can print, upload, email, or bring to a hearing.
+          No account. No cloud upload. Everything stays on your computer.
+        </p>
+        <div class="buttons">
+          <a href="#" class="btn-ms-store" aria-label="Get EvidenceWhisperer on Microsoft Store">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M0 0h11.373v11.373H0V0zm12.627 0H24v11.373H12.627V0zM0 12.627h11.373V24H0V12.627zm12.627 0H24V24H12.627V12.627z" />
+            </svg>
+            <span>Get on Microsoft Store - Free Trial</span>
+          </a>
+          <a href="#workflow" class="btn-outline">See the workflow</a>
+        </div>
+        <p class="trust-bar">
+          Windows 10/11 - 15-day full-feature trial - USD 39.99 launch - USD 59.99 regular
+        </p>
+
+        <figure class="evidence-preview" aria-label="EvidenceWhisperer fake sample case preview">
+          <img
+            src="../assets/evidence-whisperer-preview.png"
+            alt="Fake EvidenceWhisperer review screen showing exhibit rows, important dates, redaction review, and packet style controls"
+            width="1400"
+            height="840"
+          />
+          <figcaption>
+            Fake sample case preview. Screenshots and Store assets must use generated evidence only.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="workflow" style="padding: var(--spacing-xl) 0;">
+      <div class="container">
+        <h2 class="section-title">From messy proof to a packet you can inspect</h2>
+        <p class="section-subtitle">
+          EvidenceWhisperer is built around review. Local AI suggests structure; you
+          approve the facts, redactions, order, and final export.
+        </p>
+        <div class="evidence-grid">
+          <div class="card">
+            <span class="evidence-kicker">1</span>
+            <h3>Start from a neutral template</h3>
+            <p>Choose landlord deposit, contractor, warranty, chargeback, unpaid invoice, or generic organization defaults. Every section and tag is editable.</p>
+          </div>
+          <div class="card">
+            <span class="evidence-kicker">2</span>
+            <h3>Import local evidence</h3>
+            <p>Drop PDFs, images, text files, CSVs, HTML exports, or email-like text exports. Originals are copied into app-owned storage and never modified.</p>
+          </div>
+          <div class="card">
+            <span class="evidence-kicker">3</span>
+            <h3>Review the timeline and exhibits</h3>
+            <p>Edit dates, parties, organizations, amounts, issue tags, descriptions, exhibit titles, notes, and include/exclude decisions before export.</p>
+          </div>
+          <div class="card">
+            <span class="evidence-kicker">4</span>
+            <h3>Redact before sharing</h3>
+            <p>Review sensitive-detail suggestions, draw manual rectangles, accept or ignore each suggestion, and burn accepted redactions into exported copies.</p>
+          </div>
+          <div class="card">
+            <span class="evidence-kicker">5</span>
+            <h3>Track important dates manually</h3>
+            <p>Add dates you decide matter, link them to evidence, include or exclude them from outputs, and avoid automatic deadline advice entirely.</p>
+          </div>
+          <div class="card">
+            <span class="evidence-kicker">6</span>
+            <h3>Present or export</h3>
+            <p>Use offline presentation mode for included/redacted evidence, or export packet styles for print, upload, timeline-first review, or exhibit binders.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0; background: rgba(255,255,255,0.01);">
+      <div class="container">
+        <h2 class="section-title">What the export bundle includes</h2>
+        <p class="section-subtitle">
+          The paid output is simple: readable files, source traceability, and redacted
+          copies you can inspect before sharing.
+        </p>
+        <div class="export-strip">
+          <div class="export-chip">Numbered packet PDF</div>
+          <div class="export-chip">Exhibit index CSV/XLSX</div>
+          <div class="export-chip">Timeline PDF/CSV</div>
+          <div class="export-chip">Redacted exhibit ZIP</div>
+          <div class="export-chip">Local audit manifest</div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0;">
+      <div class="container">
+        <div class="evidence-grid">
+          <div class="privacy-note">
+            <h2>Private by design</h2>
+            <p>
+              EvidenceWhisperer runs on your Windows PC. Your source files, OCR text,
+              extracted metadata, redaction decisions, notes, presentation view, and
+              exports are not uploaded to Donbrico or any cloud workspace.
+            </p>
+          </div>
+          <div class="warning-note">
+            <h2>Not legal advice</h2>
+            <p>
+              EvidenceWhisperer organizes materials you provide. It does not assess case
+              strength, recommend claims or defenses, calculate legal deadlines, fill
+              legal forms, or guarantee acceptance by a court, platform, landlord, bank,
+              or other decision-maker.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0; background: rgba(255,255,255,0.01);">
+      <div class="container">
+        <h2 class="section-title">Real local-AI testing before release</h2>
+        <p class="section-subtitle">
+          Before manual release testing, generated fake dispute cases are run through
+          real-situation automated scenarios with the Balanced local AI model. The
+          scorecard covers templates, import, extraction, review, important dates,
+          redaction suggestions, packet styles, presentation-safe display, privacy
+          behavior, and not-legal-advice boundaries.
+        </p>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0;">
+      <div class="container">
+        <h2 class="section-title">Full-feature trial. One-time price.</h2>
+        <p class="section-subtitle">
+          Try the full app for 15 days through the Microsoft Store. No watermark, no
+          exhibit cap, no disabled export formats.
+        </p>
+        <div class="evidence-grid" style="max-width: 780px; margin: 0 auto;">
+          <div class="card">
+            <h3>15-Day Trial</h3>
+            <p style="font-size: 2rem; font-weight: 700; color: #2dd4bf; margin-bottom: 4px;">Free</p>
+            <p style="color: var(--muted); font-size: 0.9rem;">Import, review, redact, present, and export real projects during the trial.</p>
+          </div>
+          <div class="card" style="border: 2px solid #2dd4bf;">
+            <h3>EvidenceWhisperer License</h3>
+            <p style="font-size: 2rem; font-weight: 700; color: #2dd4bf; margin-bottom: 4px;">$39.99 <span style="font-size: 1rem; color: var(--muted);">launch</span></p>
+            <p style="color: var(--muted); font-size: 0.9rem;">Regular v1 price: USD 59.99. Pay once. No subscription. No account.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" style="padding: var(--spacing-xl) 0; background: rgba(255,255,255,0.01);">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div style="max-width: 780px; margin: 0 auto;">
+          <details style="margin-bottom: var(--spacing-md);">
+            <summary>Does EvidenceWhisperer give legal advice?</summary>
+            <p>No. It organizes evidence and exports packets. It does not recommend legal arguments, claims, defenses, forms, filing rules, or deadlines.</p>
+          </details>
+          <details style="margin-bottom: var(--spacing-md);">
+            <summary>Does it upload my evidence?</summary>
+            <p>No. EvidenceWhisperer is local-first. Your files, OCR text, metadata, redactions, notes, presentation views, and exports stay on your computer.</p>
+          </details>
+          <details style="margin-bottom: var(--spacing-md);">
+            <summary>What files can I import?</summary>
+            <p>PDF, PNG, JPG, TXT, MD, CSV, HTML, and EML-like text exports are in the v1 scope. Audio/video files can be attached as evidence but are not transcribed in v1.</p>
+          </details>
+          <details style="margin-bottom: var(--spacing-md);">
+            <summary>Are redaction suggestions automatic?</summary>
+            <p>No. Suggestions are review prompts. Nothing is applied or burned into an export until you accept or edit it, and you should review every output before sharing.</p>
+          </details>
+          <details style="margin-bottom: var(--spacing-md);">
+            <summary>Can it calculate court deadlines?</summary>
+            <p>No. The important-dates tracker is manual. You can enter dates and link evidence, but the app does not calculate legal deadlines or jurisdiction-specific rules.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: var(--spacing-xl) 0; text-align: center;">
+      <div class="container">
+        <h2>Drop messy proof. Keep control of the packet.</h2>
+        <p class="subtitle" style="max-width: 680px; margin: 0 auto var(--spacing-md);">
+          Start with the full-feature trial, use the sample case, or import your own
+          evidence and inspect the export before buying.
+        </p>
+        <a href="#" class="btn-ms-store" aria-label="Get EvidenceWhisperer on Microsoft Store">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M0 0h11.373v11.373H0V0zm12.627 0H24v11.373H12.627V0zM0 12.627h11.373V24H0V12.627zm12.627 0H24V24H12.627V12.627z" />
+          </svg>
+          <span>Get on Microsoft Store - Free Trial</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.solutions">Solutions</h4>
+            <a href="/solutions/communication/" data-i18n="nav.solutionsCommunication">Write &amp; Respond</a>
+            <a href="/solutions/automation/" data-i18n="nav.solutionsAutomation">Fill &amp; Process</a>
+            <a href="/solutions/workspace/" data-i18n="nav.solutionsWorkspace">Organize &amp; Focus</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.workflows">Workflows</h4>
+            <a href="/solutions/support-teams/" data-i18n="nav.solutionsSupportTeams">Support Teams</a>
+            <a href="/solutions/recruiters/" data-i18n="nav.solutionsRecruiters">Recruiters</a>
+            <a href="/solutions/ecommerce-support/" data-i18n="nav.solutionsEcommerceSupport">Ecommerce</a>
+            <a href="/solutions/insurance/" data-i18n="nav.solutionsInsurance">Insurance</a>
+            <a href="/solutions/browser-workspace/" data-i18n="nav.solutionsBrowserWorkspace">Browser Workspace</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.extensions">Extensions</h4>
+            <a href="/autofill-ai/" data-i18n="nav.extensionsAutofill">Autofill AI</a>
+            <a href="/med-autofill/" data-i18n="nav.extensionsMedAutoFill">MedAutoFill</a>
+            <a href="/propertyfill-ai/" data-i18n="nav.extensionsPropertyFill">PropertyFill AI</a>
+            <a href="/ai-reply-assistant/" data-i18n="nav.extensionsReply">AI Reply Assistant</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.company">Company</h4>
+            <a href="/file-whisperer/" data-i18n="nav.toolsFileWhisperer">FileWhisperer AI</a>
+            <a href="/receipt-whisperer/" data-i18n="nav.toolsReceiptWhisperer">ReceiptWhisperer AI</a>
+            <a href="/meeting-whisperer/" data-i18n="nav.toolsMeetingWhisperer">MeetingWhisperer AI</a>
+            <a href="/evidence-whisperer/" data-i18n="nav.toolsEvidenceWhisperer">EvidenceWhisperer</a>
+            <a href="/claim-whisperer/" data-i18n="nav.toolsClaimWhisperer">ClaimWhisperer</a>
+            <a href="/statement-whisperer/" data-i18n="nav.toolsStatementWhisperer">StatementWhisperer</a>
+            <a href="/support/" data-i18n="nav.support">Support</a>
+            <a href="/privacy-policy/" data-i18n="nav.privacyPolicy">Privacy Policy</a>
+            <a href="/terms/" data-i18n="nav.termsOfService">Terms</a>
+          </div>
+        </div>
+        <p data-i18n="footer.copyright">© 2026 Donbrico Studio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../js/i18n.js" defer></script>
+    <script src="../js/chatwoot.js" defer></script>
+  </body>
+</html>

@@ -64,6 +64,7 @@
     "toolsFileWhisperer": "FileWhisperer AI",
     "toolsReceiptWhisperer": "ReceiptWhisperer AI",
     "toolsMeetingWhisperer": "MeetingWhisperer AI",
+    "toolsEvidenceWhisperer": "EvidenceWhisperer",
     "toolsClaimWhisperer": "ClaimWhisperer",
     "toolsStatementWhisperer": "StatementWhisperer"
   },
@@ -3841,25 +3842,25 @@
   },
   "claimWhisperer": {
     "page": {
-      "title": "ClaimWhisperer — Privater Schadensdokumentation-Ersteller für Windows",
-      "description": "Verwandeln Sie Fotos, Quittungen, PDFs und Notizen in ein geprüftes Schadenspaket oder Haushaltsverzeichnis. Lokale KI. Kein Konto. Kein Cloud-Upload. Windows 10/11.",
-      "ogTitle": "ClaimWhisperer — Privater Schadensdokumentation-Ersteller für Windows",
-      "ogDescription": "Fotos und Belege einlegen. Artikelliste prüfen. Schadenspaket, Inventartabelle und Nachweis-ZIP exportieren. Alles bleibt auf Ihrem Computer."
+      "title": "ClaimWhisperer - Privater Inventar- und Nachweispaket-Ersteller für Windows",
+      "description": "Erstellen Sie geprüfte Pakete für Versicherung, Garantie, Umzugsschäden oder Hausinventar aus Fotos, Belegen, PDFs, Handbüchern und Notizen. Lokale KI. Kein Cloud-Upload. Windows 10/11.",
+      "ogTitle": "ClaimWhisperer - Privater Inventar- und Nachweispaket-Ersteller für Windows",
+      "ogDescription": "Starten Sie mit Vorlagen oder Nachweisordnern. Prüfen Sie Artikel, Kennungen, Fotos und Schwärzungsvorschläge. Exportieren Sie generische Pakete lokal."
     },
     "hero": {
       "eyebrow": "WINDOWS-APP · LOKALE KI · EINMALIGER KAUF",
-      "title": "Fotos und Belege einlegen.<br />Fertiges Schadenspaket erhalten.",
-      "subtitle": "ClaimWhisperer wandelt Ihre Fotos, Quittungen, Garantie-PDFs, Handbücher, Seriennummernotizen und Schadensdokumentation in ein geprüftes Inventar und ein sauberes Exportpaket um — vollständig lokal auf Ihrem Windows-PC verarbeitet, ohne Konto und ohne Cloud-Upload.",
-      "buttonPrimary": "Im Microsoft Store holen — Kostenloser Test",
-      "disclaimer": "15-tägiger Volltest · Einmalig 49,99 USD · Einführungsangebot 29,99 USD"
+      "title": "Nachweisordner importieren.<br />Geprüftes Paket erstellen.",
+      "subtitle": "ClaimWhisperer verwandelt Fotos, Belege, Garantie-PDFs, Handbücher, Seriennummernotizen und Schadensdokumentation in ein geprüftes Paket für Versicherung, Garantie, Umzugsschäden oder Hausinventar - lokal auf Ihrem Windows-PC verarbeitet, ohne Konto und ohne Cloud-Upload.",
+      "buttonPrimary": "Im Microsoft Store holen - Kostenloser Test",
+      "disclaimer": "15-tägiger Volltest · Einmalig 49,99 USD · Einführungsangebot 29,99 USD"
     }
   },
   "statementWhisperer": {
     "page": {
-      "title": "StatementWhisperer - Private Bank Statement to CSV for Windows",
-      "description": "Convert bank, credit-card, PayPal/Stripe-style, and brokerage statement PDFs or scans into reviewed CSV/XLSX transaction tables on your Windows PC. No bank connection. No cloud upload.",
-      "ogTitle": "StatementWhisperer - Private Bank Statement to CSV for Windows",
-      "ogDescription": "Drop statement PDFs and scans. Review rows, summaries, and duplicate findings. Export clean CSV/XLSX locally with no bank login or cloud upload."
+      "title": "StatementWhisperer - Kontoauszug zu CSV/XLSX mit Offline-OCR fuer Windows",
+      "description": "Konvertieren Sie Bank-, Karten- und aehnliche PDF- oder Scan-Auszuege in pruefbare CSV/XLSX-Dateien auf Windows mit Offline-OCR, Profilen, Validierung und ohne Cloud-Upload.",
+      "ogTitle": "StatementWhisperer - Kontoauszug zu CSV/XLSX mit Offline-OCR fuer Windows",
+      "ogDescription": "Konvertieren Sie Auszugs-PDFs und Scans lokal in CSV/XLSX mit Offline-OCR, Quellenbezug, Profilen, Validierung, Duplikatpruefung und ohne Bank-Login."
     },
     "hero": {
       "eyebrow": "WINDOWS-DESKTOP-APP",

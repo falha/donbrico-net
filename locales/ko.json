@@ -64,6 +64,7 @@
     "toolsFileWhisperer": "FileWhisperer AI",
     "toolsReceiptWhisperer": "ReceiptWhisperer AI",
     "toolsMeetingWhisperer": "MeetingWhisperer AI",
+    "toolsEvidenceWhisperer": "EvidenceWhisperer",
     "toolsClaimWhisperer": "ClaimWhisperer",
     "toolsStatementWhisperer": "StatementWhisperer"
   },
@@ -3841,25 +3842,25 @@
   },
   "claimWhisperer": {
     "page": {
-      "title": "ClaimWhisperer — Windows용 개인 보험청구 문서 정리 도구",
-      "description": "사진, 영수증, PDF 및 메모를 검토된 보험청구 패킷으로 변환합니다. 로친 AI. 계정 불필요. 클라우드 업로드 없음. Windows 10/11.",
-      "ogTitle": "ClaimWhisperer — Windows용 개인 보험청구 문서 정리 도구",
-      "ogDescription": "사진과 영수증을 가져온다. 품목 목록을 검토하라. 청구 패킷, 인벤토리 스프레드시트, 증거 ZIP을 내보내라. 모든 데이터는 컴퓨터에 저장됩니다."
+      "title": "ClaimWhisperer - Windows용 개인 청구 인벤토리 및 증빙 패킷 빌더",
+      "description": "사진, 영수증, PDF, 설명서, 메모로 검토된 보험 청구, 보증, 이사 손상 또는 홈 인벤토리 패킷을 만듭니다. 로컬 AI. 클라우드 업로드 없음. Windows 10/11.",
+      "ogTitle": "ClaimWhisperer - Windows용 개인 청구 인벤토리 및 증빙 패킷 빌더",
+      "ogDescription": "템플릿 또는 증빙 폴더에서 시작하세요. 항목, 식별자, 사진, 수정 제안을 검토하고 일반 패킷을 로컬로 내보냅니다."
     },
     "hero": {
-      "eyebrow": "WINDOWS 데스크탑 앱 · 로친 AI · 일회성 구매",
-      "title": "사진과 영수증을 가져오세요.<br />청구 준비 패킷을 받으세요.",
-      "subtitle": "ClaimWhisperer는 사진, 영수증, 보증서 PDF, 설명서, 시리얼 번호 메모, 손해 문서를 검토된 인벤토리와 연출한 수출판으로 변환합니다 — 계정 없이, 클라우드 업로드 없이 Windows PC에서 전부 로친 처리됩니다.",
-      "buttonPrimary": "Microsoft Store에서 받기 — 무료 체험판",
+      "eyebrow": "WINDOWS 데스크톱 앱 · 로컬 AI · 일회성 구매",
+      "title": "증빙 폴더를 가져와<br />검토된 패킷을 만드세요.",
+      "subtitle": "ClaimWhisperer는 사진, 영수증, 보증 PDF, 설명서, 시리얼 번호 메모, 손상 문서를 검토된 보험 청구, 보증, 이사 손상 또는 홈 인벤토리 패킷으로 변환합니다 - 모두 Windows PC에서 로컬 처리되며 계정이나 클라우드 업로드가 필요 없습니다.",
+      "buttonPrimary": "Microsoft Store에서 받기 - 무료 체험판",
       "disclaimer": "15일 전체 기능 체험판 · 49.99 USD 일회성 · 출시 프로모션 29.99 USD"
     }
   },
   "statementWhisperer": {
     "page": {
-      "title": "StatementWhisperer - Private Bank Statement to CSV for Windows",
-      "description": "Convert bank, credit-card, PayPal/Stripe-style, and brokerage statement PDFs or scans into reviewed CSV/XLSX transaction tables on your Windows PC. No bank connection. No cloud upload.",
-      "ogTitle": "StatementWhisperer - Private Bank Statement to CSV for Windows",
-      "ogDescription": "Drop statement PDFs and scans. Review rows, summaries, and duplicate findings. Export clean CSV/XLSX locally with no bank login or cloud upload."
+      "title": "StatementWhisperer - Windows 오프라인 OCR 명세서 CSV/XLSX 변환",
+      "description": "은행, 카드, PayPal/Stripe 스타일 및 증권 계좌형 PDF 또는 스캔 명세서를 Windows에서 검토 가능한 CSV/XLSX로 변환합니다. 오프라인 OCR, 원본 참조, 프로필, 검증, 클라우드 업로드 없음.",
+      "ogTitle": "StatementWhisperer - Windows 오프라인 OCR 명세서 CSV/XLSX 변환",
+      "ogDescription": "PDF 명세서와 스캔을 로컬 CSV/XLSX로 변환합니다. 오프라인 OCR, 저장 프로필, 검증, 중복 검토, 은행 로그인 없음, 클라우드 업로드 없음."
     },
     "hero": {
       "eyebrow": "WINDOWS 데스크톱 앱",
