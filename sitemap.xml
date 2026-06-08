@@ -72,27 +72,22 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://donbrico.net/receipt-whisperer/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://donbrico.net/meeting-whisperer/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://donbrico.net/evidence-whisperer/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://donbrico.net/claim-whisperer/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://donbrico.net/statement-whisperer/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
