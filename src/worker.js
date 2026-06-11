@@ -49,6 +49,11 @@ export default {
       return getLifetimeSpots({ env, request });
     }
 
-    return env.ASSETS.fetch(request);
+    // Serve assets using the canonical URL to avoid non-canonical responses
+    const canonicalRequest = new Request(
+      `https://${url.hostname}${url.pathname}${url.search}`,
+      request
+    );
+    return env.ASSETS.fetch(canonicalRequest);
   }
 };
